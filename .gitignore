@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+packs/*/LOCK
+tools/.harness.lock
+tools/.harness.snapshot.json

@@ -1,0 +1,457 @@
+# Inner Tempest 1.1 implementation inventory: the source of truth for the matrix.
+# One feature per line: id | chapter/page | feature | category | mechanics | dependencies | target automation | implementation | blocker
+# Automation target: A full, B with user interaction, C partial, D manual/descriptive.
+# Implementation keys:
+#   PACK:<pack>  compendium entry           AE      transferred ActiveEffect
+#   COND         conditionals flag          AUTO    registerFeatAutomation handler
+#   SA           registerSkillActions       RX      reaction (core D8)
+#   STANCE       core stance helper (D7)    RIDER   strikeDamageRider / strikeRiders effect
+#   INNATE       granted innate spell (D5)  CHOICE  abilityChoices sub-pick
+#   GRANT        levelled grant list        CARD    chat card only (D class)
+# Blocker: an audit ID (IT-Cn/IT-Mn) or a core dependency (Dn). A blank blocker is buildable now.
+#
+## SYS: book-wide rules (Ch1, Ch7)
+SYS-01|Ch1/Ch7 p4,71-73|Focus trait (ready/expended, individual tracking)|Subsystem|Ability usable while ready; expended on use (even on a miss or saved); each tracked separately; daily preparation restores all|core uses/refocus; D1|A|core usesPerDay=1 on every Focus item; registerTraits Focus|D1
+SYS-02|Ch4/Ch7 p35,73|Refocus (Mental Focus, level-based)|Skill action|1 AP Concentrate Mental; restore ONE expended ability; Crit now / Success next turn / Partial 1 min / Failure 10-min block / Fumble until daily prep / Blunder +1d4 per level mental (basic Will)|core refocus (Ch7 ladder already built)|A|use core action; no module copy|IT-M1
+SYS-03|Ch3/Ch7 p17,72|Additional uses restored together|Subsystem|A Refocus restores all uses of a technique that has extra uses|D2|A|item flag refocusRestoresAll|D2
+SYS-04|Ch7 p71|Innate spells: 0 PP, max warp, CL = level, attack = ability + level, DC = 10 + ability + level|Subsystem|Matches core casting.mjs; per-spell magical ability needed|D5|A|INNATE w/ castingAbilityOverride|D5
+SYS-05|Ch7 p72|Technique Save DC|Subsystem|10 + Path magical ability + level; no Path -> granting feature's ability|IT-M5, IT-M6|A|module helper techniqueDC(actor,item)|IT-M5
+SYS-06|Ch7 p72|Technique trait|Trait|Descriptive trait; feats may require "Technique"; non-magical unless traditioned|registerTraits|A|registerTraits + feat gate on Inner Discipline|
+SYS-07|Ch3 p33, Ch7 p71|Monastic Paths: tradition/ability selection (4)|Subsystem|Devoted divinity/Wis/+Religion; Illuminator ethereal/Cha/+Occultism; Primal verdant/Con/+Nature; Transcendent arcane/Int/+Arcana|class-skill grant API; D5|B|PACK:it-abilities x4 + CHOICE + registerClassSkillGrant|
+SYS-08|Ch3 p33|Fallback tradition for characters without a Path|Subsystem|Uses the class's chosen tradition and ability, or a core caster's tradition|IT-M6|B|module helper magicalSourceFor(actor,item)|IT-M6
+SYS-09|Ch4 p39, Ch7 p71|Focus & magic detection rules|Rule text|Focus not magical; magical techniques carry a tradition trait|n/a|D|journal entry; traditions on magical items only|
+SYS-10|Ch1 p4|Chi terminology (no mechanics)|Rule text|Setting only|n/a|D|journal entry|
+SYS-11|Ch5 p40|Feat categories & granted-feat prerequisite waiver|Rule text|Matches core featBudget & grant waiver|core|A|core|
+SYS-12|Ch9 p79|Monastic item creation via Meditation|Subsystem|Inner Discipline holders may use Meditation for Create on items based on their techniques/innate spells; Hard (+2); Meditation ranks >= item level; no charged items|core crafting|C|registerSkillSubstitution (Crafting->Meditation) + gate|
+#
+## RACES (Ch2)
+R-01|Ch2 p7|Miraku (race)|Race|Dex+1 Wis+1 Cha+1 Con-1; Medium; 30 ft; PP 0; Faechant, Low Tongue (+Wyrmish option); Miraku Lore, Spirit Lore; age 18+2d6, 220-280 years|federated races; registerRacialPP|A|PACK:it-races + AE racial ability mods|
+R-02|Ch2 p9|Ryukari (race)|Race|Str+1 Con+1 Cha+1 Dex-1; Medium; 25 ft; PP 0; Low Tongue, Wyrmish; Ryukari Lore, Dragon Lore; 24+3d6; 350+|federated races|A|PACK:it-races + AE|
+R-03|Ch2 p11|Scree (race)|Race|Dex+1 Con+1 Int+1 Cha-1; Medium; 30 ft; PP 0; Low Tongue, Scree Cant; Scree Lore, Insect Lore; 9+1d6; 70-100|federated races; registerLanguage|A|PACK:it-races + AE|
+R-04|Ch2 p13|Tianzhi (race)|Race|Dex+1 Wis+1; Medium; 30 ft; PP 0; Low Tongue + heritage language; Elemental Lore, Tianzhi Lore; no age data|federated races|A|PACK:it-races + AE|IT-C2
+R-05|Ch2 p11|Scree Cant (uncommon language)|Language|New uncommon language|registerLanguage|A|registerLanguage({rarity:"uncommon"})|
+RA-01|Ch2 p7|Nightvision (Miraku, Ryukari, Tianzhi)|Racial ability|Core sense|core sense|A|grant core ability|
+RA-02|Ch2 p7|Fluid Form (Miraku)|Racial ability|1 AP Concentrate Morph; cosmetic change; advantage on Bluff (Deception) supporting the disguise|COND|B|PACK:it-abilities + AUTO toggles disguise effect w/ advantage conditional|
+RA-03|Ch2 p7|Spirit Awareness (Miraku)|Racial ability|+1 racial Perception & Occultism vs spirits/haunts/possession|COND (ticked)|B|COND scoped to skills; auto:false (target kind)|
+RA-04|Ch2 p9|Scaled Hide (Ryukari)|Racial ability|Base DR 1|AE|A|AE natural Base DR|
+RA-05|Ch2 p9|Dragon-Bound Resolve (Ryukari)|Racial ability|+1 racial saves vs fear and effects from Wyrm-type creatures|COND traits:fear / sourceTypes:wyrm|A|COND auto|
+RA-06|Ch2 p11|Chitinous Carapace (Scree)|Racial ability|Base natural DR 2|AE|A|AE|IT-m5
+RA-07|Ch2 p11|Compound Eyes (Scree)|Racial ability|+1 racial visual Perception|COND traits:visual|A|COND|
+RA-08|Ch2 p13|Martial Affinity (Tianzhi)|Racial ability|+1 racial AB & DB while in any stance|D7 (inStance predicate)|A|COND when.inStance|D7
+RA-09|Ch2 p13|Natural Chi (Tianzhi)|Racial ability|Any magical cantrip of a chosen tradition as innate Focus, Wis|D5; spellChoice|B|PACK:it-abilities + spellChoice flag + INNATE|D5
+#
+## HERITAGES (Ch2) — 20
+H-01|Ch2 p8|Kitsune|Heritage|+1 racial Cha; Ghost Sound ethereal innate cantrip Focus (Cha)|D5|A|PACK:it-heritages + AE + INNATE|D5
+H-02|Ch2 p8|Mujina|Heritage|Base DR 1; Impact Absorption|AE|A|PACK + AE|
+H-03|Ch2 p8|Impact Absorption (Mujina)|Racial ability|Defence Focus Reaction: trigger targeted physical attack damages you; +1 Base DR vs it|D8 (beforeDamage)|B|RX beforeDamage|D8
+H-04|Ch2 p8|Ren|Heritage|+5 Speed & +5 racial Initiative; falls 20 ft shorter|AE; core falling|A|AE speed + initiative; fall-distance flag|IT-m4
+H-05|Ch2 p8|Byakko|Heritage|+1 racial Sneak & Demoralise; Predator's Pounce|COND actions|A|PACK + COND|
+H-06|Ch2 p8|Predator's Pounce (Byakko)|Racial ability|Attack Flourish Focus Movement 2 AP; Stride >=10 ft toward creature then melee Strike; no reactions from the movement|core movement+strike|B|AUTO: Stride waypoint + Strike dialog; spend Focus|
+H-07|Ch2 p8|Orochi|Heritage|Poison resistance; swim 15|AE resistances, speeds|A|AE|
+H-08|Ch2 p10|Shinryu|Heritage|Stride across unsupported air; begin/end on a surface|n/a (movement narrative)|D|PACK + description; GM|
+H-09|Ch2 p10|Zennyo|Heritage|Amphibious; swim 20|AE|A|AE|
+H-10|Ch2 p10|Fuku|Heritage|+1 Conviction Pool; Treasure Sense (tertiary)|AE conviction max|A|AE + sense ability|
+H-11|Ch2 p10|Treasure Sense (Fuku)|Racial ability|Search reveals precious metals within 30 ft; blockers|n/a (GM info)|D|PACK ability + card on Search|
+H-12|Ch2 p10|Kura|Heritage|Darkvision; +1 racial all Stealth|AE + COND|A|AE|
+H-13|Ch2 p10|Zenki|Heritage|Immune to mundane environmental heat; +1 racial Crafting (metal/stone/forge)|AE immunity tag; COND (ticked)|B|AE + COND auto:false|
+H-14|Ch2 p11|Kabuto|Heritage|+1 natural DR; -5 Speed; +50 weight allowance|AE|A|AE|
+H-15|Ch2 p11|Joro|Heritage|Climb 20; ceilings with a free hand|AE speeds|A|AE|
+H-16|Ch2 p11|Kamiri|Heritage|+5 racial Initiative; Raptorial Blade natural attack 1d6 S FDC5 Agile Finesse AR1|grantedWeapons|A|PACK + weapon in it-companions/naturals|
+H-17|Ch2 p12|Suzume|Heritage|Sting 1d6 P FDC5 Agile Finesse; Wing Burst|grantedWeapons|A|PACK + weapon|
+H-18|Ch2 p12|Wing Burst (Suzume)|Racial ability|Flourish Movement 1 AP; Fly up to Speed; must end on surface|core movement|B|AUTO movement card + flourish|
+H-19|Ch2 p12|Hotaru|Heritage|Dim light 10 ft (toggle 1 AP Concentrate) "Living Lantern"; Guidance ethereal innate Focus (Wis)|D5; token light|A|PACK + AUTO light toggle + INNATE|IT-M21
+H-20|Ch2 p13|Fuukaze|Heritage|+2 racial Acrobatics; +5 land speed|AE|A|AE|IT-C2
+H-21|Ch2 p13|Hikari|Heritage|Stabilise divinity innate Focus (Wis); advantage saves vs emotion & fear|D5; COND advantage|A|PACK + INNATE + COND|IT-C2
+H-22|Ch2 p13|Kasai|Heritage|Fire resistance; Orb of Fire verdant innate Focus (Wis)|D5|A|PACK + AE + INNATE|IT-C2
+H-23|Ch2 p13|Suiryoku|Heritage|Swim 20; hold breath x5|AE|A|AE + description|IT-C2
+H-24|Ch2 p13|Tsuchi|Heritage|+2 racial Crafting & Create; advantage vs prone / forced movement|AE + COND|A|AE + COND|IT-C2
+#
+## BACKGROUNDS (Ch2/Ch6) — 11
+BG-01|Ch2 p14|Ancestral Guardian|Background|Feat Ancestral Guidance; Culture, Diplomacy, Sense Motive; Ancestor Lore; wealth 0|federated backgrounds|A|PACK:it-backgrounds|
+BG-02|Ch2 p14|Astral Scholar|Background|Astral Insight; Arcana, Culture, Planes; Lore (Astral); wealth 1|..|A|PACK|
+BG-03|Ch2 p14|Chi Scholar|Background|Inner Balance; Culture, Meditation, Power Manipulation; Lore (Chi); wealth 0|..|A|PACK|
+BG-04|Ch2 p14|Elemental Guardian|Background|Elemental Ward; Nature, Perception, Survival; Lore (Elemental); 0|..|A|PACK|
+BG-05|Ch2 p14|Elemental Harmonist|Background|Elemental Balance; Culture, Meditation, Nature; Lore (Elemental); 0|..|A|PACK|IT-m2
+BG-06|Ch2 p14|Enigmatic Artisan|Background|Artisan's Enchantment; Artistry, Crafting, Meditation; Lore (Magic Crafting); 2|..|A|PACK|
+BG-07|Ch2 p15|Grey Seeker|Background|Ethereal Sight; Meditation, Planes; Lore (The Grey); 1|..|A|PACK|IT-m3
+BG-08|Ch2 p15|Nomad|Background|Linguist (core); Culture, Stealth, Survival; Lore (Nomads); -1|..|A|PACK|
+BG-09|Ch2 p15|Radiant Wanderer|Background|Radiant Insight; Arcana, Planes, Religion; Lore (The Radiance); 0|..|A|PACK|
+BG-10|Ch2 p15|Spirit Warrior|Background|Spirit Stance (UNDEFINED); Athletics, Meditation, Religion; Lore (Spirits); 0|..|A|PACK; bonus feat unresolved|IT-C1
+BG-11|Ch2 p15|Spiritwalker|Background|Spirit Whisperer; Meditation, Perception, Sense Motive; Lore (Spirits); -1|..|A|PACK|
+#
+## CLASSES (Ch3) — tables, proficiency, HP, skills, wealth
+CL-01|Ch3 p17-18|Disciple (class)|Class|Martial; Wis min+2; simple + Monastic-trait weapons; no armour; 10 skills; 6+Int; 10+Con HP; BAB=BDB=L; Fort L+2 Ref L+5 Will L+2; bonus feats 1+floor(L/3); wealth -2|registerClass; class progression|A|PACK:it-classes + registerClass|IT-C4
+CL-02|Ch3 p19-22|Ghostwalker (class)|Class|Expert; Dex min+2; light armour, bucklers, simple, shortbows, Monastic, wakizashi as martial; 13 skills; 8+Int; 8+Con; 3/4 BAB; Fort L+2 Ref L+5 Will L+2; wealth 0|registerClass; weaponProficientName|A|PACK + registerClass|IT-C4
+CL-03|Ch3 p23-25|Kensai (class)|Class|Martial; Dex & Int min+2; simple + martial; light + medium armour, bucklers; 9 skills; 4+Int; 10+Con; BAB=L; Fort L+5 Ref L+2 Will L-1; wealth 1|registerClass|A|PACK + registerClass|IT-C4
+CL-04|Ch3 p26-29|Mystic (class)|Class|Adept; Wis min+2; simple, Monastic, light armour; 11 skills; 8+Int; 8+Con; 3/4 BAB; Fort L+2 Ref L+2 Will L+5; no PP casting; wealth -1|registerClass|A|PACK + registerClass|IT-C4
+CL-05|Ch3 p30-32|Oathblade (class)|Class|Martial; Cha min+2; simple + martial; all armour, no shields; katana & wakizashi martial; 10 skills; 6+Int; 10+Con; BAB=L; Fort L+2 Ref L-1 Will L+5; wealth 2|registerClass|A|PACK + registerClass|IT-C4
+CL-06|Ch3|Class bonus-feat columns (all five)|Class rule|1 bonus class feat at 1st + every 3 levels, matching class or class-type trait|featBudget bonusFeats column|A|progression.bonusFeats|
+CL-07|Ch3|Class "Magical Tradition" choice (Ghostwalker Wis, Kensai Int, Oathblade Cha)|Class feature|Choose a tradition at 1st; used for magical techniques/innate spells|D5|B|CHOICE (4 options) + flag|D5
+#
+## DISCIPLE features
+CF-D1|Ch3 p17|Powerful Fists|Class feature|Unarmed 1d6 + versatile B; +1 total dmg at BAB 3 & per +3; magical BAB3, cold iron & silver BAB8, adamantine BAB16|D12|A|AE unarmedDamage + strikeCountsAs|D12
+CF-D2|Ch3 p17|Disciple's Dodge|Class feature|+Wis dodge to DB if unencumbered & unarmoured|D9|A|registerDerived|D9
+CF-D3|Ch3 p17|Disciple's Resolve|Class feature|+1 conviction pool & points|AE|A|AE|
+CF-D4|Ch3 p17|Flurry of Blows|Class feature|Flourish 1 AP: two unarmed Strikes; DR/resistance/weakness once if same target; MAP normal; only one critical injury|core strike pipeline; D11|B|AUTO two-strike sequence; damage merge|
+CF-D5|Ch3 p17|Disciple bonus feats (Inner Discipline + Technique feat)|Class feature|Grant Inner Discipline; first class pick must be Technique|grants; registerFeatGate|A|GRANT + pick note|
+CF-D6|Ch3 p17|Deep Focus|Class feature|Every Focus technique +1 use; Refocus restores all|D1, D2|A|AE focusExtraUses{traits:[Technique]}|D1
+CF-D7|Ch3 p17|Monastic Path (Disciple)|Class feature|Choose a Path; +1 class skill|SYS-07|B|CHOICE|
+CF-D8|Ch3 p17|Incredible Movement|Class feature|4th: +10 status Speed unarmoured; +5 at 10th, 16th|D9|A|registerDerived|D9
+#
+## GHOSTWALKER features
+CF-G1|Ch3 p19|Ghostwalk|Class feature|Sneak moves up to full Speed; still needs cover|core Sneak action|A|registerDegreeUpgrades/description on Sneak; flag read by module card|
+CF-G2|Ch3 p19|Unseen Assault|Class feature|1/round +1d6 precision vs creature flat-footed from your Stealth/Deception/GW abilities; agile/finesse melee, thrown, or ranged in 1st increment; +1d6 at 5,9,13,17|RIDER oncePerRound; flat-footed source tagging|B|RIDER + module flat-footed source flag; ticked if source unknown|
+CF-G3|Ch3 p19|Vanishing Retreat|Class feature|Movement Reaction after Unseen Assault damage: Step 5 ft, no reactions|D8 afterResolve (or strike hook)|B|RX via trgPrimeSecondaryDamage hook|
+CF-G4|Ch3 p19|Ghost Arts (selection)|Class feature|2 at 1st, +1 at 4,8,12,16,20; each once; Focus arts tracked separately|abilityChoices|B|CHOICE from it-abilities "Ghost Art"|
+CF-G5|Ch3 p19|Ghostwalker bonus feats|Class feature|Weapon Finesse (core) + class feat; +1 every 3|grants|A|GRANT|
+GA-01|Ch3 p20|False Face|Ghost Art|Int for disguise Deception; disguise in 1 minute|registerSkillSubstitution-like ability swap|B|COND (Int-Cha difference) + note|
+GA-02|Ch3 p20|Ghost Step|Ghost Art|Focus Movement 1 AP: Stride, no reactions; Hide if cover|core Stride + Hide action|B|AUTO|
+GA-03|Ch3 p20|Hollow Breath|Ghost Art|Concentrate 1 AP; -5 circ to sound/movement Perception vs you; breath x5; ends on action|effect + COND on others|B|AUTO effect; ends on next action (actionAttempt hook)|
+GA-04|Ch3 p20|Misdirecting Whisper|Ghost Art|Focus Mental 1 AP: Feint or Create a Diversion with advantage; then Step 5|core actions|B|AUTO chains core action w/ advantage|
+GA-05|Ch3 p20|No Trace|Ghost Art|Track vs you one difficulty harder; conceal trail at full speed|n/a|D|description + GM note|
+GA-06|Ch3 p20|Silent Needles|Ghost Art|Attack Flourish Focus 1 AP: two thrown Strikes; DR/res/weak once if same target|strike pipeline|B|AUTO two-strike (shared with Flurry)|
+GA-07|Ch3 p20|Smoke Veil|Ghost Art|Focus Manipulate 1 AP; 30 ft; 10-ft burst; 1 min concealment; non-magical|region/template + concealed|B|AUTO template + region effect concealed|
+GA-08|Ch3 p20|Spider Path|Ghost Art|Focus Movement 1 AP: Stride on walls; end on surface|movement|C|AUTO spend + card (no wall pathing)|
+GA-09|Ch3 p21|Falling Shadow|Ghost Art|L4 Focus Movement R: fall >= 10 ft: -30 ft; Hide if not prone & cover|core falling hook; D8|B|RX on fall (falling-workflow hook)|D8
+GA-10|Ch3 p21|Caltrop Blossom|Ghost Art|L4 Focus Manipulate 1 AP 20 ft 10-ft burst; difficult terrain; first move per turn Reflex vs Level DC: 2d6 P (+1d6 at 8 & every 4) & -5 Speed; Fumble ends move; persists; Interact clears a square|regions/peril automation (core registerPerilAutomation)|B|AUTO region + registerPerilAutomation|
+GA-11|Ch3 p21|Shadow Double|Ghost Art|L8 Focus Shadow R (magical): targeted -> concealed vs that attack; no damage -> Step 5; concealed until next turn|D8 beforeHit|B|RX beforeHit|D8
+GA-12|Ch3 p21|Veiled Body|Ghost Art|L8 Focus Shadow 1 AP (magical): invisible until next turn; ends on hostile act|conditions; actionAttempt hook|A|AUTO effect + end on hostile action|
+GA-13|Ch3 p21|Body of Mist|Ghost Art|L12 Focus Shadow Translocation 1 AP (magical): Fly Speed through creatures/1-inch gaps; no reactions; no attacks|movement|C|AUTO card + temp effect (movement GM)|
+GA-14|Ch3 p21|Shadow Passage|Ghost Art|L12 Focus Shadow Teleportation 1 AP (magical): teleport within Speed between dim/dark spaces|core teleport token move|B|AUTO pick point, displace waypoint|
+GA-15|Ch3 p21|Empty Presence|Ghost Art|L16 Focus Shadow 1 AP 1 min (magical): invisible; after hostile act concealed until end of turn then invisible|effect state machine|A|AUTO effect w/ turn hooks|
+#
+## KENSAI features
+CF-K1|Ch3 p23|Combat Form (activation)|Class feature|Concentrate Flourish Focus Stance 1 AP; one form; expended on activation; stay in form until Refocus allows a change; 2 at 1st, +1 at 4,8,12,16,20|D7, D1|A|STANCE + Focus|D7
+CF-K2|Ch3 p23|Flow Strike|Class feature|Attack Flourish 0 AP, trigger melee/thrown hit: extra attack at third-strike MAP; doesn't advance MAP|core attack counter; Flourish rule|B|AUTO offer on trgPrimeStrikeRolled hit; MAP override flag|IT-M8
+CF-K3|Ch3 p23|Considered Mind|Class feature|Int instead of Wis for Refocus|D3|A|AE actionAbilityOptions|D3
+CF-K4|Ch3 p23|Weapon Discipline|Class feature|Choose group (11); class bonus -1 to atk & dmg; Finesse one-handed; counts as free hand|D9 / COND valueFrom classBonus; group choice|A|CHOICE group + COND auto (when weapon group) + finesse flag|
+CF-K5|Ch3 p23|Kensai bonus feats|Class feature|Weapon Finesse + class feat; +1 every 3|grants|A|GRANT|
+KF-01|Ch3 p24|Black Lotus|Combat Form|1/round delay damage & critical rolls to the target's turn start; +Int Feint|STANCE; card deferral|C|STANCE + COND Feint; deferred damage card|IT-M10
+KF-02|Ch3 p24|Crashing Tide|Combat Form|Moved 10+ ft before attacking: +1 atk +Int dmg; crit push 5 ft (Fort negates, Attack DC)|movement tracking (damageSinceTurn/strikeLog)|B|STANCE + COND (ticked "moved 10 ft") + crit push card|
+KF-03|Ch3 p24|Dread Wolf|Combat Form|Target not adjacent to its allies: +1 atk +Int dmg; drop enemy to 0 HP: +1 luck DB to end of next round|adjacency check; trgPrimeCreatureSlain|A|STANCE + COND w/ adjacency predicate + slain hook|
+KF-04|Ch3 p24|Echoing Crane|Combat Form|+class bonus-1 DB; avoid an attack -> +1 next weapon attack this round|D9; attack-miss hook|A|STANCE + AE + miss hook pending mod|
+KF-05|Ch3 p24|Ember Reaver|Combat Form|Second hit in a round: +Int secondary fire; +1 weapon dmg per consecutive round in form (resets on change)|round counter on effect|A|STANCE + RIDER + round hook|IT-M9
+KF-06|Ch3 p24|Flickering Flame|Combat Form|+1 per 2 Int (min 1) Reflex & Acrobatics; enemies -5 reaction attacks vs you|D9; COND on attackers|B|STANCE + AE + COND targetTypes reaction|
+KF-07|Ch3 p24|Gale Cutter|Combat Form|Flow Strike only -5; grapple/restrain vs you at disadvantage|Flow Strike flag; COND|A|STANCE + flag + COND|
+KF-08|Ch3 p24|Ghost Fox|Combat Form|+Int Stealth; +Int base dmg vs flat-footed|COND|A|STANCE + COND|
+KF-09|Ch3 p25|Iron Tortoise|Combat Form|+1 DB per 2 Int (min 1); push/move vs you disadvantage; saves vs move advantage|COND|A|STANCE + AE + COND|
+KF-10|Ch3 p25|Rising Phoenix|Combat Form|+2 per Int to Climb & Jump; Jump into melee +Int first attack dmg|COND|B|STANCE + COND (ticked)|
+KF-11|Ch3 p25|Steel Viper|Combat Form|+Int x5 Initiative (retroactive); 1/round miss -> half damage|initiative hook; miss hook|B|STANCE + initiative COND + miss card|
+KF-12|Ch3 p25|Stone Serpent|Combat Form|Attack from reach: +Int precision; advantage Kip Up|COND reach|A|STANCE + COND|
+#
+## MYSTIC features
+CF-M1|Ch3 p26|Alter the Thread|Class feature|Spend conviction: attacker rerolls an attack vs you|conviction; attack reroll|B|AUTO card on attack received (D8 afterResolve)|IT-m11
+CF-M2|Ch3 p26|Mystic bonus feats (Inner Discipline + Technique)|Class feature|As Disciple|grants|A|GRANT|
+CF-M3|Ch3 p26|Mystical Discipline (choice)|Class feature|Choose 1 of 5 disciplines|CHOICE|B|CHOICE|
+CF-M4|Ch3 p26|Mystical Power|Class feature|2 cantrips + 2 PP2 spells of Path tradition as innate Focus; +1 eligible spell per level|D5; spellChoice; repertoire flag|B|repertoire pick w/ PP cap rule|IT-C3
+CF-M5|Ch3 p26|Mystical Resolve|Class feature|+1 conviction pool & points|AE|A|AE|
+CF-M6|Ch3 p26|Monastic Path (Mystic)|Class feature|As SYS-07|CHOICE|B|CHOICE|
+MD-01|Ch3 p27|Inner Flame (discipline)|Mystic discipline|Flame Within; spells Orb of Fire, Circle of Warmth, Fire Bolt 3, Fireball 5, Flame Arrow 7, Burning Stride 9, Rise of the Phoenix 11, Aura of Heat 13, Incendiary Cloud 15|D5; levelled grantedSpells|A|PACK ability + levelled grants|
+MD-01a|Ch3 p27|Flame Within|Discipline ability|Focus free; trigger take damage: +1 circ attack (stack to +3), reset|damage hook|A|AUTO on damage hook|IT-M3
+MD-02|Ch3 p28|Dragon Soul (discipline)|Mystic discipline|Dragon's Pulse; Light, Mage Armour, Resist Energy, Fly, Dragon Fear, Breath of the Dragon, Shape of the Wyrm, True Seeing, Wind Walk|D5|A|PACK + grants|
+MD-02a|Ch3 p28|Dragon's Pulse|Discipline ability|Focus free; trigger hit with Focus technique or melee: +Wis base dmg (min 1), +1 at 6, 12, 18|strike hook; RIDER|B|offer on trgPrimeStrikeRolled|
+MD-03|Ch3 p28|Still Mind (discipline)|Mystic discipline|Centred Awareness; Guidance, Anticipate Attack, Reflective Mind, Stun Relief, Nondetection, Serene Defence, Shared Will, Spell Turning, Mind Blank|D5|A|PACK + grants|
+MD-03a|Ch3 p28|Centred Awareness|Discipline ability|Focus free: advantage on Cleansing Trance / Clear Mind / Healing Trance|COND actions (Focus spend on use)|B|COND + spend on tick|
+MD-04|Ch3 p29|Starborn Flow (discipline)|Mystic discipline|Echoes Beyond; Burst of Speed, True Strike, Air Step, Misty Step, Timeless Motion, Shadow Walk, Teleport, Elude Time, Moment of Renewal|D5|A|PACK + grants|
+MD-04a|Ch3 p29|Echoes Beyond|Discipline ability|Focus free: advantage on a d20 check made as part of a Focus technique/innate spell|COND w/ Focus-source predicate|B|COND + spend|
+MD-05|Ch3 p29|Thousand Reflections (discipline)|Mystic discipline|Echo Form; Ghost Sound, Cloak of Greying, Invisibility, Mirror Image, Dimension Door, Displacement, Mislead, Hindsight, Hand of Tide|D5|A|PACK + grants|
+MD-05a|Ch3 p29|Echo Form (Thousand Reflections)|Discipline ability|Focus Shadow Reaction: targeted by attack -> concealed until next turn|D8 beforeHit|B|RX|D8
+#
+## OATHBLADE features
+CF-O1|Ch3 p30|Challenge|Class feature|Flourish Focus Mental 1 AP; see target; vs target +class bonus melee atk & dmg, AR = class bonus; -2 circ DB vs others; one target; ends on kill/0 HP/unconscious/surrender/encounter end/new Challenge|COND targetUuids; slain hook; deleteCombat|A|AUTO effect w/ COND (valueFrom classBonus) + end hooks|
+CF-O2|Ch3 p30|Sworn Oath (choice)|Class feature|Choose 1 of 4 oaths; changing is GM-gated|CHOICE|B|CHOICE|
+CF-O3|Ch3 p30|Unwavering Purpose|Class feature|Cha instead of Wis for Refocus|D3|A|AE actionAbilityOptions|D3
+CF-O4|Ch3 p30|Oathblade's Resolve|Class feature|+1 conviction pool & points|AE|A|AE|
+CF-O5|Ch3 p30|Oathblade bonus feats (Quick Draw)|Class feature|Quick Draw (core) + class feat; +1 every 3|grants|A|GRANT|
+OA-01|Ch3 p31|Oath of Honour|Sworn Oath|No ally adjacent to target: +2 circ DB vs it; first melee Strike per round advantage; target can't flank you; suppressed on interference|adjacency; per-round flag|A|AE COND w/ adjacency predicate + round reset|
+OA-02|Ch3 p31|Oath of Guardianship|Sworn Oath|Target -2 circ atk vs your allies; first time per round it damages an ally: advantage next melee Strike + Cha base dmg|COND on target (sourceUuids); damage hook|A|effect on target + hook|
+OA-03|Ch3 p31|Oath of Vengeance|Sworn Oath|First time per round target damages you/ally: Retribution (adv, +Cha base dmg, +2 AR on next melee Strike) until end of next turn; persists if ally dropped|damage hook; pending mod|A|hook + pending modifier|
+OA-04|Ch3 p31|Oath of Fealty|Sworn Oath|Daily-prep Sworn Charge; within 30 ft: charge +1 circ atk & AR 1 vs target; cross +2 circ follow-ups (one pending each)|distance; daily prep; damage hook|B|AUTO designate + hooks|
+#
+## SKILL ACTIONS (Ch4) — 17 new
+SA-01|Ch4 p35|Evade (Acrobatics)|Skill action|Defence Reaction; Inner Discipline; vs own Level DC; Bonus Check -> dodge bonus vs the attack|D8 beforeHit; core Bonus Check|B|SA + RX|D8
+SA-02|Ch4 p35|Interpret Style (Artistry)|Skill action|Concentrate Mental 3 AP; vs target Level DC; Bonus Check /2 -> circ AB & DB vs target while in stance; one instance|SA; effect w/ target COND; D7 stance query|B|SA + resolved hook effect|
+SA-03|Ch4 p36|Root the Body (Athletics)|Skill action|Defence Reaction before a prone/forced-move check or save; Bonus Check -> circ to it|D8 beforeSave|B|SA + RX|D8
+SA-04|Ch4 p36|Wall Run (Climbing)|Skill action|Flourish Movement 1 AP; Inner Discipline; vs Climb DC; distance by degree; Fumble prone|SA outcomes|B|SA (movement narrative)|
+SA-05|Ch4 p36|Recognise Discipline (Culture)|Skill action|Concentrate 1 AP; vs target Level DC; info by degree|SA|B|SA|
+SA-06|Ch4 p36|Centred Balance (Meditation)|Skill action|10 min (or 1 min -2, 1 round -5, 1 AP -10); Inner Balance; Bonus Check -> circ to next listed check|SA + pending modifier|B|SA + resolved hook|
+SA-07|Ch4 p37|Guide the Breath (Meditation)|Skill action|Concentrate Mental 1 AP; ally within 10 ft with an expended Focus ability; Bonus Check -> circ to its next Refocus|SA + pending modifier on target scoped refocus|B|SA + hook|
+SA-08|Ch4 p37|Steady Heart (Meditation)|Skill action|1 AP; frightened or Emotion/Fear; reduce frightened by degree; save bonus|SA + condition tags|A|SA + hook applies conditions|
+SA-09|Ch4 p37|Resist Dying (Mental Focus)|Skill action|1 AP; Inner Discipline; Bonus Check -> bonus to Dying Check|core dying workflow|B|SA + pending modifier scoped dying|
+SA-10|Ch4 p37|Maintain Clarity (Mental Focus)|Skill action|1 AP; ignore 4/2/1 distraction penalty; Fumble -1|pending modifier|B|SA|IT-m17
+SA-11|Ch4 p37|Steel the Mind (Mental Focus)|Skill action|Defence Reaction before a Will save vs Emotion/Mental; Inner Discipline; Bonus Check -> circ|D8 beforeSave|B|SA + RX|D8
+SA-12|Ch4 p38|Elemental Ward (Nature)|Skill action|10 min; Elemental Ward feat; 10-ft circle; resistance (acid/cold/electricity/fire) for those inside; DC 20; duration by degree; Blunder grants weakness|region effect|B|SA + region w/ AE|IT-M19
+SA-13|Ch4 p38|Read the Elements (Nature)|Skill action|1 min; info by degree; crit -> Nature for Track 1 h|registerSkillSubstitution (timed)|B|SA|
+SA-14|Ch4 p38|Read Spiritual Echo (Occultism)|Skill action|1 min; info by degree|SA|B|SA|
+SA-15|Ch4 p39|Observe Technique (Perception)|Skill action|1 AP; target used stance/form/Focus since your last turn; info; crit +2 circ next defence vs it|SA + pending|B|SA|
+SA-16|Ch4 p39|Read Devotion (Religion)|Skill action|1 min; info by degree|SA|B|SA|
+SA-17|Ch4 p39|Read Intent (Sense Motive)|Skill action|1 AP; 30 ft; +2/+1 circ DB/saves vs target; no flanking; once per round per creature|SA + target COND|A|SA + effect|
+SA-18|Ch4 p35-39|Identify Magic / Recall Knowledge mapping by tradition (Arcana, Nature, Occultism, Religion)|Rule text|Matches core|core|A|core|
+#
+## RACIAL FEATS (Ch5) — 47
+FR-01|Ch5 p41|Adaptive Mind|Racial feat (Human)|Inner Discipline; conviction reroll of Mental Focus only expended on success+|registerFeatAccess race Human; conviction workflow|B|COND + note; conviction refund on resolved hook|
+FR-02|Ch5 p41|Ancestral Communion|Racial feat (Miraku)|Advantage on Spirit Lore RK re spirits; learn origin|COND specialist skill|B|COND|
+FR-03|Ch5 p41|Awaken the Animism|Racial feat (Miraku)|Focus Morph L10 1 AP 1 min; heritage-specific boost|AUTO by heritage|A|AUTO effect by heritage|
+FR-04|Ch5 p41|Bear's Endurance|Racial feat (Mujina)|Impact Absorption +2 DR instead of +1; +2 racial vs prone/move from that attack|modifies H-03|B|flag read by H-03 RX|IT-M21, D8
+FR-05|Ch5 p41|Blinding Majesty|Racial feat (Ryukari)|Arcane Focus Light Save 2 AP 10-ft emanation Reflex vs Level DC; dazzled/blinded ladder; exclude allies|area save workflow (peril/area)|A|AUTO area save + condition tags|
+FR-06|Ch5 p41|Celestial Breath|Racial feat (Ryukari)|L5 Arcane Focus Save 2 AP 15-ft cone basic Reflex; 1d6 per 2 levels (min 2d6); type by heritage|core creatureAbility.area pattern / applyTypedDamage|A|AUTO cone + basic save + damage|
+FR-07|Ch5 p41|Celestial Footing|Racial feat (Shinryu)|L10; may end on air until end of next turn|n/a|D|description|
+FR-08|Ch5 p42|Draconic Armament|Racial feat (Ryukari)|Bite 1d6 P Finesse Unarmed or Claw 1d4 S Agile Finesse Unarmed; take twice|grantedWeapons + weaponChoice|A|grantedWeapons via choice|
+FR-09|Ch5 p42|Elemental Ascendant|Racial feat (Tianzhi)|Elemental Supremacy, Meditation 10; one PP6 element spell innate Focus|spellChoice filtered by element; D5|B|spellChoice|IT-C2
+FR-10|Ch5 p42|Elemental Attunement|Racial feat (Tianzhi)|+2 racial RK re element; +1 racial innate attack & DC for element spells|COND traits|A|COND|IT-C2
+FR-11|Ch5 p42|Elemental Infusion|Racial feat (Tianzhi)|Focus Inner Discipline 1 AP 1 min: melee +1d4 element damage|RIDER|A|AUTO RIDER|IT-C2
+FR-12|Ch5 p42|Elemental Power|Racial feat (Tianzhi)|PP2 element spell innate Focus|spellChoice|B|spellChoice|IT-C2
+FR-13|Ch5 p42|Elemental Supremacy|Racial feat (Tianzhi)|Elemental Power, Meditation 5; PP4 element spell innate Focus|spellChoice|B|spellChoice|IT-C2
+FR-14|Ch5 p42|Fateful Coincidence|Racial feat (Human, Kornargon)|1/session GM boon|n/a|D|description + uses counter|
+FR-15|Ch5 p42|Forgeheart|Racial feat (Zenki)|L5 fire resistance; heritage craft bonus +2|AE|A|AE|
+FR-16|Ch5 p42|Fortified Carapace|Racial feat (Kabuto)|L5 +1 natural DR|AE|A|AE|
+FR-17|Ch5 p42|Fortune's Reversal|Racial feat (Fuku)|L5 Chance Focus R; on fumble (attack/skill/save): reroll|D8 afterResolve; trgPrimeCheckResolved|B|RX on check-resolved hook|
+FR-18|Ch5 p43|Foxfire|Racial feat (Kitsune)|Ethereal Focus Light 1 AP 60 ft 1 min; 3 movable lights|token/light creation|B|AUTO light tokens|
+FR-19|Ch5 p43|Guardian's Intercession|Racial feat (Mujina)|L5 Defence Focus Movement R; ally targeted: Step, become target, +1 circ DB & DR|D8 beforeHit retarget|B|RX|D8
+FR-20|Ch5 p43|Hive Coordination|Racial feat (Scree)|+2 racial Aid when the ally understands Scree Cant|core aid-bonus; language check|A|COND actions:aid|
+FR-21|Ch5 p43|Hoardkeeper's Eye|Racial feat (Fuku)|Treasure Sense 60 ft; exact within 10 ft|n/a|D|description|
+FR-22|Ch5 p43|Immovable Plating|Racial feat (Kabuto)|+2 racial vs prone/moved; forced movement -5 ft|COND; displacement hook|B|COND + note|
+FR-23|Ch5 p43|Keeper of Endings|Racial feat (Kura)|Undead Lore; +2 racial Occultism/Religion re undead|specialist grant; COND|A|grantedSpecialistSkills + COND|
+FR-24|Ch5 p43|Lantern Signal|Racial feat (Hotaru)|Free light patterns; silent signalling 1 mile|n/a|D|description|
+FR-25|Ch5 p43|Magma Channel|Racial feat (Zenki)|Arcane Fire Focus 1 AP: next melee hit +1d6 secondary fire, Magical|RIDER oncePerTurn|A|AUTO RIDER|
+FR-26|Ch5 p43|Many-Faceted Vigilance|Racial feat (Scree)|Compound Eyes +2; +10 racial Initiative|AE|A|AE|IT-M26
+FR-27|Ch5 p44|Many Tailed Cunning|Racial feat (Kitsune)|+2 racial Bluff with Ghost Sound/Fluid Form; +2 after being seen through|COND|B|COND ticked|
+FR-28|Ch5 p44|Mist Veil|Racial feat (Zennyo)|Arcane Focus Water 2 AP 10-ft emanation to next turn; concealment both ways|aura region|B|AUTO aura effect|
+FR-29|Ch5 p44|Paralysing Venom|Racial feat (Suzume)|Focus Poison Save free on Sting damage; Fort vs Level DC ladder|strike hook|B|offer on trgPrimeStrikeRolled (Sting)|
+FR-30|Ch5 p44|Perfected Form|Racial feat (Miraku)|Deception 5; Fluid Form copies a Studied Target|core study-target|C|flag read by RA-02 + description|
+FR-31|Ch5 p44|Predator's Momentum|Racial feat (Byakko)|Pounce >= 20 ft: +1 circ AB, +1d6 precision once|modifies H-06|A|flag in H-06|
+FR-32|Ch5 p44|Purifying Touch|Racial feat (Zennyo)|Purify water; +2 Nature re unsafe water|COND|D|description + COND|
+FR-33|Ch5 p44|Raptorial Refinement|Racial feat (Kamiri)|Raptorial Blade AR 2 & Versatile P|item update on grant|A|AE on weapon / swap item|
+FR-34|Ch5 p45|Serpent's Venom|Racial feat (Orochi)|L5 Focus Poison 1 AP: next melee hit Fort vs Level DC; Sickened 1/2; fumble +1d6 poison per 3 levels|RIDER w/ save|A|AUTO|
+FR-35|Ch5 p45|Silk Spinner|Racial feat (Joro)|50 ft rope per 10 min; +2 racial Crafting w/ silk|item create; COND|B|AUTO creates gear item|
+FR-36|Ch5 p45|Spirit Beacon|Racial feat (Hotaru)|L5 Ethereal Focus 1 AP 1 min; bright 20; allies +2 circ spirit checks, +1 circ saves vs possession/spirits|aura COND|B|AUTO aura + COND|IT-M21
+FR-37|Ch5 p45|Spirit Roar|Racial feat (Byakko)|Intimidate 5; Auditory Emotion Fear Focus 1 AP 15-ft emanation; one Demoralise roll vs each enemy; immune for encounter|core Demoralise resolution|A|AUTO multi-target Demoralise|
+FR-38|Ch5 p45|Spiritual Resilience|Racial feat (Miraku)|+2 racial saves vs possession & Soul; Wis for Fort/Ref vs spirits|COND|B|COND|
+FR-39|Ch5 p45|Tianzhi Discipline|Racial feat (Tianzhi)|+2 racial Refocus; first Refocus each day auto-Critical|COND actions:refocus; D4|A|COND + D4 flag|D4
+FR-40|Ch5 p45|Tianzhi Meditation|Racial feat (Tianzhi)|+1 racial Meditation; advantage on first trance each day|COND; daily counter|A|COND + daily flag|
+FR-41|Ch5 p45|Tianzhi Scholar|Racial feat (Tianzhi)|+1 racial Meditation & Nature; +2 racial specialist|COND|A|AE|
+FR-42|Ch5 p46|Valley Chill|Racial feat (Kura)|Arcane Cold Focus Save 2 AP 10-ft emanation Fort; speed penalties; fumble Slowed 1|area save|A|AUTO area save|
+FR-43|Ch5 p46|Waiting Blade|Racial feat (Kamiri)|L5 Attack Focus R; missed by melee within reach: Raptorial Blade Strike|D8 afterResolve (miss)|B|RX on strike hook|
+FR-44|Ch5 p46|Web Snare|Racial feat (Joro)|Silk Spinner, L5; Focus Save 2 AP 30 ft; Reflex; Immobilized (Escape vs Level DC); one victim|single-target save; conditions|A|AUTO|
+FR-45|Ch5 p46|Weightless Footwork|Racial feat (Ren)|Ignore first 5 ft difficult terrain per Move; advantage Balance|COND|B|COND + description|
+FR-46|Ch5 p46|Wind-Borne Motion|Racial feat (Ren)|Acrobatics 5; Focus Movement 1 AP; Stride over liquid/gaps|movement|C|AUTO spend + card|
+FR-47|Ch5 p46|Wings Unfurled|Racial feat (Suzume)|L10 Fly = land Speed|AE speeds|A|AE|
+FR-48|Ch5 p46|Existing core racial feats opened to the four races (25 feats)|Feat access|Per-race lists|registerFeatAccess("race")|A|registerFeatAccess|
+#
+## ARCHETYPES (Ch5) — 21 (+ granted abilities)
+FA-01|Ch5 p47|Brawler|Archetype|Non-Disciple; Powerful Fists; Disciple feats; Prog "Level +10"|registerArchetype classGrants Disciple; D12|A|PACK + registerArchetype|D12
+FA-02|Ch5 p47|Dragon Tamer|Archetype|Inner Discipline, Arcana 8, Dragon Lore; special: egg; Dragon Companion; Prog Arcana +10|D10; D14 egg prerequisite|B|PACK + companion creation|D10, IT-C5
+FA-03|Ch5 p47|Formbinder|Archetype|Kensai; BAB +2; two forms active, activate one per turn; best-of overlap; Twin Dragon form; Prog BAB +10|D7 keep:2|A|STANCE keep 2 + grant Twin Dragon|D7
+FA-03a|Ch5 p47|Twin Dragon (form)|Combat Form|First hit per round +1 DB to next turn; first avoided attack per round +1 base dmg to end of next turn|hooks|A|STANCE + hooks|IT-m23
+FA-04|Ch5 p47|Harmony Warden|Archetype|Adept; Inner Discipline, Meditation 2; +4 class Refocus/Healing Trance/Power Recovery in wilderness; 1/day 10-min PP2+ Verdant Utility innate|COND (ticked wilderness); spellChoice daily|B|PACK + COND + AUTO daily pick|
+FA-05|Ch5 p48|Iaijutsu Master|Archetype|Martial Oathblade; Perception 2; +25 class Initiative w/ sword sheathed; Drawn Verdict|initiative COND; held-items state|B|PACK + COND ticked|
+FA-05a|Ch5 p48|Drawn Verdict|Archetype ability|Attack Flourish Focus 1 AP; Challenge active; sheathed sword; draw+Strike; no reactions; damage -> no reactions until its turn|core Quick Draw/held items; reactions block flag|A|AUTO|
+FA-06|Ch5 p48|Inner Adept|Archetype|Meditation 2, Non-Disciple, Non-Mystic; Inner Discipline; class skill choice; Disciple feats; choose a Path|grants; registerClassSkillGrant|B|PACK + CHOICE|
+FA-07|Ch5 p48|Jade Physician|Archetype|Disciple; Medicine 2; Medicine class skill; +2 class Medicine (treat actions); Restorative Palm|COND actions|A|PACK + COND|
+FA-07a|Ch5 p48|Restorative Palm|Archetype ability|Focus Healing 2 AP touch; 4 HP/level OR stop bleeding 1 per 2 levels OR new save vs poison/disease; immune 1 h; living only|healActor; bleeding API|B|AUTO choice|
+FA-08|Ch5 p48|Lotus Enchanter|Archetype|Adept; ID, Deception 2, Diplomacy 2; Enchantment spells join Mystic Essence; +1 class atk/DC|spellChoice filter; COND traditions|B|flag on Mystic Essence picker|
+FA-09|Ch5 p49|Night Lotus|Archetype|Expert; Medicine 2; Medicine class skill; poison resistance; Night Lotus Venom|AE|A|PACK + AE|
+FA-09a|Ch5 p49|Night Lotus Venom|Archetype ability|Focus Manipulate Poison 1 AP; coat weapon until next turn or first damage; Fort ladder; -1 if Unseen Assault|RIDER w/ save|A|AUTO|IT-m24
+FA-10|Ch5 p49|Oathbound|Archetype|Martial; Non-Disciple, Non-Oathblade, Mental Focus 1; Mental Focus class skill; Bound Challenge (conviction); katana & wakizashi|reuse CF-O1 with conviction cost|A|PACK + AUTO variant|IT-M13
+FA-11|Ch5 p49|Onmyoji Necromancer|Archetype|Adept; ID, Medicine 2, Religion 2; Soul spells join Mystic Essence; +1 class atk/DC|picker filter; COND|B|flag|
+FA-12|Ch5 p50|Ronin|Archetype|Oathblade; Survival 2; Deception class skill; Wandering Creed (daily oath); Turning the Blade|daily prep choice; RX|B|PACK + AUTO + RX|
+FA-12a|Ch5 p50|Turning the Blade|Archetype ability|Flourish Mental R; damaged by another creature: Challenge moves to it, no Focus|damage hook (afterResolve)|B|RX via hook|
+FA-13|Ch5 p50|Shadowdancer|Archetype|ID, Stealth 2, Non-Rogue; +2 class Stealth; Stealthy Strike (core feat); Shadow Step (core SPELL) innate|grants; D5|A|PACK + grants|IT-M14
+FA-14|Ch5 p50|Shugenja|Archetype|Adept; Learned Caster, Arcana/Nature/Religion 2; element; 2 daily innate Focus spells with element traits|daily spellChoice w/ cap|B|AUTO daily pick|IT-C6, IT-C9
+FA-15|Ch5 p50|Soul Weapon Master|Archetype|Disciple Kensai Oathblade; Mental Focus 2; bond a melee weapon at daily prep; BAB damage & material scaling; unarmed abilities usable|D11, D12|B|AUTO bond + flags|D11, D12
+FA-16|Ch5 p51|Steel Disciple|Archetype|Martial; BAB +2, martial proficiency; one Combat Form as a stance; class skill; Kensai feats; Prog BAB +12|D7; CHOICE|B|PACK + CHOICE + STANCE|D7
+FA-17|Ch5 p51|Tanuki Trickster|Archetype|ID, Deception 4; +2 class Deception; "Humanoid Form" (=Shape of the Humanoid) & Mirage Entity innate Focus|D5; IT-M6|A|PACK + grants|IT-C8
+FA-18|Ch5 p51|Twin Path|Archetype|Mystic; Meditation 4; second discipline ability + its 1st-level spells|CHOICE|B|CHOICE|
+FA-19|Ch5 p51|Veilborn|Archetype|Ghostwalker; Mental Focus 2; extra Focus Ghost Art; +2 class Refocus (Ghost Arts); +1 class DB after concealing/teleport arts|COND scoped; hook|A|PACK + COND + hook|
+FA-20|Ch5 p51|Way of the Geisha|Archetype|Diplomacy 2; Affable (core); +2 class Artistry, Diplomacy, Perform|COND|A|PACK + COND|IT-M20
+FA-21|Ch5 p51|Zen Archer|Archetype|Martial; ID, Mental Focus 1; bow proficiency; Perfect Shot; unarmed abilities with bows; archer archetype feats|weaponGroupProficiency; D11|B|PACK + AE flags|D11
+FA-22|Ch5 p51|Existing core archetypes opened (Assassin, Mastermind, Vanguard, Runemage, Archer, Armour Master, Cavalier, Champion)|Feat access|Per-class lists|registerFeatAccess("class")|A|registerFeatAccess|
+FA-23|Ch5 p47|Archetype progression requirements (21)|Rule|Parser forms: Level/BAB/skill ranks; "Gained class skill +10 ranks"|core archetype-progression|A|progressionRequirements text in parser shapes|
+#
+## CLASS FEATS (Ch5) — 54
+FC-01|Ch5 p52|Abundant Step|Class feat|ID, L8; Focus Flourish Teleportation 1 AP (magical, Path tradition): teleport within Speed in sight|core teleport + trait rule|A|AUTO|
+FC-02|Ch5 p52|Action Before Thought|Class feat|ID, Mental Focus 5; Focus free: advantage on initiative|trgPrimeInitiativeRolled|B|COND on initiative + spend|
+FC-03|Ch5 p52|Ambusher's Patience|Class feat (Ghostwalker)|L5 Stealth 5; first Unseen Assault per encounter vs undetected creature +2d6 precision (once per creature)|per-encounter flag; RIDER|B|RIDER ticked|
+FC-04|Ch5 p52|Between Glances|Class feat (Ghostwalker)|L7; Ghostwalk crosses 20 ft open ground|n/a|D|description|
+FC-05|Ch5 p52|Blended Form|Class feat (Kensai)|L8; merge two named forms into one|D7 combined stance effect|A|STANCE composite|D7
+FC-06|Ch5 p52|Bounding Step|Class feat|ID, L5; Focus 2 AP 1 min; Fly = land, must end turn on surface; 9th: DC 25 Acrobatics to stay aloft|AE speeds; turn-end check|B|AUTO + turn-end prompt|IT-m20
+FC-07|Ch5 p52|Claim the Next Foe|Class feat (Oathblade)|L8; Flourish Focus free on disabling/surrender: restore Challenge, free Challenge on another|slain hook|B|offer on trgPrimeCreatureSlain|
+FC-08|Ch5 p52|Crane Stance|Class feat (Disciple, Mystic)|Devoted or Primal; Stance: +2 circ DB; jump difficulty -5|D7|A|STANCE|D7
+FC-09|Ch5 p52|Dancing Leaf|Class feat (Disciple, Ghostwalker)|Jumps +5 ft; no fall damage distance while adjacent to wall|n/a|C|description + jump note|
+FC-10|Ch5 p53|Deflect Arrow|Class feat (Disciple, Kensai, Oathblade)|Dex 2; Free on taking Evade vs ranged: +4 circ DB|D8 (with SA-01)|B|RX chained to Evade|D8
+FC-11|Ch5 p53|Disciplined Follow-Through|Class feat (Kensai)|Flow Strike hit +2 base dmg|flag read by CF-K2|A|flag|IT-M7
+FC-12|Ch5 p53|Distant Honour|Class feat (Oathblade)|L5; Challenge bonuses to bow attacks in 1st increment|COND scope|A|COND|
+FC-13|Ch5 p53|Dragon Stance|Class feat (Disciple, Mystic)|Primal or Transcendent; +2 circ AB; attacks gain Sweep; ignore first difficult square|D7; weapon trait add|A|STANCE + trait flag|D7
+FC-14|Ch5 p53|Drunken Stance|Class feat (Disciple, Mystic)|Devoted or Primal; +2 circ DB; Drunken Strike|D7|A|STANCE|D7
+FC-14a|Ch5 p53|Drunken Strike|Feat action|Attack Flourish 1 AP; -2 circ; on damage counts as a Feint vs the target (DC = attack total)|core Feint flat-footed|A|AUTO|
+FC-15|Ch5 p53|Echo Form (Kensai)|Class feat (Kensai)|L12, Blended Form; 0 AP on form change: keep one passive of previous form 3 rounds|stance effect carry-over|B|AUTO choice|IT-M12
+FC-16|Ch5 p53|Elemental Fist|Class feat|Inner Strike; choose electricity/bludgeoning/fire/cold|flag on Inner Strike|A|flag|
+FC-17|Ch5 p53|Extra Form|Class feat (Kensai)|L3; +1 form; repeatable once per 3 levels|repeatLimit|A|feat repeatable + form choice|
+FC-18|Ch5 p53|Extra Ghost Art|Class feat (Ghostwalker)|L3; +1 Ghost Art; repeatable once per 3 levels|repeatLimit|A|feat + choice|
+FC-19|Ch5 p53|Fleeting Shadow|Class feat (Ghostwalker)|L11; Vanishing Retreat Step 10 + Hide|flag on CF-G3|A|flag|
+FC-20|Ch5 p53|Fluid Blending|Class feat (Kensai)|L12, Blended Form; re-blend at daily prep|daily prep choice|B|AUTO|
+FC-21|Ch5 p53|Form Reversal|Class feat (Kensai)|L6; Flourish R when missed by melee: change Combat Form|D7; hook|B|RX on miss|IT-M11
+FC-22|Ch5 p54|Formal Declaration|Class feat (Oathblade)|Challenge also Demoralises target (+2 circ if it understands); immune per encounter|chain action|A|flag in CF-O1|
+FC-23|Ch5 p54|Formless Cut|Class feat (Kensai)|L14, three Kensai feats; Attack Flourish 1 AP: +4 AB, ignore stance bonuses, +Int base dmg, target flat-footed|strike options|A|AUTO|D14
+FC-24|Ch5 p54|Ghost Art Mastery|Class feat (Ghostwalker)|L14; one Focus Ghost Art +1 use; repeatable on different arts|D1 names filter|A|AE focusExtraUses names|D1
+FC-25|Ch5 p54|Ghost Blade|Class feat (Ghostwalker)|L6; Unseen Assault strikes AR 1/2/3 at 6/12/18|RIDER AR|A|flag on CF-G2|
+FC-26|Ch5 p54|Guarded Commitment|Class feat (Oathblade)|Challenge DB penalty -1|flag on CF-O1|A|flag|
+FC-27|Ch5 p54|Inner Blast|Class feat|ID, L5; Focus Force Save 1-3 AP: cone 15/30/60 ft 2d6/3d6/4d6 force basic Fort vs Technique Save DC; magical|area save|A|AUTO AP choice|IT-M5
+FC-28|Ch5 p54|Inner Discipline|Class feat|Wis 4, Mental Focus 10, mentor; grants Disciplined Flurry, Burst Step, Guarded Centre; unlocks Technique feats|grants; feat gate|A|PACK + grants + registerFeatGate("Technique")|IT-M4
+FC-28a|Ch5 p54|Disciplined Flurry|Technique|Focus Reaction on Flurry of Blows: one extra attack at highest bonus|chained to CF-D4|A|flag in Flurry AUTO|
+FC-28b|Ch5 p54|Burst Step|Technique|Focus Reaction on a Movement action: +10 Speed to next turn|trgPrimeActionAttempt (movement)|B|offer on movement|IT-m20
+FC-28c|Ch5 p54|Guarded Centre|Technique|Focus Reaction when targeted: +4 dodge DB to next turn|D8 beforeHit|B|RX|D8
+FC-29|Ch5 p54|Inner Infusion|Class feat|ID; Focus 1 AP: +2 status Str or Dex 1 min|AE timed|A|AUTO|
+FC-30|Ch5 p54|Inner Magic|Class feat|ID, L4, Non-Mystic; one Path cantrip innate Focus; Mystic feats|D5; spellChoice|B|spellChoice + registerArchetype-like access|IT-M6
+FC-31|Ch5 p55|Inner Mind|Class feat (Disciple, Mystic)|ID, L6; Focus R on succumbing to fear: suspend 1 min|condition suspension|B|AUTO pause effect + timer|
+FC-32|Ch5 p55|Inner Rush|Class feat|ID; Focus Flourish Movement 1 AP: two Stride/Step; concealed to next turn|movement + effect|B|AUTO|
+FC-33|Ch5 p55|Inner Sight|Class feat|ID; Focus 2 AP 1 min Nightvision; 8th 10 min; 12th Darkvision|AE senses timed|A|AUTO|
+FC-34|Ch5 p55|Inner Stamina|Class feat|ID; Focus 1 AP: +4 resistance Fort 1 min|AE timed|A|AUTO|
+FC-35|Ch5 p55|Inner Strike|Class feat|ID; Focus 1 AP until end of turn: +1 status unarmed atk, +1d6 secondary (force/aligned/negative/positive) +1d6 at 8/12/16|RIDER; D11|A|AUTO RIDER|
+FC-36|Ch5 p55|Mantis Stance|Class feat (Disciple, Mystic)|Stance: unarmed Deadly; +2 circ Reflex; one Move per turn no reactions|D7; D12|A|STANCE|D7
+FC-37|Ch5 p55|Monkey Stance|Class feat (Disciple, Mystic)|Stance: +2 circ Acrobatics & Climbing & jumps; no 1-AP jump penalty|D7|A|STANCE|D7
+FC-38|Ch5 p55|Mystic Essence|Class feat (Mystic)|One Path-tradition spell base PP <= level+1 innate Focus|spellChoice; D5|B|spellChoice|
+FC-39|Ch5 p55|Perfect Shot|Class feat (Archer, Ranger, Zen Archer)|Dex 1 Wis 1 BAB 8; Attack Flourish 2 AP ranged Strike, counts 2 for MAP, advantage|MAP counter|A|AUTO|
+FC-40|Ch5 p55|Perfect Strike|Class feat (Fighter, Disciple)|As Perfect Shot, melee|MAP|A|AUTO|
+FC-41|Ch5 p55|Perfect Tempo|Class feat (Kensai)|L10, Disciplined Follow-Through; 0 AP on Flow Strike hit: Step; +1 AB vs new adjacent enemy|chained|B|AUTO|IT-M7
+FC-42|Ch5 p56|Shadow Counter|Class feat (Ghostwalker)|L9, Deception 5; R when missed: Step 5, Feint; success -> flat-footed (enables Unseen Assault)|hook; core Feint|B|RX on miss|
+FC-43|Ch5 p56|Shadowy Stance|Class feat (Disciple, Mystic)|ID, Devoted or Illuminator; Focus Stance 1 min: essence damage; +2 circ Escape|D7|A|STANCE timed|D7
+FC-44|Ch5 p56|Shadowy Step|Class feat (Disciple, Ghostwalker, Mystic)|Stealth 5; Attack 2 AP: Step + melee Strike, target treated as flanked|strike option flat-footed|A|AUTO|
+FC-45|Ch5 p56|Shared Purpose|Class feat (Oathblade)|L10, Oath of Fealty; crit vs target -> other Steps free + advantage; 1/round|crit hook|B|hook|
+FC-46|Ch5 p56|Shelter Under Oath|Class feat (Oathblade)|L10, Oath of Guardianship; allies within 30 ft +2 circ saves vs target's effects|aura COND sourceUuids|A|COND|
+FC-47|Ch5 p56|Smoke Eyes|Class feat (Ghostwalker)|Smoke Veil; ignore own smoke concealment|flag|A|flag on GA-07 region|
+FC-48|Ch5 p56|Snake Stance|Class feat (Disciple, Mystic)|ID, Devoted or Illuminator; Stance: reaction Strike vs melee miss, ignores MAP|D7; hook|B|STANCE + RX on miss|D7
+FC-49|Ch5 p56|Solitary Supremacy|Class feat (Oathblade)|L10, Oath of Honour; target gets no ally DB help; allies can't penalise you via Aid|COND suppression|C|COND note|
+FC-50|Ch5 p56|Stunning Fist|Class feat (Disciple)|Flurry both Strikes same target, either damages: Fort vs Technique DC or stunned 1 (stunned 3 on fumble)|flag in CF-D4; save|A|AUTO|IT-M5
+FC-51|Ch5 p57|Tiger Stance|Class feat (Disciple, Mystic)|Stance: slashing; bleed +1; Step 10 ft|D7; D12|A|STANCE|D7
+FC-52|Ch5 p57|Unpaid Debt|Class feat (Oathblade)|L10, Oath of Vengeance; Retribution survives misses|flag on OA-03|A|flag|
+FC-53|Ch5 p57|Walk the Empty Space|Class feat (Ghostwalker)|L15, Between Glances; 40 ft|n/a|D|description|
+FC-54|Ch5 p57|Wolf Stance|Class feat (Disciple, Mystic)|Stance: piercing; Pack Attack|D7; core Pack Attack codex|A|STANCE + grant Pack Attack|D7
+FC-55|Ch5 p57|Existing core class feats opened to the five classes (32 grants)|Feat access|Per-class lists|registerFeatAccess("class")|A|registerFeatAccess|
+#
+## GENERAL FEATS (Ch5) — 22
+FG-01|Ch5 p58|Ancestral Guidance|General feat|Conviction reroll on Recall Knowledge/Create, spent only on success+|conviction refund hook|B|hook|
+FG-02|Ch5 p58|Artisan's Enchantment|General feat|Crafting 5, ID or CL 4; -2 success to add a quality (alteration trait)|core crafting|C|note in Create dialog|
+FG-03|Ch5 p58|Artistic Diversity|General feat|Artistry 10; untrained specialties at Very Hard|core artistry|C|COND note|
+FG-04|Ch5 p58|Artistic Negotiation|General feat|Artistry 2; Artistry for Encourage & Make an Impression|registerSkillSubstitution|A|registerSkillSubstitution|
+FG-05|Ch5 p58|Astral Insight|General feat|Planes 2; advantage on Planes re astral|COND (ticked)|B|COND|
+FG-06|Ch5 p58|Centred Cleansing|General feat|Meditation 5; advantage Cleansing Trance|COND actions|A|COND|
+FG-07|Ch5 p58|Centred Recovery|General feat|Meditation 1; first Refocus each day +1 degree; first Power Recovery each day doubles PP|D4; core powerRecoveryExtra|A|D4 flag + recovery flag|D4
+FG-08|Ch5 p58|Contortionist|General feat|Acrobatics 10; Squeeze in rounds; crit full speed|registerDegreeUpgrades / description|C|description on Squeeze|
+FG-09|Ch5 p58|Elemental Balance|General feat|Survival 5; Survival for saves vs Elemental-trait effects if higher|save substitution|B|COND (difference) ticked|
+FG-10|Ch5 p58|Elemental Ward|General feat|Nature 5; unlocks SA-12|feat-gated SA|A|SA requirement|
+FG-11|Ch5 p58|Ethereal Sight|General feat|Perception 5, Sense Motive 5; see incorporeal; magical attacks normal; hidden flat DC +2|core senses; flat check|B|AE sense + flag|
+FG-12|Ch5 p58|Inner Balance|General feat|Meditation 2; unlocks SA-06|feat-gated SA|A|SA requirement|
+FG-13|Ch5 p58|Leap|General feat|Athletics 10; auto-succeed jumps DC <= 20|degree upgrade|A|registerDegreeUpgrades / check hook|
+FG-14|Ch5 p58|Meditative Recovery|General feat|Meditation 4, ID; Healing Trance in 10 min|core rest flag|B|flag read by rest dialog note|
+FG-15|Ch5 p59|Radiant Insight|General feat|Divinity tradition or Devoted Path, Religion 5; Religion for Clear Mind|registerSkillSubstitution|A|registerSkillSubstitution|
+FG-16|Ch5 p59|Sense Ambush|General feat|Perception 5; Awareness DC -5 for direct threats|COND|B|COND ticked|
+FG-17|Ch5 p59|Spatial Balance|General feat|Mental Focus 5; advantage Spatial Awareness|COND actions|A|COND|
+FG-18|Ch5 p59|Spirit Whisperer|General feat|Meditation 5; Gather Information via Meditation with spirits|registerSkillSubstitution|B|substitution + GM note|
+FG-19|Ch5 p59|Stunning Reflexes|General feat|Mental Focus 5; first stun per turn -> free Stunned Manoeuvre|condition hook|B|offer on stun applied|
+FG-20|Ch5 p59|Tranquil Mind|General feat|Mental Focus 5; while in a stance advantage vs emotion/fear|D7 inStance COND|A|COND|D7
+FG-21|Ch5 p59|Veiled Essence|General feat|BSB 2+ or ID, Stealth 2; Ambush & Sniping with spells/innate/Attack techniques|core stealth actions|C|flag + note|D14
+FG-22|Ch5 p59|Zen Awareness|General feat|Perception 5; advantage locating hidden/invisible; their flat DC +1|COND; flat check|B|COND + flag|
+#
+## DRAGON COMPANIONS (Ch5)
+DC-01|Ch5 p60|Acquiring a dragon (egg + 28-day bonding)|Subsystem|Daily 1-h bonding for a lunar cycle, then Dragon Tamer hatches it|daily prep counter; D14|B|egg item w/ counter|D14
+DC-02|Ch5 p60|Dragon Companion class/progression|Subsystem|Base level + master levels; BAB/BDB = level; saves 5+L; HP size base + (12+Con)/level (+15 observed); 8 skill pts; general feats; Wyrm & Minion; table columns|D10|A|registerCompanionKind + class|D10, IT-C5, IT-M22
+DC-03|Ch5 p62|Cold Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-companions race item|D10
+DC-04|Ch5 p62|Earth Dragon (base)|Companion|Stat block p62|D10|A|PACK|D10, IT-m28
+DC-05|Ch5 p63|Fire Dragon (base)|Companion|Stat block p63|D10|A|PACK|D10
+DC-06|Ch5 p63|Light Dragon (base)|Companion|Stat block p63|D10|A|PACK|D10
+DC-07|Ch5 p64-65|Companion specials (Crush, Draconic Assault, Draconic Shifting, elemental Aura/Blood/Strikes, Frightful Aura, Reflective Scales, Scorching/Slowing Breath, Snowvision, Spell Resilience, Wild Stride, Wing Buffet, Ice Climb, Smokevision, Flyby Attack)|Creature abilities|Reuse core codex entries by name; levelled grants per dragon table|core creature-abilities|A|levelled grants to core codex|D10
+DC-08|Ch5 p60|Sweep (dragon attack)|Creature ability|Undefined|n/a|D|blocked|IT-C5
+DC-09|Ch5 p60|Wings / Tail natural attacks|Natural weapon|Profiles not given|n/a|D|blocked|IT-C5
+DC-10|Ch5 p60|Breath weapon progression|Creature ability|Length per table; damage progression undefined|codex breath|B|area breath w/ table length|IT-C5
+DC-11|Ch5 p65|High Magic (dragon casting)|Subsystem|Any tradition; DC +2; free Heighten; Spell Fumble +50|core magic/high-magic.mjs|A|core flag|
+DC-12|Ch5 p65|Deflecting Wings|Companion feat|Large; R +2 circ DB|D8|B|RX|D8
+DC-13|Ch5 p65|Draconic Spell|Companion feat|Any arcane spell innate Focus; repeatable|spellChoice w/ cap|B|spellChoice|IT-C7
+DC-14|Ch5 p65|Imitate Sound|Companion feat|Light Dragon; Deception +4 circ to mimic|COND|B|COND|
+DC-15|Ch5 p65|Tail Lash|Companion feat|Large, Tail; R tail Strike at -2 when creature in reach Strikes|D8; tail profile|C|RX|IT-C5, D8
+DC-16|Ch5 p66|Losing a dragon|Subsystem|Separation/death -> Refocus Hard (+2 DC), Soul Drain (half level / level), recovery weekly; insanity after a week|core Soul Drain; COND refocus|B|GM macro applies state|
+#
+## GEAR (Ch6)
+GE-01|Ch6 p67|Starting wealth (background & class tables)|Rule|Background & class wealth modifiers|registerClass wealth; background wealth field|A|data fields|IT-m32
+AR-01|Ch6 p67|Haramaki|Armour|Light L0 5 gp ACP 0 MaxDex 10 DR 1 HP 10 1 lb|federated armour|A|PACK:it-armour|
+AR-02|Ch6 p67|Shozoku|Armour|Light L1 100 gp DR 0 HP 8; +2 circ Hide in shadows|COND|B|PACK + COND ticked|
+AR-03|Ch6 p67|Kikko|Armour|Medium L1 150 gp ACP -2 MD 5 DR 3 HP 40 25 lb Metal Rigid|..|A|PACK|
+AR-04|Ch6 p67|Do-maru|Armour|Medium L1 200 gp ACP (-)2 MD 5 DR 3 HP 50 20 lb Full; shoulder crits ignore it|core hit location coverage|A|PACK coversArms:false|IT-m33
+AR-05|Ch6 p67|Kusari|Armour|Medium L2 350 gp ACP -3 MD 4 DR 4 HP 70 40 lb Full Metal|..|A|PACK|
+AR-06|Ch6 p67|Tatami-Do|Armour|Heavy L2 350 gp ACP -6 MD 3 DR 4 HP 80 -5 ft 40 lb Full Metal Rigid|..|A|PACK|IT-I6
+AR-07|Ch6 p67|Yoroi|Armour|Heavy L3 650 gp ACP -7 MD 2 DR 6 HP 100 -5 ft 45 lb Full Helm Metal Rigid|..|A|PACK|
+AR-08|Ch6 p67|Oni-Mask|Armour (helm)|L1 200 gp HP 25 8 lb Metal Rigid; +1 item visual Intimidate|isHelmet; COND|A|PACK + COND|
+AR-09|Ch6 p67|Jingasa|Armour (helm)|L0 20 gp HP 10 4 lb Metal|isHelmet|A|PACK|
+WP-01|Ch6 p69|Hanbo|Weapon|Simple 1 gp 1d6 B M FDC 6 Club; Monastic, Trip|federated weapons|A|PACK:it-weapons|
+WP-02|Ch6 p69|Katar|Weapon|Simple 6 gp 1d4 P S FDC 8 Knife; Agile, Deadly, Monastic, Uncommon|..|A|PACK|
+WP-03|Ch6 p69|Bo Staff|Weapon|Martial 1 gp 1d8 B L FDC 12 Club; Monastic, Parry, Reach, Trip|..|A|PACK|
+WP-04|Ch6 p69|Fighting Fan|Weapon|Martial 5 gp 1d4 S S FDC 6 Knife; Agile, Deadly, Finesse, Monastic, Uncommon|..|A|PACK|
+WP-05|Ch6 p69|Jutte|Weapon|Martial 8 gp 1d6 B S FDC 6 Club; Disarm, Monastic, Versatile S|..|A|PACK|
+WP-06|Ch6 p69|Kama|Weapon|Martial 6 gp 1d6 S S FDC 8 Knife; Agile, Monastic, Trip, Uncommon|..|A|PACK|
+WP-07|Ch6 p69|Kusarigama|Weapon|Martial 12 gp 1d8 S L FDC 16 Knife; Disarm, Monastic, Reach, Trip, Versatile B|..|A|PACK|IT-m34
+WP-08|Ch6 p69|Nunchaku|Weapon|Martial 5 gp 1d6 B M FDC 12 Flail; Backswing, Disarm, Finesse, Monastic, Uncommon|D13 Backswing|A|PACK|D13
+WP-09|Ch6 p69|Sai|Weapon|Martial 1 gp 1d4 P T FDC 5 Knife; Agile, Disarm, Finesse, Monastic, Parry, Uncommon|..|A|PACK|
+WP-10|Ch6 p69|Tonfa|Weapon|Martial 1 gp 1d6 B S FDC 6 Club; Agile, Finesse, Monastic, Parry, Twin, Uncommon|D13 Twin|A|PACK|D13
+WP-11|Ch6 p69|Butterfly Sword|Weapon|Exotic 20 gp 1d4 S S FDC 6 Knife; Agile, Concealable, Disarm, Finesse, Monastic, Parry, Twin; draw as one|D13|A|PACK|D13
+WP-12|Ch6 p69|Meteor Hammer|Weapon|Exotic 10 gp 1d8 B L FDC 16 Flail; Monastic, Reach 15 ft, Trip|reachFeet 15|A|PACK|
+WP-13|Ch6 p69|Naginata|Weapon|Exotic 35 gp 1d8 S L FDC 12 Polearm; AR 2, Reach|..|A|PACK|
+WP-14|Ch6 p69|Nodachi|Weapon|Exotic L2 300 gp 1d10 S L FDC 12 Sword; Brace, Deadly, Keen, Versatile P|D13 Brace|A|PACK|D13
+WP-15|Ch6 p69|Tetsubo|Weapon|Exotic 20 gp 1d10 B L FDC 12 Club; AR 2, Shove|..|A|PACK|
+WP-16|Ch6 p69|Wakizashi|Weapon|Exotic L1 150 gp 1d6 P S FDC 6 Sword; Deadly, Finesse, Keen, Versatile P|..|A|PACK|
+WT-01|Ch6 p69|Monastic (weapon trait)|Weapon trait|Unarmed-only abilities usable with the weapon|D11|A|core countsAsUnarmed|D11
+WT-02|Ch6 p69|Backswing|Weapon trait|MAP counts only damaging attacks|D13|A|core|D13
+WT-03|Ch6 p69|Brace|Weapon trait|Ready vs mounted +2 circ & +1 base die|D13|A|core or RIDER|D13
+WT-04|Ch6 p69|Parry|Weapon trait|Core trait already (IT-M27)|core|A|core|IT-M27
+WT-05|Ch6 p69|Twin|Weapon trait|Double Slice both hit & damage: +1 base each|D13|A|core or RIDER|D13
+#
+## GRIMOIRE (Ch8) — 25 spells
+SP-01|Ch8 p75|Ability Inversion|Spell PP12|Alteration Save; arcane/ethereal; 2 AP; 60 ft 1 creature; Will; swap highest/lowest ability; duration by degree|core spell effects; ability swap AE|B|PACK:it-spells + AUTO effect (swap via AE on attributes)|
+SP-02|Ch8 p75|Acidic Touch|Spell PP6|Acid Invocation Save; arcane/verdant; 1 min; unarmed +1d6 acid; on melee hit Fort: Sickened 1/2|RIDER + save|A|PACK + strikeRiders|
+SP-03|Ch8 p75|Age Resistance|Spell PP10|Alteration Polymorph Utility; until daily prep; ignore physical aging penalties; warps 1 month/unlimited|AP-01 aging|C|PACK + flag read by aging macro|
+SP-04|Ch8 p75|Air Step|Spell PP4|Air Alteration Utility; divinity/verdant; 10 min hover; -10 Speed; -4 circ Acrobatics & Climb; Track -10|AE timed|A|PACK + effects|
+SP-05|Ch8 p75|Arrows Flight|Spell PP2|Air Alteration Utility; arcane/ethereal; 30 projectiles; ranges doubled; warps|ammo flag|C|PACK + card|
+SP-06|Ch8 p75|Aura of Heat|Spell PP14|Aura Fire Invocation Save; arcane/verdant; 1 AP; 10-ft aura 5d10 fire basic Fort each round; fire resistance; light +2; dying flare 6d10 + stabilise 1 HP + Fatigued 2|core auras; sustained; dying hook|B|PACK + aura flag + dying hook|IT-M15
+SP-07|Ch8 p76|Boundless Vision|Spell PP4|Insight Utility; ethereal; 3 AP; 100 ft; sustained; can't be flanked|AE flag|A|PACK + effect|
+SP-08|Ch8 p76|Breath of the Dragon|Spell PP10|Elemental Invocation Save; arcane/verdant; 30-ft cone 8d8 chosen type basic Reflex|core area spell|A|PACK spell area|
+SP-09|Ch8 p76|Burning Stride|Spell PP10|Fire Invocation Save; arcane/verdant; Fort; 4d6; fail: 2d6 persistent on each Movement action; fumble light fire criticals|persistent damage; action hook|B|PACK + effect + actionAttempt hook|IT-M18
+SP-10|Ch8 p76|Burst of Speed|Spell PP0 (cantrip)|Translocation Utility; arcane/ethereal; +20 Speed to end of next turn, then -10|AE two-stage|A|PACK + effect|IT-m38
+SP-11|Ch8 p76|Disrupt Soul|Spell PP18|Curse Essence Soul Save; divinity/ethereal; 30 ft; save each time target casts or uses a magical Focus ability|trgPrimeSpellCast hook|B|PACK + hook|IT-M17
+SP-12|Ch8 p76|Dragon Fear|Spell PP8|Aura Enchantment Fear Save; all traditions; 20 ft 1 min; start-of-turn Will ladder; immune 1 min|core aura save|A|PACK + aura|
+SP-13|Ch8 p77|False Future|Spell PP8|Shadow Utility; divinity/ethereal; touch; until daily prep; divination misdirection|n/a|D|PACK description|
+SP-14|Ch8 p77|Flowing Step|Spell PP4|Alteration Utility; ethereal; 1 AP; to end of turn: advantage Reflex; terrain ease|AE|A|PACK + effect|IT-m39
+SP-15|Ch8 p77|Foretell Failure|Spell PP6|Insight Utility; arcane/divinity/ethereal; 1 AP; reveals whether a roll of 10 would succeed|check preview|C|PACK + card helper|IT-m26
+SP-16|Ch8 p77|Hand of Tide|Spell PP16|Translocation Utility; arcane/divinity; 3 AP; 100 ft; teleport up to 10 creatures; unwilling Will|displace waypoints|B|PACK + AUTO|
+SP-17|Ch8 p77|Reflective Mind|Spell PP4|Utility Warding; reaction: advantage on a Mental+Save save|D8 beforeSave|B|PACK + RX|D8
+SP-18|Ch8 p77|Rise of the Phoenix|Spell PP12|Fire Healing Translocation Utility; verdant; 1 h; soul egg; resurrection|death hook|C|PACK + item + GM prompt|IT-M16
+SP-19|Ch8 p77|Root|Spell PP2|Alteration Earth Utility; arcane/verdant; touch 1 min; +2 circ vs move/trip; warps|COND|A|PACK + effect|
+SP-20|Ch8 p77|Serene Defence|Spell PP10|Stance Utility Warding; divinity/ethereal; sustained; +Wis dodge DB|D7 (stance trait); dodge stacking|A|PACK + effect|D7
+SP-21|Ch8 p77|Skyborne Pathways|Spell PP8|Insight Revelation Utility; verdant; reveal aerial tracks|n/a|D|PACK description|
+SP-22|Ch8 p78|Spiritual Distraction|Spell PP6|Enchantment Mental Save; ethereal; 30 ft; sustained; save on each spell; spell-check penalties|trgPrimeSpellCast hook|B|PACK + hook|
+SP-23|Ch8 p78|Timeless Motion|Spell PP8|Alteration Utility; arcane/ethereal; 1 min; quickened for Movement actions; no reactions|core Quickened (innateQuickened)|A|PACK + effect|
+SP-24|Ch8 p78|Tranquil Mastery|Spell PP12|Insight Utility; all traditions; 10 min; 1 h; Refocus restores a second ability|D4 (choose second)|B|PACK + flag|D4
+SP-25|Ch8 p78|Water Bolt|Spell PP2|Attack Invocation Water; arcane/verdant; touch; spell attack 4d4 B; push 5 ft on serious+ crit|core spell attack|A|PACK|IT-m37
+#
+## MAGIC ITEMS (Ch9)
+MI-01|Ch9 p79|Centred I/II/III (armour rune)|Rune|Item bonus +1/+2/+3 to Refocus; L4/8/12; 750/4,200/16,000 gp|registerRunes; COND actions:refocus|A|PACK:it-runes + COND|
+MI-02|Ch9 p80|Guarded (armour rune)|Rune|L7 3,000 gp; R on crit 1/day: negate extra crit damage, heal half|crit hook|B|registerRunes + hook|
+MI-03|Ch9 p80|Harmony (armour/shield rune)|Rune|L11; Focus Engage 1 AP: +2 dodge DB & +2 resistance saves 1 min (+3 Disciple/Mystic); Refocus|rune focus frequency (core)|A|registerRunes frequency:"focus"|D6
+MI-04|Ch9 p80|Graceful Wind (armour rune)|Rune|L6 2,500 gp; 1/day Engage: +30 status Speed & +2 resistance Reflex 1 min|registerRunes|A|registerRunes|
+MI-05|Ch9 p80|Karmic Resilience (armour rune)|Rune|L11 11,000 gp; R on gaining dying 1/day: 1 HP, no dying, no crit; +2/+4 circ dying checks 1 min|dying hook|B|hook (core death-guard pattern)|
+MI-06|Ch9 p80|Staunching I/II/III (armour rune)|Rune|Bleeding flat checks 14/13/12; moderate/any DC 16|core bleeding flat check|A|registerRunes flag|
+MI-07|Ch9 p80|Harmonious Do-maru|Specific armour|L11 13,000 gp; ACP -1 MD 7 DR 3 HP 55; Expert, Full, Lightweight, Potency I, Harmony|specific-items|A|PACK:it-specific-items|
+MI-08|Ch9 p81|Centred (weapon rune)|Rune|Item bonus to Refocus; tiers undefined|registerRunes|A|PACK (interim tiers)|IT-I7
+MI-09|Ch9 p81|Harmony Edge (weapon rune)|Rune|L12 11,000 gp; R on crit 1/day: advantage on the critical roll|crit hook|B|hook|
+MI-10|Ch9 p81|Mindful (weapon rune)|Rune|L10 6,000 gp; Focus Engage: +Wis to next attack before next turn; Refocus|pending modifier|A|registerRunes|D6
+MI-11|Ch9 p81|Soulful Strike I/II/III (weapon rune)|Rune|L7/12/17; Command 1 AP: secondary force 1d6/2d6/3d6; secondary crit -3/-1|RIDER|A|registerRunes|
+MI-12|Ch9 p81|Tranquil Quiver (weapon rune)|Rune|L10 6,000 gp; Focus Engage: next ranged +2 status; >30 ft +1d6 precision|pending mod + RIDER|A|registerRunes|D6
+MI-13|Ch9 p81|Spiritblade|Specific weapon|L14 31,000 gp Nodachi; Centred II, Potency III, Soulful II...; on crit: Fear DC 20|crit hook; innatePrinted|B|PACK + hook|IT-I7
+MI-14|Ch9 p82|Enlightened Prayer Beads|Wondrous|L6 2,000 gp; +1 status Wis; 1/day advantage on Refocus|AE + COND daily|A|PACK:it-wondrous|
+MI-15|Ch9 p82|Lotus Blossom|Wondrous|L8 5,000 gp; Interact 2 AP: temp HP = level, remove fear/charm, advantage 1 h; daily refill; 2nd per day serious poison crit|grantTempHP; daily uses|A|PACK + use automation|
+MI-16|Ch9 p82|Monastic Robe of Resilience|Wondrous|L6 2,500 gp; DR 1; takes armour runes; not with armour|armour-like item|B|PACK as armour-type item|
+MI-17|Ch9 p82|Mystic Incense Burner|Wondrous|L8 5,000 gp; 30-ft aura +1 resistance Will vs fear/charm, +2 status Meditation; 1 h; incense 5 gp|aura|B|PACK + aura effect + consumable|
+MI-18|Ch9 p82|Restorative Mat|Wondrous|L10 8,000 gp; +2 status Meditation; 1/day Cure or Restoration (8 PP)|innatePrinted cast|A|PACK + daily cast|
+MI-19|Ch9 p82|Sash of Serenity|Wondrous|L8 5,000 gp; +1 dodge DB, +2 resistance vs fear; 1/day advantage on one save for 1 min|AE + pending|A|PACK|
+#
+## APPENDIX
+AP-01|Appendix|Character aging (categories, modifiers, lifespans)|Subsystem|Age category from age/lifespan; ability modifiers replace per category; Age Resistance interaction|no core|C|module macro + AE (optional)|IT-m6
+AP-02|Appendix|Racial age table (core + new races)|Reference|Tabulated thresholds|n/a|D|journal|

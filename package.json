@@ -1,0 +1,14 @@
+{
+  "name": "trg-inner-tempest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs": "node tools/inventory/build-docs.mjs",
+    "build:packs": "node tools/build-packs.mjs",
+    "build": "node tools/build-zip.mjs"
+  },
+  "dependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.4",
+    "classic-level": "^3.0.0"
+  }
+}

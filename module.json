@@ -1,0 +1,36 @@
+{
+  "id": "trg-inner-tempest",
+  "title": "TRG Prime: Inner Tempest",
+  "description": "The Inner Tempest sourcebook for TRG Prime: four races (Miraku, Ryukari, Scree, Tianzhi) and their heritages, eleven monastic backgrounds, five classes (Disciple, Ghostwalker, Kensai, Mystic, Oathblade) built on the Focus trait, skill actions, feats, archetypes, Dragon Companions, monastic gear, the Grimoire and magic items. Scaffold only — no content yet.",
+  "version": "0.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367"
+  },
+  "authors": [
+    {
+      "name": "Traris Games",
+      "url": "https://www.trarisgames.co.uk/"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "trg-prime",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.663.5"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/inner-tempest.mjs"
+  ],
+  "packs": [],
+  "flags": {
+    "trg-prime": {
+      "sourcebook": "Inner Tempest"
+    }
+  }
+}
