@@ -1,0 +1,49 @@
+{
+  "_id": "q65yhkh4F1P7JEyJ",
+  "name": "Elemental Balance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Survival 5 ranks",
+    "active": true,
+    "description": "<p><em>Your attunement to the elements allows you to maintain a harmonious balance.</em></p>\n<p><strong>Prerequisites</strong> Survival 5 ranks</p>\n<p><strong>Action</strong> Free; <strong>Trigger</strong> You are forced to make a saving throw against an effect or spell with the elemental trait.</p>\n<p>You can use your Survival skill instead of your normal saving throw if it is higher.</p>\n<p><em>Use (when the save is called for):</em> choose the save. If your Survival is higher, the difference is queued as an untyped bonus for your next saving throw, so that save is rolled at your Survival bonus. The Elemental trait is yours to confirm; nothing is queued if Survival is not higher.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "elementalBalance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!q65yhkh4F1P7JEyJ"
+}

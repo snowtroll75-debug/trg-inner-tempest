@@ -1,0 +1,44 @@
+{
+  "_id": "obq2VjCykdp2ffdo",
+  "name": "Body of Mist",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TRANSLOCATION TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 12; <strong>Action</strong> 1 AP</p>\n<p>Your body briefly dissolves into a drifting cloud of shadow and vapour.</p>\n<p>You may Fly up to your Speed as part of this action. During this movement:</p>\n<ul><li>You may move through spaces occupied by other creatures.</li><li>You may pass through openings as narrow as 1 inch.</li><li>Your movement does not trigger reactions.</li><li>You cannot make attacks, manipulate objects or carry another creature.</li></ul>\n<p>You cannot pass through solid walls, sealed doors or other completely enclosed barriers.</p>\n<p>You must end the movement in a space that your normal body can occupy. If you cannot, you return to the last legal space that you moved through.</p>\n<p>This Ghost Art is magical.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. Your next token move is armed up to your Speed as flight that provokes nothing; the card lists what you cannot do. Magical.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Shadow, Translocation, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Body of Mist",
+      "itArtLevel": 12
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!obq2VjCykdp2ffdo"
+}

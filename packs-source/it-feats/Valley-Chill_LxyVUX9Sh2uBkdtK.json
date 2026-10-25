@@ -1,0 +1,49 @@
+{
+  "_id": "LxyVUX9Sh2uBkdtK",
+  "name": "Valley Chill",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kura Heritage",
+    "active": true,
+    "description": "<p><strong>ARCANE COLD FOCUS RYUKARI SAVE TECHNIQUE</strong></p>\n<p><em>The light seems to diminish around you as the deathly cold of the shadowed valleys spills from your blood.</em></p>\n<p><strong>Prerequisites</strong> Kura Heritage</p>\n<p><strong>Action</strong> 2 AP; <strong>Area</strong> 10-foot emanation</p>\n<p><strong>Saving Throw</strong> Fortitude against your Level DC</p>\n<p>You release a pulse of lightless cold that numbs muscle and dulls movement.</p>\n<p><strong>Critical</strong> the target is unaffected.</p>\n<p><strong>Success</strong> the target takes a -5-foot circumstance penalty to Speed until the beginning of your next turn.</p>\n<p><strong>Partial</strong> the target takes a -10-foot circumstance penalty to Speed until the beginning of your next turn.</p>\n<p><strong>Failure</strong> the target takes a -10-foot circumstance penalty to Speed and a -1-circumstance penalty to Reflex saving throws until the beginning of your next turn.</p>\n<p><strong>Fumble</strong> as Failure, and the target is Slowed 1 until the beginning of your next turn.</p>\n<p><em>Automated:</em> press Use: 2 AP and its Focus use. Every other creature within 10 feet makes a Fortitude save against your Level DC: −5 ft Speed, −10 ft Speed, −10 ft Speed and −1 to Reflex saves, and on a Fumble Slowed 1 as well, until the start of your next turn (a round).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Arcane, Cold, Focus, Ryukari, Save, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "valleyChill"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!LxyVUX9Sh2uBkdtK"
+}

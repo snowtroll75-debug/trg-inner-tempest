@@ -1,0 +1,84 @@
+{
+  "_id": "LgHhEDjboiqhYhLb",
+  "name": "Fortified Carapace",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kabuto Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Layers of new chitin have grown across the most vulnerable parts of your body, creating an exoskeleton capable of turning aside blows that would injure lesser Scree.</em></p>\n<p><strong>Prerequisites</strong> Kabuto Heritage, Level 5</p>\n<p>Increase your Base Natural DR by 1.</p>\n<p><em>Automated:</em> Base Natural DR +1.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "d2iiX7Mdb0LGCuTW",
+      "name": "Fortified Carapace: Base DR +1",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 2,
+          "value": "1",
+          "priority": 30
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Fortified Carapace: your Base Natural DR increases by 1.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!LgHhEDjboiqhYhLb.d2iiX7Mdb0LGCuTW"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!LgHhEDjboiqhYhLb"
+}

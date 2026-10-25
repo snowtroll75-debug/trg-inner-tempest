@@ -1,0 +1,133 @@
+{
+  "_id": "bInbfSXR5GNUHfXe",
+  "name": "Fuukaze",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Fuukaze are blessed with the grace of the wind. Usually scouts and pathfinders amongst their people.</p>\n<p>You gain a +2 racial bonus to the Acrobatics skill and a +5-foot bonus to your land speed.</p>\n<p><em>Language:</em> Aeolian, the heritage's language (Graham's ruling). <em>Element:</em> Wind (electricity). <em>Applied automatically:</em> a +2 racial bonus to Acrobatics and +5 feet to your land Speed.</p>",
+    "sourceRace": "Tianzhi",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "Aeolian",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "QcIENgzVODYTnFzP",
+      "name": "Fuukaze: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.acrobatics.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+2 racial bonus to Acrobatics checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!bInbfSXR5GNUHfXe.QcIENgzVODYTnFzP"
+    },
+    {
+      "_id": "pDVkVLHXkx9m2YBw",
+      "name": "Fuukaze: Speed +5",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.land",
+          "mode": 2,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Your land Speed increases by 5 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!bInbfSXR5GNUHfXe.pDVkVLHXkx9m2YBw"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itElement": {
+        "element": "Wind",
+        "damageType": "electricity",
+        "spellTraits": [
+          "air",
+          "electricity"
+        ]
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bInbfSXR5GNUHfXe"
+}

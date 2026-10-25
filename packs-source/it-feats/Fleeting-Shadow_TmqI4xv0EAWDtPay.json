@@ -1,0 +1,45 @@
+{
+  "_id": "TmqI4xv0EAWDtPay",
+  "name": "Fleeting Shadow",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 11",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 11</p>\n<p>Your retreat is so sudden that you seem to disappear with the attack itself. When using Vanishing Retreat, you may Step up to 10 feet rather than 5 feet. If this movement ends somewhere that provides suitable cover or concealment, you may immediately attempt to Hide (Stealth) as part of the reaction.</p>\n<p><em>Automated:</em> Vanishing Retreat's Step is 10 feet, and its card offers the Hide.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TmqI4xv0EAWDtPay"
+}

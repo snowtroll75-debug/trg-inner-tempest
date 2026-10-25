@@ -1,0 +1,139 @@
+{
+  "_id": "b2AEjhSK3u9OYW3J",
+  "name": "Dragon Fear",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, divinity, ethereal, verdant",
+    "category": "save",
+    "level": 0,
+    "ppCost": 8,
+    "castAP": 2,
+    "range": "",
+    "area": "20-foot radius",
+    "targets": "",
+    "duration": "1 minute",
+    "defence": "Will",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "frightened",
+        "value": 1,
+        "onSave": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "frightened",
+        "value": 2,
+        "onSave": [
+          "partial"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "frightened",
+        "value": 3,
+        "onSave": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "fleeing",
+        "onSave": [
+          "failure"
+        ],
+        "duration": "1 round"
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "frightened",
+        "value": 4,
+        "onSave": [
+          "fumble"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "fleeing",
+        "onSave": [
+          "fumble"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "frightened",
+        "value": 5,
+        "onSave": [
+          "blunder"
+        ]
+      },
+      {
+        "kind": "condition",
+        "target": "targets",
+        "condition": "paralyzed",
+        "onSave": [
+          "blunder"
+        ]
+      },
+      {
+        "kind": "note",
+        "text": "The aura lasts 1 minute: a creature that starts its turn within 20 feet saves then, with these results. Whatever it rolls, it is immune to this spell for 1 minute. Fleeing (Fumble) and Paralyzed (Blunder) last until Frightened is removed."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Aura, Enchantment, Fear",
+    "description": "<p>You emanate an aura of fear similar to that of a dragon. At the beginning of their turn, each creature within the radius of the spell must make a saving throw with the following results:</p>\n<p><strong>Critical</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is frightened 1.</p>\n<p><strong>Partial</strong> The creature is frightened 2.</p>\n<p><strong>Failure</strong> The creature is frightened 3 and fleeing for 1 round.</p>\n<p><strong>Fumble</strong> The creature is frightened 4 and fleeing until the frightened condition is removed.</p>\n<p><strong>Blunder</strong> The creature is frightened 5 and gains the paralyzed condition until the frightened condition is removed.</p>\n<p>Be aware that regardless of the result of the saving throw, the creature is temporarily immune to this spell for 1 minute.</p>\n<p><em>Partly automated:</em> the creatures targeted when you cast save, and their conditions are applied. Later saves at the start of each creature's turn, the 1-minute immunity, and ending Fleeing or Paralyzed with Frightened are by hand.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!b2AEjhSK3u9OYW3J"
+}

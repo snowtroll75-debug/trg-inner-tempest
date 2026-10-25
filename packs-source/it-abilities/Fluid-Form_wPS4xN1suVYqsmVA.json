@@ -1,0 +1,39 @@
+{
+  "_id": "wPS4xN1suVYqsmVA",
+  "name": "Fluid Form",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Fluid Form:</strong> You can subtly rearrange your animal features, colouration, hair, voice and apparent age as a 1 AP action with the Concentrate and Morph traits. This cannot change your size, equipment or heritage, and cannot perfectly reproduce a specific individual. You gain advantage on Bluff (Deception) checks made to support a disguise created with this ability.</p>\n<p><em>Use:</em> spends 1 AP in combat and puts a \"Fluid Form\" effect on you while the altered appearance lasts. While it is up, advantage is offered on your Bluff (Deception) checks — tick it when the Bluff supports the disguise. Use it again to return to your own appearance (also 1 AP). Your biological age, and so your age modifiers, never change (Appendix).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "traits": "Concentrate, Morph"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!wPS4xN1suVYqsmVA"
+}

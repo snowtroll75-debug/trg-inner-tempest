@@ -1,0 +1,86 @@
+{
+  "_id": "TUVrMvNmtt2ELMy9",
+  "name": "Ethereal Sight",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Perception 5 ranks, Sense Motive 5 ranks",
+    "active": true,
+    "description": "<p><em>Your keen perception pierces the ethereal veil, granting you the ability to see into the spirit realm.</em></p>\n<p><strong>Prerequisites</strong> Perception 5 ranks Sense Motive 5 ranks</p>\n<p>You can see incorporeal creatures clearly and any magical attacks you make against them inflict damage normally. Furthermore, the flat check DC that a hidden target makes to avoid your attacks increases by 2 (usually 10 to 12).</p>\n<p><em>Applied automatically:</em> your magical weapon Strikes against an incorporeal creature ignore its immunity to non-magical attacks and its resistance to all damage (as Ghost Touch does), and a hidden creature's flat check to avoid your attacks is 2 harder. <em>Not automated:</em> the same for your spells, whose damage path has no such switch yet; seeing incorporeal creatures is yours to declare.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "XPANcEf0Hj8E6GrS",
+      "name": "Ethereal Sight: ethereal sight",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "ghostTouch": {
+            "magicalOnly": true
+          },
+          "missCheckDCIncrease": {
+            "value": 2,
+            "conditions": [
+              "hidden"
+            ]
+          }
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Your magical attacks affect incorporeal creatures normally; the flat check a hidden target makes to avoid your attacks is 2 higher.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!TUVrMvNmtt2ELMy9.XPANcEf0Hj8E6GrS"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TUVrMvNmtt2ELMy9"
+}

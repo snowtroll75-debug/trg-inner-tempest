@@ -1,0 +1,97 @@
+{
+  "_id": "wm0UEFhJaNkDJ504",
+  "name": "Enigmatic Artisan",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your creative talents are unparalleled, and you weave mysticism into your craft, creating works of art imbued with magical essence.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Artisan's Enchantment</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Artistry, Crafting, Meditation</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Magic Crafting) (on your sheet as Magic Crafting Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>2</p>",
+    "grantedFeats": "Artisan's Enchantment",
+    "grantedSpells": "",
+    "skillBonuses": "Artistry, Crafting, Meditation",
+    "specialistSkill": "Magic Crafting Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "2"
+  },
+  "effects": [
+    {
+      "_id": "wDUEc5tNipwC7n7b",
+      "name": "Enigmatic Artisan: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.artistry.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.crafting.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.meditation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Artistry, Crafting, Meditation.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!wm0UEFhJaNkDJ504.wDUEc5tNipwC7n7b"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Magic Crafting Lore"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!wm0UEFhJaNkDJ504"
+}

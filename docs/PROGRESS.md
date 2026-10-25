@@ -2,17 +2,96 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 20 Oct 2026
+## Current state — 25 Oct 2026 (session 5: 0.7.1 built)
 
-- **Stage:** 1 (Discovery) and 2 (Audit) are done. **Stage 3 (Architecture) is drafted and waiting on Graham.**
-- **Module:** `trg-inner-tempest` 0.0.0, a scaffold only. It has a manifest with the sourcebook flag, an entry script, an empty registration, pack and zip tooling copied from Pillars of Faith, and the inventory generator. **No content, and nothing released.**
-- **Implemented:** 0 of 406 features. **Tested:** 0.
-- **Nothing pushed or published.** There is no GitHub repo for this module yet. When one is approved, it would mirror `snowtroll75-debug/trg-pillars-of-faith`.
+- **0.7.0 tested live on 3.670.0** (`live-testing-report-3.670.0`): every Block 6 feat reachable live works. Two defects (Drunken Strike's Feint asked for Deception training; a Stride straight away from an adjacent enemy provoked nothing, core and older) and two text lines.
+- **Graham:** fix both and the text. **0.7.1 on TRG Prime 3.670.1** built: core pair `verify/mutate-fixes-3670-1` 12 and 9; module `verify-block6` 183, `mutate-block6` 85.
+- **0.7.1 on 3.670.1 tested live** (`live-testing-report-3.670.1`): all four fixes pass; no new defects. **Block 6 done. Nothing pushed.**
+
+## Earlier — 24 Oct 2026 (session 5: Block 6 built)
+
+- **0.6.2 tested live** on 3.669.2 (`live-testing-report-3.669.2`): every fix confirmed.
+- **Block 6 audited and ruled** (`docs/INNER_TEMPEST_BLOCK6_AUDIT.md`; B6-1 to B6-10, all proposals adopted, in `docs/INNER_TEMPEST_RULINGS_2026-10-24.md`). Book text in `tools/content/book-text-block6.json` (`tools/content/extract-book-block6.mjs`).
+- **0.7.0 built** on TRG Prime **3.670.0**: the fourteen remaining class feats (`tools/content/block6.mjs`, `module/block6-automations.mjs`), Drunken Strike, FC-55's 33 core class feat entries, Elemental Fist in Inner Strike and Stunning Fist in Flurry (Block 3), the Mystic's `innateMetamagic` mark. Inventory FC-08 to FC-55 recorded in `tools/inventory/status.json`.
+- **Core 3.670.0:** C1–C12 (unarmed-scoped traits, set damage types, bleed bonus, longer Step, first difficult square, Pack Attack from an effect, first Move free, mapSteps, trade-off waivers, preset modifiers, declared class trait access, innate Metamagic), and `missed` on `trgPrimeStrikeResolved`. Core pair `verify/mutate-block6-core` 39 and 49.
+- **Independent review** before release: ten findings, all fixed (both release notes). Lessons: the cast workflow reads every innate spell as PP 0 and never a cantrip; `hits: false` on the Strike hook is not a miss; TRG Prime's ranged modes are "missile" and "thrown".
+- **Harnesses:** `verify-block6` 181, `mutate-block6` 84/84; Blocks 1–5 and the weapons re-pinned, green, every mutation caught.
+- **Not yet tested live. Nothing pushed.**
+
+## Earlier — 24 Oct 2026 (session 5: 0.6.2 built)
+
+- **0.6.0 tested live** twice (`live-testing-report-it-0.6.0`, part 2 as a player with Test PC 1 on localhost:30000 beside the GM on 127.0.0.1:30000). Graham's B5-5: a Blunder gets Fortune's Reversal.
+- **0.6.2 built** on TRG Prime **3.669.2** after the 0.6.1 live test (`live-testing-report-3.669.1`) and rulings B5-6 (Aid Another's ticks in its own dialog) and B5-7: Many-Faceted Vigilance opts Compound Eyes out of codex inheritance while held; every reaction offer asks the system's refusal first; Resist Dying spends through the system; Foundry 14 deletions. Lesson: a value the system prepares can differ from the value saved, so check the prepared one (the 0.6.1 harness checked the saved row).
+- **0.6.1 built** on TRG Prime **3.669.1**: the Raptorial Blade's AR on its trait line; Awaken the Animism's typed Speed bonuses; Mist Veil's and Spirit Beacon's switches held in combat; Forgeheart and Many-Faceted Vigilance raise the existing tick; reactions spent through the system (Battle Readiness); Spirit Roar's shared conviction die; Hive Coordination on Aid Another; a start-up pass for 0.6.0 characters.
+- **Core 3.669.1:** B5-5; reaction refusal before a reroll; one conviction ask per shared roll and none on an exact first; no AP for a paused player's move; Aid Another's action key. Pair `verify/mutate-fixes-3669-1` 16 and 18.
+- **Not yet tested live. Nothing pushed.**
+
+## Earlier — 24 Oct 2026 (session 5: Block 5 built)
+
+- **0.6.0 built** on TRG Prime **3.669.0** (Block 5): the 47 racial feats of Chapter 5 (`tools/content/block5.mjs`, `module/block5-automations.mjs`), FR-48's 33 core racial feat entries opened to the four races with heritage limits, Water Bolt (B5-1) and Draconic Armament's Bite and Claw. Inventory FR-01 to FR-48 recorded in `tools/inventory/status.json`.
+- **Core 3.669.0:** C1–C9 of the audit, plus the conviction refund (B5-3), switched ally auras, registered light sources (Living Lantern and Spirit Beacon light the token), placed light circles (Foxfire), and the light cleanup now redraws the brightest light left. Core pair `verify/mutate-block5-core` 51 and 58; the older text harnesses named in the 3.669.0 notes re-anchored.
+- **Foxfire is light circles, not tokens** (a token would be read as a creature); asked of Graham in `docs/RELEASE_NOTES_0.6.0.md` with two other questions.
+- **Independent review** before release: six module findings and six core findings, all fixed (listed in both release notes). Elemental Attunement is now innate spells only, as printed.
+- **Harnesses:** `verify-block5` 542, `mutate-block5` 66/66; Blocks 1–4 and the weapons re-pinned and green, every mutation caught.
+- **Not yet tested live. Nothing pushed.**
+
+## Earlier — 24 Oct 2026 (session 5: Block 5 audited and ruled)
+
+- **Block 4 done:** 0.5.1 on core 3.668.2 passed live (live-testing-report-it-0.5.1, live-testing-report-3.668.2). Graham's three answers after 0.5.1 kept it as built; Double Slice fixed in core 3.668.2.
+- **Block 5 audit** (`docs/INNER_TEMPEST_BLOCK5_AUDIT.md`): the 47 racial feats and the 33 core racial feat entries opened to the four races. Book text in `tools/content/book-text-block5.json` (`tools/content/extract-book-block5.mjs`). Core work C1–C9 planned for TRG Prime 3.669.0.
+- **Rulings B5-1 to B5-4** (`docs/INNER_TEMPEST_RULINGS_2026-10-24.md`): Water Bolt in Block 5; spell lists by trait plus four fixes; Adaptive Mind as conviction's Advantage refunded on success; Foxfire as three light tokens.
+
+## Earlier — 23 Oct 2026 (session 5: 0.5.1 built)
+
+- **0.5.0 live-tested on 3.668.0** (live-testing-report-it-0.5.0): the three classes work in play. Two module defects (Combat Form's learning spent its use; Misdirecting Whisper spent on a refused Feint) and one cosmetic core label, all fixed in 0.5.1 / 3.668.1.
+- **Graham's four answers** recorded in `docs/INNER_TEMPEST_RULINGS_2026-10-23.md` ("After 0.5.0"): Deflect Arrow keeps Evade; add Chapter 6's weapons (weapons only); Iron Tortoise includes the Trip; Form Reversal not counted as the Flourish.
+- **0.5.1 built** on TRG Prime **3.668.1**: the sixteen Chapter 6 weapons (new `it-weapons` pack, cut from the docx by `tools/content/extract-book-weapons.mjs` into `tools/content/book-text-weapons.json`), the two fixes, the Trip. Core 3.668.1: `ownsFocusUse`, the penalty label, Backswing, Brace and Twin. Core pair `verify/mutate-it-fixes-3668-1` 22 and 30; module pair `verify/mutate-weapons` 117 and 33.
+- **An independent review** before the sweep found four core defects (Twin worsening Dying, Backswing missing rune damage and multi-Strike feats, the label regression), all fixed in 3.668.1.
+- **Three questions for Graham** in `docs/RELEASE_NOTES_0.5.1.md`. **Not yet tested live. Nothing pushed.**
+
+## Earlier — 23 Oct 2026 (session 5: Block 4 built)
+
+- **0.5.0 built** on TRG Prime **3.668.0** (Block 4): the Ghostwalker, the Kensai and the Oathblade, fifteen Ghost Arts, twelve Combat Forms, four Sworn Oaths and the 28 class feats (B4-1). Rulings B4-1 to B4-4 and Black Lotus in `docs/INNER_TEMPEST_RULINGS_2026-10-23.md`; the audit's interpretations, as built, in `docs/INNER_TEMPEST_BLOCK4_AUDIT.md`; four questions for Graham in `docs/RELEASE_NOTES_0.5.0.md`.
+- **Book text** is cut from the docx by `tools/content/extract-book-block4.mjs` into `tools/content/book-text-block4.json` and printed from there, never retyped.
+- **Core 3.668.0:** scaled values, three new scopes (weapon group, range band, target state), a group's trait, a reaction-attack penalty, a defence row against all but one, declared AR, ambush dice, per-Strike options, the held blow, `trgPrimeStrikeResolved` and `trgPrimeAmbushDealt`, and helpers `mapPenalty`, `rollWeaponDamage`, `traitCheck`, `heldStrikeDue`, `landHeldStrike`, `enterStance`'s `waiveWait`, a flat rider. Core pair `verify/mutate-block4-core` 54 and 56; fourteen older text harnesses re-anchored.
+- **An independent review** of the new automations before any live run found nine defects, all fixed and checked (release notes, "Found before the live test").
+- **Harnesses:** `verify-block4` 1360 and `mutate-block4` 81/81; Blocks 1 to 3 green. Core full sweep on a clean stage: see the 3.668.0 release notes.
+- **Not yet tested live. Nothing pushed.**
+
+## Earlier — 23 Oct 2026 (session 5: 0.4.1 live-tested)
+
+- **Live test of 0.4.1 on core 3.667.2** (live-testing-report-it-0.4.1): the three 0.4.1 fixes pass. Inner Strike's type buttons re-type the rider free, even with no use left. Burst Step's card reads "now 60 ft". Shadowy Stance's card says 1 minute.
+- **One new defect, fixed in 0.4.2 on core 3.667.3:** Inner Strike's +1 status to unarmed attacks never applied. It was a tick-box, and a weapon attack opens no dialog. The core's new `attackForms` axis lets it apply automatically on unarmed melee attacks.
+- **The same gap elsewhere:** tick-boxes were never offered on rolls that open no dialog. Graham ruled "Attacks + Spellcraft": core 3.667.3 asks them before a weapon attack or a Spellcraft check (Spirit Stance's possession clause, Echoes Beyond, Maintain Clarity on a Concentrate or Mental spell). Forced saves stay as they were, so Observe Technique and Root the Body on a forced save remain hand rulings. See `docs/RELEASE_NOTES_0.4.2.md`.
+- **0.4.2 on 3.667.3 live-tested** (live-testing-report-3.667.3): Inner Strike's +1 applies on the fists and not on a sword; the tick-box prompt works on attacks (Spirit Stance, ticked, unticked, Shift), keeps its answer through Alter the Thread, offers Echoes Beyond, works on Spellcraft, and stays quiet on a forced save. Its row layout was fixed in core 3.667.4. **Nothing pushed.**
+
+## Earlier — 23 Oct 2026 (session 5: Block 3 live-tested)
+
+- **Live test of 0.4.0 on core 3.667.0** (live-testing-report-3.667.0): the Disciple and Mystic work in play. Five defects were found and fixed in **0.4.1 on core 3.667.1**: techniques arriving 1 of 2 under Deep Focus (core), Resolve giving no conviction point (core), Inner Strike's type change costing a use, Burst Step's card Speed, Shadowy Stance's card. The Alter the Thread ordering was confirmed by Graham: the attacker's conviction comes first (core 3.667.2).
+
+## Earlier — 22 Oct 2026 (session 5: Block 3 built)
+
+- **0.4.0 built** on TRG Prime **3.667.0** (Block 3): the Disciple and the Mystic, the four Monastic Paths, the five Mystical Disciplines, Inner Discipline and its techniques, the eleven Technique class feats (B3-1) and the eleven Grimoire spells the disciplines grant (B3-1). Rulings B3-1 to B3-5 in `docs/INNER_TEMPEST_RULINGS_2026-10-22.md`; interpretations in `docs/INNER_TEMPEST_BLOCK3_AUDIT.md` and five for Graham in `docs/RELEASE_NOTES_0.4.0.md`.
+- **Core 3.667.0:** stat rows (Disciple's Dodge, Incredible Movement, Serene Defence), the unarmed profile (Powerful Fists, Monastic weapons), Versatile B, the strike series (Flurry), the attack reroll (Alter the Thread), the innate PP allowance (B3-2), `trgPrimeDamageApplied`, declared-effect stat rows and conditionals, helpers `runStrikeSeries`, `countsAsUnarmed`, `basicSaveHit`. Core pair `verify/mutate-block3-core` 53 checks, 52 mutations.
+- **Harnesses:** `verify-block3` 1034 checks against `tools/content/book-text-block3.json` (cut from the docx by `tools/content/extract-book-block3.mjs`; completeness as well as verbatim), `mutate-block3` 102/102. Blocks 1 and 2 re-anchored: 378/54, 205/93.
+- **Found while building:** the first transcription missed the three GREATER MASTERY blocks (Bounding Step, Inner Sight, Inner Strike), a sentence of Aura of Heat and the disciplines' full text; all fixed, and the harness now fails on a truncated paragraph.
+- **Not yet tested live. Nothing pushed.** The Grimoire's other fourteen spells stay in Block 8.
+
+## Earlier — 22 Oct 2026 (session 4: after Graham's game)
+
+- **0.3.3 built** on TRG Prime **3.666.1**. After the session of 21–22 October Graham reported that core's Nimble Dodge was never offered to the player; TRG Prime 3.666.1 adds a defence offer and 0.3.2 registered Evade and Impact Absorption with it.
+- **Live test of 3.666.1 with 0.3.2** (live-testing-report-3.666.1, GM and a real player client): Graham's three core defects all fixed. Two module defects found and fixed in **0.3.3**: Evade's dodge arrived after the attack read the DB (the resolution hook is not awaited; the offer now waits), and Impact Absorption, an ability, was never offered (abilities are now looked up). `verify-block2` 205, `mutate-block2` 93/93; `verify-block1` 374, `mutate-block1` 54/54. **0.3.3 live-tested 22 Oct (live-testing-report-it-0.3.3): both fixes pass, GM- and player-answered; no defects. Nothing pushed.**
+
+## Earlier — 21 Oct 2026 (session 3: Block 2 built)
+
+- **Block 1 done** and passed live on TRG Prime 3.665.1 with Inner Tempest 0.2.0 (live-testing reports 3.665.0 and 3.665.1).
+- **Block 2 live-tested on 21 Oct** (live-testing-report-3.666.0): four module defects found and fixed in Inner Tempest **0.3.1**; core 3.666.0 and F&F 0.45.2 passed. Built as Inner Tempest **0.3.0** (the seventeen Chapter 4 skill actions) on TRG Prime **3.666.0** (one-attack defences with Nimble Dodge fixed, the save-bonus reaction, list DC rows, the Dying Check's scope, declared time ladders, action traits on checks, ward zones, helpers and hooks, `outcomesApplied`, and the multiple attack penalty in combat only). `verify-block2` 194 green, `mutate-block2` 75/75; `verify-block1` 374, `mutate-block1` 54/54; core `verify/mutate-block2-core` 40 checks and 37 mutations, `verify/mutate-map-combat-only` 17 and 12. The full core sweep ran on a clean stage (3.665.1 release plus exactly the changed files). **Nothing pushed; the module tree is uncommitted.**
+- **Shipped:** see the matrix. Block 2's interpretations for Graham to confirm are listed at the end of `docs/INNER_TEMPEST_BLOCK2_AUDIT.md`.
 
 ## Inputs (attach these again in a new session)
 
-- The book: `TRG_Inner_Tempest_1_1.docx` (v1.1). Convert it with `pandoc -t gfm --wrap=none`; strip the `<img>` tags for reading.
-- The system: `trg-prime-3.663.5.zip`, which includes `tools/`. Run `npm install` in it before any harness.
+- The book: `TRG_Inner_Tempest_1_2.docx` (v1.2) and Graham's *Inner Tempest Responses*. Convert with `pandoc -t gfm --wrap=none`; strip the `<img>` tags for reading.
+- The system: `trg-prime-3.664.0.zip` (or 3.663.5 plus this session's core changes), which includes `tools/`. Run `npm install` in it before any harness.
 - Companion modules, for regression checks: `trg-pillars-of-faith-0.11.1.zip` and `fiends-and-fables-prime-0.45.0.zip`.
 - Run harnesses with `TRG_PRIME_ROOT=<path>/trg-prime`.
 
@@ -29,13 +108,13 @@ This is the durable record that lets work resume across sessions. Update it at t
 ## Decisions taken (by Graham)
 
 - 20 Oct 2026: Inner Tempest is a separate companion module. It uses the Focus framework, with no Chi pool. Nothing is pushed or published without approval.
+- 21 Oct 2026 (`docs/INNER_TEMPEST_RULINGS_2026-10-21.md`): Spirit Stance as built; another Lore when Spirit Lore is duplicated; Tianzhi heritage languages (Aeolian, Thanatos, Ignic, Aqualis, Gaian); a Shove or Trip against a Tsuchi at disadvantage; D1 approved; drakes get no Sweep; the slashing tails stay.
 
 ## Waiting on Graham
 
-1. Rulings on the **Critical** audit items IT-C1 to IT-C9. Each has an interim reading I can build to if he prefers.
-2. Approval of the **core API release** (proposed 3.664.0 = D1–D10), or which parts he wants.
-3. Confirmation of the module id `trg-inner-tempest` and the pack names below.
-4. Whether a GitHub repo should be created for the module, and when.
+1. **Install core 3.668.0 and Inner Tempest 0.5.0** for the Block 4 live test; answer the four questions in `docs/RELEASE_NOTES_0.5.0.md`; confirm the five readings (`docs/RELEASE_NOTES_0.4.0.md`).
+2. **Confirm Block 2's five interpretations** (end of `docs/INNER_TEMPEST_BLOCK2_AUDIT.md`): Elemental Ward's Blunder lasts 10 minutes; Observe Technique's DB applies to that creature's next attack; Steel the Mind is declared from the sheet until Inner Discipline (Block 3); out of combat "until your next turn" is 6 seconds; an unused declared defence ends at your next turn.
+3. Whether a GitHub repo should be created for the module, and when.
 
 ## Planned block order
 
@@ -43,15 +122,15 @@ This follows the Pillars of Faith rhythm: audit and take rulings, then implement
 
 | Block | Content | Needs core |
 |---|---|---|
-| 0 (core 3.664.0) | Focus and Refocus APIs (D1–D6), stance helper (D7), reaction registration (D8), derived hook (D9) | n/a |
-| 1 | Foundations: 4 races, 20 heritages, racial abilities, 11 backgrounds, Scree Cant, traits; armour and weapons | D5; D11/D13 for some weapon traits |
-| 2 | Ch4: the 17 skill actions; checking core's Refocus against the book | D8 for 4 reactions |
-| 3 | Disciple and Mystic, Monastic Paths, Mystic disciplines, Inner Discipline and its techniques | D1, D2, D3, D5, D7, D9, D12 |
+| 0 (core 3.664.0) | **Done:** D2, D3, D4 (part), D5, D6, D7, D16 and the Block 1 additions. **Still to do:** D1, D8, D9, D10–D15, D17–D19 | n/a |
+| 1 | **Done (0.1.0):** 4 races, 20 heritages, racial abilities, 11 backgrounds, Scree Cant, the 23 General feats. Armour and weapons move to Block 9 with the gear | — |
+| 2 | **Done (0.3.1, on core 3.666.0):** the 17 skill actions; core's Refocus matches the book. Passed live | B2-1 to B2-7 (3.666.0) |
+| 3 | **Built (0.4.0, on core 3.667.0), awaiting live test:** Disciple and Mystic, Monastic Paths, Mystic disciplines, Inner Discipline and its techniques, the 11 Technique class feats, the 11 Grimoire spells the disciplines grant | B3-1 to B3-5 (3.667.0) |
 | 4 | Ghostwalker (Ghost Arts), Kensai (Combat Forms), Oathblade (Challenge, Oaths) | D7, D8, D9 |
 | 5 | Racial feats (47) and existing-feat access | D4, D8 |
-| 6 | Class feats (54) and general feats (22) | D7, D8, D14 |
+| 6 | Class feats (54; Inner Discipline and the 11 Technique feats shipped in Block 3) and general feats (22) | D7, D8, D14 |
 | 7 | Archetypes (21) | D7, D11, D12 |
-| 8 | Grimoire (25 spells) | D4, D8 |
+| 8 | Grimoire (the other 14 spells; 11 shipped in Block 3) | D4, D8 |
 | 9 | Magic items and the aging appendix | D6 |
 | 10 | Dragon Companions | D10, plus the IT-C5 rulings |
 
@@ -71,3 +150,11 @@ This follows the Pillars of Faith rhythm: audit and take rulings, then implement
 ## Session log
 
 - **20 Oct 2026, session 1:** read the whole book; mapped the system (three agents plus direct reads); cross-referenced every core name the book uses against the packs; wrote the audit, the core dependencies, the inventory and generated docs, and the scaffold.
+- **20 Oct 2026, session 2:** took Graham's rulings and v1.2; built core 3.664.0 (Focus/innate declarations, D16, stances for modules, trait axes, helpers, daily firsts, derives) with harness pairs; built Block 1 (0.1.0) with verify/mutate; regenerated the matrix and report with shipped status. Lesson: sweep a snapshot copy, never the dev tree.
+- **21 Oct 2026, session 3:** live-tested 3.664.0 + IT 0.1.0 + F&F 0.45.1 in Graham's world (built-in browser, world restored after). Three module bugs found and fixed as 0.1.1 with harness checks and mutations. Lesson: a check whose DC the GM sets afterwards resolves twice, so anything on `trgPrimeActionResolved` must ignore the degree-less first pass.
+- **21 Oct 2026, session 3 (cont.):** took Graham's rulings (docs/INNER_TEMPEST_RULINGS_2026-10-21.md); built core 3.665.0 (D1 with migration, defence disadvantage rows, specialistAlternative) and Inner Tempest 0.2.0. Lesson: D1 reached 25 F&F creature abilities, not only the five core feats the dependency named; scan every installed module's packs before widening a core rule.
+- **21 Oct 2026, session 3 (cont.):** live-tested 3.665.0 + IT 0.2.0 (all rulings pass; migration found nothing to change). Found D1 counted but never spent or refused at the Use button; fixed as core 3.665.1 (gate in useFeat), driven live against the real handlers, sweep 605/605. Lesson: a new count on an existing item must be checked against that item's own Use handler, not only against the counter.
+- **21 Oct 2026, session 3 (cont.):** live-tested 3.665.1: defaulted Focus uses are spent at the Use button, refused when spent, restored by Refocus; printed counts untouched. Block 1 is done.
+- **21 Oct 2026, session 3 (cont.):** Graham approved Block 2 and ruled on it (Evade declared when targeted, "fix all three" with Nimble Dodge and Impact Absorption, Root the Body raises the DC, a real ward zone, Resist Dying a Reaction on falling, Maintain Clarity a tick, Read Intent's flanking described; the multiple attack penalty in combat only; another Lore for the Elemental backgrounds on a Tianzhi). Built core 3.666.0 and Inner Tempest 0.3.0 with harnesses. Lesson: a module action whose code applies its rows must stop the core's generic text readers too, or a verbatim book row is applied twice (`outcomesApplied`).
+- **21 Oct 2026, session 3 (cont.):** natural attacks always ready (core 3.666.0, Graham's request); F&F 0.45.2 (golem Slams). Live-tested Block 2: four module defects fixed as 0.3.1. Lessons: a uuid is not a flag key (Foundry splits it on its dots), so harness fakes must store flags as Foundry does; core's `conditionExpiresRound` is a round clock, not a turn clock.
+- **21 Oct 2026, session 3 (cont.):** re-tested 0.3.1 live: all four fixes pass. Block 2 is done. Noted for the next release: Read Intent's Critical card repeats its flanking sentence.

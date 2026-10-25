@@ -1,0 +1,49 @@
+{
+  "_id": "HKpAg2hMmASaE87S",
+  "name": "Blended Form",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 8",
+    "active": true,
+    "description": "<p><strong>KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 8</p>\n<p>You have begun to fuse martial philosophies into a unique hybrid. You may select two specific combat forms and merge them into one. You gain the benefits of both forms.</p>\n<p><em>Automated:</em> press Use to choose two of your known forms. Combat Form then also offers the blend, a stance with both forms' benefits. With Fluid Blending you may choose again (at daily preparation, by the GM's leave).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "blendedForm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HKpAg2hMmASaE87S"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "ChaLS6EAH3o61Tzb",
+  "name": "Artistic Diversity",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Artistry 10 ranks",
+    "active": true,
+    "description": "<p><em>Your development of an artistic talent has often wandered into other areas of expertise..</em></p>\n<p><strong>Prerequisites</strong> Artistry 10 ranks</p>\n<p>You may make Artistry skill checks for specialties that you have not learnt. When doing so the check is made at a Very Hard (DC +5) difficulty.</p>\n<p><em>Not automated:</em> Artistry specialties are not modelled as separate skills; when you make an Artistry check for a specialty you have not learnt, set the DC one step harder (Very Hard, +5).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ChaLS6EAH3o61Tzb"
+}

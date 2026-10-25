@@ -1,0 +1,49 @@
+{
+  "_id": "F40vRNBCK0ig94yR",
+  "name": "Natural Chi",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Natural Chi:</strong> You are attuned to the inner current that your people traditionally call chi. Select any one magical cantrip and choose one tradition available to that spell. You gain it as an innate spell with the Focus trait, using Wisdom as your magical ability score. The spell is detected, dispelled and otherwise treated according to its chosen magical tradition; chi itself has no separate rules effect.</p>\n<p><em>Use:</em> choose the cantrip. It arrives as an innate spell with the Focus trait, cast with Wisdom; note which of its traditions you chose.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "spellChoice": {
+        "label": "Any one magical cantrip",
+        "ppCost": 0,
+        "innate": true,
+        "castingAbility": "wisdom",
+        "note": "Natural Chi: an innate spell with the Focus trait, cast with Wisdom. It is detected and dispelled as the tradition you chose for it."
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!F40vRNBCK0ig94yR"
+}

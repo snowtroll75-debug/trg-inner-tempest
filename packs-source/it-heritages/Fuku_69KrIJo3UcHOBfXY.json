@@ -1,0 +1,49 @@
+{
+  "_id": "69KrIJo3UcHOBfXY",
+  "name": "Fuku",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Fuku bear metallic gold, brass or bronze scales and heavy stone-like brows. Their lineages oversee mines, treasuries and deep roads, and many become bankers, appraisers, geomancers or guardians of ancestral hoards.</p>\n<p>Fuku teachings describe luck as a current flowing through value, promise and exchange. A coin freely given can change a life; a stolen treasure can poison a dynasty.</p>\n<p>You increase your Conviction Pool by 1. Furthermore, you gain Treasure Sense (this is a tertiary sense).</p>\n<p><strong>TREASURE SENSE</strong></p>\n<p>When you use the Search (Perception) action, you can detect the presence and general direction of precious metals within 30 feet. You cannot determine the exact location, quantity or value. The sense is blocked by 1 foot of stone, 1 inch of common metal or any thickness of lead.</p>\n<p><em>Applied automatically:</em> your Conviction Pool's maximum rises by 1; the point is given when the heritage is added and taken back if it is removed. Treasure Sense is granted as an ability item.</p>",
+    "sourceRace": "Ryukari",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "Treasure Sense",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "convictionPool": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!69KrIJo3UcHOBfXY"
+}

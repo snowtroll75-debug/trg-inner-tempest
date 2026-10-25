@@ -1,0 +1,45 @@
+{
+  "_id": "pLYlYrywKmQaJnyp",
+  "name": "Stunning Fist",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>DISCIPLE</strong></p>\n<p>You have honed your martial arts skills to deliver precise and debilitating strikes. When you target the same creature with two Strikes from your Flurry of Blows, you can try to stun the creature. If either Strike hits and deals damage, the target must succeed at a Fortitude save against your Technique DC or be stunned 1 (or stunned 3 on a fumble).</p>\n<p><em>Automated:</em> read by Flurry of Blows: when both of its Strikes were at one creature and either hit and dealt damage, that creature saves Fortitude against your Technique DC (10 + your Monastic Path's ability + your level; Graham's B6-6): stunned 1 on a Partial or Failure (a Partial is not a success), stunned 3 on a Fumble or Blunder. A Success or better has no effect.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!pLYlYrywKmQaJnyp"
+}

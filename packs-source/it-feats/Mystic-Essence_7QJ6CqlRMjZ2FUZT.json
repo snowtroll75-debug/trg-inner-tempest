@@ -1,0 +1,49 @@
+{
+  "_id": "7QJ6CqlRMjZ2FUZT",
+  "name": "Mystic Essence",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>MYSTIC</strong></p>\n<p>Select any one spell from the magical tradition of your Monastic Path whose base PP is no greater than your level. You gain that spell as an innate spell with the Focus trait, using your Monastic Path's magical ability score.</p>\n<p><em>Automated:</em> press Use to choose a spell of your Monastic Path's tradition whose base PP is no greater than your level: it is added as an innate spell with the Focus trait, cast with your Path's ability, and it takes your Metamagic feats (Graham's B6-8).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Mystic",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "mysticEssence"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7QJ6CqlRMjZ2FUZT"
+}

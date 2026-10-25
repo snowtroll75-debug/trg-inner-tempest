@@ -1,0 +1,92 @@
+{
+  "_id": "1vquQ0RFSGQO695T",
+  "name": "Zennyo",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Zennyo have deep sea-blue scales and fin-like gill structures along the jaw, neck or ribs. Their houses settle near coasts, rivers and flooded caverns, where they serve as healers, navigators and keepers of water rights.</p>\n<p>To a Zennyo, water is memory. They are taught that corruption can be carried away but never ignored.</p>\n<p>You can breathe both air and water and gain a Swim Speed of 20 feet.</p>\n<p><em>Applied automatically:</em> a swim Speed of 20 feet, and you breathe water, so holding your breath underwater never starts.</p>",
+    "sourceRace": "Ryukari",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "ZkK74ucYLKrmgFQI",
+      "name": "Zennyo: Swim 20 ft",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.swim.base",
+          "mode": 4,
+          "value": "20",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "A swim Speed of 20 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!1vquQ0RFSGQO695T.ZkK74ucYLKrmgFQI"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "derives": {
+          "breathesWater": true
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!1vquQ0RFSGQO695T"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "dOtFU3RKXLYHx0lE",
+  "name": "Lantern Signal",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Hotaru Heritage",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>You have mastered the intricate patterns of colour, rhythm and intensity used by Hotaru lantern-bearers to communicate across great distances.</em></p>\n<p><strong>Prerequisites</strong> Hotaru Heritage</p>\n<p>You can manipulate the light produced by your Living Lantern without using an action, changing its colour, intensity and pattern as you wish. You can use these patterns to communicate silently with another creature that understands Scree Cant. In clear conditions, your signals can be seen and understood at a distance of up to 1 mile, provided there is direct line of sight.</p>\n<p>You may also use your lantern to convey simple concepts to creatures that do not understand Scree Cant (GM's discretion).</p>\n<p><em>Not automated:</em> signalling is the table's; changing your Living Lantern's colour costs no action.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!dOtFU3RKXLYHx0lE"
+}

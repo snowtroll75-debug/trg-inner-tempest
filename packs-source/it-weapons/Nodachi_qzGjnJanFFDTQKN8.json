@@ -1,0 +1,52 @@
+{
+  "_id": "qzGjnJanFFDTQKN8",
+  "name": "Nodachi",
+  "img": "systems/trg-prime/assets/weapons/katana.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 8,
+    "price": 300,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Brace, Deadly, Exotic, Keen, Versatile P",
+    "description": "<p>This formidable two-handed weapon boasts an impressive length, featuring a slender yet wickedly sharp 4-foot-long blade at one end. Predominantly employed by ground troops, it is specifically designed for launching attacks against mounted warriors, providing a strategic advantage on the battlefield.</p>\n<p><strong>Brace:</strong> If you use a Ready action to attack a mounted target with this weapon, your attack gains a +2-circumstance bonus and inflicts an additional die of base damage on a successful hit.</p>\n<p><em>Automated (TRG Prime 3.668.1):</em> a Strike made through Ready against a mounted target gains +2 circumstance and one more die of base damage.</p>\n<p><em>Traits as printed:</em> Brace, Deadly, Keen, Versatile P.</p>",
+    "attackBonus": 0,
+    "damage": "1d10",
+    "damageType": "slashing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 12,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Sword",
+    "category": "Exotic",
+    "size": "large",
+    "itemLevel": 2
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qzGjnJanFFDTQKN8"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "OCfELCtgQSRACTtr",
+  "name": "Serpent's Venom",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Orochi heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>FOCUS MIRAKU POISON TECHNIQUE</strong></p>\n<p><em>Your spiritual connection to the Serpent Animism has awakened a supernatural toxicity within your body.</em></p>\n<p><strong>Prerequisites</strong> Orochi heritage, Level 5</p>\n<p><strong>Action</strong> 1 AP; <strong>Duration</strong> until the end of your next turn</p>\n<p>You cause venom to gather upon your fangs, nails or a weapon you are currently wielding. The next successful melee Strike you make before the technique ends exposes the target to your venom. The target must make a Fortitude save against your Level DC.</p>\n<p><strong>Critical</strong> the target is unaffected.</p>\n<p><strong>Success</strong> the target is unaffected.</p>\n<p><strong>Partial</strong> the target is Sickened 1.</p>\n<p><strong>Failure</strong> the target is Sickened 2.</p>\n<p><strong>Fumble</strong> the target is Sickened 2 and takes 1d6 poison damage per 3-character levels (minimum 1d6).</p>\n<p>After the venom is delivered, the technique ends.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. Your next melee Strike that hits before the end of your next turn delivers it: a Fortitude save against your Level DC — Sickened 1 on a Partial, Sickened 2 on a Failure, and on a Fumble Sickened 2 and 1d6 poison per three levels (at least 1d6). Then it ends.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Miraku, Poison, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "serpentsVenom"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!OCfELCtgQSRACTtr"
+}

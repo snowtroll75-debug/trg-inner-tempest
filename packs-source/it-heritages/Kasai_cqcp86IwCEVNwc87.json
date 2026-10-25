@@ -1,0 +1,96 @@
+{
+  "_id": "cqcp86IwCEVNwc87",
+  "name": "Kasai",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Kasai are touched by the flames of inner fortitude. They are often the warriors of their people.</p>\n<p>You gain resistance to fire. Furthermore, you may cast the Orb of Fire cantrip as a verdant innate spell with the Focus trait, using Wisdom as your magical ability score.</p>\n<p><em>Language:</em> Ignic, the heritage's language (Graham's ruling). <em>Element:</em> Flame (fire). <em>Granted:</em> resistance to fire, and Orb of Fire as an innate cantrip with the Focus trait, cast with Wisdom.</p>",
+    "sourceRace": "Tianzhi",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "Orb Of Fire",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "Ignic",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "jAIqAlSqC9KdXVHo",
+      "name": "Kasai: resistances",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.resistances",
+          "mode": 2,
+          "value": ", fire",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Resistance to fire.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!cqcp86IwCEVNwc87.jAIqAlSqC9KdXVHo"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itElement": {
+        "element": "Flame",
+        "damageType": "fire",
+        "spellTraits": [
+          "fire"
+        ]
+      },
+      "grantInnate": true,
+      "grantedSpellAbility": "wisdom"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cqcp86IwCEVNwc87"
+}

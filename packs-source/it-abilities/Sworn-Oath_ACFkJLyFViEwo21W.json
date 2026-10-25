@@ -1,0 +1,55 @@
+{
+  "_id": "ACFkJLyFViEwo21W",
+  "name": "Sworn Oath",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Oathblade 1st level",
+    "active": true,
+    "description": "<p>At 1st level you must select the oath that lies at the centre of your discipline. An Oathblade's oath need not be religious and does not draw power from a deity. It may be sworn to a lord, clan, family, institution, philosophy, individual or personal ideal. What matters is the absolute conviction with which you hold it.</p>\n<p>Your Sworn Oath is intended to represent a genuine element of your character rather than a temporary combat selection. Changing an oath should normally reflect a significant change in your character's loyalties, beliefs or circumstances and is subject to GM discretion.</p>\n<p>The available Sworn Oaths are detailed below.</p>\n<p><em>Automated:</em> press Use to choose Honour, Guardianship, Vengeance or Fealty; the oath is added to your sheet. Changing it is the GM's: delete it and choose again.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Oathblade",
+        "level": 1
+      },
+      "abilityChoices": [
+        "Oath of Honour",
+        "Oath of Guardianship",
+        "Oath of Vengeance",
+        "Oath of Fealty"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ACFkJLyFViEwo21W"
+}

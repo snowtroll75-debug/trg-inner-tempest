@@ -1,0 +1,49 @@
+{
+  "_id": "ntGDDx0fhkUo7Fj3",
+  "name": "Blinding Majesty",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>ARCANE FOCUS LIGHT RYUKARI SAVE TECHNIQUE</strong></p>\n<p><em>The celestial radiance within your blood erupts from your scales and eyes, briefly revealing something of the majesty of the dragons from which your lineage descends.</em></p>\n<p><strong>Action</strong> 2 AP; <strong>Area</strong> 10-foot emanation</p>\n<p><strong>Saving Throw</strong> Reflex against your Level DC</p>\n<p>You release a sudden flare of celestial light. You may exclude any number of allies from the effect.</p>\n<p><strong>Critical</strong> the target is unaffected.</p>\n<p><strong>Success</strong> the target is dazzled until the beginning of its next turn.</p>\n<p><strong>Partial</strong> the target is dazzled until the end of its next turn.</p>\n<p><strong>Failure</strong> the target is dazzled for 1 minute.</p>\n<p><strong>Fumble</strong> the target is blinded until the beginning of its next turn and is then dazzled for 1 minute.</p>\n<p><em>Automated:</em> press Use: 2 AP and its Focus use. Every creature within 10 feet other than your allies makes a Reflex save against your Level DC (your allies are left out, as the book allows), and the ladder is applied: dazzled for a round, two rounds or 1 minute; on a Fumble blinded for a round and dazzled for 1 minute.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Arcane, Focus, Light, Ryukari, Save, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "blindingMajesty"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ntGDDx0fhkUo7Fj3"
+}

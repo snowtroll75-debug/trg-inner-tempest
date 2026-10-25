@@ -1,0 +1,43 @@
+{
+  "_id": "xpaIAdpgIWVhphGx",
+  "name": "Oath of Guardianship",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Sworn Oath",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>While your Challenge is active, your challenged target suffers a -2-circumstance penalty to attack checks against your allies.</p>\n<p>Furthermore, the first time each round that your challenged target damages one of your allies, you gain advantage on your next melee Strike against that creature before the end of your next turn. If that Strike hits, it inflicts additional base damage equal to your Charisma modifier (minimum +1).</p>\n<p><em>Automated:</em> while your Challenge is up the target takes −2 circumstance on attacks against anyone but you. The first time each round it damages one of your allies, your next melee Strike against it before the end of your next turn has advantage and adds your Charisma (minimum 1) as damage.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itOath": "Oath of Guardianship"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xpaIAdpgIWVhphGx"
+}

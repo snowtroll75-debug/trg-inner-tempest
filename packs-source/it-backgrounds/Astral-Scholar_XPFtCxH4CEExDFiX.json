@@ -1,0 +1,97 @@
+{
+  "_id": "XPFtCxH4CEExDFiX",
+  "name": "Astral Scholar",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your life's purpose is to study astral beings and their influence on the world, unravelling the mysteries of the stars.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Astral Insight</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Arcana, Culture, Planes</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Astral) (on your sheet as Astral Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>1</p>",
+    "grantedFeats": "Astral Insight",
+    "grantedSpells": "",
+    "skillBonuses": "Arcana, Culture, Planes",
+    "specialistSkill": "Astral Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "1"
+  },
+  "effects": [
+    {
+      "_id": "F16FW16KZtFhtCBJ",
+      "name": "Astral Scholar: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.arcana.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.culture.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.planes.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Arcana, Culture, Planes.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!XPFtCxH4CEExDFiX.F16FW16KZtFhtCBJ"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Astral Lore"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XPFtCxH4CEExDFiX"
+}

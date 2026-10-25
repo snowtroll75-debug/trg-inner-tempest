@@ -1,0 +1,45 @@
+{
+  "_id": "qwDSt20FhSeGuEgh",
+  "name": "Fateful Coincidence",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>HUMAN KORNARGON</strong></p>\n<p><em>You often find yourself in uncanny situations.</em></p>\n<p>Once per session, you can declare a \"fateful coincidence.\" This allows you to ask the GM to introduce an unexpected, yet beneficial, turn of events or a helpful NPC connection that aids your party's current situation. The nature of this coincidence should be discussed with the GM for appropriate integration into the story.</p>\n<p><em>Not automated:</em> a coincidence is the GM's to introduce; once per session is yours to keep count of.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Human, Kornargon",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Human, Kornargon",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qwDSt20FhSeGuEgh"
+}

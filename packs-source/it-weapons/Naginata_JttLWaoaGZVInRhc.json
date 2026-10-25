@@ -1,0 +1,52 @@
+{
+  "_id": "JttLWaoaGZVInRhc",
+  "name": "Naginata",
+  "img": "systems/trg-prime/assets/weapons/glaive.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 9,
+    "price": 35,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "AR 2, Exotic, Reach",
+    "description": "<p>The naginata is a formidable weapon characterized by a 6-foot staff seamlessly joined to a 2-foot-long, slightly curved blade resembling a sword. Its well-thought-out design ensures that the wielder remains at a safe distance from opponents armed with swords and shorter weaponry, allowing for effective engagement in combat.</p>\n<p><em>Traits as printed:</em> AR 2, Reach.</p>",
+    "attackBonus": 0,
+    "damage": "1d8",
+    "damageType": "slashing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 2,
+    "proficiency": "",
+    "fumbleDC": 12,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Polearm",
+    "category": "Exotic",
+    "size": "large",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!JttLWaoaGZVInRhc"
+}

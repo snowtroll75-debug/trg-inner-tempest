@@ -1,0 +1,78 @@
+{
+  "_id": "EVUifjErSrEmDKdP",
+  "name": "Scaled Hide",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Scaled Hide:</strong> Your draconic scales grant you a Base DR of 1.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [
+    {
+      "_id": "ZjcypovmeXJ6HAmt",
+      "name": "Scaled Hide: Base DR 1",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Scaled Hide grants a Base DR of 1 (natural armour; scaled by your BDB like any Base DR).",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!EVUifjErSrEmDKdP.ZjcypovmeXJ6HAmt"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EVUifjErSrEmDKdP"
+}

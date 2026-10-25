@@ -1,0 +1,64 @@
+{
+  "_id": "NH2FMB6qeDA6DPWn",
+  "name": "Centred Cleansing",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 5 ranks",
+    "active": true,
+    "description": "<p><em>Through study and deep meditation, you have earnt to rid yourself of disease and poison to great effect.</em></p>\n<p><strong>Prerequisites</strong> Meditation 5 ranks</p>\n<p>You gain advantage to all Cleansing Trance (Meditation) checks.</p>\n<p><em>Applied automatically:</em> advantage on every Cleansing Trance (Meditation) check.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Centred Cleansing",
+          "scope": "Cleansing Trance (Meditation) checks",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "cleansingTrance"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NH2FMB6qeDA6DPWn"
+}

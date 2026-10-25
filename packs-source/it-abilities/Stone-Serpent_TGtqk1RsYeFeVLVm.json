@@ -1,0 +1,88 @@
+{
+  "_id": "TGtqk1RsYeFeVLVm",
+  "name": "Stone Serpent",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Coiled like a serpent and rooted like stone, you become a weapon of patience and explosive precision. This form teaches that stillness can be deadlier than motion.</p>\n<p>You coil low and strike with deceptive reach. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>When attacking from reach, gain +Int mod as precision damage.</li><li>You gain advantage on all Kip up (Acrobatics) actions.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +Int damage on a melee Strike beyond 5 feet (applied as damage, which a creature immune to precision still takes), and advantage on Kip Up. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+Int precision damage from reach",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence",
+                  "label": "Stone Serpent",
+                  "scope": "A melee Strike beyond 5 feet",
+                  "when": {
+                    "checkTypes": [
+                      "damage"
+                    ],
+                    "rangeBands": [
+                      "reach"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Advantage on Kip Up",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "advantage",
+                  "label": "Stone Serpent",
+                  "scope": "Kip Up",
+                  "auto": true,
+                  "when": {
+                    "actions": [
+                      "kipUp"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TGtqk1RsYeFeVLVm"
+}

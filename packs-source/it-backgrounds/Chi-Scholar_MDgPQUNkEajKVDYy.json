@@ -1,0 +1,97 @@
+{
+  "_id": "MDgPQUNkEajKVDYy",
+  "name": "Chi Scholar",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your life is devoted to understanding and maintaining balance in all aspects, whether it be the physical, spiritual, or cosmic.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Inner Balance</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Culture, Meditation, Power Manipulation</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Chi) (on your sheet as Chi Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>0</p>",
+    "grantedFeats": "Inner Balance",
+    "grantedSpells": "",
+    "skillBonuses": "Culture, Meditation, Power Manipulation",
+    "specialistSkill": "Chi Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "0"
+  },
+  "effects": [
+    {
+      "_id": "Y3vgBGNn5bj7dWvf",
+      "name": "Chi Scholar: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.culture.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.meditation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.powerManipulation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Culture, Meditation, Power Manipulation.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!MDgPQUNkEajKVDYy.Y3vgBGNn5bj7dWvf"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Chi Lore"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MDgPQUNkEajKVDYy"
+}

@@ -1,0 +1,470 @@
+{
+ "source": "it12.md",
+ "intro": [
+  "Each race has a selection of feats available to them. As long as you meet the prerequisites, you may select a racial feat at 1st level. At 5th level and then every 5 levels thereafter, you may select an additional racial feat."
+ ],
+ "feats": {
+  "ADAPTIVE MIND": {
+   "traits": "HUMAN",
+   "lines": [
+    "*Humans are renowned for their adaptability and quick thinking.*",
+    "**Prerequisites** Inner Discipline",
+    "When you use a conviction point to reroll a Mental Focus skill check, you only expend it if the result of the check is a success or better."
+   ]
+  },
+  "ANCESTRAL COMMUNION": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*The boundary between your own spirit and those of your ancestors has grown thin, allowing their whispers to guide your understanding.*",
+    "You gain advantage on all Recall Knowledge checks made using Spirit Lore concerning spirits, haunts, possession and disturbances between the mortal and spirit worlds.",
+    "Furthermore, whenever you successfully identify such a creature or phenomenon, you may also determine whether it is naturally occurring, summoned, bound or otherwise being influenced by an external force, where this information is possible to determine."
+   ]
+  },
+  "AWAKEN THE ANIMISM": {
+   "traits": "FOCUS MIRAKU MORPH TECHNIQUE",
+   "lines": [
+    "*For a brief moment you cease merely to resemble your ancestral spirit and instead allow its nature to manifest fully through you.*",
+    "**Prerequisites** Level 10",
+    "**Action** 1 AP; **Duration** 1 minute",
+    "Your ancestral features become dramatically pronounced and you gain a benefit determined by your heritage:",
+    "**Kitsune** You gain advantage on Bluff (Deception) and Feint (Deception) checks.",
+    "**Mujina** Increase your Base DR by 1.",
+    "**Ren** Increase your Speed by 10 feet and treat falls as an additional 20 feet shorter.",
+    "**Byakko** Your melee Strikes inflict +2 base damage.",
+    "**Orochi** Increase your Swim Speed by 10 feet and gain advantage on Escape checks and saving throws against poison.",
+    "Your appearance unmistakably reveals your Animism while this technique is active, and Fluid Form cannot conceal it."
+   ]
+  },
+  "BEAR'S ENDURANCE": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*You have learned to receive violence as the mountain receives the storm: without yielding.*",
+    "**Prerequisites** Mujina Heritage",
+    "When you use Impact Stance, your Base DR increases by 2 against the triggering attack rather than 1. Furthermore, if the attack still inflicts damage, you gain a +2 racial bonus to checks and saving throws made to avoid being knocked prone or moved against your will by that attack."
+   ]
+  },
+  "BLINDING MAJESTY": {
+   "traits": "ARCANE FOCUS LIGHT RYUKARI SAVE TECHNIQUE",
+   "lines": [
+    "*The celestial radiance within your blood erupts from your scales and eyes, briefly revealing something of the majesty of the dragons from which your lineage descends.*",
+    "**Action** 2 AP; **Area** 10-foot emanation",
+    "**Saving Throw** Reflex against your Level DC",
+    "You release a sudden flare of celestial light. You may exclude any number of allies from the effect.",
+    "**Critical** the target is unaffected.",
+    "**Success** the target is dazzled until the beginning of its next turn.",
+    "**Partial** the target is dazzled until the end of its next turn.",
+    "**Failure** the target is dazzled for 1 minute.",
+    "**Fumble** the target is blinded until the beginning of its next turn and is then dazzled for 1 minute."
+   ]
+  },
+  "CELESTIAL BREATH": {
+   "traits": "ARCANE FOCUS RYUKARI SAVE TECHNIQUE",
+   "lines": [
+    "*The elemental current carried within your blood can no longer be contained. With a violent exhalation, you release a fragment of the breath once wielded by your draconic ancestors.*",
+    "**Prerequisites** Level 5",
+    "**Action** 2 AP; **Area** 15-foot cone",
+    "**Saving Throw** Basic Reflex against your Level DC",
+    "You exhale elemental energy, inflicting 1d6 damage per 2-character levels, with a minimum of 2d6.",
+    "The damage type and additional traits are determined by your heritage:",
+    "| **Heritage** | **Damage**  | **Additional Traits** |",
+    "| Shinryu      | Electricity | Air, Electricity      |",
+    "| Zennyo       | Cold        | Cold, Water           |",
+    "| Fuku         | Acid        | Acid, Earth           |",
+    "| Kura         | Cold        | Cold, Shadow          |",
+    "| Zenki        | Fire        | Fire                  |"
+   ]
+  },
+  "CELESTIAL FOOTING": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*You have learned to trust the celestial current beneath your feet completely, standing upon the open air as though upon polished stone.*",
+    "**Prerequisites** Shinryu Heritage, Level 10",
+    "When using your Shinryu heritage ability to move across unsupported air, you may now end your movement while unsupported. The air continues to support you until the end of your next turn. During this time, you may Step or Stride across unsupported air normally. If you are not standing upon a surface capable of supporting you when this effect ends, you fall normally.",
+    "Be aware that this does not grant a Fly Speed."
+   ]
+  },
+  "DRACONIC ARMAMENT": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*Your celestial ancestry has expressed itself through pronounced fangs or claws capable of serving as natural weapons.*",
+    "Choose one of the following natural attacks:",
+    "**Bite** 1d6 piercing; Finesse, Unarmed.",
+    "**Claw** 1d4 slashing; Agile, Finesse, Unarmed.",
+    "You may select this feat twice. If selected a second time, you must choose the other natural attack."
+   ]
+  },
+  "ELEMENTAL ASCENDANT": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*Your profound connection to the elemental forces reaches its peak.*",
+    "**Prerequisites** Elemental Supremacy, Meditation Rank 10",
+    "You may select one of the following PP 6 spells which has a trait that matches your racial element:",
+    "*Cold Ball, Crashing Torrent, Earth Bind, Fireball, Line of Lightning, Remove Disease, Searing Ray, Stone Call, Water Walk, Wall of Wind*",
+    "You gain the selected spell as an innate spell with the Focus trait. It uses the tradition and magical ability score established by your Natural Chi racial ability."
+   ]
+  },
+  "ELEMENTAL ATTUNEMENT": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*You have an innate connection to your heritage’s element.*",
+    "You gain a +2 racial bonus to all Recall Knowledge checks concerning your element. Furthermore, you gain a +1 racial bonus to innate spell attack checks and innate spell save DCs for spells with a trait matching your racial element."
+   ]
+  },
+  "ELEMENTAL INFUSION": {
+   "traits": "FOCUS TECHNIQUE TIANZHI",
+   "lines": [
+    "*You can infuse your attacks with the elemental current of your people.*",
+    "**Prerequisites** Inner Discipline",
+    "**Action** 1 AP; **Duration** 1 minute",
+    "You infuse your attacks with your racial elemental energy type. For the duration of the technique, your melee Strikes inflict an additional 1d4 damage of your elemental type."
+   ]
+  },
+  "ELEMENTAL POWER": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*You gain greater mastery of your chosen element.*",
+    "**Prerequisites** Elemental Infusion",
+    "You may select one of the following PP 2 spells which has a trait that matches your racial element:",
+    "*Burning Hands, Breeze Strike, Ice Slick, Magic Stone, Obscuring Mist, Restoration, Self Healing, Water Bolt (new spell).*",
+    "You gain the selected spell as an innate spell with the Focus trait, using the tradition and magical ability score established by your Natural Chi racial ability."
+   ]
+  },
+  "ELEMENTAL SUPREMACY": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*Your deep connection to the elemental forces continues to grow.*",
+    "**Prerequisites** Elemental Power, Meditation Rank 5",
+    "You may select one of the following PP 4 spells which has a trait that matches your racial element:",
+    "*Acid Bolt, Cold Bolt, Endure Elements, Fire Bolt, Icy Spray, Restore Senses, Water Breathing, Whispering Wind*",
+    "You gain the selected spell as an innate spell with the Focus trait, using the tradition and magical ability score established by your Natural Chi racial ability.",
+    "The number in the spell list is its normal base PP value; you do not spend PP to cast this innate spell."
+   ]
+  },
+  "FATEFUL COINCIDENCE": {
+   "traits": "HUMAN KORNARGON",
+   "lines": [
+    "*You often find yourself in uncanny situations.*",
+    "Once per session, you can declare a \"fateful coincidence.\" This allows you to ask the GM to introduce an unexpected, yet beneficial, turn of events or a helpful NPC connection that aids your party's current situation. The nature of this coincidence should be discussed with the GM for appropriate integration into the story."
+   ]
+  },
+  "FORGEHEART": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*The heat within your body has intensified until ordinary flame feels little different from the warmth of a forge.*",
+    "**Prerequisites** Zenki Heritage, Level 5",
+    "You gain resistance to fire. Furthermore, the racial bonus granted by your Zenki heritage to Crafting checks involving metal, stone or a forge increases from +1 to +2."
+   ]
+  },
+  "FORTIFIED CARAPACE": {
+   "traits": "SCREE",
+   "lines": [
+    "*Layers of new chitin have grown across the most vulnerable parts of your body, creating an exoskeleton capable of turning aside blows that would injure lesser Scree.*",
+    "**Prerequisites** Kabuto Heritage, Level 5",
+    "Increase your Base Natural DR by 1."
+   ]
+  },
+  "FORTUNE'S REVERSAL": {
+   "traits": "CHANCE FOCUS RYUKARI TECHNIQUE",
+   "lines": [
+    "*To the Fuku, fortune is not random. It is a current—and sometimes a sufficiently skilled hand can redirect its flow.*",
+    "**Prerequisites** Fuku Heritage, Level 5",
+    "**Action** R; **Trigger** you fumble an attack check, skill check or saving throw",
+    "Reroll the triggering check and use the second result, even if it is worse."
+   ]
+  },
+  "FOXFIRE": {
+   "traits": "ETHEREAL FOCUS LIGHT MIRAKU TECHNIQUE",
+   "lines": [
+    "*The Fox Animism teaches that illumination and deception are often separated only by perspective. You have learned to manifest the strange spiritual fire associated with your ancestors.*",
+    "**Prerequisites** Kitsune Heritage",
+    "**Action** 1 AP; **Range** 60 feet; **Duration** 1 minute",
+    "You create up to three floating motes of spectral flame within range. Each sheds dim light within 10 feet. When you use the technique, and once each turn thereafter as a Free Action, you may move each flame up to 30 feet to another location within range.",
+    "The flames produce no heat and cannot ignite objects."
+   ]
+  },
+  "GUARDIAN'S INTERCESSION": {
+   "traits": "DEFENCE FOCUS MIRAKU MOVEMENT TECHNIQUE",
+   "lines": [
+    "*The Bear does not endure hardship merely for itself. You have learned to place your strength between danger and those under your protection.*",
+    "**Prerequisites** Mujina Heritage, Level 5",
+    "**Action** R; **Trigger** an adjacent ally is targeted by a physical attack that you are aware of.",
+    "**Requirements** you are able to move",
+    "You Step into a position adjacent to the ally if necessary and interpose yourself between them and the attack. You become the target of the triggering attack instead. You gain a +1-circumstance bonus to DB and Base DR against the triggering attack."
+   ]
+  },
+  "HIVE COORDINATION": {
+   "traits": "SCREE",
+   "lines": [
+    "*The Scree are raised to work as parts of a greater whole. A gesture, click or minute shift in posture can convey precisely what another member of the swarm requires.*",
+    "When you use Aid to assist a creature that understands Scree Cant and can perceive your communication, you gain a +2 racial bonus to the Aid check. This applies to both ordinary Aid checks and combat actions that use the Aid rules."
+   ]
+  },
+  "HOARDKEEPER'S EYE": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*Your awareness of precious metals has developed beyond vague attraction into the exacting perception expected of the ancient hoard-keepers.*",
+    "**Prerequisites** Fuku Heritage",
+    "The range of your Treasure Sense increases from 30 feet to 60 feet. Furthermore, when a source of precious metal is within 10 feet, you can determine its exact location and distinguish between different types of precious metal that you can sense.",
+    "You can also determine whether the source consists principally of a single object or a collection of separate objects. The normal materials that block Treasure Sense continue to do so."
+   ]
+  },
+  "IMMOVABLE PLATING": {
+   "traits": "SCREE",
+   "lines": [
+    "*Your broad stance, reinforced joints and dense armour plates make moving you against your will exceptionally difficult.*",
+    "**Prerequisites** Kabuto Heritage",
+    "You gain a +2 racial bonus to checks and saving throws made to avoid being knocked prone or moved against your will. Furthermore, whenever a physical effect would forcibly move you, reduce the distance moved by 5 feet, to a minimum of 0 feet.",
+    "Be aware that this does not affect teleportation or other effects that relocate you without physically moving your body."
+   ]
+  },
+  "KEEPER OF ENDINGS": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*Your lineage has spent generations watching over places where death, decay and restless spirits gather. You have learned that an ending understood is an ending that can be contained.*",
+    "**Prerequisites** Kura Heritage",
+    "You gain Undead Lore as a specialist skill. Furthermore, you gain a +2 racial bonus to Occultism and Religion checks made to identify or Recall Knowledge concerning undead, haunts and magical phenomena associated with death or decay."
+   ]
+  },
+  "LANTERN SIGNAL": {
+   "traits": "SCREE",
+   "lines": [
+    "*You have mastered the intricate patterns of colour, rhythm and intensity used by Hotaru lantern-bearers to communicate across great distances.*",
+    "**Prerequisites** Hotaru Heritage",
+    "You can manipulate the light produced by your Living Lantern without using an action, changing its colour, intensity and pattern as you wish. You can use these patterns to communicate silently with another creature that understands Scree Cant. In clear conditions, your signals can be seen and understood at a distance of up to 1 mile, provided there is direct line of sight.",
+    "You may also use your lantern to convey simple concepts to creatures that do not understand Scree Cant (GM's discretion)."
+   ]
+  },
+  "MAGMA CHANNEL": {
+   "traits": "ARCANE FIRE FOCUS RYUKARI TECHNIQUE",
+   "lines": [
+    "*You draw the volcanic current of your ancestry through your limbs and into the weapon in your grasp.*",
+    "**Prerequisites** Zenki Heritage",
+    "**Action** 1 AP; **Duration** until the end of your turn",
+    "**Requirements** You are holding a melee weapon or are capable of making a natural attack",
+    "The next successful melee Strike you make before the end of your turn inflicts an additional 1d6 secondary fire damage and gains the Magical trait."
+   ]
+  },
+  "MANY-FACETED VIGILANCE": {
+   "traits": "SCREE",
+   "lines": [
+    "*Your compound eyes have developed extraordinary peripheral awareness, allowing very little movement to escape your attention.*",
+    "The racial bonus granted by your Compound Eyes ability to visual Perception checks increases from +1 to +2. Furthermore, you gain a +10 racial bonus to Initiative checks."
+   ]
+  },
+  "MANY TAILED CUNNING": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*Every new tail is said to represent a lesson learned, a secret kept or a truth understood. Your spiritual maturity has sharpened your ability to manipulate perception.*",
+    "**Prerequisites** Kitsune Heritage",
+    "Whenever you use Ghost Sound or Fluid Form as part of a deception, you gain a +2 racial bonus to the associated Bluff (Deception) check. Furthermore, when a creature successfully sees through one of your disguises or illusions, you gain a +2 racial bonus to your next Bluff (Deception) check against that creature before the end of the encounter."
+   ]
+  },
+  "MIST VEIL": {
+   "traits": "ARCANE FOCUS RYUKARI TECHNIQUE WATER",
+   "lines": [
+    "*You call upon the rain-bringing current within your blood, drawing the moisture around you into a swirling veil.*",
+    "**Prerequisites** Zennyo Heritage",
+    "**Action** 2 AP; **Area** 10-foot emanation",
+    "**Duration** until the beginning of your next turn",
+    "You draw moisture from the surrounding air into a dense bank of mist. Creatures within the mist are concealed, and creatures outside the mist are concealed to creatures within it.",
+    "The mist moves with you."
+   ]
+  },
+  "PARALYSING VENOM": {
+   "traits": "FOCUS POISON SAVE SCREE TECHNIQUE",
+   "lines": [
+    "*The venom stored within your abdominal stinger has matured into a powerful paralytic capable of seizing muscles and arresting movement.*",
+    "**Prerequisites** Suzume Heritage",
+    "**Action** Free (0 AP); **Trigger** you damage a creature with your Sting",
+    "**Saving Throw** Fortitude against your Level DC",
+    "You inject a measured dose of paralysing venom into the wound.",
+    "**Critical** the target is unaffected.",
+    "**Success** the target takes a -5-foot circumstance penalty to Speed until the beginning of its next turn.",
+    "**Partial** the target takes a -5-foot circumstance penalty to Speed until the end of its next turn.",
+    "**Failure** the target is Slowed 1 until the end of its next turn.",
+    "**Fumble** the target is Paralyzed until the beginning of its next turn. It is then Slowed 1 until the end of that turn."
+   ]
+  },
+  "PERFECTED FORM": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*Through careful practice, your control over your mutable features has become remarkably precise.*",
+    "**Prerequisites** Deception 5 ranks",
+    "When using Fluid Form, you may now reproduce the appearance and voice of a specific Medium humanoid you have as a Studied Target. This does not change your size, equipment, racial abilities or statistics. Your disguise can reproduce physical appearance and voice but does not grant knowledge of the individual's behaviour, memories or mannerisms.",
+    "You retain the normal advantage granted by Fluid Form on Bluff (Deception) checks made to support the disguise.",
+    "A creature particularly familiar with the individual may gain an appropriate bonus to recognise the deception at the GM's discretion."
+   ]
+  },
+  "PREDATOR'S MOMENTUM": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*The Tiger teaches that once the hunt begins there should be no hesitation between pursuit and violence.*",
+    "**Prerequisites** Byakko heritage",
+    "When using Predator's Pounce, if you Stride at least 20 feet before making the Strike, the Strike gains a +1-circumstance bonus to AB and inflicts an additional 1d6 precision damage on a successful hit.",
+    "Be aware, this additional damage is applied only once, regardless of any ability that might cause the Strike to damage the target multiple times."
+   ]
+  },
+  "PURIFYING TOUCH": {
+   "traits": "RYUKARI",
+   "lines": [
+    "*Water carries memory, and you have learned to encourage it to surrender that which does not belong.*",
+    "**Prerequisites** Zennyo Heritage",
+    "By spending 10 minutes in physical contact with a body or container of water, you can purify up to 20 gallons of mundane contamination, salt or spoilage.",
+    "This ability does not remove magical curses, supernatural contamination or alchemical poisons unless the GM permits an appropriate counteract check. You also gain a +2 racial bonus to Nature checks made to identify contaminated, poisoned or otherwise unsafe water."
+   ]
+  },
+  "RAPTORIAL REFINEMENT": {
+   "traits": "SCREE",
+   "lines": [
+    "*Repeated honing and controlled shedding have left your forearm blades narrower, harder and capable of finding gaps that ordinary weapons cannot exploit.*",
+    "**Prerequisites** Kamiri Heritage",
+    "The AR of your Raptorial Blade increases from 1 to 2. Furthermore, your Raptorial Blade gains the Versatile Piercing trait."
+   ]
+  },
+  "SERPENT'S VENOM": {
+   "traits": "FOCUS MIRAKU POISON TECHNIQUE",
+   "lines": [
+    "*Your spiritual connection to the Serpent Animism has awakened a supernatural toxicity within your body.*",
+    "**Prerequisites** Orochi heritage, Level 5",
+    "**Action** 1 AP; **Duration** until the end of your next turn",
+    "You cause venom to gather upon your fangs, nails or a weapon you are currently wielding. The next successful melee Strike you make before the technique ends exposes the target to your venom. The target must make a Fortitude save against your Level DC.",
+    "**Critical** the target is unaffected.",
+    "**Success** the target is unaffected.",
+    "**Partial** the target is Sickened 1.",
+    "**Failure** the target is Sickened 2.",
+    "**Fumble** the target is Sickened 2 and takes 1d6 poison damage per 3-character levels (minimum 1d6).",
+    "After the venom is delivered, the technique ends."
+   ]
+  },
+  "SILK SPINNER": {
+   "traits": "SCREE",
+   "lines": [
+    "*Your spinnerets produce long strands of remarkably strong silk that can be woven into useful cord with little preparation.*",
+    "**Prerequisites** Joro Heritage",
+    "By spending 10 minutes, you can produce up to 50 feet of silk cord with the strength and utility of ordinary rope. You can maintain only one such length of silk at a time. If you produce another, the previously created silk becomes dry and brittle over the following hour and is thereafter useless as rope.",
+    "Furthermore, you gain a +2 racial bonus to Crafting checks involving silk, thread, rope or woven webbing."
+   ]
+  },
+  "SPIRIT BEACON": {
+   "traits": "ETHEREAL FOCUS SCREE TECHNIQUE",
+   "lines": [
+    "*The light within you is more than biological. When deliberately awakened, it becomes a beacon to the living and a ward against things that should not walk among them.*",
+    "**Prerequisites** Hotaru Heritage, Level 5",
+    "**Action** 1 AP; **Duration** 1 minute",
+    "Your Living Lantern intensifies. You shed bright light within 20 feet and dim light for a further 20 feet. While within the bright light, you and your allies gain a +2-circumstance bonus to Perception, Occultism and Religion checks made to detect, identify or understand spirits, haunts, possession and other manifestations involving the boundary between the mortal and spirit worlds.",
+    "Furthermore, you and your allies within the bright light also gain a +1-circumstance bonus to saving throws against possession and effects created by spirits or haunts."
+   ]
+  },
+  "SPIRIT ROAR": {
+   "traits": "AUDITORY EMOTION FEAR FOCUS MIRAKU TECHNIQUE",
+   "lines": [
+    "*You unleash the terrible voice of the Tiger Animism, momentarily allowing the predator within your soul to show through your mortal form.*",
+    "**Prerequisites** Byakko heritage, Intimidate 5 ranks",
+    "**Action** 1 AP; **Area** 15-foot emanation",
+    "Make a single Demoralise (Intimidate) check and compare the result against the Level DC of each enemy within the area that can hear you. Resolve the result separately for each creature as though you had used Demoralise against it.",
+    "A creature affected by Spirit Roar is temporarily immune to your Spirit Roar until the end of the encounter, although this does not prevent you from Demoralising it normally."
+   ]
+  },
+  "SPIRITUAL RESILIENCE": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*The spirit bound to your soul protects you against forces that would displace, dominate or corrupt it.*",
+    "You gain a +2 racial bonus to saving throws against possession and effects with the Soul trait.",
+    "Furthermore, whenever you make a Fortitude or Reflex saving throw against an effect created by a spirit, haunt or incorporeal creature, you may use your Wisdom modifier in place of the normal ability modifier for that saving throw if it is higher."
+   ]
+  },
+  "TIANZHI DISCIPLINE": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*You can restore your inner discipline even in dangerous situations.*",
+    "You gain a +2 racial bonus to Refocus (Mental Focus) checks. Furthermore, the first Refocus check that you make each day is treated as a Critical result without the need for a roll."
+   ]
+  },
+  "TIANZHI MEDITATION": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*Your concentration is such that you have an amazing ability to meditate.*",
+    "You gain a +1 racial bonus to Meditation skill checks. Additionally, you gain advantage on your first Cleansing Trance, Clear Mind or Healing Trance (Meditation) check each day."
+   ]
+  },
+  "TIANZHI SCHOLAR": {
+   "traits": "TIANZHI",
+   "lines": [
+    "*Your people have reserves of knowledge passed down through the ages. You have studied with scholars to uncover that knowledge.*",
+    "You gain +1 racial bonus to Meditation and Nature skill checks. Additionally, you gain a +2 racial bonus to your racial specialist skills."
+   ]
+  },
+  "VALLEY CHILL": {
+   "traits": "ARCANE COLD FOCUS RYUKARI SAVE TECHNIQUE",
+   "lines": [
+    "*The light seems to diminish around you as the deathly cold of the shadowed valleys spills from your blood.*",
+    "**Prerequisites** Kura Heritage",
+    "**Action** 2 AP; **Area** 10-foot emanation",
+    "**Saving Throw** Fortitude against your Level DC",
+    "You release a pulse of lightless cold that numbs muscle and dulls movement.",
+    "**Critical** the target is unaffected.",
+    "**Success** the target takes a -5-foot circumstance penalty to Speed until the beginning of your next turn.",
+    "**Partial** the target takes a -10-foot circumstance penalty to Speed until the beginning of your next turn.",
+    "**Failure** the target takes a -10-foot circumstance penalty to Speed and a -1-circumstance penalty to Reflex saving throws until the beginning of your next turn.",
+    "**Fumble** as Failure, and the target is Slowed 1 until the beginning of your next turn."
+   ]
+  },
+  "WAITING BLADE": {
+   "traits": "ATTACK FOCUS SCREE TECHNIQUE",
+   "lines": [
+    "*You do not chase an opening. You remain perfectly still until your opponent creates one.*",
+    "**Prerequisites** Kamiri Heritage, Level 5",
+    "**Action** R; **Trigger** a creature within reach of your Raptorial Blade misses you with a melee Strike that you are aware of",
+    "You immediately make a Raptorial Blade Strike against the triggering creature. Apply your multiple attack penalty normally if one applies."
+   ]
+  },
+  "WEB SNARE": {
+   "traits": "FOCUS SAVE SCREE TECHNIQUE",
+   "lines": [
+    "*You eject a sudden mass of sticky silk, wrapping it around your victim before they have time to tear themselves free.*",
+    "**Prerequisites** Joro Heritage, Silk Spinner, Level 5",
+    "**Action** 2 AP; **Range** 30 feet",
+    "**Saving Throw** Reflex against your Level DC",
+    "You launch a mass of adhesive webbing at one creature within range.",
+    "**Critical** the target avoids the webbing and is unaffected.",
+    "**Success** the target takes a -5-foot circumstance penalty to Speed until the beginning of its next turn.",
+    "**Partial** the target takes a -10-foot circumstance penalty to Speed until the end of its next turn.",
+    "**Failure** the target becomes Immobilized. It may use the Escape action against your Level DC to free itself.",
+    "**Fumble** as Failure, but the target is also flat-footed while it remains Immobilized by your webbing.",
+    "Only one creature can be Immobilized by your Web Snare at a time. If you successfully Immobilize another creature, any previous Web Snare immediately loses its restraining effect."
+   ]
+  },
+  "WEIGHTLESS FOOTWORK": {
+   "traits": "MIRAKU",
+   "lines": [
+    "*Your movements are light and precisely placed, allowing you to cross awkward ground without surrendering your balance.*",
+    "**Prerequisites** Ren Heritage",
+    "You ignore the first 5 feet of difficult terrain that you move through during each Move action. Furthermore, you gain advantage on Balance (Acrobatics) checks and do not become flat-footed while Balancing."
+   ]
+  },
+  "WIND-BORNE MOTION": {
+   "traits": "FOCUS MIRAKU MOVEMENT TECHNIQUE",
+   "lines": [
+    "*For a brief instant you surrender your weight to the air, allowing momentum rather than the ground to determine your path.*",
+    "**Prerequisites** Ren Heritage, Acrobatics 5 ranks",
+    "**Action** 1 AP",
+    "You Stride up to your Speed. During this movement you may cross liquid surfaces, narrow gaps and unsupported spaces as though they were solid ground. You must end your movement on a surface capable of supporting you; otherwise, you fall normally.",
+    "This movement does not grant flight and cannot be used to move vertically through unsupported air."
+   ]
+  },
+  "WINGS UNFURLED": {
+   "traits": "SCREE",
+   "lines": [
+    "*Your wings have strengthened sufficiently to carry you continuously rather than merely in short, explosive bursts.*",
+    "**Prerequisites** Suzume Heritage, Level 10",
+    "You gain a Fly Speed equal to your land Speed. You no longer need to end the movement granted by Wing Burst upon a surface capable of supporting you."
+   ]
+  }
+ },
+ "existing": {
+  "MIRAKU": "Animal Magic, Animal Sense, Bestial Resilience (Mujina), Ethereal Trick (Kitsune), Mental Fortress, Sure Footed (Ren), Swift Reflexes (Ren) and Voice of the Beast.",
+  "RYUKARI": "Darkened Veil (Kura), Dracoris, Fire-Like Blood (Zenki), Stone Wise (Fuku) and Wings of the Wyrm.",
+  "SCREE": "Ethereal Trick (Hotaru), Expert of Aid, Innate Teamwork, Master of Aid, Resilience of Stone (Kabuto), Stone-Like Endurance (Kabuto), Sure Footed (Joro), Swift Reflexes and Swift Stride (Suzume).",
+  "TIANZHI": "Earth Sense (Tsuchi), Earthbound Might (Tsuchi), Fire-Like Blood (Kasai), Graceful Step (Fuukaze), Mental Fortress, Mountain Strider (Tsuchi), Self Aware, Stone Wise (Tsuchi), Swift Reflexes (Fuukaze), Swift Stride (Fuukaze) and Worldly."
+ }
+}

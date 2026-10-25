@@ -1,0 +1,82 @@
+{
+  "_id": "qKS6iUwlrHvUlgEb",
+  "name": "Byakko",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Byakko bear striped skin, sharp eyes and pronounced claws or fangs. They possess a powerful predatory stillness that can become sudden violence without warning. Byakko serve as champions, border guardians and generals, and often regard hesitation as the most dangerous weakness. Their training combines patient stalking, a violent closing rush and a spirit roar intended to break an enemy’s nerve before the first exchange of blows.</p>\n<p>You gain a +1 racial bonus to Sneak (Stealth) and Demoralise (Intimidate) checks. Furthermore, you gain Predator’s Pounce.</p>\n<p><strong>PREDATOR’S POUNCE</strong></p>\n<p><strong>ATTACK FLOURISH FOCUS MOVEMENT</strong></p>\n<p><strong>Action</strong> 2 AP</p>\n<p><strong>Requirements</strong> you are able to Stride at least 10 feet towards a creature.</p>\n<p>Stride at least 10 feet (maximum of your speed) and then make a melee Strike against the creature. The target cannot use reactions triggered by your movement.</p>\n<p><em>Applied automatically:</em> a +1 racial bonus on Sneak and Demoralise checks. Predator's Pounce is granted as an ability item.</p>",
+    "sourceRace": "Miraku",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "Predator's Pounce",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Byakko",
+          "scope": "Sneak (Stealth) checks",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "sneak"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Byakko",
+          "scope": "Demoralise (Intimidate) checks",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "demoralise"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qKS6iUwlrHvUlgEb"
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "17wayq6KTpGC9UTG",
+  "name": "Tianzhi Scholar",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>TIANZHI</strong></p>\n<p><em>Your people have reserves of knowledge passed down through the ages. You have studied with scholars to uncover that knowledge.</em></p>\n<p>You gain +1 racial bonus to Meditation and Nature skill checks. Additionally, you gain a +2 racial bonus to your racial specialist skills.</p>\n<p><em>Automated:</em> +1 racial on Meditation and Nature, and +2 racial on your racial specialist skills (Elemental Lore and Tianzhi Lore).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Tianzhi",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "WKQh1kv11XZU61RI",
+      "name": "Tianzhi Scholar: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.meditation.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.nature.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 racial bonus to Meditation and Nature checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!17wayq6KTpGC9UTG.WKQh1kv11XZU61RI"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Tianzhi Scholar",
+          "scope": "Your racial specialist skills (Elemental Lore, Tianzhi Lore)",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "specialist"
+            ],
+            "subjects": [
+              "elementalLore",
+              "tianzhiLore"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!17wayq6KTpGC9UTG"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "cUYLk5Tvsf309ATv",
+  "name": "Ancestral Guidance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><em>You possess a deep connection to the traditions and wisdom of your ancestors, allowing their guidance to steer your actions in times of need.</em></p>\n<p>When you attempt a Recall Knowledge or Create skill check, you can call upon the knowledge of your ancestors. This allows you to use a point of conviction to reroll the check and only expend it if you gain a success or higher result.</p>\n<p><em>Automated:</em> after a Recall Knowledge or Create check below a Success, the card that follows offers <strong>Ancestral Guidance — reroll</strong>. Pressing it rerolls the check (no further AP), and a point of conviction is spent only if the new result is a Success or better. You need a point of conviction to try.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ancestralGuidance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cUYLk5Tvsf309ATv"
+}

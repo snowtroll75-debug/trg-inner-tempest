@@ -1,0 +1,61 @@
+{
+  "_id": "Of2AN7oESYweColD",
+  "name": "Weightless Footwork",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Ren Heritage",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>Your movements are light and precisely placed, allowing you to cross awkward ground without surrendering your balance.</em></p>\n<p><strong>Prerequisites</strong> Ren Heritage</p>\n<p>You ignore the first 5 feet of difficult terrain that you move through during each Move action. Furthermore, you gain advantage on Balance (Acrobatics) checks and do not become flat-footed while Balancing.</p>\n<p><em>Partly automated:</em> advantage on Balance (Acrobatics). The first 5 feet of difficult terrain each move, and not being flat-footed while Balancing, are the table's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Weightless Footwork",
+          "scope": "Balance (Acrobatics) checks",
+          "auto": true,
+          "when": {
+            "actions": [
+              "balance"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Of2AN7oESYweColD"
+}

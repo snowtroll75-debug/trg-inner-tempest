@@ -1,0 +1,93 @@
+{
+  "_id": "kCq3ErCI4XJuglGr",
+  "name": "Spirit Beacon",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Hotaru Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>ETHEREAL FOCUS SCREE TECHNIQUE</strong></p>\n<p><em>The light within you is more than biological. When deliberately awakened, it becomes a beacon to the living and a ward against things that should not walk among them.</em></p>\n<p><strong>Prerequisites</strong> Hotaru Heritage, Level 5</p>\n<p><strong>Action</strong> 1 AP; <strong>Duration</strong> 1 minute</p>\n<p>Your Living Lantern intensifies. You shed bright light within 20 feet and dim light for a further 20 feet. While within the bright light, you and your allies gain a +2-circumstance bonus to Perception, Occultism and Religion checks made to detect, identify or understand spirits, haunts, possession and other manifestations involving the boundary between the mortal and spirit worlds.</p>\n<p>Furthermore, you and your allies within the bright light also gain a +1-circumstance bonus to saving throws against possession and effects created by spirits or haunts.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. For 1 minute you shed bright light within 20 feet and dim light 20 feet further (your token's light, and the light level: +3 steps within 20 feet, +1 beyond). You and your allies within 20 feet carry two ticks: +2 circumstance on Perception, Occultism and Religion about spirits, haunts and possession, and +1 circumstance on saves against possession and spirits' or haunts' effects. A save cannot see that its source is a spirit (spirit is a trait, not a creature type), so both are ticks.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ethereal, Focus, Scree, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "spiritBeacon",
+      "auras": [
+        {
+          "kind": "ally",
+          "name": "Spirit Beacon",
+          "radius": 20,
+          "includeSelf": true,
+          "emitterState": "spirit-beacon",
+          "allyEffect": {
+            "conditionals": [
+              {
+                "kind": "modifier",
+                "value": 2,
+                "type": "circumstance",
+                "label": "Spirit Beacon",
+                "scope": "Perception, Occultism or Religion to detect, identify or understand spirits, haunts, possession or the boundary between the worlds — tick if so",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "skill"
+                  ],
+                  "subjects": [
+                    "perception",
+                    "occultism",
+                    "religion"
+                  ]
+                }
+              },
+              {
+                "kind": "modifier",
+                "value": 1,
+                "type": "circumstance",
+                "label": "Spirit Beacon",
+                "scope": "Saving throws against possession or an effect a spirit or haunt created — tick if so",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "save"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!kCq3ErCI4XJuglGr"
+}

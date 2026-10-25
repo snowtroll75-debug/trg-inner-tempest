@@ -1,0 +1,45 @@
+{
+  "_id": "pB4YxueKlwZFEdFm",
+  "name": "Formal Declaration",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>MENTAL OATHBLADE</strong></p>\n<p>Your Challenge carries the weight of absolute certainty. An opponent knows immediately that you have chosen them above all others.</p>\n<p>Whenever you use Challenge, you may immediately attempt a Demoralise (Intimidate) check against the challenged creature as part of the same action.</p>\n<p>If the target can clearly hear and understand your declaration, you gain a +2-circumstance bonus to this Demoralise check.</p>\n<p>A creature affected by this feat becomes temporarily immune to Formal Declaration until the end of the encounter, regardless of the result of the Demoralise check.</p>\n<p><em>Automated:</em> after a Challenge you are asked whether to Demoralise the target at once (+2 circumstance if it can hear and understand you, ticked). The target is then immune to it until the encounter ends.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Mental, Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!pB4YxueKlwZFEdFm"
+}

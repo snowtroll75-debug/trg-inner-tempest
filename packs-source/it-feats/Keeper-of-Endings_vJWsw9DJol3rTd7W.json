@@ -1,0 +1,121 @@
+{
+  "_id": "vJWsw9DJol3rTd7W",
+  "name": "Keeper of Endings",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kura Heritage",
+    "active": true,
+    "description": "<p><strong>RYUKARI</strong></p>\n<p><em>Your lineage has spent generations watching over places where death, decay and restless spirits gather. You have learned that an ending understood is an ending that can be contained.</em></p>\n<p><strong>Prerequisites</strong> Kura Heritage</p>\n<p>You gain Undead Lore as a specialist skill. Furthermore, you gain a +2 racial bonus to Occultism and Religion checks made to identify or Recall Knowledge concerning undead, haunts and magical phenomena associated with death or decay.</p>\n<p><em>Automated:</em> Undead Lore is added as a specialist skill. +2 racial on Occultism and Religion is applied when the check is aimed at an undead or a haunt, and offered as a tick otherwise (death or decay).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ryukari",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Undead Lore",
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Keeper of Endings",
+          "scope": "Occultism or Religion aimed at an undead",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "occultism",
+              "religion"
+            ],
+            "targetTypes": [
+              "undead"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Keeper of Endings",
+          "scope": "Occultism or Religion aimed at a haunt",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "occultism",
+              "religion"
+            ],
+            "targetTraits": [
+              "haunt"
+            ],
+            "not": {
+              "targetTypes": [
+                "undead"
+              ]
+            }
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Keeper of Endings",
+          "scope": "Occultism or Religion to identify or recall knowledge about undead, haunts or magic of death or decay — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "occultism",
+              "religion"
+            ],
+            "not": {
+              "targetTypes": [
+                "undead"
+              ],
+              "targetTraits": [
+                "haunt"
+              ]
+            }
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!vJWsw9DJol3rTd7W"
+}

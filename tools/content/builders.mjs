@@ -30,7 +30,7 @@ export function stableId(seed) {
 const STATS = {
   coreVersion: "14",
   systemId: SYSTEM_ID,
-  systemVersion: "3.663.5",
+  systemVersion: "3.664.0",
   createdTime: 1789000000000,
   modifiedTime: 1789000000000,
   lastModifiedBy: null,
@@ -53,7 +53,7 @@ export const SKILL_KEYS = {
   "mental focus": "mentalFocus", "nature": "nature", "occultism": "occultism",
   "perception": "perception", "perform": "perform", "planes": "planes",
   "power manipulation": "powerManipulation", "religion": "religion", "sense motive": "senseMotive",
-  "stealth": "stealth", "survival": "survival", "swimming": "swimming"
+  "stealth": "stealth", "survival": "survival", "thievery": "thievery"
 };
 
 export function skillKey(label) {
@@ -229,7 +229,7 @@ export function race({ name, description, abilityModifiers, size = "medium", spe
   });
 }
 
-export function heritage({ name, sourceRace, description, abilityModifiers = "", racialAbilities = "", removedAbilities = "", grantedFeats = "", grantedSpells = "", specialistSkills = "", languageChoices = "", flags = {}, effects = [] }) {
+export function heritage({ name, sourceRace, description, abilityModifiers = "", racialAbilities = "", removedAbilities = "", grantedFeats = "", grantedSpells = "", grantedWeapons = "", specialistSkills = "", coreLanguages = "", languageChoices = "", flags = {}, effects = [] }) {
   const id = stableId(`heritages:${name}`);
   const built = [];
   if (abilityModifiers) {
@@ -246,11 +246,15 @@ export function heritage({ name, sourceRace, description, abilityModifiers = "",
       abilityModifiers,
       grantedFeats,
       grantedSpells,
+      // TRG Prime 3.664.0: a heritage may grant a natural attack.
+      grantedWeapons,
       racialAbilities,
       removedAbilities,
       loyalties: "",
       specialistSkills,
-      coreLanguages: "",
+      // A heritage's own language (the Tianzhi's, Graham's ruling of 21 Oct
+      // 2026): derived by the core from the heritage, as a race's is.
+      coreLanguages,
       additionalLanguages: "",
       languageChoices
     },
@@ -259,7 +263,7 @@ export function heritage({ name, sourceRace, description, abilityModifiers = "",
   });
 }
 
-export function background({ name, description, grantedFeats, skillBonuses, specialistSkill, special = "", wealth = "1" }) {
+export function background({ name, description, grantedFeats, skillBonuses, specialistSkill, special = "", wealth = "1", flags = {} }) {
   const id = stableId(`backgrounds:${name}`);
   const skills = skillBonuses.split(",").map((s) => s.trim());
   return feature({
@@ -277,7 +281,7 @@ export function background({ name, description, grantedFeats, skillBonuses, spec
       wealth
     },
     effects: [classSkillEffect(id, name, skills)],
-    flags: { grantedSpecialistSkills: specialistSkill }
+    flags: { grantedSpecialistSkills: specialistSkill, ...flags }
   });
 }
 
@@ -424,7 +428,7 @@ export function gear({ name, description, price = 0, weight = 1, traits = "", fl
 }
 
 /** A spell in the shape TRG Prime's spells pack uses. */
-export function spell({ name, description, tradition, category = "utility", ppCost = 0, castAP = 1, range = "", area = "", targets = "", duration = "", defence = "", traits = "", effects = [], components = { somatic: false, verbal: true, material: false, focus: false }, innate = false, usesPerDay = "", flags = {}, img = "icons/svg/holy-symbol.svg" }) {
+export function spell({ name, description, tradition, category = "utility", ppCost = 0, castAP = 1, range = "", area = "", targets = "", duration = "", defence = "", traits = "", effects = [], components = { somatic: false, verbal: true, material: false, focus: false }, innate = false, usesPerDay = "", flags = {}, img = "icons/svg/holy-symbol.svg", baseDamage = "", damage = null, sustained = false, sustainType = "", warps = [] }) {
   const id = stableId(`spells:${name}`);
   return {
     _id: id,
@@ -442,15 +446,15 @@ export function spell({ name, description, tradition, category = "utility", ppCo
       targets,
       duration,
       defence,
-      baseDamage: "",
-      damage: { formula: "", type: "", persistent: "" },
+      baseDamage,
+      damage: { formula: "", type: "", persistent: "", ...(damage ?? {}) },
       casterLevelMods: [],
       effects,
-      warps: [],
+      warps,
       apOptions: [],
       prepared: false,
-      sustained: false,
-      sustainType: "",
+      sustained,
+      sustainType,
       areaTargeting: "all",
       specialist: false,
       specialistClass: "",
@@ -485,4 +489,46 @@ export function html(text) {
     .filter(Boolean)
     .map((p) => `<p>${p.replace(/\n/g, "<br>")}</p>`)
     .join("\n");
+}
+
+/**
+ * A WEAPON in the shape TRG Prime's weapons pack keeps them (0.5.1; the
+ * Whip and the Katana are the models): one hand, a size the system reads for
+ * two-handed use, `reachFeet` only for a printed reach (the Whip's pattern),
+ * and Exotic among the traits of an exotic weapon, as the core pack writes it.
+ */
+export function weapon({ name, description, price, weight, damage, damageType, size, fumbleDC, group, category, traits, itemLevel = 0, armourRending = 0, reachFeet = null, img }) {
+  return {
+    _id: stableId(`weapons:${name}`),
+    name, img, type: "weapon",
+    system: {
+      quantity: 1, weight, price, equipped: false, invested: false, hp: { value: 0, max: 0 },
+      traits, description,
+      attackBonus: 0, damage, damageType, baseDamage: 0, hands: 1, range: "", armourRending, proficiency: "",
+      fumbleDC, attackMode: "melee", rangeIncrement: 0, group, category, size, itemLevel,
+      ...(reachFeet ? { reachFeet } : {})
+    },
+    effects: [], folder: null, sort: 0, ownership: { default: 0 }, flags: {}, _stats: { ...STATS }
+  };
+}
+
+/**
+ * A NATURAL ATTACK in the shape TRG Prime's companions pack keeps them (a
+ * weapon with `natural: true`, Brawling group, Unarmed category, sized
+ * medium) — what a heritage's `grantedWeapons` hands over.
+ */
+export function naturalAttack({ name, damage, damageType, traits, description, armourRending = 0, fumbleDC = 5, img = "systems/trg-prime/assets/weapons/claw.png" }) {
+  return {
+    _id: stableId(`companions:${name}`),
+    name, img, type: "weapon",
+    system: {
+      quantity: 1, weight: 0, price: 0, equipped: true, invested: false, hp: { value: 0, max: 0 },
+      traits, description: html(description),
+      attackBonus: 0, damage, damageType, baseDamage: 0, hands: 0, range: "", armourRending, proficiency: "",
+      fumbleDC, attackMode: "melee", rangeIncrement: 0, group: "Brawling", category: "Unarmed", size: "medium",
+      itemLevel: 0, quality: "standard", material: "", superiorTraits: "", loaded: true, reloadProgress: 0,
+      usedQuickLoadThisRound: false, spinBonus: 0, attackedThisTurn: false, natural: true
+    },
+    effects: [], folder: null, sort: 0, ownership: { default: 0 }, flags: { [SYSTEM_ID]: {} }, _stats: { ...STATS }
+  };
 }

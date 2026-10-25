@@ -1,0 +1,45 @@
+{
+  "_id": "1QPEGKCYOcxrptgK",
+  "name": "Shared Purpose",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10, Oath of Fealty",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 10, Oath of Fealty</p>\n<p>You and your Sworn Charge have learned to recognise the smallest opening created by the other's attack.</p>\n<p>The first time each round that either you or your Sworn Charge scores a critical hit against your challenged target, the other character may immediately Step 5 feet as a Free (0 AP) action.</p>\n<p>This movement does not trigger reactions.</p>\n<p>Furthermore, the character who takes this Step gains advantage on their next attack against the challenged target before the end of their next turn.</p>\n<p>A character can benefit from Shared Purpose only once per round.</p>\n<p><em>Automated:</em> once per round, when you or your Sworn Charge score a critical hit on the challenged target, the other is offered the free Step (move by hand) and advantage on their next attack on it before the end of their next turn.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!1QPEGKCYOcxrptgK"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "ncbdbT2teBYXWRcD",
+  "name": "Mystical Power",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p>Just like other adepts, you may learn to harness magic, but the spells granted by this class are innate spells rather than prepared or spontaneous spells. They follow the rules in Chapter 7 and the TRG Core Rulebook.</p>\n<p>At 1st level you may select any two cantrips available to the magical tradition of your Monastic Path and any two spells with a base PP of 2. You gain each selected spell as an innate spell with the Focus trait. You do not memorise these spells and they cost no PP to cast. Each time you gain a level, you may add one additional eligible spell to your innate repertoire.</p>\n<p>Be aware that an eligible spell is one from your Monastic Path's tradition whose base PP is no greater than your Mystic level.</p>\n<p>You also gain additional innate spells from your Mystical Discipline, and you may expand your repertoire by taking the Mystic Essence feat (see Chapter 5). Each spell is tracked and Refocused separately.</p>\n<p><em>Automated:</em> press Use to pick your spells. The picker lists your Monastic Path's spells and counts what you are owed: two cantrips and two base PP 2 spells at 1st level, then one eligible spell (base PP no greater than your level) for each level after. Each arrives as an innate spell with the Focus trait, cast with your Path's tradition and ability. Your 1st-level PP 2 picks may be cast from 1st level (Graham's ruling B3-2). Choose your Monastic Path first.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "mysticalPower"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ncbdbT2teBYXWRcD"
+}

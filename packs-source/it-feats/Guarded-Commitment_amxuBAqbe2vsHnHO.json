@@ -1,0 +1,45 @@
+{
+  "_id": "amxuBAqbe2vsHnHO",
+  "name": "Guarded Commitment",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p>Your concentration upon a chosen opponent no longer leaves quite so much of your defence exposed to everyone else.</p>\n<p>The circumstance penalty to DB that you suffer against creatures other than your challenged target is reduced from -2 to -1.</p>\n<p><em>Automated:</em> your Challenge's penalty to DB against other creatures is −1.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!amxuBAqbe2vsHnHO"
+}

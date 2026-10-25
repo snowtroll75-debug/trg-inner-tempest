@@ -1,0 +1,93 @@
+{
+  "_id": "cJkmL8AkYgUiHSYP",
+  "name": "Iron Tortoise",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Like the immovable tortoise, you present a stoic defence, unyielding in the face of pressure. Your stance reflects deep inner discipline and the belief that patience can outlast fury.</p>\n<p>You adopt a defensive stance, reducing damage and holding your ground. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Gain +1 DB per 2 Int modifier (min +1).</li><li>All attempts to push or move you are made at disadvantage. Any saving throws that you must make to avoid being moved are made at advantage.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +1 DB per 2 Int (minimum +1). Shove, Reposition and Trip against you are rolled at disadvantage (Graham, 23 October 2026: a Trip is an attempt to move you); a save to avoid being moved is offered advantage as a tick. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+1 DB per 2 Int",
+            "flags": {
+              "statBonuses": [
+                {
+                  "target": "defence",
+                  "type": "class",
+                  "valueFrom": "intelligence/2",
+                  "valueMin": 1,
+                  "label": "Iron Tortoise"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Moving you at disadvantage",
+            "flags": {
+              "defenceDC": [
+                {
+                  "kind": "disadvantage",
+                  "dc": "any",
+                  "label": "Iron Tortoise",
+                  "when": {
+                    "actions": [
+                      "shoveAttack",
+                      "reposition",
+                      "tripAttack"
+                    ]
+                  }
+                }
+              ],
+              "conditionals": [
+                {
+                  "kind": "advantage",
+                  "label": "Iron Tortoise",
+                  "scope": "A saving throw to avoid being moved — tick if this is one",
+                  "auto": false,
+                  "when": {
+                    "checkTypes": [
+                      "save"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cJkmL8AkYgUiHSYP"
+}

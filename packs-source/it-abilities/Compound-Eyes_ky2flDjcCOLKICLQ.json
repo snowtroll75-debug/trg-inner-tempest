@@ -1,0 +1,60 @@
+{
+  "_id": "ky2flDjcCOLKICLQ",
+  "name": "Compound Eyes",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Compound Eyes:</strong> You gain a +1 racial bonus to all visual Perception checks.</p>\n<p><em>Offered</em> in every Perception roll's dialog — tick it when the check relies on sight.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Compound Eyes",
+          "scope": "Visual Perception checks — tick if this check relies on sight",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "perception"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ky2flDjcCOLKICLQ"
+}

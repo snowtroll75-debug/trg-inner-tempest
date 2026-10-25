@@ -1,0 +1,49 @@
+{
+  "_id": "DlhOhhmF2zSdqKeM",
+  "name": "Awaken the Animism",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10",
+    "active": true,
+    "description": "<p><strong>FOCUS MIRAKU MORPH TECHNIQUE</strong></p>\n<p><em>For a brief moment you cease merely to resemble your ancestral spirit and instead allow its nature to manifest fully through you.</em></p>\n<p><strong>Prerequisites</strong> Level 10</p>\n<p><strong>Action</strong> 1 AP; <strong>Duration</strong> 1 minute</p>\n<p>Your ancestral features become dramatically pronounced and you gain a benefit determined by your heritage:</p>\n<p><strong>Kitsune</strong> You gain advantage on Bluff (Deception) and Feint (Deception) checks.</p>\n<p><strong>Mujina</strong> Increase your Base DR by 1.</p>\n<p><strong>Ren</strong> Increase your Speed by 10 feet and treat falls as an additional 20 feet shorter.</p>\n<p><strong>Byakko</strong> Your melee Strikes inflict +2 base damage.</p>\n<p><strong>Orochi</strong> Increase your Swim Speed by 10 feet and gain advantage on Escape checks and saving throws against poison.</p>\n<p>Your appearance unmistakably reveals your Animism while this technique is active, and Fluid Form cannot conceal it.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. For 1 minute, by your heritage — Kitsune: advantage on Bluff and Feint; Mujina: Base DR +1; Ren: Speed +10 feet and falls a further 20 feet shorter; Byakko: +2 damage on melee Strikes; Orochi: Swim Speed +10 feet, advantage on Escape and on saves against poison (applied when the save names it, offered otherwise). The card says that Fluid Form cannot hide it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Miraku, Morph, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "awakenTheAnimism"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DlhOhhmF2zSdqKeM"
+}

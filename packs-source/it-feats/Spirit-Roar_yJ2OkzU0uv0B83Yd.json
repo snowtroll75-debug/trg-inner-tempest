@@ -1,0 +1,49 @@
+{
+  "_id": "yJ2OkzU0uv0B83Yd",
+  "name": "Spirit Roar",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Byakko heritage, Intimidate 5 ranks",
+    "active": true,
+    "description": "<p><strong>AUDITORY EMOTION FEAR FOCUS MIRAKU TECHNIQUE</strong></p>\n<p><em>You unleash the terrible voice of the Tiger Animism, momentarily allowing the predator within your soul to show through your mortal form.</em></p>\n<p><strong>Prerequisites</strong> Byakko heritage, Intimidate 5 ranks</p>\n<p><strong>Action</strong> 1 AP; <strong>Area</strong> 15-foot emanation</p>\n<p>Make a single Demoralise (Intimidate) check and compare the result against the Level DC of each enemy within the area that can hear you. Resolve the result separately for each creature as though you had used Demoralise against it.</p>\n<p>A creature affected by Spirit Roar is temporarily immune to your Spirit Roar until the end of the encounter, although this does not prevent you from Demoralising it normally.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. One Demoralise check, compared with the Level DC of each enemy within 15 feet; each is resolved as Demoralise against it. Each affected creature is then immune to your Spirit Roar until the encounter ends (your ordinary Demoralise is not). Hearing you is the table's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Auditory, Emotion, Fear, Focus, Miraku, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "spiritRoar"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!yJ2OkzU0uv0B83Yd"
+}

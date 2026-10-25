@@ -1,0 +1,64 @@
+{
+  "_id": "a008HJEOkGKLSXau",
+  "name": "Ancestral Communion",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>The boundary between your own spirit and those of your ancestors has grown thin, allowing their whispers to guide your understanding.</em></p>\n<p>You gain advantage on all Recall Knowledge checks made using Spirit Lore concerning spirits, haunts, possession and disturbances between the mortal and spirit worlds.</p>\n<p>Furthermore, whenever you successfully identify such a creature or phenomenon, you may also determine whether it is naturally occurring, summoned, bound or otherwise being influenced by an external force, where this information is possible to determine.</p>\n<p><em>Partly automated:</em> advantage is offered on your Spirit Lore checks — tick it when the check is Recall Knowledge about spirits, haunts, possession or the boundary between the worlds. What you learn of a creature's origin is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Ancestral Communion",
+          "scope": "Recall Knowledge with Spirit Lore about spirits, haunts, possession or disturbances between the mortal and spirit worlds — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "specialist"
+            ],
+            "subjects": [
+              "spiritLore"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!a008HJEOkGKLSXau"
+}

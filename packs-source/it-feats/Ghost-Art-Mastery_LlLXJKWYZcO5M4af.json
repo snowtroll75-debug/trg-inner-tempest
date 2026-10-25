@@ -1,0 +1,49 @@
+{
+  "_id": "LlLXJKWYZcO5M4af",
+  "name": "Ghost Art Mastery",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 14",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 14</p>\n<p>Repeated use has transformed one of your Ghost Arts from a specialised technique into something approaching instinct.</p>\n<p>Choose one Ghost Art you possess with the Focus trait.</p>\n<p>You may use the selected Ghost Art one additional time before it becomes expended and must be restored using Refocus.</p>\n<p>Both uses are restored when you successfully Refocus that Ghost Art.</p>\n<p>You may select this feat multiple times, choosing a different Ghost Art each time.</p>\n<p><em>Automated:</em> press Use to choose a Focus Ghost Art: it gains a second use, and a Refocus restores both.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": true,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArtMastery"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!LlLXJKWYZcO5M4af"
+}

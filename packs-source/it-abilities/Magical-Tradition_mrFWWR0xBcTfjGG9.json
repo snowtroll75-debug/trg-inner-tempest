@@ -1,0 +1,54 @@
+{
+  "_id": "mrFWWR0xBcTfjGG9",
+  "name": "Magical Tradition",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Oathblade 1st level",
+    "active": true,
+    "description": "<p>You have no normal spellcasting abilities but must select a magical tradition at 1st level.</p>\n<p>Focus itself is not magical and neither Challenge nor your Sworn Oath becomes magical as a result of this choice. If an Oathblade feat or ability later grants you an explicitly magical technique or innate spell without specifying its tradition, it uses your selected magical tradition and Charisma as its magical ability score.</p>\n<p><em>Automated:</em> press Use to choose arcane, divinity, ethereal or verdant. It is recorded on this ability and names the tradition (with Charisma) of any magical Oathblade technique on its card. Focus is not magical, so nothing else changes.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Oathblade",
+        "level": 1
+      },
+      "itTradition": {
+        "ability": "charisma",
+        "tradition": ""
+      },
+      "itAutomation": "magicalTradition"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mrFWWR0xBcTfjGG9"
+}

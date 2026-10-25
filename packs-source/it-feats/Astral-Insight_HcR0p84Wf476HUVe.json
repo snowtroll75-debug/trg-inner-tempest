@@ -1,0 +1,64 @@
+{
+  "_id": "HcR0p84Wf476HUVe",
+  "name": "Astral Insight",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Planes 2 ranks",
+    "active": true,
+    "description": "<p><em>You can study the stars to gain inspiration and insight.</em></p>\n<p><strong>Prerequisites</strong> Planes 2 ranks</p>\n<p>You gain advantage on all Planes skill checks made regarding the astral plane.</p>\n<p><em>Offered:</em> advantage in every Planes roll's dialog — tick it when the check concerns the astral plane.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Astral Insight",
+          "scope": "Planes checks regarding the astral plane — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "planes"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HcR0p84Wf476HUVe"
+}

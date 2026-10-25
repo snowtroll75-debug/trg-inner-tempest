@@ -1,0 +1,45 @@
+{
+  "_id": "c5afnVU8iLxu2ICz",
+  "name": "Between Glances",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 7",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 7</p>\n<p>You have mastered the moment between one observer losing sight of you and another finding you.</p>\n<p>When using Ghostwalk, you may cross up to 20 feet of open ground without automatically becoming observed, provided you begin and end the movement somewhere that would normally allow you to Hide.</p>\n<p>You must still succeed at the normal Stealth check.</p>\n<p><em>Not automated:</em> what observers notice is the GM's; the card reminds you that Ghostwalk may cross 20 feet of open ground.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!c5afnVU8iLxu2ICz"
+}

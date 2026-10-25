@@ -1,0 +1,59 @@
+{
+  "_id": "x9M7Mf9B9Tj9oP8p",
+  "name": "Deep Focus",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Disciple 1st level",
+    "active": true,
+    "description": "<p>Your training allows you to sustain the concentration required for your techniques longer than others. Each technique you possess with the Focus trait can be used one additional time before it becomes expended and must be restored with Refocus (Mental Focus).</p>\n<p>Each technique tracks its uses separately. When you successfully Refocus a technique, all of the uses granted to that technique by Deep Focus are restored.</p>\n<p><em>Automated:</em> every ability with both the Focus and Technique traits has one more use, and a successful Refocus restores all of its uses. Spells are not techniques: innate spells keep one use.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Disciple",
+        "level": 1
+      },
+      "focusExtraUses": [
+        {
+          "value": 1,
+          "traits": [
+            "technique"
+          ],
+          "restoresAll": true,
+          "label": "Deep Focus"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!x9M7Mf9B9Tj9oP8p"
+}

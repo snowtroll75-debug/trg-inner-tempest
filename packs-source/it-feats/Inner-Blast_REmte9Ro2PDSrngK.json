@@ -1,0 +1,49 @@
+{
+  "_id": "REmte9Ro2PDSrngK",
+  "name": "Inner Blast",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Level 5",
+    "active": true,
+    "description": "<p><strong>FOCUS FORCE SAVE TECHNIQUE</strong> <strong>Action</strong> 1 to 3 AP</p>\n<p>You release a concentrated burst of force. If you spend 1 AP, creatures in a 15-foot cone take 2d6 force damage. If you spend 2 AP, the cone is 30 feet and damage is 3d6. If you spend 3 AP, the cone is 60 feet and damage is 4d6. Each creature in the area attempts a basic Fortitude save against your Technique Save DC. This is a magical technique using the tradition of your Monastic Path.</p>\n<p><em>Automated:</em> target the creatures in the cone, then press Use and choose 1, 2 or 3 AP. The damage is rolled once, and each target makes a basic Fortitude save against your Technique Save DC (10 + your Monastic Path's ability + your level). The damage is magical force.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Force, Save, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerBlast"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!REmte9Ro2PDSrngK"
+}

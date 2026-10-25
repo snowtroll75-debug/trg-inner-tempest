@@ -1,0 +1,45 @@
+{
+  "_id": "f13amP9NggxbHJJZ",
+  "name": "Fluid Blending",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 12, Blended Form",
+    "active": true,
+    "description": "<p><strong>KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 12, Blended Form</p>\n<p>During your daily preparation, you may change your two blended forms to two different ones.</p>\n<p><em>Automated:</em> Blended Form's Use lets you choose its two forms again.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!f13amP9NggxbHJJZ"
+}

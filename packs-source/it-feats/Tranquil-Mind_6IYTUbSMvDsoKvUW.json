@@ -1,0 +1,82 @@
+{
+  "_id": "6IYTUbSMvDsoKvUW",
+  "name": "Tranquil Mind",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mental Focus 5 ranks",
+    "active": true,
+    "description": "<p><em>As you flow into a new stance, you align your spirit with deeper currents of energy, drawing strength from within to steel your mind against emotional influence.</em></p>\n<p><strong>Prerequisites</strong> Mental Focus 5 ranks</p>\n<p><strong>Action</strong> Free; <strong>Trigger</strong> You enter a stance.</p>\n<p>Whilst in any stance, you gain advantage to all saving throws made against effects and spells with the emotion or fear traits.</p>\n<p><em>Applied automatically</em> while any stance is up: advantage on saves against effects with the Emotion or Fear trait; offered as a tick on a save whose source the roll cannot see.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "stanceConditionals": [
+        {
+          "kind": "advantage",
+          "label": "Tranquil Mind",
+          "scope": "Saving throws against emotion and fear effects while in a stance",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "traits": [
+              "emotion",
+              "fear"
+            ]
+          }
+        },
+        {
+          "kind": "advantage",
+          "label": "Tranquil Mind",
+          "scope": "Saving throws against an emotion or fear effect that carries neither trait, while in a stance — tick if this save is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "not": {
+              "traits": [
+                "emotion",
+                "fear"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6IYTUbSMvDsoKvUW"
+}

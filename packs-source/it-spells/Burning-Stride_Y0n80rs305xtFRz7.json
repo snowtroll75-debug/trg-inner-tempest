@@ -1,0 +1,79 @@
+{
+  "_id": "Y0n80rs305xtFRz7",
+  "name": "Burning Stride",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "save",
+    "level": 0,
+    "ppCost": 10,
+    "castAP": 2,
+    "range": "30 feet",
+    "area": "",
+    "targets": "1 living creature",
+    "duration": "10 minutes",
+    "defence": "Fortitude",
+    "baseDamage": "1d6",
+    "damage": {
+      "formula": "4d6",
+      "type": "fire",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "saveLadder",
+        "target": "targets",
+        "ladder": {
+          "critical": "",
+          "success": "full",
+          "failure": "full",
+          "fumble": "full"
+        }
+      },
+      {
+        "kind": "note",
+        "text": "On a Failure or Fumble, each time the target takes an action with the Movement trait it takes 2d6 persistent fire damage (stopped as persistent damage is). On a Fumble it also takes a Light Fire critical each time it takes damage. For 10 minutes."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Fire, Invocation",
+    "description": "<p>You bond a fire spirit to the target that reacts to their movement based upon their saving throw result.</p>\n<p><strong>Critical</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 4d6 fire damage.</p>\n<p><strong>Failure</strong> The target takes 4d6 fire damage and an additional 2d6 persistent fire damage each time they take an action with the Movement trait. The fire damage may be stopped in the normal way for persistent damage.</p>\n<p><strong>Fumble</strong> As failure but the target also takes a Light Fire critical each time they take damage.</p>\n<p><em>Partly automated:</em> the save and the 4d6 fire. The persistent fire on movement and the Fumble's criticals are applied by hand, as the card says.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Y0n80rs305xtFRz7"
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "5LoSTEwPfLEpLJPc",
+  "name": "Tsuchi",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Tsuchi possess a deep connection to the grounding forces of the earth. They are usually craftsman and engineers.</p>\n<p>You have a +2 racial bonus to all Crafting and Create checks. Furthermore, you have advantage on checks and saving throws to avoid being knocked prone or moved against your will.</p>\n<p><em>Language:</em> Gaian, the heritage's language (Graham's ruling). <em>Element:</em> Earth (acid). <em>Applied automatically:</em> a +2 racial bonus to Crafting, and to Create checks made with any other skill. Advantage is <em>offered</em> on your own checks and saves to avoid being knocked prone or moved against your will; tick it when the roll is one. <em>Applied automatically:</em> a Shove or Trip against you is rolled at disadvantage, because you roll nothing against it (Graham's ruling of 21 October 2026); the attacker's card says so.</p>",
+    "sourceRace": "Tianzhi",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "Gaian",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "0ZUj34jm82DEgA1o",
+      "name": "Tsuchi: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.crafting.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+2 racial bonus to Crafting checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!5LoSTEwPfLEpLJPc.0ZUj34jm82DEgA1o"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itElement": {
+        "element": "Earth",
+        "damageType": "acid",
+        "spellTraits": [
+          "earth",
+          "acid"
+        ]
+      },
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Tsuchi",
+          "scope": "Create checks made with a skill other than Crafting",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "create"
+            ],
+            "not": {
+              "subjects": [
+                "crafting"
+              ]
+            }
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "advantage",
+          "label": "Tsuchi",
+          "scope": "Checks and saving throws to avoid being knocked prone or moved against your will — tick if this roll is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill",
+              "save",
+              "attribute"
+            ]
+          }
+        }
+      ],
+      "defenceDC": [
+        {
+          "kind": "disadvantage",
+          "label": "Tsuchi",
+          "scope": "a Tsuchi resists being knocked prone or moved against their will",
+          "when": {
+            "actions": [
+              "shoveAttack",
+              "tripAttack"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!5LoSTEwPfLEpLJPc"
+}

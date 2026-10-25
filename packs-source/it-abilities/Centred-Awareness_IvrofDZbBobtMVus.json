@@ -1,0 +1,50 @@
+{
+  "_id": "IvrofDZbBobtMVus",
+  "name": "Centred Awareness",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><strong>FOCUS INSIGHT TECHNIQUE</strong> <strong>Actions</strong> Free (0 AP); <strong>Trigger</strong> you make a Cleansing Trance, Clear Mind or Healing Trance check using the Meditation skill.</p>\n<p>You gain advantage on the check.</p>\n<p><em>Automated:</em> press Use before the check: your next Cleansing Trance, Clear Mind or Healing Trance check is rolled with advantage, applied for you, and Centred Awareness is expended.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "Focus, Insight, Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "centredAwareness"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IvrofDZbBobtMVus"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "DnzsXIBseUPNZJrU",
+  "name": "Smoke Eyes",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Smoke Veil",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Smoke Veil</p>\n<p>You have trained to fight within the smoke and confusion created by your own techniques. You ignore the concealed condition caused by your Smoke Veil for the purposes of Perception checks and attacks. Other creatures are still affected normally.</p>\n<p><em>Not automated:</em> concealment from your own Smoke Veil is by hand, so ignoring it is too.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DnzsXIBseUPNZJrU"
+}

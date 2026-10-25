@@ -1,0 +1,49 @@
+{
+  "_id": "H8WERJJcZSd82KSX",
+  "name": "Spirit Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>STANCE</strong></p>\n<p><em>You have learned to centre your body and spirit together, allowing the guidance of unseen ancestors and nearby spirits to sharpen your reactions.</em></p>\n<p>You enter Spirit Stance.</p>\n<p>While in Spirit Stance, you gain a +1-circumstance bonus to AB and DB against spirits, incorporeal creatures and creatures possessing another creature.</p>\n<p>Furthermore, your physical Strikes are treated as magical for the purpose of overcoming the defences of incorporeal creatures and spirits.</p>\n<p><em>Use:</em> enters the stance at the core's default of 1 AP (the per-round Stance rule, the previous stance's replacement and Stance Mastery all as the core's own stances). While it lasts: +1 circumstance to your attack checks and to your DB against creatures with the Spirit or Incorporeal trait, and your physical Strikes count as magical against them; a creature possessing another is offered as a tick on your attacks. Delete the stance's effect to leave it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "spiritStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!H8WERJJcZSd82KSX"
+}

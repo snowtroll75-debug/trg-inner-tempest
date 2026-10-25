@@ -61,7 +61,7 @@ const VALIDATION = [
 const validationFor = (cat) => (VALIDATION.find(([re]) => re.test(cat))?.[1]) ?? "Live test";
 
 /** What each automation class drops to if the named core dependency is NOT taken. */
-const DEGRADE = { D1: "C", D2: "C", D3: "B", D4: "C", D5: "C", D7: "B", D8: "C", D9: "B", D10: "D", D11: "C", D12: "C", D13: "C", D14: "C" };
+const DEGRADE = { D16: "B", D1: "C", D2: "C", D3: "B", D4: "C", D5: "C", D7: "B", D8: "C", D9: "B", D10: "D", D11: "C", D12: "C", D13: "C", D14: "C" };
 const RANK = { A: 0, B: 1, C: 2, D: 3 };
 export function withoutCore(row) {
   let worst = row.auto;
@@ -71,7 +71,17 @@ export function withoutCore(row) {
   }
   return worst;
 }
-const statusFor = (row) => (row.blocker.match(/IT-C\d+/) ? `Blocked (${row.blocker.match(/IT-C\d+/g).join(", ")})` : "Not started");
+/**
+ * Delivery status, per row: tools/inventory/status.json maps an id to
+ * {status, achieved, note}. `achieved` is the automation class the shipped
+ * build reaches, which the report compares with the target.
+ */
+export const STATUS = JSON.parse(fs.readFileSync(path.join(HERE, "status.json"), "utf8"));
+const statusFor = (row) => {
+  const s = STATUS[row.id];
+  if (s) return s.achieved ? `${s.status} (${s.achieved})` : s.status;
+  return row.blocker.match(/IT-C\d+/) ? `Blocked (${row.blocker.match(/IT-C\d+/g).join(", ")})` : "Not started";
+};
 const esc = (s) => String(s).replace(/\|/g, "/");
 
 function matrix({ rows, sections }) {
@@ -83,9 +93,9 @@ function matrix({ rows, sections }) {
   out.push("");
   out.push("_Generated from `tools/inventory/inventory.txt` by `tools/inventory/build-docs.mjs`. Do not edit by hand._");
   out.push("");
-  out.push(`**Source:** TRG_Inner_Tempest_1_1.docx (v1.1). **Target system:** TRG Prime 3.663.5 + the core dependencies in INNER_TEMPEST_CORE_DEPENDENCIES.md.`);
+  out.push(`**Source:** TRG_Inner_Tempest_1_2.docx (v1.2), rulings of 20 Oct 2026. **Target system:** TRG Prime 3.664.0 + the remaining core dependencies in INNER_TEMPEST_CORE_DEPENDENCIES.md.`);
   out.push("");
-  out.push(`**${rows.length} features inventoried.** Target automation (with core dependencies): A ${counts.A} · B ${counts.B} · C ${counts.C} · D ${counts.D}. Blocked on a Critical ruling: ${blocked}. Implemented: 0. Tested: 0.`);
+  out.push(`**${rows.length} features inventoried.** Target automation (with core dependencies): A ${counts.A} · B ${counts.B} · C ${counts.C} · D ${counts.D}. Blocked on a Critical ruling: ${blocked}. Implemented: ${rows.filter((r) => STATUS[r.id]?.status === "Implemented").length}. In progress: ${rows.filter((r) => STATUS[r.id]?.status === "In progress").length}. Tested live: 0.`);
   out.push("");
   out.push("Legend:");
   out.push("- **Automation:** A = fully automated · B = automated with a user decision · C = partially automated (justified in the Automation Report) · D = manual or descriptive (justified).");
@@ -118,7 +128,6 @@ export const JUSTIFICATIONS = {
   "GA-05": "D — tracking difficulty and trail concealment are GM-run exploration rules.",
   "GA-08": "C — Focus spend, AP and the card are automated; wall pathing isn't modelled by Foundry movement.",
   "GA-13": "C — Focus/AP, no-reactions and no-attack effect automated; passing through 1-inch gaps is a map judgement.",
-  "KF-01": "C — the delay is a card-timing tool only; its mechanical payoff is undefined (IT-M10).",
   "FR-07": "D — as Shinryu: unsupported-air positioning.",
   "FR-14": "D — the book makes it a GM story boon.",
   "FR-21": "D — as Treasure Sense.",
@@ -130,13 +139,10 @@ export const JUSTIFICATIONS = {
   "FC-09": "C — the +5 ft is shown on jump results; 'adjacent to a wall while falling' is a map judgement.",
   "FC-49": "C — the module suppresses Aid bonuses it can see from allies' declared Aid actions; reactions and abilities from third parties aren't all tagged by source.",
   "FC-53": "D — as Between Glances.",
-  "FG-02": "C — the -2 is applied in the Create dialog; choosing the quality is a GM call.",
-  "FG-03": "C — the Very Hard note is shown; unlearned Artistry specialties aren't modelled as separate skills.",
-  "FG-08": "C — the crit-at-full-speed rider is shown; Squeeze time is narrative.",
-  "FG-21": "C — the feat flag lets the Ambush/Sniping actions accept spells; whether the attack qualifies is checked, the stealth situation is GM-run.",
-  "DC-08": "D — undefined in the book (IT-C5).",
-  "DC-09": "D — profiles not given (IT-C5).",
-  "DC-15": "C — the reaction is offered; its tail attack profile is undefined (IT-C5).",
+  "FG-02": "C (target) — the -2 belongs in Create's setup, which needs a core hook on its success modifier (D18); choosing the quality is a GM call. Shipped D until then.",
+  "FG-03": "C (target) — unlearned Artistry specialties aren't separate skills in core, so the Very Hard step can only be described. Shipped D.",
+  "FG-08": "C (target) — Squeeze time is narrative in core; the rounds-not-minutes and full-Speed riders are described. Shipped D.",
+  "FG-21": "C (target) — needs D14 for Ambush/Sniping to accept a spell or technique; the stealth situation is GM-run. Shipped D.",
   "SP-03": "C — suppresses aging penalties only where the optional aging macro is used.",
   "SP-05": "C — range doubling is written to the ammunition; Foundry has no per-projectile range state, so the card reminds.",
   "SP-13": "D — divination misdirection is GM-adjudicated.",
@@ -154,11 +160,26 @@ function report({ rows }) {
   const degraded = counts((r) => withoutCore(r));
   out.push("# Inner Tempest — Automation Report");
   out.push("");
-  out.push("_Generated from `tools/inventory/inventory.txt`. Nothing below has been implemented yet; this is the planned coverage, to be replaced feature by feature with tested results._");
+  out.push("_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. \"Target\" is the class each feature is planned at; \"Shipped\" is what the current build reaches. Harness-checked; live testing is Graham's, and nothing is marked Tested until it has been._");
   out.push("");
+  const shipped = rows.filter((r) => STATUS[r.id]?.achieved);
+  const reached = counts((r) => STATUS[r.id]?.achieved ?? "—");
+  out.push("## Shipped so far");
+  out.push("");
+  out.push(`${shipped.length} features shipped: A ${reached.A ?? 0} · B ${reached.B ?? 0} · C ${reached.C ?? 0} · D ${reached.D ?? 0}. ${rows.filter((r) => STATUS[r.id]?.status === "In progress").length} more are in progress (support shipped, the feature that uses it to come).`);
+  out.push("");
+  const short = shipped.filter((r) => RANK[STATUS[r.id].achieved] > RANK[r.auto]);
+  if (short.length) {
+    out.push("### Shipped below target, and what would lift it");
+    out.push("");
+    out.push("| ID | Feature | Target | Shipped | Why |");
+    out.push("|---|---|---|---|---|");
+    for (const r of short) out.push(`| ${r.id} | ${esc(r.feature)} | ${r.auto} | ${STATUS[r.id].achieved} | ${esc(STATUS[r.id].note || "—")} |`);
+    out.push("");
+  }
   out.push("## Planned coverage");
   out.push("");
-  out.push("| Class | With core dependencies D1–D14 | Without them (module-only) |");
+  out.push("| Class | With core dependencies D1–D16 | Without them (module-only) |");
   out.push("|---|---|---|");
   for (const k of ["A", "B", "C", "D"]) out.push(`| ${k} | ${target[k] ?? 0} | ${degraded[k] ?? 0} |`);
   out.push(`| **Total** | ${rows.length} | ${rows.length} |`);

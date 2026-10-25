@@ -1,0 +1,133 @@
+{
+  "_id": "IAUgBjFaSCA2C2cu",
+  "name": "Tianzhi",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Race",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><em>The Tianzhi, a graceful and mystical race, embody the essence of the ethereal. They possess lithe and agile forms, resembling ethereal beings brought to life. Their skin, often pale and radiant, carries a faint luminescence, casting an otherworldly glow. Tianzhi are renowned for their enchanting eyes, which shimmer with iridescent colours, reflecting their profound connection to the spiritual realms. Their serene and introspective nature, coupled with their affinity for metaphysical arts, makes them revered scholars, seers, and mediators in a world brimming with secrets and ancient wisdom.</em></p>\n<p>Tianzhi society is organized around elemental clans, each dedicated to one of the five elements. These clans live in harmony with the natural world, building their communities in areas that reflect their elemental affinity. They value unity, resilience, and the preservation of their cultural heritage. Tianzhi often serve as protectors of elemental sites and natural wonders tied to their respective elements.</p>\n<p><strong>DESCRIPTION</strong></p>\n<p>Tianzhi are a humanoid race characterized by their striking diversity in appearance. They have a slightly shorter stature compared to humans, with skin tones ranging from earthy browns to dusky greys, reflective of their deep connection to the land. Tianzhi possess distinct facial features, often with high cheekbones and expressive almond-shaped eyes that come in various shades. Their hair is typically dark, but some individuals have hair in shades of blue, violet, or silver, reminiscent of the elements. Tianzhi are drawn to adventure and exploration as a means of further understanding the world's elemental balance. They venture out to learn from other cultures, exchange knowledge, and uncover ancient elemental mysteries. Some Tianzhi become wandering elemental adepts, seeking to master multiple elemental disciplines and protect the natural order wherever they go.</p>\n<p><strong>RACIAL MECHANICS</strong></p>\n<p><strong>Ability Modifiers</strong> Dex +1, Wis +1; <strong>Size:</strong> Medium; <strong>Speed:</strong> 30 feet <strong>Power Points:</strong> 0</p>\n<p><strong>LANGUAGES</strong></p>\n<p><strong>Core Languages:</strong> Low Tongue, One language based upon their heritage; <strong>Additional Languages:</strong> Choose from any common or regional language.</p>\n<p><strong>SPECIALIST SKILLS</strong></p>\n<p>You gain Elemental Lore and Tianzhi Lore as a specialist skills.</p>\n<p><strong>OTHER ABILITIES</strong></p>\n<p><strong>Martial Affinity:</strong> You have a deep understanding of all things related to martials arts. You gain a +1 racial bonus to AB and DB when in any combat stance (GM discretion).</p>\n<p><strong>Nightvision:</strong> You can see in dark areas and with a small amount of light can see pretty well.</p>\n<p><strong>Natural Chi:</strong> You are attuned to the inner current that your people traditionally call chi. Select any one magical cantrip and choose one tradition available to that spell. You gain it as an innate spell with the Focus trait, using Wisdom as your magical ability score. The spell is detected, dispelled and otherwise treated according to its chosen magical tradition; chi itself has no separate rules effect.</p>\n<p><strong>AGE</strong> (Appendix, Racial Age Categories)</p>\n<p>Adult 20; Middle Aged 50; Old 71–90; Venerable 91+; Natural Lifespan not stated (audit IT-m6: the race entry has no age line).</p>\n<p><em>Granted when the race is added:</em> Martial Affinity, Nightvision and Natural Chi as ability items (use Natural Chi to choose its cantrip); Elemental Lore and Tianzhi Lore as specialist skills. Low Tongue comes from the race and the second language from the heritage: Aeolian (Fuukaze), Thanatos (Hikari), Ignic (Kasai), Aqualis (Suiryoku) or Gaian (Tsuchi), as Graham ruled on 21 October 2026.</p>",
+    "abilityModifiers": "Dex +1, Wis +1",
+    "maximumSize": "",
+    "languages": "Core: Low Tongue. Additional: common, regional.",
+    "coreLanguages": "Low Tongue",
+    "additionalLanguages": "common, regional",
+    "languageChoices": "",
+    "grantedFeats": "",
+    "racialAbilities": "Martial Affinity, Nightvision, Natural Chi",
+    "grantedWeapons": "",
+    "grantedSpells": "",
+    "specialistSkills": "Elemental Lore, Tianzhi Lore"
+  },
+  "effects": [
+    {
+      "_id": "WP6K9LFJvGhlqN4r",
+      "name": "Tianzhi: ability modifiers",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Dex +1, Wis +1",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!IAUgBjFaSCA2C2cu.WP6K9LFJvGhlqN4r"
+    },
+    {
+      "_id": "HomNt8BDJxiSyEfn",
+      "name": "Tianzhi: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "medium",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Medium size and a base land speed of 30 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!IAUgBjFaSCA2C2cu.HomNt8BDJxiSyEfn"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IAUgBjFaSCA2C2cu"
+}

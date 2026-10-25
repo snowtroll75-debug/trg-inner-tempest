@@ -1,0 +1,73 @@
+{
+  "_id": "dZkJFRAoQMD9XebH",
+  "name": "Incredible Movement",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 4,
+    "prerequisites": "Disciple 4th level",
+    "active": true,
+    "description": "<p>At 4th level you learn to move like the wind. You gain a +10-foot status bonus to your Speed whenever you’re not wearing armour. The bonus increases by 5 feet at 10th level and every 6 levels thereafter.</p>\n<p><em>Automated:</em> +10 ft status bonus to your land Speed while you wear no armour; +15 ft at 10th level and +20 ft at 16th.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Disciple",
+        "level": 4
+      },
+      "statBonuses": [
+        {
+          "target": "speed",
+          "type": "status",
+          "byLevel": [
+            {
+              "level": 4,
+              "value": 10
+            },
+            {
+              "level": 10,
+              "value": 15
+            },
+            {
+              "level": 16,
+              "value": 20
+            }
+          ],
+          "when": {
+            "unarmoured": true
+          },
+          "label": "Incredible Movement"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!dZkJFRAoQMD9XebH"
+}

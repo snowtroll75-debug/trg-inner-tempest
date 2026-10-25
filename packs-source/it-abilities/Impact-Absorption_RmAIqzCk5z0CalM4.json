@@ -1,0 +1,39 @@
+{
+  "_id": "RmAIqzCk5z0CalM4",
+  "name": "Impact Absorption",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>IMPACT ABSORPTION</strong></p>\n<p><strong>DEFENCE FOCUS</strong></p>\n<p><strong>Action</strong> R</p>\n<p><strong>Trigger</strong> a targeted physical attack damages you</p>\n<p>You brace and allow your spirit to absorb the impact. Your Base DR increases by 1 against the triggering attack.</p>\n<p><em>Use (before the damage is applied):</em> spends your reaction in combat and this ability's Focus use (Refocus restores it), and raises your Base DR by 1 until the end of the current turn — delete the effect once the triggering attack has resolved if the turn goes on. TRG Prime cannot yet offer a reaction before damage (core dependency D8), so you press it.</p>",
+    "usesPerDay": "1",
+    "bonusUses": 0,
+    "usesValue": 1,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "traits": "Defence, Focus"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!RmAIqzCk5z0CalM4"
+}

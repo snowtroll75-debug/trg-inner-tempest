@@ -1,0 +1,44 @@
+{
+  "_id": "0ys1SuGQ9Xyqzqop",
+  "name": "Veiled Body",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 8</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You suppress your presence until even the eye struggles to recognise where you stand. You become invisible until the beginning of your next turn.</p>\n<p>The effect ends immediately after you make an attack, cast a spell or take another hostile action.</p>\n<p>This Ghost Art is magical.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. You are Invisible until the start of your next turn; the effect ends when you Strike or cast a spell. Magical.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Shadow, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Veiled Body",
+      "itArtLevel": 8
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!0ys1SuGQ9Xyqzqop"
+}

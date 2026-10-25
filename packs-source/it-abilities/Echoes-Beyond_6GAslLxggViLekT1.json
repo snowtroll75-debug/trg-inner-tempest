@@ -1,0 +1,50 @@
+{
+  "_id": "6GAslLxggViLekT1",
+  "name": "Echoes Beyond",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><strong>FOCUS INSIGHT TECHNIQUE</strong> <strong>Actions</strong> Free (0 AP); <strong>Trigger</strong> you make a d20 check as part of a technique or innate spell that has the Focus trait.</p>\n<p>You gain advantage on the triggering check.</p>\n<p><em>Automated:</em> press Use before the check: advantage is offered as a tick on your next attack, save or skill check, to tick when that check is part of a Focus technique or innate spell; it is expended on use.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "Focus, Insight, Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "echoesBeyond"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6GAslLxggViLekT1"
+}

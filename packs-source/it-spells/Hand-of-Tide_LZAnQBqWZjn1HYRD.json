@@ -1,0 +1,69 @@
+{
+  "_id": "LZAnQBqWZjn1HYRD",
+  "name": "Hand of Tide",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, divinity",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 16,
+    "castAP": 3,
+    "range": "",
+    "area": "100-foot radius",
+    "targets": "up to 10 creatures",
+    "duration": "",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "note",
+        "text": "Move each chosen creature's token to any point within the radius; not into an environmentally dangerous place (such as 100 feet up). An unwilling creature may make a Will save to avoid it."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": true,
+      "focus": false
+    },
+    "traits": "Translocation",
+    "description": "<p>Upon casting this spell, you may instantly teleport any creature from one location to another within the radius of the spell. You cannot transport a creature into an environmentally dangerous situation (such as 100 foot into the air). An unwilling target may make a Will save to avoid the effect.</p>\n<p><em>Not automated:</em> where each creature goes is the caster's choice on the map; move the tokens, and roll an unwilling creature's Will save, by hand.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!LZAnQBqWZjn1HYRD"
+}

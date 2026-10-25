@@ -1,0 +1,49 @@
+{
+  "_id": "qINzmGOy8KVYwxAa",
+  "name": "Inner Stamina",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> <strong>Action</strong> 1 AP</p>\n<p>You regulate breath, posture and pain, enhancing your endurance. You gain a +4-resistance bonus to Fortitude saving throws for 1 minute.</p>\n<p><em>Automated:</em> press Use: 1 AP and this use. +4 resistance bonus to Fortitude saves for 1 minute.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerStamina"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qINzmGOy8KVYwxAa"
+}

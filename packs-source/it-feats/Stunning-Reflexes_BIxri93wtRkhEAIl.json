@@ -1,0 +1,49 @@
+{
+  "_id": "BIxri93wtRkhEAIl",
+  "name": "Stunning Reflexes",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mental Focus 5 ranks",
+    "active": true,
+    "description": "<p><em>Your body moves like lightning, breaking the chains of paralyzing blows with effortless grace.</em></p>\n<p><strong>Prerequisites</strong> Mental Focus 5 ranks</p>\n<p>Your lightning-quick reflexes enable you to break free from stun effects with unparalleled swiftness. The first time you are affected by a stun effect each turn, you may make a Stunned Manoeuvre (Mental Focus) check as a free action (0 AP).</p>\n<p><em>Use (when a stun lands):</em> rolls Stunned Manoeuvre (Mental Focus) as a free action — no reaction, no AP — once a turn in combat. Target the stunning creature first, as Stunned Manoeuvre asks.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "stunningReflexes"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BIxri93wtRkhEAIl"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "u1RsKMTblNqW9Shd",
+  "name": "Weapon Discipline",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Kensai 1st level",
+    "active": true,
+    "description": "<p>At 1st level, you must select one weapon group from the following:</p>\n<p>Axe, Brawling, Club, Knife, Spear, Polearm, Sword, Flail, Hammer, Pick, Dart</p>\n<p>While wielding a weapon from this group you gain the following benefits:</p>\n<ul><li>You add your class bonus -1 to attack and damage rolls.</li><li>The weapon gains the Finesse trait if wielded in one hand.</li><li>You are considered to have a free hand for the purpose of actions that require one (such as disarm and shove).</li></ul>\n<p><em>Automated:</em> press Use to choose your group. With a weapon of that group your attack and damage rolls gain your class bonus − 1 (untyped, so a Combat Form's class bonuses add to it: Graham's ruling B4-2), and the weapon gains Finesse while wielded in one hand. <em>Not automated:</em> the free hand for Disarm and Shove, which the system does not check.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Kensai",
+        "level": 1
+      },
+      "itAutomation": "weaponDiscipline"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!u1RsKMTblNqW9Shd"
+}

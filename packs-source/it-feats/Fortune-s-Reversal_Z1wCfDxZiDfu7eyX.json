@@ -1,0 +1,57 @@
+{
+  "_id": "Z1wCfDxZiDfu7eyX",
+  "name": "Fortune's Reversal",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Fuku Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>CHANCE FOCUS RYUKARI TECHNIQUE</strong></p>\n<p><em>To the Fuku, fortune is not random. It is a current—and sometimes a sufficiently skilled hand can redirect its flow.</em></p>\n<p><strong>Prerequisites</strong> Fuku Heritage, Level 5</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> you fumble an attack check, skill check or saving throw</p>\n<p>Reroll the triggering check and use the second result, even if it is worse.</p>\n<p><em>Automated:</em> when you fumble an attack check (the fumble confirmed, before the fumble table), a skill check or a saving throw, you are asked whether to use it: your reaction in combat and its Focus use, and the check is rerolled and the second result used, even if it is worse.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Chance, Focus, Ryukari, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "fumbleReroll": {
+        "checkTypes": [
+          "attack",
+          "skill",
+          "save"
+        ],
+        "reaction": true,
+        "label": "Fortune's Reversal"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Z1wCfDxZiDfu7eyX"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "k3CqwjCqy2jBBBOw",
+  "name": "Echo Form (Thousand Reflections)",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TECHNIQUE</strong> <strong>Actions</strong> Reaction; <strong>Trigger</strong> you are targeted by an attack which you are aware of.</p>\n<p>You create illusory afterimages of yourself that blur your exact location. This grants you the concealed condition until the beginning of your next turn.</p>\n<p><em>Automated:</em> when an attack targets you, you are asked before it is rolled (with your other reactions). A yes spends your reaction and this use, and makes you Concealed until the start of your next turn (6 seconds out of combat).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "Focus, Shadow, Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "echoForm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!k3CqwjCqy2jBBBOw"
+}

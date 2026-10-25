@@ -2,11 +2,69 @@
 
 These are the changes the TRG Prime **system** would need so that the Inner Tempest **module** can automate the book without patching core files or deep-importing private functions.
 
-It is written against TRG Prime 3.663.5, after reading its module API (`module/module-api*.mjs`), its Focus, Refocus, innate, stance, reaction, companion, grant and picker code, and Pillars of Faith 0.11.1's use of the API. Nothing here has been built.
+It was written against TRG Prime 3.663.5 and is kept current as items ship; after reading its module API (`module/module-api*.mjs`), its Focus, Refocus, innate, stance, reaction, companion, grant and picker code, and Pillars of Faith 0.11.1's use of the API. Nothing here has been built.
 
 Every item is a **reusable API**, not an Inner Tempest special case, so later books can use it too. That follows the 16 Sep architecture ruling, under which the system gained the companion-module API rather than modules patching internals.
 
-**Proposed vehicle:** one core release, *TRG Prime 3.664.0, "companion API: Focus, stances, reactions, companions"*. It would carry D1–D10, with D11–D15 following as each block needs them. Inner Tempest 0.1.0 would then pin `minimum: 3.664.0`.
+**Shipped in TRG Prime 3.664.0 (20 Oct 2026),** with Inner Tempest 0.1.0 pinned to it:
+
+| Dependency | Shipped as | Harness |
+|---|---|---|
+| D2 Refocus restores all | `refocusRestoresAll` rows on a carrier (`focusExtraUses[].restoresAll`) | verify/mutate-focus-declarations |
+| D3 another ability for one action | `actionAbilityOptions` rows; best option, as the difference | verify/mutate-focus-declarations |
+| D4 (part) first use each day | `dailyFirst` rows: a Refocus degree `improve`/`set`, a Power Recovery `multiplier`; spent on the actor, cleared at daily preparation | verify/mutate-daily-firsts |
+| D5 one spell's own ability | `castingAbilityOverride` honoured (attack, save DC, sheet); `grantedSpellAbility` on a granting item; `spellChoice.castingAbility` | verify/mutate-focus-declarations |
+| D6 daily preparation clears rune and wondrous Focus | `dailyFocusFlagClears` | verify/mutate-focus-declarations |
+| D7 stances from a module | `helpers.enterStance(actor, item, {…, flags})` (the core's own entry), `helpers.activeStances`; `stanceConditionals` and `stanceDefenceDC` read only while a stance is up | verify/mutate-stance-declarations |
+| D16 innate PP limit | `innateLevelRefusal`, characters and companions only | verify/mutate-focus-declarations |
+| (new) creature-trait axes | conditionals `targetTraits`; defence rows `sourceTraits`; magical attacks `targetTraits` | verify/mutate-stance-declarations |
+| (new) a move and a strike a module ability paid for | `helpers.armMove`, `helpers.rollWeaponAttack`; `helpers.traitGate` and `helpers.recordTraitUsage` for Flourish | verify/mutate-stance-declarations |
+| (new) heritage natural attacks; heat immunity; breathing water; scoped flat-check increases; Ghost Touch for magical attacks only | `grantedWeapons` on a heritage; derives `heatEnvironmentImmune`, `breathesWater`; `missCheckDCIncrease {value, conditions}`; `ghostTouch {magicalOnly}` | verify/mutate-heritage-derives |
+| (new) conviction, falls, carrying | `convictionPool`, `fallReduction`, `carryStrength` declarations | verify/mutate-focus-declarations |
+
+**Shipped in TRG Prime 3.665.0 (21 Oct 2026),** with Inner Tempest 0.2.0 pinned to it, from Graham's rulings of 21 October:
+
+| Dependency | Shipped as | Harness |
+|---|---|---|
+| D1 Focus items with no count (completed in **3.665.1**: the Use button refuses a spent defaulted use and spends it after a Use that acted) | `focusDefaultUses`: a Focus feat or ability with a blank `usesPerDay` is one use (innate spells keep their own rule). Primed on item and actor creation; a 3.665.0 migration gives items already on sheets and placed creatures their use. Reaches the five core feats, one F&F feat and 25 F&F creature abilities (on 26 creatures). | verify/mutate-focus-default |
+| (new) a defender's disadvantage row | `defenceDC` rows with `kind: "disadvantage"` (optionally `dc: "any"`): the attacker's check against that defender is rolled at disadvantage, reconciled with the action's own advantage in one pass, and the card says so (Tsuchi against Shove and Trip) | verify/mutate-defence-disadvantage |
+| (new) an alternative to a duplicated specialist skill | `specialistAlternative` on a background: when another item already confers its specialist skill, Apply Grants names it and the background's Use asks for another (Spirit Warrior and Spiritwalker on a Miraku) | verify/mutate-specialist-alternative |
+
+**Shipped in TRG Prime 3.666.0 (21 Oct 2026),** with Inner Tempest 0.3.0 pinned to it, for Block 2 (Chapter 4) as ruled by Graham on 21 October (`docs/INNER_TEMPEST_BLOCK2_AUDIT.md`):
+
+| Dependency | Shipped as | Harness |
+|---|---|---|
+| D8 (part) a defence that lasts one attack (B2-1, B2-3) | `oneAttack` on an effect: `true`/`{against: "attack"}` (any attack against DB), `{against: "weapon"}`, `{actions: [...]}`, optionally `fromUuids`; every Strike, spell attack, bomb, spiritual weapon and action against the bearer removes what it spends, through the GM relay. **Core's Nimble Dodge fixed with it** (its +2 had stayed until deleted by hand and it never spent its reaction); Evade, Impact Absorption, Root the Body and Observe Technique use it | verify/mutate-block2-core (A) |
+| D8 (part) a reaction that rolls a skill before a save (B2-2) | `saveBonusReaction` {label, skill, saves, traits, type} on an item or effect: offered before a matching save, spends the reaction in combat, adds the Bonus Check. For Steel the Mind once Inner Discipline ships (Block 3) | verify/mutate-block2-core (B) |
+| B2-3 a defence row against a list of DCs | a Trip (the higher of Acrobatics and Fortitude DC) now meets a row on either | verify/mutate-block2-core (C) |
+| B2-4 the Dying Check's scope | the Dying Check carries `actionKey: "dyingCheck"` (Resist Dying) | verify/mutate-block2-core (D) |
+| B2-5 an action's own time ladder | `timeLadder {options: [{key, label, modifier, apCost}], defaultKey}` on a registered action (Centred Balance, Elemental Ward) | verify/mutate-block2-core (E) |
+| B2-6 an action's traits on its check | a skill action's check carries its own traits (Maintain Clarity's Concentrate and Mental); every existing traits-scoped bonus checked first | verify/mutate-block2-core (F) |
+| B2-7 a ward zone | `helpers.placeWardZone(actor, {label, damageType, weakness, seconds, radiusFeet})`: a circle Region whose occupants carry resistance (or weakness) while inside, kept in step by the acting GM, ended on the world clock | verify/mutate-block2-core (G) |
+| (new) helpers and hooks | `helpers.bonusCheckModifier`, `helpers.levelDC`, `helpers.reduceCondition` (Rally's floor-respecting reduction); hooks `trgPrimeDailyPreparation` {actor} and `trgPrimeTurnEnded` {actor, combatant, combat} | verify/mutate-block2-core (H) |
+| (new) a module that applies its own outcome rows | `outcomesApplied: true` on an action: the generic outcome readers (modifier, heal, push, attitude) leave its text alone; "clear it by hand" is printed only where a condition was laid | verify/mutate-block2-core (H) |
+| (ruled) the multiple attack penalty counts only in combat | `attacksCount`/`attackCountOf`/`setAttackCount`; cleared when a combat begins | verify/mutate-map-combat-only |
+
+**Shipped in TRG Prime 3.667.0 (22 Oct 2026),** with Inner Tempest 0.4.0 pinned to it, for Block 3 as ruled by Graham on 22 October (`docs/INNER_TEMPEST_BLOCK3_AUDIT.md`, B3-1 to B3-5):
+
+| Dependency | Shipped as | Harness |
+|---|---|---|
+| D9 (narrow) a Defence or Speed row that holds only unarmoured or unencumbered | `statBonuses: [{target: "defence"\|"speed", type, ability\|value\|byLevel, when: {unarmoured, unencumbered}}]` on an item or effect, added in preparation once armour and encumbrance are known, into the typed pools (Flat-Footed's dodge filter applies). Disciple's Dodge, Incredible Movement; Serene Defence through a declared spell effect | verify/mutate-block3-core (A) |
+| D12 unarmed damage | `unarmedDamage {die, versatile, perBAB: {every, value}, countsAs: {magical, "cold iron", silver, adamantine}}`: the fists' die and Versatile letter (Versatile B now reads as bludgeoning), a flat added to the total, a magical source, and several materials met at once by weakness and bypass | verify/mutate-block3-core (B) |
+| D11 (core half) Monastic counts as unarmed | `countsAsUnarmed(weapon)` (fists, a weapon the core calls unarmed, or the Monastic trait), used by the unarmed profile and offered as `helpers.countsAsUnarmed`. Core's own unarmed-only abilities still read `system.unarmed` | verify/mutate-block3-core (B) |
+| (new) a series of Strikes that meets DR once | `helpers.runStrikeSeries(actor, strikes, {label, apPaid})`: a later hit on a creature already hit meets no DR; after one critical injury a later critical keeps its dice and rolls none; the multiple attack penalty runs normally, or `mapOverride` per Strike (Disciplined Flurry's 0, which still counts) | verify/mutate-block3-core (C) |
+| (new) a defender's conviction reroll | `attackRerollConviction {label}` on an item: offered to the defender's player once a Strike or spell attack (each ray) is rolled against them, before it resolves; not on Chaos; the point is spent on their client; the new roll stands | verify/mutate-block3-core (D) |
+| D16 (extended) an innate spell's own allowance | `innatePPAllowance` on the spell copy: castable to base PP = level + allowance (B3-2) | verify/mutate-block3-core (E) |
+| (new) damage applied | hook `trgPrimeDamageApplied {actor, amount, isCritical, nonlethal, damageTypes, sourceUuid, sourceName, context}` once HP has moved; a Strike's context `{kind: "strike", melee, damageType, weaponName}`, a spell's `{kind: "spell", spellName}` | verify/mutate-block3-core (F) |
+| (new) declared spell effects | a spell's `declare` row may carry `statBonuses` and `conditionals` (Serene Defence, Reflective Mind); `helpers.basicSaveHit` for a module's area technique (Inner Blast) | verify/mutate-block3-core (G) |
+
+Built in the module instead of the core: the Path's tradition and ability on a granted spell (audit C7) is stamped by a `preCreateItem` hook; Burst Step is declared with its Use button (no Movement hook, audit C8).
+
+**Not shipped yet:** the rest of D4 (`refocusTarget` on the resolved hook, "choose a second ability"), D7's `keep` for Formbinder, D8 (other reactions), the general D9, D10, D11's core unarmed-only abilities, D13–D15. Three found while building Block 1:
+
+- **D17 · A DC-conditioned degree floor.** Leap: "automatically succeed if the DC is 20 or less." `registerDegreeUpgrades` maps degree to degree and never sees the DC. Proposal: `degreeFloors: [{actions, maxDC, floor}]` read where the action's degree is settled. Without it: Leap is D.
+- **D18 · Create's success modifier.** Artisan's Enchantment lowers it by 2 to add a quality. Proposal: a `createSuccessModifier` declaration read by create-crafting. Without it: D.
+- **D19 · A rest variant for Healing Trance.** Meditative Recovery: 10 minutes rather than an hour. Proposal: a rest-workflow option keyed by feat. Without it: D.
 
 Each entry gives the following, in this order:
 
@@ -81,6 +139,12 @@ Each entry gives the following, in this order:
 - **Proposal:** clear both flags in daily preparation.
 - **Without it:** the module would have to clear them itself on a daily-preparation hook (B). The core bug would remain.
 
+### D16 · Innate spells above character level are castable — core bug
+- **Gap:** an innate cast sets base PP to 0 (`cast-workflow.mjs:1137`) and skips the PP cap (`:1862`). Free warping is capped at character level (`innateWarpBudget`, your ruling of 18 Aug), but nothing refuses an innate cast whose **base** PP exceeds the character's level.
+- **Rule (Graham, 20 Oct 2026):** an innate spell can't be cast at a level below its base PP. This is what caps Mystical Power, Mystic Essence, Shugenja and Draconic Spell.
+- **Proposal:** in `castSpell`, before any AP is spent, refuse when the spell's base PP is greater than `innateCastLevel` (the granting item's level when it has one, otherwise the character level). Item casts are exempt; their PP was paid at the workbench.
+- **Without it:** these four features let a character take a spell above their level and cast it.
+
 ## Tier 2: combat mechanics
 
 ### D7 · Stances can't be entered from a module
@@ -120,6 +184,7 @@ Each entry gives the following, in this order:
   - Core calls it from the same places it calls its own reactions.
   - Core spends the Reactions resource through `spendReaction`, after the player or GM confirms. The book's acceptance rule is that a reaction must not fire without an authorised decision.
 - **Without it:** the after-the-fact reactions (miss, damage, crit) can run off the existing `trgPrimeStrikeRolled`, `trgPrimeCriticalInjury` and similar hooks (B). The **before-the-hit and before-the-save reactions can't be automated** (D). They would become manual "declare before rolling" buttons that queue a pending modifier (C).
+- **Partly shipped in 3.666.0:** Graham ruled (21 Oct 2026) that a reaction to being attacked is declared when you are targeted, so the before-the-hit and before-damage defences are `oneAttack` effects (above), and the before-the-save ones are `saveBonusReaction`. The general `registerReaction` is still open for the after-the-fact and retargeting reactions of later blocks.
 
 ### D9 · No hook for derived values
 - **Gap:** `prepareDerivedData` (`actor.mjs:2850`) offers no extension point. Transferred effects apply *before* derivation, so anything that depends on derived state (armour worn, encumbrance, class bonus, BAB) can't be expressed. `PP_GRANTS` isn't registrable.

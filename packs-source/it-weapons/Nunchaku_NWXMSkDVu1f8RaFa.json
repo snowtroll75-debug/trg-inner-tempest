@@ -1,0 +1,52 @@
+{
+  "_id": "NWXMSkDVu1f8RaFa",
+  "name": "Nunchaku",
+  "img": "systems/trg-prime/assets/weapons/flail.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 2,
+    "price": 5,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Backswing, Disarm, Finesse, Monastic, Uncommon",
+    "description": "<p>The nunchaku is a martial arts weapon comprising two sturdy wooden or metal bars that are joined together by a compact yet durable length of rope or chain. Its design allows for fluid and dynamic movements, making it a preferred choice among martial artists skilled in its artful and versatile techniques.</p>\n<p><strong>Backswing:</strong> Your missed attacks carry momentum when using this weapon. Your multiple attack penalty is only considered after a successful attack (one that inflicts damage).</p>\n<p><em>Automated (TRG Prime 3.668.1):</em> a Strike with it that misses, or hits and inflicts no damage (its runes' damage counts), is taken back off your multiple attack penalty count. In Double Slice, or a compound action that counts its Strikes afterwards, such a Strike is not counted; a feat that prices the whole action costs nothing when none of its Strikes inflicted damage.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>",
+    "attackBonus": 0,
+    "damage": "1d6",
+    "damageType": "bludgeoning",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 12,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Flail",
+    "category": "Martial",
+    "size": "medium",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NWXMSkDVu1f8RaFa"
+}

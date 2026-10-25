@@ -1,0 +1,44 @@
+{
+  "_id": "9B1XMueWkj777qLs",
+  "name": "Ghost Step",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MOVEMENT TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You explode into sudden movement before observers can react.</p>\n<p>Stride up to your Speed. Movement made as part of Ghost Step does not trigger reactions caused by your movement.</p>\n<p>If you end this movement somewhere that provides suitable cover or concealment, you may immediately attempt to Hide as part of this action.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. Your next token move is armed up to your Speed and provokes nothing; the card offers Hide if you end in cover or concealment.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Movement, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Ghost Step",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!9B1XMueWkj777qLs"
+}

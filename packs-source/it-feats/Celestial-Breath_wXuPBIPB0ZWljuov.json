@@ -1,0 +1,49 @@
+{
+  "_id": "wXuPBIPB0ZWljuov",
+  "name": "Celestial Breath",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 5",
+    "active": true,
+    "description": "<p><strong>ARCANE FOCUS RYUKARI SAVE TECHNIQUE</strong></p>\n<p><em>The elemental current carried within your blood can no longer be contained. With a violent exhalation, you release a fragment of the breath once wielded by your draconic ancestors.</em></p>\n<p><strong>Prerequisites</strong> Level 5</p>\n<p><strong>Action</strong> 2 AP; <strong>Area</strong> 15-foot cone</p>\n<p><strong>Saving Throw</strong> Basic Reflex against your Level DC</p>\n<p>You exhale elemental energy, inflicting 1d6 damage per 2-character levels, with a minimum of 2d6.</p>\n<p>The damage type and additional traits are determined by your heritage:</p>\n<table><tr><th><strong>Heritage</strong></th><th><strong>Damage</strong></th><th><strong>Additional Traits</strong></th></tr><tr><td>Shinryu</td><td>Electricity</td><td>Air, Electricity</td></tr><tr><td>Zennyo</td><td>Cold</td><td>Cold, Water</td></tr><tr><td>Fuku</td><td>Acid</td><td>Acid, Earth</td></tr><tr><td>Kura</td><td>Cold</td><td>Cold, Shadow</td></tr><tr><td>Zenki</td><td>Fire</td><td>Fire</td></tr></table>\n<p><em>Automated:</em> target the creatures in your 15-foot cone, then press Use: 2 AP and its Focus use. A basic Reflex save against your Level DC; 1d6 per two levels (at least 2d6) of your heritage's type — Shinryu electricity, Zennyo and Kura cold, Fuku acid, Zenki fire — with its traits.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Arcane, Focus, Ryukari, Save, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "celestialBreath"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!wXuPBIPB0ZWljuov"
+}

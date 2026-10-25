@@ -1,0 +1,1522 @@
+{
+  "R-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "R-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "R-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "R-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "R-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Low Tongue from the race; the second language from the heritage, as Graham ruled on 21 Oct 2026."
+  },
+  "H-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-14": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-15": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-16": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-19": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-20": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-21": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-22": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-23": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "H-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Declared when a physical attack targets you (Graham, 21 Oct 2026, \"fix all three\"): +1 Base DR that the weapon attack spends (core 3.666.0 one-attack)."
+  },
+  "H-06": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "H-13": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "H-18": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "H-08": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": ""
+  },
+  "H-11": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": ""
+  },
+  "H-24": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "A Shove or Trip against a Tsuchi is rolled at disadvantage (Graham, 21 Oct 2026; core 3.665.0 defence row). Advantage on the Tsuchi's own prone/forced-movement checks and saves stays a tick."
+  },
+  "BG-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "BG-10": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative)."
+  },
+  "BG-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative)."
+  },
+  "FG-01": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-05": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-09": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-16": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-18": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-19": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-22": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": ""
+  },
+  "FG-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-15": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-20": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "FG-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Weapon Strikes and flat checks automated; spells against the incorporeal and seeing them are not."
+  },
+  "FG-23": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Spirits and incorporeal creatures automatic; a possessing creature is a tick on attacks and a by-hand +1 to DB."
+  },
+  "FG-02": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Needs a core hook on Create's success modifier."
+  },
+  "FG-03": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Artistry specialties are not separate skills in core."
+  },
+  "FG-08": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Squeeze time is narrative in core."
+  },
+  "FG-13": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Needs a core DC-conditioned degree floor (auto-success at DC 20 or less)."
+  },
+  "FG-14": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Needs a core rest variant for a 10-minute Healing Trance."
+  },
+  "FG-21": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "D14."
+  },
+  "FG-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Gates Elemental Ward (SA-12), enforced on the sheet and in the workflow."
+  },
+  "FG-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Gates Centred Balance (SA-06), enforced on the sheet and in the workflow."
+  },
+  "SYS-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Deep Focus declares focusExtraUses with restoresAll (core 3.664.0)."
+  },
+  "SYS-04": {
+    "status": "In progress",
+    "achieved": null,
+    "note": "Core 3.664.0 ships the support; the techniques that use it arrive in later blocks."
+  },
+  "SYS-13": {
+    "status": "In progress",
+    "achieved": null,
+    "note": "Core 3.664.0 ships the support; the techniques that use it arrive in later blocks."
+  },
+  "SYS-11": {
+    "status": "In progress",
+    "achieved": null,
+    "note": ""
+  },
+  "SYS-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "TRG Prime 3.665.0 (D1, approved 21 Oct 2026): a Focus feat or ability with no printed count is one use. The module's own Focus items still print 1."
+  },
+  "SA-01": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Reaction, declared when targeted (Graham, 21 Oct 2026): Acrobatics vs your Level DC; the Bonus Check is a dodge bonus on DB that the next attack against you spends (core 3.666.0 one-attack). Inner Discipline enforced."
+  },
+  "SA-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Bonus Check halved (rounded up) as circumstance AB and DB against the target; one instance; ends when the target's recorded stance ends or the combat ends. With no stance on the target's sheet it ends with the battle."
+  },
+  "SA-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Reaction: a Shove or Trip meets a DC raised by the Bonus Check (ruled as Storgar), spent by it; a check or save to avoid prone or forced movement is offered the bonus as a tick. One trigger."
+  },
+  "SA-04": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "The GM sets the Climb DC; the move (Speed, half, 10 ft) is armed for the drag; Fumble: prone. Flourish and Movement through the core trait gate. Inner Discipline enforced."
+  },
+  "SA-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Information by degree; a Fumble refuses it against that creature for 10 minutes."
+  },
+  "SA-06": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Time ladder (10 min, 1 min −2, 1 round −5, 1 AP −10; core 3.666.0); the GM sets the DC; the Bonus Check is applied to the next of the six skills. Inner Balance enforced."
+  },
+  "SA-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Ally within 10 ft with an expended Focus ability, never yourself; the Bonus Check on its next Refocus, laid through the GM relay, gone at the end of its next turn."
+  },
+  "SA-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Frightened reduced 2/1 (never below an area's floor); Critical and Partial save bonuses against Emotion and Fear with their clocks; Fumble locks it to your next turn."
+  },
+  "SA-09": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Ruled a Reaction to gaining the dying condition (Graham, 21 Oct 2026): offered on a card when dying arrives; the Bonus Check goes on your next Dying Check (core 3.666.0 scope). Inner Discipline enforced."
+  },
+  "SA-10": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Ruled \"offered as a tick\": the points are offered on Concentrate and Mental checks until your next turn (core cannot tell a distraction penalty); the Fumble's −1 is applied."
+  },
+  "SA-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Reaction declared from the sheet before the Will save; the bonus is applied to that save (auto when the save carries Emotion or Mental, a tick otherwise). The automatic offer (core 3.666.0 saveBonusReaction) arrives with the Inner Discipline feat in Block 3."
+  },
+  "SA-12": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "DC 20 with the time ladder (1 min −2, 1 h +2); on a Success or better the element is chosen and a real 10-ft ward zone (core 3.666.0) is drawn: 10 min / 1 h / 8 h; Blunder: weakness. Failure locks 10 minutes, Fumble until the next daily preparation. Elemental Warding enforced."
+  },
+  "SA-13": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Information by degree; Critical grants Elemental Tracking (Nature for Track) for one hour on the world clock. The location lockout is described."
+  },
+  "SA-14": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Information by degree; the location lockout is described (core has no identity for a place)."
+  },
+  "SA-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Critical: +2 to your next DB (spent by that creature's attack) or save (a tick) against it before the end of your next turn; Fumble locks that creature to your next turn. The requirement is printed, not checked (core keeps no record of Focus use)."
+  },
+  "SA-16": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Information by degree; the location lockout is described."
+  },
+  "SA-17": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "30 ft, once each round per creature; Critical DB and saves +2, Success the one chosen, Partial DB +1, Fumble DB −1, to your next turn. The flanking clause is described on the card (ruled)."
+  },
+  "SA-18": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Matches core."
+  },
+  "CL-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class table, skills, proficiency (simple and Monastic weapons) and wealth -2 registered; Inner Discipline at 1st."
+  },
+  "CL-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class table, skills, proficiency (simple and Monastic weapons, light armour) and wealth -1 registered; no PP casting."
+  },
+  "SYS-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "techniqueSaveDC: 10 + the Path's ability + level; Inner Blast uses it."
+  },
+  "SYS-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Technique and Monastic registered as traits; Technique feats gated behind Inner Discipline."
+  },
+  "SYS-07": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "The four Paths as abilities, chosen with Monastic Path's Use; each adds its class skill and stamps the Mystic's spells with its tradition and ability."
+  },
+  "SYS-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "techniqueAbility: the Path's ability, else the selected magical ability, else Wisdom (IT-M6)."
+  },
+  "CF-D1": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.667.0 unarmed profile: 1d6, Versatile B, +1 total damage per 3 BAB, magical/cold iron and silver/adamantine; Monastic weapons take the flat and counts-as."
+  },
+  "CF-D2": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.667.0 stat row: Wisdom as dodge while unarmoured and unencumbered."
+  },
+  "CF-D3": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "convictionPool 1."
+  },
+  "CF-D4": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: core 3.667.0 strike series: two Strikes, DR once on a creature hit twice, one critical injury, MAP as normal."
+  },
+  "CF-D5": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Inner Discipline granted at 1st; the extra Technique pick is the player's (bonus feats note)."
+  },
+  "CF-D6": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "focusExtraUses on Focus Technique abilities; Refocus restores all."
+  },
+  "CF-D7": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "abilityChoices: the four Paths."
+  },
+  "CF-D8": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.667.0 stat row: +10/15/20 ft status Speed at 4/10/16 while unarmoured."
+  },
+  "CF-M1": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Core 3.667.0 attack reroll: offered to the defender's player after any attack roll (Strike or spell), before it resolves; the new roll stands (B3-5)."
+  },
+  "CF-M2": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Inner Discipline granted at 1st."
+  },
+  "CF-M3": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "abilityChoices: the five disciplines."
+  },
+  "CF-M4": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: a picker of the Path's spells by slot (two cantrips, two PP 2, then one eligible per level); each arrives innate with Focus, stamped with the Path; the PP 2 picks castable at 1st (B3-2)."
+  },
+  "CF-M5": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "convictionPool 1."
+  },
+  "CF-M6": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "abilityChoices: the four Paths."
+  },
+  "MD-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Flame Within and the nine spells granted by level, innate with Focus, stamped with the Path, +1 PP allowance (B3-2)."
+  },
+  "MD-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Dragon's Pulse and the nine spells, as MD-01."
+  },
+  "MD-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Centred Awareness and the nine spells, as MD-01."
+  },
+  "MD-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Echoes Beyond and the nine spells, as MD-01."
+  },
+  "MD-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Echo Form and the nine spells, as MD-01."
+  },
+  "MD-01a": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Listens for damage applied (core 3.667.0): +1 to +3 circumstance on attacks; resets after a turn with no damage taken or dealt (B3-3)."
+  },
+  "MD-02a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered after your melee Strike damages a creature: Wisdom (min 1, +1 per 6 levels) more, no DR again."
+  },
+  "MD-03a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use before the check: advantage applied to the next Cleansing Trance, Clear Mind or Healing Trance."
+  },
+  "MD-04a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use before the check: advantage offered as a tick on the next attack, save or skill check."
+  },
+  "MD-05a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered when an attack targets you (core defence offer): Concealed until your next turn."
+  },
+  "FC-28": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Grants the three techniques; opens the Technique feats; carries Steel the Mind's save reaction."
+  },
+  "FC-28a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Asked by Flurry of Blows: a third Strike at no penalty that still counts (B3-4)."
+  },
+  "FC-28b": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use as you move: +10 ft land Speed until your next turn."
+  },
+  "FC-28c": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered when an attack targets you: +4 dodge until your next turn."
+  },
+  "FC-01": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: 1 AP Flourish; the token move is armed as a teleport up to your Speed."
+  },
+  "FC-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use before initiative: advantage applied to the initiative check."
+  },
+  "FC-06": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Use: a Fly Speed equal to land Speed for 1 minute; ending turns on a surface (or the 9th-level DC 25 Acrobatics check) is by hand."
+  },
+  "FC-27": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1-3 AP cone; one damage roll, each target's basic Fortitude against the Technique Save DC."
+  },
+  "FC-29": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: +2 status to Strength or Dexterity for 1 minute."
+  },
+  "FC-31": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Use spends the reaction and the use; suspending the fear condition is by hand (no core suspension)."
+  },
+  "FC-32": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: 1 AP Flourish; a move of twice your Speed armed; Concealed until your next turn."
+  },
+  "FC-33": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: Nightvision for 1 minute; 10 minutes from 8th; Darkvision from 12th."
+  },
+  "FC-34": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: +4 resistance to Fortitude saves for 1 minute."
+  },
+  "FC-35": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: +1 status to unarmed attacks (ticked) and a 1d6 secondary rider (2d6/3d6/4d6 at 8/12/16) on every Strike this turn."
+  },
+  "FC-43": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: the core stance; essence offered on any Strike, +2 circumstance to Escape, 1 minute; Devoted or Illuminator only."
+  },
+  "SP-04": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "-10 ft Speed and -4 Acrobatics/Climbing for 10 minutes; tracking, the 5-ft floor and the hover are the GM's."
+  },
+  "SP-06": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Cast deals 5d10 fire (basic Fortitude) and gives fire resistance; the repeat, light and dying flare are by hand."
+  },
+  "SP-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Type chosen on casting; 8d8, basic Reflex."
+  },
+  "SP-09": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "The save and 4d6 fire; the persistent fire on movement and the Fumble's criticals are by hand."
+  },
+  "SP-10": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "+20 ft status Speed; the second round's -10 ft by hand."
+  },
+  "SP-12": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "The cast's targets save and take the conditions; later saves and the immunity are by hand."
+  },
+  "SP-16": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Teleport destinations are the caster's on the map."
+  },
+  "SP-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Cast as a reaction: the next save against a Mental effect this round has advantage, applied."
+  },
+  "SP-18": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "The egg is a story object."
+  },
+  "SP-20": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Wisdom as dodge to Defence while sustained (core 3.667.0 declared stat row)."
+  },
+  "SP-23": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Quickened for 1 minute; the movement-only use is by hand."
+  },
+  "CL-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class table, skills, proficiency (light armour, bucklers, simple weapons, shortbows, the wakizashi, Monastic weapons) and wealth 0 registered; Weapon Finesse at 1st; no PP casting."
+  },
+  "CL-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class table, skills, proficiency (simple and martial, light and medium armour, bucklers) and wealth 1 registered; Weapon Finesse at 1st."
+  },
+  "CL-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class table, skills, proficiency (simple and martial, katana and wakizashi, all armour, no shields) and wealth 2 registered; Quick Draw at 1st."
+  },
+  "CL-07": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Magical Tradition's Use records the tradition; magical arts name it on their cards. No class technique rolls with it yet."
+  },
+  "CF-G1": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "The Sneak's distance is not measured by the system; the card states the rule."
+  },
+  "CF-G2": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Core 3.668.0 ambush dice: by level, once per round, eligible weapons; applied when hidden/undetected or from your own Feint, asked otherwise, never from flanking (B4-3)."
+  },
+  "CF-G3": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered after Unseen Assault deals damage: reaction, an armed 5-ft (10 with Fleeting Shadow) Step that provokes nothing."
+  },
+  "CF-G4": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Ghost Arts' Use picks arts by level and count (Extra Ghost Art included); each arrives as its own ability."
+  },
+  "CF-G5": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Weapon Finesse granted at 1st; bonus feat note on the class."
+  },
+  "GA-01": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Int instead of Cha on Disguise, applied when higher; the 1-minute disguise is the GM's."
+  },
+  "GA-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "1 AP and its use; the next move is armed to Speed with no reactions; the card offers Hide."
+  },
+  "GA-03": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP; an effect records it and ends on a Strike or a token move; the −5 to others' Perception is the GM's."
+  },
+  "GA-04": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "1 AP and its use; Feint or Create a Diversion rolled with advantage at no further AP; a Step armed."
+  },
+  "GA-05": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Tracking is the GM's; described."
+  },
+  "GA-06": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Flourish; two thrown Strikes at one target (a strike series, DR once) or two targets, MAP as normal."
+  },
+  "GA-07": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP and its use; the card names the area and duration; Concealed on those inside is by hand."
+  },
+  "GA-08": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP and its use; the next move is armed to Speed; the walls are the player's."
+  },
+  "GA-09": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Reaction and its use; the card says to treat the fall as 30 ft shorter."
+  },
+  "GA-10": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP and its use; the card gives the Level DC and the dice by level; the area and saves are by hand."
+  },
+  "GA-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered when attacked: reaction and use; Concealed until the next turn or a Strike."
+  },
+  "GA-12": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "1 AP and use; Invisible until the next turn; ends on a Strike (a spell by hand)."
+  },
+  "GA-13": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP and use; the next move is armed as flight with no reactions; the limits are on the card."
+  },
+  "GA-14": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "1 AP and use; the next move is armed as a teleport; light and darkness are the player's."
+  },
+  "GA-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "1 AP and use; Invisible 1 minute; a Strike makes it Concealed to the end of the turn, then Invisible again."
+  },
+  "CF-K1": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Combat Form's Use learns forms by level and count, then enters one as a stance (1 AP) and expends itself."
+  },
+  "CF-K2": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered on a melee or thrown hit while a Flourish is open: a Strike at the third-attack penalty that doesn't count towards the penalty."
+  },
+  "CF-K3": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Intelligence on Refocus when higher (core actionAbilityOptions)."
+  },
+  "CF-K4": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use picks the group; class bonus − 1 untyped (B4-2) to attack and damage and Finesse one-handed, applied. The free hand is not checked by the system."
+  },
+  "CF-K5": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Weapon Finesse granted at 1st."
+  },
+  "KF-01": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Feint bonus applied; once a round, a Strike holding the blow lands from a card at the target's turn start (Graham's ruling)."
+  },
+  "KF-02": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "+1 attack and +Int damage as ticks; the push on a critical is on a card (Fort vs Technique DC)."
+  },
+  "KF-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 attack and +Int damage against an isolated target, read off the board; +1 luck DB after dropping an enemy."
+  },
+  "KF-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Class bonus − 1 to DB; +1 to the next weapon attack this round after a miss against you."
+  },
+  "KF-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+Int fire on the second hit in a round; +1 weapon damage per round in form, to Int, reset on a change or combat end (B4-4)."
+  },
+  "KF-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 per 2 Int (min 1) to Reflex and Acrobatics; −5 to reaction attacks against you."
+  },
+  "KF-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Flow Strike at −5; grapples against you at disadvantage; advantage on Escape (a save is a tick)."
+  },
+  "KF-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+Int to Stealth; +Int damage against a flat-footed target."
+  },
+  "KF-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 DB per 2 Int (min 1); Shove and Reposition against you at disadvantage; a save to avoid being moved is a tick."
+  },
+  "KF-10": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+2 per Int to Climbing and the Jumps; +Int damage after jumping into melee as a tick."
+  },
+  "KF-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+5 × Int initiative (raised on entry, lowered on leaving); half damage on a miss once a round, asked."
+  },
+  "KF-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+Int damage from reach; advantage on Kip Up."
+  },
+  "CF-O1": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use on the target: class bonus to melee attack and damage, AR = class bonus, −2 DB against others; ends on 0 HP, death, unconsciousness, combat end or a new Challenge; surrender by hand."
+  },
+  "CF-O2": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Chosen with Sworn Oath's Use (core abilityChoices)."
+  },
+  "CF-O3": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Charisma on Refocus when higher."
+  },
+  "CF-O4": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 conviction pool and points."
+  },
+  "CF-O5": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Quick Draw granted at 1st."
+  },
+  "OA-01": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "+2 DB against the target and advantage on the first melee Strike each round in a duel; suppressed when an ally attacks the target or stands beside it. The target's flanking is by hand."
+  },
+  "OA-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "−2 on the target's attacks against others; after it damages an ally, advantage and +Cha (min 1) on your next melee Strike against it."
+  },
+  "OA-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Retribution after the target damages you or an ally: advantage, +Cha damage, AR +2; ends with the Strike (Unpaid Debt: on damage)."
+  },
+  "OA-04": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Sworn Charge chosen at daily preparation; its +1 and AR 1, and the cross +2s, applied. Conscious and within 30 ft is the GM's."
+  },
+  "FC-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+2d6 on the first Unseen Assault against a creature that had not detected you: applied when undetected, asked otherwise; once per creature per encounter."
+  },
+  "FC-04": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Observation is the GM's; described."
+  },
+  "FC-05": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use picks two known forms; Combat Form offers the blend with both benefits."
+  },
+  "FC-07": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered when the challenged target drops; Use for a surrender. Restores Challenge and challenges the targeted creature at no AP."
+  },
+  "FC-09": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Jump distance and falling beside walls are the GM's; described."
+  },
+  "FC-10": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered with Evade when attacked (Evade needs Inner Discipline): +4 circumstance DB against that attack."
+  },
+  "FC-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 damage on a Flow Strike hit."
+  },
+  "FC-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Challenge's attack, damage and AR on bow attacks in the first range increment."
+  },
+  "FC-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Asked on a form change: keep one benefit of the previous form for 3 rounds."
+  },
+  "FC-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "One more form to learn."
+  },
+  "FC-18": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "One more Ghost Art to learn."
+  },
+  "FC-19": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Vanishing Retreat's Step is 10 ft; Hide on the card."
+  },
+  "FC-20": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Re-pick the blend at daily preparation (asked) or with Blended Form's Use."
+  },
+  "FC-21": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered on a melee miss: reaction; change form at once, no Combat Form needed (core waived wait)."
+  },
+  "FC-22": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Asked after a Challenge: a Demoralise at no AP; +2 as a tick; immune for the encounter."
+  },
+  "FC-23": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "1 AP Flourish Strike: +4, the target's stance bonuses ignored, +Int damage, treated as flat-footed."
+  },
+  "FC-24": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use picks a Focus Ghost Art; a transferred effect gives it a second use, restored together."
+  },
+  "FC-25": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "AR 1/2/3 by level on a Strike that deals Unseen Assault."
+  },
+  "FC-26": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Challenge's DB penalty is −1."
+  },
+  "FC-41": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered on a Flow Strike hit: a Step, and +1 against a different enemy as a tick."
+  },
+  "FC-42": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered when an attack misses you: reaction, a Step, and a Feint against the attacker that enables Unseen Assault."
+  },
+  "FC-44": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "2 AP: a Step, then a Strike from the card's button with the target considered flanked."
+  },
+  "FC-45": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered to the other on a critical against the challenged target: a free Step and advantage on the next attack against it."
+  },
+  "FC-46": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "+2 to allies' saves against the challenged target's effects when the save names its source; 30 ft is the GM's."
+  },
+  "FC-47": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Smoke Veil's concealment is by hand, so this is too."
+  },
+  "FC-49": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Aid and allies' DB bonuses are not tracked by source; described."
+  },
+  "FC-52": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "A missed Retribution Strike keeps Retribution until you damage the target."
+  },
+  "FC-53": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "As Between Glances; described."
+  },
+  "WP-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-11": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "In it-weapons (0.5.1). Twin through core 3.668.1; drawing both as one Interact and the shared rune are the GM's. One item is one sword (asked of Graham)."
+  },
+  "WP-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1): Reach with reachFeet 15, the Whip's pattern."
+  },
+  "WP-13": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-14": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-15": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1), read from the book's table."
+  },
+  "WP-16": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "In it-weapons (0.5.1). Martial for the Ghostwalker and the Oathblade by name (registered at 0.5.0)."
+  },
+  "WT-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core countsAsUnarmed (3.667.0)."
+  },
+  "WT-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.668.1: a Strike that inflicts no damage is taken back off the count; in Double Slice, such a swing is not counted."
+  },
+  "WT-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.668.1: a Strike through Ready against a mounted target, +2 circumstance and one more base die."
+  },
+  "WT-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core trait."
+  },
+  "WT-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.668.1: both Twin swings of a Double Slice hit and inflict damage, +1 each after the pair."
+  },
+  "FR-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.669.0 convictionRefund: conviction's Advantage on a Mental Focus check is refunded on a Success or better (B5-3), late DC included."
+  },
+  "FR-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Advantage offered (tick) on Spirit Lore checks."
+  },
+  "FR-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus, a 1-minute effect by heritage (Kitsune advantage Bluff/Feint; Mujina Base DR +1; Ren Speed +10 and falls 20 ft shorter; Byakko +2 melee damage; Orochi Swim +10, advantage on Escape and poison saves)."
+  },
+  "FR-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Impact Absorption gives Base DR +2; the +2 racial against being moved is a tick."
+  },
+  "FR-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 2 AP + Focus; core 3.669.0 area rail with enemiesOnly; dazzled/blinded ladder applied."
+  },
+  "FR-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 2 AP + Focus; targeted cone, basic Reflex, 1d6 per 2 levels (min 2d6) of the heritage's type."
+  },
+  "FR-07": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Text: movement over air is the table's (as the Shinryu heritage)."
+  },
+  "FR-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: choose Draconic Bite or Claw (it-companions); the second copy gives the other."
+  },
+  "FR-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: PP 6 list by element (B5-2: Water Walk for Suiryoku); innate Focus, Wisdom."
+  },
+  "FR-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Applied when the feat or heritage arrives: +1 racial spell attack (element traits) and spell DC; +2 Recall Knowledge tick."
+  },
+  "FR-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus; strike rider 1d4 of the element on melee Strikes, 1 minute."
+  },
+  "FR-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: PP 2 list by element (B5-2: Magic Stone for Tsuchi; Water Bolt in it-spells, B5-1)."
+  },
+  "FR-13": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: PP 4 list by element (B5-2: Water Breathing for Suiryoku, Endure Elements for all)."
+  },
+  "FR-14": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Text: the GM's coincidence, once per session."
+  },
+  "FR-15": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Fire resistance; the Zenki Crafting tick at +2."
+  },
+  "FR-16": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Base Natural DR +1."
+  },
+  "FR-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.669.0 fumbleReroll: offered on a fumbled skill check or save before it is read, and on an attack's confirmed fumble before the table; reaction and Focus use."
+  },
+  "FR-18": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: 1 AP + Focus; up to three placed light circles (core 3.669.0 placeLightCircles, +1 light step, 10 ft) for 1 minute; Use again moves them (once a turn, 30 ft, within 60 ft). Light circles rather than tokens (B5-4 implemented differently: a token is read as a creature)."
+  },
+  "FR-19": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.669.0 forAlly defence offer: asked of the adjacent ally before the attack; retargets; +1 circ DB and Base DR for that attack."
+  },
+  "FR-20": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+2 racial tick on Aid."
+  },
+  "FR-21": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Treasure Sense at 60 ft (fixedFeet); the 10-ft detail is the GM's."
+  },
+  "FR-22": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "defenceDC Fortitude +2 vs Shove/Trip/Reposition; core 3.669.0 forcedMovementReduction 5 ft; +2 tick on own checks and saves."
+  },
+  "FR-23": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Undead Lore granted; +2 racial auto against undead/haunts, tick otherwise."
+  },
+  "FR-24": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Text."
+  },
+  "FR-25": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus; next melee hit this turn +1d6 fire (spent on a hit), magical."
+  },
+  "FR-26": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+10 racial initiative; visual Perception tick at +2."
+  },
+  "FR-27": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Two +2 racial ticks on Bluff."
+  },
+  "FR-28": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: 2 AP + Focus; switched ally aura (core 3.669.0 emitterState) concealing everyone within 10 ft, moving with you, to your next turn. Concealed-to-those-inside is the table's."
+  },
+  "FR-29": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Offered when the Sting damages: Free + Focus; Fortitude ladder; speed penalties laid by the module."
+  },
+  "FR-30": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Text."
+  },
+  "FR-31": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Asked on the Pounce's paid Strike: +1 circumstance and 1d6 precision."
+  },
+  "FR-32": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Text; +2 Nature tick."
+  },
+  "FR-33": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "The Raptorial Blade item set to AR 2 + Versatile P when feat or blade arrives; restored when the feat goes."
+  },
+  "FR-34": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus; next melee hit before the end of your next turn: Fortitude ladder, poison on a Fumble."
+  },
+  "FR-35": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Text (rope); +2 Crafting tick."
+  },
+  "FR-36": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus; registered light sources (bright 3 steps/20 ft, dim 1 step/40 ft; glow 40/20) and a switched ally aura with two ticks, 1 minute."
+  },
+  "FR-37": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 1 AP + Focus; one Demoralise (core 3.669.0 presetDice/dcOverride/ignoreActionImmunity) against each enemy within 15 ft at its Level DC; immunity for the encounter."
+  },
+  "FR-38": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+2 racial auto vs Soul, tick for possession; Wisdom-for-Con/Dex as ticks (spirit is a trait, not a source type)."
+  },
+  "FR-39": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 racial Refocus; core 3.669.0 exact daily first: the first Refocus is a Critical without a roll."
+  },
+  "FR-40": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 racial Meditation; core 3.669.0 daily-first advantage on the first trance (one slot)."
+  },
+  "FR-41": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+1 racial Meditation and Nature; +2 racial on Elemental Lore and Tianzhi Lore."
+  },
+  "FR-42": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 2 AP + Focus; Fortitude in a 10-ft emanation; speed and Reflex penalties laid by the module; Slowed 1 on a Fumble."
+  },
+  "FR-43": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Offered when a melee Strike misses the Kamiri (on its player's screen): reaction + Focus, a Raptorial Blade Strike."
+  },
+  "FR-44": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: 2 AP + Focus; Reflex; speed penalties or Immobilised with escapeDC (flat-footed on a Fumble); one at a time."
+  },
+  "FR-45": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Advantage on Balance; difficult terrain and flat-footedness are the table's."
+  },
+  "FR-46": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use: 1 AP + Focus; a Stride armed to your Speed; the surfaces are the table's."
+  },
+  "FR-47": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Fly Speed equal to land (derives.movement orLand); Wing Burst's card says it may end in the air."
+  },
+  "FR-48": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "registerFeatAccess with heritage limits (core 3.669.0): 33 entries, 25 feats, 20 limited to a heritage."
+  },
+  "FC-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance (1 AP, core 3.664.0 rules): +2 circ DB, +5 on High Jump and Long Jump (auto tick); Devoted or Primal Path checked at Use."
+  },
+  "FC-13": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: +2 circ AB; Sweep on unarmed attacks (core 3.670.0 weaponTraitGrants scope unarmed, B6-2); first difficult square per Stride (ignoresFirstDifficultSquare). Primal or Transcendent Path."
+  },
+  "FC-14": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: +2 circ DB; grants Drunken Strike (Attack Flourish, 1 AP): Strike at -2, on damage its total stands as the Feint (core 3.670.0 presetModifiers, B6-3)."
+  },
+  "FC-16": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Read by Inner Strike: electricity/bludgeoning/fire/cold with the Air/Earth/Fire/Water trait on every attack while it lasts (weaponTraitGrants scope any)."
+  },
+  "FC-30": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: one Path-tradition cantrip, innate, Path-stamped. classFeatAccess Mystic (core 3.670.0, B6-7). Non-Mystic via the picker."
+  },
+  "FC-36": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: Deadly on unarmed attacks; +2 circ Reflex; first Move each turn provokes nothing (core 3.670.0 firstMoveNoReactions, B6-4)."
+  },
+  "FC-37": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: +2 circ Acrobatics and Climbing; +2 on jumps (auto tick); 1-AP jump waiver (core 3.670.0 tradeoffWaivers, B6-5)."
+  },
+  "FC-38": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: one Path-tradition spell base PP <= level, innate, Path-stamped, marked innateMetamagic for a Mystic (B6-8)."
+  },
+  "FC-39": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use (2 AP, Attack Flourish): ranged Strike, one-shot advantage, mapSteps 2 (core 3.670.0). Zen Archer trait kept (B6-10)."
+  },
+  "FC-40": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use (2 AP, Attack Flourish): melee Strike, one-shot advantage, mapSteps 2 (core 3.670.0)."
+  },
+  "FC-48": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Stance; on a melee miss against you, asked for a reaction Strike (fists or Monastic weapon, no MAP), an Attack reaction (B6-9). Path checked at Use."
+  },
+  "FC-50": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Read by Flurry of Blows: both Strikes made, either hits and damages: Fortitude vs Technique DC; stunned 1 (Partial, Failure) or 3 (Fumble, Blunder) (B6-6)."
+  },
+  "FC-51": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: unarmed attacks deal slashing, set not offered (core 3.670.0 replace, B6-1); bleed +1 (bleedBonus); Step 10 ft at Speed 20+ (stepFeet)."
+  },
+  "FC-54": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Stance: unarmed attacks deal piercing (B6-1); Pack Attack from the effect (core 3.670.0)."
+  },
+  "FC-55": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "registerFeatAccess(\"class\") per class: 33 entries, 21 feats. Metamagic feats already open to the Mystic (Adept); innate use via innateMetamagic (B6-8)."
+  }
+}

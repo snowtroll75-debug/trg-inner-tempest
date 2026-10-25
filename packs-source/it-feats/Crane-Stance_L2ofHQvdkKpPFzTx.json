@@ -1,0 +1,49 @@
+{
+  "_id": "L2ofHQvdkKpPFzTx",
+  "name": "Crane Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Devoted or Primal Monastic Path",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p><strong>Prerequisites</strong> Devoted or Primal Monastic Path</p>\n<p>You assume the graceful Crane Stance, mimicking a crane's elegant wingspan while executing fluid and defensive movements. You gain a +2-circumstance bonus to DB.</p>\n<p>While in Crane Stance, you reduce the difficulty for High Jump and Long Jump (Athletics) checks by 5.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it: +2 circumstance to your DB, and +5 to High Jump and Long Jump checks (the book's \"reduce the difficulty by 5\", as a bonus of the same size). The Path is checked when you enter it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "craneStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!L2ofHQvdkKpPFzTx"
+}

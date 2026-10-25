@@ -1,0 +1,44 @@
+{
+  "_id": "GG8CmqHoRUjwShY6",
+  "name": "Spider Path",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MOVEMENT TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>Through momentum, balance and specially practised footwork, you briefly treat vertical surfaces as though they were ordinary ground.</p>\n<p>Stride up to your Speed. During this movement you may travel across walls and other sufficiently solid vertical surfaces.</p>\n<p>You must finish the movement on a surface capable of supporting you. If you do not, you fall normally.</p>\n<p>Spider Path does not allow you to remain stationary on a vertical surface.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. Your next token move is armed up to your Speed; the walls are yours to walk on, and you must end on a surface that holds you.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Movement, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Spider Path",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GG8CmqHoRUjwShY6"
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "7L4Wkt3eJ6hO3XAd",
+  "name": "Guarded Centre",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Technique",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> Reaction; <strong>Trigger</strong> you are targeted by an attack you are aware of.</p>\n<p>Gain a +4-dodge bonus to DB until the beginning of your next turn.</p>\n<p><em>Automated:</em> when an attack targets you, you are asked before it is rolled. A yes spends your reaction and this use, and gives +4 dodge to your DB until the start of your next turn, against every attack in that time.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Focus, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "guardedCentre"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7L4Wkt3eJ6hO3XAd"
+}

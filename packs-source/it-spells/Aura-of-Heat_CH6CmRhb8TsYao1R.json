@@ -1,0 +1,87 @@
+{
+  "_id": "CH6CmRhb8TsYao1R",
+  "name": "Aura of Heat",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "save",
+    "level": 0,
+    "ppCost": 14,
+    "castAP": 1,
+    "range": "",
+    "area": "10-foot radius",
+    "targets": "",
+    "duration": "Sustained (1 minute)",
+    "defence": "Basic Fortitude",
+    "baseDamage": "1d10",
+    "damage": {
+      "formula": "5d10",
+      "type": "fire",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "defence",
+        "target": "self",
+        "field": "resistance",
+        "value": "fire",
+        "note": "Aura of Heat"
+      },
+      {
+        "kind": "note",
+        "text": "The light level within 10 feet rises two steps. Each round you sustain the aura, hostile creatures within 10 feet take 5d10 fire (basic Fortitude) — cast it again from the Sustain to deal it. If you gain the Dying condition while it is up, it flares: 6d10 fire to every enemy within 10 feet (basic Fortitude), then you stabilise at 1 HP and are Fatigued 2 — once per casting."
+      }
+    ],
+    "warps": [
+      {
+        "ppCost": 2,
+        "text": "increase the radius by 10 feet",
+        "mods": {}
+      },
+      {
+        "ppCost": 2,
+        "text": "change duration to 1 minute (activates at the beginning of your turn each round as a free action)",
+        "mods": {}
+      }
+    ],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": true,
+    "sustainType": "sustain",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": false,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Aura, Fire, Invocation",
+    "description": "<p>Your power flares outward, surrounding you in a pulsing field of intense thermal energy. Upon casting the spell and each round when you sustain it, you increase the light level by two steps within your aura and all hostile creatures within 10 feet take 5d10 fire damage. Furthermore, you gain fire resistance while the spell is active. Finally, if you gain the Dying condition while the aura is active, it flares explosively before fading, dealing 6d10 fire damage to all enemies within 10 feet (basic Fort). You then stabilise at 1 HP but are Fatigued 2 (instead of the normal fatigued 1 for leaving the Dying condition). This resurgence only happens once per casting.</p>\n<p><strong>Warping Options</strong> <strong>+2 PP:</strong> increase the radius by 10 feet. <strong>+2 PP:</strong> change duration to 1 minute (the spell activates at the beginning of your turn each round as a free action).</p>\n<p><em>Partly automated:</em> the cast deals 5d10 fire to the creatures targeted in the aura (basic Fortitude) and gives you fire resistance. Each round's repeat, the light and the dying flare are the table's, as the card says.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CH6CmRhb8TsYao1R"
+}

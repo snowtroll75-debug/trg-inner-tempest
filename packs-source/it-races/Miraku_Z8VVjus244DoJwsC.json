@@ -1,0 +1,145 @@
+{
+  "_id": "Z8VVjus244DoJwsC",
+  "name": "Miraku",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Race",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><em>The Miraku are a race of shapeshifters bound to ancestral animal spirits, walking a delicate balance between the wild and the human, between instinct and enlightenment. Born with soul marks—tattoo-like glyphs glowing faintly on their bodies—each Miraku is tethered to a spiritual totem that shapes their second form: fox, bear, crane, tiger, serpent, and more.</em></p>\n<p><em>“We are not many forms. We are one soul remembering what it once was.” – Liyo, of the Bright Prowl</em></p>\n<p>The Miraku are a fluid people whose bodies echo the spirits of beasts. Every Miraku is born beneath one of the Five Animisms—Fox, Bear, Crane, Tiger or Serpent—and carries visible traces of that spiritual bond. These features are not a curse or an uncontrolled transformation. They are a natural expression of the Miraku soul, and most Miraku can soften, exaggerate or rearrange them with little more effort than another person might change their posture.</p>\n<p>Although outsiders commonly divide the Miraku into animal “bloodlines”, the Miraku themselves regard the Five Animisms as philosophies. The Fox teaches adaptation and insight; the Bear endurance and guardianship; the Crane discipline and perspective; the Tiger courage and decisive action; and the Serpent patience and hidden influence. A Miraku’s heritage normally follows the spirit that first answered them during childhood, but adoption into another Animism is possible after an intense rite of spiritual rebirth.</p>\n<p>Miraku communities are found wherever the spirit world presses close to the mortal realm. Some keep forest shrines or mountain monasteries, while others establish quiet districts within great cities. They are valued as negotiators, scouts, healers and wardens, though their changeable appearance and instinctive reserve can make suspicious neighbours accuse them of deception.</p>\n<p>Miraku loyalties are usually personal rather than institutional. Oaths to a household, mentor, shrine or travelling companion often matter more to them than allegiance to a distant ruler. Betraying a freely given promise is one of the few acts condemned by all Five Animisms.</p>\n<p><strong>DESCRIPTION</strong></p>\n<p>Miraku are lightly built humanoids who normally stand between 5 and 6½ feet tall and weigh between 100 and 190 pounds. Their eyes are large and reflective, and their bodies display features associated with their heritage: pointed ears and tails, heavy fur, feather-like hair, striped markings, scales, slit pupils or other animal echoes. These features become more pronounced when a Miraku is frightened, angry or drawing upon spiritual power.</p>\n<p>Miraku reach physical adulthood at roughly 18 years of age and commonly live for 220 to 280 years. A starting Miraku character has an initial age of 18+2d6 years.</p>\n<p><strong>RACIAL MECHANICS</strong></p>\n<p><strong>Ability Modifiers</strong> Dex +1, Wis +1, Cha +1, Con -1 <strong>Size:</strong> Medium; <strong>Speed:</strong> 30 feet <strong>Power Points:</strong> 0</p>\n<p><strong>LANGUAGES</strong></p>\n<p><strong>Core Languages:</strong> Faechant, Low Tongue <strong>Additional Languages:</strong> Choose from any common language and Wyrmish</p>\n<p><strong>SPECIALIST SKILLS</strong></p>\n<p>You gain Miraku Lore and Spirit Lore as specialist skills.</p>\n<p><strong>OTHER ABILITIES</strong></p>\n<p><strong>Nightvision:</strong> You can see in dark areas and, with a small amount of light, can see well.</p>\n<p><strong>Fluid Form:</strong> You can subtly rearrange your animal features, colouration, hair, voice and apparent age as a 1 AP action with the Concentrate and Morph traits. This cannot change your size, equipment or heritage, and cannot perfectly reproduce a specific individual. You gain advantage on Bluff (Deception) checks made to support a disguise created with this ability.</p>\n<p><strong>Spirit Awareness:</strong> You gain a +1 racial bonus to Perception and Occultism checks made to notice, identify or understand spirits, haunts, possession and disturbances between the mortal and spirit worlds.</p>\n<p><strong>AGE</strong> (Appendix, Racial Age Categories)</p>\n<p>Adult 18; Middle Aged 110–140, Old 154–196, Venerable 187–238 (by Natural Lifespan); Natural Lifespan 220–280 years.</p>\n<p><em>Granted when the race is added:</em> Nightvision, Fluid Form and Spirit Awareness as ability items; Miraku Lore and Spirit Lore as specialist skills.</p>",
+    "abilityModifiers": "Dex +1, Wis +1, Cha +1, Con -1",
+    "maximumSize": "",
+    "languages": "Core: Faechant, Low Tongue. Additional: common, Wyrmish.",
+    "coreLanguages": "Faechant, Low Tongue",
+    "additionalLanguages": "common, Wyrmish",
+    "languageChoices": "",
+    "grantedFeats": "",
+    "racialAbilities": "Nightvision, Fluid Form, Spirit Awareness",
+    "grantedWeapons": "",
+    "grantedSpells": "",
+    "specialistSkills": "Miraku Lore, Spirit Lore"
+  },
+  "effects": [
+    {
+      "_id": "xi0WQEHHKDSuKuJm",
+      "name": "Miraku: ability modifiers",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "-1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Dex +1, Wis +1, Cha +1, Con -1",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!Z8VVjus244DoJwsC.xi0WQEHHKDSuKuJm"
+    },
+    {
+      "_id": "AqbVWOCyvWy29TqX",
+      "name": "Miraku: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "medium",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Medium size and a base land speed of 30 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!Z8VVjus244DoJwsC.AqbVWOCyvWy29TqX"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Z8VVjus244DoJwsC"
+}

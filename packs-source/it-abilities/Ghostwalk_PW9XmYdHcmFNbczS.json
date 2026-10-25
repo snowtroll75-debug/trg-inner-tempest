@@ -1,0 +1,49 @@
+{
+  "_id": "PW9XmYdHcmFNbczS",
+  "name": "Ghostwalk",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Ghostwalker 1st level",
+    "active": true,
+    "description": "<p>You have been trained to move while attention lies elsewhere.</p>\n<p>When using the Sneak (Stealth) action, you may move up to your Speed rather than the normal distance allowed by the action.</p>\n<p>Ghostwalk does not allow you to Hide or Sneak where you lack the cover or concealment normally required to do so.</p>\n<p><em>Not automated:</em> the system's Sneak action does not measure how far you move; with Ghostwalk you may move up to your Speed with it. You still need cover or concealment to Hide or Sneak.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Ghostwalker",
+        "level": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PW9XmYdHcmFNbczS"
+}

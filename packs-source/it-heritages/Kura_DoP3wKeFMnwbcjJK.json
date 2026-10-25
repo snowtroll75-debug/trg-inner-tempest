@@ -1,0 +1,84 @@
+{
+  "_id": "DoP3wKeFMnwbcjJK",
+  "name": "Kura",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Kura have charcoal-black, light-drinking scales and violet or blue bioluminescent eyes. Their houses inhabit deep valleys, eclipse-shrouded monasteries and ruins where decay must be contained rather than conquered.</p>\n<p>Kura are often feared as omens of death, but most see themselves as custodians of endings. They know that rot, silence and winter are necessary parts of every cycle.</p>\n<p>You gain Darkvision and a +1 racial bonus to all Stealth checks.</p>\n<p><em>Granted:</em> Darkvision as an ability item, and a +1 racial bonus to all Stealth checks.</p>",
+    "sourceRace": "Ryukari",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "Darkvision",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "Y3iCEBFUgjSD2yeo",
+      "name": "Kura: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.stealth.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 racial bonus to Stealth checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!DoP3wKeFMnwbcjJK.Y3iCEBFUgjSD2yeo"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DoP3wKeFMnwbcjJK"
+}

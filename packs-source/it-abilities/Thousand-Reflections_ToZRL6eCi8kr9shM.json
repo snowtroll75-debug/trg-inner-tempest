@@ -1,0 +1,53 @@
+{
+  "_id": "ToZRL6eCi8kr9shM",
+  "name": "Thousand Reflections",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><em>In every mirror, a new self waits to awaken.</em></p>\n<p>Reality is not fixed—it is a hall of mirrors, and the Mystic who embraces this discipline learns to walk between the panes. The Thousand Reflections teaches that identity is fluid, action is mutable, and the self is manifold. Through focused projection and metaphysical awareness, these Mystics summon reflections of themselves, replay moments, or alter the flow of consequences.</p>\n<p>Mystics of the Thousand Reflections are unsettling to watch. They may move in tandem with illusions, vanish before a blow lands, or act twice in the space of one heartbeat. Their combat style is disorienting and elusive, and their minds teem with divergent paths not yet taken. To them, mastery lies not in certainty—but in choice.</p>\n<p><strong>SPECIAL ABILITY</strong> You gain the Echo Form special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> You gain the following spells at the indicated Mystic level as innate spells with the Focus trait. These spells are in addition to any spells that you select with your class picks and don't count towards your total spells known.</p>\n<table><thead><tr><th>Mystic Level</th><th>Spells (Base PP)</th></tr></thead><tbody><tr><td>1st</td><td>Ghost Sound (0), Cloak of Greying (2)</td></tr><tr><td>3rd</td><td>Invisibility (4)</td></tr><tr><td>5th</td><td>Mirror Image (6)</td></tr><tr><td>7th</td><td>Dimension Door (8)</td></tr><tr><td>9th</td><td>Displacement (10)</td></tr><tr><td>11th</td><td>Mislead (12)</td></tr><tr><td>13th</td><td>Hindsight (14)</td></tr><tr><td>15th</td><td>Hand of Tide* (16)</td></tr></tbody></table>\n<p><em>Automated:</em> Echo Form is added to your sheet. Each spell arrives as an innate spell with the Focus trait when you reach its level, cast with your Monastic Path's tradition and ability. Each may be cast up to base PP = your level + 1, so it is usable from the level that grants it (Graham's ruling B3-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "1: Ghost Sound, 1: Cloak Of Greying, 3: Invisibility, 5: Mirror Image, 7: Dimension Door, 9: Displacement, 11: Mislead, 13: Hindsight, 15: Hand of Tide",
+    "grantedAbilities": "Echo Form (Thousand Reflections)",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ToZRL6eCi8kr9shM"
+}

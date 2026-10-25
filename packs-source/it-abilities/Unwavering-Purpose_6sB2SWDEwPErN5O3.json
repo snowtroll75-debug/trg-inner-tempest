@@ -1,0 +1,56 @@
+{
+  "_id": "6sB2SWDEwPErN5O3",
+  "name": "Unwavering Purpose",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Oathblade 1st level",
+    "active": true,
+    "description": "<p>Your concentration is founded upon strength of personality and absolute commitment rather than quiet contemplation.</p>\n<p>When making Refocus (Mental Focus) checks, you may use your Charisma modifier instead of Wisdom. This changes only the ability modifier applied to the check. You still use the Mental Focus skill normally.</p>\n<p><em>Automated:</em> your Refocus (Mental Focus) checks use Charisma when it is higher than Wisdom. Your other Mental Focus checks are unchanged.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Oathblade",
+        "level": 1
+      },
+      "actionAbilityOptions": [
+        {
+          "action": "refocus",
+          "ability": "charisma",
+          "label": "Unwavering Purpose"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6sB2SWDEwPErN5O3"
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "Dm3GdKLs5EVaysz7",
+  "name": "Caltrop Blossom",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MANIPULATE TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 4</p>\n<p><strong>Action</strong> 1 AP; <strong>Range</strong> 20 feet; <strong>Area</strong> 10-foot burst</p>\n<p>You scatter a concealed handful of sharpened spikes, hooked fragments and other small impediments across the ground.</p>\n<p>The affected area becomes difficult terrain.</p>\n<p>The first time during a turn that a creature moves through the affected area using a ground movement Speed, it must make a Reflex save against your Level DC.</p>\n<p>The piercing damage is 2d6 at 4th level and increases by 1d6 at 8th level and every 4 levels thereafter.</p>\n<p><strong>Critical</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes the piercing damage and suffers a -5-foot circumstance penalty to Speed until the end of its turn.</p>\n<p><strong>Fumble</strong> As failure, but the creature's movement immediately ends.</p>\n<p>The caltrops remain until removed. A creature can clear one 5-foot square using an Interact action.</p>\n<p><em>Partly automated:</em> press Use: 1 AP and this art's use. The card names the 10-foot burst (within 20 ft), your Level DC and the damage at your level (2d6, +1d6 at 8th and every 4 levels after) for the Reflex save a creature makes the first time each turn it moves through it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Manipulate, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Caltrop Blossom",
+      "itArtLevel": 4
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Dm3GdKLs5EVaysz7"
+}

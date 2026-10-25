@@ -1,0 +1,49 @@
+{
+  "_id": "cKzBXCCRk3GiHEsD",
+  "name": "Foxfire",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kitsune Heritage",
+    "active": true,
+    "description": "<p><strong>ETHEREAL FOCUS LIGHT MIRAKU TECHNIQUE</strong></p>\n<p><em>The Fox Animism teaches that illumination and deception are often separated only by perspective. You have learned to manifest the strange spiritual fire associated with your ancestors.</em></p>\n<p><strong>Prerequisites</strong> Kitsune Heritage</p>\n<p><strong>Action</strong> 1 AP; <strong>Range</strong> 60 feet; <strong>Duration</strong> 1 minute</p>\n<p>You create up to three floating motes of spectral flame within range. Each sheds dim light within 10 feet. When you use the technique, and once each turn thereafter as a Free Action, you may move each flame up to 30 feet to another location within range.</p>\n<p>The flames produce no heat and cannot ignite objects.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use, then place up to three motes within 60 feet (Escape stops early). Each is a 10-foot circle of dim light on the map that raises the light level by a step where it stands, for 1 minute. While they last, Use again moves them (a Free Action, once a turn): each up to 30 feet, still within 60 feet of you. They are drawn as light circles rather than tokens (see the release notes): a token would be read as a creature.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ethereal, Focus, Light, Miraku, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "foxfire"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cKzBXCCRk3GiHEsD"
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "Jn1rsIpvdMqwzp08",
+  "name": "Gale Cutter",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are the wind that howls through the battlefield, swift, erratic, and ungraspable. Each movement slices the air and your enemies alike.</p>\n<p>You dance and strike through multiple opponents. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Your flow strike only suffers a -5 penalty.</li><li>All attempts to grapple or restrain you are made at disadvantage (you gain advantage to resist such things).</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). your Flow Strike is at −5. Grapples against you are rolled at disadvantage, and you have advantage on Escape (and, ticked, on a save to resist being grabbed or restrained). All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "Flow Strike at −5",
+            "flags": {
+              "itGaleCutter": true
+            }
+          },
+          {
+            "label": "Grapples against you at disadvantage",
+            "flags": {
+              "defenceDC": [
+                {
+                  "kind": "disadvantage",
+                  "dc": "any",
+                  "label": "Gale Cutter",
+                  "when": {
+                    "actions": [
+                      "grappleAttack"
+                    ]
+                  }
+                }
+              ],
+              "conditionals": [
+                {
+                  "kind": "advantage",
+                  "label": "Gale Cutter",
+                  "scope": "Escape checks, and saves to resist a grab or restraint — tick on a save",
+                  "auto": true,
+                  "when": {
+                    "actions": [
+                      "escape"
+                    ]
+                  }
+                },
+                {
+                  "kind": "advantage",
+                  "label": "Gale Cutter",
+                  "scope": "A saving throw to resist being grabbed or restrained — tick if this is one",
+                  "auto": false,
+                  "when": {
+                    "checkTypes": [
+                      "save"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Jn1rsIpvdMqwzp08"
+}

@@ -1,0 +1,92 @@
+{
+  "_id": "MdJJ1ybUUc5ta4EM",
+  "name": "Dread Wolf",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are the lone predator that picks off the weak and the unwary. The wolf does not need a pack—it thrives in the silence of fear.</p>\n<p>You isolate and dismantle lone enemies. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>When you attack a creature not adjacent to any ally, gain +1 to attack rolls and +Int mod to damage.</li><li>When you reduce an enemy to 0 HP, gain +1 luck bonus to DB until end of next round.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +1 attack and +Int damage are applied against a creature with none of its allies adjacent (read off the board). When you drop an enemy to 0 HP you gain +1 luck to DB until the end of the next round. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+1 attack, +Int damage against a lone creature",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "value": 1,
+                  "label": "Dread Wolf",
+                  "scope": "A creature with none of its allies adjacent",
+                  "when": {
+                    "checkTypes": [
+                      "attack"
+                    ],
+                    "targetStates": [
+                      "isolated"
+                    ]
+                  }
+                },
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence",
+                  "label": "Dread Wolf",
+                  "scope": "A creature with none of its allies adjacent",
+                  "when": {
+                    "checkTypes": [
+                      "damage"
+                    ],
+                    "targetStates": [
+                      "isolated"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "+1 luck DB after dropping an enemy",
+            "flags": {
+              "itDreadWolf": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MdJJ1ybUUc5ta4EM"
+}

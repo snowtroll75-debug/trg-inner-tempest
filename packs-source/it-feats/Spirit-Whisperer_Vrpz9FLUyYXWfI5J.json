@@ -1,0 +1,45 @@
+{
+  "_id": "Vrpz9FLUyYXWfI5J",
+  "name": "Spirit Whisperer",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 5 ranks",
+    "active": true,
+    "description": "<p><em>Your gift of communication extends beyond the material world. You can converse with spirits and other ethereal entities, gaining insights and information from the other side.</em></p>\n<p><strong>Prerequisites</strong> Meditation 5 ranks</p>\n<p>You enter a trance enabling you to communicate with nearby spirits. This allows you to Gather Information (Diplomacy) using your Meditation skill. The information gained will be dependent upon the spirits in the area (GM discretion).</p>\n<p><em>Automated:</em> Gather Information is offered from your Meditation skill as well as Diplomacy. What the spirits know is the GM's to say.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Vrpz9FLUyYXWfI5J"
+}

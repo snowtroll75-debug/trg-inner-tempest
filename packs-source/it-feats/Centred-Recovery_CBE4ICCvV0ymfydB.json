@@ -1,0 +1,90 @@
+{
+  "_id": "CBE4ICCvV0ymfydB",
+  "name": "Centred Recovery",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 1 rank",
+    "active": true,
+    "description": "<p><em>In the tranquillity of meditation, you recover your inner discipline more reliably and replenish magical reserves more efficiently.</em></p>\n<p><strong>Prerequisites</strong> Meditation 1 rank</p>\n<p>The first time each day that you use Refocus, improve the result by one degree, to a maximum of Critical. The first time each day that you use Power Recovery (Meditation), double the amount of PP restored.</p>\n<p><em>Applied automatically:</em> your first Refocus each day resolves one degree better, to a maximum of Critical (the card says so), and your first Power Recovery check during a rest each day restores double the PP. Daily preparation starts the count again.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "VHzkftmpE5WlPnlG",
+      "name": "Centred Recovery: first Refocus and Power Recovery each day",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "dailyFirst": [
+            {
+              "action": "refocus",
+              "improve": 1,
+              "max": "critical",
+              "label": "Centred Recovery"
+            },
+            {
+              "action": "powerRecovery",
+              "multiplier": 2,
+              "label": "Centred Recovery"
+            }
+          ]
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "The first Refocus each day improves by one degree (maximum Critical); the first Power Recovery each day restores double the PP.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!CBE4ICCvV0ymfydB.VHzkftmpE5WlPnlG"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CBE4ICCvV0ymfydB"
+}

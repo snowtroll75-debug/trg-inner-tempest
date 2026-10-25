@@ -1,0 +1,45 @@
+{
+  "_id": "j6IirThMLsqb3K2y",
+  "name": "Perfected Form",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Deception 5 ranks",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>Through careful practice, your control over your mutable features has become remarkably precise.</em></p>\n<p><strong>Prerequisites</strong> Deception 5 ranks</p>\n<p>When using Fluid Form, you may now reproduce the appearance and voice of a specific Medium humanoid you have as a Studied Target. This does not change your size, equipment, racial abilities or statistics. Your disguise can reproduce physical appearance and voice but does not grant knowledge of the individual's behaviour, memories or mannerisms.</p>\n<p>You retain the normal advantage granted by Fluid Form on Bluff (Deception) checks made to support the disguise.</p>\n<p>A creature particularly familiar with the individual may gain an appropriate bonus to recognise the deception at the GM's discretion.</p>\n<p><em>Not automated:</em> Fluid Form's disguise is the table's; its advantage on Bluff is still offered by Fluid Form.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!j6IirThMLsqb3K2y"
+}

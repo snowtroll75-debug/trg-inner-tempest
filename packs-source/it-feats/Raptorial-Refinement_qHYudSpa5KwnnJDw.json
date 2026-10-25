@@ -1,0 +1,49 @@
+{
+  "_id": "qHYudSpa5KwnnJDw",
+  "name": "Raptorial Refinement",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kamiri Heritage",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Repeated honing and controlled shedding have left your forearm blades narrower, harder and capable of finding gaps that ordinary weapons cannot exploit.</em></p>\n<p><strong>Prerequisites</strong> Kamiri Heritage</p>\n<p>The AR of your Raptorial Blade increases from 1 to 2. Furthermore, your Raptorial Blade gains the Versatile Piercing trait.</p>\n<p><em>Automated:</em> your Raptorial Blade becomes AR 2 with Versatile P, on the weapon itself, when the feat or the blade arrives; removing the feat puts the blade back.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "raptorialRefinement"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qHYudSpa5KwnnJDw"
+}

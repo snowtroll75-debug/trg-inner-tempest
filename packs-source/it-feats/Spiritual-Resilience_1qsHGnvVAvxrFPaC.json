@@ -1,0 +1,118 @@
+{
+  "_id": "1qsHGnvVAvxrFPaC",
+  "name": "Spiritual Resilience",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>The spirit bound to your soul protects you against forces that would displace, dominate or corrupt it.</em></p>\n<p>You gain a +2 racial bonus to saving throws against possession and effects with the Soul trait.</p>\n<p>Furthermore, whenever you make a Fortitude or Reflex saving throw against an effect created by a spirit, haunt or incorporeal creature, you may use your Wisdom modifier in place of the normal ability modifier for that saving throw if it is higher.</p>\n<p><em>Automated:</em> +2 racial on saves against effects with the Soul trait (applied) or against possession (tick). On a Fortitude or Reflex save against a spirit, haunt or incorporeal creature, Wisdom stands in for Constitution or Dexterity when it is higher, offered as a tick (a save cannot see that its source is a spirit: spirit and incorporeal are traits, not creature types).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Spiritual Resilience",
+          "scope": "Saving throws against effects with the Soul trait",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "traits": [
+              "soul"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Spiritual Resilience",
+          "scope": "Saving throws against possession — tick if this save is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "not": {
+              "traits": [
+                "soul"
+              ]
+            }
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "valueFrom": "wisdom-constitution",
+          "valueMin": 0,
+          "type": "untyped",
+          "label": "Spiritual Resilience",
+          "scope": "Fortitude against an effect a spirit, haunt or incorporeal creature created: Wisdom instead of Constitution — tick if so",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "subjects": [
+              "fortitude"
+            ]
+          }
+        },
+        {
+          "kind": "modifier",
+          "valueFrom": "wisdom-dexterity",
+          "valueMin": 0,
+          "type": "untyped",
+          "label": "Spiritual Resilience",
+          "scope": "Reflex against an effect a spirit, haunt or incorporeal creature created: Wisdom instead of Dexterity — tick if so",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "subjects": [
+              "reflex"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!1qsHGnvVAvxrFPaC"
+}

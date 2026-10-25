@@ -1,0 +1,45 @@
+{
+  "_id": "KLKLOL0HLNP1HHmP",
+  "name": "Elemental Fist",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Strike",
+    "active": true,
+    "description": "<p><strong>Prerequisites</strong> Inner Strike</p>\n<p>You harness elemental forces through your Inner Strike. When you use Inner Strike, you may choose electricity damage and give the attack the Air trait; bludgeoning damage and the Earth trait; fire damage and the Fire trait; or cold damage and the Water trait.</p>\n<p><em>Automated:</em> read by Inner Strike: its damage types gain electricity (with the Air trait), bludgeoning (Earth), fire (Fire) and cold (Water). The chosen element's trait is on your attacks while that Inner Strike lasts; change the type on its card, free, as before.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KLKLOL0HLNP1HHmP"
+}

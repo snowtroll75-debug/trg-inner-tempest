@@ -1,0 +1,49 @@
+{
+  "_id": "sUTm1HCH5f46XP1v",
+  "name": "Shadowy Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Devoted or Illuminator Monastic Path",
+    "active": true,
+    "description": "<p><strong>DISCIPLE FOCUS MYSTIC STANCE TECHNIQUE</strong></p>\n<p>You learn an ancient stance that cloaks your movements in a shadowy spiritual presence. The stance lasts for 1 minute. Whilst in the stance, your attacks inflict essence damage and you gain a +2 circumstance bonus to all Escape checks. When the stance ends, Shadowy Stance is expended until restored with Refocus.</p>\n<p><em>Automated:</em> press Use to enter the stance (the system's stance rules and AP) and spend this use. For 1 minute your Strikes may deal essence damage (chosen on each Strike, as Versatile is), and Escape checks get +2 circumstance.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Focus, Mystic, Stance, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "shadowyStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!sUTm1HCH5f46XP1v"
+}

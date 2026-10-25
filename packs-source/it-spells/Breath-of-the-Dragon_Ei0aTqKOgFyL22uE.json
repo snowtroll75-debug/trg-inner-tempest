@@ -1,0 +1,76 @@
+{
+  "_id": "Ei0aTqKOgFyL22uE",
+  "name": "Breath of the Dragon",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "save",
+    "level": 0,
+    "ppCost": 10,
+    "castAP": 2,
+    "range": "",
+    "area": "30-foot cone",
+    "targets": "",
+    "duration": "",
+    "defence": "Basic Reflex",
+    "baseDamage": "1d8",
+    "damage": {
+      "formula": "8d8",
+      "type": "fire",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "damageTypeChoice",
+        "damageTypes": [
+          "acid",
+          "cold",
+          "electricity",
+          "fire"
+        ],
+        "label": "Breath of the Dragon",
+        "printSource": true
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Elemental, Invocation",
+    "description": "<p>Drawing upon your inner dragon, you unleash a powerful blast of elemental power in a cone before you. You exhale a 30-foot cone of energy, dealing 8d8 elemental damage to all creatures in the area. When you cast the spell you must select one of the following damage types: acid, cold, electricity or fire.</p>\n<p><em>Automated:</em> choose the damage type as you cast; 8d8 to each creature in the cone, basic Reflex.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Ei0aTqKOgFyL22uE"
+}

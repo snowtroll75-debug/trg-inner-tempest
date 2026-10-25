@@ -1,0 +1,1297 @@
+{
+ "source": "it12.md",
+ "classes": {
+  "Ghostwalker": {
+   "type": "Expert",
+   "description": "You have learned that the most dangerous warrior is not always the strongest, but the one whose presence is not recognised until the killing blow has already fallen.\n\nGhostwalkers are masters of infiltration, misdirection and sudden violence. They train themselves to move without drawing the eye, to control their breathing and footfall, and to exploit the smallest lapse in an opponent’s attention. Some serve as scouts, spies or saboteurs, while others become bodyguards, assassins, thieves or agents trusted to enter places where an army could never tread.\n\nUnlike Rogues, who rely upon versatility and opportunism, Ghostwalkers practise a specialised discipline of concealment and movement. They create their own openings, vanish before retaliation can find them and use unusual techniques collectively known as Ghost Arts.\n\nSome Ghost Arts are entirely mundane: smoke, concealed weapons, climbing techniques and precise movement. Others cross into the supernatural, allowing experienced Ghostwalkers to fade from sight or pass between shadows.\n\nYou may want to play a Ghostwalker if you want to infiltrate guarded locations, move rapidly through dangerous terrain, deceive enemies and deliver deadly attacks before disappearing again.",
+   "keyAbilityScores": "Dexterity (min +2), Wisdom, Intelligence",
+   "proficiencies": "You are proficient with light armour and bucklers. You may use all simple weapons, shortbows and weapons with the Monastic trait. The wakizashi is considered a martial weapon for you rather than an exotic weapon.",
+   "classSkills": "Acrobatics, Athletics, Climbing, Crafting, Culture, Deception, Linguistics, Mental Focus, Perception, Sense Motive, Stealth, Survival, Thievery",
+   "skillPoints": "8 + Int per level",
+   "hitPoints": "8 + Con per level"
+  },
+  "Kensai": {
+   "type": "Martial",
+   "description": "You are a disciplined master of martial technique, a warrior who has devoted their life to the perfection of weapon form and combat flow. Through rigorous training, mental clarity, and studied awareness, you have unlocked the secret language of movement—creating a unique and deadly combat rhythm.\n\nYou do not simply fight. You perform a deadly dance where your blade, axe, or spear becomes an extension of thought. Unlike the brutish fury of the berserker or the tactical orders of the warlord, your strength lies in internal mastery and flawless timing. You adapt, flow, and dominate.\n\nYou may want to play a Kensai if you want to excel in martial combat with intelligent control, flourish with distinctive fighting forms, and chain together devastating strikes with fluid precision.",
+   "keyAbilityScores": "Dexterity (min +2), Intelligence (min +2), Constitution",
+   "proficiencies": "You are proficient with all simple and martial weapons. You are proficient with all light armour, medium armour and bucklers.",
+   "classSkills": "Acrobatics, Athletics, Climbing, Culture, Handle Animal, Meditation, Mental Focus, Perception, Survival",
+   "skillPoints": "4 + Int per level",
+   "hitPoints": "10 + Con per level"
+  },
+  "Oathblade": {
+   "type": "Martial",
+   "description": "Your word is your strength.\n\nOathblades are warriors trained to bind action, purpose and identity together through an unbreakable personal code. Where other warriors study formations, weapon forms or the uncontrolled violence of battle, you are taught to remove hesitation. Once you commit yourself to an opponent, a duty or a course of action, everything unnecessary falls away.\n\nMany Oathblades serve lords, clans, temples or military houses, though service to another is not essential to the path. Some swear themselves to family, justice, vengeance, protection or a personal concept of honour. What matters is not who receives the oath, but that the Oathblade considers their word binding.\n\nIn battle, you excel when confronting a dangerous opponent directly. You single out a foe, declare your intent and focus completely upon defeating them. This concentration makes you exceptionally dangerous in single combat, though such dedication can leave you exposed to enemies outside that contest.\n\nOathblades are also trained in diplomacy, etiquette, horsemanship, culture and the traditional arts expected of a disciplined warrior. Their honour is not simply a battlefield affectation but a way of life.\n\nYou may want to play an Oathblade if you want to be a heavily armed martial warrior who excels in direct confrontation, relies upon exceptional resolve and builds their combat style around oaths, challenges and disciplined weapon techniques.",
+   "keyAbilityScores": "Charisma (min +2), Strength, Constitution",
+   "proficiencies": "You are proficient with all simple and martial weapons and with light, medium and heavy armour. The katana and wakizashi are considered martial weapons for you rather than exotic weapons. You are not automatically proficient with shields.",
+   "classSkills": "Artistry, Athletics, Culture, Diplomacy, Handle Animal, Intimidate, Mental Focus, Perception, Sense Motive, Survival",
+   "skillPoints": "6 + Int per level",
+   "hitPoints": "10 + Con per level"
+  }
+ },
+ "tables": {
+  "Ghostwalker": [
+   [
+    1,
+    0,
+    0,
+    3,
+    6,
+    3,
+    1
+   ],
+   [
+    2,
+    1,
+    1,
+    4,
+    7,
+    4,
+    1
+   ],
+   [
+    3,
+    2,
+    2,
+    5,
+    8,
+    5,
+    2
+   ],
+   [
+    4,
+    3,
+    3,
+    6,
+    9,
+    6,
+    2
+   ],
+   [
+    5,
+    3,
+    3,
+    7,
+    10,
+    7,
+    2
+   ],
+   [
+    6,
+    4,
+    4,
+    8,
+    11,
+    8,
+    3
+   ],
+   [
+    7,
+    5,
+    5,
+    9,
+    12,
+    9,
+    3
+   ],
+   [
+    8,
+    6,
+    6,
+    10,
+    13,
+    10,
+    3
+   ],
+   [
+    9,
+    6,
+    6,
+    11,
+    14,
+    11,
+    4
+   ],
+   [
+    10,
+    7,
+    7,
+    12,
+    15,
+    12,
+    4
+   ],
+   [
+    11,
+    8,
+    8,
+    13,
+    16,
+    13,
+    4
+   ],
+   [
+    12,
+    9,
+    9,
+    14,
+    17,
+    14,
+    5
+   ],
+   [
+    13,
+    9,
+    9,
+    15,
+    18,
+    15,
+    5
+   ],
+   [
+    14,
+    10,
+    10,
+    16,
+    19,
+    16,
+    5
+   ],
+   [
+    15,
+    11,
+    11,
+    17,
+    20,
+    17,
+    6
+   ],
+   [
+    16,
+    12,
+    12,
+    18,
+    21,
+    18,
+    6
+   ],
+   [
+    17,
+    12,
+    12,
+    19,
+    22,
+    19,
+    6
+   ],
+   [
+    18,
+    13,
+    13,
+    20,
+    23,
+    20,
+    7
+   ],
+   [
+    19,
+    14,
+    14,
+    21,
+    24,
+    21,
+    7
+   ],
+   [
+    20,
+    15,
+    15,
+    22,
+    25,
+    22,
+    7
+   ]
+  ],
+  "Kensai": [
+   [
+    1,
+    1,
+    1,
+    6,
+    3,
+    0,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    7,
+    4,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    8,
+    5,
+    2,
+    2
+   ],
+   [
+    4,
+    4,
+    4,
+    9,
+    6,
+    3,
+    2
+   ],
+   [
+    5,
+    5,
+    5,
+    10,
+    7,
+    4,
+    2
+   ],
+   [
+    6,
+    6,
+    6,
+    11,
+    8,
+    5,
+    3
+   ],
+   [
+    7,
+    7,
+    7,
+    12,
+    9,
+    6,
+    3
+   ],
+   [
+    8,
+    8,
+    8,
+    13,
+    10,
+    7,
+    3
+   ],
+   [
+    9,
+    9,
+    9,
+    14,
+    11,
+    8,
+    4
+   ],
+   [
+    10,
+    10,
+    10,
+    15,
+    12,
+    9,
+    4
+   ],
+   [
+    11,
+    11,
+    11,
+    16,
+    13,
+    10,
+    4
+   ],
+   [
+    12,
+    12,
+    12,
+    17,
+    14,
+    11,
+    5
+   ],
+   [
+    13,
+    13,
+    13,
+    18,
+    15,
+    12,
+    5
+   ],
+   [
+    14,
+    14,
+    14,
+    19,
+    16,
+    13,
+    5
+   ],
+   [
+    15,
+    15,
+    15,
+    20,
+    17,
+    14,
+    6
+   ],
+   [
+    16,
+    16,
+    16,
+    21,
+    18,
+    15,
+    6
+   ],
+   [
+    17,
+    17,
+    17,
+    22,
+    19,
+    16,
+    6
+   ],
+   [
+    18,
+    18,
+    18,
+    23,
+    20,
+    17,
+    7
+   ],
+   [
+    19,
+    19,
+    19,
+    24,
+    21,
+    18,
+    7
+   ],
+   [
+    20,
+    20,
+    20,
+    25,
+    22,
+    19,
+    7
+   ]
+  ],
+  "Oathblade": [
+   [
+    1,
+    1,
+    1,
+    3,
+    0,
+    6,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    4,
+    1,
+    7,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    5,
+    2,
+    8,
+    2
+   ],
+   [
+    4,
+    4,
+    4,
+    6,
+    3,
+    9,
+    2
+   ],
+   [
+    5,
+    5,
+    5,
+    7,
+    4,
+    10,
+    2
+   ],
+   [
+    6,
+    6,
+    6,
+    8,
+    5,
+    11,
+    3
+   ],
+   [
+    7,
+    7,
+    7,
+    9,
+    6,
+    12,
+    3
+   ],
+   [
+    8,
+    8,
+    8,
+    10,
+    7,
+    13,
+    3
+   ],
+   [
+    9,
+    9,
+    9,
+    11,
+    8,
+    14,
+    4
+   ],
+   [
+    10,
+    10,
+    10,
+    12,
+    9,
+    15,
+    4
+   ],
+   [
+    11,
+    11,
+    11,
+    13,
+    10,
+    16,
+    4
+   ],
+   [
+    12,
+    12,
+    12,
+    14,
+    11,
+    17,
+    5
+   ],
+   [
+    13,
+    13,
+    13,
+    15,
+    12,
+    18,
+    5
+   ],
+   [
+    14,
+    14,
+    14,
+    16,
+    13,
+    19,
+    5
+   ],
+   [
+    15,
+    15,
+    15,
+    17,
+    14,
+    20,
+    6
+   ],
+   [
+    16,
+    16,
+    16,
+    18,
+    15,
+    21,
+    6
+   ],
+   [
+    17,
+    17,
+    17,
+    19,
+    16,
+    22,
+    6
+   ],
+   [
+    18,
+    18,
+    18,
+    20,
+    17,
+    23,
+    7
+   ],
+   [
+    19,
+    19,
+    19,
+    21,
+    18,
+    24,
+    7
+   ],
+   [
+    20,
+    20,
+    20,
+    22,
+    19,
+    25,
+    7
+   ]
+  ]
+ },
+ "sections": {
+  "GHOSTWALK": {
+   "traits": "",
+   "lines": [
+    "You have been trained to move while attention lies elsewhere.",
+    "When using the Sneak (Stealth) action, you may move up to your Speed rather than the normal distance allowed by the action.",
+    "Ghostwalk does not allow you to Hide or Sneak where you lack the cover or concealment normally required to do so."
+   ]
+  },
+  "UNSEEN ASSAULT": {
+   "traits": "",
+   "lines": [
+    "You have learned to strike during the instant in which an enemy has lost track of you.",
+    "Once per round, when you Strike a creature that is flat-footed to you as a direct result of your own Stealth, Deception or Ghostwalker abilities, you inflict an additional 1d6 precision damage.",
+    "The attack must be one of the following:",
+    "- An agile or finesse melee attack.",
+    "- A thrown weapon attack.",
+    "- A ranged weapon attack made within its first range increment.",
+    "Simply flanking a creature is not sufficient to trigger Unseen Assault.",
+    "The additional damage increases by 1d6 at 5th level and every 4 levels thereafter."
+   ]
+  },
+  "VANISHING RETREAT": {
+   "traits": "MOVEMENT",
+   "lines": [
+    "**Action** Reaction; **Trigger** you inflict Unseen Assault damage against a creature.",
+    "You immediately Step 5 feet. This movement does not trigger reactions."
+   ]
+  },
+  "Ghost Arts: GHOST ARTS": {
+   "traits": "",
+   "lines": [
+    "Ghost Arts are the specialised disciplines that distinguish a Ghostwalker from an ordinary infiltrator. Some rely entirely upon physical training, prepared equipment and misdirection, while others use Focus to produce effects that border upon the supernatural.",
+    "Unless an art specifically states that it is magical, it is treated as a mundane technique even if its effects appear extraordinary."
+   ]
+  },
+  "FALSE FACE": {
+   "traits": "TECHNIQUE",
+   "lines": [
+    "You have been extensively trained in disguise, mimicry and assumed identities.",
+    "You may use your Intelligence modifier instead of Charisma when making Deception checks concerned with disguising yourself or impersonating another person.",
+    "Furthermore, mundane disguises that would normally require more than 1 minute to prepare may be created in 1 minute.",
+    "This ability does not allow you to alter your physical body and cannot reproduce racial or supernatural features without appropriate equipment."
+   ]
+  },
+  "GHOST STEP": {
+   "traits": "FOCUS MOVEMENT TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "You explode into sudden movement before observers can react.",
+    "Stride up to your Speed. Movement made as part of Ghost Step does not trigger reactions caused by your movement.",
+    "If you end this movement somewhere that provides suitable cover or concealment, you may immediately attempt to Hide as part of this action."
+   ]
+  },
+  "HOLLOW BREATH": {
+   "traits": "CONCENTRATE TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "You slow your breathing and movement until you become unnaturally still. Until you take an action other than Awareness or Search (Perception), your breathing and other involuntary movements become almost imperceptible. Creatures relying upon sound or movement to detect you suffer a -5-circumstance penalty to their Perception checks. Furthermore, while using Hollow Breath you may hold your breath for five times the normal duration. Hollow Breath ends immediately when you move, speak, attack or perform another obvious physical action."
+   ]
+  },
+  "MISDIRECTING WHISPER": {
+   "traits": "FOCUS MENTAL TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "You exploit a glance, gesture, whispered word or momentary distraction to draw an opponent’s attention away from your true intent.",
+    "Make either a Feint or Create a Diversion check using Deception. You gain advantage on this check.",
+    "After resolving the check, you may Step 5 feet."
+   ]
+  },
+  "NO TRACE": {
+   "traits": "TECHNIQUE",
+   "lines": [
+    "You know how to move without leaving obvious signs of your passage.",
+    "Attempts to Track you using Survival are treated as one difficulty category harder than normal.",
+    "When deliberately attempting to conceal your trail, you may continue moving at your normal Speed.",
+    "You may still leave evidence that cannot reasonably be concealed, such as broken doors, blood, magical traces or disturbances caused by other creatures."
+   ]
+  },
+  "SILENT NEEDLES": {
+   "traits": "ATTACK FLOURISH FOCUS TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP; **Requirements** you are wielding or carrying at least two suitable thrown weapons.",
+    "You release a rapid succession of concealed weapons.",
+    "Make two ranged Strikes using thrown weapons against the same creature or two different creatures. Apply your multiple attack penalty to these Strikes normally.",
+    "If both attacks damage the same creature, apply DR, resistance and weakness only once."
+   ]
+  },
+  "SMOKE VEIL": {
+   "traits": "FOCUS MANIPULATE TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP; **Range** 30 feet; **Area** 10-foot burst",
+    "**Duration** 1 minute",
+    "You scatter specially prepared powder, pellets or similar materials, creating a thick cloud of smoke.",
+    "Creatures and objects within the area are concealed. The smoke also provides sufficient concealment for creatures within it to attempt to Hide.",
+    "Strong wind, heavy rain or similar conditions may disperse the cloud early at the GM’s discretion.",
+    "Smoke Veil is non-magical."
+   ]
+  },
+  "SPIDER PATH": {
+   "traits": "FOCUS MOVEMENT TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "Through momentum, balance and specially practised footwork, you briefly treat vertical surfaces as though they were ordinary ground.",
+    "Stride up to your Speed. During this movement you may travel across walls and other sufficiently solid vertical surfaces.",
+    "You must finish the movement on a surface capable of supporting you. If you do not, you fall normally.",
+    "Spider Path does not allow you to remain stationary on a vertical surface."
+   ]
+  },
+  "FALLING SHADOW": {
+   "traits": "FOCUS MOVEMENT TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 4",
+    "**Action** R; **Trigger** you fall at least 10 feet.",
+    "Through controlled rotation, wall contact and practised landing techniques, you turn a dangerous fall into little more than another avenue of escape. When calculating the damage or other consequences of the fall, treat the distance fallen as 30 feet shorter.",
+    "If you land without gaining the Prone condition and your landing position provides suitable cover or concealment, you may immediately attempt to Hide (Stealth) as part of this reaction."
+   ]
+  },
+  "CALTROP BLOSSOM": {
+   "traits": "FOCUS MANIPULATE TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 4",
+    "**Action** 1 AP; **Range** 20 feet; **Area** 10-foot burst",
+    "You scatter a concealed handful of sharpened spikes, hooked fragments and other small impediments across the ground.",
+    "The affected area becomes difficult terrain.",
+    "The first time during a turn that a creature moves through the affected area using a ground movement Speed, it must make a Reflex save against your Level DC.",
+    "The piercing damage is 2d6 at 4th level and increases by 1d6 at 8th level and every 4 levels thereafter.",
+    "**Critical** The creature is unaffected.",
+    "**Success** The creature is unaffected.",
+    "**Failure** The creature takes the piercing damage and suffers a -5-foot circumstance penalty to Speed until the end of its turn.",
+    "**Fumble** As failure, but the creature's movement immediately ends.",
+    "The caltrops remain until removed. A creature can clear one 5-foot square using an Interact action."
+   ]
+  },
+  "SHADOW DOUBLE": {
+   "traits": "FOCUS SHADOW TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 8; **Action** R; **Trigger** you are targeted by an attack that you are aware of.",
+    "For a fraction of a moment, your shadow separates from you and moves in another direction, leaving your attacker uncertain which figure is real.",
+    "You gain the concealed condition against the triggering attack.",
+    "If the attack fails to damage you, you may immediately Step 5 feet. This movement does not trigger reactions.",
+    "You remain concealed until the beginning of your next turn or until you make an attack or perform another hostile action.",
+    "This Ghost Art is magical."
+   ]
+  },
+  "VEILED BODY": {
+   "traits": "FOCUS SHADOW TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 8",
+    "**Action** 1 AP",
+    "You suppress your presence until even the eye struggles to recognise where you stand. You become invisible until the beginning of your next turn.",
+    "The effect ends immediately after you make an attack, cast a spell or take another hostile action.",
+    "This Ghost Art is magical."
+   ]
+  },
+  "BODY OF MIST": {
+   "traits": "FOCUS SHADOW TRANSLOCATION TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 12; **Action** 1 AP",
+    "Your body briefly dissolves into a drifting cloud of shadow and vapour.",
+    "You may Fly up to your Speed as part of this action. During this movement:",
+    "- You may move through spaces occupied by other creatures.",
+    "- You may pass through openings as narrow as 1 inch.",
+    "- Your movement does not trigger reactions.",
+    "- You cannot make attacks, manipulate objects or carry another creature.",
+    "You cannot pass through solid walls, sealed doors or other completely enclosed barriers.",
+    "You must end the movement in a space that your normal body can occupy. If you cannot, you return to the last legal space that you moved through.",
+    "This Ghost Art is magical."
+   ]
+  },
+  "SHADOW PASSAGE": {
+   "traits": "FOCUS SHADOW TELEPORTATION TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 12; **Action** 1 AP; **Requirements** you are within an area of dim light or darkness.",
+    "Choose another location within your Speed that you can see and which is also within dim light or darkness.",
+    "You disappear into the surrounding shadow and immediately appear in the chosen space.",
+    "This Ghost Art is magical."
+   ]
+  },
+  "EMPTY PRESENCE": {
+   "traits": "FOCUS SHADOW TECHNIQUE",
+   "lines": [
+    "**Prerequisites** Level 16; **Action** 1 AP; **Duration** 1 minute",
+    "You suppress not merely your appearance but the very instinct that tells another creature that someone is standing nearby.",
+    "You become invisible for the duration.",
+    "Unlike Veiled Body, making an attack or taking another hostile action does not end Empty Presence. Instead, immediately after resolving the hostile action you become concealed rather than invisible until the end of your current turn.",
+    "At the end of your turn, if Empty Presence is still active, you become invisible again.",
+    "The effect ends immediately if you become unconscious or choose to dismiss it.",
+    "This Ghost Art is magical."
+   ]
+  },
+  "Kensai: COMBAT FORM": {
+   "traits": "CONCENTRATE FOCUS STANCE",
+   "lines": [
+    "**Action** 1 AP",
+    "You may enter a specialised stance known as a combat form. At 1<sup>st</sup> level, you begin play with two combat forms.",
+    "You may select an additional combat form at 4<sup>th</sup> level and then every 4 levels thereafter. You may also gain additional combat forms by selecting the Extra Form class feat.",
+    "You may only have one form active at any one time but may develop feats which allow you to modify or blend multiple forms.",
+    "A full list of your available forms can be found at the end of the class description."
+   ]
+  },
+  "Kensai: FLOW STRIKE": {
+   "traits": "ATTACK FLOURISH",
+   "lines": [
+    "**Action** 0 AP; Trigger you successfully hit a creature with a melee or thrown weapon",
+    "You may make an additional attack against the same target. This attack is made as if it was your third strike of the turn (usually -10 but this may be lower based upon what feats you have). The attack does not count towards your MAP."
+   ]
+  },
+  "Kensai: CONSIDERED MIND": {
+   "traits": "",
+   "lines": [
+    "Your approach to mental discipline is analytical rather than intuitive. When making Refocus (Mental Focus) checks, you may use your Intelligence modifier instead of Wisdom."
+   ]
+  },
+  "Kensai: WEAPON DISCIPLINE": {
+   "traits": "",
+   "lines": [
+    "At 1<sup>st</sup> level, you must select one weapon group from the following:",
+    "Axe, Brawling, Club, Knife, Spear, Polearm, Sword, Flail, Hammer, Pick, Dart",
+    "While wielding a weapon from this group you gain the following benefits:",
+    "- You add your class bonus -1 to attack and damage rolls.",
+    "- The weapon gains the Finesse trait if wielded in one hand.",
+    "- You are considered to have a free hand for the purpose of actions that require one (such as disarm and shove)."
+   ]
+  },
+  "Kensai: BONUS FEATS": {
+   "traits": "",
+   "lines": [
+    "At 1<sup>st</sup> level you gain the Weapon Finesse feat and any one class feat. At 3<sup>rd</sup> level and then every 3 levels thereafter you may select an additional class feat. You must meet the prerequisites or match the appropriate class traits (Martial or Kensai) for these feats."
+   ]
+  },
+  "Kensai: MAGICAL TRADITION": {
+   "traits": "",
+   "lines": [
+    "You have no normal spellcasting progression. At 1st level select a magical tradition. If a Kensai feat grants you an innate spell or an explicitly magical technique without specifying its tradition, it uses the selected tradition and Intelligence as your magical ability score."
+   ]
+  },
+  "Kensai: COMBAT FORMS": {
+   "traits": "",
+   "lines": [
+    "Combat Forms are specialized martial stances that shape how a Kensai fights on the battlefield. Each form emphasizes a particular combat philosophy, defence, speed, misdirection, precision, or overwhelming aggression. A form is more than a fighting technique; it is a mindset, a flow of motion and intent.",
+    "While in a form, you gain unique tactical bonuses that are enhanced by your Intelligence modifier, rewarding mastery, forethought, and adaptability. Switching forms allows you to respond fluidly to changing combat conditions, and with the right feats, you can even blend or enhance these forms beyond their standard limitations.",
+    "Combat Form has the Focus trait. When you activate a form, Combat Form becomes expended. You remain in the chosen form normally, but you cannot activate Combat Form again to change forms until you successfully restore the ability with Refocus.",
+    "Below is the full list of known Combat Forms available to Kensai.",
+    "All modifiers gained from a Combat Form are class bonus unless stated otherwise.",
+    "Any triggered saving throws uses your Technique DC."
+   ]
+  },
+  "BLACK LOTUS": {
+   "traits": "",
+   "lines": [
+    "Graceful, poised, and lethal—this form draws from meditative precision and concealed power. When the lotus blooms, it is already too late.",
+    "You conceal your true strength until the moment of impact. Whilst in this form, you gain the following modifiers:",
+    "- Once per round, may delay your damage and critical rolls until the start of the enemy’s turn.",
+    "- You may add your Int mod to all Feint (Deception) checks."
+   ]
+  },
+  "CRASHING TIDE": {
+   "traits": "",
+   "lines": [
+    "Like a tidal surge, you overwhelm enemies through relentless movement. This form teaches that power lies not in the blow, but in the rhythm that leads to it.",
+    "You surge forward in rolling attacks. Whilst in this form, you gain the following modifiers:",
+    "- When you move 10+ feet before attacking, gain +1 attack bonus and +Int mod to damage.",
+    "- On a Critical hit, you may push the target 5 feet (Fort negates)."
+   ]
+  },
+  "DREAD WOLF": {
+   "traits": "",
+   "lines": [
+    "You are the lone predator that picks off the weak and the unwary. The wolf does not need a pack—it thrives in the silence of fear.",
+    "You isolate and dismantle lone enemies. Whilst in this form, you gain the following modifiers:",
+    "- When you attack a creature not adjacent to any ally, gain +1 to attack rolls and +Int mod to damage.",
+    "- When you reduce an enemy to 0 HP, gain +1 luck bonus to DB until end of next round."
+   ]
+  },
+  "ECHOING CRANE": {
+   "traits": "",
+   "lines": [
+    "Every motion you make reverberates with purpose. Like the crane balancing in the wind, you find strength in elegance and repetition.",
+    "You fight with rhythmic grace, your movements flowing together. Whilst in this form, you gain the following modifiers:",
+    "- You may add your class bonus -1 to your DB while in this form.",
+    "- When you successfully avoid an attack (your DB is not overcome), you gain a +1 bonus to your next weapon attack roll this round."
+   ]
+  },
+  "EMBER REAVER": {
+   "traits": "",
+   "lines": [
+    "You stoke your inner fire into a storm of blades. Fuelled by momentum and fury, this form rewards ruthless aggression and constant pressure. You burn through enemies with relentless aggression. Whilst in this form, you gain the following modifiers:",
+    "- If you land 2 attacks in a round, gain +Int mod secondary fire damage to the second.",
+    "- Each consecutive round in this form adds +1 to weapon damage (resets if you change forms)."
+   ]
+  },
+  "FLICKERING FLAME": {
+   "traits": "",
+   "lines": [
+    "You emulate the dancing flame—elusive, agile, and impossible to pin down. Every motion is misdirection, your steps leaving only smoke and confusion in your wake. Whilst in this form, you gain the following modifiers:",
+    "- Gain a +1 bonus per 2 Int mod (min +1) to Reflex saves and Acrobatics checks.",
+    "- Enemies suffer a -5 penalty to hit you with reaction attacks."
+   ]
+  },
+  "GALE CUTTER": {
+   "traits": "",
+   "lines": [
+    "You are the wind that howls through the battlefield, swift, erratic, and ungraspable. Each movement slices the air and your enemies alike.",
+    "You dance and strike through multiple opponents. Whilst in this form, you gain the following modifiers:",
+    "- Your flow strike only suffers a -5 penalty.",
+    "- All attempts to grapple or restrain you are made at disadvantage (you gain advantage to resist such things)."
+   ]
+  },
+  "GHOST FOX": {
+   "traits": "",
+   "lines": [
+    "Silent, swift, and deadly, the Ghost Fox teaches that a whisper can kill louder than a scream. You move through shadows and strike with ghostly grace.",
+    "You strike from nowhere, unseen and unstoppable. Whilst in this form, you gain the following modifiers:",
+    "- Add you Int mod to all Stealth skill checks.",
+    "- When attacking a flat-footed target, add your Int mod as base damage"
+   ]
+  },
+  "IRON TORTOISE": {
+   "traits": "",
+   "lines": [
+    "Like the immovable tortoise, you present a stoic defence, unyielding in the face of pressure. Your stance reflects deep inner discipline and the belief that patience can outlast fury.",
+    "You adopt a defensive stance, reducing damage and holding your ground. Whilst in this form, you gain the following modifiers:",
+    "- Gain +1 DB per 2 Int modifier (min +1).",
+    "- All attempts to push or move you are made at disadvantage. Any saving throws that you must make to avoid being moved are made at advantage."
+   ]
+  },
+  "RISING PHOENIX": {
+   "traits": "",
+   "lines": [
+    "A soaring leap, a blaze of motion, this form embodies rebirth through action. You rise above your foes, crashing down with both elegance and fury.",
+    "You leap into battle with furious grace. Whilst in this form, you gain the following modifiers:",
+    "- Gain +2 bonus per Int mod to Climb (Climbing) and Jump (Athletics) checks.",
+    "- When you Jump into melee, add +Int mod to your first attack’s damage."
+   ]
+  },
+  "STEEL VIPER": {
+   "traits": "",
+   "lines": [
+    "Quick as a whisper and twice as sharp, the Steel Viper strikes with refined venom. This form is about reacting faster than thought and hitting before your foe breathes.",
+    "You lash out with deadly speed from deceptive angles. Whilst in this form, you gain the following modifiers:",
+    "- You gain a bonus to Initiative equal to your Int mod x5.",
+    "- Once per round, if you miss with an attack, roll the damage and deal it as half damage.",
+    "Be aware that the initiative bonus granted by this feat may be applied retrospectively"
+   ]
+  },
+  "STONE SERPENT": {
+   "traits": "",
+   "lines": [
+    "Coiled like a serpent and rooted like stone, you become a weapon of patience and explosive precision. This form teaches that stillness can be deadlier than motion.",
+    "You coil low and strike with deceptive reach. Whilst in this form, you gain the following modifiers:",
+    "- When attacking from reach, gain +Int mod as precision damage.",
+    "- You gain advantage on all Kip up (Acrobatics) actions."
+   ]
+  },
+  "Oathblade: BONUS FEATS": {
+   "traits": "",
+   "lines": [
+    "At 1st level you gain the Quick Draw feat and may select any one additional class feat. At 3rd level and then every 3 levels thereafter you may select an additional class feat. You must meet the prerequisites or match the appropriate class traits (Martial or Oathblade) for these feats."
+   ]
+  },
+  "Oathblade: CHALLENGE": {
+   "traits": "FLOURISH FOCUS MENTAL TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP; **Requirements** you can see the creature you intend to challenge.",
+    "You openly commit yourself to defeating a single opponent and focus your entire martial discipline upon that creature.",
+    "While the creature remains your challenged target:",
+    "- You add your class bonus to melee attack checks made against it.",
+    "- You add your class bonus to damage inflicted by your melee attacks against it.",
+    "- Your melee attacks against it gain AR equal to your class bonus.",
+    "- You suffer a -2-circumstance penalty to DB against attacks made by all creatures other than your challenged target.",
+    "You may only have one challenged target at a time.",
+    "Your Challenge ends when the target is killed, reduced to 0 Hit Points, becomes unconscious, clearly surrenders, the encounter ends or you use Challenge against another creature.",
+    "Challenge is a non-magical technique. After you use Challenge, it becomes expended until restored using Refocus (Mental Focus). Restoring Challenge does not end an existing Challenge, but using it again immediately ends your previous Challenge."
+   ]
+  },
+  "Oathblade: SWORN OATH": {
+   "traits": "",
+   "lines": [
+    "At 1st level you must select the oath that lies at the centre of your discipline. An Oathblade's oath need not be religious and does not draw power from a deity. It may be sworn to a lord, clan, family, institution, philosophy, individual or personal ideal. What matters is the absolute conviction with which you hold it.",
+    "Your Sworn Oath is intended to represent a genuine element of your character rather than a temporary combat selection. Changing an oath should normally reflect a significant change in your character's loyalties, beliefs or circumstances and is subject to GM discretion.",
+    "The available Sworn Oaths are detailed below."
+   ]
+  },
+  "Oathblade: UNWAVERING PURPOSE": {
+   "traits": "",
+   "lines": [
+    "Your concentration is founded upon strength of personality and absolute commitment rather than quiet contemplation.",
+    "When making Refocus (Mental Focus) checks, you may use your Charisma modifier instead of Wisdom. This changes only the ability modifier applied to the check. You still use the Mental Focus skill normally."
+   ]
+  },
+  "Oathblade: OATHBLADE'S RESOLVE": {
+   "traits": "",
+   "lines": [
+    "Your certainty gives you reserves of determination that others struggle to match. You may increase your conviction pool and conviction points by 1."
+   ]
+  },
+  "Oathblade: MAGICAL TRADITION": {
+   "traits": "",
+   "lines": [
+    "You have no normal spellcasting abilities but must select a magical tradition at 1st level.",
+    "Focus itself is not magical and neither Challenge nor your Sworn Oath becomes magical as a result of this choice. If an Oathblade feat or ability later grants you an explicitly magical technique or innate spell without specifying its tradition, it uses your selected magical tradition and Charisma as its magical ability score."
+   ]
+  },
+  "Oathblade: SWORN OATHS": {
+   "traits": "",
+   "lines": [
+    "Every Oathblade binds their martial discipline to a personal oath. This is more than a statement of intent: it determines how the Oathblade approaches a challenged foe and what they consider worthy conduct in battle."
+   ]
+  },
+  "OATH OF HONOUR": {
+   "traits": "",
+   "lines": [
+    "You believe that a true victory is earned face-to-face, without another blade deciding the contest.",
+    "While your Challenge is active and none of your allies are adjacent to your challenged target, you gain the following benefits:",
+    "- You gain a +2-circumstance bonus to DB against your challenged target.",
+    "- The first melee Strike you make against your challenged target each round gains advantage.",
+    "- Your challenged target cannot gain the benefits of flanking you.",
+    "If one of your allies becomes adjacent to or attacks your challenged target, these benefits are suppressed until the beginning of your next turn."
+   ]
+  },
+  "OATH OF GUARDIANSHIP": {
+   "traits": "",
+   "lines": [
+    "While your Challenge is active, your challenged target suffers a -2-circumstance penalty to attack checks against your allies.",
+    "Furthermore, the first time each round that your challenged target damages one of your allies, you gain advantage on your next melee Strike against that creature before the end of your next turn. If that Strike hits, it inflicts additional base damage equal to your Charisma modifier (minimum +1)."
+   ]
+  },
+  "OATH OF VENGEANCE": {
+   "traits": "",
+   "lines": [
+    "You do not forget injury, and once blood creates a debt you pursue its repayment without hesitation.",
+    "The first time each round that your challenged target damages you or one of your allies, you gain Retribution against that creature until the end of your next turn.",
+    "Your next melee Strike against the target while you have Retribution:",
+    "- Gains advantage.",
+    "- Inflicts additional base damage equal to your Charisma modifier.",
+    "- Increases its AR by 2."
+   ]
+  },
+  "OATH OF FEALTY": {
+   "traits": "",
+   "lines": [
+    "Your oath is not an abstract ideal. It is sworn to another, and their enemies become your enemies.",
+    "During your daily preparation, designate one willing ally as your Sworn Charge. You may change your Sworn Charge during a later daily preparation.",
+    "While your Sworn Charge is conscious and within 30 feet of you, the following benefits apply against your challenged target:",
+    "- Your Sworn Charge gains a +1-circumstance bonus to attack checks against your challenged target.",
+    "- Your Sworn Charge's attacks against your challenged target gain AR 1.",
+    "- Whenever your Sworn Charge successfully damages your challenged target, your next melee Strike against that creature before the end of your next turn gains a +2-circumstance bonus to AB.",
+    "- Whenever you successfully damage your challenged target, your Sworn Charge gains the same +2 circumstance bonus to their next attack against that creature before the end of their next turn.",
+    "Only one of these +2 bonuses can be pending for either character at a time."
+   ]
+  },
+  "Ghostwalker: BONUS FEATS": {
+   "traits": "",
+   "lines": [
+    "At 1st level you gain the Weapon Finesse feat and may select any one additional class feat. At 3rd level and then every 3 levels thereafter you may select an additional class feat. You must meet the prerequisites or match the appropriate class traits (Expert or Ghostwalker) for these feats."
+   ]
+  },
+  "Ghostwalker: MAGICAL TRADITION": {
+   "traits": "",
+   "lines": [
+    "You have no normal spellcasting progression.",
+    "At 1st level, select one magical tradition. If a Ghostwalker feat or Ghost Art grants you an innate spell or explicitly magical technique without specifying its tradition, it uses your selected tradition and Wisdom as your magical ability score.",
+    "The Focus trait itself remains non-magical. Mundane Ghost Arts such as Ghost Step, Smoke Veil and Spider Path cannot be detected or dispelled as magic."
+   ]
+  },
+  "Ghostwalker: GHOST ARTS": {
+   "traits": "",
+   "lines": [
+    "Ghostwalkers practise specialised techniques known collectively as Ghost Arts.",
+    "At 1st level, select two Ghost Arts from those described below. You learn one additional Ghost Art at 4th level and then every 4 levels thereafter.",
+    "Unless specifically stated otherwise, you may only select each Ghost Art once.",
+    "A Ghost Art with the Focus trait becomes expended when used and must be restored individually using Refocus (Mental Focus). Refocusing one Ghost Art does not restore any other expended Ghost Art.",
+    "Some Ghost Arts are explicitly magical. Such abilities use your Ghostwalker magical tradition and Wisdom as their magical ability score."
+   ]
+  }
+ },
+ "feats": {
+  "AMBUSHER'S PATIENCE": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 5, Stealth 5 ranks",
+    "You understand that the most important part of an ambush is not the attack but waiting for the precise moment in which to make it.",
+    "The first time during an encounter that you inflict Unseen Assault against a creature that has not detected you before the attack, you inflict an additional 2d6 precision damage.",
+    "You may benefit from Ambusher's Patience only once against each creature during an encounter."
+   ]
+  },
+  "BETWEEN GLANCES": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 7",
+    "You have mastered the moment between one observer losing sight of you and another finding you.",
+    "When using Ghostwalk, you may cross up to 20 feet of open ground without automatically becoming observed, provided you begin and end the movement somewhere that would normally allow you to Hide.",
+    "You must still succeed at the normal Stealth check."
+   ]
+  },
+  "BLENDED FORM": {
+   "traits": "KENSAI",
+   "lines": [
+    "**Prerequisites** Level 8",
+    "You have begun to fuse martial philosophies into a unique hybrid. You may select two specific combat forms and merge them into one. You gain the benefits of both forms."
+   ]
+  },
+  "CLAIM THE NEXT FOE": {
+   "traits": "FLOURISH FOCUS OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 8",
+    "For you, the completion of one oath of combat creates perfect clarity for the next.",
+    "**Action** Free (0 AP); **Trigger** you disable a foe with an attack, or they clearly surrender to you.",
+    "Your Challenge is immediately restored, even if it was expended.",
+    "You may then immediately use Challenge against another creature that you can see. This use of Challenge requires no AP but expends Challenge normally."
+   ]
+  },
+  "DANCING LEAF": {
+   "traits": "DISCIPLE GHOSTWALKER",
+   "lines": [
+    "You possess the weightlessness of a fluttering leaf in the gentle breeze. When you succeed at a High Jump or Long Jump, increase the distance you jump by 5 feet. When calculating the damage you take from falling, don’t count any distance fallen while you are adjacent to a wall."
+   ]
+  },
+  "DEFLECT ARROW": {
+   "traits": "DISCIPLE KENSAI OATHBLADE",
+   "lines": [
+    "**Prerequisites** Dex 2",
+    "**Requirements** You’re aware of the attack, are not flat-footed against it, and have a hand free.",
+    "**Action** Free; **Trigger** You are the target of a physical ranged attack and take the Evade Action to avoid it.",
+    "You gain a +4-circumstance bonus to DB against the triggering attack. If the attack misses, you have deflected it. You cannot use this feat to deflect unusually massive, ranged projectiles (such as boulders or ballista bolts)."
+   ]
+  },
+  "DISCIPLINED FOLLOW-THROUGH": {
+   "traits": "KENSAI",
+   "lines": [
+    "Your control of rhythm and angle turns an opening into an execution. When you use Flow Strike, if your follow-up attack hits, you gain +2 base damage."
+   ]
+  },
+  "DISTANT HONOUR": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 5",
+    "Your concept of formal combat does not demand that every contest be settled within reach of a blade. You have learned to bring the same unwavering purpose to the bow.",
+    "The attack, damage and AR benefits granted by your Challenge also apply to attacks made with bow weapons against your challenged target within the weapon's first range increment.",
+    "Your Challenge otherwise functions normally, including its penalty to DB against other creatures."
+   ]
+  },
+  "ECHOED FORM": {
+   "traits": "FLOURISH KENSAI",
+   "lines": [
+    "**Prerequisites** Level 12, Blended Form",
+    "**Action** 0 AP; **Trigger** You change from one Combat Form to another.",
+    "You may choose to retain one passive benefit from the previous form for 3 rounds."
+   ]
+  },
+  "EXTRA FORM": {
+   "traits": "KENSAI",
+   "lines": [
+    "**Prerequisites** Level 3",
+    "You unlock an additional combat form beyond your normal progression.",
+    "You may take this feat multiple times, but never more than once every 3 levels."
+   ]
+  },
+  "EXTRA GHOST ART": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 3",
+    "Your study of the hidden disciplines has uncovered another specialised technique.",
+    "You learn one additional Ghost Art for which you meet the prerequisites.",
+    "You may select this feat multiple times, but never more than once every 3 levels."
+   ]
+  },
+  "FLEETING SHADOW": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 11",
+    "Your retreat is so sudden that you seem to disappear with the attack itself. When using Vanishing Retreat, you may Step up to 10 feet rather than 5 feet. If this movement ends somewhere that provides suitable cover or concealment, you may immediately attempt to Hide (Stealth) as part of the reaction."
+   ]
+  },
+  "FLUID BLENDING": {
+   "traits": "KENSAI",
+   "lines": [
+    "**Prerequisites** Level 12, Blended Form",
+    "During your daily preparation, you may change your two blended forms to two different ones."
+   ]
+  },
+  "FORM REVERSAL": {
+   "traits": "FLOURISH KENSAI",
+   "lines": [
+    "**Prerequisites** Level 6",
+    "**Action** R; **Trigger** A creature misses you with a melee attack.",
+    "You may immediately change your active Combat Form. Any applicable bonuses apply immediately."
+   ]
+  },
+  "FORMAL DECLARATION": {
+   "traits": "MENTAL OATHBLADE",
+   "lines": [
+    "Your Challenge carries the weight of absolute certainty. An opponent knows immediately that you have chosen them above all others.",
+    "Whenever you use Challenge, you may immediately attempt a Demoralise (Intimidate) check against the challenged creature as part of the same action.",
+    "If the target can clearly hear and understand your declaration, you gain a +2-circumstance bonus to this Demoralise check.",
+    "A creature affected by this feat becomes temporarily immune to Formal Declaration until the end of the encounter, regardless of the result of the Demoralise check."
+   ]
+  },
+  "FORMLESS CUT": {
+   "traits": "ATTACK FLOURISH KENSAI",
+   "lines": [
+    "**Prerequisites** Level 14, any three Kensai feats",
+    "**Action** 1 AP",
+    "You may make a single melee attack as a Formless Cut. This attack gains a +4 AB bonus, ignores the target's active stance or form bonuses, deals +Int mod bonus base damage and treats the target as flat-footed."
+   ]
+  },
+  "GHOST ART MASTERY": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 14",
+    "Repeated use has transformed one of your Ghost Arts from a specialised technique into something approaching instinct.",
+    "Choose one Ghost Art you possess with the Focus trait.",
+    "You may use the selected Ghost Art one additional time before it becomes expended and must be restored using Refocus.",
+    "Both uses are restored when you successfully Refocus that Ghost Art.",
+    "You may select this feat multiple times, choosing a different Ghost Art each time."
+   ]
+  },
+  "GHOST BLADE": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 6",
+    "Your hidden attacks are carefully angled towards armour joints, exposed flesh and weaknesses in an opponent's protection.",
+    "Whenever a Strike inflicts Unseen Assault, the attack also gains AR 1. At 12<sup>th</sup> level this increases to AR 2 and at 18<sup>th</sup> AR 3."
+   ]
+  },
+  "GUARDED COMMITMENT": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "Your concentration upon a chosen opponent no longer leaves quite so much of your defence exposed to everyone else.",
+    "The circumstance penalty to DB that you suffer against creatures other than your challenged target is reduced from -2 to -1."
+   ]
+  },
+  "PERFECT TEMPO": {
+   "traits": "KENSAI",
+   "lines": [
+    "**Prerequisites** Level 10, Disciplined Follow-Through",
+    "**Action** 0 AP; **Trigger** You hit an enemy using Flow Strike.",
+    "Your strikes flow with unstoppable cadence. You may immediately take a Step action. If this movement places you adjacent to a different enemy, you gain +1 AB on your next attack against that enemy this turn."
+   ]
+  },
+  "SHADOW COUNTER": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 9, Deception 5 ranks",
+    "**Action** R; **Trigger** A creature misses you with an attack that you are aware of.",
+    "You twist away from the attack and use the failed assault to disrupt your opponent's awareness of your position.",
+    "You may immediately Step 5 feet. This movement does not trigger reactions.",
+    "You may then attempt a Feint (Deception) check against the triggering creature as part of the reaction.",
+    "If successful, the creature is flat-footed to your next Strike against it before the end of your next turn.",
+    "This flat-footed condition is considered to have been caused by your Deception and can therefore enable Unseen Assault."
+   ]
+  },
+  "SHADOWY STEP": {
+   "traits": "ATTACK DISCIPLE GHOSTWALKER MYSTIC",
+   "lines": [
+    "**Prerequisites** Stealth 5 ranks",
+    "**Action** 2 AP",
+    "You are quick footed and catch your foes off balance. As part of this action, you may take a Step action followed by a melee Strike action against one target within range. The target of your attack is considered to be flanked, regardless of your actual positioning."
+   ]
+  },
+  "SHARED PURPOSE": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 10, Oath of Fealty",
+    "You and your Sworn Charge have learned to recognise the smallest opening created by the other's attack.",
+    "The first time each round that either you or your Sworn Charge scores a critical hit against your challenged target, the other character may immediately Step 5 feet as a Free (0 AP) action.",
+    "This movement does not trigger reactions.",
+    "Furthermore, the character who takes this Step gains advantage on their next attack against the challenged target before the end of their next turn.",
+    "A character can benefit from Shared Purpose only once per round."
+   ]
+  },
+  "SHELTER UNDER OATH": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 10, Oath of Guardianship",
+    "Those under your protection draw confidence from the certainty that your challenged enemy has your undivided attention.",
+    "While your Challenge is active, allies within 30 feet of you gain a +2-circumstance bonus to saving throws against spells, techniques and other effects created by your challenged target.",
+    "This is in addition to the attack penalty imposed upon the challenged target by Oath of Guardianship."
+   ]
+  },
+  "SMOKE EYES": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Smoke Veil",
+    "You have trained to fight within the smoke and confusion created by your own techniques. You ignore the concealed condition caused by your Smoke Veil for the purposes of Perception checks and attacks. Other creatures are still affected normally."
+   ]
+  },
+  "SOLITARY SUPREMACY": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 10, Oath of Honour",
+    "You recognise no second combatant once a true duel has begun.",
+    "While you are receiving the benefits of Oath of Honour, your challenged target cannot gain bonuses to its DB against your attacks from Aid, reactions or abilities originating from its allies.",
+    "Likewise, its allies cannot impose penalties upon your attack checks against the challenged target through Aid or similar assistance.",
+    "This does not suppress effects already inherent to the target itself, nor does it prevent another creature from directly attacking, moving or otherwise acting.",
+    "If your own allies interfere with the duel, your Oath of Honour is suppressed normally."
+   ]
+  },
+  "UNPAID DEBT": {
+   "traits": "OATHBLADE",
+   "lines": [
+    "**Prerequisites** Level 10, Oath of Vengeance",
+    "A failed attempt at vengeance does not settle the debt.",
+    "When you make the Strike granted the benefits of Retribution, missing the target no longer causes Retribution to end.",
+    "Retribution remains until you successfully damage the challenged target or its normal duration expires."
+   ]
+  },
+  "WALK THE EMPTY SPACE": {
+   "traits": "GHOSTWALKER",
+   "lines": [
+    "**Prerequisites** Level 15, Between Glances",
+    "Your understanding of attention has become extraordinary. You no longer move merely through shadows, but through those places where nobody happens to be looking.",
+    "When using Between Glances, you may cross up to 40 feet of open ground rather than 20 feet without automatically becoming observed. You must still begin and end the movement somewhere that would normally allow you to Sneak and must succeed at the normal Stealth check."
+   ]
+  }
+ }
+}

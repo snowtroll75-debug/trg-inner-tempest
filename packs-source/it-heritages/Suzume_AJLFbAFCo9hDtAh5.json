@@ -1,0 +1,45 @@
+{
+  "_id": "AJLFbAFCo9hDtAh5",
+  "name": "Suzume",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Suzume possess narrow waists, striped carapaces, translucent wings and a retractable abdominal stinger. Their traditional role is to patrol borders and carry urgent messages, and they are notorious for responding to threats with immediate, coordinated aggression.</p>\n<p>Suzume loyalty is fierce and personal. Once they name someone as part of their swarm, defending that person becomes instinctive.</p>\n<p>You gain a Sting natural attack and the Wing Burst action.</p>\n<p><strong>Sting</strong> – <strong>Dam</strong> 1d6 P; <strong>FDC</strong> 5; <strong>Traits</strong> Agile, Finesse</p>\n<p><strong>WING BURST</strong></p>\n<p><strong>FLOURISH MOVEMENT</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You can Fly up to your Speed. You must end this movement on a surface capable of supporting you; otherwise, you fall normally.</p>\n<p><em>Granted:</em> the Sting natural attack as a weapon, and Wing Burst as an ability item.</p>",
+    "sourceRace": "Scree",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "Sting",
+    "racialAbilities": "Wing Burst",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AJLFbAFCo9hDtAh5"
+}

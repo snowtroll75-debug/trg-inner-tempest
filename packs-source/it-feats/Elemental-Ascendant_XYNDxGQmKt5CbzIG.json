@@ -1,0 +1,49 @@
+{
+  "_id": "XYNDxGQmKt5CbzIG",
+  "name": "Elemental Ascendant",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Elemental Supremacy, Meditation Rank 10",
+    "active": true,
+    "description": "<p><strong>TIANZHI</strong></p>\n<p><em>Your profound connection to the elemental forces reaches its peak.</em></p>\n<p><strong>Prerequisites</strong> Elemental Supremacy, Meditation Rank 10</p>\n<p>You may select one of the following PP 6 spells which has a trait that matches your racial element:</p>\n<p><em>Cold Ball, Crashing Torrent, Earth Bind, Fireball, Line of Lightning, Remove Disease, Searing Ray, Stone Call, Water Walk, Wall of Wind</em></p>\n<p>You gain the selected spell as an innate spell with the Focus trait. It uses the tradition and magical ability score established by your Natural Chi racial ability.</p>\n<p><em>Automated:</em> press Use to choose a PP 6 spell from the list whose trait matches your element (Graham's ruling B5-2 adds Water Walk for the Suiryoku). It arrives as an innate spell with the Focus trait, cast with Wisdom and costing no PP; its tradition is your Natural Chi's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Tianzhi",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "elementalSpell"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XYNDxGQmKt5CbzIG"
+}

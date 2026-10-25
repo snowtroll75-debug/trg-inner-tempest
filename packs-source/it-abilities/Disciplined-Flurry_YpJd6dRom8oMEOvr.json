@@ -1,0 +1,43 @@
+{
+  "_id": "YpJd6dRom8oMEOvr",
+  "name": "Disciplined Flurry",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Technique",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> Reaction; <strong>Trigger</strong> you use Flurry of Blows.</p>\n<p>Make one additional attack at your highest Combat Bonus as part of the Flurry.</p>\n<p><em>Automated:</em> offered by Flurry of Blows when this is ready and you have a reaction: a third Strike, with no multiple attack penalty, that still counts towards the penalty afterwards (Graham's ruling B3-4). It is part of the Flurry: DR once, one critical injury.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Focus, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "disciplinedFlurry"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!YpJd6dRom8oMEOvr"
+}

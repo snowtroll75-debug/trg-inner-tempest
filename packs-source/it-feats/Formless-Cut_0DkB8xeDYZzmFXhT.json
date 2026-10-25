@@ -1,0 +1,49 @@
+{
+  "_id": "0DkB8xeDYZzmFXhT",
+  "name": "Formless Cut",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 14, any three Kensai feats",
+    "active": true,
+    "description": "<p><strong>ATTACK FLOURISH KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 14, any three Kensai feats</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You may make a single melee attack as a Formless Cut. This attack gains a +4 AB bonus, ignores the target's active stance or form bonuses, deals +Int mod bonus base damage and treats the target as flat-footed.</p>\n<p><em>Automated:</em> target, then press Use: 1 AP (a Flourish). One melee Strike with +4, the target's stance and form bonuses to DB ignored, +Int damage, and the target treated as flat-footed.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Attack, Flourish, Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "formlessCut"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!0DkB8xeDYZzmFXhT"
+}

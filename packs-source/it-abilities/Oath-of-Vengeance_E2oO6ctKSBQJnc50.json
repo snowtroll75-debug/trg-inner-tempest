@@ -1,0 +1,43 @@
+{
+  "_id": "E2oO6ctKSBQJnc50",
+  "name": "Oath of Vengeance",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Sworn Oath",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You do not forget injury, and once blood creates a debt you pursue its repayment without hesitation.</p>\n<p>The first time each round that your challenged target damages you or one of your allies, you gain Retribution against that creature until the end of your next turn.</p>\n<p>Your next melee Strike against the target while you have Retribution:</p>\n<ul><li>Gains advantage.</li><li>Inflicts additional base damage equal to your Charisma modifier.</li><li>Increases its AR by 2.</li></ul>\n<p><em>Automated:</em> while your Challenge is up, the first time each round the target damages you or an ally, you gain Retribution until the end of your next turn: your next melee Strike against it has advantage, adds your Charisma as damage and +2 Armour Rending, and Retribution ends with that Strike, hit or miss. With Unpaid Debt a miss keeps it, until you damage the target or it expires.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itOath": "Oath of Vengeance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!E2oO6ctKSBQJnc50"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "ufefbOQsaAc6i2j0",
+  "name": "Mantis Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p>You enter the stance of the mantis targeting your foes with crippling accuracy. Whilst in this stance your unarmed attacks gain the deadly trait. Furthermore, you gain a +2-circumstance bonus to Reflex saves and may take one Move action each turn that does not provoke reactions.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it: your unarmed attacks (fists, gauntlets, Monastic weapons) have the Deadly trait; +2 circumstance to Reflex saves; and the first Move action of each of your turns triggers no reactions (Graham's B6-4).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "mantisStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ufefbOQsaAc6i2j0"
+}

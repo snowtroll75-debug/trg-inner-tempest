@@ -1,0 +1,59 @@
+{
+  "_id": "2lweeLtjxAGoTe8A",
+  "name": "Ember Reaver",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You stoke your inner fire into a storm of blades. Fuelled by momentum and fury, this form rewards ruthless aggression and constant pressure. You burn through enemies with relentless aggression. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>If you land 2 attacks in a round, gain +Int mod secondary fire damage to the second.</li><li>Each consecutive round in this form adds +1 to weapon damage (resets if you change forms).</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). after your first hit in a round, your next hit that round adds your Int as fire secondary damage. At the start of each of your turns in the form, weapon damage rises by 1, up to your Int, and resets when you change form or combat ends (Graham's ruling B4-4). All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+Int fire on the second hit in a round",
+            "flags": {
+              "itEmberSecondHit": true
+            }
+          },
+          {
+            "label": "+1 weapon damage each round in the form (to your Int)",
+            "flags": {
+              "itEmberEscalation": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!2lweeLtjxAGoTe8A"
+}

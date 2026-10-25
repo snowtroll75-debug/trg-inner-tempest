@@ -1,0 +1,45 @@
+{
+  "_id": "ZWNBsDpuV0j9cpSa",
+  "name": "Echoed Form",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 12, Blended Form",
+    "active": true,
+    "description": "<p><strong>FLOURISH KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 12, Blended Form</p>\n<p><strong>Action</strong> 0 AP; <strong>Trigger</strong> You change from one Combat Form to another.</p>\n<p>You may choose to retain one passive benefit from the previous form for 3 rounds.</p>\n<p><em>Automated:</em> when you change form through Combat Form, you are asked which of the previous form's two benefits to keep for 3 rounds.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Flourish, Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ZWNBsDpuV0j9cpSa"
+}

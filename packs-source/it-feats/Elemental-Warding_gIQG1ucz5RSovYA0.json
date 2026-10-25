@@ -1,0 +1,45 @@
+{
+  "_id": "gIQG1ucz5RSovYA0",
+  "name": "Elemental Warding",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Nature 5 ranks",
+    "active": true,
+    "description": "<p><em>Your mastery of the elements grants you the ability to protect yourself and others from harm tied to them.</em></p>\n<p><strong>Prerequisites</strong> Nature 5 ranks</p>\n<p>You can use the Elemental Ward (Nature) action.</p>\n<p><em>Automated:</em> Elemental Ward appears under Nature on your Skills tab while you have this feat — DC 20, the time you spend chosen as you roll; on a Success or better you pick the element and the 10-ft ward is drawn around your token.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gIQG1ucz5RSovYA0"
+}

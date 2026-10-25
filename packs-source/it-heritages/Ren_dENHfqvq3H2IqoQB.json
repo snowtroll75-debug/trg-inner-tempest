@@ -1,0 +1,157 @@
+{
+  "_id": "dENHfqvq3H2IqoQB",
+  "name": "Ren",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Ren are tall, fine-boned Miraku whose hair often resembles layered feathers. Their movements are economical and precise, giving even a hurried Ren the appearance of perfect balance. They are renowned as diplomats, poets, ascetics and martial artists.</p>\n<p>Ren teachings emphasise the instant between intention and action. Their students learn to move before panic can take hold and to let wind carry away the force of a fall.</p>\n<p>You gain a +5 ft racial bonus to speed and a +5 racial bonus to initiative checks. Furthermore, when calculating damage or other consequences from a fall, treat the distance fallen as 20 feet shorter.</p>\n<p><em>Applied automatically:</em> +5 feet to your land Speed, a +5 racial bonus to Initiative, and every fall entered through the Falling action is treated as 20 feet shorter (the card says so).</p>",
+    "sourceRace": "Miraku",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "WzmZiVumxkbDEHJa",
+      "name": "Ren: Speed +5",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.land",
+          "mode": 2,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Your land Speed increases by 5 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!dENHfqvq3H2IqoQB.WzmZiVumxkbDEHJa"
+    },
+    {
+      "_id": "jMhEt3o1lka64CSF",
+      "name": "Ren: Initiative +5",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.initiative.race",
+          "mode": 0,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+5 racial bonus to Initiative checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!dENHfqvq3H2IqoQB.jMhEt3o1lka64CSF"
+    },
+    {
+      "_id": "49xjQXkGpkxfuckB",
+      "name": "Ren: falls 20 ft shorter",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "fallReduction": {
+            "value": 20,
+            "label": "Ren"
+          }
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "When calculating damage or other consequences from a fall, treat the distance fallen as 20 feet shorter.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!dENHfqvq3H2IqoQB.49xjQXkGpkxfuckB"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!dENHfqvq3H2IqoQB"
+}

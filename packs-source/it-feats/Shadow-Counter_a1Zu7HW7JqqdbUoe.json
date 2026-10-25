@@ -1,0 +1,49 @@
+{
+  "_id": "a1Zu7HW7JqqdbUoe",
+  "name": "Shadow Counter",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 9, Deception 5 ranks",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 9, Deception 5 ranks</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> A creature misses you with an attack that you are aware of.</p>\n<p>You twist away from the attack and use the failed assault to disrupt your opponent's awareness of your position.</p>\n<p>You may immediately Step 5 feet. This movement does not trigger reactions.</p>\n<p>You may then attempt a Feint (Deception) check against the triggering creature as part of the reaction.</p>\n<p>If successful, the creature is flat-footed to your next Strike against it before the end of your next turn.</p>\n<p>This flat-footed condition is considered to have been caused by your Deception and can therefore enable Unseen Assault.</p>\n<p><em>Automated:</em> when an attack misses you, you are asked whether to use it: your reaction, a 5-foot Step that provokes nothing (move your token), and a Feint against the attacker at no AP. A Feint that lands counts as your own Deception, so it enables Unseen Assault.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "shadowCounter"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!a1Zu7HW7JqqdbUoe"
+}

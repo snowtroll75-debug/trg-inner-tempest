@@ -1,0 +1,66 @@
+{
+  "_id": "efrEVsxozqussU5A",
+  "name": "Sense Ambush",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Perception 5 ranks",
+    "active": true,
+    "description": "<p><em>You have an almost sixth sense for detecting danger.</em></p>\n<p><strong>Prerequisites</strong> Perception 5 ranks</p>\n<p>When making an Awareness check to pick up on something that is a direct threat to you, the DC to detect such danger is modified by 5 in your favour.</p>\n<p><em>Offered:</em> +5 on Awareness checks — tick it when the thing to be noticed is a direct threat to you (the DC moving 5 in your favour is the same as the check rising by 5).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Sense Ambush",
+          "scope": "Awareness checks to notice a direct threat to you — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "awareness"
+            ]
+          },
+          "value": 5,
+          "type": "untyped"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!efrEVsxozqussU5A"
+}

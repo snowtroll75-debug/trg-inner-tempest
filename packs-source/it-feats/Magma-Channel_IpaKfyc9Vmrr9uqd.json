@@ -1,0 +1,49 @@
+{
+  "_id": "IpaKfyc9Vmrr9uqd",
+  "name": "Magma Channel",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Zenki Heritage",
+    "active": true,
+    "description": "<p><strong>ARCANE FIRE FOCUS RYUKARI TECHNIQUE</strong></p>\n<p><em>You draw the volcanic current of your ancestry through your limbs and into the weapon in your grasp.</em></p>\n<p><strong>Prerequisites</strong> Zenki Heritage</p>\n<p><strong>Action</strong> 1 AP; <strong>Duration</strong> until the end of your turn</p>\n<p><strong>Requirements</strong> You are holding a melee weapon or are capable of making a natural attack</p>\n<p>The next successful melee Strike you make before the end of your turn inflicts an additional 1d6 secondary fire damage and gains the Magical trait.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. Your next melee Strike this turn that hits adds 1d6 secondary fire damage and counts as magical; a miss keeps it until the turn ends.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Arcane, Fire, Focus, Ryukari, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "magmaChannel"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IpaKfyc9Vmrr9uqd"
+}

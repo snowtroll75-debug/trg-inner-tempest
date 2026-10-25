@@ -1,0 +1,49 @@
+{
+  "_id": "l2ucjK18PwcOvihe",
+  "name": "Predator's Momentum",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Byakko heritage",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>The Tiger teaches that once the hunt begins there should be no hesitation between pursuit and violence.</em></p>\n<p><strong>Prerequisites</strong> Byakko heritage</p>\n<p>When using Predator's Pounce, if you Stride at least 20 feet before making the Strike, the Strike gains a +1-circumstance bonus to AB and inflicts an additional 1d6 precision damage on a successful hit.</p>\n<p>Be aware, this additional damage is applied only once, regardless of any ability that might cause the Strike to damage the target multiple times.</p>\n<p><em>Automated:</em> when Predator's Pounce's Strike is pressed you are asked whether you Strode at least 20 feet: if so it gains +1 circumstance to the attack and 1d6 precision damage, once.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "predatorsMomentum"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!l2ucjK18PwcOvihe"
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "SBmDfMHDy7HN0mKB",
+  "name": "Ghost Fox",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Silent, swift, and deadly, the Ghost Fox teaches that a whisper can kill louder than a scream. You move through shadows and strike with ghostly grace.</p>\n<p>You strike from nowhere, unseen and unstoppable. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Add you Int mod to all Stealth skill checks.</li><li>When attacking a flat-footed target, add your Int mod as base damage</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +Int to Stealth checks, and +Int damage against a target flat-footed to you. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+Int to Stealth",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence",
+                  "label": "Ghost Fox",
+                  "scope": "Stealth checks",
+                  "when": {
+                    "checkTypes": [
+                      "skill"
+                    ],
+                    "subjects": [
+                      "stealth"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "+Int damage against a flat-footed target",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence",
+                  "label": "Ghost Fox",
+                  "scope": "A target flat-footed to you",
+                  "when": {
+                    "checkTypes": [
+                      "damage"
+                    ],
+                    "targetStates": [
+                      "flatfooted"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SBmDfMHDy7HN0mKB"
+}

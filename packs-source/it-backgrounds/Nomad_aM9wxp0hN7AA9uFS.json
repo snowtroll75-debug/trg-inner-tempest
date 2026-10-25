@@ -1,0 +1,97 @@
+{
+  "_id": "aM9wxp0hN7AA9uFS",
+  "name": "Nomad",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are a nomadic traveller, drifting between realms and cultures, seeking knowledge, and forging connections wherever you go.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Linguist</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Culture, Stealth, Survival</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Nomads) (on your sheet as Nomad Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>-1</p>",
+    "grantedFeats": "Linguist",
+    "grantedSpells": "",
+    "skillBonuses": "Culture, Stealth, Survival",
+    "specialistSkill": "Nomad Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "-1"
+  },
+  "effects": [
+    {
+      "_id": "cUyGpl5C766lUAkE",
+      "name": "Nomad: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.culture.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.stealth.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.survival.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Culture, Stealth, Survival.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!aM9wxp0hN7AA9uFS.cUyGpl5C766lUAkE"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Nomad Lore"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!aM9wxp0hN7AA9uFS"
+}

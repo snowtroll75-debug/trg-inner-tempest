@@ -1,0 +1,43 @@
+{
+  "_id": "ThFZ467dM9rnj9n5",
+  "name": "Oath of Honour",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Sworn Oath",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You believe that a true victory is earned face-to-face, without another blade deciding the contest.</p>\n<p>While your Challenge is active and none of your allies are adjacent to your challenged target, you gain the following benefits:</p>\n<ul><li>You gain a +2-circumstance bonus to DB against your challenged target.</li><li>The first melee Strike you make against your challenged target each round gains advantage.</li><li>Your challenged target cannot gain the benefits of flanking you.</li></ul>\n<p>If one of your allies becomes adjacent to or attacks your challenged target, these benefits are suppressed until the beginning of your next turn.</p>\n<p><em>Automated:</em> while your Challenge is up and none of your allies is adjacent to the target (read off the board): +2 circumstance to your DB against it, and advantage on your first melee Strike against it each round. When an ally attacks it or steps beside it, the oath is suppressed until the start of your next turn. <em>Not automated:</em> the target cannot gain the benefits of flanking you.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itOath": "Oath of Honour"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ThFZ467dM9rnj9n5"
+}

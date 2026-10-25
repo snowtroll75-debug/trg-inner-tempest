@@ -1,0 +1,74 @@
+{
+  "_id": "zSvPvQtGwDw3AyeS",
+  "name": "Steel Viper",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Quick as a whisper and twice as sharp, the Steel Viper strikes with refined venom. This form is about reacting faster than thought and hitting before your foe breathes.</p>\n<p>You lash out with deadly speed from deceptive angles. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>You gain a bonus to Initiative equal to your Int mod x5.</li><li>Once per round, if you miss with an attack, roll the damage and deal it as half damage.</li></ul>\n<p>Be aware that the initiative bonus granted by this feat may be applied retrospectively</p>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +5 × Int to initiative; entering the form in combat raises your current initiative by that much, and leaving it lowers it again. Once per round, when your Strike misses, you are asked whether to deal its damage halved. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+5 × Int to initiative",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence*5",
+                  "label": "Steel Viper",
+                  "scope": "Initiative",
+                  "when": {
+                    "checkTypes": [
+                      "initiative"
+                    ]
+                  }
+                }
+              ],
+              "itSteelViperInitiative": true
+            }
+          },
+          {
+            "label": "Half damage on a miss, once a round",
+            "flags": {
+              "itSteelViperMiss": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!zSvPvQtGwDw3AyeS"
+}

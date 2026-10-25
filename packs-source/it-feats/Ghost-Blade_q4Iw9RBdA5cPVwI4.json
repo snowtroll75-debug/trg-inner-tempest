@@ -1,0 +1,67 @@
+{
+  "_id": "q4Iw9RBdA5cPVwI4",
+  "name": "Ghost Blade",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 6",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 6</p>\n<p>Your hidden attacks are carefully angled towards armour joints, exposed flesh and weaknesses in an opponent's protection.</p>\n<p>Whenever a Strike inflicts Unseen Assault, the attack also gains AR 1. At 12th level this increases to AR 2 and at 18th AR 3.</p>\n<p><em>Automated:</em> a Strike that deals Unseen Assault gains AR 1, AR 2 from 12th and AR 3 from 18th.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "ambushExtras": [
+        {
+          "label": "Ghost Blade",
+          "ar": [
+            {
+              "level": 6,
+              "value": 1
+            },
+            {
+              "level": 12,
+              "value": 2
+            },
+            {
+              "level": 18,
+              "value": 3
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!q4Iw9RBdA5cPVwI4"
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "GgrkBrSJs6hNDpPD",
+  "name": "Crashing Tide",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Like a tidal surge, you overwhelm enemies through relentless movement. This form teaches that power lies not in the blow, but in the rhythm that leads to it.</p>\n<p>You surge forward in rolling attacks. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>When you move 10+ feet before attacking, gain +1 attack bonus and +Int mod to damage.</li><li>On a Critical hit, you may push the target 5 feet (Fort negates).</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). the +1 attack and +Int damage are offered as tick-boxes (you moved 10 feet). On a critical the card offers the push: a Fortitude save against your Technique DC (10 + Int + level) negates. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+1 attack, +Int damage after moving 10 feet",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": false,
+                  "value": 1,
+                  "label": "Crashing Tide",
+                  "scope": "You moved 10 feet or more before this attack — tick if so",
+                  "when": {
+                    "checkTypes": [
+                      "attack"
+                    ]
+                  }
+                },
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": false,
+                  "valueFrom": "intelligence",
+                  "label": "Crashing Tide",
+                  "scope": "You moved 10 feet or more before this attack — tick if so",
+                  "when": {
+                    "checkTypes": [
+                      "damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Push 5 feet on a critical",
+            "flags": {
+              "itCrashingTide": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GgrkBrSJs6hNDpPD"
+}

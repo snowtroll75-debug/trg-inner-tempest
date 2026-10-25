@@ -1,0 +1,104 @@
+{
+  "_id": "iZkGd01qv2PrpFYy",
+  "name": "Rising Phoenix",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>A soaring leap, a blaze of motion, this form embodies rebirth through action. You rise above your foes, crashing down with both elegance and fury.</p>\n<p>You leap into battle with furious grace. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Gain +2 bonus per Int mod to Climb (Climbing) and Jump (Athletics) checks.</li><li>When you Jump into melee, add +Int mod to your first attack’s damage.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +2 per Int to Climbing checks and to High Jump and Long Jump; +Int damage is offered as a tick on your first attack after jumping into melee. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+2 per Int to Climb and Jump",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence*2",
+                  "label": "Rising Phoenix",
+                  "scope": "Climbing checks",
+                  "when": {
+                    "checkTypes": [
+                      "skill"
+                    ],
+                    "subjects": [
+                      "climbing"
+                    ]
+                  }
+                },
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence*2",
+                  "label": "Rising Phoenix",
+                  "scope": "High Jump and Long Jump",
+                  "when": {
+                    "actions": [
+                      "highJump",
+                      "longJump"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "+Int damage after jumping into melee",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": false,
+                  "valueFrom": "intelligence",
+                  "label": "Rising Phoenix",
+                  "scope": "Your first attack after you Jumped into melee — tick if so",
+                  "when": {
+                    "checkTypes": [
+                      "damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!iZkGd01qv2PrpFYy"
+}

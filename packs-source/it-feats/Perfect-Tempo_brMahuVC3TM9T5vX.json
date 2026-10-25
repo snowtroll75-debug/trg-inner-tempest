@@ -1,0 +1,45 @@
+{
+  "_id": "brMahuVC3TM9T5vX",
+  "name": "Perfect Tempo",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10, Disciplined Follow-Through",
+    "active": true,
+    "description": "<p><strong>KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 10, Disciplined Follow-Through</p>\n<p><strong>Action</strong> 0 AP; <strong>Trigger</strong> You hit an enemy using Flow Strike.</p>\n<p>Your strikes flow with unstoppable cadence. You may immediately take a Step action. If this movement places you adjacent to a different enemy, you gain +1 AB on your next attack against that enemy this turn.</p>\n<p><em>Automated:</em> when your Flow Strike hits, the card offers the Step, and your next attack this turn against a different enemy you end beside is offered +1 (ticked).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!brMahuVC3TM9T5vX"
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "Iz4qOtOQOAl93RqC",
+  "name": "Hollow Breath",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>CONCENTRATE TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You slow your breathing and movement until you become unnaturally still. Until you take an action other than Awareness or Search (Perception), your breathing and other involuntary movements become almost imperceptible. Creatures relying upon sound or movement to detect you suffer a -5-circumstance penalty to their Perception checks. Furthermore, while using Hollow Breath you may hold your breath for five times the normal duration. Hollow Breath ends immediately when you move, speak, attack or perform another obvious physical action.</p>\n<p><em>Partly automated:</em> press Use: 1 AP. An effect records your stillness, with its −5 to creatures hearing or seeing you move and breath held five times as long; it ends when you next Strike or take an action other than Awareness or Search. Applying the −5 to another creature's Perception is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Concentrate, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Hollow Breath",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Iz4qOtOQOAl93RqC"
+}

@@ -1,0 +1,54 @@
+{
+  "_id": "gKUQkZbqDKdAfH3m",
+  "name": "Treasure Sense",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>TREASURE SENSE</strong></p>\n<p>When you use the Search (Perception) action, you can detect the presence and general direction of precious metals within 30 feet. You cannot determine the exact location, quantity or value. The sense is blocked by 1 foot of stone, 1 inch of common metal or any thickness of lead.</p>\n<p><em>Listed with your senses</em> as a tertiary sense. What it finds is the GM's to say.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "printedTraits": "",
+        "printedAction": "",
+        "printedArea": "",
+        "derives": {
+          "sense": {
+            "category": "tertiary",
+            "note": "Precious metals: presence and general direction. Blocked by 1 ft of stone, 1 in of common metal or any lead."
+          }
+        },
+        "source": "Inner Tempest, Chapter 2 (Fuku)"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gKUQkZbqDKdAfH3m"
+}

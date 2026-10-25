@@ -1,0 +1,55 @@
+{
+  "_id": "IHcAVKfVC5olxzGG",
+  "name": "Monastic Path",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p>As a Mystic you must select one of the Monastic Paths detailed at the end of this chapter. Your Monastic Path determines the magical tradition and magical ability score of your Mystic innate spells and any explicitly magical techniques you learn, and also grants you a class skill.</p>\n<p><em>Automated:</em> press Use to choose Devoted, Illuminator, Primal or Transcendent; the Path is added to your sheet with its class skill.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "abilityChoices": [
+        "Devoted",
+        "Illuminator",
+        "Primal",
+        "Transcendent"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IHcAVKfVC5olxzGG"
+}

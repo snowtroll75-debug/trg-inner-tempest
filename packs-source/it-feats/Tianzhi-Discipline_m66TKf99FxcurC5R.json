@@ -1,0 +1,103 @@
+{
+  "_id": "m66TKf99FxcurC5R",
+  "name": "Tianzhi Discipline",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>TIANZHI</strong></p>\n<p><em>You can restore your inner discipline even in dangerous situations.</em></p>\n<p>You gain a +2 racial bonus to Refocus (Mental Focus) checks. Furthermore, the first Refocus check that you make each day is treated as a Critical result without the need for a roll.</p>\n<p><em>Automated:</em> +2 racial on Refocus (Mental Focus), and the first Refocus each day is a Critical without the need for a roll (the card says so); daily preparation starts the count again.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Tianzhi",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "8Z6Ny92qd7lcCIrh",
+      "name": "Tianzhi Discipline: the first Refocus each day",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "dailyFirst": [
+            {
+              "action": "refocus",
+              "set": "critical",
+              "exact": true,
+              "label": "Tianzhi Discipline"
+            }
+          ]
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "The first Refocus check that you make each day is treated as a Critical result without the need for a roll.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!m66TKf99FxcurC5R.8Z6Ny92qd7lcCIrh"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Tianzhi Discipline",
+          "scope": "Refocus (Mental Focus) checks",
+          "auto": true,
+          "when": {
+            "actions": [
+              "refocus"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!m66TKf99FxcurC5R"
+}

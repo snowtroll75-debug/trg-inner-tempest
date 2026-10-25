@@ -1,0 +1,49 @@
+{
+  "_id": "sWT0Y5zlv6jQVXFz",
+  "name": "Shadowy Step",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Stealth 5 ranks",
+    "active": true,
+    "description": "<p><strong>ATTACK DISCIPLE GHOSTWALKER MYSTIC</strong></p>\n<p><strong>Prerequisites</strong> Stealth 5 ranks</p>\n<p><strong>Action</strong> 2 AP</p>\n<p>You are quick footed and catch your foes off balance. As part of this action, you may take a Step action followed by a melee Strike action against one target within range. The target of your attack is considered to be flanked, regardless of your actual positioning.</p>\n<p><em>Automated:</em> target, then press Use: 2 AP. Step (move your token), then a melee Strike against the target, which is considered flanked.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple, Ghostwalker, Mystic",
+    "sourceArchetype": "",
+    "traits": "Attack, Disciple, Ghostwalker, Mystic",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "shadowyStep"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!sWT0Y5zlv6jQVXFz"
+}

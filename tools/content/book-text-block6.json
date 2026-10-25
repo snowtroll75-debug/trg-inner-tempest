@@ -1,0 +1,118 @@
+{
+ "source": "it12.md",
+ "intro": [
+  "Class feats are specialist feats which are only available to certain character classes or class types (Adept, Expert or Martial). If a feat in this section has a class trait or class type trait, then you must have at least one of those traits to qualify for the feat. Some class feats may have an archetype trait, in which case this is treated as a class feat for the purpose of qualification. Some of the feats in this section do not have a class feat and are therefore available to any character class for selection.",
+  "As long as you meet the prerequisites, you may select any class feat."
+ ],
+ "feats": {
+  "CRANE STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "**Prerequisites** Devoted or Primal Monastic Path",
+    "You assume the graceful Crane Stance, mimicking a crane's elegant wingspan while executing fluid and defensive movements. You gain a +2-circumstance bonus to DB.",
+    "While in Crane Stance, you reduce the difficulty for High Jump and Long Jump (Athletics) checks by 5."
+   ]
+  },
+  "DRAGON STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "**Prerequisites** Primal or Transcendent Monastic Path",
+    "You adopt the Dragon Stance, executing formidable leg strikes reminiscent of a dragon's mighty tail. You gain a +2-circumstance bonus to AB and your attacks gaining the sweep trait.",
+    "While in Dragon Stance, you can ignore the first square of difficult terrain while Striding."
+   ]
+  },
+  "DRUNKEN STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "**Prerequisites** Devoted or Primal Monastic Path",
+    "You embrace the Drunken Stance, a martial technique that emulates the unpredictable movements and deceptive style of a drunken master. In this stance, you appear disoriented but possess remarkable agility and the ability to surprise your opponents.",
+    "You gain a +2-circumstance bonus to DB and may also use the Drunken Strike action.",
+    "**DRUNKEN STRIKE**",
+    "**ATTACK FLOURISH**",
+    "**Action** 1 AP",
+    "You make a melee attack against your target with a -2-circumstance penalty. If the attack inflicts damage, it is classed as a feint against your target using your total Attack Roll as the Feint DC."
+   ]
+  },
+  "ELEMENTAL FIST": {
+   "traits": "",
+   "lines": [
+    "**Prerequisites** Inner Strike",
+    "You harness elemental forces through your Inner Strike. When you use Inner Strike, you may choose electricity damage and give the attack the Air trait; bludgeoning damage and the Earth trait; fire damage and the Fire trait; or cold damage and the Water trait."
+   ]
+  },
+  "INNER MAGIC": {
+   "traits": "",
+   "lines": [
+    "Prerequisites Inner Discipline, Level 4, Non-Mystic",
+    "Select any one cantrip from the magical tradition of your Monastic Path. You gain it as an innate spell with the Focus trait, using your Monastic Path's magical ability score. Furthermore, you may also learn feats which are available only to the Mystic (Adept) class."
+   ]
+  },
+  "MANTIS STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "You enter the stance of the mantis targeting your foes with crippling accuracy. Whilst in this stance your unarmed attacks gain the deadly trait. Furthermore, you gain a +2-circumstance bonus to Reflex saves and may take one Move action each turn that does not provoke reactions."
+   ]
+  },
+  "MONKEY STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "You adopt the Monkey Stance, a martial technique inspired by the agility and adaptability of monkeys. Whilst in this stance you gain a +2-circumstance bonus to Acrobatics and Climbing checks. Furthermore, you gain a +2-circumstance bonus to all attempts to High Jump or Long Jump (Athletics) and take no penalty for using these actions for 1 AP."
+   ]
+  },
+  "MYSTIC ESSENCE": {
+   "traits": "MYSTIC",
+   "lines": [
+    "Select any one spell from the magical tradition of your Monastic Path whose base PP is no greater than your level. You gain that spell as an innate spell with the Focus trait, using your Monastic Path's magical ability score."
+   ]
+  },
+  "PERFECT SHOT": {
+   "traits": "ARCHER ATTACK FLOURISH RANGER ZEN ARCHER",
+   "lines": [
+    "**Prerequisites** Dex 1, Wis 1, BAB +8",
+    "**Action** 2 AP",
+    "Make a ranged Strike which counts as two attacks when calculating your multiple attack penalty. You gain advantage on the attack."
+   ]
+  },
+  "PERFECT STRIKE": {
+   "traits": "ATTACK FIGHTER FLOURISH DISCIPLE",
+   "lines": [
+    "**Prerequisites** Dex 1, Wis 1, BAB +8",
+    "**Action** 2 AP",
+    "Make a melee Strike which counts as two attacks when calculating your multiple attack penalty. You gain advantage on the attack."
+   ]
+  },
+  "SNAKE STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "**Prerequisites** Inner Discipline, Devoted or Illuminator Monastic Path",
+    "You adopt the coiled readiness of the serpent, focusing on reactive precision. While in this stance, you may use a reaction to make a melee strike against a target that misses you in with their own melee strike. Your attack ignores MAP."
+   ]
+  },
+  "STUNNING FIST": {
+   "traits": "DISCIPLE",
+   "lines": [
+    "You have honed your martial arts skills to deliver precise and debilitating strikes. When you target the same creature with two Strikes from your Flurry of Blows, you can try to stun the creature. If either Strike hits and deals damage, the target must succeed at a Fortitude save against your Technique DC or be stunned 1 (or stunned 3 on a fumble)."
+   ]
+  },
+  "TIGER STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "By mastering the Tiger Stance, you become a fierce and powerful combatant. Your attacks inflict slashing damage. Any bleed damage that you inflict whilst in this stance is increased by 1.",
+    "As long as your Speed is at least 20 feet while in Tiger Stance, you can Step 10 feet."
+   ]
+  },
+  "WOLF STANCE": {
+   "traits": "DISCIPLE MYSTIC STANCE",
+   "lines": [
+    "You enter the stance of a wolf, low to the ground with your hands held like fanged teeth. Your attacks deal piercing damage whilst in this stance and you gain the effects of the Pack Attack creature ability."
+   ]
+  }
+ },
+ "existing": {
+  "DISCIPLE": "Combat Awareness, Combat Grapple, Evasion, Guarded Move, Reactive Stance, Stance Mastery, Superior Evasion",
+  "GHOSTWALKER": "Combat Awareness, Distracting Strike, Evasion, Mobility, Nimble Dodge, Reactive Stance, Surprise Attack and Superior Evasion.",
+  "KENSAI": "Combat Awareness, Combat Grapple, Disarm Stance, Distracting Strike, Duelling Riposte, Mobility",
+  "MYSTIC": "Accurate Spell (applies to Mystic innate spells), Combat Reflexes, Injury Relief, Metamagic Feats where compatible with innate spells, Reactive Stance, Stance Mastery",
+  "OATHBLADE": "Combat Awareness, Disrupting Stance, Furious Focus, Lunging Stance, Reactive Stance, Resolve and Superior Resolve."
+ }
+}

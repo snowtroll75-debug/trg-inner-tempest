@@ -1,0 +1,49 @@
+{
+  "_id": "wADYlsxxP3IPkIMj",
+  "name": "Inner Infusion",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> <strong>Action</strong> 1 AP</p>\n<p>You centre your body and temporarily heighten its physical potential. Choose Strength or Dexterity; you gain a +2-status bonus to the chosen ability score for 1 minute.</p>\n<p><em>Automated:</em> press Use: 1 AP and this use. Choose Strength or Dexterity; +2 status to it for 1 minute.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerInfusion"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!wADYlsxxP3IPkIMj"
+}

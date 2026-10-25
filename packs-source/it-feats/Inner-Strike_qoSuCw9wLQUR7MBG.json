@@ -1,0 +1,49 @@
+{
+  "_id": "qoSuCw9wLQUR7MBG",
+  "name": "Inner Strike",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> <strong>Action</strong> 1 AP</p>\n<p>You channel disciplined force into your unarmed attacks. Until the end of your turn, you gain a +1-status bonus to unarmed attack rolls and your Strikes deal 1d6 extra secondary damage. Choose force, aligned (if you have such a trait), negative or positive each time you Strike. If the chosen damage is magical, the technique uses the tradition of your Monastic Path.</p>\n<p><strong>GREATER MASTERY</strong> The extra damage increases by 1d6 at 8th, 12th and 16th levels, to a maximum of 4d6.</p>\n<p><em>Automated:</em> press Use: 1 AP and this use, and choose the damage type. Until the end of your turn, +1 status to unarmed attack rolls (your fists and Monastic weapons) and 1d6 secondary damage of that type on your Strikes (2d6 from 8th, 3d6 from 12th, 4d6 from 16th). Choose the type before each Strike from the buttons on its card, free.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerStrike"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qoSuCw9wLQUR7MBG"
+}

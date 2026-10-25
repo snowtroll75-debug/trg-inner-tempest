@@ -1,0 +1,56 @@
+{
+  "_id": "zc5cIF3WV6HYtzFz",
+  "name": "Wings Unfurled",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Suzume Heritage, Level 10",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Your wings have strengthened sufficiently to carry you continuously rather than merely in short, explosive bursts.</em></p>\n<p><strong>Prerequisites</strong> Suzume Heritage, Level 10</p>\n<p>You gain a Fly Speed equal to your land Speed. You no longer need to end the movement granted by Wing Burst upon a surface capable of supporting you.</p>\n<p><em>Automated:</em> a Fly Speed equal to your land Speed. Wing Burst need not end on a surface (its card says so).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "derives": {
+          "movement": {
+            "key": "fly",
+            "orLand": true
+          }
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!zc5cIF3WV6HYtzFz"
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "U4HKqSSAjihXtb28",
+  "name": "Illuminator",
+  "img": "icons/svg/sun.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Monastic Path",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>As an Illuminator, you turn your discipline inward, exploring thought, perception and the mysteries of the ethereal. Through meditation and intense mental control you learn to shield the mind, perceive hidden truths, influence thought and project awareness beyond the limits of the body.</p>\n<p>Your magical tradition is ethereal, your magical ability score is Charisma, and you gain Occultism as a class skill.</p>\n<p>Magical Tradition: ethereal. Magical Ability Score: Charisma. Occultism is used for Recall Knowledge and other checks concerning the path's ethereal magic.</p>\n<p><em>Automated:</em> Occultism becomes a class skill. Innate spells your Mystic class and disciplines grant, and the magical techniques that name your Monastic Path, are cast as ethereal with Charisma; a technique that uses your Technique Save DC uses 10 + Charisma + your level.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [
+    {
+      "_id": "UtAsW5bhcoeVf96q",
+      "name": "Illuminator: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.occultism.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Occultism.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!U4HKqSSAjihXtb28.UtAsW5bhcoeVf96q"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itPath": {
+        "tradition": "ethereal",
+        "ability": "charisma",
+        "skill": "Occultism"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!U4HKqSSAjihXtb28"
+}

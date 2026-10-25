@@ -1,0 +1,65 @@
+{
+  "_id": "cbW08e4ar6tEHLRx",
+  "name": "Bear's Endurance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mujina Heritage",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>You have learned to receive violence as the mountain receives the storm: without yielding.</em></p>\n<p><strong>Prerequisites</strong> Mujina Heritage</p>\n<p>When you use Impact Stance, your Base DR increases by 2 against the triggering attack rather than 1. Furthermore, if the attack still inflicts damage, you gain a +2 racial bonus to checks and saving throws made to avoid being knocked prone or moved against your will by that attack.</p>\n<p><em>Automated:</em> your Impact Absorption raises your Base DR by 2 instead of 1 (the book's \"Impact Stance\" is read as Impact Absorption, the Mujina's reaction). The +2 racial bonus against being knocked prone or moved by that attack is offered as a tick on your checks and saves.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Bear's Endurance",
+          "scope": "Checks and saving throws to avoid being knocked prone or moved against your will — tick if this roll is one, against an attack you absorbed with Impact Absorption that still damaged you",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill",
+              "save",
+              "attribute"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cbW08e4ar6tEHLRx"
+}

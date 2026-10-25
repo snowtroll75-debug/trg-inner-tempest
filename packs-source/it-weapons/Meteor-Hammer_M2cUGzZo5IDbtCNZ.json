@@ -1,0 +1,53 @@
+{
+  "_id": "M2cUGzZo5IDbtCNZ",
+  "name": "Meteor Hammer",
+  "img": "systems/trg-prime/assets/weapons/flail.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 10,
+    "price": 10,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Exotic, Monastic, Reach, Trip",
+    "description": "<p>This unique weapon is composed of either one or two spherical weights, each attached to a 10-foot chain. By deftly whirling the weights, you can skilfully entwine them around an opponent's body, restricting their movement and providing tactical advantages in combat.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>\n<p><em>Traits as printed:</em> Monastic, Reach (15 ft.), Trip.</p>",
+    "attackBonus": 0,
+    "damage": "1d8",
+    "damageType": "bludgeoning",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 16,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Flail",
+    "category": "Exotic",
+    "size": "large",
+    "itemLevel": 0,
+    "reachFeet": 15
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!M2cUGzZo5IDbtCNZ"
+}

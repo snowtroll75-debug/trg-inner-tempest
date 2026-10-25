@@ -1,0 +1,56 @@
+{
+  "_id": "vseUYdpIrAJTmVhK",
+  "name": "Ambusher's Patience",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 5, Stealth 5 ranks",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 5, Stealth 5 ranks</p>\n<p>You understand that the most important part of an ambush is not the attack but waiting for the precise moment in which to make it.</p>\n<p>The first time during an encounter that you inflict Unseen Assault against a creature that has not detected you before the attack, you inflict an additional 2d6 precision damage.</p>\n<p>You may benefit from Ambusher's Patience only once against each creature during an encounter.</p>\n<p><em>Automated:</em> +2d6 precision on the first Unseen Assault against each creature in an encounter, when it had not detected you. It applies by itself when you are undetected by it, and is asked otherwise.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "ambushExtras": [
+        {
+          "label": "Ambusher's Patience",
+          "dice": 2,
+          "whenUndetected": true,
+          "oncePerCreature": true
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!vseUYdpIrAJTmVhK"
+}

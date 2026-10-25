@@ -1,0 +1,77 @@
+{
+  "_id": "UoUpvLNH7cGOhcbb",
+  "name": "Shinryu",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Shinryu possess iridescent pearl scales, pale jade antlers and eyes that brighten in the presence of open sky. Their houses traditionally produce judges, emissaries and rulers. Even a humble Shinryu is expected to carry themselves as though the heavens are watching. The celestial current beneath their feet briefly condenses air into a surface strong enough to bear their weight.</p>\n<p>Whenever you Stride, you may move across unsupported air as though it were solid ground. You must begin and end this movement on a surface capable of supporting you; otherwise, you fall normally.</p>\n<p><em>Not automated:</em> TRG Prime's movement does not know what is under a token. Stride across open air as the text says; a move that does not end on a surface is a fall, made through the Falling action.</p>",
+    "sourceRace": "Ryukari",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "NbWz9kH768ycyJPh",
+      "name": "Shinryu: celestial current",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featNote": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Whenever you Stride, you may move across unsupported air as though it were solid ground. Begin and end the movement on a surface that can support you, or you fall normally.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!UoUpvLNH7cGOhcbb.NbWz9kH768ycyJPh"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UoUpvLNH7cGOhcbb"
+}

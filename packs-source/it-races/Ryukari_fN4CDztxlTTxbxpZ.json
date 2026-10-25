@@ -1,0 +1,145 @@
+{
+  "_id": "fN4CDztxlTTxbxpZ",
+  "name": "Ryukari",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Race",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><em>The Ryukari are the living remnants of covenants forged with the Great Celestial Dragons before their bloodlines were scattered across the world. Though broadly humanoid, no Ryukari can entirely conceal their inheritance: scales glimmer beneath the skin, horns rise like crowns from the brow, and ancient elemental power smoulders behind their slit-pupiled eyes. Each lineage reflects a different fragment of draconic majesty—storm, sea, stone, shadow or flame—and many Ryukari spend their lives seeking the forgotten truth of the celestial ancestors whose power they bear. Proud, disciplined and often burdened by expectation, they regard strength not merely as a privilege, but as a sacred responsibility to preserve balance between the mortal world and the elemental currents flowing through it.</em></p>\n<p>The Ryukari are humanoids who carry fragments of the blood of the Great Celestial Dragons. Their ancestors were not merely blessed by dragons; their souls were bound to broken currents of draconic power when the ancient celestial bloodlines fractured. Every Ryukari therefore bears a small portion of an elemental inheritance that no living dragon can wholly reclaim.</p>\n<p>Ryukari do not normally transform into dragons. Their heritage is displayed through scale, horn, eye and voice: pearlescent plates, fin-like crests, heavy bronze brows, lightless black scales or heat-shimmering crimson skin. Through discipline they learn to guide the elemental current within them into movement, perception, craft or violence.</p>\n<p>Ryukari society is organised around lineage houses, each of which preserves a different interpretation of draconic duty. Some claim authority and seek to rule wisely; some tend rivers and monsoons; some guard buried wealth; some keep watch over valleys where the dead will not rest; and some labour at forges built over sleeping volcanoes. Rivalries between houses can be intense, but most Ryukari unite quickly when confronted by anyone attempting to enslave, harvest or corrupt draconic blood.</p>\n<p>A Ryukari’s word is traditionally sealed by naming the dragon-current within their blood. Breaking such an oath is believed to scar the soul and weaken the entire lineage.</p>\n<p><strong>DESCRIPTION</strong></p>\n<p>Ryukari stand between 5½ and 7 feet tall and generally weigh between 150 and 280 pounds. All possess some combination of scales, slit eyes, horns, claws, unusual teeth or a faint elemental effect such as drifting mist, cold breath, sparks or heat shimmer. These signs grow more pronounced when the Ryukari is angered or uses a heritage ability.</p>\n<p>Ryukari reach adulthood at around 25 years of age and can live for 350 years or more. A starting Ryukari character has an initial age of 24+3d6 years.</p>\n<p><strong>RACIAL MECHANICS</strong></p>\n<p><strong>Ability Modifiers</strong> Str +1, Con +1, Cha +1, Dex -1 <strong>Size:</strong> Medium; <strong>Speed:</strong> 25 feet <strong>Power Points:</strong> 0</p>\n<p><strong>LANGUAGES</strong></p>\n<p><strong>Core Languages:</strong> Low Tongue, Wyrmish <strong>Additional Languages:</strong> Choose from any common language</p>\n<p><strong>SPECIALIST SKILLS</strong></p>\n<p>You gain Ryukari Lore and Dragon Lore as specialist skills.</p>\n<p><strong>OTHER ABILITIES</strong></p>\n<p><strong>Nightvision:</strong> You can see in dark areas and, with a small amount of light, can see well.</p>\n<p><strong>Scaled Hide:</strong> Your draconic scales grant you a Base DR of 1.</p>\n<p><strong>Dragon-Bound Resolve:</strong> You gain a +1 racial bonus to saving throws against fear and effects created by creatures of the Wyrm type.</p>\n<p><strong>AGE</strong> (Appendix, Racial Age Categories)</p>\n<p>Adult 25; Middle Aged 175+, Old 245+, Venerable 298+ (with a 350-year lifespan); Natural Lifespan 350+ years.</p>\n<p><em>Granted when the race is added:</em> Nightvision, Scaled Hide (Base DR 1) and Dragon-Bound Resolve as ability items; Ryukari Lore and Dragon Lore as specialist skills.</p>",
+    "abilityModifiers": "Str +1, Con +1, Cha +1, Dex -1",
+    "maximumSize": "",
+    "languages": "Core: Low Tongue, Wyrmish. Additional: common.",
+    "coreLanguages": "Low Tongue, Wyrmish",
+    "additionalLanguages": "common",
+    "languageChoices": "",
+    "grantedFeats": "",
+    "racialAbilities": "Nightvision, Scaled Hide, Dragon-Bound Resolve",
+    "grantedWeapons": "",
+    "grantedSpells": "",
+    "specialistSkills": "Ryukari Lore, Dragon Lore"
+  },
+  "effects": [
+    {
+      "_id": "xj1HQEtqE3ARvO1R",
+      "name": "Ryukari: ability modifiers",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.strength.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "-1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Str +1, Con +1, Cha +1, Dex -1",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fN4CDztxlTTxbxpZ.xj1HQEtqE3ARvO1R"
+    },
+    {
+      "_id": "o4UQtOOxY9C0LkkZ",
+      "name": "Ryukari: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "medium",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "25",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Medium size and a base land speed of 25 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fN4CDztxlTTxbxpZ.o4UQtOOxY9C0LkkZ"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fN4CDztxlTTxbxpZ"
+}

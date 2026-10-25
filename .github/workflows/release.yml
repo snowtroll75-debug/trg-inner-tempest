@@ -1,0 +1,81 @@
+name: Publish Foundry Module
+
+# On every push to main: if module.json carries a version with no release yet,
+# build the module zip with the module's own tools/build-zip.mjs (archive root
+# trg-inner-tempest/, every declared pack read back) and publish it as release
+# v<version> with the asset trg-inner-tempest.zip, which module.json's
+# "download" names. A push that does not raise the version publishes nothing.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      # build-zip insists the folder is named for the module id.
+      - uses: actions/checkout@v4
+        with:
+          path: trg-inner-tempest
+
+      - name: Read and check module.json
+        id: version
+        working-directory: trg-inner-tempest
+        shell: bash
+        run: |
+          node <<'EOF' >> "$GITHUB_OUTPUT"
+          const m = JSON.parse(require("fs").readFileSync("module.json", "utf8"));
+          const repo = process.env.GH_REPO;
+          const tag = `v${m.version}`;
+          const fail = (why) => { console.error(`module.json: ${why}`); process.exit(1); };
+          if (m.id !== "trg-inner-tempest") fail(`id is "${m.id}"`);
+          const manifest = `https://raw.githubusercontent.com/${repo}/main/module.json`;
+          const download = `https://github.com/${repo}/releases/download/${tag}/trg-inner-tempest.zip`;
+          if (m.manifest !== manifest) fail(`"manifest" should be ${manifest}`);
+          if (m.download !== download) fail(`"download" should be ${download} (raise it with the version)`);
+          console.log(`tag=${tag}`);
+          EOF
+
+      - name: Check the release doesn't already exist
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; nothing published."
+            echo "skip=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build the module zip
+        if: env.skip != 'true'
+        working-directory: trg-inner-tempest
+        run: |
+          mkdir -p "$RUNNER_TEMP/dist"
+          node tools/build-zip.mjs --out "$RUNNER_TEMP/dist"
+          mv "$RUNNER_TEMP"/dist/trg-inner-tempest-*.zip "$GITHUB_WORKSPACE/trg-inner-tempest.zip"
+
+      - name: Create the tagged release
+        if: env.skip != 'true'
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          notes="TRG Prime: Inner Tempest $TAG. Install with the manifest link https://raw.githubusercontent.com/${GH_REPO}/main/module.json"
+          if [ -f "trg-inner-tempest/docs/RELEASE_NOTES_${TAG#v}.md" ]; then
+            notes_file="trg-inner-tempest/docs/RELEASE_NOTES_${TAG#v}.md"
+            gh release create "$TAG" trg-inner-tempest.zip --target "$GITHUB_SHA" --title "$TAG" --notes-file "$notes_file"
+          else
+            gh release create "$TAG" trg-inner-tempest.zip --target "$GITHUB_SHA" --title "$TAG" --notes "$notes"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: env.skip != 'true'
+        with:
+          name: trg-inner-tempest-package
+          path: trg-inner-tempest.zip

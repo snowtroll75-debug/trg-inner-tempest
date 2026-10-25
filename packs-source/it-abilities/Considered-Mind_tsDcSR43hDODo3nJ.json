@@ -1,0 +1,56 @@
+{
+  "_id": "tsDcSR43hDODo3nJ",
+  "name": "Considered Mind",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Kensai 1st level",
+    "active": true,
+    "description": "<p>Your approach to mental discipline is analytical rather than intuitive. When making Refocus (Mental Focus) checks, you may use your Intelligence modifier instead of Wisdom.</p>\n<p><em>Automated:</em> your Refocus (Mental Focus) checks use Intelligence when it is higher than Wisdom. Your other Mental Focus checks are unchanged.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Kensai",
+        "level": 1
+      },
+      "actionAbilityOptions": [
+        {
+          "action": "refocus",
+          "ability": "intelligence",
+          "label": "Considered Mind"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!tsDcSR43hDODo3nJ"
+}

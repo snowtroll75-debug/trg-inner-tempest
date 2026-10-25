@@ -1,0 +1,52 @@
+{
+  "_id": "RpyiBDfY9Qr9DvEx",
+  "name": "Alter the Thread",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p>You have the ability to use your fortune and insight to great effect when avoiding harm. You may use Conviction to force an opponent to reroll an attack check against you.</p>\n<p>Be aware that a Chaos result cannot be rerolled.</p>\n<p><em>Automated:</em> when an attack roll is made against you (a Strike or a spell attack), you are asked once it is rolled and before it resolves whether to spend 1 conviction; on a yes the attacker rolls again and the new roll stands (Graham's ruling B3-5). It counts as your one conviction point this round. Not offered on a Chaos result, or when you have no conviction to spend.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "attackRerollConviction": {
+        "label": "Alter the Thread"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!RpyiBDfY9Qr9DvEx"
+}

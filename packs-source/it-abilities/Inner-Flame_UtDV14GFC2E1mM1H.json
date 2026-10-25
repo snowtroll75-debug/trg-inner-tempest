@@ -1,0 +1,53 @@
+{
+  "_id": "UtDV14GFC2E1mM1H",
+  "name": "Inner Flame",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><em>Ignite the soul, and all shadows burn away.</em></p>\n<p>The path of the Inner Flame is not for the timid. It calls to those whose emotions burn hot and deep—passion, anger, determination, and courage—all are fuel for the focus within. Mystics who follow this discipline have learned to stoke the fire of their soul, letting it blaze through their strikes and manifest as destructive energy. Their focus flares brightest in moments of struggle, when pain and adversity threaten to smother the spirit. But the flame never dies—it reignites, fiercer than before.</p>\n<p>Mystics of the Inner Flame walk a dangerous edge between power and destruction, learning to burn away weakness and hesitation. In battle, they become living infernos, radiating heat, energy, and relentless force. In stillness, their hearts smoulder with a deep, controlled intensity.</p>\n<p><strong>SPECIAL ABILITY</strong> You gain the Flame Within special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> You gain the following spells at the indicated Mystic level as innate spells with the Focus trait. These spells are in addition to any spells that you select with your class picks and don't count towards your total spells known.</p>\n<table><thead><tr><th>Mystic Level</th><th>Spells (Base PP)</th></tr></thead><tbody><tr><td>1st</td><td>Orb of Fire (0), Circle of Warmth (2)</td></tr><tr><td>3rd</td><td>Fire Bolt (4)</td></tr><tr><td>5th</td><td>Fireball (6)</td></tr><tr><td>7th</td><td>Flame Arrow (8)</td></tr><tr><td>9th</td><td>Burning Stride* (10)</td></tr><tr><td>11th</td><td>Rise of the Phoenix* (12)</td></tr><tr><td>13th</td><td>Aura of Heat* (14)</td></tr><tr><td>15th</td><td>Incendiary Cloud (16)</td></tr></tbody></table>\n<p><em>Automated:</em> Flame Within is added to your sheet. Each spell arrives as an innate spell with the Focus trait when you reach its level, cast with your Monastic Path's tradition and ability. Each may be cast up to base PP = your level + 1, so it is usable from the level that grants it (Graham's ruling B3-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "1: Orb Of Fire, 1: Circle Of Warmth, 3: Fire Bolt, 5: Fireball, 7: Flame Arrow, 9: Burning Stride, 11: Rise of the Phoenix, 13: Aura of Heat, 15: Incendiary Cloud",
+    "grantedAbilities": "Flame Within",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UtDV14GFC2E1mM1H"
+}

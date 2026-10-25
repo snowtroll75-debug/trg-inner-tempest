@@ -1,0 +1,45 @@
+{
+  "_id": "CFpph4kwLBoqVQjA",
+  "name": "Artistic Negotiation",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Artistry 2 ranks",
+    "active": true,
+    "description": "<p><em>You can use your knowledge of art to impress and charm others.</em></p>\n<p><strong>Prerequisites</strong> Artistry 2 ranks</p>\n<p>You may use your Artistry skill in place of Diplomacy to make Encourage and Make an Impression checks.</p>\n<p><em>Automated:</em> Encourage and Make an Impression are offered from your Artistry skill as well as Diplomacy.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CFpph4kwLBoqVQjA"
+}

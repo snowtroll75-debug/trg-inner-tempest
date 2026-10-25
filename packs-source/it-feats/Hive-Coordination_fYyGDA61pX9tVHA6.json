@@ -1,0 +1,66 @@
+{
+  "_id": "fYyGDA61pX9tVHA6",
+  "name": "Hive Coordination",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>The Scree are raised to work as parts of a greater whole. A gesture, click or minute shift in posture can convey precisely what another member of the swarm requires.</em></p>\n<p>When you use Aid to assist a creature that understands Scree Cant and can perceive your communication, you gain a +2 racial bonus to the Aid check. This applies to both ordinary Aid checks and combat actions that use the Aid rules.</p>\n<p><em>Partly automated:</em> +2 racial is offered on Aid checks (Aid Another, Aid Offensive, Aid Defensive) — tick it when the creature understands Scree Cant and can perceive you.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Hive Coordination",
+          "scope": "Aid for a creature that understands Scree Cant and can perceive your communication — tick if so",
+          "auto": false,
+          "when": {
+            "actions": [
+              "aidOffensive",
+              "aidDefensive",
+              "aidAnother",
+              "aid"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fYyGDA61pX9tVHA6"
+}

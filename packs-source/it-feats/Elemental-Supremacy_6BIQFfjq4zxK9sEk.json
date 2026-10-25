@@ -1,0 +1,49 @@
+{
+  "_id": "6BIQFfjq4zxK9sEk",
+  "name": "Elemental Supremacy",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Elemental Power, Meditation Rank 5",
+    "active": true,
+    "description": "<p><strong>TIANZHI</strong></p>\n<p><em>Your deep connection to the elemental forces continues to grow.</em></p>\n<p><strong>Prerequisites</strong> Elemental Power, Meditation Rank 5</p>\n<p>You may select one of the following PP 4 spells which has a trait that matches your racial element:</p>\n<p><em>Acid Bolt, Cold Bolt, Endure Elements, Fire Bolt, Icy Spray, Restore Senses, Water Breathing, Whispering Wind</em></p>\n<p>You gain the selected spell as an innate spell with the Focus trait, using the tradition and magical ability score established by your Natural Chi racial ability.</p>\n<p>The number in the spell list is its normal base PP value; you do not spend PP to cast this innate spell.</p>\n<p><em>Automated:</em> press Use to choose a PP 4 spell from the list whose trait matches your element (Graham's ruling B5-2: Water Breathing for the Suiryoku, Endure Elements for every element). It arrives as an innate spell with the Focus trait, cast with Wisdom and costing no PP; its tradition is your Natural Chi's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Tianzhi",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "elementalSpell"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6BIQFfjq4zxK9sEk"
+}

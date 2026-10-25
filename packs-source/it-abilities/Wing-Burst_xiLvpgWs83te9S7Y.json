@@ -1,0 +1,39 @@
+{
+  "_id": "xiLvpgWs83te9S7Y",
+  "name": "Wing Burst",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>WING BURST</strong></p>\n<p><strong>FLOURISH MOVEMENT</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You can Fly up to your Speed. You must end this movement on a surface capable of supporting you; otherwise, you fall normally.</p>\n<p><em>Use:</em> checks Flourish's once-a-turn limit, spends 1 AP and arms your next token move — up to your land Speed, by any movement. Ending it in the air is a fall, made through the Falling action as usual.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "traits": "Flourish, Movement"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xiLvpgWs83te9S7Y"
+}

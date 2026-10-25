@@ -1,0 +1,66 @@
+{
+  "_id": "9fAfaHclRysqlwMV",
+  "name": "Silk Spinner",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Joro Heritage",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Your spinnerets produce long strands of remarkably strong silk that can be woven into useful cord with little preparation.</em></p>\n<p><strong>Prerequisites</strong> Joro Heritage</p>\n<p>By spending 10 minutes, you can produce up to 50 feet of silk cord with the strength and utility of ordinary rope. You can maintain only one such length of silk at a time. If you produce another, the previously created silk becomes dry and brittle over the following hour and is thereafter useless as rope.</p>\n<p>Furthermore, you gain a +2 racial bonus to Crafting checks involving silk, thread, rope or woven webbing.</p>\n<p><em>Partly automated:</em> the cord is the table's. +2 racial is offered on Crafting with silk, thread, rope or webbing.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Silk Spinner",
+          "scope": "Crafting checks involving silk, thread, rope or woven webbing — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "crafting"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!9fAfaHclRysqlwMV"
+}

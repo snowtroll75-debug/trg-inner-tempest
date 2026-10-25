@@ -1,0 +1,68 @@
+{
+  "_id": "if9lxjV8yL9JAByE",
+  "name": "Mist Veil",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Zennyo Heritage",
+    "active": true,
+    "description": "<p><strong>ARCANE FOCUS RYUKARI TECHNIQUE WATER</strong></p>\n<p><em>You call upon the rain-bringing current within your blood, drawing the moisture around you into a swirling veil.</em></p>\n<p><strong>Prerequisites</strong> Zennyo Heritage</p>\n<p><strong>Action</strong> 2 AP; <strong>Area</strong> 10-foot emanation</p>\n<p><strong>Duration</strong> until the beginning of your next turn</p>\n<p>You draw moisture from the surrounding air into a dense bank of mist. Creatures within the mist are concealed, and creatures outside the mist are concealed to creatures within it.</p>\n<p>The mist moves with you.</p>\n<p><em>Partly automated:</em> press Use: 2 AP and its Focus use. Until the start of your next turn every creature within 10 feet of you (you included) is Concealed, laid and lifted as they come and go, and the mist moves with you. That creatures outside are concealed to those inside is the table's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Arcane, Focus, Ryukari, Technique, Water",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "mistVeil",
+      "auras": [
+        {
+          "kind": "ally",
+          "name": "Mist Veil",
+          "radius": 10,
+          "includeSelf": true,
+          "emitterState": "mist-veil",
+          "allyEffect": {
+            "statuses": [
+              "concealed"
+            ]
+          },
+          "enemyEffect": {
+            "statuses": [
+              "concealed"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!if9lxjV8yL9JAByE"
+}

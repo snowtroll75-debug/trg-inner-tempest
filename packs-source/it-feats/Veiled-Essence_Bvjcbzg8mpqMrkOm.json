@@ -1,0 +1,45 @@
+{
+  "_id": "Bvjcbzg8mpqMrkOm",
+  "name": "Veiled Essence",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "BSB 2+ or Inner Discipline, Stealth 2 ranks",
+    "active": true,
+    "description": "<p><em>As you wield the mystic arts, your mastery of veiled essence allows you to weave spells into the shadows, catching your foes off-guard with your unpredictable sorcery. With each incantation, your enemies are left bewildered, struggling to anticipate your next move as you dance between the realms of magic and deception.</em></p>\n<p>Prerequisites BSB 2+ or Inner Discipline, Stealth 2 ranks</p>\n<p>When casting a spell, using an innate spell, or using a technique with the Attack trait, you may use the Ambush and Sniping (Stealth) actions.</p>\n<p><em>Not automated:</em> Ambush and Sniping are rolled from your sheet as usual; their bonus reaches a spell, an innate spell or an Attack technique by your declaration (core dependency D14).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Bvjcbzg8mpqMrkOm"
+}

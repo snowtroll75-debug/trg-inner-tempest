@@ -6,20 +6,94 @@
  * TRG Prime federates it into its own pickers and grants. Rules that are
  * not data are registered through the system's module API inside the
  * `trgPrime.registerContent` hook TRG Prime fires from its own `init`.
- *
- * Scaffold (0.0.0): only the system check below. Registration arrives
- * with Block 1 — see docs/PROGRESS.md.
  */
 import { registerContent } from "../module/registration.mjs";
+import { onDamageApplied, onTurnEndedFlame, onPreCreateSpell, onPathCreated, registerBlock3Socket } from "../module/block3-automations.mjs";
+import { bindCardButtons, onActionResolved } from "../module/automations.mjs";
+import {
+  onStrikeResolved, onStrikeRolled, onAmbushDealt, onDamageAppliedB4, onTurnEndedB4, onCombatDeletedB4,
+  onEffectDeletedB4, onTokenMovedB4, onDailyPreparationB4, registerBlock4Socket
+} from "../module/block4-automations.mjs";
+import { onStrikeResolvedB5, onItemCreatedB5, onItemUpdatedB5, onItemDeletedB5, onEffectDeletedB5, reconcileB5Actor } from "../module/block5-automations.mjs";
+import { onStrikeResolvedB6, onItemCreatedB6, reconcileB6Actor } from "../module/block6-automations.mjs";
+import {
+  onActionAttempt, onActionResolved as onSkillActionResolved, offerResistDying,
+  onTurnEnded, onCombatDeleted, onEffectDeleted, onDailyPreparation, trackActionResolved
+} from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.663.5";
+const REQUIRED_SYSTEM = "3.670.1";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
 });
 
+// ANCESTRAL GUIDANCE (Chapter 5): TRG Prime announces each resolved action;
+// a Recall Knowledge or Create below a Success is offered a reroll, and a
+// pending reroll is settled (conviction spent only on a Success or better).
+Hooks.on("trgPrimeActionResolved", (ctx) => { onActionResolved(ctx).catch((err) => console.warn("Inner Tempest | Ancestral Guidance", err)); });
+
+// CHAPTER 4 (Block 2): the skill actions' refusals before anything is spent,
+// and what each does once rolled. See module/skill-action-automations.mjs.
+Hooks.on("trgPrimeActionAttempt", (ctx) => onActionAttempt(ctx));
+// Tracked (0.3.3), so a reaction taken before an attack can wait for its effect.
+Hooks.on("trgPrimeActionResolved", (ctx) => { trackActionResolved(ctx, onSkillActionResolved(ctx)).catch((err) => console.warn("Inner Tempest | skill action", err)); });
+// Resist Dying, ruled a Reaction to gaining the dying condition: offered then.
+Hooks.on("createActiveEffect", (effect) => { offerResistDying(effect).catch((err) => console.warn("Inner Tempest | Resist Dying", err)); });
+// The endings the system's own sweeps do not cover.
+Hooks.on("trgPrimeTurnEnded", (ctx) => { onTurnEnded(ctx).catch((err) => console.warn("Inner Tempest | turn end", err)); });
+Hooks.on("deleteCombat", (combat) => { onCombatDeleted(combat).catch((err) => console.warn("Inner Tempest | combat end", err)); });
+Hooks.on("deleteActiveEffect", (effect) => { onEffectDeleted(effect).catch((err) => console.warn("Inner Tempest | effect ended", err)); });
+Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparation(ctx).catch((err) => console.warn("Inner Tempest | daily preparation", err)); });
+
+// BLOCK 3 (0.4.0, on TRG Prime 3.667.0). Flame Within and Dragon's Pulse
+// listen for damage the system applies; Flame Within resets at the end of a
+// quiet turn; a Mystic's granted spells take the Monastic Path's tradition
+// and ability as they are created, and wait for a Path chosen later.
+Hooks.on("trgPrimeDamageApplied", (ctx) => { onDamageApplied(ctx).catch((err) => console.warn("Inner Tempest | damage applied", err)); });
+Hooks.on("trgPrimeTurnEnded", (ctx) => { onTurnEndedFlame(ctx).catch((err) => console.warn("Inner Tempest | Flame Within", err)); });
+Hooks.on("preCreateItem", (document, data) => { try { onPreCreateSpell(document, data); } catch (err) { console.warn("Inner Tempest | Monastic Path stamp", err); } });
+Hooks.on("createItem", (item) => { onPathCreated(item).catch((err) => console.warn("Inner Tempest | Monastic Path", err)); });
+
+// BLOCK 4 (0.5.0, on TRG Prime 3.668.0). What follows a Strike (Flow Strike,
+// Steel Viper, Echoing Crane, Form Reversal, Shadow Counter, the oaths' next
+// Strike), what an attack ends (Veiled Body, Shadow Double, Hollow Breath,
+// Empty Presence, an ally breaking an Oath of Honour duel), Vanishing Retreat
+// after Unseen Assault, damage (a Challenge ending, Dread Wolf, the oaths),
+// a turn starting (Black Lotus's held blow, Ember Reaver, Oath of Honour),
+// and what ends with a combat, an effect or a move.
+Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolved(ctx).catch((err) => console.warn("Inner Tempest | after a Strike", err)); });
+Hooks.on("trgPrimeStrikeRolled", (ctx) => { onStrikeRolled(ctx).catch((err) => console.warn("Inner Tempest | a Strike made", err)); });
+Hooks.on("trgPrimeAmbushDealt", (ctx) => { onAmbushDealt(ctx).catch((err) => console.warn("Inner Tempest | Vanishing Retreat", err)); });
+Hooks.on("trgPrimeDamageApplied", (ctx) => { onDamageAppliedB4(ctx).catch((err) => console.warn("Inner Tempest | Challenge and oaths", err)); });
+Hooks.on("trgPrimeTurnEnded", (ctx) => { onTurnEndedB4(ctx).catch((err) => console.warn("Inner Tempest | turn start (Block 4)", err)); });
+Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB4(ctx).catch((err) => console.warn("Inner Tempest | daily preparation (Block 4)", err)); });
+Hooks.on("deleteCombat", (combat) => { onCombatDeletedB4(combat).catch((err) => console.warn("Inner Tempest | combat end (Block 4)", err)); });
+Hooks.on("deleteActiveEffect", (effect) => { onEffectDeletedB4(effect).catch((err) => console.warn("Inner Tempest | effect ended (Block 4)", err)); });
+Hooks.on("updateToken", (doc, change) => { onTokenMovedB4(doc, change).catch((err) => console.warn("Inner Tempest | token moved (Block 4)", err)); });
+
+// BLOCK 5 (0.6.0, on TRG Prime 3.669.0). What follows a Strike (Serpent's
+// Venom delivered, Paralysing Venom and Waiting Blade offered), what keeps an
+// item in step (Raptorial Refinement's blade, Elemental Attunement's
+// element), and what goes with an effect (Foxfire's motes, Spirit Beacon's
+// dim ring).
+Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB5(ctx).catch((err) => console.warn("Inner Tempest | after a Strike (Block 5)", err)); });
+Hooks.on("createItem", (item, options, userId) => { onItemCreatedB5(item, options, userId).catch((err) => console.warn("Inner Tempest | item added (Block 5)", err)); });
+Hooks.on("updateItem", (item, changes, options, userId) => { onItemUpdatedB5(item, changes, options, userId).catch((err) => console.warn("Inner Tempest | item changed (Block 5)", err)); });
+Hooks.on("deleteItem", (item, options, userId) => { onItemDeletedB5(item, options, userId).catch((err) => console.warn("Inner Tempest | item removed (Block 5)", err)); });
+Hooks.on("deleteActiveEffect", (effect) => { onEffectDeletedB5(effect).catch((err) => console.warn("Inner Tempest | effect ended (Block 5)", err)); });
+// BLOCK 6 (0.7.0): Snake Stance's reaction after a melee miss; a Mystic's
+// innate spells marked for its Metamagic feats when the class arrives.
+Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB6(ctx).catch((err) => console.warn("Inner Tempest | after a Strike (Block 6)", err)); });
+Hooks.on("createItem", (item, options, userId) => { onItemCreatedB6(item, options, userId).catch((err) => console.warn("Inner Tempest | item added (Block 6)", err)); });
+
+// The buttons on this module's cards: Predator's Pounce's paid Strike and
+// Ancestral Guidance's reroll.
+Hooks.on("renderChatMessageHTML", (message, html) => bindCardButtons(message, html));
+
 Hooks.once("ready", () => {
+  registerBlock3Socket();
+  registerBlock4Socket();
   if (game.system?.id !== "trg-prime") {
     ui.notifications?.error("Inner Tempest requires the TRG Prime system.");
     return;
@@ -30,5 +104,15 @@ Hooks.once("ready", () => {
   }
   if (foundry.utils.isNewerVersion(REQUIRED_SYSTEM, game.system.version)) {
     ui.notifications?.warn(`Inner Tempest is built for TRG Prime ${REQUIRED_SYSTEM} or later; this world runs ${game.system.version}.`);
+  }
+  // CHARACTERS MADE UNDER 0.6.0 brought into step (0.6.1): the Raptorial
+  // Blade's AR on its trait line, Forgeheart's and Many-Faceted Vigilance's
+  // raised ticks. The acting GM only; nothing changes when nothing needs to.
+  if (game.user === game.users?.activeGM) {
+    (async () => { for (const actor of game.actors ?? []) await reconcileB5Actor(actor); })()
+      .catch((err) => console.warn("Inner Tempest | bringing characters into step (0.6.1)", err));
+    // 0.7.0 (B6-8): a Mystic's Path-stamped innate spells take its Metamagic feats.
+    (async () => { for (const actor of game.actors ?? []) await reconcileB6Actor(actor); })()
+      .catch((err) => console.warn("Inner Tempest | bringing Mystics into step (0.7.0)", err));
   }
 });

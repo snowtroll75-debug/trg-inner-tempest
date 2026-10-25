@@ -1,0 +1,254 @@
+{
+  "source": "it12.md",
+  "rows": [
+    {
+      "table": "MELEE SIMPLE WEAPONS",
+      "name": "Hanbo",
+      "price": "1 gp",
+      "level": "0",
+      "damage": "1d6 B",
+      "size": "M",
+      "fdc": "6",
+      "weight": "2 lbs",
+      "group": "Club",
+      "traits": "Monastic, Trip"
+    },
+    {
+      "table": "MELEE SIMPLE WEAPONS",
+      "name": "Katar",
+      "price": "6 gp",
+      "level": "0",
+      "damage": "1d4 P",
+      "size": "S",
+      "fdc": "8",
+      "weight": "2 lbs",
+      "group": "Knife",
+      "traits": "Agile, Deadly, Monastic, Uncommon"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Bo Staff",
+      "price": "1 gp",
+      "level": "0",
+      "damage": "1d8 B",
+      "size": "L",
+      "fdc": "12",
+      "weight": "3 lbs",
+      "group": "Club",
+      "traits": "Monastic, Parry, Reach, Trip"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Fighting Fan",
+      "price": "5 gp",
+      "level": "0",
+      "damage": "1d4 S",
+      "size": "S",
+      "fdc": "6",
+      "weight": "-",
+      "group": "Knife",
+      "traits": "Agile, Deadly, Finesse, Monastic, Uncommon"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Jutte",
+      "price": "8 gp",
+      "level": "0",
+      "damage": "1d6 B",
+      "size": "S",
+      "fdc": "6",
+      "weight": "1 lb",
+      "group": "Club",
+      "traits": "Disarm, Monastic, Versatile - S"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Kama",
+      "price": "6 gp",
+      "level": "0",
+      "damage": "1d6 S",
+      "size": "S",
+      "fdc": "8",
+      "weight": "2 lbs",
+      "group": "Knife",
+      "traits": "Agile, Monastic, Trip, Uncommon"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Kusarigama",
+      "price": "12 gp",
+      "level": "0",
+      "damage": "1d8 S",
+      "size": "L",
+      "fdc": "16",
+      "weight": "5 lbs",
+      "group": "Knife",
+      "traits": "Disarm, Monastic, Reach, Trip, Versatile - B"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Nunchaku",
+      "price": "5 gp",
+      "level": "0",
+      "damage": "1d6 B",
+      "size": "M",
+      "fdc": "12",
+      "weight": "2 lbs",
+      "group": "Flail",
+      "traits": "Backswing, Disarm, Finesse, Monastic, Uncommon"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Sai",
+      "price": "1 gp",
+      "level": "0",
+      "damage": "1d4 P",
+      "size": "T",
+      "fdc": "5",
+      "weight": "1 lb",
+      "group": "Knife",
+      "traits": "Agile, Disarm, Finesse, Monastic, Parry, Uncommon"
+    },
+    {
+      "table": "MELEE MARTIAL WEAPONS",
+      "name": "Tonfa",
+      "price": "1 gp",
+      "level": "0",
+      "damage": "1d6 B",
+      "size": "S",
+      "fdc": "6",
+      "weight": "1 lb",
+      "group": "Club",
+      "traits": "Agile, Finesse, Monastic, Parry, Twin, Uncommon"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Butterfly Sword",
+      "price": "20 gp",
+      "level": "0",
+      "damage": "1d4 S",
+      "size": "S",
+      "fdc": "6",
+      "weight": "1 lb",
+      "group": "Knife",
+      "traits": "Agile, Concealable, Disarm, Finesse, Monastic, Parry, Twin"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Meteor Hammer",
+      "price": "10 gp",
+      "level": "0",
+      "damage": "1d8 B",
+      "size": "L",
+      "fdc": "16",
+      "weight": "10 lbs",
+      "group": "Flail",
+      "traits": "Monastic, Reach (15 ft.), Trip"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Naginata",
+      "price": "35 gp",
+      "level": "0",
+      "damage": "1d8 S",
+      "size": "L",
+      "fdc": "12",
+      "weight": "9 lbs",
+      "group": "Polearm",
+      "traits": "AR 2, Reach"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Nodachi",
+      "price": "300 gp",
+      "level": "2",
+      "damage": "1d10 S",
+      "size": "L",
+      "fdc": "12",
+      "weight": "8 lbs",
+      "group": "Sword",
+      "traits": "Brace, Deadly, Keen, Versatile P"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Tetsubo",
+      "price": "20 gp",
+      "level": "0",
+      "damage": "1d10 B",
+      "size": "L",
+      "fdc": "12",
+      "weight": "10 lbs",
+      "group": "Club",
+      "traits": "AR 2, Shove"
+    },
+    {
+      "table": "MELEE EXOTIC WEAPONS",
+      "name": "Wakizashi",
+      "price": "150 gp",
+      "level": "1",
+      "damage": "1d6 P",
+      "size": "S",
+      "fdc": "6",
+      "weight": "2 lbs",
+      "group": "Sword",
+      "traits": "Deadly, Finesse, Keen, Versatile P"
+    }
+  ],
+  "traits": {
+    "Backswing": "Your missed attacks carry momentum when using this weapon. Your multiple attack penalty is only considered after a successful attack (one that inflicts damage).",
+    "Brace": "If you use a Ready action to attack a mounted target with this weapon, your attack gains a +2-circumstance bonus and inflicts an additional die of base damage on a successful hit.",
+    "Monastic": "A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).",
+    "Twin": "These weapons are used as a pair. If both weapons successfully hit and inflict damage whilst using the Double Slice action, their base damage increases by 1."
+  },
+  "descriptions": {
+    "BO STAFF": [
+      "The bo staff, often likened to a quarterstaff, exhibits a slender and graceful design, gently tapering at one end. This versatile martial arts tool serves a dual purpose, functioning not only as a potent weapon but also as a highly effective defensive instrument. Its length and balanced construction allow martial artists to perform a wide array of techniques, making it a favoured choice for practitioners seeking agility and precision in their combat style."
+    ],
+    "BUTTERFLY SWORD": [
+      "These paired short swords are intricately designed to resemble a single blade when nested together, concealing their dual nature until drawn for combat. Both weapons can be drawn as a single Interact (1 AP) action and separated as a Free (0 AP) action.",
+      "Be aware that when enchanting these weapons, any rune is applied to both, but the magic is only effective if the weapons are wielded together."
+    ],
+    "FIGHTING FAN": [
+      "Designed to mimic the elegance of a courtier's fan, this contraption is crafted from silk paper delicately stretched and folded over a folding frame constructed from hardened steel. Martial artists wield folding fans in pairs, employing a technique that expertly distracts opponents. These fans are equipped with razor-sharp tips, which can be potentially poisoned for added lethality."
+    ],
+    "HANBO": [
+      "The hanbo is a staff-like weapon that typically measures around three feet in length, although variations can be shorter or slightly longer. The hanbo is made of wood, and its design is simple and unadorned. Due to its compact size, the hanbo is particularly suited for close-quarters combat. Its length allows for quick, precise strikes and can also be used for tripping opponents."
+    ],
+    "JUTTE": [
+      "This baton-like weapon features a metal hook designed for blocking and pinning an opponent's weapon. Certain variants of this weapon are equipped with a sharpened metal spike or blade at the tip for added versatility and offensive capabilities."
+    ],
+    "KAMA": [
+      "Resembling a sickle and often utilized for grain reaping in certain regions, the kama is characterized by its short, curved blade affixed to a basic wooden handle. It is occasionally known as a \"kai\" and is commonly wielded in pairs by martial artists skilled in its use."
+    ],
+    "KATAR": [
+      "Punching daggers, commonly referred to as katars, are distinguished by their unique H-shaped handgrip, which enables the blade to extend from the user's knuckles."
+    ],
+    "KUSIRIGAMA": [
+      "This unique weapon consists of a single sickle, held in the off-hand, connected to a weighted metal ball by a 10-foot length of fine chain."
+    ],
+    "METEOR HAMMER": [
+      "This unique weapon is composed of either one or two spherical weights, each attached to a 10-foot chain. By deftly whirling the weights, you can skilfully entwine them around an opponent's body, restricting their movement and providing tactical advantages in combat."
+    ],
+    "NAGINATA": [
+      "The naginata is a formidable weapon characterized by a 6-foot staff seamlessly joined to a 2-foot-long, slightly curved blade resembling a sword. Its well-thought-out design ensures that the wielder remains at a safe distance from opponents armed with swords and shorter weaponry, allowing for effective engagement in combat."
+    ],
+    "NODACHI": [
+      "This formidable two-handed weapon boasts an impressive length, featuring a slender yet wickedly sharp 4-foot-long blade at one end. Predominantly employed by ground troops, it is specifically designed for launching attacks against mounted warriors, providing a strategic advantage on the battlefield."
+    ],
+    "NUNCHAKU": [
+      "The nunchaku is a martial arts weapon comprising two sturdy wooden or metal bars that are joined together by a compact yet durable length of rope or chain. Its design allows for fluid and dynamic movements, making it a preferred choice among martial artists skilled in its artful and versatile techniques."
+    ],
+    "SAI": [
+      "A sai is a distinctive weapon characterized by a central metal spike complemented by a pair of prongs, strategically designed for trapping an opponent's weapon. While it possesses a pointed tip, the sai is typically not employed for stabbing actions. Its primary functions involve bludgeoning adversaries, utilizing punches with the hilt, or skilfully catching and disarming weapons by leveraging the weapon's tines. Martial artists frequently wield sais in pairs, capitalizing on their formidable defensive and offensive capabilities."
+    ],
+    "TETSUBO": [
+      "This enhanced weapon represents an improvement upon the great club, featuring a long and slender shaft. The upper half of this club is reinforced with a substantial sheet of studded iron, which not only adds weight but also provides increased strength to the weapon. The strategically placed studs are intended to shatter helmets and penetrate armour, making it an effective choice for combat."
+    ],
+    "TONFA": [
+      "These L-shaped combat sticks are well-suited for executing a dynamic blend of striking and blocking manoeuvres. The practitioner securely grips the handle and has the option to either spin the stick for offensive actions or use it to cover and reinforce the forearm for enhanced defence."
+    ],
+    "WAKIZASHI": [
+      "These short, slender blades, measuring between 1 to 2 feet in length, serve various purposes. They are primarily utilized as backup weapons in combat, to perform the solemn act of decapitating defeated adversaries, or to carry out seppuku, a ritual form of suicide upheld as a matter of honour."
+    ]
+  }
+}

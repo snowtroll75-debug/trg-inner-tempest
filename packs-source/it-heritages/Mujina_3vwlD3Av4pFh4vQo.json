@@ -1,0 +1,84 @@
+{
+  "_id": "3vwlD3Av4pFh4vQo",
+  "name": "Mujina",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Mujina are broad, dense and difficult to move. Their animal traits usually appear as rounded ears, heavy shoulders, thick body hair and dark claw-like nails. They favour mountain shrines, isolated valleys and old woodland temples, where they serve as wardens and protectors. A Mujina is taught to receive force rather than flee from it, grounding body and spirit until a blow has nowhere left to travel.</p>\n<p>Your thick hide grants you Base DR 1, and you gain Impact Absorption.</p>\n<p><strong>IMPACT ABSORPTION</strong></p>\n<p><strong>DEFENCE FOCUS</strong></p>\n<p><strong>Action</strong> R</p>\n<p><strong>Trigger</strong> a targeted physical attack damages you</p>\n<p>You brace and allow your spirit to absorb the impact. Your Base DR increases by 1 against the triggering attack.</p>\n<p><em>Granted:</em> Base DR 1, and Impact Absorption as an ability item.</p>",
+    "sourceRace": "Miraku",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "Impact Absorption",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "sG8ey0nk9moa9dAc",
+      "name": "Mujina: Base DR 1",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Mujina's thick hide grants a Base DR of 1 (natural armour; scaled by your BDB like any Base DR).",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!3vwlD3Av4pFh4vQo.sG8ey0nk9moa9dAc"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!3vwlD3Av4pFh4vQo"
+}

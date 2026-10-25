@@ -1,0 +1,65 @@
+{
+  "_id": "OStuaXYYClsIoH3F",
+  "name": "Martial Affinity",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Martial Affinity:</strong> You have a deep understanding of all things related to martials arts. You gain a +1 racial bonus to AB and DB when in any combat stance (GM discretion).</p>\n<p><em>Applied automatically</em> while any stance is up — an effect entered through a feat or ability with the Stance trait (Graham, 20 Oct 2026: any stance): +1 racial on your attack checks, and +1 to your DB against every attack. Fight Defensively and Full Defence are not stances; their actions carry no Stance trait.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "stanceConditionals": [
+        {
+          "kind": "modifier",
+          "label": "Martial Affinity",
+          "scope": "Attack checks while you are in a stance",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "attack"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ],
+      "stanceDefenceDC": [
+        {
+          "dc": "defence",
+          "value": 1,
+          "label": "Martial Affinity",
+          "scope": "while in a stance"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!OStuaXYYClsIoH3F"
+}

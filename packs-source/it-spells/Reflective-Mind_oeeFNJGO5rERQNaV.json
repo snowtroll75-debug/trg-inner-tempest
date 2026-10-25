@@ -1,0 +1,92 @@
+{
+  "_id": "oeeFNJGO5rERQNaV",
+  "name": "Reflective Mind",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, divinity, ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 4,
+    "castAP": "Reaction",
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "self",
+        "label": "Reflective Mind",
+        "rounds": 1,
+        "noStack": true,
+        "flags": {
+          "conditionals": [
+            {
+              "kind": "advantage",
+              "label": "Reflective Mind",
+              "scope": "The saving throw against the mental effect that triggered Reflective Mind",
+              "auto": true,
+              "oneShot": true,
+              "when": {
+                "checkTypes": [
+                  "save"
+                ],
+                "traits": [
+                  "mental"
+                ]
+              }
+            }
+          ]
+        },
+        "text": "advantage on your saving throw against the triggering mental effect"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": false,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Warding",
+    "description": "<p><strong>Cast</strong> R (verbal); <strong>Trigger</strong> you are targeted by a spell or effect which has both the mental and save traits.</p>\n<p>You instinctively throw up a reactive mental barrier which grants you advantage on the triggering saving throw.</p>\n<p><em>Automated:</em> cast it as the effect targets you: your next saving throw against a Mental effect, this round, is rolled with advantage, applied for you.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!oeeFNJGO5rERQNaV"
+}

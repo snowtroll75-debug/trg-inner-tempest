@@ -1,0 +1,49 @@
+{
+  "_id": "GipbjBnZvwCoPzhP",
+  "name": "Elemental Infusion",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE TIANZHI</strong></p>\n<p><em>You can infuse your attacks with the elemental current of your people.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline</p>\n<p><strong>Action</strong> 1 AP; <strong>Duration</strong> 1 minute</p>\n<p>You infuse your attacks with your racial elemental energy type. For the duration of the technique, your melee Strikes inflict an additional 1d4 damage of your elemental type.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. For 1 minute your melee Strikes add 1d4 secondary damage of your element's type (Fuukaze electricity, Hikari essence, Kasai fire, Suiryoku cold, Tsuchi acid).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Tianzhi",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Technique, Tianzhi",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "elementalInfusion"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GipbjBnZvwCoPzhP"
+}

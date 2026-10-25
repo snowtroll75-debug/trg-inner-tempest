@@ -1,0 +1,60 @@
+{
+  "_id": "nUFzXeWRYPn4SiZn",
+  "name": "False Face",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>TECHNIQUE</strong></p>\n<p>You have been extensively trained in disguise, mimicry and assumed identities.</p>\n<p>You may use your Intelligence modifier instead of Charisma when making Deception checks concerned with disguising yourself or impersonating another person.</p>\n<p>Furthermore, mundane disguises that would normally require more than 1 minute to prepare may be created in 1 minute.</p>\n<p>This ability does not allow you to alter your physical body and cannot reproduce racial or supernatural features without appropriate equipment.</p>\n<p><em>Partly automated:</em> your Intelligence replaces Charisma on Disguise (Deception) checks, applied for you when it is higher. Preparing a disguise in 1 minute is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:False Face",
+      "itArtLevel": 1,
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "valueFrom": "intelligence-charisma",
+          "valueMin": 0,
+          "type": "untyped",
+          "label": "False Face",
+          "scope": "Disguise checks: Intelligence instead of Charisma",
+          "auto": true,
+          "when": {
+            "actions": [
+              "disguise"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!nUFzXeWRYPn4SiZn"
+}

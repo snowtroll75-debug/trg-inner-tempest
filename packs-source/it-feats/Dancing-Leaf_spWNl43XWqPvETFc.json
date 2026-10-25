@@ -1,0 +1,45 @@
+{
+  "_id": "spWNl43XWqPvETFc",
+  "name": "Dancing Leaf",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>DISCIPLE GHOSTWALKER</strong></p>\n<p>You possess the weightlessness of a fluttering leaf in the gentle breeze. When you succeed at a High Jump or Long Jump, increase the distance you jump by 5 feet. When calculating the damage you take from falling, don’t count any distance fallen while you are adjacent to a wall.</p>\n<p><em>Partly automated:</em> +5 feet is added to a High Jump or Long Jump you succeed at, on the card; falling while adjacent to a wall is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple, Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Disciple, Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!spWNl43XWqPvETFc"
+}

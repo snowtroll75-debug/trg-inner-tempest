@@ -1,0 +1,49 @@
+{
+  "_id": "SjGNDEdbPG6gBM3q",
+  "name": "Bounding Step",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Level 5",
+    "active": true,
+    "description": "<p><strong>FOCUS MOVE TECHNIQUE</strong> <strong>Action</strong> 2 AP</p>\n<p>You flood your body with controlled momentum, allowing you to leap impossible distances for 1 minute. You gain a Fly Speed equal to your Land Speed, but at the end of each of your turns you must be standing on a surface capable of supporting you or you fall.</p>\n<p><strong>GREATER MASTERY</strong> At 9th level, at the end of your turn you may attempt a DC 25 Acrobatics check to remain in the air. On a success, you do not fall that turn.</p>\n<p><em>Automated:</em> press Use: 2 AP and this use. You gain a Fly Speed equal to your land Speed for 1 minute; from 9th level the card reminds you of the DC 25 Acrobatics check. <em>Not automated:</em> end each turn on a surface (or, from 9th, roll that check) or use the Falling action.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Move, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "boundingStep"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SjGNDEdbPG6gBM3q"
+}

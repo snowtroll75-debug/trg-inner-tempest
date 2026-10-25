@@ -1,0 +1,49 @@
+{
+  "_id": "syGB5aAN9JpJMXDG",
+  "name": "Web Snare",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Joro Heritage, Silk Spinner, Level 5",
+    "active": true,
+    "description": "<p><strong>FOCUS SAVE SCREE TECHNIQUE</strong></p>\n<p><em>You eject a sudden mass of sticky silk, wrapping it around your victim before they have time to tear themselves free.</em></p>\n<p><strong>Prerequisites</strong> Joro Heritage, Silk Spinner, Level 5</p>\n<p><strong>Action</strong> 2 AP; <strong>Range</strong> 30 feet</p>\n<p><strong>Saving Throw</strong> Reflex against your Level DC</p>\n<p>You launch a mass of adhesive webbing at one creature within range.</p>\n<p><strong>Critical</strong> the target avoids the webbing and is unaffected.</p>\n<p><strong>Success</strong> the target takes a -5-foot circumstance penalty to Speed until the beginning of its next turn.</p>\n<p><strong>Partial</strong> the target takes a -10-foot circumstance penalty to Speed until the end of its next turn.</p>\n<p><strong>Failure</strong> the target becomes Immobilized. It may use the Escape action against your Level DC to free itself.</p>\n<p><strong>Fumble</strong> as Failure, but the target is also flat-footed while it remains Immobilized by your webbing.</p>\n<p>Only one creature can be Immobilized by your Web Snare at a time. If you successfully Immobilize another creature, any previous Web Snare immediately loses its restraining effect.</p>\n<p><em>Automated:</em> target one creature within 30 feet, then press Use: 2 AP and its Focus use. A Reflex save against your Level DC — −5 ft Speed for a round, −10 ft Speed for two rounds, or Immobilised with Escape against your Level DC (and flat-footed while it lasts, on a Fumble). Only one creature at a time: a new Immobilisation frees the last.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Save, Scree, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "webSnare"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!syGB5aAN9JpJMXDG"
+}

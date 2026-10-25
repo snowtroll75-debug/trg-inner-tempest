@@ -1,0 +1,86 @@
+{
+  "_id": "qiiXrHdU3wrzKjuO",
+  "name": "Transcendent",
+  "img": "icons/svg/sun.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Monastic Path",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are a Transcendent who approaches inner discipline through arcane principles. Meditation becomes a method of imposing order upon supernatural forces, allowing you to produce effects that resemble arcane magic through precise thought, movement and understanding.</p>\n<p>Your magical tradition is arcane, your magical ability score is Intelligence, and you gain Arcana as a class skill.</p>\n<p>Magical Tradition: arcane. Magical Ability Score: Intelligence. Arcana is used for Recall Knowledge and other checks concerning the path's arcane magic.</p>\n<p><em>Automated:</em> Arcana becomes a class skill. Innate spells your Mystic class and disciplines grant, and the magical techniques that name your Monastic Path, are cast as arcane with Intelligence; a technique that uses your Technique Save DC uses 10 + Intelligence + your level.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [
+    {
+      "_id": "Eoof76Hdx6xey01l",
+      "name": "Transcendent: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.arcana.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Arcana.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!qiiXrHdU3wrzKjuO.Eoof76Hdx6xey01l"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itPath": {
+        "tradition": "arcane",
+        "ability": "intelligence",
+        "skill": "Arcana"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qiiXrHdU3wrzKjuO"
+}

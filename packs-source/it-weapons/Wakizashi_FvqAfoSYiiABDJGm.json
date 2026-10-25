@@ -1,0 +1,52 @@
+{
+  "_id": "FvqAfoSYiiABDJGm",
+  "name": "Wakizashi",
+  "img": "systems/trg-prime/assets/weapons/katana.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 2,
+    "price": 150,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Deadly, Exotic, Finesse, Keen, Versatile P",
+    "description": "<p>These short, slender blades, measuring between 1 to 2 feet in length, serve various purposes. They are primarily utilized as backup weapons in combat, to perform the solemn act of decapitating defeated adversaries, or to carry out seppuku, a ritual form of suicide upheld as a matter of honour.</p>\n<p><em>Traits as printed:</em> Deadly, Finesse, Keen, Versatile P.</p>\n<p><em>Proficiency:</em> the Ghostwalker and the Oathblade treat it as a martial weapon (registered with their classes).</p>",
+    "attackBonus": 0,
+    "damage": "1d6",
+    "damageType": "piercing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 6,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Sword",
+    "category": "Exotic",
+    "size": "small",
+    "itemLevel": 1
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FvqAfoSYiiABDJGm"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "atfpHdQceIeGyQ2h",
+  "name": "Ghost Arts",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Ghostwalker 1st level",
+    "active": true,
+    "description": "<p>Ghostwalkers practise specialised techniques known collectively as Ghost Arts.</p>\n<p>At 1st level, select two Ghost Arts from those described below. You learn one additional Ghost Art at 4th level and then every 4 levels thereafter.</p>\n<p>Unless specifically stated otherwise, you may only select each Ghost Art once.</p>\n<p>A Ghost Art with the Focus trait becomes expended when used and must be restored individually using Refocus (Mental Focus). Refocusing one Ghost Art does not restore any other expended Ghost Art.</p>\n<p>Some Ghost Arts are explicitly magical. Such abilities use your Ghostwalker magical tradition and Wisdom as their magical ability score.</p>\n<p><em>Automated:</em> press Use to learn your Ghost Arts: two at 1st level, one more at 4th, 8th, 12th, 16th and 20th, and one more for each Extra Ghost Art. The picker lists the arts whose level you meet and that you do not know. Each arrives as its own ability; a Focus art has its own use, restored by its own Refocus.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Ghostwalker",
+        "level": 1
+      },
+      "itAutomation": "ghostArts"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!atfpHdQceIeGyQ2h"
+}

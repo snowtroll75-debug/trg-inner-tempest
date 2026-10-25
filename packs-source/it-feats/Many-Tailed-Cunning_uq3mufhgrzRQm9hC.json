@@ -1,0 +1,76 @@
+{
+  "_id": "uq3mufhgrzRQm9hC",
+  "name": "Many Tailed Cunning",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kitsune Heritage",
+    "active": true,
+    "description": "<p><strong>MIRAKU</strong></p>\n<p><em>Every new tail is said to represent a lesson learned, a secret kept or a truth understood. Your spiritual maturity has sharpened your ability to manipulate perception.</em></p>\n<p><strong>Prerequisites</strong> Kitsune Heritage</p>\n<p>Whenever you use Ghost Sound or Fluid Form as part of a deception, you gain a +2 racial bonus to the associated Bluff (Deception) check. Furthermore, when a creature successfully sees through one of your disguises or illusions, you gain a +2 racial bonus to your next Bluff (Deception) check against that creature before the end of the encounter.</p>\n<p><em>Partly automated:</em> two ticks on Bluff (Deception): +2 racial when you use Ghost Sound or Fluid Form as part of the deception, and +2 racial against a creature that saw through one of your disguises or illusions this encounter.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Miraku",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Many Tailed Cunning",
+          "scope": "You use Ghost Sound or Fluid Form as part of this deception — tick if so",
+          "auto": false,
+          "when": {
+            "actions": [
+              "bluff"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Many Tailed Cunning (seen through)",
+          "scope": "This creature saw through one of your disguises or illusions this encounter — tick if so",
+          "auto": false,
+          "when": {
+            "actions": [
+              "bluff"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!uq3mufhgrzRQm9hC"
+}

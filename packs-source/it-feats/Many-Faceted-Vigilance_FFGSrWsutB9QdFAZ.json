@@ -1,0 +1,84 @@
+{
+  "_id": "FFGSrWsutB9QdFAZ",
+  "name": "Many-Faceted Vigilance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Your compound eyes have developed extraordinary peripheral awareness, allowing very little movement to escape your attention.</em></p>\n<p>The racial bonus granted by your Compound Eyes ability to visual Perception checks increases from +1 to +2. Furthermore, you gain a +10 racial bonus to Initiative checks.</p>\n<p><em>Automated:</em> +10 racial to initiative, and Compound Eyes' own tick (visual Perception) becomes +2 instead of +1 while you have this feat; removing the feat puts it back.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "GxclyUg03Zk9ZVE8",
+      "name": "Many-Faceted Vigilance: Initiative +10",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.initiative.race",
+          "mode": 0,
+          "value": "10",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+10 racial bonus to Initiative checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!FFGSrWsutB9QdFAZ.GxclyUg03Zk9ZVE8"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FFGSrWsutB9QdFAZ"
+}

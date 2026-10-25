@@ -1,0 +1,60 @@
+{
+  "_id": "cWMROCa8v6FAuYuU",
+  "name": "Inner Discipline",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Wis 4, Mental Focus 10 ranks. Special: you must have trained with an appropriate mentor (GM discretion).",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong></p>\n<p>You have learned to centre body and mind to perform extraordinary techniques. You gain the following three basic techniques. Each is a separate ability with the Focus trait and is tracked and Refocused separately:</p>\n<p><strong>Disciplined Flurry</strong> - Reaction; Trigger you use Flurry of Blows. Make one additional attack at your highest Combat Bonus as part of the Flurry.</p>\n<p><strong>Burst Step</strong> - Reaction; Trigger you take an action with the Movement trait. Increase your Speed by 10 feet until the beginning of your next turn.</p>\n<p><strong>Guarded Centre</strong> - Reaction; Trigger you are targeted by an attack you are aware of. Gain a +4-dodge bonus to DB until the beginning of your next turn.</p>\n<p>You can also select feats with the Technique trait.</p>\n<p><em>Automated:</em> Disciplined Flurry, Burst Step and Guarded Centre are added to your sheet as separate Focus abilities. Feats with the Technique trait require this feat. Disciples and Mystics gain it at 1st level, waiving its prerequisites. The feat itself is not used: its techniques are, so it carries the Technique trait without a Focus use. It also opens Evade, Wall Run, Resist Dying and Steel the Mind (Chapter 4).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Disciplined Flurry, Burst Step, Guarded Centre",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "saveBonusReaction": {
+        "label": "Steel the Mind",
+        "skill": "mentalFocus",
+        "saves": [
+          "will"
+        ],
+        "traits": [
+          "emotion",
+          "mental"
+        ],
+        "type": "circumstance"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cWMROCa8v6FAuYuU"
+}

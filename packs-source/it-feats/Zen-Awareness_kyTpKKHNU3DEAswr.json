@@ -1,0 +1,104 @@
+{
+  "_id": "kyTpKKHNU3DEAswr",
+  "name": "Zen Awareness",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Perception 5 ranks",
+    "active": true,
+    "description": "<p><em>Your senses are attuned to the subtlest movements of the world, an ever-vigilant guardian in the realm of shadows.</em></p>\n<p><strong>Prerequisites</strong> Perception 5 ranks</p>\n<p>You have trained your senses to an extraordinary level. You gain advantage when attempting to locate hidden or invisible creatures. Furthermore, when a creature with the hidden or invisible condition makes a flat check to avoid an attack, the DC is increased by 1.</p>\n<p><em>Applied automatically:</em> a hidden or invisible creature's flat check to avoid your attacks is 1 harder. <em>Offered:</em> advantage on Search and Awareness checks — tick it when you are locating a hidden or invisible creature.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "pNRmUlSyxQTTHWna",
+      "name": "Zen Awareness: zen awareness",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "missCheckDCIncrease": {
+            "value": 1,
+            "conditions": [
+              "hidden",
+              "invisible"
+            ]
+          }
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "The flat check a hidden or invisible creature makes to avoid your attacks is 1 higher.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!kyTpKKHNU3DEAswr.pNRmUlSyxQTTHWna"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Zen Awareness",
+          "scope": "Checks to locate hidden or invisible creatures — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "actions": [
+              "search",
+              "awareness"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!kyTpKKHNU3DEAswr"
+}

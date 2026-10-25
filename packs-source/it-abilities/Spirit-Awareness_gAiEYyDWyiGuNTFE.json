@@ -1,0 +1,88 @@
+{
+  "_id": "gAiEYyDWyiGuNTFE",
+  "name": "Spirit Awareness",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Spirit Awareness:</strong> You gain a +1 racial bonus to Perception and Occultism checks made to notice, identify or understand spirits, haunts, possession and disturbances between the mortal and spirit worlds.</p>\n<p><em>Applied automatically</em> when the check is aimed at a creature with the Spirit or Haunt trait; otherwise offered as a tick in the roll dialog with the book's wording.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Spirit Awareness",
+          "scope": "Perception or Occultism checks aimed at a spirit or haunt",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "perception",
+              "occultism"
+            ],
+            "targetTraits": [
+              "spirit",
+              "haunt"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Spirit Awareness",
+          "scope": "Perception or Occultism checks to notice, identify or understand spirits, haunts, possession or disturbances between the mortal and spirit worlds — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "perception",
+              "occultism"
+            ],
+            "not": {
+              "targetTraits": [
+                "spirit",
+                "haunt"
+              ]
+            }
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gAiEYyDWyiGuNTFE"
+}

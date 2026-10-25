@@ -1,0 +1,69 @@
+{
+  "_id": "MzYjEFLQnHqoe98w",
+  "name": "Water Bolt",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "attack",
+    "level": 0,
+    "ppCost": 2,
+    "castAP": 2,
+    "range": "30 feet",
+    "area": "",
+    "targets": "1 creature",
+    "duration": "",
+    "defence": "",
+    "baseDamage": "1d4",
+    "damage": {
+      "formula": "4d4",
+      "type": "bludgeoning",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "note",
+        "text": "If the spell inflicts a critical injury with a severity of serious or greater, the target is also pushed back 5 feet — move its token (the push is the GM's to place)."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Attack, Invocation, Water",
+    "description": "<p><strong>ATTACK INVOCATION WATER</strong></p>\n<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. If the spell attack hits it inflicts 4d4 bludgeoning damage.</p>\n<p>If the spell inflicts a critical injury with a severity of serious or greater, the target is also pushed back 5 feet.</p>\n<p><em>Partly automated:</em> the spell attack and its 4d4 bludgeoning. The 5-foot push on a serious or deadly critical injury is named on the card and moved by hand. (Inner Tempest, Chapter 8; brought into Block 5 by Graham's ruling B5-1 for Elemental Power.)</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MzYjEFLQnHqoe98w"
+}

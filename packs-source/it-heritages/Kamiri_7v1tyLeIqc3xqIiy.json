@@ -1,0 +1,84 @@
+{
+  "_id": "7v1tyLeIqc3xqIiy",
+  "name": "Kamiri",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Kamiri are tall, narrow Scree with triangular heads, bright compound eyes and blade-like forearms. Their monasteries teach stillness, timing and the elimination of wasteful motion. Kamiri frequently become duellists, sword-masters and wandering judges.</p>\n<p>To a Kamiri, the perfect strike is not fast. It is simply made at the only moment in which it could succeed.</p>\n<p>You gain a +5 racial bonus to initiative checks and the Raptorial Blade natural attack:</p>\n<p><strong>Raptorial Blade</strong> – <strong>Dam</strong> 1d6 S; <strong>FDC</strong> 5; <strong>Traits</strong> Agile, Finesse, AR 1</p>\n<p><em>Granted:</em> a +5 racial bonus to Initiative, and the Raptorial Blade natural attack as a weapon.</p>",
+    "sourceRace": "Scree",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "Raptorial Blade",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "pYIKGiPf3oDEjoyK",
+      "name": "Kamiri: Initiative +5",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.initiative.race",
+          "mode": 0,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+5 racial bonus to Initiative checks.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!7v1tyLeIqc3xqIiy.pYIKGiPf3oDEjoyK"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7v1tyLeIqc3xqIiy"
+}

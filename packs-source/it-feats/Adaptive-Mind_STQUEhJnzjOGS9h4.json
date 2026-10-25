@@ -1,0 +1,59 @@
+{
+  "_id": "STQUEhJnzjOGS9h4",
+  "name": "Adaptive Mind",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>HUMAN</strong></p>\n<p><em>Humans are renowned for their adaptability and quick thinking.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline</p>\n<p>When you use a conviction point to reroll a Mental Focus skill check, you only expend it if the result of the check is a success or better.</p>\n<p><em>Automated:</em> when a conviction point buys Advantage on a Mental Focus check and the result is a Success or better, the point is given back and does not count as this round's spend; the card says so. The core's conviction has no reroll, so this reads it as conviction's Advantage (Graham's ruling B5-3). A DC set after the roll is read when it arrives.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Human",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Human",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "convictionRefund": {
+        "skills": [
+          "mentalFocus"
+        ],
+        "degrees": [
+          "success",
+          "critical",
+          "heroic"
+        ],
+        "label": "Adaptive Mind"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!STQUEhJnzjOGS9h4"
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "OYGJQ9Ley5ri2hEi",
+  "name": "Primal",
+  "img": "icons/svg/sun.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Monastic Path",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You embrace the path of the Primal, forging a disciplined connection with the living world. Your practices echo the rhythms of element, plant and creature, allowing supernatural abilities to manifest as expressions of natural balance rather than as a separate reserve of power.</p>\n<p>Your magical tradition is verdant, your magical ability score is Constitution, and you gain Nature as a class skill.</p>\n<p>Magical Tradition: verdant. Magical Ability Score: Constitution. Nature is used for Recall Knowledge and other checks concerning the path's verdant magic.</p>\n<p><em>Automated:</em> Nature becomes a class skill. Innate spells your Mystic class and disciplines grant, and the magical techniques that name your Monastic Path, are cast as verdant with Constitution; a technique that uses your Technique Save DC uses 10 + Constitution + your level.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [
+    {
+      "_id": "whiIEgHSBByqZV2U",
+      "name": "Primal: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.nature.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Nature.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!OYGJQ9Ley5ri2hEi.whiIEgHSBByqZV2U"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itPath": {
+        "tradition": "verdant",
+        "ability": "constitution",
+        "skill": "Nature"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!OYGJQ9Ley5ri2hEi"
+}

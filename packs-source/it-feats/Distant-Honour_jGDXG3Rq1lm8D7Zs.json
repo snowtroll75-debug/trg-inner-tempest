@@ -1,0 +1,45 @@
+{
+  "_id": "jGDXG3Rq1lm8D7Zs",
+  "name": "Distant Honour",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 5",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 5</p>\n<p>Your concept of formal combat does not demand that every contest be settled within reach of a blade. You have learned to bring the same unwavering purpose to the bow.</p>\n<p>The attack, damage and AR benefits granted by your Challenge also apply to attacks made with bow weapons against your challenged target within the weapon's first range increment.</p>\n<p>Your Challenge otherwise functions normally, including its penalty to DB against other creatures.</p>\n<p><em>Automated:</em> your Challenge's attack, damage and Armour Rending also apply to bow attacks against the target within the first range increment.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!jGDXG3Rq1lm8D7Zs"
+}

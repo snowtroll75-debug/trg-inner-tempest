@@ -1,0 +1,45 @@
+{
+  "_id": "SDLHd3GDVmxj5A3G",
+  "name": "Solitary Supremacy",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10, Oath of Honour",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 10, Oath of Honour</p>\n<p>You recognise no second combatant once a true duel has begun.</p>\n<p>While you are receiving the benefits of Oath of Honour, your challenged target cannot gain bonuses to its DB against your attacks from Aid, reactions or abilities originating from its allies.</p>\n<p>Likewise, its allies cannot impose penalties upon your attack checks against the challenged target through Aid or similar assistance.</p>\n<p>This does not suppress effects already inherent to the target itself, nor does it prevent another creature from directly attacking, moving or otherwise acting.</p>\n<p>If your own allies interfere with the duel, your Oath of Honour is suppressed normally.</p>\n<p><em>Not automated:</em> the system does not know which DB bonuses come from the target's allies; the card reminds you.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SDLHd3GDVmxj5A3G"
+}

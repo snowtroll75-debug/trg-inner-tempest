@@ -1,0 +1,82 @@
+{
+  "_id": "HhfRYN2tTazfbkJs",
+  "name": "Serene Defence",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "divinity, ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 10,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "Sustained (1 minute)",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "self",
+        "label": "Serene Defence",
+        "noStack": true,
+        "flags": {
+          "statBonuses": [
+            {
+              "target": "defence",
+              "type": "dodge",
+              "ability": "wisdom",
+              "label": "Serene Defence"
+            }
+          ]
+        },
+        "text": "your Wisdom as a dodge bonus to your DB while you sustain it"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": true,
+    "sustainType": "sustain",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Stance, Warding",
+    "description": "<p>You enter a serene defensive stance, adding your Wisdom ability score as a dodge bonus to your DB for as long as you sustain the spell.</p>\n<p><em>Automated:</em> your Wisdom is added to your DB as a dodge bonus while the spell lasts.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HhfRYN2tTazfbkJs"
+}

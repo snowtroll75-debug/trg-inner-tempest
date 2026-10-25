@@ -1,0 +1,53 @@
+{
+  "_id": "uPEB0wwElMHLwlT6",
+  "name": "Starborn Flow",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><em>You are a current in the great cosmos—shifting, shimmering, sublime.</em></p>\n<p>To follow the Starborn Flow is to accept that you are part of something greater—something eternal. Mystics of this discipline surrender to the currents of fate, time, and energy that pulse through all existence. Their focus does not resist the tides of reality but rides them, allowing sudden movement, intuitive insight, and improbable escapes.</p>\n<p>Starborn Mystics move with eerie timing, often acting just before a threat appears or just after a path opens. Their powers evoke the celestial and strange ribbons of light, pulses of gravity, bends in time. They see the patterns that others miss and move with the grace of starlight through darkness.</p>\n<p><strong>SPECIAL ABILITY</strong> You gain the Echoes Beyond special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> You gain the following spells at the indicated Mystic level as innate spells with the Focus trait. These spells are in addition to any spells that you select with your class picks and don't count towards your total spells known.</p>\n<table><thead><tr><th>Mystic Level</th><th>Spells (Base PP)</th></tr></thead><tbody><tr><td>1st</td><td>Burst of Speed* (0), True Strike (2)</td></tr><tr><td>3rd</td><td>Air Step* (4)</td></tr><tr><td>5th</td><td>Misty Step (6)</td></tr><tr><td>7th</td><td>Timeless Motion* (8)</td></tr><tr><td>9th</td><td>Shadow Walk (10)</td></tr><tr><td>11th</td><td>Teleport (12)</td></tr><tr><td>13th</td><td>Elude Time (14)</td></tr><tr><td>15th</td><td>Moment of Renewal (16)</td></tr></tbody></table>\n<p><em>Automated:</em> Echoes Beyond is added to your sheet. Each spell arrives as an innate spell with the Focus trait when you reach its level, cast with your Monastic Path's tradition and ability. Each may be cast up to base PP = your level + 1, so it is usable from the level that grants it (Graham's ruling B3-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "1: Burst of Speed, 1: True Strike, 3: Air Step, 5: Misty Step, 7: Timeless Motion, 9: Shadow Walk, 11: Teleport, 13: Elude Time, 15: Moment Of Renewal",
+    "grantedAbilities": "Echoes Beyond",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!uPEB0wwElMHLwlT6"
+}

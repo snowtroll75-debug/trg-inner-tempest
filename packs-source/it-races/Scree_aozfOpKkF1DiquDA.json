@@ -1,0 +1,145 @@
+{
+  "_id": "aozfOpKkF1DiquDA",
+  "name": "Scree",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Race",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><em>The Scree are an ancient insectoid people whose civilisation was built according to the patient, merciless order of the swarm. Their lacquered carapaces, multifaceted eyes and segmented limbs vary dramatically between bloodlines, producing warriors plated like beetles, silent silk-weavers, mantis duellists, winged hunters and luminous spirit-speakers. To outsiders, the Scree can appear cold or inscrutable, yet beneath their alien forms lies a culture founded upon duty, ancestry and the belief that every individual has a place within the greater whole. Their stone hives, forest shrines and subterranean cities are marvels of communal craft, shaped over generations by countless hands working toward a single purpose. A Scree who leaves the swarm is never truly alone, for the voices of kin and ancestors remain with them like the ceaseless whisper of wings.</em></p>\n<p>The Scree are an insectoid people whose bodies and traditions are shaped by the Five Swarms. Their communities are often called hives by outsiders, but a Scree settlement is not a mindless colony. Every Scree possesses an individual will, personal ambitions and a private name. What distinguishes them is the certainty that individual survival is inseparable from the health of the whole.</p>\n<p>Scree culture values work that remains useful after the worker is gone. A well-laid road, an accurate archive, a defended border or a woven shroud can all be sacred acts. Status is earned through service and competence rather than inherited wealth, though the oldest hives can become rigidly stratified by function.</p>\n<p>Their appearance makes many surface peoples uneasy. Scree faces are formed from plates, mandibles and compound eyes; their voices mix spoken words with clicks, wing vibrations and minute changes in scent. Nonetheless, Scree merchants and artisans are common wherever neighbours learn to judge them by conduct rather than shape.</p>\n<p>Scree loyalties usually begin with hive, brood or sworn company, but exile is not unknown. A Scree adventurer may be a scout seeking new territory, a worker discharged from a completed duty, a pilgrim following ancestral migration routes or an outcast attempting to build a new swarm of their own.</p>\n<p><strong>DESCRIPTION</strong></p>\n<p>Scree are upright insectoid humanoids who stand between 5 and 7 feet tall. Their weight varies enormously by heritage, from the slender Kamiri to the massively plated Kabuto. All possess a segmented exoskeleton, compound or multi-faceted eyes and at least one pair of manipulating hands. Wings, spinnerets, stingers and vestigial limbs are heritage dependent.</p>\n<p>Scree mature quickly, reaching adulthood at around 10 years of age, and most live between 70 and 100 years. A starting Scree character has an initial age of 9+1d6 years.</p>\n<p><strong>RACIAL MECHANICS</strong></p>\n<p><strong>Ability Modifiers</strong> Dex +1, Con +1, Int +1, Cha -1; <strong>Size:</strong> Medium; <strong>Speed:</strong> 30 feet <strong>Power Points:</strong> 0</p>\n<p><strong>LANGUAGES</strong></p>\n<p><strong>Core Languages:</strong> Low Tongue, Scree Cant <strong>Additional Languages:</strong> Choose from any common or regional language.</p>\n<p><strong>SPECIALIST SKILLS</strong></p>\n<p>You gain Scree Lore and Insect Lore as specialist skills.</p>\n<p><strong>OTHER ABILITIES</strong></p>\n<p><strong>Chitinous Carapace:</strong> Your exoskeleton grants you Base DR of 2.</p>\n<p><strong>Compound Eyes:</strong> You gain a +1 racial bonus to all visual Perception checks.</p>\n<p><strong>SCREE CANT</strong></p>\n<p>Scree Cant is an uncommon language that combines audible clicks with posture, wing vibration and scent. Non-Scree can learn its spoken trade form normally but cannot reproduce its silent or pheromonal nuances without magic or specialised equipment.</p>\n<p><strong>AGE</strong> (Appendix, Racial Age Categories)</p>\n<p>Adult 10; Middle Aged 35–50, Old 49–70, Venerable 60–85 (by Natural Lifespan); Natural Lifespan 70–100 years.</p>\n<p><em>Granted when the race is added:</em> Chitinous Carapace (Base DR 2) and Compound Eyes as ability items; Scree Lore and Insect Lore as specialist skills. Scree Cant is an uncommon language in the language manager.</p>",
+    "abilityModifiers": "Dex +1, Con +1, Int +1, Cha -1",
+    "maximumSize": "",
+    "languages": "Core: Low Tongue, Scree Cant. Additional: common, regional.",
+    "coreLanguages": "Low Tongue, Scree Cant",
+    "additionalLanguages": "common, regional",
+    "languageChoices": "",
+    "grantedFeats": "",
+    "racialAbilities": "Chitinous Carapace, Compound Eyes",
+    "grantedWeapons": "",
+    "grantedSpells": "",
+    "specialistSkills": "Scree Lore, Insect Lore"
+  },
+  "effects": [
+    {
+      "_id": "BGImZkofCxjRHpsh",
+      "name": "Scree: ability modifiers",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.intelligence.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "-1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Dex +1, Con +1, Int +1, Cha -1",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!aozfOpKkF1DiquDA.BGImZkofCxjRHpsh"
+    },
+    {
+      "_id": "lPShdkOQmiNvQeW1",
+      "name": "Scree: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "medium",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Medium size and a base land speed of 30 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!aozfOpKkF1DiquDA.lPShdkOQmiNvQeW1"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!aozfOpKkF1DiquDA"
+}

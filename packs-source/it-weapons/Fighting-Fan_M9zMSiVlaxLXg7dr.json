@@ -1,0 +1,52 @@
+{
+  "_id": "M9zMSiVlaxLXg7dr",
+  "name": "Fighting Fan",
+  "img": "systems/trg-prime/assets/weapons/main-gauche.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Agile, Deadly, Finesse, Monastic, Uncommon",
+    "description": "<p>Designed to mimic the elegance of a courtier's fan, this contraption is crafted from silk paper delicately stretched and folded over a folding frame constructed from hardened steel. Martial artists wield folding fans in pairs, employing a technique that expertly distracts opponents. These fans are equipped with razor-sharp tips, which can be potentially poisoned for added lethality.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>",
+    "attackBonus": 0,
+    "damage": "1d4",
+    "damageType": "slashing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 6,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Knife",
+    "category": "Martial",
+    "size": "small",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!M9zMSiVlaxLXg7dr"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "FEGd0KYY18QYpHvm",
+  "name": "Deflect Arrow",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Dex 2",
+    "active": true,
+    "description": "<p><strong>DISCIPLE KENSAI OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Dex 2</p>\n<p><strong>Requirements</strong> You’re aware of the attack, are not flat-footed against it, and have a hand free.</p>\n<p><strong>Action</strong> Free; <strong>Trigger</strong> You are the target of a physical ranged attack and take the Evade Action to avoid it.</p>\n<p>You gain a +4-circumstance bonus to DB against the triggering attack. If the attack misses, you have deflected it. You cannot use this feat to deflect unusually massive, ranged projectiles (such as boulders or ballista bolts).</p>\n<p><em>Automated:</em> when you take Evade against a ranged attack with a hand free, you are asked whether to add Deflect Arrow: +4 circumstance to your DB against that attack. Free; not against massive projectiles (the GM's).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple, Kensai, Oathblade",
+    "sourceArchetype": "",
+    "traits": "Disciple, Kensai, Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "deflectArrow"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FEGd0KYY18QYpHvm"
+}

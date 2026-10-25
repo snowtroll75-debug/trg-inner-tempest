@@ -1,0 +1,45 @@
+{
+  "_id": "6PR8uGoKldk5CETD",
+  "name": "Extra Form",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 3",
+    "active": true,
+    "description": "<p><strong>KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 3</p>\n<p>You unlock an additional combat form beyond your normal progression.</p>\n<p>You may take this feat multiple times, but never more than once every 3 levels.</p>\n<p><em>Automated:</em> one more form to learn through Combat Form's Use. Once per 3 levels.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Kensai",
+    "repeatable": true,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6PR8uGoKldk5CETD"
+}

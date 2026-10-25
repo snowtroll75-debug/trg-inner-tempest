@@ -1,0 +1,122 @@
+{
+  "_id": "fsPJNdSH0q6tbEap",
+  "name": "Orochi",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Orochi are smooth-skinned or finely scaled Miraku with slit pupils, flexible joints and voices that carry an almost musical cadence. They favour misty marshes, river ports and hidden islands, and are known as navigators, brokers, herbalists and assassins.</p>\n<p>Orochi philosophy values restraint. A patient coil, they say, is stronger than a reckless strike.</p>\n<p>You have resistance to poison and gain a swim speed of 15’.</p>\n<p><em>Applied automatically:</em> resistance to poison and a swim Speed of 15 feet.</p>",
+    "sourceRace": "Miraku",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "fTnHPG2EuoT7JlFD",
+      "name": "Orochi: resistances",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.resistances",
+          "mode": 2,
+          "value": ", poison",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Resistance to poison.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fsPJNdSH0q6tbEap.fTnHPG2EuoT7JlFD"
+    },
+    {
+      "_id": "PnEom1OlfOdXOisG",
+      "name": "Orochi: Swim 15 ft",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.swim.base",
+          "mode": 4,
+          "value": "15",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "A swim Speed of 15 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fsPJNdSH0q6tbEap.PnEom1OlfOdXOisG"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fsPJNdSH0q6tbEap"
+}

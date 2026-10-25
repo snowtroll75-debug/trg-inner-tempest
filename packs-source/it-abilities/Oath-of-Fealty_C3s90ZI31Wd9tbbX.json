@@ -1,0 +1,43 @@
+{
+  "_id": "C3s90ZI31Wd9tbbX",
+  "name": "Oath of Fealty",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Sworn Oath",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your oath is not an abstract ideal. It is sworn to another, and their enemies become your enemies.</p>\n<p>During your daily preparation, designate one willing ally as your Sworn Charge. You may change your Sworn Charge during a later daily preparation.</p>\n<p>While your Sworn Charge is conscious and within 30 feet of you, the following benefits apply against your challenged target:</p>\n<ul><li>Your Sworn Charge gains a +1-circumstance bonus to attack checks against your challenged target.</li><li>Your Sworn Charge's attacks against your challenged target gain AR 1.</li><li>Whenever your Sworn Charge successfully damages your challenged target, your next melee Strike against that creature before the end of your next turn gains a +2-circumstance bonus to AB.</li><li>Whenever you successfully damage your challenged target, your Sworn Charge gains the same +2 circumstance bonus to their next attack against that creature before the end of their next turn.</li></ul>\n<p>Only one of these +2 bonuses can be pending for either character at a time.</p>\n<p><em>Automated:</em> at daily preparation you are asked for your Sworn Charge. While your Challenge is up and the charge is within 30 feet, the charge has +1 circumstance and AR 1 against the target; when either of you damages the target, the other's next attack on it before the end of their next turn has +2 circumstance (one at a time each).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itOath": "Oath of Fealty"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!C3s90ZI31Wd9tbbX"
+}

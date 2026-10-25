@@ -1,0 +1,53 @@
+{
+  "_id": "WuzXLDQGchqcvStn",
+  "name": "Still Mind",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><em>Peace is power, and in stillness, you strike true.</em></p>\n<p>Where others rush toward conflict, the Mystic of the Still Mind stands unmoved. This discipline teaches that true power comes not from the clash of bodies, but from the clarity between moments. By silencing the noise within, the Mystic hears the world more clearly anticipating attacks, resisting corruption, and acting with precise intent.</p>\n<p>Practitioners of the Still Mind are masters of inner balance. They channel their focus to deflect distraction, purify emotion, and focus completely on the now. When chaos reigns around them, they remain serene. When others falter, they strike—cleanly, without hesitation.</p>\n<p><strong>SPECIAL ABILITY</strong> You gain the Centred Awareness special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> You gain the following spells at the indicated Mystic level as innate spells with the Focus trait. These spells are in addition to any spells that you select with your class picks and don't count towards your total spells known.</p>\n<table><thead><tr><th>Mystic Level</th><th>Spells (Base PP)</th></tr></thead><tbody><tr><td>1st</td><td>Guidance (0), Anticipate Attack (2)</td></tr><tr><td>3rd</td><td>Reflective Mind* (4)</td></tr><tr><td>5th</td><td>Stun Relief (6)</td></tr><tr><td>7th</td><td>Nondetection (8)</td></tr><tr><td>9th</td><td>Serene Defence* (10)</td></tr><tr><td>11th</td><td>Shared Will (12)</td></tr><tr><td>13th</td><td>Spell Turning (14)</td></tr><tr><td>15th</td><td>Mind Blank (16)</td></tr></tbody></table>\n<p><em>Automated:</em> Centred Awareness is added to your sheet. Each spell arrives as an innate spell with the Focus trait when you reach its level, cast with your Monastic Path's tradition and ability. Each may be cast up to base PP = your level + 1, so it is usable from the level that grants it (Graham's ruling B3-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "1: Guidance, 1: Anticipate Attack, 3: Reflective Mind, 5: Stun Relief, 7: Nondetection, 9: Serene Defence, 11: Shared Will, 13: Spell Turning, 15: Mind Blank",
+    "grantedAbilities": "Centred Awareness",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!WuzXLDQGchqcvStn"
+}

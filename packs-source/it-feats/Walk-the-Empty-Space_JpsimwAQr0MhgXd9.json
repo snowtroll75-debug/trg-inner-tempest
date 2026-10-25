@@ -1,0 +1,45 @@
+{
+  "_id": "JpsimwAQr0MhgXd9",
+  "name": "Walk the Empty Space",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 15, Between Glances",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><strong>Prerequisites</strong> Level 15, Between Glances</p>\n<p>Your understanding of attention has become extraordinary. You no longer move merely through shadows, but through those places where nobody happens to be looking.</p>\n<p>When using Between Glances, you may cross up to 40 feet of open ground rather than 20 feet without automatically becoming observed. You must still begin and end the movement somewhere that would normally allow you to Sneak and must succeed at the normal Stealth check.</p>\n<p><em>Not automated:</em> as Between Glances, 40 feet; what observers notice is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!JpsimwAQr0MhgXd9"
+}

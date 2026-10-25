@@ -1,0 +1,58 @@
+{
+  "_id": "mGO3rOYH5F3IC3Fh",
+  "name": "Hoardkeeper's Eye",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Fuku Heritage",
+    "active": true,
+    "description": "<p><strong>RYUKARI</strong></p>\n<p><em>Your awareness of precious metals has developed beyond vague attraction into the exacting perception expected of the ancient hoard-keepers.</em></p>\n<p><strong>Prerequisites</strong> Fuku Heritage</p>\n<p>The range of your Treasure Sense increases from 30 feet to 60 feet. Furthermore, when a source of precious metal is within 10 feet, you can determine its exact location and distinguish between different types of precious metal that you can sense.</p>\n<p>You can also determine whether the source consists principally of a single object or a collection of separate objects. The normal materials that block Treasure Sense continue to do so.</p>\n<p><em>Partly automated:</em> Treasure Sense's range is 60 feet on your sheet. What it finds within 10 feet is the GM's to say.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ryukari",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "derives": {
+          "sense": {
+            "category": "tertiary",
+            "fixedFeet": 60,
+            "name": "Treasure Sense (Hoardkeeper's Eye)",
+            "note": "Precious metals within 60 feet: presence and direction; within 10 feet, exact location and type, and whether one object or several (Hoardkeeper's Eye)."
+          }
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mGO3rOYH5F3IC3Fh"
+}

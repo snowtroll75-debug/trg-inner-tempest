@@ -1,0 +1,104 @@
+{
+  "_id": "ko5RyVX2w82lGgTY",
+  "name": "Spirit Warrior",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your path is that of a spiritual warrior, blending martial prowess with the wisdom of ancient spirits. Raised in a monastery where combat and meditation coexist, you've learned to harness the power of spirits to enhance your physical abilities. Your life is a harmonious dance of combat forms and spiritual communion.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Spirit Stance</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Athletics, Meditation, Religion</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Spirits) (on your sheet as Spirit Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>0</p><p><em>Automated:</em> if your race already gives you Spirit Lore (a Miraku does), Apply Grants says so and this background's <strong>Use</strong> asks you to name another Lore instead (Graham's ruling, 21 October 2026).</p>",
+    "grantedFeats": "Spirit Stance",
+    "grantedSpells": "",
+    "skillBonuses": "Athletics, Meditation, Religion",
+    "specialistSkill": "Spirit Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "0"
+  },
+  "effects": [
+    {
+      "_id": "ebwyYQdBPe5DYQH3",
+      "name": "Spirit Warrior: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.athletics.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.meditation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.religion.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Athletics, Meditation, Religion.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!ko5RyVX2w82lGgTY.ebwyYQdBPe5DYQH3"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Spirit Lore",
+      "specialistAlternative": {
+        "label": "another Lore",
+        "prompt": "Your race already gives you Spirit Lore — name another Lore for this background",
+        "placeholder": "e.g. Ancestor Lore",
+        "suffix": "Lore"
+      },
+      "itAutomation": "loreAlternative"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ko5RyVX2w82lGgTY"
+}

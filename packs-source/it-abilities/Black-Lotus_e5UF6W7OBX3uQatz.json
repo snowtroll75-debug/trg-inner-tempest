@@ -1,0 +1,73 @@
+{
+  "_id": "e5UF6W7OBX3uQatz",
+  "name": "Black Lotus",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Graceful, poised, and lethal—this form draws from meditative precision and concealed power. When the lotus blooms, it is already too late.</p>\n<p>You conceal your true strength until the moment of impact. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Once per round, may delay your damage and critical rolls until the start of the enemy’s turn.</li><li>You may add your Int mod to all Feint (Deception) checks.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). the Feint bonus is applied for you. Once per round, press Black Lotus's Use while in the form to Strike holding the blow: on a hit nothing is rolled yet, and at the start of the target's turn a card offers Land the blow, which rolls the critical and the damage (Graham's ruling of 23 October). What the Strike alone adds (riders, precision dice, Armour Rending) is not carried. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "Delay damage and critical",
+            "flags": {
+              "itBlackLotus": true
+            }
+          },
+          {
+            "label": "+Int to Feint",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence",
+                  "label": "Black Lotus",
+                  "scope": "Feint (Deception) checks",
+                  "when": {
+                    "actions": [
+                      "feint"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!e5UF6W7OBX3uQatz"
+}

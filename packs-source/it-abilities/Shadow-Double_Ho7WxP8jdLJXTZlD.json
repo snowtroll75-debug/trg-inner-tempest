@@ -1,0 +1,44 @@
+{
+  "_id": "Ho7WxP8jdLJXTZlD",
+  "name": "Shadow Double",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 8; <strong>Action</strong> R; <strong>Trigger</strong> you are targeted by an attack that you are aware of.</p>\n<p>For a fraction of a moment, your shadow separates from you and moves in another direction, leaving your attacker uncertain which figure is real.</p>\n<p>You gain the concealed condition against the triggering attack.</p>\n<p>If the attack fails to damage you, you may immediately Step 5 feet. This movement does not trigger reactions.</p>\n<p>You remain concealed until the beginning of your next turn or until you make an attack or perform another hostile action.</p>\n<p>This Ghost Art is magical.</p>\n<p><em>Automated:</em> when an attack targets you, you are asked before it is rolled. A yes spends your reaction and this art's use and makes you Concealed until the start of your next turn; Step 5 feet by hand if it does not damage you. Magical (your Ghostwalker tradition).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Shadow, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Shadow Double",
+      "itArtLevel": 8
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Ho7WxP8jdLJXTZlD"
+}

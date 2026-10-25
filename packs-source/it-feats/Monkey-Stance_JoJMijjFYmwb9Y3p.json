@@ -1,0 +1,49 @@
+{
+  "_id": "JoJMijjFYmwb9Y3p",
+  "name": "Monkey Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p>You adopt the Monkey Stance, a martial technique inspired by the agility and adaptability of monkeys. Whilst in this stance you gain a +2-circumstance bonus to Acrobatics and Climbing checks. Furthermore, you gain a +2-circumstance bonus to all attempts to High Jump or Long Jump (Athletics) and take no penalty for using these actions for 1 AP.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it: +2 circumstance to Acrobatics and Climbing checks and to High Jump and Long Jump checks, and a High Jump or Long Jump for 1 AP carries no +2 to its DC (Graham's B6-5).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "monkeyStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!JoJMijjFYmwb9Y3p"
+}

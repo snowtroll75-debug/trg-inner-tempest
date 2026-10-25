@@ -1,0 +1,50 @@
+{
+  "_id": "bm2HiW0j3BUsYIIA",
+  "name": "Oathblade's Resolve",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Oathblade 1st level",
+    "active": true,
+    "description": "<p>Your certainty gives you reserves of determination that others struggle to match. You may increase your conviction pool and conviction points by 1.</p>\n<p><em>Automated:</em> +1 to your conviction pool and points.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Oathblade",
+        "level": 1
+      },
+      "convictionPool": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bm2HiW0j3BUsYIIA"
+}

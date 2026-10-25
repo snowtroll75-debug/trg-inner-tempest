@@ -1,0 +1,84 @@
+{
+  "_id": "A70FSUO2ONmzDx9X",
+  "name": "Forgeheart",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Zenki Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>RYUKARI</strong></p>\n<p><em>The heat within your body has intensified until ordinary flame feels little different from the warmth of a forge.</em></p>\n<p><strong>Prerequisites</strong> Zenki Heritage, Level 5</p>\n<p>You gain resistance to fire. Furthermore, the racial bonus granted by your Zenki heritage to Crafting checks involving metal, stone or a forge increases from +1 to +2.</p>\n<p><em>Automated:</em> resistance to fire, and the Zenki heritage's own Crafting tick (metal, stone or a forge) becomes +2 instead of +1 while you have this feat; removing the feat puts it back.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ryukari",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "aeJHVXY5hysxuTR7",
+      "name": "Forgeheart: resistances",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.resistances",
+          "mode": 2,
+          "value": ", fire",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Resistance to fire.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!A70FSUO2ONmzDx9X.aeJHVXY5hysxuTR7"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!A70FSUO2ONmzDx9X"
+}

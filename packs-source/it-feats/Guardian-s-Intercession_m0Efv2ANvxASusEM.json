@@ -1,0 +1,49 @@
+{
+  "_id": "m0Efv2ANvxASusEM",
+  "name": "Guardian's Intercession",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mujina Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>DEFENCE FOCUS MIRAKU MOVEMENT TECHNIQUE</strong></p>\n<p><em>The Bear does not endure hardship merely for itself. You have learned to place your strength between danger and those under your protection.</em></p>\n<p><strong>Prerequisites</strong> Mujina Heritage, Level 5</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> an adjacent ally is targeted by a physical attack that you are aware of.</p>\n<p><strong>Requirements</strong> you are able to move</p>\n<p>You Step into a position adjacent to the ally if necessary and interpose yourself between them and the attack. You become the target of the triggering attack instead. You gain a +1-circumstance bonus to DB and Base DR against the triggering attack.</p>\n<p><em>Automated:</em> when a physical attack you can see targets an ally adjacent to you, you are asked once the attack is committed and before it is rolled (not while you are immobilised, grabbed, paralysed, petrified or unconscious): a yes spends your reaction and its Focus use, makes you the target in the ally's place, and gives you +1 circumstance to DB and +1 Base DR against that attack. Step beside the ally by hand if you need to.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Defence, Focus, Miraku, Movement, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "guardiansIntercession"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!m0Efv2ANvxASusEM"
+}

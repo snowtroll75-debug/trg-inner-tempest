@@ -1,0 +1,87 @@
+{
+ "Evade": {
+  "skill": "Acrobatics",
+  "traits": "Defence",
+  "text": "**Action** Reaction\n\n**Trigger** You are targeted by an attack that you are aware of.\n\n**Requirements** You have the Inner Discipline feat.\n\nYour honed reflexes and purpose of mind allows you to react to attacks quickly and efficiently. When attacked you may make an evade check against your Level DC and compare the result to the Bonus Check table (CRB pg. 63). Any positive result is added as Dodge bonus to your DB against the attack.\n\nBe aware that negative results on the Bonus Check table are treated as 0."
+ },
+ "Interpret Style": {
+  "skill": "Artistry",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 3 AP\n\n**Target** a creature you saw attack or move while in a stance since your last turn.\n\nYou make a check against the targets Level DC and compare the results to the Bonus Check table (CRB pg. 63). Any positive result is divided by 2 (round up) and added as circumstance bonus to both your AB and DB against the target whilst they are using the stance (or until the battle ends).\n\nBe aware that you may only have one instance of this action in use at any one time. If you use the action again, any previous bonuses are lost immediately."
+ },
+ "Root the Body": {
+  "skill": "Athletics",
+  "traits": "Defence",
+  "text": "**Action** R; **Trigger** you are required to make a check or saving throw to avoid being knocked prone or moved against your will by a physical effect.\n\n**Requirements** you are standing upon a surface capable of supporting you and are not immobilised\n\nYou lower your centre of gravity, brace your stance and redirect the incoming force through the ground. Make an Athletics check against your Level DC and compare the result to the Bonus Check table. Any positive result is added as a circumstance bonus to the triggering check or saving throw.\n\nNegative results on the Bonus Check table are treated as 0.\n\nBe aware that Root the Body cannot be used against teleportation or other effects that relocate you without physically moving you."
+ },
+ "Wall Run": {
+  "skill": "Climbing",
+  "traits": "Flourish Movement",
+  "text": "**Action** 1 AP\n\n**Requirements** you have the Inner Discipline feat; you begin your movement adjacent to a solid vertical surface\n\nYou attempt to run along or briefly ascend a wall without climbing it normally. Make a Climbing check against the normal Climb DC of the surface.\n\n**Critical** You may move along the surface up to your Speed.\n\n**Success** You may move along the surface up to half your Speed.\n\n**Partial** You may move up to 10 feet along the surface.\n\n**Failure** You fail to gain sufficient momentum and do not move.\n\n**Fumble** You lose your footing and fall prone in your starting space.\n\nYou do not require a free hand while using Wall Run. Your movement must end upon a surface capable of supporting you. If it does not, you fall normally.\n\nBe aware that Wall Run does not allow you to remain standing upon a vertical surface after the action ends."
+ },
+ "Recognise Discipline": {
+  "skill": "Culture",
+  "traits": "Concentrate",
+  "text": "**Action** 1 AP\n\n**Target** one creature that you can observe using a stance, Combat Form or martial technique, or physical evidence left by such a creature\n\nYou attempt to identify the martial tradition, school or discipline represented by the target. Make a Culture check against the target's Level DC. When examining tracks, damage, training equipment or similar evidence, the GM determines the Level DC of the creature responsible.\n\n**Critical** You identify the exact stance, Combat Form, monastic school or recognisable discipline being used, where such information is reasonably available. You also learn one relevant piece of information about its philosophy, customary tactics or origin.\n\n**Success** You identify the general martial tradition and its likely culture, region or philosophical origin.\n\n**Partial** You identify whether the technique belongs to a formal martial tradition and broadly what sort of tradition it represents.\n\n**Failure** You cannot determine anything useful.\n\n**Fumble** You cannot attempt to Recognise Discipline against this creature or evidence again for 10 minutes.\n\nBe aware that Recognise Discipline does not provide the combat bonuses granted by Interpret Style (Artistry)."
+ },
+ "Centred Balance": {
+  "skill": "Meditation",
+  "traits": "Concentrate Mental",
+  "text": "**Requirements** You have the Inner Balance feat.\n\n**Action** 10 minutes\n\nYou may meditate to grant yourself a bonus to either an Acrobatics, Athletics, Climbing, Mental Focus, Perception or Sense Motive check. You make a skill check (DC equal to that of the check that you are performing) and compare the result to the Bonus Check table. Any positive result is granted as a circumstance bonus to the one of the above checks, which must be made immediately after this check.\n\nYou may spend less time meditating which offers the following modifiers.\n\n1 minute -2, 1 round -5, 1 AP -10."
+ },
+ "Guide the Breath": {
+  "skill": "Meditation",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 AP\n\n**Target** one willing creature within 10 feet that can hear or otherwise perceive your guidance\n\n**Requirements** the target has at least one expended ability with the Focus trait\n\nThrough a word, gesture, breathing cadence or other meditative technique, you help the target regain their concentration.\n\nMake a Meditation check against the target's Level DC and compare the result to the Bonus Check table. Any positive result is granted as a circumstance bonus to the target's next Refocus check made before the end of their next turn.\n\nNegative results are treated as 0.\n\nYou cannot use Guide the Breath upon yourself.\n\nA creature can benefit from only one use of Guide the Breath on any single Refocus check."
+ },
+ "Steady Heart": {
+  "skill": "Meditation",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 AP\n\n**Requirements** you are affected by the frightened condition or an effect with the Emotion or Fear trait\n\nYou control your breathing and steady your thoughts, refusing to allow panic to dictate your actions. Make a Meditation check against your Level DC.\n\n**Critical** Reduce your frightened condition by 2. You also gain a +2-circumstance bonus to saving throws against Emotion and Fear effects until the beginning of your next turn.\n\n**Success** Reduce your frightened condition by 1.\n\n**Partial** You do not reduce your frightened condition but gain a +2-circumstance bonus to your next saving throw against an Emotion or Fear effect before the beginning of your next turn.\n\n**Failure** You fail to regain your composure.\n\n**Fumble** You fail to regain your composure and cannot use Steady Heart again until the beginning of your next turn.\n\nIf you are not frightened but are affected by another Emotion or Fear effect, the Critical result grants the saving throw bonus but does not otherwise remove that effect."
+ },
+ "Resist Dying": {
+  "skill": "Mental Focus",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 AP\n\n**Requirements** you have the Inner Discipline feat.\n\nYou can use your inner self discipline to gain a bonus to Dying Checks. You may make a Resist Dying check against your Level DC and compare the result to the Bonus Check table (CRB pg. 63). Any positive result is added as a bonus to your Dying Check.\n\nBe aware that negative results on the Bonus Check table are treated as 0."
+ },
+ "Maintain Clarity": {
+  "skill": "Mental Focus",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 AP\n\n**Requirements** you are suffering a penalty to a Concentrate or Mental action because of environmental distraction, noise or similar interference\n\nYou shut out everything that does not matter. Make a Mental Focus check against your Level DC.\n\n**Critical** ignore up to 4 points of circumstance penalties caused by distraction until the beginning of your next turn.\n\n**Success** ignore up to 2 points of circumstance penalties caused by distraction until the beginning of your next turn.\n\n**Partial** ignore 1 point of circumstance penalty caused by distraction until the beginning of your next turn.\n\n**Failure** you fail to shut out the distraction.\n\n**Fumble** the distraction overwhelms you and you take an additional -1 circumstance penalty to Concentrate and Mental actions until the beginning of your next turn.\n\nBe aware that Maintain Clarity cannot remove penalties caused directly by conditions unless the condition specifically represents distraction or interference."
+ },
+ "Steel the Mind": {
+  "skill": "Mental Focus",
+  "traits": "Concentrate Defence Mental",
+  "text": "**Action** R; **Trigger** you are required to make a Will saving throw against an effect with the Emotion or Mental trait\n\n**Requirements** you have the Inner Discipline feat.\n\nYou force your thoughts into order before the hostile influence can take hold. Make a Mental Focus check against your Level DC and compare the result to the Bonus Check table. Any positive result is added as a circumstance bonus to the triggering Will saving throw. Negative results are treated as 0.\n\nSteel the Mind must be declared before the triggering saving throw is rolled."
+ },
+ "Elemental Ward": {
+  "skill": "Nature",
+  "traits": "Concentrate Warding",
+  "text": "**Action** 10 minutes\n\n**Requirements** You have the Elemental Warding feat.\n\nYou may draw a 10’ radius circle in the dirt which provides all creatures inside Resistance to either Acid, Cold, Electricity or Fire damage. You must be able to clearly mark the circle and if you are on a solid surface (such as wood or stone) must use something such as chalk to mark the circle. The ward lasts until physically disrupted or its duration expires. The DC to create the ward is 20 and its duration is based upon the result of your skill check:\n\n**Heroic** The ward lasts for 8 hours.\n\n**Critical** The ward lasts for 1 hour.\n\n**Success** The ward lasts for 10 minutes.\n\n**Partial** The ward is drawn incorrectly but you may immediately try again.\n\n**Failure** The ward is drawn incorrectly but you may attempt to draw it again after 10 minutes.\n\n**Fumble** The ward is drawn incorrectly and you may not attempt to draw it again until after your next daily preparation.\n\n**Blunder** The ward is drawn incorrectly but you fail to realise this. The ward grants Weakness instead of Resistance.\n\nYou may spend more or less time constructing the ward which offers the following modifiers.\n\n1 minute -2, 1 hour +2"
+ },
+ "Read the Elements": {
+  "skill": "Nature",
+  "traits": "Concentrate",
+  "text": "**Action** 1 minute\n\n**Target** an area, object or other evidence affected by elemental forces.\n\nYou study traces of elemental activity. Make a Nature check against the Level DC of the creature or effect responsible. If no level is known, the GM determines an appropriate level-based DC.\n\n**Critical** you identify the element involved, whether the phenomenon was natural or magical, its approximate age and the direction from which it originated or travelled. If the effect was created by a creature, you may use Nature instead of Survival to Track that creature for the next hour.\n\n**Success** you identify the element, whether it was natural or magical and its general direction of origin.\n\n**Partial** you identify the element involved and whether the effect appears natural or unnatural.\n\n**Failure** you cannot determine anything useful.\n\n**Fumble** the traces are too confused to interpret and you cannot attempt to Read the Elements here again for 1 hour.\n\nTypical elements include Air, Acid, Cold, Earth, Electricity, Fire and Water."
+ },
+ "Read Spiritual Echo": {
+  "skill": "Occultism",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 minute\n\n**Target** an area or object upon which an ethereal innate spell, magical technique, haunt or spiritual manifestation occurred within the last hour.\n\nYou examine the lingering spiritual impression. Make an Occultism check against the Level DC of the effect or creature responsible.\n\n**Critical** you determine the nature of the manifestation, its approximate level, the direction in which its creator departed and whether the effect was created deliberately or involuntarily.\n\n**Success** you determine the general nature and approximate strength of the manifestation.\n\n**Partial** you determine only whether the spiritual echo was harmful, protective or otherwise neutral in intent.\n\n**Failure** you detect nothing useful.\n\n**Fumble** the impressions become confused and you cannot attempt to Read Spiritual Echo at this location again until after 10 minutes.\n\nBe aware that this action does not itself detect an active magical effect and does not replace Sense Magic."
+ },
+ "Observe Technique": {
+  "skill": "Perception",
+  "traits": "Concentrate",
+  "text": "**Action** 1 AP\n\n**Target** one creature you can clearly perceive\n\n**Requirements** the target has entered a stance or Combat Form, or used a technique or ability with the Focus trait since the beginning of your previous turn\n\nMake a Perception check against the target's Level DC.\n\n**Critical** you identify the ability being used, determine whether it is magical or non-magical and recognise its observable traits. If it possesses the Focus trait, you can also determine whether that particular ability is currently ready or expended. You gain a +2-circumstance bonus to your next DB check or saving throw against that ability before the end of your next turn.\n\n**Success** you identify the ability being used and determine whether it is magical or non-magical. If it possesses the Focus trait, you can determine whether it is currently ready or expended.\n\n**Partial** you determine only the general nature of the ability, such as a stance, martial technique, magical technique or innate spell.\n\n**Failure** you fail to read anything useful from the target's movements.\n\n**Fumble** you misread the target's rhythm and cannot use Observe Technique against them again until the beginning of your next turn.\n\nObserve Technique reveals only information that could reasonably be inferred from observing the target. It does not reveal hidden prerequisites, feats or abilities that have not been demonstrated."
+ },
+ "Read Devotion": {
+  "skill": "Religion",
+  "traits": "Concentrate Mental",
+  "text": "**Action** 1 minute\n\n**Target** a shrine, sacred object or location where a divinity spell or magical technique has been used within the previous day.\n\nYou examine the spiritual resonance left behind. Make a Religion check against the Level DC of the creature or effect responsible.\n\n**Critical** identify the tradition responsible, the general purpose of the effect and the strength of the conviction behind it. If the effect was associated with a recognised Aspect, oath, order or monastic tradition, you also identify that connection.\n\n**Success** you identify whether the effect was protective, restorative, harmful or otherwise purposeful and recognise its divinity nature.\n\n**Partial** you recognise that a divinity or spiritually devoted effect occurred here but learn nothing further.\n\n**Failure** you cannot interpret the spiritual residue.\n\n**Fumble** you cannot attempt to Read Devotion at the same location again until after 10 minutes."
+ },
+ "Read Intent": {
+  "skill": "Sense Motive",
+  "traits": "Concentrate",
+  "text": "**Action** 1 AP\n\n**Range** 30 feet; **Target** one creature you can clearly observe\n\nYou watch the target's posture, breathing and attention, attempting to anticipate their next hostile movement. Make a Sense Motive check against the target's Level DC.\n\n**Critical** you gain a +2-circumstance bonus to DB and saving throws against the target until the beginning of your next turn. The target also cannot provide flanking against you during this time.\n\n**Success** choose either DB or saving throws. You gain a +2-circumstance bonus to the chosen defence against the target until the beginning of your next turn.\n\n**Partial** you gain a +1-circumstance bonus to DB against the target until the beginning of your next turn.\n\n**Failure** you fail to anticipate the target.\n\n**Fumble** you misread the target and suffer a -1-circumstance penalty to DB against them until the beginning of your next turn.\n\nYou may use Read Intent against the same creature only once each round."
+ }
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "ZtsQ0lUTriKkZGWm",
+  "name": "Radiant Wanderer",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Born under auspicious celestial alignments, you were destined for a life of cosmic insight. Your early years were marked by celestial phenomena that shaped your destiny, whether it was a comet's passage or a solar eclipse. You've dedicated your life to studying the heavens, deciphering celestial signs, and unlocking their mysteries.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Radiant Insight</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Arcana, Planes, Religion</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (The Radiance) (on your sheet as Radiance Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>0</p>",
+    "grantedFeats": "Radiant Insight",
+    "grantedSpells": "",
+    "skillBonuses": "Arcana, Planes, Religion",
+    "specialistSkill": "Radiance Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "0"
+  },
+  "effects": [
+    {
+      "_id": "qIcyEDKO4t0dsEdW",
+      "name": "Radiant Wanderer: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.arcana.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.planes.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.religion.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Arcana, Planes, Religion.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!ZtsQ0lUTriKkZGWm.qIcyEDKO4t0dsEdW"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Radiance Lore"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ZtsQ0lUTriKkZGWm"
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "C74kag6FmohzD0SZ",
+  "name": "Falling Shadow",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MOVEMENT TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 4</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> you fall at least 10 feet.</p>\n<p>Through controlled rotation, wall contact and practised landing techniques, you turn a dangerous fall into little more than another avenue of escape. When calculating the damage or other consequences of the fall, treat the distance fallen as 30 feet shorter.</p>\n<p>If you land without gaining the Prone condition and your landing position provides suitable cover or concealment, you may immediately attempt to Hide (Stealth) as part of this reaction.</p>\n<p><em>Partly automated:</em> press Use when you fall 10 feet or more: it spends your reaction and this art's use, and the card says to treat the fall as 30 feet shorter (apply the falling damage for the shorter fall) and that you may Hide.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Movement, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Falling Shadow",
+      "itArtLevel": 4
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!C74kag6FmohzD0SZ"
+}

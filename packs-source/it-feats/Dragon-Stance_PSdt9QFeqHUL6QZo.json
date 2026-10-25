@@ -1,0 +1,49 @@
+{
+  "_id": "PSdt9QFeqHUL6QZo",
+  "name": "Dragon Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Primal or Transcendent Monastic Path",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p><strong>Prerequisites</strong> Primal or Transcendent Monastic Path</p>\n<p>You adopt the Dragon Stance, executing formidable leg strikes reminiscent of a dragon's mighty tail. You gain a +2-circumstance bonus to AB and your attacks gaining the sweep trait.</p>\n<p>While in Dragon Stance, you can ignore the first square of difficult terrain while Striding.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it: +2 circumstance to your attack rolls; your unarmed attacks (fists, gauntlets, Monastic weapons) have the Sweep trait (Graham's B6-2); and on each Stride the first square of difficult terrain costs you nothing extra. The Path is checked when you enter it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "dragonStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PSdt9QFeqHUL6QZo"
+}

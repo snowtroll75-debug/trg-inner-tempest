@@ -1,0 +1,49 @@
+{
+  "_id": "4a7qFvwqhzoZK09h",
+  "name": "Drunken Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Devoted or Primal Monastic Path",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p><strong>Prerequisites</strong> Devoted or Primal Monastic Path</p>\n<p>You embrace the Drunken Stance, a martial technique that emulates the unpredictable movements and deceptive style of a drunken master. In this stance, you appear disoriented but possess remarkable agility and the ability to surprise your opponents.</p>\n<p>You gain a +2-circumstance bonus to DB and may also use the Drunken Strike action.</p>\n<p><strong>DRUNKEN STRIKE</strong></p>\n<p><strong>ATTACK FLOURISH</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You make a melee attack against your target with a -2-circumstance penalty. If the attack inflicts damage, it is classed as a feint against your target using your total Attack Roll as the Feint DC.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it: +2 circumstance to your DB, and <strong>Drunken Strike</strong> (added to your abilities) may be used: a melee Strike at −2 circumstance; if it deals damage, your attack total stands as a Feint check against the target's Feint DC, and the Feint's own result applies (Graham's B6-3). The Path is checked when you enter it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Drunken Strike",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "drunkenStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!4a7qFvwqhzoZK09h"
+}

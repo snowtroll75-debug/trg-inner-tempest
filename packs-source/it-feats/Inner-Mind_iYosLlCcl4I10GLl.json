@@ -1,0 +1,49 @@
+{
+  "_id": "iYosLlCcl4I10GLl",
+  "name": "Inner Mind",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Level 6",
+    "active": true,
+    "description": "<p><strong>DISCIPLE FOCUS MYSTIC TECHNIQUE</strong> <strong>Trigger</strong> You succumb to an effect with the fear trait. <strong>Action</strong> Reaction</p>\n<p>You suspend the triggering fear effect for 1 minute, after which it affects you normally for any duration remaining. Inner Mind then becomes expended until restored with Refocus.</p>\n<p><em>Not automated:</em> TRG Prime has no way to suspend a condition and resume it later. Press Use to spend your reaction and this use; set the fear condition aside by hand for 1 minute.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Focus, Mystic, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerMind"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!iYosLlCcl4I10GLl"
+}

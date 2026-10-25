@@ -1,0 +1,64 @@
+{
+  "_id": "hWAyfzq8aqHVGhL0",
+  "name": "Powerful Fists",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Disciple 1st level",
+    "active": true,
+    "description": "<p>You know how to wield your fists as deadly weapons. The damage of your unarmed attacks is 1d6 rather than the usual 1d4 inflicted by an unarmed attack. Additionally, your unarmed attacks gain the versatile bludgeoning trait.</p>\n<p>As you become more experienced, the amount of damage that you inflict with your unarmed strikes also increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of total unarmed damage.</p>\n<p>Be aware that this is total unarmed damage and not base. Your base damage die still increase in the usual way.</p>\n<p>Finally, your unarmed strikes also gain the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your unarmed strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.</p>\n<p><em>Automated:</em> your Unarmed Strike rolls 1d6 and offers bludgeoning in place of subdual (Versatile B). Every Strike that counts as unarmed (the fists, or a weapon with the Monastic trait) adds +1 total damage per 3 BAB, counts as magical from BAB 3, as cold iron and silver from BAB 8 and as adamantine from BAB 16.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Disciple",
+        "level": 1
+      },
+      "unarmedDamage": {
+        "die": "1d6",
+        "versatile": "B",
+        "perBAB": {
+          "every": 3,
+          "value": 1
+        },
+        "countsAs": {
+          "magical": 3,
+          "cold iron": 8,
+          "silver": 8,
+          "adamantine": 16
+        },
+        "label": "Powerful Fists"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!hWAyfzq8aqHVGhL0"
+}

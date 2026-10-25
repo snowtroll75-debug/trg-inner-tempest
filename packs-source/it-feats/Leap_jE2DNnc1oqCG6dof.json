@@ -1,0 +1,45 @@
+{
+  "_id": "jE2DNnc1oqCG6dof",
+  "name": "Leap",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Athletics 10 ranks",
+    "active": true,
+    "description": "<p><em>You have always had a knack jumping from place to place with little effort.</em></p>\n<p><strong>Prerequisites</strong> Athletics 10 ranks</p>\n<p>When making a High Jump or Long Jump (Athletics) check, you automatically succeed if the DC of the check is 20 or less.</p>\n<p><em>Not automated:</em> a High Jump or Long Jump whose DC is 20 or less is a Success without a roll — declare it rather than rolling.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!jE2DNnc1oqCG6dof"
+}

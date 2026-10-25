@@ -1,0 +1,66 @@
+{
+  "_id": "Fg4jSAy2aTHHCJDu",
+  "name": "Echoing Crane",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Every motion you make reverberates with purpose. Like the crane balancing in the wind, you find strength in elegance and repetition.</p>\n<p>You fight with rhythmic grace, your movements flowing together. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>You may add your class bonus -1 to your DB while in this form.</li><li>When you successfully avoid an attack (your DB is not overcome), you gain a +1 bonus to your next weapon attack roll this round.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). your class bonus − 1 is added to your DB. When an attack against you misses, your next weapon attack this round gains +1. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "Class bonus − 1 to DB",
+            "flags": {
+              "statBonuses": [
+                {
+                  "target": "defence",
+                  "type": "class",
+                  "valueFrom": "classBonus-1",
+                  "label": "Echoing Crane"
+                }
+              ]
+            }
+          },
+          {
+            "label": "+1 to the next attack after avoiding one",
+            "flags": {
+              "itEchoingCrane": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Fg4jSAy2aTHHCJDu"
+}

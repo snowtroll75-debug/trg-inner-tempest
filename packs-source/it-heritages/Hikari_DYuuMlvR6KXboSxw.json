@@ -1,0 +1,93 @@
+{
+  "_id": "DYuuMlvR6KXboSxw",
+  "name": "Hikari",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Hikari are the leaders and wise folk, possessing a profound connection to the spirit realm, their very presence resonating with spiritual energy.</p>\n<p>You can cast the Stabilise cantrip as a divinity innate spell with the Focus trait, using Wisdom as your magical ability score. Additionally, you have advantage on saving throws against emotion and fear effects, as you are less susceptible to external influences thanks to your strong link to the spirit world.</p>\n<p><em>Language:</em> Thanatos, the heritage's language (Graham's ruling). <em>Element:</em> Spirit (essence). <em>Granted:</em> Stabilise as an innate cantrip with the Focus trait, cast with Wisdom. Advantage is <em>applied automatically</em> to saves against effects with the Emotion or Fear trait, and offered as a tick on a save whose source the roll cannot see.</p>",
+    "sourceRace": "Tianzhi",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "Stabilise",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "Thanatos",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itElement": {
+        "element": "Spirit",
+        "damageType": "essence",
+        "spellTraits": [
+          "essence",
+          "healing",
+          "soul"
+        ]
+      },
+      "grantInnate": true,
+      "grantedSpellAbility": "wisdom",
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Hikari",
+          "scope": "Saving throws against emotion and fear effects",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "traits": [
+              "emotion",
+              "fear"
+            ]
+          }
+        },
+        {
+          "kind": "advantage",
+          "label": "Hikari",
+          "scope": "Saving throws against an emotion or fear effect that carries neither trait — tick if this save is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "not": {
+              "traits": [
+                "emotion",
+                "fear"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DYuuMlvR6KXboSxw"
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "HvecnmsNVwBU8SGA",
+  "name": "Tetsubo",
+  "img": "systems/trg-prime/assets/weapons/greatclub.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 10,
+    "price": 20,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "AR 2, Exotic, Shove",
+    "description": "<p>This enhanced weapon represents an improvement upon the great club, featuring a long and slender shaft. The upper half of this club is reinforced with a substantial sheet of studded iron, which not only adds weight but also provides increased strength to the weapon. The strategically placed studs are intended to shatter helmets and penetrate armour, making it an effective choice for combat.</p>\n<p><em>Traits as printed:</em> AR 2, Shove.</p>",
+    "attackBonus": 0,
+    "damage": "1d10",
+    "damageType": "bludgeoning",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 2,
+    "proficiency": "",
+    "fumbleDC": 12,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Club",
+    "category": "Exotic",
+    "size": "large",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HvecnmsNVwBU8SGA"
+}

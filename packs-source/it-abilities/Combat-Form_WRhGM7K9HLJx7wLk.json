@@ -1,0 +1,50 @@
+{
+  "_id": "WRhGM7K9HLJx7wLk",
+  "name": "Combat Form",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Kensai 1st level",
+    "active": true,
+    "description": "<p><strong>CONCENTRATE FOCUS STANCE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You may enter a specialised stance known as a combat form. At 1st level, you begin play with two combat forms.</p>\n<p>You may select an additional combat form at 4th level and then every 4 levels thereafter. You may also gain additional combat forms by selecting the Extra Form class feat.</p>\n<p>You may only have one form active at any one time but may develop feats which allow you to modify or blend multiple forms.</p>\n<p>A full list of your available forms can be found at the end of the class description.</p>\n<p><em>Automated:</em> press Use. While you know fewer forms than you are owed (two at 1st, one more at 4th, 8th, 12th, 16th and 20th, and one per Extra Form), it offers the forms to learn. Otherwise it offers your known forms (and a Blended Form): 1 AP enters the chosen form as a stance and expends Combat Form. You stay in the form; you cannot change form until a Refocus restores Combat Form.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": "Concentrate, Focus, Stance",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Kensai",
+        "level": 1
+      },
+      "itAutomation": "combatForm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!WRhGM7K9HLJx7wLk"
+}

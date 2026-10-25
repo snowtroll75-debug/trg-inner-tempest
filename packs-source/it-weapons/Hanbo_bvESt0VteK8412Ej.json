@@ -1,0 +1,52 @@
+{
+  "_id": "bvESt0VteK8412Ej",
+  "name": "Hanbo",
+  "img": "systems/trg-prime/assets/weapons/staff.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 2,
+    "price": 1,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Monastic, Trip",
+    "description": "<p>The hanbo is a staff-like weapon that typically measures around three feet in length, although variations can be shorter or slightly longer. The hanbo is made of wood, and its design is simple and unadorned. Due to its compact size, the hanbo is particularly suited for close-quarters combat. Its length allows for quick, precise strikes and can also be used for tripping opponents.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>",
+    "attackBonus": 0,
+    "damage": "1d6",
+    "damageType": "bludgeoning",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 6,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Club",
+    "category": "Simple",
+    "size": "medium",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bvESt0VteK8412Ej"
+}

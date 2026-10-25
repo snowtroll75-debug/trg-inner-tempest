@@ -1,0 +1,44 @@
+{
+  "_id": "czO1HXG4wfSSGfpY",
+  "name": "Shadow Passage",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TELEPORTATION TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 12; <strong>Action</strong> 1 AP; <strong>Requirements</strong> you are within an area of dim light or darkness.</p>\n<p>Choose another location within your Speed that you can see and which is also within dim light or darkness.</p>\n<p>You disappear into the surrounding shadow and immediately appear in the chosen space.</p>\n<p>This Ghost Art is magical.</p>\n<p><em>Automated:</em> press Use in dim light or darkness: 1 AP and this art's use. Your next token move is armed up to your Speed as a teleport that provokes nothing. Magical.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Shadow, Teleportation, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Shadow Passage",
+      "itArtLevel": 12
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!czO1HXG4wfSSGfpY"
+}

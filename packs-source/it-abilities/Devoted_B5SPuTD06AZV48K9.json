@@ -1,0 +1,86 @@
+{
+  "_id": "B5SPuTD06AZV48K9",
+  "name": "Devoted",
+  "img": "icons/svg/sun.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Monastic Path",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You follow the path of the Devoted, interpreting inner discipline through faith, duty and divine harmony. Through meditation and disciplined practice you learn to express supernatural effects as blessings, healing, protection and righteous force. Some Devoted traditions call this inner current chi, while others understand it as devotion made manifest.</p>\n<p>Your magical tradition is divinity, your magical ability score is Wisdom, and you gain Religion as a class skill.</p>\n<p>Magical Tradition: divinity. Magical Ability Score: Wisdom. Religion is used for Recall Knowledge and other checks concerning the path's divine magic.</p>\n<p><em>Automated:</em> Religion becomes a class skill. Innate spells your Mystic class and disciplines grant, and the magical techniques that name your Monastic Path, are cast as divinity with Wisdom; a technique that uses your Technique Save DC uses 10 + Wisdom + your level.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [
+    {
+      "_id": "zaGmEA4YEKRjq5F8",
+      "name": "Devoted: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.religion.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Religion.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!B5SPuTD06AZV48K9.zaGmEA4YEKRjq5F8"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itPath": {
+        "tradition": "divinity",
+        "ability": "wisdom",
+        "skill": "Religion"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!B5SPuTD06AZV48K9"
+}

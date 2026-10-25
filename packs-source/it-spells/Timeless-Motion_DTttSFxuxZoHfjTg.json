@@ -1,0 +1,75 @@
+{
+  "_id": "DTttSFxuxZoHfjTg",
+  "name": "Timeless Motion",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 8,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "1 minute",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "condition",
+        "target": "self",
+        "condition": "quickened",
+        "value": 1
+      },
+      {
+        "kind": "note",
+        "text": "The Quickened action may only be an action with the Movement trait. That movement cannot be perceived and provokes no reactions."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Alteration",
+    "description": "<p>Time moves differently for you. You gain the quickened condition which may be used to take any action with the Movement trait each round. When taking this action your movement is imperceivable to those around you and does not provoke reactions.</p>\n<p><em>Partly automated:</em> you are Quickened for 1 minute. Using the extra action only to move, and that move provoking nothing, are by hand.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DTttSFxuxZoHfjTg"
+}

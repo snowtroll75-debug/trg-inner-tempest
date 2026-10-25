@@ -1,0 +1,49 @@
+{
+  "_id": "Z9vCmmzyxyTOSPHh",
+  "name": "Waiting Blade",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kamiri Heritage, Level 5",
+    "active": true,
+    "description": "<p><strong>ATTACK FOCUS SCREE TECHNIQUE</strong></p>\n<p><em>You do not chase an opening. You remain perfectly still until your opponent creates one.</em></p>\n<p><strong>Prerequisites</strong> Kamiri Heritage, Level 5</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> a creature within reach of your Raptorial Blade misses you with a melee Strike that you are aware of</p>\n<p>You immediately make a Raptorial Blade Strike against the triggering creature. Apply your multiple attack penalty normally if one applies.</p>\n<p><em>Automated:</em> when a creature misses you with a melee Strike (a reaction Strike included) and you have a Raptorial Blade, you are asked whether to use it: your reaction and its Focus use, and a Raptorial Blade Strike against it. It is a reaction, so the system applies no multiple attack penalty to it (audit interpretation 7). Being within the blade's reach is yours to confirm.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Attack, Focus, Scree, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "waitingBlade"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Z9vCmmzyxyTOSPHh"
+}

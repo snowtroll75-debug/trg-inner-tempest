@@ -1,0 +1,50 @@
+{
+  "_id": "mzAvOvJfa5CZm3Cw",
+  "name": "Flurry of Blows",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Disciple 1st level",
+    "active": true,
+    "description": "<p><strong>FLOURISH</strong> <strong>Action</strong> 1 AP</p>\n<p>Make two unarmed Strikes. If both hit the same creature, apply DR, resistance and weakness only once. Apply your multiple attack penalty to the Strikes normally.</p>\n<p>Be aware that you may only inflict one critical injury when using this ability, although you still gain additional critical damage from both strikes.</p>\n<p><em>Automated:</em> press Use: 1 AP (a Flourish, once a turn), then two Strikes with your fists or a Monastic weapon, each at your current multiple attack penalty. A creature hit twice meets its DR once, on the first hit; resistance and weakness are applied to each hit, which is the same as once on the total. After one critical injury, a later critical keeps its bonus dice and rolls no injury. If your Disciplined Flurry is ready and you have a reaction, you are asked whether to use it for a third Strike.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple",
+    "traits": "Flourish",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Disciple",
+        "level": 1
+      },
+      "itAutomation": "flurryOfBlows"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mzAvOvJfa5CZm3Cw"
+}

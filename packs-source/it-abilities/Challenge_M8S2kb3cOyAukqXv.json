@@ -1,0 +1,50 @@
+{
+  "_id": "M8S2kb3cOyAukqXv",
+  "name": "Challenge",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Oathblade 1st level",
+    "active": true,
+    "description": "<p><strong>FLOURISH FOCUS MENTAL TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP; <strong>Requirements</strong> you can see the creature you intend to challenge.</p>\n<p>You openly commit yourself to defeating a single opponent and focus your entire martial discipline upon that creature.</p>\n<p>While the creature remains your challenged target:</p>\n<ul><li>You add your class bonus to melee attack checks made against it.</li><li>You add your class bonus to damage inflicted by your melee attacks against it.</li><li>Your melee attacks against it gain AR equal to your class bonus.</li><li>You suffer a -2-circumstance penalty to DB against attacks made by all creatures other than your challenged target.</li></ul>\n<p>You may only have one challenged target at a time.</p>\n<p>Your Challenge ends when the target is killed, reduced to 0 Hit Points, becomes unconscious, clearly surrenders, the encounter ends or you use Challenge against another creature.</p>\n<p>Challenge is a non-magical technique. After you use Challenge, it becomes expended until restored using Refocus (Mental Focus). Restoring Challenge does not end an existing Challenge, but using it again immediately ends your previous Challenge.</p>\n<p><em>Automated:</em> target the creature, then press Use: 1 AP (a Flourish) and this use. Against it, your melee attacks gain your class bonus to attack and to damage and Armour Rending equal to your class bonus; every other creature's attacks against you meet −2 to your DB. One target at a time; it ends when the target is killed, drops to 0 HP or unconscious, the combat ends, or you Challenge another. A surrender is ended by hand (delete the effect). Your Sworn Oath's benefits run with it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "traits": "Flourish, Focus, Mental, Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Oathblade",
+        "level": 1
+      },
+      "itAutomation": "challenge"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!M8S2kb3cOyAukqXv"
+}

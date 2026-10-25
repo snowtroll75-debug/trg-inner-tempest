@@ -1,16 +1,78 @@
 # Inner Tempest — Automation Report
 
-_Generated from `tools/inventory/inventory.txt`. Nothing below has been implemented yet; this is the planned coverage, to be replaced feature by feature with tested results._
+_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. "Target" is the class each feature is planned at; "Shipped" is what the current build reaches. Harness-checked; live testing is Graham's, and nothing is marked Tested until it has been._
+
+## Shipped so far
+
+301 features shipped: A 168 · B 91 · C 20 · D 22. 3 more are in progress (support shipped, the feature that uses it to come).
+
+### Shipped below target, and what would lift it
+
+| ID | Feature | Target | Shipped | Why |
+|---|---|---|---|---|
+| H-24 | Tsuchi | A | B | A Shove or Trip against a Tsuchi is rolled at disadvantage (Graham, 21 Oct 2026; core 3.665.0 defence row). Advantage on the Tsuchi's own prone/forced-movement checks and saves stays a tick. |
+| BG-10 | Spirit Warrior | A | B | When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative). |
+| BG-11 | Spiritwalker | A | B | When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative). |
+| CF-G1 | Ghostwalk | A | D | The Sneak's distance is not measured by the system; the card states the rule. |
+| GA-01 | False Face | B | C | Int instead of Cha on Disguise, applied when higher; the 1-minute disguise is the GM's. |
+| GA-03 | Hollow Breath | B | C | 1 AP; an effect records it and ends on a Strike or a token move; the −5 to others' Perception is the GM's. |
+| GA-07 | Smoke Veil | B | C | 1 AP and its use; the card names the area and duration; Concealed on those inside is by hand. |
+| GA-09 | Falling Shadow | B | C | Reaction and its use; the card says to treat the fall as 30 ft shorter. |
+| GA-10 | Caltrop Blossom | B | C | 1 AP and its use; the card gives the Level DC and the dice by level; the area and saves are by hand. |
+| GA-12 | Veiled Body | A | B | 1 AP and use; Invisible until the next turn; ends on a Strike (a spell by hand). |
+| GA-14 | Shadow Passage | B | C | 1 AP and use; the next move is armed as a teleport; light and darkness are the player's. |
+| GA-15 | Empty Presence | A | B | 1 AP and use; Invisible 1 minute; a Strike makes it Concealed to the end of the turn, then Invisible again. |
+| CF-K1 | Combat Form (activation) | A | B | Combat Form's Use learns forms by level and count, then enters one as a stance (1 AP) and expends itself. |
+| CF-K4 | Weapon Discipline | A | B | Use picks the group; class bonus − 1 untyped (B4-2) to attack and damage and Finesse one-handed, applied. The free hand is not checked by the system. |
+| KF-01 | Black Lotus | A | B | Feint bonus applied; once a round, a Strike holding the blow lands from a card at the target's turn start (Graham's ruling). |
+| KF-02 | Crashing Tide | B | C | +1 attack and +Int damage as ticks; the push on a critical is on a card (Fort vs Technique DC). |
+| CF-O1 | Challenge | A | B | Use on the target: class bonus to melee attack and damage, AR = class bonus, −2 DB against others; ends on 0 HP, death, unconsciousness, combat end or a new Challenge; surrender by hand. |
+| OA-01 | Oath of Honour | A | C | +2 DB against the target and advantage on the first melee Strike each round in a duel; suppressed when an ally attacks the target or stands beside it. The target's flanking is by hand. |
+| OA-04 | Oath of Fealty | B | C | Sworn Charge chosen at daily preparation; its +1 and AR 1, and the cross +2s, applied. Conscious and within 30 ft is the GM's. |
+| SA-10 | Maintain Clarity (Mental Focus) | B | C | Ruled "offered as a tick": the points are offered on Concentrate and Mental checks until your next turn (core cannot tell a distraction penalty); the Fumble's −1 is applied. |
+| SA-17 | Read Intent (Sense Motive) | A | B | 30 ft, once each round per creature; Critical DB and saves +2, Success the one chosen, Partial DB +1, Fumble DB −1, to your next turn. The flanking clause is described on the card (ruled). |
+| FR-20 | Hive Coordination | A | B | +2 racial tick on Aid. |
+| FR-30 | Perfected Form | C | D | Text. |
+| FC-01 | Abundant Step | A | B | Use: 1 AP Flourish; the token move is armed as a teleport up to your Speed. |
+| FC-05 | Blended Form | A | B | Use picks two known forms; Combat Form offers the blend with both benefits. |
+| FC-06 | Bounding Step | B | C | Use: a Fly Speed equal to land Speed for 1 minute; ending turns on a surface (or the 9th-level DC 25 Acrobatics check) is by hand. |
+| FC-09 | Dancing Leaf | C | D | Jump distance and falling beside walls are the GM's; described. |
+| FC-19 | Fleeting Shadow | A | B | Vanishing Retreat's Step is 10 ft; Hide on the card. |
+| FC-22 | Formal Declaration | A | B | Asked after a Challenge: a Demoralise at no AP; +2 as a tick; immune for the encounter. |
+| FC-23 | Formless Cut | A | B | 1 AP Flourish Strike: +4, the target's stance bonuses ignored, +Int damage, treated as flat-footed. |
+| FC-24 | Ghost Art Mastery | A | B | Use picks a Focus Ghost Art; a transferred effect gives it a second use, restored together. |
+| FC-28a | Disciplined Flurry | A | B | Asked by Flurry of Blows: a third Strike at no penalty that still counts (B3-4). |
+| FC-31 | Inner Mind | B | D | Use spends the reaction and the use; suspending the fear condition is by hand (no core suspension). |
+| FC-44 | Shadowy Step | A | B | 2 AP: a Step, then a Strike from the card's button with the target considered flanked. |
+| FC-46 | Shelter Under Oath | A | C | +2 to allies' saves against the challenged target's effects when the save names its source; 30 ft is the GM's. |
+| FC-47 | Smoke Eyes | A | D | Smoke Veil's concealment is by hand, so this is too. |
+| FC-49 | Solitary Supremacy | C | D | Aid and allies' DB bonuses are not tracked by source; described. |
+| FG-02 | Artisan's Enchantment | C | D | Needs a core hook on Create's success modifier. |
+| FG-03 | Artistic Diversity | C | D | Artistry specialties are not separate skills in core. |
+| FG-08 | Contortionist | C | D | Squeeze time is narrative in core. |
+| FG-13 | Leap | A | D | Needs a core DC-conditioned degree floor (auto-success at DC 20 or less). |
+| FG-14 | Meditative Recovery | B | D | Needs a core rest variant for a 10-minute Healing Trance. |
+| FG-21 | Veiled Essence | C | D | D14. |
+| FG-23 | Spirit Stance | A | B | Spirits and incorporeal creatures automatic; a possessing creature is a tick on attacks and a by-hand +1 to DB. |
+| WP-11 | Butterfly Sword | A | B | In it-weapons (0.5.1). Twin through core 3.668.1; drawing both as one Interact and the shared rune are the GM's. One item is one sword (asked of Graham). |
+| SP-04 | Air Step | A | C | -10 ft Speed and -4 Acrobatics/Climbing for 10 minutes; tracking, the 5-ft floor and the hover are the GM's. |
+| SP-06 | Aura of Heat | B | C | Cast deals 5d10 fire (basic Fortitude) and gives fire resistance; the repeat, light and dying flare are by hand. |
+| SP-09 | Burning Stride | B | C | The save and 4d6 fire; the persistent fire on movement and the Fumble's criticals are by hand. |
+| SP-10 | Burst of Speed | A | C | +20 ft status Speed; the second round's -10 ft by hand. |
+| SP-12 | Dragon Fear | A | C | The cast's targets save and take the conditions; later saves and the immunity are by hand. |
+| SP-16 | Hand of Tide | B | D | Teleport destinations are the caster's on the map. |
+| SP-18 | Rise of the Phoenix | C | D | The egg is a story object. |
+| SP-23 | Timeless Motion | A | C | Quickened for 1 minute; the movement-only use is by hand. |
 
 ## Planned coverage
 
-| Class | With core dependencies D1–D14 | Without them (module-only) |
+| Class | With core dependencies D1–D16 | Without them (module-only) |
 |---|---|---|
-| A | 236 | 193 |
+| A | 242 | 197 |
 | B | 135 | 133 |
-| C | 18 | 56 |
-| D | 17 | 24 |
-| **Total** | 406 | 406 |
+| C | 16 | 54 |
+| D | 15 | 24 |
+| **Total** | 408 | 408 |
 
 No feature is claimed as automated until its harness checks and live test pass. A feature that only posts its description to chat is class D, never A.
 
@@ -24,7 +86,6 @@ No feature is claimed as automated until its harness checks and live test pass. 
 - **GA-05 No Trace** — D — tracking difficulty and trail concealment are GM-run exploration rules.
 - **GA-08 Spider Path** — C — Focus spend, AP and the card are automated; wall pathing isn't modelled by Foundry movement.
 - **GA-13 Body of Mist** — C — Focus/AP, no-reactions and no-attack effect automated; passing through 1-inch gaps is a map judgement.
-- **KF-01 Black Lotus** — C — the delay is a card-timing tool only; its mechanical payoff is undefined (IT-M10).
 - **FR-07 Celestial Footing** — D — as Shinryu: unsupported-air positioning.
 - **FR-14 Fateful Coincidence** — D — the book makes it a GM story boon.
 - **FR-21 Hoardkeeper's Eye** — D — as Treasure Sense.
@@ -36,13 +97,10 @@ No feature is claimed as automated until its harness checks and live test pass. 
 - **FC-09 Dancing Leaf** — C — the +5 ft is shown on jump results; 'adjacent to a wall while falling' is a map judgement.
 - **FC-49 Solitary Supremacy** — C — the module suppresses Aid bonuses it can see from allies' declared Aid actions; reactions and abilities from third parties aren't all tagged by source.
 - **FC-53 Walk the Empty Space** — D — as Between Glances.
-- **FG-02 Artisan's Enchantment** — C — the -2 is applied in the Create dialog; choosing the quality is a GM call.
-- **FG-03 Artistic Diversity** — C — the Very Hard note is shown; unlearned Artistry specialties aren't modelled as separate skills.
-- **FG-08 Contortionist** — C — the crit-at-full-speed rider is shown; Squeeze time is narrative.
-- **FG-21 Veiled Essence** — C — the feat flag lets the Ambush/Sniping actions accept spells; whether the attack qualifies is checked, the stealth situation is GM-run.
-- **DC-08 Sweep (dragon attack)** — D — undefined in the book (IT-C5).
-- **DC-09 Wings / Tail natural attacks** — D — profiles not given (IT-C5).
-- **DC-15 Tail Lash** — C — the reaction is offered; its tail attack profile is undefined (IT-C5).
+- **FG-02 Artisan's Enchantment** — C (target) — the -2 belongs in Create's setup, which needs a core hook on its success modifier (D18); choosing the quality is a GM call. Shipped D until then.
+- **FG-03 Artistic Diversity** — C (target) — unlearned Artistry specialties aren't separate skills in core, so the Very Hard step can only be described. Shipped D.
+- **FG-08 Contortionist** — C (target) — Squeeze time is narrative in core; the rounds-not-minutes and full-Speed riders are described. Shipped D.
+- **FG-21 Veiled Essence** — C (target) — needs D14 for Ambush/Sniping to accept a spell or technique; the stealth situation is GM-run. Shipped D.
 - **SP-03 Age Resistance** — C — suppresses aging penalties only where the optional aging macro is used.
 - **SP-05 Arrows Flight** — C — range doubling is written to the ammunition; Foundry has no per-projectile range state, so the card reminds.
 - **SP-13 False Future** — D — divination misdirection is GM-adjudicated.
@@ -56,9 +114,9 @@ No feature is claimed as automated until its harness checks and live test pass. 
 
 | ID | Feature | With core | Without | Dependency |
 |---|---|---|---|---|
-| SYS-01 | Focus trait (ready/expended, individual tracking) | A | C | D1 |
 | SYS-03 | Additional uses restored together | A | C | D2 |
 | SYS-04 | Innate spells: 0 PP, max warp, CL = level, attack = ability + level, DC = 10 + ability + level | A | C | D5 |
+| SYS-13 | Innate PP limit (base PP <= character level) | A | B | D16 |
 | RA-08 | Martial Affinity (Tianzhi) | A | B | D7 |
 | RA-09 | Natural Chi (Tianzhi) | B | C | D5 |
 | H-01 | Kitsune | A | C | D5 |
@@ -66,12 +124,12 @@ No feature is claimed as automated until its harness checks and live test pass. 
 | CL-07 | Class "Magical Tradition" choice (Ghostwalker Wis, Kensai Int, Oathblade Cha) | B | C | D5 |
 | CF-D1 | Powerful Fists | A | C | D12 |
 | CF-D2 | Disciple's Dodge | A | B | D9 |
-| CF-D6 | Deep Focus | A | C | D1 |
 | CF-D8 | Incredible Movement | A | B | D9 |
 | GA-09 | Falling Shadow | B | C | D8 |
 | GA-11 | Shadow Double | B | C | D8 |
 | CF-K1 | Combat Form (activation) | A | B | D7 |
 | CF-K3 | Considered Mind | A | B | D3 |
+| CF-M4 | Mystical Power | B | C | D5 |
 | MD-05a | Echo Form (Thousand Reflections) | B | C | D8 |
 | CF-O3 | Unwavering Purpose | A | B | D3 |
 | SA-01 | Evade (Acrobatics) | B | C | D8 |
@@ -84,6 +142,7 @@ No feature is claimed as automated until its harness checks and live test pass. 
 | FA-02 | Dragon Tamer | B | D | D10 |
 | FA-03 | Formbinder | A | B | D7 |
 | FA-15 | Soul Weapon Master | B | C | D11, D12 |
+| FA-17 | Tanuki Trickster | A | C | D5 |
 | FA-21 | Zen Archer | B | C | D11 |
 | FC-05 | Blended Form | A | B | D7 |
 | FC-08 | Crane Stance | A | B | D7 |
@@ -91,7 +150,6 @@ No feature is claimed as automated until its harness checks and live test pass. 
 | FC-13 | Dragon Stance | A | B | D7 |
 | FC-14 | Drunken Stance | A | B | D7 |
 | FC-23 | Formless Cut | A | C | D14 |
-| FC-24 | Ghost Art Mastery | A | C | D1 |
 | FC-28c | Guarded Centre | B | C | D8 |
 | FC-36 | Mantis Stance | A | B | D7 |
 | FC-37 | Monkey Stance | A | B | D7 |
@@ -100,6 +158,7 @@ No feature is claimed as automated until its harness checks and live test pass. 
 | FC-54 | Wolf Stance | A | B | D7 |
 | FG-07 | Centred Recovery | A | C | D4 |
 | FG-20 | Tranquil Mind | A | B | D7 |
+| FG-23 | Spirit Stance | A | B | D7 |
 | DC-01 | Acquiring a dragon (egg + 28-day bonding) | B | C | D14 |
 | DC-02 | Dragon Companion class/progression | A | D | D10 |
 | DC-03 | Cold Dragon (base) | A | D | D10 |
@@ -107,7 +166,10 @@ No feature is claimed as automated until its harness checks and live test pass. 
 | DC-05 | Fire Dragon (base) | A | D | D10 |
 | DC-06 | Light Dragon (base) | A | D | D10 |
 | DC-07 | Companion specials (Crush, Draconic Assault, Draconic Shifting, elemental Aura/Blood/Strikes, Frightful Aura, Reflective Scales, Scorching/Slowing Breath, Snowvision, Spell Resilience, Wild Stride, Wing Buffet, Ice Climb, Smokevision, Flyby Attack) | A | D | D10 |
+| DC-09 | Wings / Tail natural attacks | A | D | D10 |
+| DC-10 | Breath weapon progression | A | D | D10 |
 | DC-12 | Deflecting Wings | B | C | D8 |
+| DC-15 | Tail Lash | B | C | D8 |
 | WP-08 | Nunchaku | A | C | D13 |
 | WP-10 | Tonfa | A | C | D13 |
 | WP-11 | Butterfly Sword | A | C | D13 |

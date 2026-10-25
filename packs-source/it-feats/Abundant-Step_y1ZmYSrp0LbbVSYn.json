@@ -1,0 +1,49 @@
+{
+  "_id": "y1ZmYSrp0LbbVSYn",
+  "name": "Abundant Step",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Level 8",
+    "active": true,
+    "description": "<p><strong>FOCUS FLOURISH TECHNIQUE TELEPORTATION</strong> <strong>Action</strong> 1 AP</p>\n<p>You can slip magically between spaces. This is a magical technique using the tradition of your Monastic Path. You instantaneously transport yourself to a location within your line of sight, covering a distance up to your Speed. You cannot take other creatures with you.</p>\n<p><em>Automated:</em> press Use: 1 AP (a Flourish), and this use. Move your token up to your Speed to a space you can see; the move is a teleport and provokes nothing.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Flourish, Technique, Teleportation",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "abundantStep"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!y1ZmYSrp0LbbVSYn"
+}

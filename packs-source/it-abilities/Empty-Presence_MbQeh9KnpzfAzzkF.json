@@ -1,0 +1,44 @@
+{
+  "_id": "MbQeh9KnpzfAzzkF",
+  "name": "Empty Presence",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS SHADOW TECHNIQUE</strong></p>\n<p><strong>Prerequisites</strong> Level 16; <strong>Action</strong> 1 AP; <strong>Duration</strong> 1 minute</p>\n<p>You suppress not merely your appearance but the very instinct that tells another creature that someone is standing nearby.</p>\n<p>You become invisible for the duration.</p>\n<p>Unlike Veiled Body, making an attack or taking another hostile action does not end Empty Presence. Instead, immediately after resolving the hostile action you become concealed rather than invisible until the end of your current turn.</p>\n<p>At the end of your turn, if Empty Presence is still active, you become invisible again.</p>\n<p>The effect ends immediately if you become unconscious or choose to dismiss it.</p>\n<p>This Ghost Art is magical.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. You are Invisible for 1 minute; after a Strike or a spell you are Concealed instead until the end of that turn, then Invisible again. Magical.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Shadow, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Empty Presence",
+      "itArtLevel": 16
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MbQeh9KnpzfAzzkF"
+}

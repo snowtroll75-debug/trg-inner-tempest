@@ -2,7 +2,7 @@
 /**
  * build-zip — the shippable module: module.json, scripts/, module/,
  * packs/ (compiled), packs-source/ (reviewable), tools/ (the harness),
- * docs/, README, CHANGELOG. Never node_modules. Output:
+ * docs/, README, CHANGELOG. Never node_modules, .git or .github. Output:
  * ../trg-inner-tempest-<version>.zip, whose ROOT is the module folder
  * (Foundry installs a zip into a folder named for the module id).
  *
@@ -28,10 +28,10 @@ for (const file of required) {
   if (!fs.existsSync(path.join(ROOT, file))) throw new Error(`build-zip: ${file} is missing`);
 }
 
-const EXCLUDE = ["node_modules", ".git", ".DS_Store", "LOCK", ".harness.lock", ".harness.snapshot.json"];
+const EXCLUDE = ["node_modules", ".git", ".github", ".DS_Store", "LOCK", ".harness.lock", ".harness.snapshot.json"];
 fs.rmSync(out, { force: true });
 execFileSync("zip", ["-qr", out, NAME,
-  "-x", `${NAME}/node_modules/*`, `${NAME}/.git/*`, "*/.DS_Store", "*/packs/*/LOCK",
+  "-x", `${NAME}/node_modules/*`, `${NAME}/.git/*`, `${NAME}/.github/*`, "*/.DS_Store", "*/packs/*/LOCK",
   `${NAME}/tools/.harness.lock`, `${NAME}/tools/.harness.snapshot.json`], { cwd: path.dirname(ROOT) });
 
 const entries = execFileSync("unzip", ["-Z1", out], { encoding: "utf8" }).split("\n").filter(Boolean);

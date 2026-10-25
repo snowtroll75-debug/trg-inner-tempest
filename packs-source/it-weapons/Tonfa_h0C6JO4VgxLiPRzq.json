@@ -1,0 +1,52 @@
+{
+  "_id": "h0C6JO4VgxLiPRzq",
+  "name": "Tonfa",
+  "img": "systems/trg-prime/assets/weapons/club.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 1,
+    "price": 1,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Agile, Finesse, Monastic, Parry, Twin, Uncommon",
+    "description": "<p>These L-shaped combat sticks are well-suited for executing a dynamic blend of striking and blocking manoeuvres. The practitioner securely grips the handle and has the option to either spin the stick for offensive actions or use it to cover and reinforce the forearm for enhanced defence.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>\n<p><strong>Twin:</strong> These weapons are used as a pair. If both weapons successfully hit and inflict damage whilst using the Double Slice action, their base damage increases by 1.</p>\n<p><em>Automated (TRG Prime 3.668.1):</em> in Double Slice with two Twin weapons, when both swings hit and inflict damage, each deals 1 more damage of its type after the pair (its DR already met by the swing), unless the pair has already dropped the target.</p>",
+    "attackBonus": 0,
+    "damage": "1d6",
+    "damageType": "bludgeoning",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 6,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Club",
+    "category": "Martial",
+    "size": "small",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!h0C6JO4VgxLiPRzq"
+}

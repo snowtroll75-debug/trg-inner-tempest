@@ -1,0 +1,61 @@
+{
+  "_id": "HmwbbbN60FjtoH4t",
+  "name": "Disciple's Dodge",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Disciple 1st level",
+    "active": true,
+    "description": "<p>At 1st level you may add your Wisdom ability score as a dodge bonus to your Defence (DB). This bonus is only applied if you are unencumbered and wearing no armour.</p>\n<p><em>Automated:</em> your Wisdom is added to your DB as a dodge bonus while you wear no armour and carry no encumbering load. A shield does not stop it. Flat-Footed removes it, as it removes every dodge bonus.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Disciple",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Disciple",
+        "level": 1
+      },
+      "statBonuses": [
+        {
+          "target": "defence",
+          "type": "dodge",
+          "ability": "wisdom",
+          "when": {
+            "unarmoured": true,
+            "unencumbered": true
+          },
+          "label": "Disciple's Dodge"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HmwbbbN60FjtoH4t"
+}

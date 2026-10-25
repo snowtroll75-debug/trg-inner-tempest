@@ -1,0 +1,56 @@
+{
+  "_id": "KJRIejViysd8bgLh",
+  "name": "Mystical Discipline",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p>At 1st level, you must select one of the mystical disciplines. This discipline is in addition to your Monastic Path (see below). It represents the way in which your inner discipline manifests and determines your special ability and bonus innate spells. Mystical Disciplines are explained in more detail below.</p>\n<p><strong>MYSTICAL DISCIPLINES</strong> You select a mystical discipline from the below list. Your mystical discipline grants you the following abilities:</p>\n<p><strong>SPECIAL ABILITY</strong> Your mystical discipline will grant you a unique special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> At 1st level you gain the listed bonus cantrip and base PP 2 spell as innate spells with the Focus trait. At 3rd level and then every two levels thereafter, you gain the next listed spell in the same way. The PP shown in the table is the spell's normal base PP value; it is not a cost you pay to cast it.</p>\n<p>Be aware that any spell marked with an asterisk is a new spell which is detailed later in this book.</p>\n<p><em>Automated:</em> press Use to choose Inner Flame, Dragon Soul, Still Mind, Starborn Flow or Thousand Reflections. The discipline arrives with its special ability, and its spells arrive as innate spells with the Focus trait as you reach their levels, cast with your Monastic Path's tradition and ability.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "abilityChoices": [
+        "Inner Flame",
+        "Dragon Soul",
+        "Still Mind",
+        "Starborn Flow",
+        "Thousand Reflections"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KJRIejViysd8bgLh"
+}

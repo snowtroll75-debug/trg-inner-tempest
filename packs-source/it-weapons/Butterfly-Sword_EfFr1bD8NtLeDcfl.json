@@ -1,0 +1,52 @@
+{
+  "_id": "EfFr1bD8NtLeDcfl",
+  "name": "Butterfly Sword",
+  "img": "systems/trg-prime/assets/weapons/short-sword.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 1,
+    "price": 20,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Agile, Concealable, Disarm, Exotic, Finesse, Monastic, Parry, Twin",
+    "description": "<p>These paired short swords are intricately designed to resemble a single blade when nested together, concealing their dual nature until drawn for combat. Both weapons can be drawn as a single Interact (1 AP) action and separated as a Free (0 AP) action.</p>\n<p>Be aware that when enchanting these weapons, any rune is applied to both, but the magic is only effective if the weapons are wielded together.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>\n<p><strong>Twin:</strong> These weapons are used as a pair. If both weapons successfully hit and inflict damage whilst using the Double Slice action, their base damage increases by 1.</p>\n<p><em>Automated (TRG Prime 3.668.1):</em> in Double Slice with two Twin weapons, when both swings hit and inflict damage, each deals 1 more damage of its type after the pair (its DR already met by the swing), unless the pair has already dropped the target.</p>\n<p><em>Traits as printed:</em> Agile, Concealable, Disarm, Finesse, Monastic, Parry, Twin.</p>\n<p><em>Not automated:</em> drawing both as one Interact and separating them, and the rune that works only when both are wielded, are the GM's. The pack item is one sword: Double Slice and Twin need two on the character.</p>",
+    "attackBonus": 0,
+    "damage": "1d4",
+    "damageType": "slashing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 6,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Knife",
+    "category": "Exotic",
+    "size": "small",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EfFr1bD8NtLeDcfl"
+}

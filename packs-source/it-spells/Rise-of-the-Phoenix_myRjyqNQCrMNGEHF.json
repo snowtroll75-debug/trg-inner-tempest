@@ -1,0 +1,69 @@
+{
+  "_id": "myRjyqNQCrMNGEHF",
+  "name": "Rise of the Phoenix",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 12,
+    "castAP": "1 hour",
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "unlimited",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "note",
+        "text": "Casting takes 1 hour. The egg links to your soul: if you die, it hatches and you are resurrected at the egg's location with full HP and 0 PP; your gear stays with your corpse. Casting again makes any previous egg crumble to ash."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Fire, Healing, Translocation",
+    "description": "<p><strong>Cast</strong> 1 hour (somatic, verbal)</p>\n<p>You create an egg-shaped object which creates a link to your soul. Should you die, the egg hatches and you’re resurrected with full hit points and zero power points at the egg’s current location. Your gear remains with your corpse.</p>\n<p>Be aware that if you cast this spell again, any previous egg you created crumbles to ash.</p>\n<p><em>Not automated:</em> the egg is a story object: record where it is, and resurrect the character at it by hand.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!myRjyqNQCrMNGEHF"
+}

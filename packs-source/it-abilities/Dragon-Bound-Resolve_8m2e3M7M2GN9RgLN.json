@@ -1,0 +1,102 @@
+{
+  "_id": "8m2e3M7M2GN9RgLN",
+  "name": "Dragon-Bound Resolve",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>Dragon-Bound Resolve:</strong> You gain a +1 racial bonus to saving throws against fear and effects created by creatures of the Wyrm type.</p>\n<p><em>Applied automatically</em> to a save against an effect with the Fear trait or one a Wyrm forced, and offered as a tick on a save whose source the roll cannot see. A Wyrm's fear effect counts once.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Dragon-Bound Resolve",
+          "scope": "Saving throws against fear",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "traits": [
+              "fear"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Dragon-Bound Resolve",
+          "scope": "Saving throws against effects created by creatures of the Wyrm type",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "sourceTypes": [
+              "wyrm"
+            ],
+            "not": {
+              "traits": [
+                "fear"
+              ]
+            }
+          },
+          "value": 1,
+          "type": "race"
+        },
+        {
+          "kind": "modifier",
+          "label": "Dragon-Bound Resolve",
+          "scope": "Saving throws against fear, or an effect created by a Wyrm — tick if this save is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "not": {
+              "traits": [
+                "fear"
+              ],
+              "sourceTypes": [
+                "*"
+              ]
+            }
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!8m2e3M7M2GN9RgLN"
+}

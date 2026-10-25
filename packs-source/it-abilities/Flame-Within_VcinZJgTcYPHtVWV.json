@@ -1,0 +1,50 @@
+{
+  "_id": "VcinZJgTcYPHtVWV",
+  "name": "Flame Within",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><strong>TECHNIQUE</strong> <strong>Actions</strong> Free (0 AP); <strong>Trigger</strong> you take damage.</p>\n<p>You gain a +1-circumstance bonus to attack checks for 1 round (stacking up to +3). This resets when you end your turn without taking or dealing damage.</p>\n<p><em>Automated:</em> each time you take damage the bonus on your attack checks rises by 1, to +3, and it stays until you end a turn in which you neither took nor dealt damage (Graham's ruling B3-3). No Focus trait: it is never expended (IT-M3).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "flameWithin"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!VcinZJgTcYPHtVWV"
+}

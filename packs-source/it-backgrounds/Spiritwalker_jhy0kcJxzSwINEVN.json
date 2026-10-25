@@ -1,0 +1,104 @@
+{
+  "_id": "jhy0kcJxzSwINEVN",
+  "name": "Spiritwalker",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are a wanderer between the mortal realm and the spirit world, able to communicate with grey entities and harness their power.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Spirit Whisperer</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Meditation, Perception, Sense Motive</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Spirits) (on your sheet as Spirit Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>-1</p><p><em>Automated:</em> if your race already gives you Spirit Lore (a Miraku does), Apply Grants says so and this background's <strong>Use</strong> asks you to name another Lore instead (Graham's ruling, 21 October 2026).</p>",
+    "grantedFeats": "Spirit Whisperer",
+    "grantedSpells": "",
+    "skillBonuses": "Meditation, Perception, Sense Motive",
+    "specialistSkill": "Spirit Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "-1"
+  },
+  "effects": [
+    {
+      "_id": "umRjyMYBim6NuCAm",
+      "name": "Spiritwalker: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.meditation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.perception.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.senseMotive.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Meditation, Perception, Sense Motive.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!jhy0kcJxzSwINEVN.umRjyMYBim6NuCAm"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Spirit Lore",
+      "specialistAlternative": {
+        "label": "another Lore",
+        "prompt": "Your race already gives you Spirit Lore — name another Lore for this background",
+        "placeholder": "e.g. Ancestor Lore",
+        "suffix": "Lore"
+      },
+      "itAutomation": "loreAlternative"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!jhy0kcJxzSwINEVN"
+}

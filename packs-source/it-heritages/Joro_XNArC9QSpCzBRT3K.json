@@ -1,0 +1,115 @@
+{
+  "_id": "XNArC9QSpCzBRT3K",
+  "name": "Joro",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Joro have multiple small eyes, fine sensory hairs and a pair of vestigial needle-thin limbs near the ribs. Their spinnerets produce exceptionally strong silk, and their patient stillness can make them appear carved rather than alive. Joro work as weavers, climbers, infiltrators and information brokers.</p>\n<p>A Joro rarely acts before every strand of a problem has been felt.</p>\n<p>You gain a Climb Speed of 20 feet and can traverse ceilings while you have at least one hand free.</p>\n<p><em>Applied automatically:</em> a climb Speed of 20 feet. Crossing a ceiling with a hand free is yours to declare.</p>",
+    "sourceRace": "Scree",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "b5zWpzwfqTLG8A7R",
+      "name": "Joro: Climb 20 ft",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.climb.base",
+          "mode": 4,
+          "value": "20",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "A climb Speed of 20 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!XNArC9QSpCzBRT3K.b5zWpzwfqTLG8A7R"
+    },
+    {
+      "_id": "5coRRxQy1fPea1JZ",
+      "name": "Joro: ceilings",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featNote": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "You can traverse ceilings while you have at least one hand free.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!XNArC9QSpCzBRT3K.5coRRxQy1fPea1JZ"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XNArC9QSpCzBRT3K"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "khGFDGC6Orj7uPfj",
+  "name": "Flow Strike",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Kensai 1st level",
+    "active": true,
+    "description": "<p><strong>ATTACK FLOURISH</strong></p>\n<p><strong>Action</strong> 0 AP; Trigger you successfully hit a creature with a melee or thrown weapon</p>\n<p>You may make an additional attack against the same target. This attack is made as if it was your third strike of the turn (usually -10 but this may be lower based upon what feats you have). The attack does not count towards your MAP.</p>\n<p><em>Automated:</em> when your melee or thrown Strike hits and you may still use a Flourish this turn, you are asked whether to use Flow Strike: another Strike against the same target at your third-attack penalty (−10, −8 agile; −5 in Gale Cutter), which does not count towards your multiple attack penalty. 0 AP.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": "Attack, Flourish",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Kensai",
+        "level": 1
+      },
+      "itAutomation": "flowStrike"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!khGFDGC6Orj7uPfj"
+}

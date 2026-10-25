@@ -1,0 +1,53 @@
+{
+  "_id": "EogZCQvilsaZQcqQ",
+  "name": "Dragon Soul",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><em>The ancient power coils within your breath, your fists, your will.</em></p>\n<p>This discipline awakens the long slumbering might of the Dragon Soul within the Mystic. Followers of this path are inspired by the timeless, sovereign power of dragons—creatures of myth who embody elemental forces and unshakable will. Through meditative communion with this primal energy, the Mystic cultivates traits of draconic dominance: unmatched presence, overwhelming breath, and inner steel.</p>\n<p>Mystics of the Dragon Soul grow stronger with each breath drawn into their centre. Their chi becomes a vessel for elemental expression—fire, thunder, wind, or force—and their movements echo the ancient rhythm of dragonkind. To stand against them is to face not just a warrior, but a force of legend.</p>\n<p><strong>SPECIAL ABILITY</strong> You gain the Dragon's Pulse special ability.</p>\n<p><strong>ADDITIONAL SPELLS</strong> You gain the following spells at the indicated Mystic level as innate spells with the Focus trait. These spells are in addition to any spells that you select with your class picks and don't count towards your total spells known.</p>\n<table><thead><tr><th>Mystic Level</th><th>Spells (Base PP)</th></tr></thead><tbody><tr><td>1st</td><td>Light (0), Mage Armour (2)</td></tr><tr><td>3rd</td><td>Resist Energy (4)</td></tr><tr><td>5th</td><td>Fly (6)</td></tr><tr><td>7th</td><td>Dragon Fear* (8)</td></tr><tr><td>9th</td><td>Breath of the Dragon* (10)</td></tr><tr><td>11th</td><td>Shape of the Wyrm (12)</td></tr><tr><td>13th</td><td>True Seeing (14)</td></tr><tr><td>15th</td><td>Wind Walk (16)</td></tr></tbody></table>\n<p><em>Automated:</em> Dragon's Pulse is added to your sheet. Each spell arrives as an innate spell with the Focus trait when you reach its level, cast with your Monastic Path's tradition and ability. Each may be cast up to base PP = your level + 1, so it is usable from the level that grants it (Graham's ruling B3-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "",
+    "grantedSpells": "1: Light, 1: Mage Armour, 3: Resist Energy, 5: Fly, 7: Dragon Fear, 9: Breath of the Dragon, 11: Shape Of The Wyrm, 13: True Seeing, 15: Wind Walk",
+    "grantedAbilities": "Dragon's Pulse",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EogZCQvilsaZQcqQ"
+}

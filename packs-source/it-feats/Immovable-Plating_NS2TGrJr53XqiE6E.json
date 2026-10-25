@@ -1,0 +1,113 @@
+{
+  "_id": "NS2TGrJr53XqiE6E",
+  "name": "Immovable Plating",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Kabuto Heritage",
+    "active": true,
+    "description": "<p><strong>SCREE</strong></p>\n<p><em>Your broad stance, reinforced joints and dense armour plates make moving you against your will exceptionally difficult.</em></p>\n<p><strong>Prerequisites</strong> Kabuto Heritage</p>\n<p>You gain a +2 racial bonus to checks and saving throws made to avoid being knocked prone or moved against your will. Furthermore, whenever a physical effect would forcibly move you, reduce the distance moved by 5 feet, to a minimum of 0 feet.</p>\n<p>Be aware that this does not affect teleportation or other effects that relocate you without physically moving your body.</p>\n<p><em>Automated:</em> a Shove or Trip against you meets your Fortitude DC +2 (as the Storgar's), and the tick is offered on your own checks and saves to avoid being knocked prone or moved. A push that moves you is 5 feet shorter, to a minimum of 0; teleportation is not a push.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Scree",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [
+    {
+      "_id": "AZ0vlfH79VYklGjQ",
+      "name": "Immovable Plating: pushes 5 ft shorter",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "forcedMovementReduction": 5
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Whenever a physical effect would forcibly move you, reduce the distance moved by 5 feet, to a minimum of 0 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!NS2TGrJr53XqiE6E.AZ0vlfH79VYklGjQ"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "defenceDC": [
+        {
+          "dc": "fortitudeDC",
+          "value": 2,
+          "label": "Immovable Plating",
+          "scope": "resisting being knocked prone or moved against your will",
+          "when": {
+            "actions": [
+              "shoveAttack",
+              "tripAttack",
+              "reposition"
+            ]
+          }
+        }
+      ],
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Immovable Plating",
+          "scope": "Checks and saving throws to avoid being knocked prone or moved against your will — tick if this roll is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill",
+              "save",
+              "attribute"
+            ]
+          },
+          "value": 2,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NS2TGrJr53XqiE6E"
+}

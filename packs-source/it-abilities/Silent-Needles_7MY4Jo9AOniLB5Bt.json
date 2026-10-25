@@ -1,0 +1,44 @@
+{
+  "_id": "7MY4Jo9AOniLB5Bt",
+  "name": "Silent Needles",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>ATTACK FLOURISH FOCUS TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP; <strong>Requirements</strong> you are wielding or carrying at least two suitable thrown weapons.</p>\n<p>You release a rapid succession of concealed weapons.</p>\n<p>Make two ranged Strikes using thrown weapons against the same creature or two different creatures. Apply your multiple attack penalty to these Strikes normally.</p>\n<p>If both attacks damage the same creature, apply DR, resistance and weakness only once.</p>\n<p><em>Automated:</em> target one or two creatures, then press Use: 1 AP (a Flourish) and this art's use. Two thrown Strikes, each at your multiple attack penalty; a creature hit twice meets its DR once. You need two thrown weapons.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Attack, Flourish, Focus, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Silent Needles",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7MY4Jo9AOniLB5Bt"
+}

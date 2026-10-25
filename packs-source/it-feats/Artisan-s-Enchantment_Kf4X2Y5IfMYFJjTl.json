@@ -1,0 +1,45 @@
+{
+  "_id": "Kf4X2Y5IfMYFJjTl",
+  "name": "Artisan's Enchantment",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Crafting 5 ranks, Inner Discipline or Caster Level 4",
+    "active": true,
+    "description": "<p><em>Your craftsmanship is imbued with a touch of magic.</em></p>\n<p>Prerequisites Crafting 5 ranks, Inner Discipline or Caster Level 4</p>\n<p>You can spend extra time when crafting an item to infuse it with a magical enchantment. By decreasing your success modifier by 2 when making a Create check, you may magically imbue a mundane item with an appropriate non-magical quality which then gains the alteration trait. This increases the final cost of the item accordingly.</p>\n<p><em>Not automated:</em> TRG Prime's Create project derives its success modifier from the check's margin and has no place yet to take 2 from it. Lower it by hand when you imbue a quality, and add the alteration trait to the finished item.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Kf4X2Y5IfMYFJjTl"
+}

@@ -1,8 +1,8 @@
 {
   "id": "trg-inner-tempest",
   "title": "TRG Prime: Inner Tempest",
-  "description": "The Inner Tempest sourcebook for TRG Prime: four races (Miraku, Ryukari, Scree, Tianzhi) and their heritages, eleven monastic backgrounds, five classes (Disciple, Ghostwalker, Kensai, Mystic, Oathblade) built on the Focus trait, skill actions, feats, archetypes, Dragon Companions, monastic gear, the Grimoire and magic items. Scaffold only — no content yet.",
-  "version": "0.0.0",
+  "description": "The Inner Tempest sourcebook for TRG Prime: four races (Miraku, Ryukari, Scree, Tianzhi) and their heritages, eleven monastic backgrounds, five classes (Disciple, Ghostwalker, Kensai, Mystic, Oathblade) built on the Focus trait, skill actions, feats, archetypes, Dragon Companions, monastic gear, the Grimoire and magic items. Block 1: the races, heritages, racial abilities, backgrounds and General feats. Block 2 (0.3.0): the seventeen Chapter 4 skill actions. Block 3 (0.4.0): the Disciple and the Mystic, the Monastic Paths, the Mystical Disciplines, Inner Discipline and the Technique feats, and the Grimoire spells the disciplines grant. Block 4 (0.5.0): the Ghostwalker, the Kensai and the Oathblade, and Chapter 6's weapons. Block 5 (0.6.0): the racial feats. Block 6 (0.7.0): the remaining class feats (the eight Disciple and Mystic stances, Elemental Fist, Inner Magic, Mystic Essence, Perfect Shot, Perfect Strike, Stunning Fist) and the core class feats opened to the five classes.",
+  "version": "0.7.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14.367"
@@ -19,7 +19,7 @@
         "id": "trg-prime",
         "type": "system",
         "compatibility": {
-          "minimum": "3.663.5"
+          "minimum": "3.670.1"
         }
       }
     ]
@@ -27,10 +27,123 @@
   "esmodules": [
     "scripts/inner-tempest.mjs"
   ],
-  "packs": [],
+  "packs": [
+    {
+      "name": "it-races",
+      "label": "Inner Tempest: Races",
+      "path": "packs/it-races",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "races"
+        }
+      }
+    },
+    {
+      "name": "it-heritages",
+      "label": "Inner Tempest: Heritages",
+      "path": "packs/it-heritages",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "heritages"
+        }
+      }
+    },
+    {
+      "name": "it-backgrounds",
+      "label": "Inner Tempest: Backgrounds",
+      "path": "packs/it-backgrounds",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "backgrounds"
+        }
+      }
+    },
+    {
+      "name": "it-abilities",
+      "label": "Inner Tempest: Abilities",
+      "path": "packs/it-abilities",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "abilities"
+        }
+      }
+    },
+    {
+      "name": "it-feats",
+      "label": "Inner Tempest: Feats",
+      "path": "packs/it-feats",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "feats"
+        }
+      }
+    },
+    {
+      "name": "it-companions",
+      "label": "Inner Tempest: Natural Attacks",
+      "path": "packs/it-companions",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "companions"
+        }
+      }
+    },
+    {
+      "name": "it-classes",
+      "label": "Inner Tempest: Classes",
+      "path": "packs/it-classes",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "classes"
+        }
+      }
+    },
+    {
+      "name": "it-spells",
+      "label": "Inner Tempest: Spells",
+      "path": "packs/it-spells",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "spells"
+        }
+      }
+    },
+    {
+      "name": "it-weapons",
+      "label": "Inner Tempest: Weapons",
+      "path": "packs/it-weapons",
+      "type": "Item",
+      "system": "trg-prime",
+      "flags": {
+        "trg-prime": {
+          "extends": "weapons"
+        }
+      }
+    }
+  ],
   "flags": {
     "trg-prime": {
       "sourcebook": "Inner Tempest"
     }
-  }
+  },
+  "socket": true,
+  "url": "https://github.com/snowtroll75-debug/trg-inner-tempest",
+  "manifest": "https://raw.githubusercontent.com/snowtroll75-debug/trg-inner-tempest/main/module.json",
+  "download": "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v0.7.1/trg-inner-tempest.zip"
 }

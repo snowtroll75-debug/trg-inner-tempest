@@ -1,0 +1,39 @@
+{
+  "_id": "mst5O69B9WwWtD8q",
+  "name": "Living Lantern",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You emit dim light within 10 feet. You can suppress or reactivate this light as a 1 AP action with the Concentrate trait.</p>\n<p><em>The Hotaru's light is unnamed in the heritage; Lantern Signal and Spirit Beacon (Chapter 5) call it \"your Living Lantern\", the name used here (audit IT-M21).</em></p>\n<p><em>Use:</em> lights or suppresses it (1 AP in combat). While lit it is an effect on your sheet, your token glows dim to 10 feet, and the light level within 10 feet rises a step (as a carried light's does).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Scree",
+    "sourceClass": "",
+    "traits": "Concentrate"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mst5O69B9WwWtD8q"
+}

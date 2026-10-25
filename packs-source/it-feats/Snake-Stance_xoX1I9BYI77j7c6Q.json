@@ -1,0 +1,49 @@
+{
+  "_id": "xoX1I9BYI77j7c6Q",
+  "name": "Snake Stance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Devoted or Illuminator Monastic Path",
+    "active": true,
+    "description": "<p><strong>DISCIPLE MYSTIC STANCE</strong></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Devoted or Illuminator Monastic Path</p>\n<p>You adopt the coiled readiness of the serpent, focusing on reactive precision. While in this stance, you may use a reaction to make a melee strike against a target that misses you in with their own melee strike. Your attack ignores MAP.</p>\n<p><em>Automated:</em> press Use to enter the stance: 1 AP, under the system's stance rules (one stance at a time, or two with Stance Mastery; Reactive Stance enters it free at initiative). It lasts until you enter another stance or delete its effect. While in it, when a creature misses you with a melee Strike you are asked whether to use your reaction for a melee Strike against it, at no multiple attack penalty. The reaction counts as an Attack reaction, so Battle Readiness's may take it (Graham's B6-9). The Path is checked when you enter it.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Mystic, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "snakeStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xoX1I9BYI77j7c6Q"
+}

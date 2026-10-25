@@ -1,0 +1,45 @@
+{
+  "_id": "6VOlrBTC4waGE96q",
+  "name": "Unpaid Debt",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10, Oath of Vengeance",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 10, Oath of Vengeance</p>\n<p>A failed attempt at vengeance does not settle the debt.</p>\n<p>When you make the Strike granted the benefits of Retribution, missing the target no longer causes Retribution to end.</p>\n<p>Retribution remains until you successfully damage the challenged target or its normal duration expires.</p>\n<p><em>Automated:</em> a missed Retribution Strike no longer ends Retribution; it lasts until you damage the target or it expires.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!6VOlrBTC4waGE96q"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "tr9cWwnoy1kU11IW",
+  "name": "Inner Balance",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 2 ranks",
+    "active": true,
+    "description": "<p><em>Your dedication to meditation has taught you to establish a precise state of physical and mental balance before a difficult task.</em></p>\n<p><strong>Prerequisites</strong> Meditation 2 ranks</p>\n<p>You can use the Centred Balance (Meditation) action.</p>\n<p><em>Automated:</em> Centred Balance appears under Meditation on your Skills tab while you have this feat — the time you meditate chosen as you roll; its Bonus Check result is applied to the check you make next.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!tr9cWwnoy1kU11IW"
+}

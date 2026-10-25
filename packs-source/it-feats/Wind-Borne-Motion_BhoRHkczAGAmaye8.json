@@ -1,0 +1,49 @@
+{
+  "_id": "BhoRHkczAGAmaye8",
+  "name": "Wind-Borne Motion",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Ren Heritage, Acrobatics 5 ranks",
+    "active": true,
+    "description": "<p><strong>FOCUS MIRAKU MOVEMENT TECHNIQUE</strong></p>\n<p><em>For a brief instant you surrender your weight to the air, allowing momentum rather than the ground to determine your path.</em></p>\n<p><strong>Prerequisites</strong> Ren Heritage, Acrobatics 5 ranks</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You Stride up to your Speed. During this movement you may cross liquid surfaces, narrow gaps and unsupported spaces as though they were solid ground. You must end your movement on a surface capable of supporting you; otherwise, you fall normally.</p>\n<p>This movement does not grant flight and cannot be used to move vertically through unsupported air.</p>\n<p><em>Automated:</em> press Use: 1 AP and its Focus use. Your next token move is armed up to your Speed; crossing liquid, gaps and open space is yours to judge, and you must end on a surface that holds you.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Miraku, Movement, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "windBorneMotion"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BhoRHkczAGAmaye8"
+}

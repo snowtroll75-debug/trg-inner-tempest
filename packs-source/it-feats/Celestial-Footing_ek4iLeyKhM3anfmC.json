@@ -1,0 +1,45 @@
+{
+  "_id": "ek4iLeyKhM3anfmC",
+  "name": "Celestial Footing",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Shinryu Heritage, Level 10",
+    "active": true,
+    "description": "<p><strong>RYUKARI</strong></p>\n<p><em>You have learned to trust the celestial current beneath your feet completely, standing upon the open air as though upon polished stone.</em></p>\n<p><strong>Prerequisites</strong> Shinryu Heritage, Level 10</p>\n<p>When using your Shinryu heritage ability to move across unsupported air, you may now end your movement while unsupported. The air continues to support you until the end of your next turn. During this time, you may Step or Stride across unsupported air normally. If you are not standing upon a surface capable of supporting you when this effect ends, you fall normally.</p>\n<p>Be aware that this does not grant a Fly Speed.</p>\n<p><em>Not automated:</em> TRG Prime's movement does not know what is under a token (as the Shinryu heritage); the air holds you until the end of your next turn by the table's reckoning.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "Ryukari",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ryukari",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ek4iLeyKhM3anfmC"
+}

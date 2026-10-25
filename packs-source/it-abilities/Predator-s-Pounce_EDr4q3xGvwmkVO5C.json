@@ -1,0 +1,39 @@
+{
+  "_id": "EDr4q3xGvwmkVO5C",
+  "name": "Predator's Pounce",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>PREDATOR'S POUNCE</strong></p>\n<p><strong>ATTACK FLOURISH FOCUS MOVEMENT</strong></p>\n<p><strong>Action</strong> 2 AP</p>\n<p><strong>Requirements</strong> you are able to Stride at least 10 feet towards a creature.</p>\n<p>Stride at least 10 feet (maximum of your speed) and then make a melee Strike against the creature. The target cannot use reactions triggered by your movement.</p>\n<p><em>Use:</em> target the creature first. Checks Flourish's once-a-turn limit, spends 2 AP and this ability's Focus use (Refocus restores it), and arms your next token move — up to your land Speed, no further AP. The card then offers the melee Strike with each melee weapon you have equipped; it costs no AP, since the Pounce bought it.</p>",
+    "usesPerDay": "1",
+    "bonusUses": 0,
+    "usesValue": 1,
+    "sourceRace": "Miraku",
+    "sourceClass": "",
+    "traits": "Attack, Flourish, Focus, Movement"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EDr4q3xGvwmkVO5C"
+}

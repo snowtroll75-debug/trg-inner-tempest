@@ -1,0 +1,100 @@
+{
+  "_id": "9HdcrdRoCiB3V9gh",
+  "name": "Suiryoku",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Suiryoku are attuned to the ebb and flow of water's energies. They are usually found in coastal villages and on rivers.</p>\n<p>You gain a Swim speed of 20 ft. and can also hold your breath for five times the usual amount when underwater.</p>\n<p><em>Language:</em> Aqualis, the heritage's language (Graham's ruling). <em>Element:</em> Water (cold). <em>Applied automatically:</em> a swim Speed of 20 feet, and five times the breath when you hold it underwater.</p>",
+    "sourceRace": "Tianzhi",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "Aqualis",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "bdEBEOIIG7x9L2Rr",
+      "name": "Suiryoku: Swim 20 ft",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.movement.swim.base",
+          "mode": 4,
+          "value": "20",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "A swim Speed of 20 feet.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!9HdcrdRoCiB3V9gh.bdEBEOIIG7x9L2Rr"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itElement": {
+        "element": "Water",
+        "damageType": "cold",
+        "spellTraits": [
+          "water",
+          "cold"
+        ]
+      },
+      "creatureAbility": {
+        "derives": {
+          "breathMultiplier": 5
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!9HdcrdRoCiB3V9gh"
+}

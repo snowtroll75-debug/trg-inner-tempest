@@ -1,0 +1,52 @@
+{
+  "_id": "g528rVkaRdgZNlSM",
+  "name": "Sai",
+  "img": "systems/trg-prime/assets/weapons/main-gauche.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 1,
+    "price": 1,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Agile, Disarm, Finesse, Monastic, Parry, Uncommon",
+    "description": "<p>A sai is a distinctive weapon characterized by a central metal spike complemented by a pair of prongs, strategically designed for trapping an opponent's weapon. While it possesses a pointed tip, the sai is typically not employed for stabbing actions. Its primary functions involve bludgeoning adversaries, utilizing punches with the hilt, or skilfully catching and disarming weapons by leveraging the weapon's tines. Martial artists frequently wield sais in pairs, capitalizing on their formidable defensive and offensive capabilities.</p>\n<p><strong>Monastic:</strong> A weapon with this trait is specifically designed to be used with complex martial arts techniques. Any ability, feat or spell which can only be applied to an unarmed strike can also be used with a monastic weapon (such as flurry of blows).</p>\n<p><em>Automated (TRG Prime 3.667.0):</em> an ability, feat or spell that applies to an unarmed strike also applies to it.</p>",
+    "attackBonus": 0,
+    "damage": "1d4",
+    "damageType": "piercing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 5,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Knife",
+    "category": "Martial",
+    "size": "tiny",
+    "itemLevel": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!g528rVkaRdgZNlSM"
+}

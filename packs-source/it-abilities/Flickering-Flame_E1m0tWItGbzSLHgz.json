@@ -1,0 +1,97 @@
+{
+  "_id": "E1m0tWItGbzSLHgz",
+  "name": "Flickering Flame",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You emulate the dancing flame—elusive, agile, and impossible to pin down. Every motion is misdirection, your steps leaving only smoke and confusion in your wake. Whilst in this form, you gain the following modifiers:</p>\n<ul><li>Gain a +1 bonus per 2 Int mod (min +1) to Reflex saves and Acrobatics checks.</li><li>Enemies suffer a -5 penalty to hit you with reaction attacks.</li></ul>\n<p><em>Automated:</em> press Combat Form's Use to enter it (1 AP, a stance). +1 per 2 Int (minimum +1) to Reflex saves and Acrobatics checks, and reaction attacks against you take −5. All its modifiers are class bonuses.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+1 per 2 Int to Reflex and Acrobatics",
+            "flags": {
+              "conditionals": [
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence/2",
+                  "valueMin": 1,
+                  "label": "Flickering Flame",
+                  "scope": "Reflex saves",
+                  "when": {
+                    "checkTypes": [
+                      "save"
+                    ],
+                    "subjects": [
+                      "reflex"
+                    ]
+                  }
+                },
+                {
+                  "kind": "modifier",
+                  "type": "class",
+                  "auto": true,
+                  "valueFrom": "intelligence/2",
+                  "valueMin": 1,
+                  "label": "Flickering Flame",
+                  "scope": "Acrobatics checks",
+                  "when": {
+                    "checkTypes": [
+                      "skill"
+                    ],
+                    "subjects": [
+                      "acrobatics"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "−5 to reaction attacks against you",
+            "flags": {
+              "reactionAttackPenalty": {
+                "value": -5,
+                "label": "Flickering Flame"
+              }
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!E1m0tWItGbzSLHgz"
+}

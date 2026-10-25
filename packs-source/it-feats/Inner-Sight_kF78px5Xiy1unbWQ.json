@@ -1,0 +1,49 @@
+{
+  "_id": "kF78px5Xiy1unbWQ",
+  "name": "Inner Sight",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> <strong>Action</strong> 2 AP</p>\n<p>You heighten your senses for 1 minute. You gain Nightvision, allowing you to see in dim light as though it were bright light, and you ignore concealment caused by dim light.</p>\n<p><strong>GREATER MASTERY</strong> At 8th level, the duration increases to 10 minutes.</p>\n<p>At 12th level, you gain Darkvision rather than Nightvision for the duration.</p>\n<p><em>Automated:</em> press Use: 2 AP and this use. You gain Nightvision for 1 minute; for 10 minutes from 8th level, and Darkvision instead from 12th.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Focus, Technique",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerSight"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!kF78px5Xiy1unbWQ"
+}

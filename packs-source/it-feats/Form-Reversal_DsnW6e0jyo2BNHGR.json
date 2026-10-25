@@ -1,0 +1,49 @@
+{
+  "_id": "DsnW6e0jyo2BNHGR",
+  "name": "Form Reversal",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 6",
+    "active": true,
+    "description": "<p><strong>FLOURISH KENSAI</strong></p>\n<p><strong>Prerequisites</strong> Level 6</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> A creature misses you with a melee attack.</p>\n<p>You may immediately change your active Combat Form. Any applicable bonuses apply immediately.</p>\n<p><em>Automated:</em> when a melee attack misses you, you are asked whether to change form: your reaction, no AP, and Combat Form is neither needed nor expended. The one-round wait between stances does not apply. <em>Not automated:</em> its Flourish trait is not counted against your turn's Flourish, as it comes on another creature's turn.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "sourceArchetype": "",
+    "traits": "Flourish, Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "formReversal"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DsnW6e0jyo2BNHGR"
+}

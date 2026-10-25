@@ -1,0 +1,50 @@
+{
+  "_id": "DrBoluT8g9QStmkW",
+  "name": "Dragon's Pulse",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Mystic 1st level",
+    "active": true,
+    "description": "<p><strong>FOCUS TECHNIQUE</strong> <strong>Actions</strong> Free (0 AP); <strong>Trigger</strong> you strike a foe with a technique that has the Focus trait or with a melee attack.</p>\n<p>You deal additional base damage equal to your Wisdom ability score (min +1). At 6th level and then every 6 levels thereafter, this damage increases by 1.</p>\n<p><em>Automated:</em> after your melee Strike damages a creature, you are asked whether to use Dragon's Pulse: it deals your Wisdom (minimum 1), +1 at 6th, 12th and 18th, as further damage of the Strike's type, meeting resistance and weakness but no DR again, and is expended.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Mystic",
+    "traits": "Focus, Technique",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Mystic",
+        "level": 1
+      },
+      "itAutomation": "dragonsPulse"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DrBoluT8g9QStmkW"
+}

@@ -1,0 +1,71 @@
+{
+  "_id": "cz8ThXD0UsE0HVEx",
+  "name": "Zenki",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Zenki display crimson and obsidian scales that radiate visible heat. Sulphurous vapour may escape their nostrils when they are angry, and sparks often fall from their claws while they work metal. Their houses are master smiths, siege engineers and guardians of volcanic sanctuaries.</p>\n<p>Zenki believe that creation and destruction are the same force at different moments. A blade is born because ore is destroyed; a city is rebuilt because fire cleared the ground.</p>\n<p>You are immune to the harmful effects of mundane environmental heat, including extreme heat, and gain a +1 racial bonus to Crafting checks involving metal, stone or a forge.</p>\n<p><em>Applied automatically:</em> an Exhaustion check called for Extreme Heat is not made (no damage, no Fatigue). The +1 racial bonus is <em>offered</em> on Crafting checks; tick it when the work involves metal, stone or a forge.</p>",
+    "sourceRace": "Ryukari",
+    "abilityModifiers": "",
+    "grantedFeats": "",
+    "grantedSpells": "",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "derives": {
+          "heatEnvironmentImmune": true
+        }
+      },
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Zenki",
+          "scope": "Crafting checks involving metal, stone or a forge — tick if this check is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "crafting"
+            ]
+          },
+          "value": 1,
+          "type": "race"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cz8ThXD0UsE0HVEx"
+}

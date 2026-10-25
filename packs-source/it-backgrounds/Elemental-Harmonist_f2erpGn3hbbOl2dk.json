@@ -1,0 +1,104 @@
+{
+  "_id": "f2erpGn3hbbOl2dk",
+  "name": "Elemental Harmonist",
+  "img": "icons/svg/book.svg",
+  "type": "background",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Background",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>You are a seeker of harmony among the elements, skilled in balancing their energies to achieve inner and outer equilibrium.</p>\n<p><strong>BONUS FEAT</strong></p>\n<p>Elemental Balance</p>\n<p><strong>SKILL BONUSES</strong></p>\n<p>Culture, Meditation, Nature</p>\n<p><strong>SPECIALIST SKILL</strong></p>\n<p>Lore (Elemental) (on your sheet as Elemental Lore)</p>\n<p><strong>WEALTH</strong></p>\n<p>0</p><p><em>Automated:</em> if your race already gives you Elemental Lore (a Tianzhi does), Apply Grants says so and this background's <strong>Use</strong> asks you to name another Lore instead (Graham's ruling, 21 October 2026).</p>",
+    "grantedFeats": "Elemental Balance",
+    "grantedSpells": "",
+    "skillBonuses": "Culture, Meditation, Nature",
+    "specialistSkill": "Elemental Lore",
+    "special": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": "",
+    "wealth": "0"
+  },
+  "effects": [
+    {
+      "_id": "OQ6MUTuWB6WaHpRF",
+      "name": "Elemental Harmonist: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.culture.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.meditation.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.nature.class",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+1 class bonus to Culture, Meditation, Nature.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!f2erpGn3hbbOl2dk.OQ6MUTuWB6WaHpRF"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantedSpecialistSkills": "Elemental Lore",
+      "specialistAlternative": {
+        "label": "another Lore",
+        "prompt": "Your race already gives you Elemental Lore — name another Lore for this background",
+        "placeholder": "e.g. Ancestor Lore",
+        "suffix": "Lore"
+      },
+      "itAutomation": "loreAlternative"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!f2erpGn3hbbOl2dk"
+}

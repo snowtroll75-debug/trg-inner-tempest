@@ -1,0 +1,45 @@
+{
+  "_id": "bKTKeB4L6F5ruxyD",
+  "name": "Shelter Under Oath",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 10, Oath of Guardianship",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 10, Oath of Guardianship</p>\n<p>Those under your protection draw confidence from the certainty that your challenged enemy has your undivided attention.</p>\n<p>While your Challenge is active, allies within 30 feet of you gain a +2-circumstance bonus to saving throws against spells, techniques and other effects created by your challenged target.</p>\n<p>This is in addition to the attack penalty imposed upon the challenged target by Oath of Guardianship.</p>\n<p><em>Partly automated:</em> while your Challenge is up, your allies' saves against the challenged target's effects are offered +2 circumstance, when the save names its source. Being within 30 feet of you is the GM's.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bKTKeB4L6F5ruxyD"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "PLvALIFf7FCDPsCe",
+  "name": "Contortionist",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 10 ranks",
+    "active": true,
+    "description": "<p><em>You can squeeze through tight spaces in a hurry..</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 10 ranks</p>\n<p>When using the Squeeze (Acrobatics) action, the time that it takes you to move is in rounds rather than minutes. If the result of your Squeeze check is a critical, you can move at your normal Speed.</p>\n<p><em>Not automated:</em> Squeeze's time is narrative in TRG Prime. Measure it in rounds rather than minutes, and at your full Speed on a Critical.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PLvALIFf7FCDPsCe"
+}

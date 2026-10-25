@@ -1,0 +1,49 @@
+{
+  "_id": "AOnpnPWP8SyEZ99N",
+  "name": "Claim the Next Foe",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Level 8",
+    "active": true,
+    "description": "<p><strong>FLOURISH FOCUS OATHBLADE</strong></p>\n<p><strong>Prerequisites</strong> Level 8</p>\n<p>For you, the completion of one oath of combat creates perfect clarity for the next.</p>\n<p><strong>Action</strong> Free (0 AP); <strong>Trigger</strong> you disable a foe with an attack, or they clearly surrender to you.</p>\n<p>Your Challenge is immediately restored, even if it was expended.</p>\n<p>You may then immediately use Challenge against another creature that you can see. This use of Challenge requires no AP but expends Challenge normally.</p>\n<p><em>Automated:</em> when your challenged target is killed, drops to 0 HP or falls unconscious, you are asked whether to claim the next: Challenge is restored and you Challenge your current target at no AP (it expends Challenge again). A surrender: press Use.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Oathblade",
+    "sourceArchetype": "",
+    "traits": "Flourish, Focus, Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "claimTheNextFoe"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AOnpnPWP8SyEZ99N"
+}

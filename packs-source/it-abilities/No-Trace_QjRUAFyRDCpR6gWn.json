@@ -1,0 +1,44 @@
+{
+  "_id": "QjRUAFyRDCpR6gWn",
+  "name": "No Trace",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>TECHNIQUE</strong></p>\n<p>You know how to move without leaving obvious signs of your passage.</p>\n<p>Attempts to Track you using Survival are treated as one difficulty category harder than normal.</p>\n<p>When deliberately attempting to conceal your trail, you may continue moving at your normal Speed.</p>\n<p>You may still leave evidence that cannot reasonably be concealed, such as broken doors, blood, magical traces or disturbances caused by other creatures.</p>\n<p><em>Not automated:</em> the system does not track trails; Track checks against you are one difficulty harder, by the GM.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:No Trace",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!QjRUAFyRDCpR6gWn"
+}

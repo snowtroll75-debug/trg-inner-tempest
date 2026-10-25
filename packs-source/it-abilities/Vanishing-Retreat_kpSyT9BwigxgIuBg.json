@@ -1,0 +1,50 @@
+{
+  "_id": "kpSyT9BwigxgIuBg",
+  "name": "Vanishing Retreat",
+  "img": "icons/svg/book.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 1,
+    "prerequisites": "Ghostwalker 1st level",
+    "active": true,
+    "description": "<p><strong>MOVEMENT</strong></p>\n<p><strong>Action</strong> Reaction; <strong>Trigger</strong> you inflict Unseen Assault damage against a creature.</p>\n<p>You immediately Step 5 feet. This movement does not trigger reactions.</p>\n<p><em>Automated:</em> after your Unseen Assault deals its damage you are asked whether to use it: it spends your reaction (in combat) and lets you Step 5 feet (10 with Fleeting Shadow), which provokes nothing. Move your token.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Movement",
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classAbility": {
+        "class": "Ghostwalker",
+        "level": 1
+      },
+      "itAutomation": "vanishingRetreat"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!kpSyT9BwigxgIuBg"
+}

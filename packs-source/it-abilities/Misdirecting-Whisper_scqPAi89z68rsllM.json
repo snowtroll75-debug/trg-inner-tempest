@@ -1,0 +1,44 @@
+{
+  "_id": "scqPAi89z68rsllM",
+  "name": "Misdirecting Whisper",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Ghost Art",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MENTAL TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You exploit a glance, gesture, whispered word or momentary distraction to draw an opponent’s attention away from your true intent.</p>\n<p>Make either a Feint or Create a Diversion check using Deception. You gain advantage on this check.</p>\n<p>After resolving the check, you may Step 5 feet.</p>\n<p><em>Automated:</em> press Use: 1 AP and this art's use. Choose Feint or Create a Diversion: it is rolled with advantage, at no further AP, against your target, and the card reminds you of the 5-foot Step.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Ghostwalker",
+    "traits": "Focus, Mental, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "ghostArt:Misdirecting Whisper",
+      "itArtLevel": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!scqPAi89z68rsllM"
+}

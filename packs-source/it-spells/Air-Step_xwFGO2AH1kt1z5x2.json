@@ -1,0 +1,93 @@
+{
+  "_id": "xwFGO2AH1kt1z5x2",
+  "name": "Air Step",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "divinity, verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 4,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "10 minutes",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "bonus",
+        "target": "self",
+        "slot": "speed",
+        "bonusType": "untyped",
+        "value": -10,
+        "note": "unstable air"
+      },
+      {
+        "kind": "bonus",
+        "target": "self",
+        "slot": "acrobatics",
+        "bonusType": "circumstance",
+        "value": -4,
+        "note": "unstable air"
+      },
+      {
+        "kind": "bonus",
+        "target": "self",
+        "slot": "climbing",
+        "bonusType": "circumstance",
+        "value": -4,
+        "note": "unstable air"
+      },
+      {
+        "kind": "note",
+        "text": "You hover a foot above the ground (not over liquid), pass obstacles under a foot tall and weight-triggered mechanisms, and anyone tracking you takes −10 circumstance. Your Speed cannot fall below 5 feet."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Air, Alteration",
+    "description": "<p>You gracefully traverse the air, hovering no more than a foot above the ground, with an inability to pass over liquid surfaces. The airy path beneath you is less stable than solid ground. While floating on air, you effortlessly bypass obstacles that are less than a foot in height, evade weight-sensitive mechanisms like pressure plates, and confound any attempts to track your passage with a -10-circumstance penalty imposed upon those who make the attempt. Yet, due to the air's instability, your movement speed decreases by 10 feet, to a minimum of 5 feet, and you take -4 circumstance penalty on Acrobatics, and Climb checks.</p>\n<p><em>Partly automated:</em> −10 ft Speed and −4 circumstance to Acrobatics and Climbing for 10 minutes. The tracking penalty, the 5-foot minimum and what you float over are the GM's.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xwFGO2AH1kt1z5x2"
+}

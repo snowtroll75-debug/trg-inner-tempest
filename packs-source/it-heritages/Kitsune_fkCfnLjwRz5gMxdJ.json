@@ -1,0 +1,89 @@
+{
+  "_id": "fkCfnLjwRz5gMxdJ",
+  "name": "Kitsune",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "heritage",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Heritage",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Kitsune are the most socially adaptable Miraku. Their fine features, expressive ears and one or more tails make them difficult to mistake, though experienced Kitsune can mute these signs when discretion is required. They are commonly found as urban advisers, spies, storytellers and custodians of dangerous lore.</p>\n<p>You gain an additional +1 racial bonus to Charisma. You also gain Ghost Sound as an ethereal innate cantrip with the Focus trait. Charisma is your magical ability score for this spell.</p>\n<p><em>Granted:</em> +1 racial Charisma, and Ghost Sound as an innate cantrip with the Focus trait, cast with Charisma.</p>",
+    "sourceRace": "Miraku",
+    "abilityModifiers": "Cha +1",
+    "grantedFeats": "",
+    "grantedSpells": "Ghost Sound",
+    "grantedWeapons": "",
+    "racialAbilities": "",
+    "removedAbilities": "",
+    "loyalties": "",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "PGsXh0We3ykNA16C",
+      "name": "Kitsune: racial adjustments",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Cha +1",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fkCfnLjwRz5gMxdJ.PGsXh0We3ykNA16C"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantInnate": true,
+      "grantedSpellAbility": "charisma"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fkCfnLjwRz5gMxdJ"
+}

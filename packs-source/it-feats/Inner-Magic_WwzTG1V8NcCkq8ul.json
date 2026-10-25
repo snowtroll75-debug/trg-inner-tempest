@@ -1,0 +1,52 @@
+{
+  "_id": "WwzTG1V8NcCkq8ul",
+  "name": "Inner Magic",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Level 4, Non-Mystic",
+    "active": true,
+    "description": "<p>Prerequisites Inner Discipline, Level 4, Non-Mystic</p>\n<p>Select any one cantrip from the magical tradition of your Monastic Path. You gain it as an innate spell with the Focus trait, using your Monastic Path's magical ability score. Furthermore, you may also learn feats which are available only to the Mystic (Adept) class.</p>\n<p><em>Automated:</em> press Use to choose a cantrip of your Monastic Path's tradition: it is added as an innate spell with the Focus trait, cast with your Path's ability. While you have this feat, feats with the Mystic trait are offered to you (Graham's B6-7).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerMagic",
+      "classFeatAccess": [
+        "Mystic"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!WwzTG1V8NcCkq8ul"
+}

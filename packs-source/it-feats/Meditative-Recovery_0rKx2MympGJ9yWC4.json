@@ -1,0 +1,45 @@
+{
+  "_id": "0rKx2MympGJ9yWC4",
+  "name": "Meditative Recovery",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 4 ranks, Inner Discipline",
+    "active": true,
+    "description": "<p><em>You have developed a technique to heal yourself of minor scrapes and bruises more quickly.</em></p>\n<p>Prerequisites Meditation 4 ranks, Inner Discipline</p>\n<p>You may use the Healing Trance (Meditation) action by meditating for 10 minutes rather than 1 hour. You still cannot use the action again for one hour.</p>\n<p><em>Not automated:</em> the Rest macro rolls Healing Trance once per hour of rest. When you meditate for 10 minutes instead, roll Healing Trance from your sheet and apply its multiplier to that hour's Natural Healing by hand; the one-hour wait between uses stands.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!0rKx2MympGJ9yWC4"
+}
