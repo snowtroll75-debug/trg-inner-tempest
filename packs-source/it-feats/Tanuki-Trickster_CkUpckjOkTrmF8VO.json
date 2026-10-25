@@ -1,0 +1,92 @@
+{
+  "_id": "CkUpckjOkTrmF8VO",
+  "name": "Tanuki Trickster",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Deception 4 ranks",
+    "active": true,
+    "description": "<p><em>You have adopted the mischievous ways of the tanuki, using your shape-shifting abilities and cunning tricks to outwit your foes. You can transform into various forms, create illusions, and play pranks on your enemies, leaving them bewildered and vulnerable.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Deception 4 ranks</p>\n<p>You gain a +2 class bonus to the Deception skill. Furthermore you gain Shape of the Humanoid and Mirage Entity as innate spells with the Focus trait, using the tradition and magical ability score of your Monastic Path.</p>\n<p><strong>Progression Requirements</strong> Deception skill +10 ranks</p>\n<p><em>Automated:</em> +2 class to Deception checks. Shape Of The Humanoid and Mirage Entity are granted as innate spells with the Focus trait, cast with your Monastic Path's tradition and ability; without a Path, your class's chosen Magical Tradition and its ability (IT-M6). The usual innate limit applies.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "Shape Of The Humanoid, Mirage Entity",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Deception skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "QNqXXZaMnOTe8ObL",
+      "name": "Tanuki Trickster: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.deception.class",
+          "mode": 0,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+2 class bonus to Deception.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!CkUpckjOkTrmF8VO.QNqXXZaMnOTe8ObL"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "grantInnate": true,
+      "itPathMagic": {
+        "allowance": 0
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CkUpckjOkTrmF8VO"
+}

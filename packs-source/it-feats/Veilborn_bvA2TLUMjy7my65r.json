@@ -1,0 +1,68 @@
+{
+  "_id": "bvA2TLUMjy7my65r",
+  "name": "Veilborn",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mental Focus 2 ranks",
+    "active": true,
+    "description": "<p><strong>GHOSTWALKER</strong></p>\n<p><em>You have learned to move so closely alongside the boundary between light and shadow that your Ghost Arts have begun to take on an increasingly supernatural quality. Darkness responds to your presence, swallowing your outline and carrying you through places where ordinary movement should be impossible.</em></p>\n<p><strong>Prerequisites</strong> Mental Focus 2 ranks</p>\n<p>You gain one additional Ghost Art for which you meet the prerequisites. The selected Ghost Art must possess the Focus trait.</p>\n<p>You also gain a +2-class bonus to Refocus (Mental Focus) checks made to restore an expended Ghost Art.</p>\n<p>Finally, whenever you use a Ghost Art that causes you to become concealed or invisible, or which teleports you from one location to another, you gain a +1-class bonus to DB until the beginning of your next turn.</p>\n<p><strong>Progression Requirements</strong> Mental Focus skill +10 ranks</p>\n<p><em>Automated:</em> press Use to learn one more Ghost Art with the Focus trait whose level you meet (it is not counted against Ghost Arts' table). +2 class to Refocus checks to restore an expended Ghost Art, applied for you (TRG Prime 3.671.0). After Shadow Double, Veiled Body, Empty Presence or Shadow Passage — and Smoke Veil when you are inside it — +1 class to your DB until the beginning of your next turn.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Ghostwalker",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Mental Focus skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "veilborn",
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Veilborn",
+          "scope": "Refocus to restore an expended Ghost Art",
+          "auto": true,
+          "when": {
+            "actions": [
+              "refocus"
+            ],
+            "restores": [
+              "Ghost Art"
+            ]
+          },
+          "value": 2,
+          "type": "class"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bvA2TLUMjy7my65r"
+}

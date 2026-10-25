@@ -1,0 +1,67 @@
+{
+  "_id": "N5x8HfJCB0WszOgS",
+  "name": "Iaijutsu Master",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Oathblade, Perception 2 ranks",
+    "active": true,
+    "description": "<p><strong>MARTIAL OATHBLADE</strong></p>\n<p><em>You have studied the discipline of the single decisive cut. An Iaijutsu Master does not brandish their weapon impatiently or waste movement in threatening flourishes. The blade remains sheathed until the instant that violence becomes inevitable, and then steel, intention and action become one.</em></p>\n<p><strong>Prerequisites</strong> Oathblade, Perception 2 ranks</p>\n<p>When you roll Initiative with a sword sheathed, you gain a +25-class bonus to Initiative.</p>\n<p>Furthermore, you gain the Drawn Verdict ability.</p>\n<p>DRAWN VERDICT</p>\n<p>ATTACK FLOURISH FOCUS TECHNIQUE</p>\n<p><strong>Action</strong> 1 AP</p>\n<p><strong>Requirements</strong> Your Challenge is active; your challenged target is within your melee reach; you have a sword sheathed.</p>\n<p>Draw your sword and make a melee Strike against your challenged target.</p>\n<p>The target cannot use reactions triggered by the drawing of your weapon or this Strike.</p>\n<p>If the Strike inflicts damage, the target cannot use reactions until the beginning of its next turn.</p>\n<p>At the end of your turn, if you made no further Strikes after Drawn Verdict, you may sheathe the weapon as a Free (0 AP) action.</p>\n<p>After Drawn Verdict is used, it becomes expended until restored using Refocus.</p>\n<p><strong>Progression Requirements</strong> Perception skill +10 ranks</p>\n<p><em>Automated:</em> +25 class bonus to Initiative when you roll it with a sword sheathed: a weapon of the Sword group you carry and are not wielding (Graham's B7-5), applied for you. You gain Drawn Verdict.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Martial, Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Drawn Verdict",
+    "grantedFeats": "",
+    "progressionRequirements": "Perception skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Iaijutsu Master",
+          "scope": "Initiative with a sword sheathed",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "initiative"
+            ],
+            "sheathedGroups": [
+              "sword"
+            ]
+          },
+          "value": 25,
+          "type": "class"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!N5x8HfJCB0WszOgS"
+}

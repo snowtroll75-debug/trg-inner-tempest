@@ -1,0 +1,50 @@
+{
+  "_id": "hQEEpgovrQheBrhp",
+  "name": "Soul Weapon Master",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mental Focus 2 ranks",
+    "active": true,
+    "description": "<p><strong>DISCIPLE KENSAI OATHBLADE</strong></p>\n<p><em>Your mastery of the sword is unmatched, and you have forged a deep bond with your weapon. Through meditation you make the weapon an extension of intention and movement, performing techniques that seem impossible to less disciplined warriors.</em></p>\n<p><strong>Prerequisites</strong> Mental Focus 2 ranks</p>\n<p>When you first take this feat you must bond to a melee weapon as part of your daily preparations. This process requires you to meditate quietly for ten uninterrupted minutes. Once complete, you are bonded to the weapon and it becomes your Soul-Bound Weapon.</p>\n<p>Be aware that if you lose your Soul-Bound Weapon through any means you may not bond to another until your next daily preparation.</p>\n<p>SOUL-BOUND WEAPON</p>\n<p>Your weapon is bonded to you and becomes an extension of your discipline. As you become more experienced, the amount of damage that you inflict with your Soul-Bound Weapon increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of damage.</p>\n<p>Be aware that this is total damage and not base. Your base damage die still increase in the usual way.</p>\n<p>Furthermore, your Soul-Bound Weapon gains the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.</p>\n<p>Finally, any ability that may be used with unarmed strikes (such as Flurry of Blows) may also be used with your Soul-Bound Weapon.</p>\n<p><strong>Progression Requirements</strong> Mental Focus skill +10 ranks</p>\n<p><em>Partly automated:</em> at a daily preparation you are asked which melee weapon to bond (ten minutes' meditation), or press Use. While bonded: +1 to its damage total at BAB 3 and every 3 after; magical at BAB 3, cold iron and silver at 8, adamantine at 16 (TRG Prime 3.671.0); and Flurry of Blows, Stunning Fist, Inner Strike and every other ability used with unarmed strikes may be used with it — the abilities, not the fists' damage (Graham's B7-6). A lost or discarded bond waits for your next daily preparation.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple, Kensai, Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Mental Focus skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "soulWeaponMaster"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!hQEEpgovrQheBrhp"
+}

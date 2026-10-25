@@ -1,0 +1,52 @@
+{
+  "_id": "Dz5X1wkwm3gO57sP",
+  "name": "Lotus Enchanter",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Deception 2 ranks, Diplomacy 2 ranks",
+    "active": true,
+    "description": "<p><strong>ADEPT</strong></p>\n<p><em>Your mastery of enchantments and charms allows you to manipulate the minds and emotions of others. You can create potent love charms, cast mesmerizing spells, and influence the thoughts and actions of those around you.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Deception 2 ranks, Diplomacy 2 ranks</p>\n<p>You may add all specialist spells with the Enchantment trait to the list of spells available when selecting the Mystic Essence feat.</p>\n<p>When you gain an Enchantment spell through Mystic Essence, you gain a +1 class bonus to its innate spell attack checks and save DCs.</p>\n<p><strong>Progression Requirements</strong> Deception & Diplomacy skills +10 ranks</p>\n<p><em>Automated:</em> Mystic Essence's list also offers specialist spells with the Enchantment trait. An Enchantment spell Mystic Essence gives you carries +1 class to its innate attack checks and save DCs (TRG Prime 3.671.0).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Adept",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Deception & Diplomacy skills +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itEssenceTraits": [
+        "Enchantment"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Dz5X1wkwm3gO57sP"
+}

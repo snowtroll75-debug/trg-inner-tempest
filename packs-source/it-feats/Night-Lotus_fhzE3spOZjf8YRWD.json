@@ -1,0 +1,91 @@
+{
+  "_id": "fhzE3spOZjf8YRWD",
+  "name": "Night Lotus",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Medicine 2 ranks",
+    "active": true,
+    "description": "<p><strong>EXPERT</strong></p>\n<p><em>You have studied the secretive disciplines of the Night Lotus, whose members combine stealth, anatomy and carefully prepared toxins to incapacitate enemies before they can respond.</em></p>\n<p><strong>Prerequisites</strong> Medicine 2 ranks</p>\n<p>You gain Medicine as a class skill and gain resistance to poison.</p>\n<p>Furthermore, you gain the Night Lotus Venom ability.</p>\n<p>NIGHT LOTUS VENOM</p>\n<p>FOCUS MANIPULATE POISON TECHNIQUE</p>\n<p><strong>Action</strong> 1 AP</p>\n<p><strong>Requirements</strong> You are wielding a piercing or slashing weapon, or a piece of ammunition.</p>\n<p>You coat the weapon or ammunition with a fast-acting paralysing toxin. The poison remains effective until the end of your next turn or until the weapon successfully damages a creature.</p>\n<p>A creature damaged by the poisoned weapon must make a Fortitude save against your Level DC.</p>\n<p><strong>Critical</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target suffers a -5-foot circumstance penalty to Speed until the beginning of your next turn.</p>\n<p><strong>Failure</strong> The target is Slowed 1 until the end of its next turn.</p>\n<p><strong>Fumble</strong> The target is Paralyzed until the beginning of its next turn and is then Slowed 1 until the end of that turn.</p>\n<p>If the Strike also inflicts Unseen Assault, the target suffers a -1-circumstance penalty to this saving throw.</p>\n<p>After Night Lotus Venom is used, it becomes expended until restored with Refocus.</p>\n<p><strong>Progression Requirements</strong> Medicine skill +10 ranks</p>\n<p><em>Automated:</em> Medicine is a class skill while you have this feat, and you resist poison. You gain Night Lotus Venom.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Expert",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Night Lotus Venom",
+    "grantedFeats": "",
+    "progressionRequirements": "Medicine skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "K6fbr0K1TJPYv3Oy",
+      "name": "Night Lotus: resistances",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.resistances",
+          "mode": 2,
+          "value": ", poison",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Resistance to poison.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!fhzE3spOZjf8YRWD.K6fbr0K1TJPYv3Oy"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classSkills": [
+        "Medicine"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fhzE3spOZjf8YRWD"
+}

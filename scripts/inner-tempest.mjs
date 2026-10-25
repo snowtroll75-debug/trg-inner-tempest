@@ -16,13 +16,14 @@ import {
 } from "../module/block4-automations.mjs";
 import { onStrikeResolvedB5, onItemCreatedB5, onItemUpdatedB5, onItemDeletedB5, onEffectDeletedB5, reconcileB5Actor } from "../module/block5-automations.mjs";
 import { onStrikeResolvedB6, onItemCreatedB6, reconcileB6Actor } from "../module/block6-automations.mjs";
+import { onStrikeResolvedB7, onDamageAppliedB7, onDailyPreparationB7, onTurnEndedB7, onAmbushDealtB7 } from "../module/block7-automations.mjs";
 import {
   onActionAttempt, onActionResolved as onSkillActionResolved, offerResistDying,
   onTurnEnded, onCombatDeleted, onEffectDeleted, onDailyPreparation, trackActionResolved
 } from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.670.1";
+const REQUIRED_SYSTEM = "3.671.0";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
@@ -86,6 +87,15 @@ Hooks.on("deleteActiveEffect", (effect) => { onEffectDeletedB5(effect).catch((er
 // innate spells marked for its Metamagic feats when the class arrives.
 Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB6(ctx).catch((err) => console.warn("Inner Tempest | after a Strike (Block 6)", err)); });
 Hooks.on("createItem", (item, options, userId) => { onItemCreatedB6(item, options, userId).catch((err) => console.warn("Inner Tempest | item added (Block 6)", err)); });
+// BLOCK 7 (0.8.0): Drawn Verdict's Strike read back and its sheathing,
+// Night Lotus Venom delivered (with Unseen Assault's −1), Twin Dragon,
+// Turning the Blade offered, and the archetypes' daily preparation
+// (Wandering Creed, Shugenja, the Soul-Bound Weapon, Harmony Warden's trance).
+Hooks.on("trgPrimeAmbushDealt", (ctx) => { try { onAmbushDealtB7(ctx); } catch (err) { console.warn("Inner Tempest | Unseen Assault (Block 7)", err); } });
+Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB7(ctx).catch((err) => console.warn("Inner Tempest | after a Strike (Block 7)", err)); });
+Hooks.on("trgPrimeDamageApplied", (ctx) => { onDamageAppliedB7(ctx).catch((err) => console.warn("Inner Tempest | Turning the Blade", err)); });
+Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB7(ctx).catch((err) => console.warn("Inner Tempest | daily preparation (Block 7)", err)); });
+Hooks.on("trgPrimeTurnEnded", (ctx) => { onTurnEndedB7(ctx).catch((err) => console.warn("Inner Tempest | turn end (Block 7)", err)); });
 
 // The buttons on this module's cards: Predator's Pounce's paid Strike and
 // Ancestral Guidance's reroll.

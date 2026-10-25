@@ -1,0 +1,67 @@
+{
+  "_id": "FRx932v1Fmy8g4Ht",
+  "name": "Brawler",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Non-Disciple",
+    "active": true,
+    "description": "<p><em>You've honed your skills in the martial arts, transforming your unarmed strikes into deadly precision. Your journey is not one of mysticism or enlightenment, and you don't tread the path of wisdom. Instead, your focus lies in the pure essence of combat, the fist finding its mark on flesh, the hand parrying the blade, and the powerful kick that brings your foes to their knees.</em></p>\n<p><strong>Prerequisites</strong> Non-Disciple</p>\n<p>You have trained your unarmed combat skills and are deadly, even without a weapon. You gain the Powerful Fists ability (see below) and may also learn feats which are available only to the Disciple (Martial) class.</p>\n<p>POWERFUL FISTS</p>\n<p>You know how to wield your fists as deadly weapons. The damage of your unarmed attacks is1d6 rather than the usual 1d4 inflicted by an unarmed attack. Additionally, your unarmed attacks gain the versatile bludgeoning trait.</p>\n<p>As you become more experienced, the amount of damage that you inflict with your unarmed strikes also increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of unarmed damage.</p>\n<p>Be aware that this is total unarmed damage and not base. Your base damage die still increase in the usual way.</p>\n<p>Finally, your unarmed strikes also gain the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your unarmed strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.</p>\n<p><strong>Progression Requirements</strong> Level +10</p>\n<p><em>Automated:</em> your unarmed attacks deal 1d6 with Versatile B; at BAB 3 and every 3 after, +1 to the total; magical at BAB 3, cold iron and silver at 8, adamantine at 16 — all applied for you, as the Disciple's Powerful Fists are. While you have this archetype, class feats with the Disciple trait are offered to you (Graham's B7-3); not the core feats the book opens to the Disciple, and not every Martial feat. Progression: character level 10 (Graham's B7-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Level +10"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "unarmedDamage": {
+        "die": "1d6",
+        "versatile": "B",
+        "perBAB": {
+          "every": 3,
+          "value": 1
+        },
+        "countsAs": {
+          "magical": 3,
+          "cold iron": 8,
+          "silver": 8,
+          "adamantine": 16
+        },
+        "label": "Powerful Fists (Brawler)"
+      },
+      "classFeatAccess": [
+        "Disciple"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FRx932v1Fmy8g4Ht"
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "10fD5Z3QTvEpdGH5",
+  "name": "Way of the Geisha",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Diplomacy 2 ranks",
+    "active": true,
+    "description": "<p><em>You have embraced the arts and grace of the geisha, using your charm, wit, and talents to influence and manipulate others. Your mastery of the subtle arts allows you to blend into any social situation, gather information, and navigate complex webs of intrigue.</em></p>\n<p><strong>Prerequisites</strong> Diplomacy 2 ranks</p>\n<p>You gain the Affable feat and also gain a +2-class bonus to all Artistry, Diplomacy and Perform checks.</p>\n<p><strong>Progression Requirements</strong> Diplomacy skill +10 ranks</p>\n<p><em>Automated:</em> you gain the Affable feat, and +2 class to Artistry, Diplomacy and Perform checks.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "Affable",
+    "progressionRequirements": "Diplomacy skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "VGYUupCoXVhnLX7a",
+      "name": "Way of the Geisha: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.artistry.class",
+          "mode": 0,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.diplomacy.class",
+          "mode": 0,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.perform.class",
+          "mode": 0,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+2 class bonus to Artistry, Diplomacy, Perform.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!10fD5Z3QTvEpdGH5.VGYUupCoXVhnLX7a"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!10fD5Z3QTvEpdGH5"
+}

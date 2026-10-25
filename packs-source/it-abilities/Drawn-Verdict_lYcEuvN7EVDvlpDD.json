@@ -1,0 +1,43 @@
+{
+  "_id": "lYcEuvN7EVDvlpDD",
+  "name": "Drawn Verdict",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>ATTACK FLOURISH FOCUS TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p><strong>Requirements</strong> Your Challenge is active; your challenged target is within your melee reach; you have a sword sheathed.</p>\n<p>Draw your sword and make a melee Strike against your challenged target.</p>\n<p>The target cannot use reactions triggered by the drawing of your weapon or this Strike.</p>\n<p>If the Strike inflicts damage, the target cannot use reactions until the beginning of its next turn.</p>\n<p>At the end of your turn, if you made no further Strikes after Drawn Verdict, you may sheathe the weapon as a Free (0 AP) action.</p>\n<p>After Drawn Verdict is used, it becomes expended until restored using Refocus.</p>\n<p><em>Automated:</em> press Use with your Challenge on the target, the target within reach and a sword sheathed: 1 AP draws it (it becomes wielded) and Strikes the challenged target. The target is offered no reaction to the Strike (TRG Prime 3.671.0). If it deals damage, the target cannot use reactions until the beginning of its next turn. At the end of your turn, if you made no further Strike, you are asked whether to sheathe it (free). Then it is expended until a Refocus.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Attack, Flourish, Focus, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "drawnVerdict"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!lYcEuvN7EVDvlpDD"
+}

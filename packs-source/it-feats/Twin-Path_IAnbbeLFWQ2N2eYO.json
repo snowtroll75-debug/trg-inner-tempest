@@ -1,0 +1,53 @@
+{
+  "_id": "IAnbbeLFWQ2N2eYO",
+  "name": "Twin Path",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Mystic, Meditation 4 ranks",
+    "active": true,
+    "description": "<p><strong>MYSTIC</strong></p>\n<p><em>Most Mystics devote themselves to a single discipline until its philosophy shapes every expression of their power. You have instead learned to hold two truths at once, allowing a second mystical current to flow beside the first without either overwhelming the other.</em></p>\n<p><strong>Prerequisites</strong> Mystic, Meditation 4 ranks</p>\n<p>Select a second Mystical Discipline different from the one you chose at 1st level.</p>\n<p>You gain the selected discipline's Special Ability. If both of your discipline abilities could modify the same check, attack, saving throw or other single resolution, you must choose which one applies; their benefits do not stack with one another unless an ability specifically states otherwise.</p>\n<p>You also add the selected discipline's 1st-level Additional Spells to your repertoire. These spells are gained in the same way as the bonus spells from your original Mystical Discipline and do not count against the spells you select through Mystical Power.</p>\n<p>You do not gain any of the second discipline's later Additional Spells. Your original Mystical Discipline remains your primary discipline for any class feature or rule that specifically refers to it.</p>\n<p><strong>Progression Requirements</strong> Meditation skill +10 ranks</p>\n<p><em>Partly automated:</em> press Use to choose a second Mystical Discipline: its special ability is added, and its 1st-level additional spells as innate spells with the Focus trait, cast with your Path's tradition and ability (outside Mystical Power's count). Its later spells are not. When both disciplines' abilities would modify one roll, choose which applies; they do not stack.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Mystic",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Meditation skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "twinPath",
+      "itPathMagic": {
+        "allowance": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IAnbbeLFWQ2N2eYO"
+}

@@ -363,7 +363,7 @@ ok("E Elemental Fist: Inner Strike's chooser and card offer its types, and a pre
   && /\[`flags\.\$\{SYSTEM_ID\}\.weaponTraitGrants`\]: innerStrikeFlags\(type\)\.weaponTraitGrants/.test(src3));
 ok("E the Mystic's spells are marked for its Metamagic feats: Mystical Power's (not a cantrip), a discipline's, a Path arriving late, Mystic Essence's",
   /pathStamp\(path, slot === "pp2" \? 1 : 0, \{ metamagic: slot !== "cantrip" \}\)/.test(src3)
-  && /const metamagic = isMystic\(Array\.from\(actor\.items \?\? \[\]\)\) && !isCantripSpell\(data\?\.system \?\? document\?\.system\);\n\s*const stamp = pathStamp\(pathOf\(Array\.from\(actor\.items \?\? \[\]\)\), magic\.allowance, \{ metamagic \}\);/.test(src3)
+  && /const metamagic = isMystic\(Array\.from\(actor\.items \?\? \[\]\)\) && !isCantripSpell\(data\?\.system \?\? document\?\.system\);\n\s*const stamp = pathStamp\((?:pathOf|magicOf)\(Array\.from\(actor\.items \?\? \[\]\)\), magic\.allowance, \{ metamagic \}\);/.test(src3)
   && /pathStamp\(path, s\.getFlag\(SYSTEM_ID, "innatePPAllowance"\), \{ metamagic: mystic && !isCantripSpell\(s\.system\) \}\)/.test(src3)
   && /pathStamp\(path, 0, \{ metamagic: slot !== "cantrip" && isMystic\(items\) \}\)/.test(src6));
 equal("E a cantrip, read as the system's choosers read it (found in review: a discipline's cantrip was marked)",
@@ -373,14 +373,14 @@ ok("E the system reads the mark: an innate spell flagged innateMetamagic is offe
 ok("E Inner Magic and Mystic Essence grant one spell each, through Block 3's index and fit, refusing a second", /async use\(actor, item\) \{ return grantPathSpell\(actor, item, \{ title: "Inner Magic", slot: "cantrip" \}\); \}/.test(src6)
   && /async use\(actor, item\) \{ return grantPathSpell\(actor, item, \{ title: "Mystic Essence", slot: "eligible" \}\); \}/.test(src6)
   && /const had = grantedSpellOf\(items, item\.id\);\n\s*if \(had\) \{/.test(src6)
-  && /\(await spellIndex\(\)\)\.filter\(\(e\) => !known\.has\(norm\(e\.name\)\) && mysticalPowerFits\(e\.system, slot, \{ tradition: path\.tradition, level \}\)\)/.test(src6));
+  && /\(await spellIndex\(\)\)\.filter\(\(e\) => !known\.has\(norm\(e\.name\)\) && \(?mysticalPowerFits\(e\.system, slot, \{ tradition: path\.tradition, level \}\)/.test(src6));
 ok("E reactionOpen and spendReaction take the reaction's own traits", /export async function reactionOpen\(actor, label, \{ traits \} = \{\}\) \{/.test(srcA) && /export async function spendReaction\(actor, label, \{ traits \} = \{\}\) \{/.test(srcA)
   && (srcA.match(/const feat = typeof traits === "string" \? \{ system: \{ traits \} \} : Array\.from\(actor(\?)?\.items \?\? \[\]\)\.find\(\(i\) => i\.name === label\);/g) ?? []).length === 2);
 const [sa, sb] = String(systemJson.version).split(".").map(Number);
 ok("E the system at TRG_PRIME_ROOT is 3.670.0 or later", sa > 3 || (sa === 3 && sb >= 670), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 0.7.1, built for 3.670.1", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.7.1", "3.670.1"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.670.1";'));
+equal("E the module is 0.8.1, built for 3.671.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.8.1", "3.671.0"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.671.0";'));
 for (const [name, docs] of [["it-feats", B6.BLOCK6_FEATS], ["it-abilities", B6.BLOCK6_ABILITIES]]) {
   const dir = path.join(ROOT, "packs-source", name);
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) : [];

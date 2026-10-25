@@ -83,7 +83,7 @@ const MUTATIONS = [
   // The Mystic's Metamagic (Block 3)
   { name: "the Path stamp never marks Metamagic", file: B3, from: "  if (metamagic === true) stamp[`flags.${SYSTEM_ID}.innateMetamagic`] = true;\n", to: "" },
   { name: "Mystical Power's spells are not marked", file: B3, from: "pathStamp(path, slot === \"pp2\" ? 1 : 0, { metamagic: slot !== \"cantrip\" })", to: "pathStamp(path, slot === \"pp2\" ? 1 : 0)" },
-  { name: "a discipline's spell is not marked", file: B3, from: "  const stamp = pathStamp(pathOf(Array.from(actor.items ?? [])), magic.allowance, { metamagic });", to: "  const stamp = pathStamp(pathOf(Array.from(actor.items ?? [])), magic.allowance);" },
+  { name: "a discipline's spell is not marked", file: B3, from: "  const stamp = pathStamp(magicOf(Array.from(actor.items ?? [])), magic.allowance, { metamagic });", to: "  const stamp = pathStamp(magicOf(Array.from(actor.items ?? [])), magic.allowance);" },
   // D — registration
   { name: "Block 6's Uses are not registered", file: REG, from: "  for (const [name, entry] of Object.entries(BLOCK6_AUTOMATIONS)) api.registerFeatAutomation(name, entry, moduleId);\n", to: "" },
   { name: "FC-55 is not registered", file: REG, from: "  for (const [cls, feats] of Object.entries(EXISTING_CLASS_FEATS)) api.registerFeatAccess?.(\"class\", cls, [...feats], moduleId);\n", to: "" },
@@ -115,9 +115,9 @@ const MUTATIONS = [
   // F — 0.7.1
   { name: "Disciplined Flurry reads \"reactionand\" again", file: B3, from: "${inCombat ? \" (spends your reaction and this technique's use)\" : \" (spends this technique's use)\"}?</p>`,", to: "${inCombat ? \" (spends your reaction\" : \" (\"}and this technique's use)?</p>`," },
   // versions
-  { name: "the module accepts 3.669.2", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.670.1\";", to: "const REQUIRED_SYSTEM = \"3.669.2\";" },
-  { name: "the manifest accepts 3.669.2", file: MANIFEST, from: "\"minimum\": \"3.670.1\"", to: "\"minimum\": \"3.669.2\"" },
-  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"0.7.1\"", to: "\"version\": \"0.6.2\"" }
+  { name: "the module accepts 3.669.2", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.671.0\";", to: "const REQUIRED_SYSTEM = \"3.669.2\";" },
+  { name: "the manifest accepts 3.669.2", file: MANIFEST, from: "\"minimum\": \"3.671.0\"", to: "\"minimum\": \"3.669.2\"" },
+  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"0.8.1\"", to: "\"version\": \"0.6.2\"" }
 ];
 
 const originals = new Map();

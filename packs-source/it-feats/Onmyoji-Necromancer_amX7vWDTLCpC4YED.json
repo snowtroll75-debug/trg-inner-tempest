@@ -1,0 +1,52 @@
+{
+  "_id": "amX7vWDTLCpC4YED",
+  "name": "Onmyoji Necromancer",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Medicine 2 ranks, Religion 2 ranks",
+    "active": true,
+    "description": "<p><strong>ADEPT</strong></p>\n<p><em>You walk the path of the onmyoji, wielding both divine and necromantic powers. You can commune with spirits, banish malevolent entities, and command the restless dead. Your mastery over the balance between life and death is unparalleled.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Medicine 2 ranks, Religion 2 ranks</p>\n<p>You may add all specialist spells with the Soul trait to the list of spells available when selecting the Mystic Essence feat.</p>\n<p>When you gain a Soul spell through Mystic Essence, you gain a +1 class bonus to its innate spell attack checks and save DCs.</p>\n<p><strong>Progression Requirements</strong> Medicine & Religion skills +10 ranks</p>\n<p><em>Automated:</em> Mystic Essence's list also offers specialist spells with the Soul trait. A Soul spell Mystic Essence gives you carries +1 class to its innate attack checks and save DCs (TRG Prime 3.671.0).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Adept",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Medicine & Religion skills +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itEssenceTraits": [
+        "Soul"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!amX7vWDTLCpC4YED"
+}

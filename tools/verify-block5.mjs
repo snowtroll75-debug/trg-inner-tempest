@@ -403,7 +403,7 @@ ok("E Wing Burst says Wings Unfurled lets you end in the air", /owns\(actor, "Wi
 ok("E Living Lantern's effect is a registered light, drawn on the token", /lightSource: LIVING_LANTERN_LIGHT/.test(fs.readFileSync(path.join(ROOT, "module", "automations.mjs"), "utf8")) && /refreshTokenLight\?\.\(actor\)/.test(fs.readFileSync(path.join(ROOT, "module", "automations.mjs"), "utf8")));
 ok("E Foxfire's motes go with its effect, and Spirit Beacon's dim ring with its own bright one", /if \(key === "b5:foxfire"\)[\s\S]{0,200}removeLightCircles\(castId, \{ sceneId: effect\.getFlag\(MODULE_ID, "foxfireScene"\) \?\? "" \}\)/.test(autoSrc) && /foxfireScene/.test(autoSrc) && /getFlag\(MODULE_ID, "beaconId"\) === id/.test(autoSrc));
 ok("E Spirit Roar is paid once, after its first Demoralise is rolled — a cancelled dialog costs nothing (found in review)", /if \(!check\) break;\n\s*if \(!paid\) \{\n\s*if \(!\(await techniqueBegins\(actor, item, "Spirit Roar", 1\)\)\) break;\n\s*paid = true;/.test(autoSrc) && /if \(!paid\) return false;/.test(autoSrc) && /let dice = null;\n(?:\s*\/\/[^\n]*\n)*\s*let convictionDie = 0;\n\s*let paid = false;\n\s*for \(const \[i, c\] of fresh\.entries\(\)\)/.test(autoSrc) && autoSrc.indexOf('focusReady(item, "Spirit Roar")') < autoSrc.indexOf('techniqueBegins(actor, item, "Spirit Roar", 1)'));
-ok("E Waiting Blade is offered on any melee miss, a reaction's too (found in review)", /if \(missedHere\(ctx\) && !held && melee\) \{\n\s*const wb = ownedNamed\(target, "Waiting Blade"\);/.test(autoSrc));
+ok("E Waiting Blade is offered on any melee miss, a reaction's too (found in review)", /if \(missedHere\(ctx\) && !held && melee(?: && !ctx\.noReactions)?\) \{\n\s*const wb = ownedNamed\(target, "Waiting Blade"\);/.test(autoSrc));
 ok("E Web Snare's old web comes off whoever wore it, the same creature included (found in review)", /if \(before\?\.uuid\) \{\n\s*const prior = await actorFrom\(before\.uuid\);/.test(autoSrc) && /if \(prior && ids\.length\) \{ await asOwner\(prior, "deleteEffects", \{ ids \}\);/.test(autoSrc));
 ok("E Spirit Roar's later enemies meet the first one's conviction die and are not asked (0.6.1, TRG Prime 3.669.1)", /\{ presetDice: dice, presetConvictionDie: convictionDie, dcOverride: dc,/.test(autoSrc) && /if \(!dice\) convictionDie = Math\.max\(0, Math\.trunc\(Number\(check\.convictionDie\) \|\| 0\)\);\n\s*dice \?\?= check\.dice \?\? null;/.test(autoSrc));
 ok("E the switch knows whether the Use was made in combat", /system: beaconFlags\(now, inCombatNow\(actor\)\), module: \{ beaconId \}/.test(autoSrc) && /system: mistFlags\(now, inCombatNow\(actor\)\)/.test(autoSrc));
@@ -417,8 +417,8 @@ const [sa, sb] = String(systemJson.version).split(".").map(Number);
 const sc = Number(String(systemJson.version).split(".")[2] ?? 0);
 ok("E the system at TRG_PRIME_ROOT is 3.669.2 or later", sa > 3 || (sa === 3 && (sb > 669 || (sb === 669 && sc >= 2))), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 0.7.1, built for 3.670.1", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.7.1", "3.670.1"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.670.1";'));
+equal("E the module is 0.8.1, built for 3.671.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.8.1", "3.671.0"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.671.0";'));
 for (const [name, docs] of [["it-feats", B5.BLOCK5_FEATS], ["it-spells", B5.BLOCK5_SPELLS], ["it-companions", B5.BLOCK5_NATURAL_ATTACKS]]) {
   const dir = path.join(ROOT, "packs-source", name);
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) : [];
@@ -520,7 +520,7 @@ ok("G2 the raise is made again when its item is rewritten (a compendium refresh 
   ok("G4 Waiting Blade, Form Reversal, Shadow Counter, Disciplined Flurry and Vanishing Retreat are asked only when their reaction could be spent",
     /if \(wb && blade && hasUse\(wb\) && await reactionOpen\(target, "Waiting Blade"\)\) await offerTo/.test(autoSrc)
     && /activeForm\(target\) && await reactionOpen\(target, "Form Reversal"\)\) await offerTo\(target, "formReversal"/.test(src("block4-automations.mjs"))
-    && /if \(ownedNamed\(target, "Shadow Counter"\) && await reactionOpen\(target, "Shadow Counter"\)\) await offerTo\(target, "shadowCounter"/.test(src("block4-automations.mjs"))
+    && /if \((?:!ctx\.noReactions && )?ownedNamed\(target, "Shadow Counter"\) && await reactionOpen\(target, "Shadow Counter"\)\) await offerTo\(target, "shadowCounter"/.test(src("block4-automations.mjs"))
     && /if \(!\(await reactionOpen\(actor, "Vanishing Retreat"\)\)\) return;/.test(src("block4-automations.mjs"))
     && /hasUse\(disciplined\) && \(!inCombat \|\| await reactionOpen\(actor, "Disciplined Flurry"\)\)\) \{/.test(src("block3-automations.mjs")));
   ok("G4 Resist Dying is refused the same way, and spends through the system",

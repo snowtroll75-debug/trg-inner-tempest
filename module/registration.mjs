@@ -16,6 +16,7 @@ import { BLOCK3_AUTOMATIONS, BLOCK3_DEFENCE_OFFERS } from "./block3-automations.
 import { BLOCK4_AUTOMATIONS, BLOCK4_DEFENCE_OFFERS } from "./block4-automations.mjs";
 import { BLOCK5_AUTOMATIONS, BLOCK5_PASSIVE_HINTS, BLOCK5_DEFENCE_OFFERS, LIGHT_SOURCES } from "./block5-automations.mjs";
 import { BLOCK6_AUTOMATIONS } from "./block6-automations.mjs";
+import { BLOCK7_AUTOMATIONS, BLOCK7_CLASS_SKILL_GRANTS, BLOCK7_ARCHETYPES } from "./block7-automations.mjs";
 
 /** Block 3 (0.4.0): the two classes' proficiency and Chapter 6 class wealth. */
 export const CLASS_REGISTRATIONS = {
@@ -141,6 +142,22 @@ export const EXISTING_RACIAL_FEATS = Object.freeze({
  * are Adept-traited, open to it already, and work on its innate spells
  * through TRG Prime 3.670.0's `innateMetamagic` (Graham's B6-8).
  */
+/**
+ * FA-22: "The classes in this sourcebook also gain access to the following
+ * archetype feats from the TRG Core Rulebook" (TRG Prime 3.671.0
+ * `registerFeatAccess("archetype", …)`). The book's own lists
+ * (tools/content/book-text-block7.json `existing`), checked against it by
+ * tools/verify-block7.mjs. The system's tier rule still opens the Martial,
+ * Expert and Adept archetypes besides (Graham's B7-8).
+ */
+export const EXISTING_ARCHETYPES = Object.freeze({
+  Disciple: Object.freeze(["Assassin", "Mastermind"]),
+  Ghostwalker: Object.freeze(["Assassin", "Mastermind"]),
+  Kensai: Object.freeze(["Mastermind", "Vanguard"]),
+  Mystic: Object.freeze(["Mastermind", "Runemage"]),
+  Oathblade: Object.freeze(["Archer", "Armour Master", "Cavalier", "Champion"])
+});
+
 export const EXISTING_CLASS_FEATS = Object.freeze({
   Disciple: ["Combat Awareness", "Combat Grapple", "Evasion", "Guarded Move", "Reactive Stance", "Stance Mastery", "Superior Evasion"],
   Ghostwalker: ["Combat Awareness", "Distracting Strike", "Evasion", "Mobility", "Nimble Dodge", "Reactive Stance", "Surprise Attack", "Superior Evasion"],
@@ -182,4 +199,11 @@ export function registerContent(api, moduleId) {
   // the core class feats opened to the five classes.
   for (const [name, entry] of Object.entries(BLOCK6_AUTOMATIONS)) api.registerFeatAutomation(name, entry, moduleId);
   for (const [cls, feats] of Object.entries(EXISTING_CLASS_FEATS)) api.registerFeatAccess?.("class", cls, [...feats], moduleId);
+  // BLOCK 7 (0.8.0, on TRG Prime 3.671.0): the twenty archetypes (Dragon
+  // Tamer is Block 10's, B7-1), their Uses and class-skill choices, and the
+  // core archetypes opened to the five classes (FA-22, C2).
+  for (const [name, spec] of Object.entries(BLOCK7_ARCHETYPES)) api.registerArchetype?.(name, { ...spec }, moduleId);
+  for (const [name, entry] of Object.entries(BLOCK7_AUTOMATIONS)) api.registerFeatAutomation(name, entry, moduleId);
+  for (const grant of BLOCK7_CLASS_SKILL_GRANTS) api.registerClassSkillGrant?.({ ...grant, options: [...grant.options] }, moduleId);
+  for (const [cls, archetypes] of Object.entries(EXISTING_ARCHETYPES)) api.registerFeatAccess?.("archetype", cls, [...archetypes], moduleId);
 }

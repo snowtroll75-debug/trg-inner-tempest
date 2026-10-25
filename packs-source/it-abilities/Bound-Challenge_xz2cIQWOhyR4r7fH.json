@@ -1,0 +1,43 @@
+{
+  "_id": "xz2cIQWOhyR4r7fH",
+  "name": "Bound Challenge",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FLOURISH MENTAL</strong></p>\n<p><strong>Requirements</strong> you can see the creature you intend to challenge.</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You may expend a point of conviction to challenge any one opponent. You may add your class bonus to all melee attack checks made against your challenged target. Furthermore, you inflict your class bonus to damage rolls and finally your attacks also gain AR equal to your class bonus.</p>\n<p>Challenging a target in this way however requires a great deal of focus and you suffer a -2-circumstance penalty to DB against all other creatures (other than the one you have challenged).</p>\n<p>Finally, the katana and wakizashi are considered to be martial weapons for you and not exotic.</p>\n<p><em>Automated:</em> target a creature you can see and press Use: 1 AP and a conviction point. It is the Oathblade's Challenge in every other respect (IT-M13 as answered): your class bonus to melee attack and damage and Armour Rending against it, −2 to your DB against everyone else, one target, and the same end conditions.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Flourish, Mental"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "boundChallenge"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xz2cIQWOhyR4r7fH"
+}

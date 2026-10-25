@@ -2,7 +2,17 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 25 Oct 2026 (session 5: 0.7.1 built)
+## Current state — 25 Oct 2026 (session 5: 0.8.1 built)
+
+- **Published on GitHub** with Graham's approval: core 3.670.1 (`snowtroll75-debug/trpg-prime`), Inner Tempest 0.7.1 in its new repository `snowtroll75-debug/trg-inner-tempest` (a push to `main` that raises the version publishes the release), Fiends & Fables 0.45.2. Manifest: `https://raw.githubusercontent.com/snowtroll75-debug/trg-inner-tempest/main/module.json`.
+- **Block 7 audited and ruled** (`docs/INNER_TEMPEST_BLOCK7_AUDIT.md`; B7-1 to B7-8, all proposals adopted, `docs/INNER_TEMPEST_RULINGS_2026-10-25.md`). Book text in `tools/content/book-text-block7.json` (`tools/content/extract-book-block7.mjs`).
+- **0.8.0 on TRG Prime 3.671.0 built:** twenty archetypes (Dragon Tamer to Block 10), seven abilities, FA-22. Core seams C1–C16 with `verify/mutate-block7-core` 55 and 69. Module `verify-block7` 225, `mutate-block7` 114; Blocks 1 to 6 and the weapons re-pinned and green. Independent review: nine findings, all fixed (core pair now 59/74).
+- **Core sweep on the staged 3.671.0:** 645 harnesses, 635 passed; the 10 failures (five pairs pinned to lines Block 7 changed, the uncalled-exports ratchet) re-anchored and re-run on the stage, all green. **Zips built:** `trg-prime-3.671.0.zip`, `trg-inner-tempest-0.8.0.zip`.
+- **0.8.0 on 3.671.0 tested live** (`LIVE_TESTING_REPORT_3.671.0`): Block 7 works; two module defects (Drawn Verdict's sheathe never offered; a form's own Use skipped Formbinder's question). **0.8.1 built** (module only): `verify-block7` 228, `mutate-block7` 118.
+- **0.8.1 retested live:** both fixes pass. **Block 7 done.** Pushed to GitHub with Graham's approval: core 3.671.0 (`snowtroll75-debug/trpg-prime`) and Inner Tempest 0.8.1 (`snowtroll75-debug/trg-inner-tempest`).
+- **To test live:** Wandering Creed beside Sworn Oath (the oath now counts as Sworn Oath's choice); Restorative Palm on another player's character (GM relay); Veilborn's +2 in the Refocus dialog.
+
+## Earlier — 25 Oct 2026 (session 5: 0.7.1 built)
 
 - **0.7.0 tested live on 3.670.0** (`live-testing-report-3.670.0`): every Block 6 feat reachable live works. Two defects (Drunken Strike's Feint asked for Deception training; a Stride straight away from an adjacent enemy provoked nothing, core and older) and two text lines.
 - **Graham:** fix both and the text. **0.7.1 on TRG Prime 3.670.1** built: core pair `verify/mutate-fixes-3670-1` 12 and 9; module `verify-block6` 183, `mutate-block6` 85.
@@ -129,7 +139,7 @@ This follows the Pillars of Faith rhythm: audit and take rulings, then implement
 | 4 | Ghostwalker (Ghost Arts), Kensai (Combat Forms), Oathblade (Challenge, Oaths) | D7, D8, D9 |
 | 5 | Racial feats (47) and existing-feat access | D4, D8 |
 | 6 | Class feats (54; Inner Discipline and the 11 Technique feats shipped in Block 3) and general feats (22) | D7, D8, D14 |
-| 7 | Archetypes (21) | D7, D11, D12 |
+| 7 | **Built (0.8.0, on core 3.671.0), awaiting live test:** 20 archetypes (Dragon Tamer to Block 10, B7-1), 7 abilities, FA-22 | C1–C16 (3.671.0) |
 | 8 | Grimoire (the other 14 spells; 11 shipped in Block 3) | D4, D8 |
 | 9 | Magic items and the aging appendix | D6 |
 | 10 | Dragon Companions | D10, plus the IT-C5 rulings |

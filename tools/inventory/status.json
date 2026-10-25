@@ -1518,5 +1518,140 @@
     "status": "Implemented",
     "achieved": "A",
     "note": "registerFeatAccess(\"class\") per class: 33 entries, 21 feats. Metamagic feats already open to the Mystic (Adept); innate use via innateMetamagic (B6-8)."
+  },
+  "FA-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Powerful Fists via unarmedDamage (1d6, Versatile B, +1/3 BAB, materials); Disciple-trait class feats via classFeatAccess (B7-3); progression \"Level +10\" = character level 10 (B7-2, core 3.671.0 C1)."
+  },
+  "FA-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Combat Form's Use asks add or replace while one form is held; two forms as one stance (a blend fills both, B7-7); one activation a turn; overlapping bonuses tagged stackGroup so the greater applies (core 3.671.0 C15)."
+  },
+  "FA-03a": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "A Combat Form item granted by Formbinder, outside the class table; first hit each round +1 class DB to your next turn, first avoided attack +1 damage to the end of your next turn (hooks)."
+  },
+  "FA-04": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "+4 class tick on Refocus, Healing Trance and Power Recovery (wilderness is the GM's call); Use once a day: a Verdant Utility spell, base PP 2/4/6… by level (B7-4), cast once through castInnateOnce (C12)."
+  },
+  "FA-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+25 class Initiative with a Sword-group weapon carried and not wielded (B7-5; sheathedGroups axis, core 3.671.0 C8)."
+  },
+  "FA-05a": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use: Challenge, reach and a sheathed sword checked; draws and Strikes with noReactions (C9); on damage the target cannot react until its next turn; offered to sheathe at turn end."
+  },
+  "FA-06": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Grants Inner Discipline; Use chooses the class skill (registerClassSkillGrant) and a Monastic Path matching the class's tradition (interpretation 4); Disciple-trait class feats (B7-3); progression reads the chosen skill (C1)."
+  },
+  "FA-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Medicine a class skill (classSkills, C4); +2 class on Treat Injury, Toxin and Wounds, applied."
+  },
+  "FA-07a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use (2 AP, touch, living only): heal 4/level, stop Bleeding 1 per two levels, or a new stage save vs an affliction (C11); 1-hour immunity (C10)."
+  },
+  "FA-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Mystic Essence also offers Enchantment specialist spells; that spell carries +1 class attack and DC (spellBonus, C14)."
+  },
+  "FA-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Medicine a class skill; poison resistance effect."
+  },
+  "FA-09a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use (1 AP) coats a piercing or slashing weapon or ammunition; first damage: Fortitude vs Level DC through the peril rail; +1 DC after Unseen Assault; Partial = Success (IT-m24)."
+  },
+  "FA-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Mental Focus a class skill; katana and wakizashi martial (weaponCategoryAs, C5); Bound Challenge = Challenge paid with a conviction point (IT-M13)."
+  },
+  "FA-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Mystic Essence also offers Soul specialist spells, +1 class attack and DC (C14)."
+  },
+  "FA-12": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Deception a class skill; Wandering Creed asks the Sworn Oath at each daily preparation and swaps it."
+  },
+  "FA-12a": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Offered as a reaction when another creature damages you with a Strike: the Challenge moves to it, free."
+  },
+  "FA-13": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 class Stealth; grants Stealthy Strike and Shadowy Step (IT-M14)."
+  },
+  "FA-14": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Learned Caster prerequisite read (C16, IT-C9); Use chooses the element; two element-trait spells (any tradition, not specialist) chosen at each daily preparation as Focus innate spells."
+  },
+  "FA-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Bond a melee weapon at daily preparation or Use: weaponScaling (C7) and unarmedAbilityWeapons by item id (C6, B7-6)."
+  },
+  "FA-16": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use chooses the class skill and one Kensai Combat Form, entered as a stance with no Combat Form spent; Kensai-trait class feats (B7-3)."
+  },
+  "FA-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 class Deception; Shape Of The Humanoid and Mirage Entity as Focus innate spells, Path or class tradition (IT-M6)."
+  },
+  "FA-18": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use chooses a second Mystical Discipline: its ability and its 1st-level spells as Focus innate spells."
+  },
+  "FA-19": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Use learns one more Focus Ghost Art outside the table; +2 class Refocus restoring a Ghost Art (restores axis, C13); +1 DB offered after the concealing, invisible and teleporting arts."
+  },
+  "FA-20": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Grants Affable; +2 class Artistry, Diplomacy, Perform."
+  },
+  "FA-21": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Bow proficiency by name (C5); unarmed abilities with the four bows, not crossbows (C6, B7-6); Perfect Shot granted; counts as Archer (C3)."
+  },
+  "FA-22": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "registerFeatAccess(\"archetype\") per class (core 3.671.0 C2); the system's tier rule kept (B7-8)."
+  },
+  "FA-23": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "All 20 built lines parsed by core 3.671.0 C1 (Level, Gained class skill, &, plurals, full stops)."
   }
 }

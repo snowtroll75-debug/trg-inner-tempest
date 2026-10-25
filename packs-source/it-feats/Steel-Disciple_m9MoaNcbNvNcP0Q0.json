@@ -1,0 +1,53 @@
+{
+  "_id": "m9MoaNcbNvNcP0Q0",
+  "name": "Steel Disciple",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "BAB +2, Martial Weapon Proficiency",
+    "active": true,
+    "description": "<p><strong>MARTIAL</strong></p>\n<p><em>You’ve studied the beginnings of the Kensai’s philosophy, where each strike is not just an attack, but a perfected motion of body and spirit. While you lack their full discipline, you have begun to internalize fragments of their martial forms, granting you techniques beyond the reach of ordinary warriors.</em></p>\n<p><strong>Prerequisites</strong> BAB +2, Martial Weapon Proficiency</p>\n<p>Choose one Combat Form from the Kensai class. You may use this Combat Form as a Stance.</p>\n<p>Furthermore, you may select either Acrobatics, Athletics, Meditation or Mental Focus as a Class skill.</p>\n<p>Finally, you may also learn feats which have the Kensai (Martial) trait.</p>\n<p><strong>Progression Requirements</strong> BAB +12.</p>\n<p><em>Partly automated:</em> press Use to choose your class skill (Acrobatics, Athletics, Meditation or Mental Focus) and one Kensai Combat Form. The form is added to your abilities; its Use enters it as a stance (1 AP, the system's stance rules), with no Combat Form to expend. While you have this archetype, class feats with the Kensai trait are offered to you (Graham's B7-3). Progression: BAB 12.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Martial",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "BAB +12."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "steelDisciple",
+      "classFeatAccess": [
+        "Kensai"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!m9MoaNcbNvNcP0Q0"
+}

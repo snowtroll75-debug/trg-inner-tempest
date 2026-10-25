@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.1 — 25 Oct 2026 (fixes from the 0.8.0 live test)
+
+Needs **TRG Prime 3.671.0**. See `docs/RELEASE_NOTES_0.8.1.md`.
+
+- **Drawn Verdict's sheathe** is offered at the end of your turn (it was never offered: the turn was read from the combat, which had already moved on).
+- **A form's own Use asks Formbinder's question** (add or replace, one a turn), as Combat Form's Use does.
+- **Harness:** `verify-block7` 228, `mutate-block7` 118; Blocks 1 to 6 and the weapons re-pinned to 0.8.1.
+
+## 0.8.0 — 25 Oct 2026 (Block 7: the archetypes)
+
+Needs **TRG Prime 3.671.0**. Rulings B7-1 to B7-8 (`docs/INNER_TEMPEST_RULINGS_2026-10-25.md`). See `docs/RELEASE_NOTES_0.8.0.md`.
+
+- **Twenty archetypes** (Dragon Tamer follows with the Dragon Companions in Block 10, B7-1), offered by the system's archetype picker, their progression lines read by the system (B7-2).
+- **Seven abilities** they print as items: Twin Dragon, Drawn Verdict, Restorative Palm, Night Lotus Venom, Bound Challenge, Wandering Creed, Turning the Blade.
+- **FA-22:** the core archetypes opened to the five classes; the system's tier rule kept (B7-8).
+- **Formbinder** holds two forms, the greater of overlapping bonuses applying (core 3.671.0 `stackGroup`); a blend fills both places (B7-7).
+- **A Strike its target cannot react to** (Drawn Verdict) stays silent for Form Reversal, Shadow Counter, Waiting Blade and Snake Stance.
+- **IT-M6:** a class's chosen Magical Tradition stamps the innate spells waiting for one.
+- **Fixed (Block 6):** Mystic Essence and Mystical Power no longer offer specialist spells.
+- **Fixed in review, before release:** nine findings (release notes), among them Restorative Palm on another player's character, the reach and touch checks, Steel Disciple's Kensai feats, Veilborn's Refocus bonus in the dialog, and Wandering Creed beside Sworn Oath.
+- **Harness:** new `verify-block7` 225 checks, `mutate-block7` 114 mutations; Blocks 1 to 6 and the weapons re-pinned to 0.8.0 and 3.671.0.
+
 ## 0.7.1 — 25 Oct 2026 (fixes from the 0.7.0 live test)
 
 Needs **TRG Prime 3.670.1**. See `docs/RELEASE_NOTES_0.7.1.md`.

@@ -1,0 +1,43 @@
+{
+  "_id": "8Mkph1ZP96wOFDz6",
+  "name": "Wandering Creed",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>During your daily preparation, select any one Sworn Oath available to the Oathblade.</p>\n<p>You gain the benefits of that oath until your next daily preparation.</p>\n<p>You may select a different oath each day without requiring the significant narrative change normally required when an Oathblade changes their Sworn Oath.</p>\n<p>You still possess only one Sworn Oath at a time and cannot combine the benefits of multiple oaths.</p>\n<p><em>Automated:</em> at each daily preparation you are asked which Sworn Oath to hold until the next (or press Use): the oath you held is set aside and the chosen one added, with no narrative change needed. One oath at a time.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "wanderingCreed"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!8Mkph1ZP96wOFDz6"
+}

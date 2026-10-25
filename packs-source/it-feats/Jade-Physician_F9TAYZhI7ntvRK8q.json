@@ -1,0 +1,69 @@
+{
+  "_id": "F9TAYZhI7ntvRK8q",
+  "name": "Jade Physician",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Medicine 2 ranks",
+    "active": true,
+    "description": "<p><strong>DISCIPLE</strong></p>\n<p><em>You have learned that the body can be restored through the same precision with which it can be harmed. Jade Physicians study anatomy, pressure, breathing and disciplined touch, using martial control to halt bleeding, restore circulation and return strength to failing limbs. Their methods are practical rather than mystical, though to an untrained observer the speed with which they work can seem miraculous.</em></p>\n<p><strong>Prerequisites</strong> Medicine 2 ranks</p>\n<p>You gain Medicine as a class skill and gain a +2-class bonus to Medicine checks made to Treat Injury, Treat Toxin or Treat Wounds.</p>\n<p>Furthermore, you gain the Restorative Palm ability.</p>\n<p>RESTORATIVE PALM</p>\n<p>FOCUS HEALING TECHNIQUE</p>\n<p><strong>Action</strong> 2 AP; <strong>Range</strong> Touch; <strong>Target</strong> one living creature other than yourself</p>\n<p>You use controlled pressure, breath and precise manipulation to restore the target. The target regains 4 Hit Points per character level. Alternatively, instead of restoring Hit Points, you may stop an amount of Bleeding equal to 1 per two-character levels or allow the target to immediately attempt a new saving throw against one poison or disease currently affecting it.</p>\n<p>Restorative Palm is a martial technique and is not magical. It has no effect on Constructs, Undead or other creatures without a living anatomy (GM discretion).</p>\n<p>After Restorative Palm has been used on a target, they are immune to its effects for 1 hour.</p>\n<p><strong>Progression Requirements</strong> Medicine skill +10 ranks</p>\n<p><em>Automated:</em> Medicine is a class skill while you have this feat. +2 class to Treat Injury, Treat Toxin and Treat Wounds checks, applied for you. You gain Restorative Palm.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Disciple",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Restorative Palm",
+    "grantedFeats": "",
+    "progressionRequirements": "Medicine skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classSkills": [
+        "Medicine"
+      ],
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Jade Physician",
+          "scope": "Treat Injury, Treat Toxin and Treat Wounds",
+          "auto": true,
+          "when": {
+            "actions": [
+              "treatInjury",
+              "treatToxin",
+              "treatWounds"
+            ]
+          },
+          "value": 2,
+          "type": "class"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!F9TAYZhI7ntvRK8q"
+}

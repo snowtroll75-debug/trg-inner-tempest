@@ -1,0 +1,50 @@
+{
+  "_id": "EqrggYxmMY1Ot7uM",
+  "name": "Shugenja",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Learned Caster, Arcana 2 ranks, Nature 2 ranks, Religion 2 ranks",
+    "active": true,
+    "description": "<p><strong>ADEPT</strong></p>\n<p><em>In the secluded temples of the great peaks, masters of the elemental forces meditate on the natural harmony that binds fire, water, earth, and air. Those who walk the way of the Shugenja learn to channel these forces through their being, becoming avatars of nature's balance and fury.</em></p>\n<p><strong>Prerequisites</strong> Learned Caster, Arcana 2 ranks, Nature 2 ranks, Religion 2 ranks</p>\n<p>When you select this feat you must select one of the four elements from the table below.</p>\n<p>Each day during your daily preparations you may select two spells from any tradition which has the associated trait for your chosen element. You cast these spells as innate with the focus trait.</p>\n<p>| <strong>Element</strong> | <strong>Additional Spells</strong> |</p>\n<p>| Air         | Air, Electricity      |</p>\n<p>| Earth       | Acid, Earth           |</p>\n<p>| Fire        | Fire, Light           |</p>\n<p>| Water       | Cold, Water           |</p>\n<p><strong>Progression Requirements</strong> Arcana, Nature & Religion skills +10 ranks</p>\n<p><em>Partly automated:</em> for learned casters only (the Cleric, Druid and Wizard; ruling IT-C9), read by TRG Prime 3.671.0. Press Use to choose your element once, then at each daily preparation choose two spells, of any tradition, with one of your element's traits (not specialist spells): they are granted as innate spells with the Focus trait until your next daily preparation. The usual innate limit applies.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Adept",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Arcana, Nature & Religion skills +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "shugenja"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EqrggYxmMY1Ot7uM"
+}

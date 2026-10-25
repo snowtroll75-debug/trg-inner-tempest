@@ -1,0 +1,461 @@
+{
+ "source": "it12.md",
+ "intro": [
+  "Archetype feats are a special type of feat which allow you to expand your characters class. Once you have selected an archetype feat, you must complete its progression requirements before you can select another. It is also important to be aware that some class feats might have an archetype as a trait, in which case you can select this feat if you already have the archetype feat. An archetype feat may only be selected using a class feat pick."
+ ],
+ "archetypes": {
+  "BRAWLER": {
+   "traits": "",
+   "prerequisites": "Non-Disciple",
+   "special": "",
+   "progression": "Level +10",
+   "lines": [
+    "*You've honed your skills in the martial arts, transforming your unarmed strikes into deadly precision. Your journey is not one of mysticism or enlightenment, and you don't tread the path of wisdom. Instead, your focus lies in the pure essence of combat, the fist finding its mark on flesh, the hand parrying the blade, and the powerful kick that brings your foes to their knees.*",
+    "**Prerequisites** Non-Disciple",
+    "You have trained your unarmed combat skills and are deadly, even without a weapon. You gain the Powerful Fists ability (see below) and may also learn feats which are available only to the Disciple (Martial) class.",
+    "POWERFUL FISTS",
+    "You know how to wield your fists as deadly weapons. The damage of your unarmed attacks is1d6 rather than the usual 1d4 inflicted by an unarmed attack. Additionally, your unarmed attacks gain the versatile bludgeoning trait.",
+    "As you become more experienced, the amount of damage that you inflict with your unarmed strikes also increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of unarmed damage.",
+    "Be aware that this is total unarmed damage and not base. Your base damage die still increase in the usual way.",
+    "Finally, your unarmed strikes also gain the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your unarmed strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.",
+    "**Progression Requirements** Level +10"
+   ]
+  },
+  "DRAGON TAMER": {
+   "traits": "",
+   "prerequisites": "Inner Discipline, Arcana 8 ranks, Dragon Lore",
+   "special": "You must have an unhatched dragon egg before you take this feat.",
+   "progression": "Arcana skill +10 ranks",
+   "lines": [
+    "*You have formed a bond with a dragon companion, and together, you share a deep connection. You can command your dragon to unleash devastating breath attacks, protect you in battle, and even merge your spirits to become a formidable draconic warrior.*",
+    "**Prerequisites** Inner Discipline, Arcana 8 ranks, Dragon Lore",
+    "**Special Prerequisite** You must have an unhatched dragon egg before you take this feat.",
+    "You gain a Dragon Companion, which accompanies you on your adventures and faithfully obeys simple commands. More information on Dragon Companions can be found at the end of this chapter.",
+    "**Progression Requirements** Arcana skill +10 ranks"
+   ]
+  },
+  "FORMBINDER": {
+   "traits": "KENSAI",
+   "prerequisites": "BAB +2",
+   "special": "",
+   "progression": "BAB +10",
+   "lines": [
+    "*Through endless practice, you have learned to unify disparate philosophies of combat into a seamless flow. You no longer see forms as separate, but as facets of the same perfect rhythm. In battle, you move with a style entirely your own, blending techniques that no other warrior can emulate.*",
+    "**Prerequisites** BAB +2",
+    "You may have two forms active at any one time. You can still only activate one each turn. If both forms offer a bonus to the same thing, you may only benefit from the greater of the two.",
+    "Furthermore, you gain the Twin Dragon form:",
+    "**TWIN DRAGON**",
+    "Your movements mirror the duality of the dragon, fury and patience, fire and steel. You strike in mirrored balance, every motion feeding the next.",
+    "Whilst in this form, you gain the following modifiers:",
+    "- The first time you successfully Strike a creature each round, you gain a +1 bonus to DB until the start of your next turn.",
+    "- The first time you successfully avoid an attack each round (your DB is not overcome), you gain +1 base damage until the end of your next turn.",
+    "**Progression Requirements** BAB +10"
+   ]
+  },
+  "HARMONY WARDEN": {
+   "traits": "ADEPT",
+   "prerequisites": "Inner Discipline, Meditation 2 ranks",
+   "special": "",
+   "progression": "Meditation skill +10 ranks",
+   "lines": [
+    "*Your connection to the natural world is unparalleled, and you serve as its guardian. You can commune with spirits of the land, summon mystical creatures to aid you, and wield the power of nature as both a protector and a healer.*",
+    "**Prerequisites** Inner Discipline, Meditation 2 ranks",
+    "Whilst in a wilderness environment (GM discretion) you gain a +4 class bonus to Refocus (Mental Focus), Healing Trance and Power Recovery (Meditation) checks.",
+    "Additionally, once per day you may enter a trance for 10 minutes and cast any one PP 2 Verdant spell which has the utility trait as an innate spell. At 5<sup>th</sup> level and every 5 levels thereafter the PP of the spell increases by two.",
+    "**Progression Requirements** Meditation skill +10 ranks"
+   ]
+  },
+  "IAIJUTSU MASTER": {
+   "traits": "MARTIAL OATHBLADE",
+   "prerequisites": "Oathblade, Perception 2 ranks",
+   "special": "",
+   "progression": "Perception skill +10 ranks",
+   "lines": [
+    "*You have studied the discipline of the single decisive cut. An Iaijutsu Master does not brandish their weapon impatiently or waste movement in threatening flourishes. The blade remains sheathed until the instant that violence becomes inevitable, and then steel, intention and action become one.*",
+    "**Prerequisites** Oathblade, Perception 2 ranks",
+    "When you roll Initiative with a sword sheathed, you gain a +25-class bonus to Initiative.",
+    "Furthermore, you gain the Drawn Verdict ability.",
+    "DRAWN VERDICT",
+    "ATTACK FLOURISH FOCUS TECHNIQUE",
+    "**Action** 1 AP",
+    "**Requirements** Your Challenge is active; your challenged target is within your melee reach; you have a sword sheathed.",
+    "Draw your sword and make a melee Strike against your challenged target.",
+    "The target cannot use reactions triggered by the drawing of your weapon or this Strike.",
+    "If the Strike inflicts damage, the target cannot use reactions until the beginning of its next turn.",
+    "At the end of your turn, if you made no further Strikes after Drawn Verdict, you may sheathe the weapon as a Free (0 AP) action.",
+    "After Drawn Verdict is used, it becomes expended until restored using Refocus.",
+    "**Progression Requirements** Perception skill +10 ranks"
+   ]
+  },
+  "INNER ADEPT": {
+   "traits": "",
+   "prerequisites": "Meditation 2 ranks, Non-Disciple, Non-Mystic",
+   "special": "",
+   "progression": "Gained class skill +10 ranks",
+   "lines": [
+    "*Through disciplined training you have learned to centre body and mind, awakening techniques normally associated with monastic traditions. Whether you describe this state as chi, breath, spirit or simple concentration, you have learned to turn it into repeatable extraordinary action.*",
+    "**Prerequisites** Meditation 2 ranks, Non-Disciple, Non-Mystic",
+    "You gain the Inner Discipline class feat.",
+    "Furthermore, you may select either Meditation or Mental Focus as a Class skill.",
+    "Finally, you may also learn feats which are available only to the Disciple (Martial) class.",
+    "When you select this feat, choose a Monastic Path appropriate to your magical tradition. You use that path's magical ability score and tradition for any innate spells or magical techniques gained through this archetype, but you do not gain the path's class skill.",
+    "**Progression Requirements** Gained class skill +10 ranks"
+   ]
+  },
+  "JADE PHYSICIAN": {
+   "traits": "DISCIPLE",
+   "prerequisites": "Medicine 2 ranks",
+   "special": "",
+   "progression": "Medicine skill +10 ranks",
+   "lines": [
+    "*You have learned that the body can be restored through the same precision with which it can be harmed. Jade Physicians study anatomy, pressure, breathing and disciplined touch, using martial control to halt bleeding, restore circulation and return strength to failing limbs. Their methods are practical rather than mystical, though to an untrained observer the speed with which they work can seem miraculous.*",
+    "**Prerequisites** Medicine 2 ranks",
+    "You gain Medicine as a class skill and gain a +2-class bonus to Medicine checks made to Treat Injury, Treat Toxin or Treat Wounds.",
+    "Furthermore, you gain the Restorative Palm ability.",
+    "RESTORATIVE PALM",
+    "FOCUS HEALING TECHNIQUE",
+    "**Action** 2 AP; **Range** Touch; **Target** one living creature other than yourself",
+    "You use controlled pressure, breath and precise manipulation to restore the target. The target regains 4 Hit Points per character level. Alternatively, instead of restoring Hit Points, you may stop an amount of Bleeding equal to 1 per two-character levels or allow the target to immediately attempt a new saving throw against one poison or disease currently affecting it.",
+    "Restorative Palm is a martial technique and is not magical. It has no effect on Constructs, Undead or other creatures without a living anatomy (GM discretion).",
+    "After Restorative Palm has been used on a target, they are immune to its effects for 1 hour.",
+    "**Progression Requirements** Medicine skill +10 ranks"
+   ]
+  },
+  "LOTUS ENCHANTER": {
+   "traits": "ADEPT",
+   "prerequisites": "Inner Discipline, Deception 2 ranks, Diplomacy 2 ranks",
+   "special": "",
+   "progression": "Deception & Diplomacy skills +10 ranks",
+   "lines": [
+    "*Your mastery of enchantments and charms allows you to manipulate the minds and emotions of others. You can create potent love charms, cast mesmerizing spells, and influence the thoughts and actions of those around you.*",
+    "**Prerequisites** Inner Discipline, Deception 2 ranks, Diplomacy 2 ranks",
+    "You may add all specialist spells with the Enchantment trait to the list of spells available when selecting the Mystic Essence feat.",
+    "When you gain an Enchantment spell through Mystic Essence, you gain a +1 class bonus to its innate spell attack checks and save DCs.",
+    "**Progression Requirements** Deception & Diplomacy skills +10 ranks"
+   ]
+  },
+  "NIGHT LOTUS": {
+   "traits": "EXPERT",
+   "prerequisites": "Medicine 2 ranks",
+   "special": "",
+   "progression": "Medicine skill +10 ranks",
+   "lines": [
+    "*You have studied the secretive disciplines of the Night Lotus, whose members combine stealth, anatomy and carefully prepared toxins to incapacitate enemies before they can respond.*",
+    "**Prerequisites** Medicine 2 ranks",
+    "You gain Medicine as a class skill and gain resistance to poison.",
+    "Furthermore, you gain the Night Lotus Venom ability.",
+    "NIGHT LOTUS VENOM",
+    "FOCUS MANIPULATE POISON TECHNIQUE",
+    "**Action** 1 AP",
+    "**Requirements** You are wielding a piercing or slashing weapon, or a piece of ammunition.",
+    "You coat the weapon or ammunition with a fast-acting paralysing toxin. The poison remains effective until the end of your next turn or until the weapon successfully damages a creature.",
+    "A creature damaged by the poisoned weapon must make a Fortitude save against your Level DC.",
+    "**Critical** The target is unaffected.",
+    "**Success** The target suffers a -5-foot circumstance penalty to Speed until the beginning of your next turn.",
+    "**Failure** The target is Slowed 1 until the end of its next turn.",
+    "**Fumble** The target is Paralyzed until the beginning of its next turn and is then Slowed 1 until the end of that turn.",
+    "If the Strike also inflicts Unseen Assault, the target suffers a -1-circumstance penalty to this saving throw.",
+    "After Night Lotus Venom is used, it becomes expended until restored with Refocus.",
+    "**Progression Requirements** Medicine skill +10 ranks"
+   ]
+  },
+  "OATHBOUND": {
+   "traits": "MARTIAL",
+   "prerequisites": "Non-Disciple, Non-Oathblade, Mental Focus 1 rank",
+   "special": "",
+   "progression": "Mental Focus skill +10 ranks",
+   "lines": [
+    "*In the heart of ancient lands, where the spirits whisper through the leaves and the ground holds memories of a thousand battles, the Oathbound walk. These warriors, bound by sacred oaths to their lords, their lands, and their ancestors, are the embodiment of honour and discipline. With blades that shimmer like the rivers under the moonlight, they stand as guardians of the old ways, protectors of the realm, and upholders of the sacred code that governs all aspects of their life and death.*",
+    "**Prerequisites** Non-Disciple, Non-Oathblade, Mental Focus 1 rank",
+    "To you, honour and discipline are everything. You can focus your mind and ignore pain and distraction much better than other warriors. You gain Mental Focus as a class skill and also the Bound Challenge ability.",
+    "BOUND CHALLENGE",
+    "FLOURISH MENTAL",
+    "**Requirements** you can see the creature you intend to challenge.",
+    "**Action** 1 AP",
+    "You may expend a point of conviction to challenge any one opponent. You may add your class bonus to all melee attack checks made against your challenged target. Furthermore, you inflict your class bonus to damage rolls and finally your attacks also gain AR equal to your class bonus.",
+    "Challenging a target in this way however requires a great deal of focus and you suffer a -2-circumstance penalty to DB against all other creatures (other than the one you have challenged).",
+    "Finally, the katana and wakizashi are considered to be martial weapons for you and not exotic.",
+    "**Progression Requirements** Mental Focus skill +10 ranks",
+    "Be aware that Bound Challenge follows Challenge's one-target rule and end conditions, costs 1 conviction point instead of Focus, and counts as Challenge for feats that need it."
+   ]
+  },
+  "ONMYOJI NECROMANCER": {
+   "traits": "ADEPT",
+   "prerequisites": "Inner Discipline, Medicine 2 ranks, Religion 2 ranks",
+   "special": "",
+   "progression": "Medicine & Religion skills +10 ranks",
+   "lines": [
+    "*You walk the path of the onmyoji, wielding both divine and necromantic powers. You can commune with spirits, banish malevolent entities, and command the restless dead. Your mastery over the balance between life and death is unparalleled.*",
+    "**Prerequisites** Inner Discipline, Medicine 2 ranks, Religion 2 ranks",
+    "You may add all specialist spells with the Soul trait to the list of spells available when selecting the Mystic Essence feat.",
+    "When you gain a Soul spell through Mystic Essence, you gain a +1 class bonus to its innate spell attack checks and save DCs.",
+    "**Progression Requirements** Medicine & Religion skills +10 ranks"
+   ]
+  },
+  "RONIN": {
+   "traits": "OATHBLADE",
+   "prerequisites": "Oathblade, Survival 2 ranks",
+   "special": "",
+   "progression": "Survival skill +10 ranks",
+   "lines": [
+    "*You once served a lord, clan, cause or code that gave shape to your life, but that bond has been broken. Perhaps your master died, perhaps you were cast out, or perhaps you simply discovered that obedience and honour were not always the same thing.*",
+    "*A Ronin still possesses the discipline of an Oathblade but no longer allows a single oath to dictate every battle. Experience has taught you to adapt your principles to circumstance and to abandon a contest the moment another enemy proves more deserving of your attention.*",
+    "**Prerequisites** Oathblade, Survival 2 ranks",
+    "You gain Deception as a class skill.",
+    "Furthermore, your fixed Sworn Oath is replaced by Wandering Creed, and you gain Turning the Blade.",
+    "WANDERING CREED",
+    "During your daily preparation, select any one Sworn Oath available to the Oathblade.",
+    "You gain the benefits of that oath until your next daily preparation.",
+    "You may select a different oath each day without requiring the significant narrative change normally required when an Oathblade changes their Sworn Oath.",
+    "You still possess only one Sworn Oath at a time and cannot combine the benefits of multiple oaths.",
+    "TURNING THE BLADE",
+    "FLOURISH MENTAL TECHNIQUE",
+    "**Action** R; **Trigger** A creature other than your challenged target damages you with an attack.",
+    "You immediately abandon your existing contest and turn your full attention upon the creature that struck you.",
+    "Your current Challenge ends and the triggering creature becomes your challenged target.",
+    "This does not require Challenge to be ready, does not require a Refocus check and does not expend Challenge again.",
+    "Your current Sworn Oath immediately applies to the new challenged target.",
+    "**Progression Requirements** Survival skill +10 ranks"
+   ]
+  },
+  "SHADOWDANCER": {
+   "traits": "",
+   "prerequisites": "Inner Discipline, Stealth 2 ranks, Non-Rogue",
+   "special": "",
+   "progression": "Stealth skill +10 ranks",
+   "lines": [
+    "*You move through the shadows with unmatched grace and stealth. You can blend into the darkness, become invisible to your enemies, and strike with deadly precision from the shadows. Your mastery of stealth and subterfuge is unmatched.*",
+    "**Prerequisites** Inner Discipline, Stealth 2 ranks, Non-Rogue",
+    "You gain a +2-class bonus to the Stealth skill and also gain the Stealthy Strike feat.",
+    "Finally, you gain the Shadowy Step feat.",
+    "**Progression Requirements** Stealth skill +10 ranks"
+   ]
+  },
+  "SHUGENJA": {
+   "traits": "ADEPT",
+   "prerequisites": "Learned Caster, Arcana 2 ranks, Nature 2 ranks, Religion 2 ranks",
+   "special": "",
+   "progression": "Arcana, Nature & Religion skills +10 ranks",
+   "lines": [
+    "*In the secluded temples of the great peaks, masters of the elemental forces meditate on the natural harmony that binds fire, water, earth, and air. Those who walk the way of the Shugenja learn to channel these forces through their being, becoming avatars of nature's balance and fury.*",
+    "**Prerequisites** Learned Caster, Arcana 2 ranks, Nature 2 ranks, Religion 2 ranks",
+    "When you select this feat you must select one of the four elements from the table below.",
+    "Each day during your daily preparations you may select two spells from any tradition which has the associated trait for your chosen element. You cast these spells as innate with the focus trait.",
+    "| **Element** | **Additional Spells** |",
+    "| Air         | Air, Electricity      |",
+    "| Earth       | Acid, Earth           |",
+    "| Fire        | Fire, Light           |",
+    "| Water       | Cold, Water           |",
+    "**Progression Requirements** Arcana, Nature & Religion skills +10 ranks"
+   ]
+  },
+  "SOUL WEAPON MASTER": {
+   "traits": "DISCIPLE KENSAI OATHBLADE",
+   "prerequisites": "Mental Focus 2 ranks",
+   "special": "",
+   "progression": "Mental Focus skill +10 ranks",
+   "lines": [
+    "*Your mastery of the sword is unmatched, and you have forged a deep bond with your weapon. Through meditation you make the weapon an extension of intention and movement, performing techniques that seem impossible to less disciplined warriors.*",
+    "**Prerequisites** Mental Focus 2 ranks",
+    "When you first take this feat you must bond to a melee weapon as part of your daily preparations. This process requires you to meditate quietly for ten uninterrupted minutes. Once complete, you are bonded to the weapon and it becomes your Soul-Bound Weapon.",
+    "Be aware that if you lose your Soul-Bound Weapon through any means you may not bond to another until your next daily preparation.",
+    "SOUL-BOUND WEAPON",
+    "Your weapon is bonded to you and becomes an extension of your discipline. As you become more experienced, the amount of damage that you inflict with your Soul-Bound Weapon increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of damage.",
+    "Be aware that this is total damage and not base. Your base damage die still increase in the usual way.",
+    "Furthermore, your Soul-Bound Weapon gains the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.",
+    "Finally, any ability that may be used with unarmed strikes (such as Flurry of Blows) may also be used with your Soul-Bound Weapon.",
+    "**Progression Requirements** Mental Focus skill +10 ranks"
+   ]
+  },
+  "STEEL DISCIPLE": {
+   "traits": "MARTIAL",
+   "prerequisites": "BAB +2, Martial Weapon Proficiency",
+   "special": "",
+   "progression": "BAB +12.",
+   "lines": [
+    "*You’ve studied the beginnings of the Kensai’s philosophy, where each strike is not just an attack, but a perfected motion of body and spirit. While you lack their full discipline, you have begun to internalize fragments of their martial forms, granting you techniques beyond the reach of ordinary warriors.*",
+    "**Prerequisites** BAB +2, Martial Weapon Proficiency",
+    "Choose one Combat Form from the Kensai class. You may use this Combat Form as a Stance.",
+    "Furthermore, you may select either Acrobatics, Athletics, Meditation or Mental Focus as a Class skill.",
+    "Finally, you may also learn feats which have the Kensai (Martial) trait.",
+    "**Progression Requirements** BAB +12."
+   ]
+  },
+  "TANUKI TRICKSTER": {
+   "traits": "",
+   "prerequisites": "Inner Discipline, Deception 4 ranks",
+   "special": "",
+   "progression": "Deception skill +10 ranks",
+   "lines": [
+    "*You have adopted the mischievous ways of the tanuki, using your shape-shifting abilities and cunning tricks to outwit your foes. You can transform into various forms, create illusions, and play pranks on your enemies, leaving them bewildered and vulnerable.*",
+    "**Prerequisites** Inner Discipline, Deception 4 ranks",
+    "You gain a +2 class bonus to the Deception skill. Furthermore you gain Shape of the Humanoid and Mirage Entity as innate spells with the Focus trait, using the tradition and magical ability score of your Monastic Path.",
+    "**Progression Requirements** Deception skill +10 ranks"
+   ]
+  },
+  "TWIN PATH": {
+   "traits": "MYSTIC",
+   "prerequisites": "Mystic, Meditation 4 ranks",
+   "special": "",
+   "progression": "Meditation skill +10 ranks",
+   "lines": [
+    "*Most Mystics devote themselves to a single discipline until its philosophy shapes every expression of their power. You have instead learned to hold two truths at once, allowing a second mystical current to flow beside the first without either overwhelming the other.*",
+    "**Prerequisites** Mystic, Meditation 4 ranks",
+    "Select a second Mystical Discipline different from the one you chose at 1st level.",
+    "You gain the selected discipline's Special Ability. If both of your discipline abilities could modify the same check, attack, saving throw or other single resolution, you must choose which one applies; their benefits do not stack with one another unless an ability specifically states otherwise.",
+    "You also add the selected discipline's 1st-level Additional Spells to your repertoire. These spells are gained in the same way as the bonus spells from your original Mystical Discipline and do not count against the spells you select through Mystical Power.",
+    "You do not gain any of the second discipline's later Additional Spells. Your original Mystical Discipline remains your primary discipline for any class feature or rule that specifically refers to it.",
+    "**Progression Requirements** Meditation skill +10 ranks"
+   ]
+  },
+  "VEILBORN": {
+   "traits": "GHOSTWALKER",
+   "prerequisites": "Mental Focus 2 ranks",
+   "special": "",
+   "progression": "Mental Focus skill +10 ranks",
+   "lines": [
+    "*You have learned to move so closely alongside the boundary between light and shadow that your Ghost Arts have begun to take on an increasingly supernatural quality. Darkness responds to your presence, swallowing your outline and carrying you through places where ordinary movement should be impossible.*",
+    "**Prerequisites** Mental Focus 2 ranks",
+    "You gain one additional Ghost Art for which you meet the prerequisites. The selected Ghost Art must possess the Focus trait.",
+    "You also gain a +2-class bonus to Refocus (Mental Focus) checks made to restore an expended Ghost Art.",
+    "Finally, whenever you use a Ghost Art that causes you to become concealed or invisible, or which teleports you from one location to another, you gain a +1-class bonus to DB until the beginning of your next turn.",
+    "**Progression Requirements** Mental Focus skill +10 ranks"
+   ]
+  },
+  "WAY OF THE GEISHA": {
+   "traits": "",
+   "prerequisites": "Diplomacy 2 ranks",
+   "special": "",
+   "progression": "Diplomacy skill +10 ranks",
+   "lines": [
+    "*You have embraced the arts and grace of the geisha, using your charm, wit, and talents to influence and manipulate others. Your mastery of the subtle arts allows you to blend into any social situation, gather information, and navigate complex webs of intrigue.*",
+    "**Prerequisites** Diplomacy 2 ranks",
+    "You gain the Affable feat and also gain a +2-class bonus to all Artistry, Diplomacy and Perform checks.",
+    "**Progression Requirements** Diplomacy skill +10 ranks"
+   ]
+  },
+  "ZEN ARCHER": {
+   "traits": "MARTIAL",
+   "prerequisites": "Inner Discipline, Mental Focus 1 rank",
+   "special": "",
+   "progression": "Mental Focus skill +10 ranks",
+   "lines": [
+    "*You have devoted yourself to the path of the Zen Archer, honing your skills in both martial arts and archery.*",
+    "**Prerequisites** Inner Discipline, Mental Focus 1 rank",
+    "You gain proficiency with the longbow, shortbow and all composite bows. You also gain the Perfect Shot feat.",
+    "Finally, any ability that may be used with unarmed strikes (such as flurry of blows) may also be used with a bow weapon.",
+    "**Progression Requirements** Mental Focus skill +10 ranks",
+    "Be aware that a Zen Archer may also select feats available to the archer archetype."
+   ]
+  }
+ },
+ "abilities": {
+  "POWERFUL FISTS": {
+   "archetype": "BRAWLER",
+   "traits": "",
+   "lines": [
+    "You know how to wield your fists as deadly weapons. The damage of your unarmed attacks is1d6 rather than the usual 1d4 inflicted by an unarmed attack. Additionally, your unarmed attacks gain the versatile bludgeoning trait.",
+    "As you become more experienced, the amount of damage that you inflict with your unarmed strikes also increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of unarmed damage.",
+    "Be aware that this is total unarmed damage and not base. Your base damage die still increase in the usual way.",
+    "Finally, your unarmed strikes also gain the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your unarmed strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine."
+   ]
+  },
+  "TWIN DRAGON": {
+   "archetype": "FORMBINDER",
+   "traits": "",
+   "lines": [
+    "Your movements mirror the duality of the dragon, fury and patience, fire and steel. You strike in mirrored balance, every motion feeding the next.",
+    "Whilst in this form, you gain the following modifiers:",
+    "- The first time you successfully Strike a creature each round, you gain a +1 bonus to DB until the start of your next turn.",
+    "- The first time you successfully avoid an attack each round (your DB is not overcome), you gain +1 base damage until the end of your next turn."
+   ]
+  },
+  "DRAWN VERDICT": {
+   "archetype": "IAIJUTSU MASTER",
+   "traits": "ATTACK FLOURISH FOCUS TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "**Requirements** Your Challenge is active; your challenged target is within your melee reach; you have a sword sheathed.",
+    "Draw your sword and make a melee Strike against your challenged target.",
+    "The target cannot use reactions triggered by the drawing of your weapon or this Strike.",
+    "If the Strike inflicts damage, the target cannot use reactions until the beginning of its next turn.",
+    "At the end of your turn, if you made no further Strikes after Drawn Verdict, you may sheathe the weapon as a Free (0 AP) action.",
+    "After Drawn Verdict is used, it becomes expended until restored using Refocus."
+   ]
+  },
+  "RESTORATIVE PALM": {
+   "archetype": "JADE PHYSICIAN",
+   "traits": "FOCUS HEALING TECHNIQUE",
+   "lines": [
+    "**Action** 2 AP; **Range** Touch; **Target** one living creature other than yourself",
+    "You use controlled pressure, breath and precise manipulation to restore the target. The target regains 4 Hit Points per character level. Alternatively, instead of restoring Hit Points, you may stop an amount of Bleeding equal to 1 per two-character levels or allow the target to immediately attempt a new saving throw against one poison or disease currently affecting it.",
+    "Restorative Palm is a martial technique and is not magical. It has no effect on Constructs, Undead or other creatures without a living anatomy (GM discretion).",
+    "After Restorative Palm has been used on a target, they are immune to its effects for 1 hour."
+   ]
+  },
+  "NIGHT LOTUS VENOM": {
+   "archetype": "NIGHT LOTUS",
+   "traits": "FOCUS MANIPULATE POISON TECHNIQUE",
+   "lines": [
+    "**Action** 1 AP",
+    "**Requirements** You are wielding a piercing or slashing weapon, or a piece of ammunition.",
+    "You coat the weapon or ammunition with a fast-acting paralysing toxin. The poison remains effective until the end of your next turn or until the weapon successfully damages a creature.",
+    "A creature damaged by the poisoned weapon must make a Fortitude save against your Level DC.",
+    "**Critical** The target is unaffected.",
+    "**Success** The target suffers a -5-foot circumstance penalty to Speed until the beginning of your next turn.",
+    "**Failure** The target is Slowed 1 until the end of its next turn.",
+    "**Fumble** The target is Paralyzed until the beginning of its next turn and is then Slowed 1 until the end of that turn.",
+    "If the Strike also inflicts Unseen Assault, the target suffers a -1-circumstance penalty to this saving throw.",
+    "After Night Lotus Venom is used, it becomes expended until restored with Refocus."
+   ]
+  },
+  "BOUND CHALLENGE": {
+   "archetype": "OATHBOUND",
+   "traits": "FLOURISH MENTAL",
+   "lines": [
+    "**Requirements** you can see the creature you intend to challenge.",
+    "**Action** 1 AP",
+    "You may expend a point of conviction to challenge any one opponent. You may add your class bonus to all melee attack checks made against your challenged target. Furthermore, you inflict your class bonus to damage rolls and finally your attacks also gain AR equal to your class bonus.",
+    "Challenging a target in this way however requires a great deal of focus and you suffer a -2-circumstance penalty to DB against all other creatures (other than the one you have challenged).",
+    "Finally, the katana and wakizashi are considered to be martial weapons for you and not exotic."
+   ]
+  },
+  "WANDERING CREED": {
+   "archetype": "RONIN",
+   "traits": "",
+   "lines": [
+    "During your daily preparation, select any one Sworn Oath available to the Oathblade.",
+    "You gain the benefits of that oath until your next daily preparation.",
+    "You may select a different oath each day without requiring the significant narrative change normally required when an Oathblade changes their Sworn Oath.",
+    "You still possess only one Sworn Oath at a time and cannot combine the benefits of multiple oaths."
+   ]
+  },
+  "TURNING THE BLADE": {
+   "archetype": "RONIN",
+   "traits": "FLOURISH MENTAL TECHNIQUE",
+   "lines": [
+    "**Action** R; **Trigger** A creature other than your challenged target damages you with an attack.",
+    "You immediately abandon your existing contest and turn your full attention upon the creature that struck you.",
+    "Your current Challenge ends and the triggering creature becomes your challenged target.",
+    "This does not require Challenge to be ready, does not require a Refocus check and does not expend Challenge again.",
+    "Your current Sworn Oath immediately applies to the new challenged target."
+   ]
+  },
+  "SOUL-BOUND WEAPON": {
+   "archetype": "SOUL WEAPON MASTER",
+   "traits": "",
+   "lines": [
+    "Your weapon is bonded to you and becomes an extension of your discipline. As you become more experienced, the amount of damage that you inflict with your Soul-Bound Weapon increases. When your BAB becomes 3 and for every 3 it increases thereafter you inflict an additional point of damage.",
+    "Be aware that this is total damage and not base. Your base damage die still increase in the usual way.",
+    "Furthermore, your Soul-Bound Weapon gains the ability to overcome various damage types as your combat prowess increases. When your BAB reaches 3, your strikes class as magical. When your BAB reaches 8 your strikes are treated as cold iron and silver and at BAB 16 they are treated as adamantine.",
+    "Finally, any ability that may be used with unarmed strikes (such as Flurry of Blows) may also be used with your Soul-Bound Weapon."
+   ]
+  }
+ },
+ "existing": {
+  "DISCIPLE/GHOSTWALKER": "Assassin and Mastermind.",
+  "KENSAI": "Mastermind and Vanguard.",
+  "MYSTIC": "Mastermind & Runemage.",
+  "OATHBLADE": "Archer, Armour Master, Cavalier and Champion."
+ }
+}

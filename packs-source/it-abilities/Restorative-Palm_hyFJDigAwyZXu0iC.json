@@ -1,0 +1,43 @@
+{
+  "_id": "hyFJDigAwyZXu0iC",
+  "name": "Restorative Palm",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS HEALING TECHNIQUE</strong></p>\n<p><strong>Action</strong> 2 AP; <strong>Range</strong> Touch; <strong>Target</strong> one living creature other than yourself</p>\n<p>You use controlled pressure, breath and precise manipulation to restore the target. The target regains 4 Hit Points per character level. Alternatively, instead of restoring Hit Points, you may stop an amount of Bleeding equal to 1 per two-character levels or allow the target to immediately attempt a new saving throw against one poison or disease currently affecting it.</p>\n<p>Restorative Palm is a martial technique and is not magical. It has no effect on Constructs, Undead or other creatures without a living anatomy (GM discretion).</p>\n<p>After Restorative Palm has been used on a target, they are immune to its effects for 1 hour.</p>\n<p><em>Automated:</em> target a living creature other than you within reach and press Use (2 AP): restore 4 Hit Points per level, or stop Bleeding by 1 per two levels, or a new saving throw against one of its poisons or diseases (its stage save, now). Constructs and undead are refused. The target is then immune to Restorative Palm for 1 hour; it is expended until a Refocus.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Focus, Healing, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "restorativePalm"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!hyFJDigAwyZXu0iC"
+}

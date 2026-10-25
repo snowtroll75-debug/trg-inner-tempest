@@ -31,6 +31,7 @@
  * Foundry side reads `game.trgPrime.modules.helpers` at call time.
  */
 import { helpers, spendAP, spendReaction, reactionOpen, firstTarget, missedHere, SYSTEM_ID, MODULE_ID } from "./automations.mjs";
+import { essenceTraitsOf, essenceOpens, essenceBonus } from "./block7-automations.mjs";
 import { SHARED, registerSharedOps } from "./block4-automations.mjs";
 import {
   pathOf, techniqueAbility, techniqueSaveDC, mysticalPowerFits, pathStamp, isMystic,
@@ -357,7 +358,10 @@ async function grantPathSpell(actor, item, { title, slot }) {
   }
   const level = levelOf(actor);
   const known = new Set(items.filter((i) => i.type === "spell").map((i) => norm(i.name)));
-  const choices = (await spellIndex()).filter((e) => !known.has(norm(e.name)) && mysticalPowerFits(e.system, slot, { tradition: path.tradition, level }));
+  // LOTUS ENCHANTER, ONMYOJI NECROMANCER (0.8.0, Block 7): Mystic Essence's
+  // list gains the specialist spells with the trait each opens.
+  const opened = slot === "eligible" && norm(item.name) === "mystic essence" ? essenceTraitsOf(items) : [];
+  const choices = (await spellIndex()).filter((e) => !known.has(norm(e.name)) && (mysticalPowerFits(e.system, slot, { tradition: path.tradition, level }) || essenceOpens(e.system, opened, level)));
   if (!choices.length) { ui.notifications.warn(`${title}: no ${path.tradition} spell fits (${SLOT_WORDS[slot]}).`); return false; }
   const pick = await h().chooseFromList(`${title} — ${path.name}`, `Choose ${SLOT_WORDS[slot]} of the ${path.tradition} tradition`,
     choices.map((e) => [`${e.pack}|${e.id}`, `${e.name} (PP ${Number(e.system.ppCost) || 0})`]));
@@ -372,6 +376,10 @@ async function grantPathSpell(actor, item, { title, slot }) {
   foundry.utils.setProperty(data, `flags.${SYSTEM_ID}.grantedBy`, { sourceId: item.id, sourceName: item.name, requested: true });
   // A MYSTIC'S takes its Metamagic feats (B6-8); a cantrip never does.
   for (const [k, v] of Object.entries(pathStamp(path, 0, { metamagic: slot !== "cantrip" && isMystic(items) }))) foundry.utils.setProperty(data, k, v);
+  // "+1 class bonus to its innate spell attack checks and save DCs" (Lotus
+  // Enchanter, Onmyoji Necromancer; TRG Prime 3.671.0 `spellBonus`).
+  const bonus = norm(item.name) === "mystic essence" ? essenceBonus(data.system, items) : null;
+  if (bonus) foundry.utils.setProperty(data, `flags.${SYSTEM_ID}.spellBonus`, bonus);
   await actor.createEmbeddedDocuments("Item", [data]);
   await card(actor, title, [
     `<strong>${esc(doc.name)}</strong> joins your innate repertoire: an innate spell with the Focus trait, cast as ${esc(path.tradition)} with ${esc(path.ability)}.`
@@ -429,6 +437,9 @@ export async function onStrikeResolvedB6(ctx = {}) {
   // attack resolved and not a hit. An attack never resolved, or a hit that
   // lands nothing (a grab), is no miss (found in review).
   if (!attacker || !target || !missedHere(ctx) || held || !melee) return;
+  // NOT AGAINST A STRIKE THAT FORBIDS REACTIONS (0.8.0; Drawn Verdict, TRG
+  // Prime 3.671.0's `noReactions`).
+  if (ctx.noReactions) return;
   // "a target that misses you … with their own melee strike". A reaction's
   // miss counts too: the book excludes none.
   if (!stanceUp(target.effects, "Snake Stance")) return;

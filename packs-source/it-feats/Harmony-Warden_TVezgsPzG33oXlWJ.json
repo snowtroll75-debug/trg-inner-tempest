@@ -1,0 +1,67 @@
+{
+  "_id": "TVezgsPzG33oXlWJ",
+  "name": "Harmony Warden",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Meditation 2 ranks",
+    "active": true,
+    "description": "<p><strong>ADEPT</strong></p>\n<p><em>Your connection to the natural world is unparalleled, and you serve as its guardian. You can commune with spirits of the land, summon mystical creatures to aid you, and wield the power of nature as both a protector and a healer.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Meditation 2 ranks</p>\n<p>Whilst in a wilderness environment (GM discretion) you gain a +4 class bonus to Refocus (Mental Focus), Healing Trance and Power Recovery (Meditation) checks.</p>\n<p>Additionally, once per day you may enter a trance for 10 minutes and cast any one PP 2 Verdant spell which has the utility trait as an innate spell. At 5th level and every 5 levels thereafter the PP of the spell increases by two.</p>\n<p><strong>Progression Requirements</strong> Meditation skill +10 ranks</p>\n<p><em>Partly automated:</em> +4 class to Refocus, Healing Trance and Power Recovery checks is offered as a tick-box on those checks (\"in a wilderness environment\", the GM's call). Press Use once a day for the trance: 10 minutes, then choose a Verdant spell of the Utility category whose base PP is no greater than 2 (4 at 5th level, 6 at 10th, and so on; Graham's B7-4), cast at once as an innate spell with your Monastic Path's ability. The usual innate limit applies.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Adept",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Meditation skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "harmonyWarden",
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Harmony Warden",
+          "scope": "In a wilderness environment (the GM's call) — tick if so",
+          "auto": false,
+          "when": {
+            "actions": [
+              "refocus",
+              "healingTrance",
+              "powerRecovery"
+            ]
+          },
+          "value": 4,
+          "type": "class"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TVezgsPzG33oXlWJ"
+}

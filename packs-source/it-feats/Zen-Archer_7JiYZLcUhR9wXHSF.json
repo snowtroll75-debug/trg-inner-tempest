@@ -1,0 +1,95 @@
+{
+  "_id": "7JiYZLcUhR9wXHSF",
+  "name": "Zen Archer",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Mental Focus 1 rank",
+    "active": true,
+    "description": "<p><strong>MARTIAL</strong></p>\n<p><em>You have devoted yourself to the path of the Zen Archer, honing your skills in both martial arts and archery.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Mental Focus 1 rank</p>\n<p>You gain proficiency with the longbow, shortbow and all composite bows. You also gain the Perfect Shot feat.</p>\n<p>Finally, any ability that may be used with unarmed strikes (such as flurry of blows) may also be used with a bow weapon.</p>\n<p><strong>Progression Requirements</strong> Mental Focus skill +10 ranks</p>\n<p>Be aware that a Zen Archer may also select feats available to the archer archetype.</p>\n<p><em>Automated:</em> you are proficient with the longbow, short bow and composite bows, and you gain Perfect Shot. Flurry of Blows and every other ability used with unarmed strikes may be used with a bow (not a crossbow); an ability that needs a melee attack still needs one (Graham's B7-6). You count as having the Archer archetype for class feats with the Archer trait.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Martial",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "Perfect Shot",
+    "progressionRequirements": "Mental Focus skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "3LHEm8g21TQEK7VR",
+      "name": "Zen Archer: bows",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "weaponProficientName": [
+            "Longbow",
+            "Short Bow",
+            "Composite Longbow",
+            "Composite Shortbow"
+          ]
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Proficient with the longbow, short bow and composite bows.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!7JiYZLcUhR9wXHSF.3LHEm8g21TQEK7VR"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "unarmedAbilityWeapons": {
+        "names": [
+          "Longbow",
+          "Short Bow",
+          "Composite Longbow",
+          "Composite Shortbow"
+        ]
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7JiYZLcUhR9wXHSF"
+}

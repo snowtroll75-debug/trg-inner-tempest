@@ -48,8 +48,29 @@ export function pathOf(items = []) {
   for (const item of items ?? []) {
     const p = item?.flags?.[SYSTEM_ID]?.itPath;
     if (p && typeof p === "object" && p.tradition && p.ability) {
-      return { name: String(item.name ?? ""), tradition: norm(p.tradition), ability: norm(p.ability), skill: String(p.skill ?? "") };
+      // THE PATH'S OWN NAME when it is recorded on another item (0.8.0;
+      // Inner Adept's Path, stored on the archetype): Shadowy Stance and the
+      // stances ask for "the Devoted or Illuminator Monastic Path" by name.
+      return { name: String(p.name ?? item.name ?? ""), tradition: norm(p.tradition), ability: norm(p.ability), skill: String(p.skill ?? "") };
     }
+  }
+  return null;
+}
+
+/**
+ * WHERE A GRANTED SPELL'S MAGIC COMES FROM (0.8.0; IT-M6's fallback, as
+ * ruled on 20 October 2026: "All non-casting classes select a tradition at
+ * 1st level"). The Monastic Path; otherwise a Ghostwalker's, Kensai's or
+ * Oathblade's chosen Magical Tradition with its stated ability (Block 4's
+ * `itTradition`, once chosen); otherwise null (the spell waits, as before).
+ * Tanuki Trickster's spells are the first a class without a Path receives.
+ */
+export function magicOf(items = []) {
+  const path = pathOf(items);
+  if (path) return path;
+  for (const item of items ?? []) {
+    const t = item?.flags?.[SYSTEM_ID]?.itTradition;
+    if (t && typeof t === "object" && t.tradition && t.ability) return { name: String(item.name ?? "Magical Tradition"), tradition: norm(t.tradition), ability: norm(t.ability), skill: "" };
   }
   return null;
 }
@@ -123,6 +144,12 @@ function traditionsOf(system) {
  *             greater than your Mystic level"
  */
 export function mysticalPowerFits(spellSystem, slot, { tradition = "", level = 1 } = {}) {
+  // NOT A SPECIALIST SPELL (0.8.0, found while building Block 7): a
+  // specialist spell is a class's own list, not the tradition's. Lotus
+  // Enchanter and Onmyoji Necromancer "add all specialist spells with the
+  // Enchantment [Soul] trait to the list of spells available when selecting
+  // the Mystic Essence feat", which says they are not on it otherwise.
+  if (spellSystem?.specialist === true) return false;
   const traditions = traditionsOf(spellSystem);
   const want = norm(tradition);
   if (!want || !(traditions.includes(want) || traditions.includes("all"))) return false;
@@ -244,6 +271,39 @@ export function flurryWeapon(item) {
   return fists || s.unarmed === true || /\bmonastic\b/i.test(String(s.traits ?? ""));
 }
 
+/**
+ * A WEAPON THE HOLDER'S UNARMED ABILITIES REACH (0.8.0, Block 7; TRG Prime
+ * 3.671.0 `unarmedAbilityWeapons`, Graham's B7-6). The Soul-Bound Weapon
+ * ("any ability that may be used with unarmed strikes (such as Flurry of
+ * Blows) may also be used with your Soul-Bound Weapon") and the Zen Archer's
+ * bows. Read off the actor's items and effects as the system reads it: by
+ * the weapon's id, its name, or its group.
+ *
+ * @param {Iterable<object>} carriers the actor's items and effects
+ * @param {object} item a weapon
+ */
+export function declaredAbilityWeapon(carriers = [], item = null) {
+  if (item?.type !== "weapon") return false;
+  const id = String(item.id ?? item._id ?? "");
+  const name = norm(item.name);
+  const group = norm(item.system?.group);
+  for (const c of carriers ?? []) {
+    if (c?.disabled) continue;
+    const spec = c?.flags?.[SYSTEM_ID]?.unarmedAbilityWeapons;
+    if (!spec || typeof spec !== "object") continue;
+    const list = (v) => (Array.isArray(v) ? v : v ? [v] : []).map((x) => String(x).trim());
+    if (id && list(spec.itemIds).includes(id)) return true;
+    if (name && list(spec.names).some((n) => norm(n) === name)) return true;
+    if (group && list(spec.groups).some((g) => norm(g) === group)) return true;
+  }
+  return false;
+}
+
+/** Flurry of Blows' weapons for this actor: the unarmed ones, and any its abilities reach (B7-6). */
+export function abilityStrikeWeapon(actor, item) {
+  return flurryWeapon(item) || declaredAbilityWeapon([...Array.from(actor?.items ?? []), ...Array.from(actor?.effects ?? [])], item);
+}
+
 /* ------------------------------------------------------------------ */
 /* Small Foundry steps                                                  */
 /* ------------------------------------------------------------------ */
@@ -307,7 +367,7 @@ async function focusReady(item, label) {
 
 /** The Strike Flurry makes: the fists, or a gauntlet or Monastic weapon in hand. */
 export async function flurryWeaponsOf(actor) {
-  let weapons = Array.from(actor.items ?? []).filter((i) => flurryWeapon(i) && (i.system?.natural || i.system?.equipped));
+  let weapons = Array.from(actor.items ?? []).filter((i) => abilityStrikeWeapon(actor, i) && (i.system?.natural || i.system?.equipped));
   if (!weapons.length) {
     // THE FISTS ARE ALWAYS THERE. A sheet without the Unarmed Strike item
     // is given one from the system's weapons pack, as the sheet's own
@@ -556,9 +616,25 @@ export function onPreCreateSpell(document, data) {
   // A MYSTIC'S (0.7.0, B6-8) takes its Metamagic feats; a cantrip never
   // does (found in review).
   const metamagic = isMystic(Array.from(actor.items ?? [])) && !isCantripSpell(data?.system ?? document?.system);
-  const stamp = pathStamp(pathOf(Array.from(actor.items ?? [])), magic.allowance, { metamagic });
+  const stamp = pathStamp(magicOf(Array.from(actor.items ?? [])), magic.allowance, { metamagic });
   if (stamp) document.updateSource(stamp);
   else document.updateSource({ [`flags.${MODULE_ID}.pathOwed`]: true, [`flags.${SYSTEM_ID}.innatePPAllowance`]: Math.trunc(Number(magic.allowance) || 0) });
+}
+
+/**
+ * When a class's Magical Tradition is chosen (0.8.0): every spell still
+ * waiting takes it, as a Path's arrival gives them the Path's.
+ */
+export async function stampOwedSpells(actor) {
+  if (!actor?.isOwner) return;
+  const magic = magicOf(Array.from(actor.items ?? []));
+  if (!magic) return;
+  const waiting = Array.from(actor.items ?? []).filter((i) => i.type === "spell" && i.getFlag(MODULE_ID, "pathOwed"));
+  if (!waiting.length) return;
+  const mystic = isMystic(Array.from(actor.items ?? []));
+  await actor.updateEmbeddedDocuments("Item", waiting.map((sp) => ({
+    _id: sp.id, ...pathStamp(magic, sp.getFlag(SYSTEM_ID, "innatePPAllowance"), { metamagic: mystic && !isCantripSpell(sp.system) }), [`flags.${MODULE_ID}.pathOwed`]: false
+  })));
 }
 
 /** When a Path arrives: every spell still waiting for one takes its stamp. */
@@ -583,7 +659,7 @@ export async function spellIndex() {
   for (const id of ["trg-prime.spells", `${MODULE_ID}.it-spells`]) {
     const pack = game.packs.get(id);
     if (!pack) continue;
-    const index = await pack.getIndex({ fields: ["system.tradition", "system.ppCost", "system.traits"] });
+    const index = await pack.getIndex({ fields: ["system.tradition", "system.ppCost", "system.traits", "system.specialist"] });
     for (const e of index) out.push({ pack: id, id: e._id, name: e.name, system: e.system ?? {} });
   }
   return out.sort((a, b) => (Number(a.system.ppCost) - Number(b.system.ppCost)) || a.name.localeCompare(b.name));

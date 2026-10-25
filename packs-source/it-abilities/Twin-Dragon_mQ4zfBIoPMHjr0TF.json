@@ -1,0 +1,60 @@
+{
+  "_id": "mQ4zfBIoPMHjr0TF",
+  "name": "Twin Dragon",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Combat Form",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Your movements mirror the duality of the dragon, fury and patience, fire and steel. You strike in mirrored balance, every motion feeding the next.</p>\n<p>Whilst in this form, you gain the following modifiers:</p>\n<p>- The first time you successfully Strike a creature each round, you gain a +1 bonus to DB until the start of your next turn.</p>\n<p>- The first time you successfully avoid an attack each round (your DB is not overcome), you gain +1 base damage until the end of your next turn.</p>\n<p><em>Automated:</em> a Combat Form, entered through Combat Form like your others (1 AP, a stance). The first time each round your Strike hits, +1 class to your DB until the start of your next turn; the first time each round an attack misses you, +1 to your damage until the end of your next turn (untyped, so it adds to a form's class bonuses). It is not counted against Combat Form's table.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "Kensai",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itForm": {
+        "parts": [
+          {
+            "label": "+1 DB after your first hit each round",
+            "flags": {
+              "itTwinDragonStrike": true
+            }
+          },
+          {
+            "label": "+1 base damage after your first avoided attack each round",
+            "flags": {
+              "itTwinDragonAvoid": true
+            }
+          }
+        ]
+      },
+      "itAutomation": "combatFormItem",
+      "itFormExtra": "Formbinder"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mQ4zfBIoPMHjr0TF"
+}

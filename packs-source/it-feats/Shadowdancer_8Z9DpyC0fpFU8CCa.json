@@ -1,0 +1,85 @@
+{
+  "_id": "8Z9DpyC0fpFU8CCa",
+  "name": "Shadowdancer",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Stealth 2 ranks, Non-Rogue",
+    "active": true,
+    "description": "<p><em>You move through the shadows with unmatched grace and stealth. You can blend into the darkness, become invisible to your enemies, and strike with deadly precision from the shadows. Your mastery of stealth and subterfuge is unmatched.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Stealth 2 ranks, Non-Rogue</p>\n<p>You gain a +2-class bonus to the Stealth skill and also gain the Stealthy Strike feat.</p>\n<p>Finally, you gain the Shadowy Step feat.</p>\n<p><strong>Progression Requirements</strong> Stealth skill +10 ranks</p>\n<p><em>Automated:</em> +2 class to Stealth checks. You gain the Stealthy Strike feat and the Shadowy Step feat (IT-M14 as answered).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "Stealthy Strike, Shadowy Step",
+    "progressionRequirements": "Stealth skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "pOrFxxMRljn2XatD",
+      "name": "Shadowdancer: skill bonuses",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.skills.stealth.class",
+          "mode": 0,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "+2 class bonus to Stealth.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!8Z9DpyC0fpFU8CCa.pOrFxxMRljn2XatD"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!8Z9DpyC0fpFU8CCa"
+}

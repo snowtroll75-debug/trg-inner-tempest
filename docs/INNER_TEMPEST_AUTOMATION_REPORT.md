@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 
 ## Shipped so far
 
-301 features shipped: A 168 · B 91 · C 20 · D 22. 3 more are in progress (support shipped, the feature that uses it to come).
+328 features shipped: A 183 · B 103 · C 20 · D 22. 3 more are in progress (support shipped, the feature that uses it to come).
 
 ### Shipped below target, and what would lift it
 
@@ -33,6 +33,9 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 | SA-17 | Read Intent (Sense Motive) | A | B | 30 ft, once each round per creature; Critical DB and saves +2, Success the one chosen, Partial DB +1, Fumble DB −1, to your next turn. The flanking clause is described on the card (ruled). |
 | FR-20 | Hive Coordination | A | B | +2 racial tick on Aid. |
 | FR-30 | Perfected Form | C | D | Text. |
+| FA-03 | Formbinder | A | B | Combat Form's Use asks add or replace while one form is held; two forms as one stance (a blend fills both, B7-7); one activation a turn; overlapping bonuses tagged stackGroup so the greater applies (core 3.671.0 C15). |
+| FA-09a | Night Lotus Venom | A | B | Use (1 AP) coats a piercing or slashing weapon or ammunition; first damage: Fortitude vs Level DC through the peril rail; +1 DC after Unseen Assault; Partial = Success (IT-m24). |
+| FA-19 | Veilborn | A | B | Use learns one more Focus Ghost Art outside the table; +2 class Refocus restoring a Ghost Art (restores axis, C13); +1 DB offered after the concealing, invisible and teleporting arts. |
 | FC-01 | Abundant Step | A | B | Use: 1 AP Flourish; the token move is armed as a teleport up to your Speed. |
 | FC-05 | Blended Form | A | B | Use picks two known forms; Combat Form offers the blend with both benefits. |
 | FC-06 | Bounding Step | B | C | Use: a Fly Speed equal to land Speed for 1 minute; ending turns on a surface (or the 9th-level DC 25 Acrobatics check) is by hand. |

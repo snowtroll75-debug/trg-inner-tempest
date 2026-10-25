@@ -28,6 +28,7 @@ import {
   SYSTEM_ID, MODULE_ID
 } from "./automations.mjs";
 import { expiryFor, effectData, combatFor, TURN_END_FLAG, TURN_START_FLAG } from "./skill-action-automations.mjs";
+import { stampOwedSpells } from "./block3-automations.mjs";
 
 const norm = (v) => String(v ?? "").trim().toLowerCase();
 const esc = (text) => String(text ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
@@ -138,8 +139,37 @@ export function mergeFormFlags(parts = []) {
 }
 
 /** The stance's name for one form or a blend. */
-export function formStanceName(names = []) {
+export function formStanceName(names = [], { formbinder = false } = {}) {
+  if (names.length > 1 && formbinder) return `Formbinder: ${names.join(" + ")}`;
   return names.length > 1 ? `Blended Form: ${names.join(" + ")}` : `Combat Form: ${names[0] ?? ""}`;
+}
+
+/**
+ * FORMBINDER (0.8.0, Block 7): "You may have two forms active at any one
+ * time … If both forms offer a bonus to the same thing, you may only
+ * benefit from the greater of the two." Each form's parts merged as a blend
+ * is, with every bonus row tagged with a stack group named for what it
+ * improves (TRG Prime 3.671.0 `stackGroup`): a modifier row by its kind and
+ * scope (check types, subjects, actions), a stat row by its target. Where
+ * both forms improve the same thing only the greater applies; where only
+ * one does, the tag changes nothing. Rows within one form never compete.
+ *
+ * @param {Array<Array<{label: string, flags: object}>>} formsParts one parts list per form
+ */
+export function formbinderFlags(formsParts = []) {
+  const sig = (row) => {
+    const w = row?.when ?? {};
+    const list = (v) => (Array.isArray(v) ? v : v ? [v] : []).map((x) => norm(x)).sort().join(",");
+    return `formbinder:${norm(row?.kind || "modifier")}:${list(w.checkTypes)}|${list(w.subjects)}|${list(w.actions)}`;
+  };
+  const tagged = (formsParts ?? []).map((parts) => (parts ?? []).map((part) => {
+    const f = part?.flags ?? {};
+    const out = { ...f };
+    if (Array.isArray(f.conditionals)) out.conditionals = f.conditionals.map((c) => (c?.kind === "modifier" || (!c?.kind && c?.value !== undefined) ? { ...c, stackGroup: sig(c) } : c));
+    if (Array.isArray(f.statBonuses)) out.statBonuses = f.statBonuses.map((r) => ({ ...r, stackGroup: `formbinder:stat:${norm(r?.target)}` }));
+    return { ...part, flags: out };
+  }));
+  return mergeFormFlags(tagged.flat());
 }
 
 /** Was something already done in this round of this combat? `record` is {combatId, round}. */
@@ -283,21 +313,21 @@ const h = () => helpers();
 const DialogV2 = () => foundry.applications.api.DialogV2;
 
 /** The owned feat or ability of this name. */
-function ownedNamed(actor, name) {
+export function ownedNamed(actor, name) {
   const want = norm(name);
   return Array.from(actor?.items ?? []).find((i) => ["feat", "ability"].includes(i.type) && norm(i.name) === want) ?? null;
 }
-const countNamed = (actor, name) => Array.from(actor?.items ?? []).filter((i) => ["feat", "ability"].includes(i.type) && norm(i.name) === norm(name)).length;
-const intOf = (actor) => int(actor?.system?.attributes?.intelligence?.total);
-const levelOf = (actor) => int(actor?.system?.identity?.level);
+export const countNamed = (actor, name) => Array.from(actor?.items ?? []).filter((i) => ["feat", "ability"].includes(i.type) && norm(i.name) === norm(name)).length;
+export const intOf = (actor) => int(actor?.system?.attributes?.intelligence?.total);
+export const levelOf = (actor) => int(actor?.system?.identity?.level);
 
 /** This file's effects on an actor carrying this key. */
-function ownEffects(actor, key) {
+export function ownEffects(actor, key) {
   return Array.from(actor?.effects ?? []).filter((e) => e.getFlag?.(MODULE_ID, SRC) === key);
 }
 
 /** Effect data in this file's shape, with an expiry. */
-function made(key, { name, description, changes = [], system = {}, module = {}, img }, expiry) {
+export function made(key, { name, description, changes = [], system = {}, module = {}, img }, expiry) {
   const data = effectData(key, { name, description, changes, system, module, expiry });
   if (img) data.img = img;
   data.flags[MODULE_ID][SRC] = key;
@@ -310,14 +340,14 @@ function made(key, { name, description, changes = [], system = {}, module = {}, 
  * while the Oathblade's own client replaces them), so a vanished id is not
  * an error.
  */
-async function safeDelete(actor, ids = []) {
+export async function safeDelete(actor, ids = []) {
   const live = ids.filter((id) => actor?.effects?.has?.(id));
   if (!live.length) return;
   try { await actor.deleteEmbeddedDocuments("ActiveEffect", live); } catch (err) { console.debug("Inner Tempest | an effect was already gone", err); }
 }
 
 /** Replace this file's effect of this key on an actor (one it owns), or relay it. */
-async function putEffect(actor, key, data) {
+export async function putEffect(actor, key, data) {
   const old = ownEffects(actor, key).map((e) => e.id);
   if (old.length) {
     if (actor.isOwner) await safeDelete(actor, old);
@@ -327,38 +357,38 @@ async function putEffect(actor, key, data) {
 }
 
 /** Lasts until the start of the bearer's next turn. */
-const untilNextTurn = (actor) => expiryFor("startOfNextTurn", actor);
+export const untilNextTurn = (actor) => expiryFor("startOfNextTurn", actor);
 /** Lasts until the end of the bearer's next turn. */
-const untilEndOfNextTurn = (actor) => expiryFor("endOfNextTurn", actor);
+export const untilEndOfNextTurn = (actor) => expiryFor("endOfNextTurn", actor);
 /** Lasts until the bearer's current turn ends (6 seconds out of combat). */
-function untilEndOfTurn(actor) {
+export function untilEndOfTurn(actor) {
   const combat = combatFor(actor);
   if (!combat) return forSeconds(6);
   return { system: {}, module: { combatId: combat.id, [TURN_END_FLAG]: { combatId: combat.id, round: int(combat.round) } } };
 }
 /** "For 3 rounds": until the bearer's turn begins `rounds` rounds from now (18 seconds out of combat). */
-function forRounds(actor, rounds) {
+export function forRounds(actor, rounds) {
   const combat = combatFor(actor);
   if (!combat) return forSeconds(6 * rounds);
   const round = int(combat.round) + rounds;
   return { system: { conditionExpiresRound: round + 1 }, module: { combatId: combat.id, [TURN_START_FLAG]: { combatId: combat.id, round } } };
 }
 /** Lasts `seconds` of world time. */
-const forSeconds = (seconds) => ({ system: { spellEffect: true, spellEffectEnd: Math.trunc(Number(game.time?.worldTime ?? 0)) + seconds }, module: {} });
+export const forSeconds = (seconds) => ({ system: { spellEffect: true, spellEffectEnd: Math.trunc(Number(game.time?.worldTime ?? 0)) + seconds }, module: {} });
 /** Lasts to the end of this round (the system's round sweep), or 6 seconds out of combat. */
-function untilRoundEnds(actor, rounds = 1) {
+export function untilRoundEnds(actor, rounds = 1) {
   const combat = combatFor(actor);
   if (!combat) return forSeconds(6 * rounds);
   return { system: { conditionExpiresRound: int(combat.round) + rounds }, module: { combatId: combat.id } };
 }
 
 /** A card: each line its own paragraph (a line that is already a block is kept as it is). */
-async function card(actor, title, lines) {
+export async function card(actor, title, lines) {
   return h().postCard(actor, title, lines.map((l) => (/^<(p|div)\b/.test(String(l)) ? l : h().line(l))));
 }
 
 /** The Focus use gate every technique shares. */
-async function focusReady(item, label) {
+export async function focusReady(item, label) {
   if (hasUse(item)) return true;
   ui.notifications.warn(`${label}: expended — Refocus restores it.`);
   return false;
@@ -372,17 +402,17 @@ const roundStamp = () => (game.combat?.started ? { combatId: game.combat.id, rou
 const usedNow = (record) => usedThisRound(record, game.combat?.started ? game.combat.id : "", game.combat?.round);
 
 /** The actor's token on the canvas, or null. */
-const tokenOf = (actor) => { try { return actor?.getActiveTokens?.()?.[0] ?? null; } catch { return null; } };
+export const tokenOf = (actor) => { try { return actor?.getActiveTokens?.()?.[0] ?? null; } catch { return null; } };
 
 /** Are these two on the same side (their tokens' disposition)? */
-function allied(a, b) {
+export function allied(a, b) {
   const ta = tokenOf(a), tb = tokenOf(b);
   if (!ta || !tb) return false;
   return ta.document.disposition === tb.document.disposition;
 }
 
 /** Every creature on the canvas and every world actor, once each. */
-function creaturesHere() {
+export function creaturesHere() {
   const out = new Map();
   for (const t of canvas?.tokens?.placeables ?? []) if (t.actor) out.set(t.actor.uuid, t.actor);
   // THE COMBAT'S SCENE TOO: the acting GM may be looking at another one.
@@ -391,7 +421,7 @@ function creaturesHere() {
   return Array.from(out.values());
 }
 
-async function actorFrom(uuid) {
+export async function actorFrom(uuid) {
   const doc = uuid ? await fromUuid(uuid) : null;
   return doc?.actor ?? doc ?? null;
 }
@@ -413,7 +443,7 @@ function meleeWeapons(actor) {
     && !["missile", "thrown", "ranged"].includes(norm(i.system?.attackMode || "melee")));
 }
 
-async function pickWeapon(actor, label, weapons) {
+export async function pickWeapon(actor, label, weapons) {
   if (!weapons.length) { ui.notifications.warn(`${label}: no suitable weapon in hand.`); return null; }
   if (weapons.length === 1) return weapons[0];
   const id = await h().chooseFromList(label, "Strike with", weapons.map((w) => [w.id, w.name]));
@@ -431,7 +461,7 @@ async function abilityFromPack(name, sourceClass) {
 }
 
 /** Grant a pack ability as part of `granter` (it leaves with it). */
-async function grantAbility(actor, granter, name, sourceClass) {
+export async function grantAbility(actor, granter, name, sourceClass) {
   const doc = await abilityFromPack(name, sourceClass);
   if (!doc) { ui.notifications.warn(`${name} is not in the abilities compendium.`); return null; }
   const data = doc.toObject();
@@ -451,7 +481,7 @@ function usersFor(actor) {
 }
 
 /** Ask the question where the creature is played: here, or on that user's screen. */
-async function offerTo(actor, op, payload = {}) {
+export async function offerTo(actor, op, payload = {}) {
   if (!actor || !OFFERS[op]) return;
   const who = answererFor({ users: usersFor(actor), activeGMId: game.users?.activeGM?.id ?? null });
   if (!who) return;
@@ -460,7 +490,7 @@ async function offerTo(actor, op, payload = {}) {
 }
 
 /** Write as the owner: here when this client may, else through the acting GM. */
-async function asOwner(actor, op, payload = {}) {
+export async function asOwner(actor, op, payload = {}) {
   if (!actor || !OWNER_OPS[op]) return;
   if (actor.isOwner) return OWNER_OPS[op](actor, payload);
   game.socket?.emit(SOCKET, { b4own: op, actorUuid: actor.uuid, payload });
@@ -508,6 +538,9 @@ const magicalTradition = {
     const pick = await h().chooseFromList(item.name, "Your magical tradition", TRADITIONS);
     if (!pick) return false;
     await item.update({ [`flags.${SYSTEM_ID}.itTradition.tradition`]: pick });
+    // SPELLS WAITING FOR A TRADITION (0.8.0; Tanuki Trickster's on a
+    // Ghostwalker, Kensai or Oathblade) take this one now (IT-M6).
+    await stampOwedSpells(actor);
     await card(actor, item.name, [`Your magical tradition is <strong>${esc(pick)}</strong>, with <strong>${esc(decl.ability ?? "")}</strong> as the magical ability score of your class's magical techniques and innate spells.`]);
     return true;
   }
@@ -529,7 +562,10 @@ const ghostArts = {
   async use(actor, item) {
     const level = levelOf(actor);
     const known = Array.from(actor.items ?? []).filter((i) => i.flags?.[SYSTEM_ID]?.itArtLevel).map((i) => i.name);
-    const owed = ghostArtsOwed(level, countNamed(actor, "Extra Ghost Art")) - known.length;
+    // AN ART AN ARCHETYPE GAVE (0.8.0; Veilborn's "one additional Ghost Art")
+    // carries `itArtExtra` and is not one of the table's.
+    const learned = Array.from(actor.items ?? []).filter((i) => i.flags?.[SYSTEM_ID]?.itArtLevel && !i.flags?.[SYSTEM_ID]?.itArtExtra).length;
+    const owed = ghostArtsOwed(level, countNamed(actor, "Extra Ghost Art")) - learned;
     if (owed <= 0) { await card(actor, "Ghost Arts", [`You know ${known.length}: ${esc(known.join(", ")) || "none"}. Nothing more is owed at level ${level}.`]); return false; }
     const offer = artsOnOffer(level, known);
     if (!offer.length) { ui.notifications.warn("Ghost Arts: no art you meet the level for is left to learn."); return false; }
@@ -543,10 +579,30 @@ const ghostArts = {
 };
 
 /** A Focus Ghost Art's opening: its use, and the AP. */
-async function artBegins(actor, item, label, ap = 1) {
+export async function artBegins(actor, item, label, ap = 1) {
   if (!(await focusReady(item, label))) return false;
   if (!(await spendAP(actor, label, ap))) return false;
   return spendUse(item, label);
+}
+
+/**
+ * VEILBORN (0.8.0, Block 7): "whenever you use a Ghost Art that causes you to
+ * become concealed or invisible, or which teleports you from one location to
+ * another, you gain a +1-class bonus to DB until the beginning of your next
+ * turn." Those arts, by what they do: Shadow Double (concealed), Veiled Body
+ * and Empty Presence (invisible), Shadow Passage (a teleport) and Smoke Veil
+ * (concealed, when you are inside its smoke — asked).
+ */
+export const VEILBORN_ARTS = Object.freeze(["Shadow Double", "Veiled Body", "Empty Presence", "Shadow Passage", "Smoke Veil"]);
+export async function veilbornAfterArt(actor, art) {
+  if (!actor || !ownedNamed(actor, "Veilborn") || !VEILBORN_ARTS.includes(art)) return false;
+  if (art === "Smoke Veil" && !(await confirm("Veilborn", "<p>Are you inside the smoke (concealed by it)?</p>"))) return false;
+  await putEffect(actor, "veilborn", made("veilborn", {
+    name: "Veilborn (+1 DB)", description: `Veilborn: +1 class bonus to DB until the beginning of your next turn (${art}).`,
+    system: { statBonuses: [{ target: "defence", type: "class", value: 1, label: "Veilborn" }] }
+  }, untilNextTurn(actor)));
+  await card(actor, "Veilborn", [`${esc(art)}: <strong>+1 class bonus to your DB</strong> until the beginning of your next turn.`]);
+  return true;
 }
 
 /** A Ghost Art that moves you: Ghost Step, Spider Path, Body of Mist, Shadow Passage. */
@@ -561,6 +617,7 @@ function movingArt(label, { speedKey, provokes, note, line, magical = false }) {
       await h().armMove(actor, { maxFeet: speed, speedKey, provokes, note }, label);
       await h().recordTraitUsage(actor, action);
       await card(actor, label, [`Move your token up to <strong>${speed} ft</strong>: ${line}`, ...(magical ? [traditionLine(actor, "Ghostwalker")] : []), "<em>1 AP and this art's use spent.</em>"]);
+      await veilbornAfterArt(actor, label);
       return true;
     }
   };
@@ -663,6 +720,7 @@ const smokeVeil = {
     if (!(await artBegins(actor, item, "Smoke Veil"))) return false;
     await card(actor, "Smoke Veil", ["A <strong>10-foot burst</strong> of smoke within 30 feet, for <strong>1 minute</strong>: creatures and objects inside are <strong>concealed</strong>, and creatures inside may Hide. Strong wind or heavy rain may disperse it early (the GM's).",
       "<em>Mark the area and give those inside the Concealed condition by hand. Non-magical. 1 AP and this art's use spent.</em>"]);
+    await veilbornAfterArt(actor, "Smoke Veil");
     return true;
   }
 };
@@ -703,6 +761,7 @@ async function shadowDoubleUse(actor, item) {
   await putEffect(actor, "shadowDouble", data);
   await card(actor, "Shadow Double", ["Your shadow breaks away: you are <strong>Concealed</strong> against this attack, and until the start of your next turn or your next attack.",
     "If the attack fails to damage you, you may <strong>Step 5 feet</strong> (no reactions) — move your token.", traditionLine(actor, "Ghostwalker"), "<em>Reaction and this art's use spent.</em>"]);
+  await veilbornAfterArt(actor, "Shadow Double");
   return true;
 }
 
@@ -716,6 +775,7 @@ const veiledBody = {
     data.statuses = ["invisible"];
     await putEffect(actor, "veiledBody", data);
     await card(actor, "Veiled Body", ["You are <strong>Invisible</strong> until the start of your next turn.", "<em>It ends by itself when you Strike; end it by hand (delete the effect) when you cast a spell or act with hostility.</em>", traditionLine(actor, "Ghostwalker"), "<em>1 AP and this art's use spent.</em>"]);
+    await veilbornAfterArt(actor, "Veiled Body");
     return true;
   }
 };
@@ -729,6 +789,7 @@ const emptyPresence = {
     await putEffect(actor, "emptyPresence", data);
     await card(actor, "Empty Presence", ["You are <strong>Invisible for 1 minute</strong>. When you Strike you become <strong>Concealed</strong> instead until the end of that turn, then Invisible again — both handled for you.",
       "<em>Unconscious or dismissed: delete the effect.</em>", traditionLine(actor, "Ghostwalker"), "<em>1 AP and this art's use spent.</em>"]);
+    await veilbornAfterArt(actor, "Empty Presence");
     return true;
   }
 };
@@ -785,14 +846,20 @@ const ghostArtMastery = {
 /* ------------------------------------------------------------------ */
 
 /** The forms this Kensai knows: the form abilities on the sheet. */
-const knownForms = (actor) => Array.from(actor?.items ?? []).filter((i) => i.flags?.[SYSTEM_ID]?.itForm?.parts);
+export const knownForms = (actor) => Array.from(actor?.items ?? []).filter((i) => i.flags?.[SYSTEM_ID]?.itForm?.parts);
+/**
+ * The forms counted against Combat Form's table (0.8.0): not a form an
+ * archetype gave (Formbinder's Twin Dragon, Steel Disciple's chosen form),
+ * which carries `itFormExtra`.
+ */
+export const learnedForms = (actor) => knownForms(actor).filter((i) => !i.flags?.[SYSTEM_ID]?.itFormExtra);
 /** The active form stance, if any. */
-const activeForm = (actor) => Array.from(actor?.effects ?? []).filter((e) => !e.disabled && Array.isArray(e.flags?.[SYSTEM_ID]?.itFormNames)).pop() ?? null;
+export const activeForm = (actor) => Array.from(actor?.effects ?? []).filter((e) => !e.disabled && Array.isArray(e.flags?.[SYSTEM_ID]?.itFormNames)).pop() ?? null;
 /** Is a form benefit running (the stance, or an Echoed Form part)? */
-const inForm = (actor, flag) => Array.from(actor?.effects ?? []).some((e) => !e.disabled && e.flags?.[SYSTEM_ID]?.[flag]);
+export const inForm = (actor, flag) => Array.from(actor?.effects ?? []).some((e) => !e.disabled && e.flags?.[SYSTEM_ID]?.[flag]);
 
 /** The blend Blended Form records, if the Kensai still knows both. */
-function blendOf(actor) {
+export function blendOf(actor) {
   const feat = ownedNamed(actor, "Blended Form");
   const pair = feat?.flags?.[SYSTEM_ID]?.itBlend;
   if (!Array.isArray(pair) || pair.length !== 2) return null;
@@ -816,7 +883,7 @@ async function learnForm(actor, granter, owed) {
  * Enter a form (or the blend). `opts`: apCost, waiveWait (Form Reversal),
  * spendCombatForm (false for Form Reversal).
  */
-async function enterForm(actor, names, { apCost = 1, waiveWait = false, spendCombatForm = true } = {}) {
+export async function enterForm(actor, names, { apCost = 1, waiveWait = false, spendCombatForm = true, formbinder = false } = {}) {
   const combatForm = ownedNamed(actor, "Combat Form");
   if (spendCombatForm && (!combatForm || !(await focusReady(combatForm, "Combat Form")))) return false;
   const forms = names.map((n) => knownForms(actor).find((f) => norm(f.name) === norm(n))).filter(Boolean);
@@ -848,12 +915,14 @@ async function enterForm(actor, names, { apCost = 1, waiveWait = false, spendCom
   }
 
   const parts = forms.flatMap((f) => f.flags[SYSTEM_ID].itForm.parts);
-  const flags = { ...mergeFormFlags(parts), itFormNames: forms.map((f) => f.name) };
-  const name = formStanceName(flags.itFormNames);
+  // FORMBINDER (0.8.0): two forms held, the greater of any bonus both give.
+  const merged = formbinder ? formbinderFlags(forms.map((f) => f.flags[SYSTEM_ID].itForm.parts)) : mergeFormFlags(parts);
+  const flags = { ...merged, itFormNames: forms.map((f) => f.name), ...(formbinder ? { itFormbinder: true } : {}) };
+  const name = formStanceName(flags.itFormNames, { formbinder });
   const benefits = parts.map((p) => esc(p.label)).join("; ");
-  const entered = await h().enterStance(actor, forms.length === 1 ? forms[0] : (ownedNamed(actor, "Blended Form") ?? forms[0]), {
+  const entered = await h().enterStance(actor, forms.length === 1 ? forms[0] : ((formbinder ? ownedNamed(actor, "Formbinder") : null) ?? ownedNamed(actor, "Blended Form") ?? forms[0]), {
     name, apCost, waiveWait,
-    description: `${name}: ${parts.map((p) => p.label).join("; ")}. All its modifiers are class bonuses.`,
+    description: `${name}: ${parts.map((p) => p.label).join("; ")}. All its modifiers are class bonuses${formbinder ? "; where both forms improve the same thing, only the greater applies" : ""}.`,
     flags,
     extraLines: [h().line(benefits)]
   });
@@ -901,7 +970,7 @@ const combatForm = {
   // the core's Use button spent the use on the learning card.
   ownsFocusUse: true,
   async use(actor, item) {
-    const owed = combatFormsOwed(levelOf(actor), countNamed(actor, "Extra Form")) - knownForms(actor).length;
+    const owed = combatFormsOwed(levelOf(actor), countNamed(actor, "Extra Form")) - learnedForms(actor).length;
     if (owed > 0) return learnForm(actor, item, owed);
     const current = activeForm(actor)?.flags?.[SYSTEM_ID]?.itFormNames ?? [];
     const options = knownForms(actor).filter((f) => !(current.length === 1 && norm(current[0]) === norm(f.name))).map((f) => [f.name, f.name]);
@@ -911,18 +980,62 @@ const combatForm = {
     if (!(await focusReady(item, "Combat Form"))) return false;
     const pick = await h().chooseFromList("Combat Form", "Enter a form (1 AP)", options);
     if (!pick) return false;
-    return enterForm(actor, String(pick).split("|"));
+    return enterChosenForm(actor, String(pick).split("|"));
   }
 };
 
+/**
+ * Enter the forms chosen, through Combat Form's Use or a form's own Use.
+ * FORMBINDER (0.8.0): a second single form may join the one held. A blend
+ * fills both places (Graham's B7-7), and only one form is activated each
+ * turn. One path for both Uses (found in the 0.8.0 live test: a form's own
+ * Use replaced the held form without asking).
+ */
+async function enterChosenForm(actor, names) {
+  const current = activeForm(actor)?.flags?.[SYSTEM_ID]?.itFormNames ?? [];
+  if (ownedNamed(actor, "Formbinder") && current.length === 1 && names.length === 1 && norm(current[0]) !== norm(names[0]) && !activeForm(actor)?.flags?.[SYSTEM_ID]?.itFormbinder) {
+    const how = await h().chooseFromList("Formbinder", `You hold ${current[0]}. Add ${names[0]} beside it, or replace it?`, [["add", `Add: hold ${current[0]} and ${names[0]}`], ["replace", `Replace: ${names[0]} only`]]);
+    if (!how) return false;
+    if (how === "add") {
+      if (!formbinderTurnFree(actor)) { ui.notifications.warn("Formbinder: you have already activated a form this turn."); return false; }
+      const done = await enterForm(actor, [current[0], names[0]], { formbinder: true });
+      if (done) await markFormbinderTurn(actor);
+      return done;
+    }
+  }
+  if (ownedNamed(actor, "Formbinder") && !formbinderTurnFree(actor)) { ui.notifications.warn("Formbinder: you have already activated a form this turn."); return false; }
+  const done = await enterForm(actor, names);
+  if (done && ownedNamed(actor, "Formbinder")) await markFormbinderTurn(actor);
+  return done;
+}
+
+/** Formbinder's "You can still only activate one each turn": this turn's record. */
+function formbinderTurnKey() {
+  const c = game.combat?.started ? game.combat : null;
+  return c ? `${c.id}:${int(c.round)}:${int(c.turn)}` : null;
+}
+function formbinderTurnFree(actor) {
+  const key = formbinderTurnKey();
+  return !key || actor.getFlag(MODULE_ID, "formbinderTurn") !== key;
+}
+async function markFormbinderTurn(actor) {
+  const key = formbinderTurnKey();
+  if (key) await actor.setFlag(MODULE_ID, "formbinderTurn", key);
+}
+
 /** A form's own Use: enter it (Black Lotus also holds a blow when in it). */
-function formItemUse(name) {
+export function formItemUse(name) {
   return {
     hint: `Enter ${name} through Combat Form (1 AP; expends Combat Form).`,
-    async use(actor) {
-      const owed = combatFormsOwed(levelOf(actor), countNamed(actor, "Extra Form")) - knownForms(actor).length;
+    async use(actor, item) {
+      // STEEL DISCIPLE (0.8.0, Block 7): "Choose one Combat Form from the
+      // Kensai class. You may use this Combat Form as a Stance." Its form is
+      // entered as a stance (1 AP, the system's stance rules), with no Combat
+      // Form to expend.
+      if (item?.flags?.[SYSTEM_ID]?.itFormExtra === "Steel Disciple" && !ownedNamed(actor, "Combat Form")) return enterForm(actor, [name], { spendCombatForm: false });
+      const owed = combatFormsOwed(levelOf(actor), countNamed(actor, "Extra Form")) - learnedForms(actor).length;
       if (owed > 0) { ui.notifications.info("Combat Form: learn the forms you are owed first (Combat Form's Use)."); return false; }
-      return enterForm(actor, [name]);
+      return enterChosenForm(actor, [name]);
     }
   };
 }
@@ -1047,11 +1160,11 @@ const perfectTempo = passive("Offered when your Flow Strike hits: a Step, and +1
 /* ------------------------------------------------------------------ */
 
 /** The Oathblade's running Challenge effect, if any. */
-const challengeOf = (actor) => ownEffects(actor, "challenge").find((e) => !e.disabled) ?? null;
+export const challengeOf = (actor) => ownEffects(actor, "challenge").find((e) => !e.disabled) ?? null;
 /** The challenged creature's uuid. */
-const challengedUuid = (actor) => challengeOf(actor)?.getFlag?.(MODULE_ID, "challenge")?.targetUuid ?? null;
+export const challengedUuid = (actor) => challengeOf(actor)?.getFlag?.(MODULE_ID, "challenge")?.targetUuid ?? null;
 /** The oath the Oathblade swore, by name. */
-const oathOf = (actor) => Array.from(actor?.items ?? []).find((i) => i.flags?.[SYSTEM_ID]?.itOath)?.flags?.[SYSTEM_ID]?.itOath ?? null;
+export const oathOf = (actor) => Array.from(actor?.items ?? []).find((i) => i.flags?.[SYSTEM_ID]?.itOath)?.flags?.[SYSTEM_ID]?.itOath ?? null;
 /** The Sworn Charge, if Oath of Fealty names one. */
 const swornChargeOf = (actor) => Array.from(actor?.items ?? []).find((i) => i.flags?.[SYSTEM_ID]?.itOath === "Oath of Fealty")?.flags?.[SYSTEM_ID]?.itSwornCharge ?? null;
 
@@ -1060,13 +1173,21 @@ const swornChargeOf = (actor) => Array.from(actor?.items ?? []).find((i) => i.fl
  * whoever they belong to (each tagged with this challenge's id so they end
  * with it), and Formal Declaration's Demoralise.
  */
-async function challengeTarget(actor, target, { apCost = 1, label = "Challenge" } = {}) {
-  const item = ownedNamed(actor, "Challenge");
+export async function challengeTarget(actor, target, { apCost = 1, label = "Challenge", spend = "focus", item: from = null } = {}) {
+  // WHAT PAYS FOR IT (0.8.0, Block 7). "focus": Challenge's own use, as the
+  // Oathblade's. "conviction": Bound Challenge (Oathbound), "You may expend
+  // a point of conviction to challenge any one opponent" — and it follows
+  // Challenge's one-target rule and end conditions (IT-M13). "none": Turning
+  // the Blade (Ronin), "does not require Challenge to be ready, does not
+  // require a Refocus check and does not expend Challenge again".
+  const item = from ?? ownedNamed(actor, "Challenge") ?? ownedNamed(actor, "Bound Challenge");
   const id = foundry.utils.randomID();
   const combat = combatFor(actor);
   const bound = combat ? { system: {}, module: { combatId: combat.id } } : { system: {}, module: {} };
+  if (spend === "conviction" && int(actor.system?.resources?.conviction?.value) <= 0) { ui.notifications.warn(`${label}: no conviction point to expend.`); return false; }
   if (apCost > 0 && !(await spendAP(actor, label, apCost))) return false;
-  if (!(await spendUse(item, "Challenge"))) return false;
+  if (spend === "focus" && !(await spendUse(item, "Challenge"))) return false;
+  if (spend === "conviction") await actor.update({ "system.resources.conviction.value": int(actor.system?.resources?.conviction?.value) - 1 });
   const oath = oathOf(actor);
   const flags = challengeFlags({ targetUuid: target.uuid, targetName: target.name, distantHonour: Boolean(ownedNamed(actor, "Distant Honour")), guarded: Boolean(ownedNamed(actor, "Guarded Commitment")) });
   // THE OLD CHALLENGE ENDS FIRST ("using it again immediately ends your
@@ -1102,7 +1223,9 @@ async function challengeTarget(actor, target, { apCost = 1, label = "Challenge" 
       lines.push(`<strong>Oath of Fealty:</strong> ${esc(chargeActor.name)} gains +1 circumstance to attack checks and AR 1 against it. <em>Conscious and within 30 feet of you: the GM's.</em>`);
     } else lines.push("<strong>Oath of Fealty:</strong> <em>no Sworn Charge named — choose one with Oath of Fealty's Use.</em>");
   }
-  await card(actor, label, [...lines, `<em>${apCost ? "1 AP and " : ""}Challenge's use spent. It ends when the target is killed, drops to 0 HP or falls unconscious, the combat ends, or you Challenge another; delete the effect if it surrenders.</em>`]);
+  const paid = spend === "conviction" ? "a conviction point" : spend === "none" ? "" : "Challenge's use";
+  const cost = [apCost ? "1 AP" : "", paid].filter(Boolean).join(" and ");
+  await card(actor, label, [...lines, `<em>${cost ? `${cost} spent. ` : ""}It ends when the target is killed, drops to 0 HP or falls unconscious, the combat ends, or you Challenge another; delete the effect if it surrenders.</em>`]);
   if (ownedNamed(actor, "Formal Declaration")) await formalDeclaration(actor, target);
   return true;
 }
@@ -1220,17 +1343,30 @@ async function chooseSwornCharge(actor, item) {
 /** Daily preparation: Oath of Fealty's charge; Fluid Blending's reminder. */
 export async function onDailyPreparationB4({ actor } = {}) {
   if (!actor) return;
-  const asks = Array.from(actor.items ?? []).some((i) => i.flags?.[SYSTEM_ID]?.itOath === "Oath of Fealty") || (ownedNamed(actor, "Fluid Blending") && blendOf(actor));
+  const asks = Boolean(fealtyAskedHere(actor)) || (ownedNamed(actor, "Fluid Blending") && blendOf(actor));
   if (asks) await offerTo(actor, "dailyPrep", {});
 }
 
+/**
+ * The Oath of Fealty this hook asks about: none for a Ronin (0.8.0), whose
+ * Wandering Creed chooses the oath at the same daily preparation and asks
+ * for the Sworn Charge after it, on the oath it leaves.
+ */
+function fealtyAskedHere(actor) {
+  if (ownedNamed(actor, "Wandering Creed")) return null;
+  return Array.from(actor.items ?? []).find((i) => i.flags?.[SYSTEM_ID]?.itOath === "Oath of Fealty") ?? null;
+}
+
+/** Oath of Fealty at a daily preparation: keep the Sworn Charge, or choose another. */
+export async function fealtyChargeQuestion(actor, fealty) {
+  const current = fealty.flags?.[SYSTEM_ID]?.itSwornCharge;
+  const keep = current ? await confirm("Oath of Fealty", `<p>Your Sworn Charge is <strong>${esc(current.name)}</strong>. Keep them? (No chooses another.)</p>`) : false;
+  if (!keep) await chooseSwornCharge(actor, fealty);
+}
+
 async function dailyPrepQuestions(actor) {
-  const fealty = Array.from(actor.items ?? []).find((i) => i.flags?.[SYSTEM_ID]?.itOath === "Oath of Fealty");
-  if (fealty) {
-    const current = fealty.flags?.[SYSTEM_ID]?.itSwornCharge;
-    const keep = current ? await confirm("Oath of Fealty", `<p>Your Sworn Charge is <strong>${esc(current.name)}</strong>. Keep them? (No chooses another.)</p>`) : false;
-    if (!keep) await chooseSwornCharge(actor, fealty);
-  }
+  const fealty = fealtyAskedHere(actor);
+  if (fealty) await fealtyChargeQuestion(actor, fealty);
   if (ownedNamed(actor, "Fluid Blending") && blendOf(actor)) {
     const change = await confirm("Fluid Blending", `<p>Change your blended forms (${esc(blendOf(actor).join(" + "))})?</p>`);
     if (change) await blendedForm.use(actor, ownedNamed(actor, "Blended Form"));
@@ -1277,8 +1413,10 @@ export async function onStrikeResolved(ctx = {}) {
     // EACH ASKED ONLY WHEN ITS REACTION COULD BE SPENT (0.6.2), read with its
     // own traits: Battle Readiness's extra reaction takes an Attack or
     // Martial one only.
-    if (melee && ownedNamed(target, "Form Reversal") && activeForm(target) && await reactionOpen(target, "Form Reversal")) await offerTo(target, "formReversal", { attackerName: attacker.name });
-    if (ownedNamed(target, "Shadow Counter") && await reactionOpen(target, "Shadow Counter")) await offerTo(target, "shadowCounter", { attackerUuid: attacker.uuid, attackerName: attacker.name });
+    // NOT AGAINST A STRIKE THAT FORBIDS THEM (0.8.0; Drawn Verdict, TRG
+    // Prime 3.671.0's `noReactions`).
+    if (!ctx.noReactions && melee && ownedNamed(target, "Form Reversal") && activeForm(target) && await reactionOpen(target, "Form Reversal")) await offerTo(target, "formReversal", { attackerName: attacker.name });
+    if (!ctx.noReactions && ownedNamed(target, "Shadow Counter") && await reactionOpen(target, "Shadow Counter")) await offerTo(target, "shadowCounter", { attackerUuid: attacker.uuid, attackerName: attacker.name });
   }
 }
 
@@ -1353,7 +1491,7 @@ async function sharedPurpose(attacker, target, crit) {
 
 /* ---------------- the offers made on the defender's (or partner's) screen ---------------- */
 
-const OFFERS = {
+export const OFFERS = {
   async formReversal(actor, { attackerName }) {
     const current = activeForm(actor)?.flags?.[SYSTEM_ID]?.itFormNames ?? [];
     const options = knownForms(actor).filter((f) => !(current.length === 1 && norm(current[0]) === norm(f.name))).map((f) => [f.name, f.name]);

@@ -1,0 +1,46 @@
+{
+  "_id": "Wm1RHKBgIIQzxV7Z",
+  "name": "Formbinder",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "BAB +2",
+    "active": true,
+    "description": "<p><strong>KENSAI</strong></p>\n<p><em>Through endless practice, you have learned to unify disparate philosophies of combat into a seamless flow. You no longer see forms as separate, but as facets of the same perfect rhythm. In battle, you move with a style entirely your own, blending techniques that no other warrior can emulate.</em></p>\n<p><strong>Prerequisites</strong> BAB +2</p>\n<p>You may have two forms active at any one time. You can still only activate one each turn. If both forms offer a bonus to the same thing, you may only benefit from the greater of the two.</p>\n<p>Furthermore, you gain the Twin Dragon form:</p>\n<p><strong>TWIN DRAGON</strong></p>\n<p>Your movements mirror the duality of the dragon, fury and patience, fire and steel. You strike in mirrored balance, every motion feeding the next.</p>\n<p>Whilst in this form, you gain the following modifiers:</p>\n<p>- The first time you successfully Strike a creature each round, you gain a +1 bonus to DB until the start of your next turn.</p>\n<p>- The first time you successfully avoid an attack each round (your DB is not overcome), you gain +1 base damage until the end of your next turn.</p>\n<p><strong>Progression Requirements</strong> BAB +10</p>\n<p><em>Automated:</em> Combat Form's Use, while you hold one form, asks whether to add the new form beside it or replace it: two forms held as one stance, the second activated through Combat Form as usual, and one form activated each turn. Where both forms give a bonus to the same thing (the same check, the same save, your DB), only the greater applies, worked out roll by roll. A Blended Form fills both places (Graham's B7-7). You also know Twin Dragon, entered through Combat Form like your other forms.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Kensai",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Twin Dragon",
+    "grantedFeats": "",
+    "progressionRequirements": "BAB +10"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Wm1RHKBgIIQzxV7Z"
+}

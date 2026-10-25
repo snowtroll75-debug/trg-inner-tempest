@@ -1,0 +1,91 @@
+{
+  "_id": "v7NVf7E6pu1p7nSX",
+  "name": "Oathbound",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Non-Disciple, Non-Oathblade, Mental Focus 1 rank",
+    "active": true,
+    "description": "<p><strong>MARTIAL</strong></p>\n<p><em>In the heart of ancient lands, where the spirits whisper through the leaves and the ground holds memories of a thousand battles, the Oathbound walk. These warriors, bound by sacred oaths to their lords, their lands, and their ancestors, are the embodiment of honour and discipline. With blades that shimmer like the rivers under the moonlight, they stand as guardians of the old ways, protectors of the realm, and upholders of the sacred code that governs all aspects of their life and death.</em></p>\n<p><strong>Prerequisites</strong> Non-Disciple, Non-Oathblade, Mental Focus 1 rank</p>\n<p>To you, honour and discipline are everything. You can focus your mind and ignore pain and distraction much better than other warriors. You gain Mental Focus as a class skill and also the Bound Challenge ability.</p>\n<p>BOUND CHALLENGE</p>\n<p>FLOURISH MENTAL</p>\n<p><strong>Requirements</strong> you can see the creature you intend to challenge.</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>You may expend a point of conviction to challenge any one opponent. You may add your class bonus to all melee attack checks made against your challenged target. Furthermore, you inflict your class bonus to damage rolls and finally your attacks also gain AR equal to your class bonus.</p>\n<p>Challenging a target in this way however requires a great deal of focus and you suffer a -2-circumstance penalty to DB against all other creatures (other than the one you have challenged).</p>\n<p>Finally, the katana and wakizashi are considered to be martial weapons for you and not exotic.</p>\n<p><strong>Progression Requirements</strong> Mental Focus skill +10 ranks</p>\n<p>Be aware that Bound Challenge follows Challenge's one-target rule and end conditions, costs 1 conviction point instead of Focus, and counts as Challenge for feats that need it.</p>\n<p><em>Automated:</em> Mental Focus is a class skill while you have this feat. The katana and the wakizashi are martial weapons for you (TRG Prime 3.671.0). You gain Bound Challenge.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Martial",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Bound Challenge",
+    "grantedFeats": "",
+    "progressionRequirements": "Mental Focus skill +10 ranks"
+  },
+  "effects": [
+    {
+      "_id": "3xpkk1WwTK1irZ7A",
+      "name": "Oathbound: katana and wakizashi",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true,
+          "weaponCategoryAs": {
+            "names": [
+              "Katana",
+              "Wakizashi"
+            ],
+            "category": "martial"
+          }
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "The katana and wakizashi are martial weapons for you, not exotic.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!v7NVf7E6pu1p7nSX.3xpkk1WwTK1irZ7A"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classSkills": [
+        "Mental Focus"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!v7NVf7E6pu1p7nSX"
+}

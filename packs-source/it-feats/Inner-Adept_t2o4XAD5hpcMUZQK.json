@@ -1,0 +1,53 @@
+{
+  "_id": "t2o4XAD5hpcMUZQK",
+  "name": "Inner Adept",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Meditation 2 ranks, Non-Disciple, Non-Mystic",
+    "active": true,
+    "description": "<p><em>Through disciplined training you have learned to centre body and mind, awakening techniques normally associated with monastic traditions. Whether you describe this state as chi, breath, spirit or simple concentration, you have learned to turn it into repeatable extraordinary action.</em></p>\n<p><strong>Prerequisites</strong> Meditation 2 ranks, Non-Disciple, Non-Mystic</p>\n<p>You gain the Inner Discipline class feat.</p>\n<p>Furthermore, you may select either Meditation or Mental Focus as a Class skill.</p>\n<p>Finally, you may also learn feats which are available only to the Disciple (Martial) class.</p>\n<p>When you select this feat, choose a Monastic Path appropriate to your magical tradition. You use that path's magical ability score and tradition for any innate spells or magical techniques gained through this archetype, but you do not gain the path's class skill.</p>\n<p><strong>Progression Requirements</strong> Gained class skill +10 ranks</p>\n<p><em>Partly automated:</em> you gain Inner Discipline. Press Use to choose your class skill (Meditation or Mental Focus) and a Monastic Path: the Path's tradition and magical ability score are recorded on this feat for your innate spells and magical techniques, without the Path's class skill. A Path that differs from your class's tradition is refused (a Kensai's, Ghostwalker's or Oathblade's chosen tradition, a core caster's). While you have this archetype, class feats with the Disciple trait are offered to you (Graham's B7-3); not the core feats the book opens to the Disciple, and not every Martial feat. Progression: your chosen class skill at 10 ranks.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "Inner Discipline",
+    "progressionRequirements": "Gained class skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "innerAdept",
+      "classFeatAccess": [
+        "Disciple"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!t2o4XAD5hpcMUZQK"
+}

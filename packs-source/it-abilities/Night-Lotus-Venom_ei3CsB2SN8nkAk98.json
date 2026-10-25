@@ -1,0 +1,43 @@
+{
+  "_id": "ei3CsB2SN8nkAk98",
+  "name": "Night Lotus Venom",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FOCUS MANIPULATE POISON TECHNIQUE</strong></p>\n<p><strong>Action</strong> 1 AP</p>\n<p><strong>Requirements</strong> You are wielding a piercing or slashing weapon, or a piece of ammunition.</p>\n<p>You coat the weapon or ammunition with a fast-acting paralysing toxin. The poison remains effective until the end of your next turn or until the weapon successfully damages a creature.</p>\n<p>A creature damaged by the poisoned weapon must make a Fortitude save against your Level DC.</p>\n<p><strong>Critical</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target suffers a -5-foot circumstance penalty to Speed until the beginning of your next turn.</p>\n<p><strong>Failure</strong> The target is Slowed 1 until the end of its next turn.</p>\n<p><strong>Fumble</strong> The target is Paralyzed until the beginning of its next turn and is then Slowed 1 until the end of that turn.</p>\n<p>If the Strike also inflicts Unseen Assault, the target suffers a -1-circumstance penalty to this saving throw.</p>\n<p>After Night Lotus Venom is used, it becomes expended until restored with Refocus.</p>\n<p><em>Automated:</em> press Use with a piercing or slashing weapon (or ammunition) in hand: 1 AP coats it until the end of your next turn or the first creature it damages. That creature saves Fortitude against your Level DC: Critical unaffected; Success (and a Partial; IT-m24) −5 feet to Speed until the start of your next turn; Failure Slowed 1 until the end of its next turn; Fumble or Blunder Paralyzed until the start of its next turn, then Slowed 1 to the end of that turn. −1 circumstance to the save when the Strike also dealt Unseen Assault. Expended until a Refocus.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": "Focus, Manipulate, Poison, Technique"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "nightLotusVenom"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ei3CsB2SN8nkAk98"
+}

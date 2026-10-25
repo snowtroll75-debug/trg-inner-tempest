@@ -1,0 +1,52 @@
+{
+  "_id": "cpjZQVG6yS7aASuA",
+  "name": "Ronin",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Oathblade, Survival 2 ranks",
+    "active": true,
+    "description": "<p><strong>OATHBLADE</strong></p>\n<p><em>You once served a lord, clan, cause or code that gave shape to your life, but that bond has been broken. Perhaps your master died, perhaps you were cast out, or perhaps you simply discovered that obedience and honour were not always the same thing.</em></p>\n<p><em>A Ronin still possesses the discipline of an Oathblade but no longer allows a single oath to dictate every battle. Experience has taught you to adapt your principles to circumstance and to abandon a contest the moment another enemy proves more deserving of your attention.</em></p>\n<p><strong>Prerequisites</strong> Oathblade, Survival 2 ranks</p>\n<p>You gain Deception as a class skill.</p>\n<p>Furthermore, your fixed Sworn Oath is replaced by Wandering Creed, and you gain Turning the Blade.</p>\n<p>WANDERING CREED</p>\n<p>During your daily preparation, select any one Sworn Oath available to the Oathblade.</p>\n<p>You gain the benefits of that oath until your next daily preparation.</p>\n<p>You may select a different oath each day without requiring the significant narrative change normally required when an Oathblade changes their Sworn Oath.</p>\n<p>You still possess only one Sworn Oath at a time and cannot combine the benefits of multiple oaths.</p>\n<p>TURNING THE BLADE</p>\n<p>FLOURISH MENTAL TECHNIQUE</p>\n<p><strong>Action</strong> R; <strong>Trigger</strong> A creature other than your challenged target damages you with an attack.</p>\n<p>You immediately abandon your existing contest and turn your full attention upon the creature that struck you.</p>\n<p>Your current Challenge ends and the triggering creature becomes your challenged target.</p>\n<p>This does not require Challenge to be ready, does not require a Refocus check and does not expend Challenge again.</p>\n<p>Your current Sworn Oath immediately applies to the new challenged target.</p>\n<p><strong>Progression Requirements</strong> Survival skill +10 ranks</p>\n<p><em>Automated:</em> Deception is a class skill while you have this feat. You gain Wandering Creed, which replaces your Sworn Oath at each daily preparation, and Turning the Blade.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Oathblade",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "Wandering Creed, Turning the Blade",
+    "grantedFeats": "",
+    "progressionRequirements": "Survival skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "classSkills": [
+        "Deception"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cpjZQVG6yS7aASuA"
+}

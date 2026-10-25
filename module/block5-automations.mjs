@@ -899,7 +899,8 @@ export async function onStrikeResolvedB5(ctx = {}) {
   }
   // WAITING BLADE: "a creature within reach of your Raptorial Blade misses you with a melee Strike".
   // A REACTION'S MISS COUNTS TOO: the book excludes none.
-  if (missedHere(ctx) && !held && melee) {
+  // NOT AGAINST A STRIKE THAT FORBIDS REACTIONS (0.8.0; Drawn Verdict).
+  if (missedHere(ctx) && !held && melee && !ctx.noReactions) {
     const wb = ownedNamed(target, "Waiting Blade");
     const blade = Array.from(target.items ?? []).find((i) => i.type === "weapon" && norm(i.name) === "raptorial blade");
     // ASKED ONLY WHEN THE REACTION COULD BE SPENT (0.6.2), as the spend reads it.
