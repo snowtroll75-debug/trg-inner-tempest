@@ -348,7 +348,7 @@ const FEATS = [
     prerequisites: "Inner Discipline, Level 8",
     description: auto("**FOCUS FLOURISH TECHNIQUE TELEPORTATION** **Action** 1 AP\n\nYou can slip magically between spaces. This is a magical technique using the tradition of your Monastic Path. You instantaneously transport yourself to a location within your line of sight, covering a distance up to your Speed. You cannot take other creatures with you.",
       "press Use: 1 AP (a Flourish), and this use. Move your token up to your Speed to a space you can see; the move is a teleport and provokes nothing."),
-    flags: { itAutomation: "abundantStep" }
+    flags: { itAutomation: "abundantStep", itMagical: true }
   }),
   feat({
     name: "Action Before Thought", category: CLASS, traits: "Focus, Technique",
@@ -369,7 +369,7 @@ const FEATS = [
     prerequisites: "Inner Discipline, Level 5",
     description: auto("**FOCUS FORCE SAVE TECHNIQUE** **Action** 1 to 3 AP\n\nYou release a concentrated burst of force. If you spend 1 AP, creatures in a 15-foot cone take 2d6 force damage. If you spend 2 AP, the cone is 30 feet and damage is 3d6. If you spend 3 AP, the cone is 60 feet and damage is 4d6. Each creature in the area attempts a basic Fortitude save against your Technique Save DC. This is a magical technique using the tradition of your Monastic Path.",
       "target the creatures in the cone, then press Use and choose 1, 2 or 3 AP. The damage is rolled once, and each target makes a basic Fortitude save against your Technique Save DC (10 + your Monastic Path's ability + your level). The damage is magical force."),
-    flags: { itAutomation: "innerBlast" }
+    flags: { itAutomation: "innerBlast", itMagical: true }
   }),
   feat({
     name: "Inner Infusion", category: CLASS, traits: "Focus, Technique",
@@ -478,12 +478,13 @@ const SPELLS = [
     name: "Burst of Speed", tradition: "arcane, ethereal", ppCost: 0, castAP: 2, range: "touch", targets: "1 willing creature", duration: "2 rounds (see text)",
     traits: "Cantrip, Translocation", category: "utility",
     components: SC,
+    // THE SECOND ROUND (0.9.0, B8-9): the +20 lasts the first round; as it
+    // runs out, module/block8-automations.mjs puts the −10 on for the second.
     effects: [
-      { kind: "bonus", target: "targets", slot: "speed", bonusType: "status", value: 20, note: "until the end of their next turn" },
-      { kind: "note", text: "For the 2nd round of the duration the target's Speed is reduced by 10 feet instead." }
+      { kind: "bonus", target: "targets", slot: "speed", bonusType: "status", value: 20, note: "(first round)", duration: "1 round" }
     ],
-    description: partly("You grant the target a sudden rush of adrenalin which increases their speed by 20 feet until the end of their next turn. This speed is only temporary however and for the 2nd round of this spell’s duration, the targets speed is reduced by 10 feet.",
-      "+20 ft status to the target's Speed for the duration; apply the second round's −10 ft by hand.")
+    description: auto("You grant the target a sudden rush of adrenalin which increases their speed by 20 feet until the end of their next turn. This speed is only temporary however and for the 2nd round of this spell’s duration, the targets speed is reduced by 10 feet.",
+      "+20 ft status to the target's Speed for the first round; when it runs out, −10 ft for the second round, applied for you. In combat only: outside a combat there are no rounds to count, so the +20 stays until removed.")
   }),
   spell({
     name: "Dragon Fear", tradition: "arcane, divinity, ethereal, verdant", ppCost: 8, castAP: 2, area: "20-foot radius", duration: "1 minute", defence: "Will",
@@ -540,12 +541,16 @@ const SPELLS = [
   spell({
     name: "Timeless Motion", tradition: "arcane, ethereal", ppCost: 8, castAP: 2, duration: "1 minute", traits: "Alteration", category: "utility",
     components: SC,
+    // ITS MOVE PROVOKES NOTHING (0.9.0, B8-9; TRG Prime 3.672.0's declared
+    // `firstMoveNoReactions`): the first move of each turn, the quickened one.
     effects: [
       { kind: "condition", target: "self", condition: "quickened", value: 1 },
-      { kind: "note", text: "The Quickened action may only be an action with the Movement trait. That movement cannot be perceived and provokes no reactions." }
+      { kind: "declare", target: "self", label: "Timeless Motion", noStack: true, flags: { firstMoveNoReactions: true },
+        text: "the first move of each of your turns provokes no reactions" },
+      { kind: "note", text: "The Quickened action may only be an action with the Movement trait, and that movement cannot be perceived." }
     ],
     description: partly("Time moves differently for you. You gain the quickened condition which may be used to take any action with the Movement trait each round. When taking this action your movement is imperceivable to those around you and does not provoke reactions.",
-      "you are Quickened for 1 minute. Using the extra action only to move, and that move provoking nothing, are by hand.")
+      "you are Quickened for 1 minute, and the first move of each of your turns (take it with the quickened action) provokes no reactions, applied for you. Spending the extra action only on movement, and that movement being unseen, are the table's.")
   })
 ];
 

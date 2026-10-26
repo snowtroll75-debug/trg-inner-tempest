@@ -2,7 +2,14 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 25 Oct 2026 (session 5: 0.8.1 built)
+## Current state — 26 Oct 2026 (session 6: Block 8 published)
+
+- **Block 8 audited and ruled** (`docs/INNER_TEMPEST_BLOCK8_AUDIT.md`; B8-1 to B8-9, all proposals adopted, `docs/INNER_TEMPEST_RULINGS_2026-10-26.md`). B8-9: Burst of Speed, Timeless Motion and Water Bolt finished now; Dragon Fear, Aura of Heat and Burning Stride wait for a core block after Block 10.
+- **0.9.0 on core 3.672.0 built:** the Grimoire's other 13 spells; magical Focus abilities marked. Core seams C1–C13 with `verify/mutate-block8-core`. Independent review: ten findings, all fixed (among them Foretell Failure asked before anything is spent, via `TRGCheck.preview`).
+- **Tested live** (`LIVE_TESTING_REPORT_3.672.0` in the project): Block 8 works, cross-client paths included. Two module defects (Root's Trip DC counted twice; Arrows Flight's card printed HTML) and Root's wording fixed as **0.9.1**; a core wording fix (a save DC named by its key) as **3.672.1**. Both retested or swept green.
+- **Pushed with Graham's approval:** core 3.672.0 and 3.672.1, Inner Tempest 0.9.1. **Block 8 done.** Next: Block 9 (magic items and the aging appendix; Age Resistance's mark waits for it).
+
+## Previous state — 25 Oct 2026 (session 5: 0.8.1 built)
 
 - **Published on GitHub** with Graham's approval: core 3.670.1 (`snowtroll75-debug/trpg-prime`), Inner Tempest 0.7.1 in its new repository `snowtroll75-debug/trg-inner-tempest` (a push to `main` that raises the version publishes the release), Fiends & Fables 0.45.2. Manifest: `https://raw.githubusercontent.com/snowtroll75-debug/trg-inner-tempest/main/module.json`.
 - **Block 7 audited and ruled** (`docs/INNER_TEMPEST_BLOCK7_AUDIT.md`; B7-1 to B7-8, all proposals adopted, `docs/INNER_TEMPEST_RULINGS_2026-10-25.md`). Book text in `tools/content/book-text-block7.json` (`tools/content/extract-book-block7.mjs`).
@@ -139,8 +146,8 @@ This follows the Pillars of Faith rhythm: audit and take rulings, then implement
 | 4 | Ghostwalker (Ghost Arts), Kensai (Combat Forms), Oathblade (Challenge, Oaths) | D7, D8, D9 |
 | 5 | Racial feats (47) and existing-feat access | D4, D8 |
 | 6 | Class feats (54; Inner Discipline and the 11 Technique feats shipped in Block 3) and general feats (22) | D7, D8, D14 |
-| 7 | **Built (0.8.0, on core 3.671.0), awaiting live test:** 20 archetypes (Dragon Tamer to Block 10, B7-1), 7 abilities, FA-22 | C1–C16 (3.671.0) |
-| 8 | Grimoire (the other 14 spells; 11 shipped in Block 3) | D4, D8 |
+| 7 | **Done (0.8.1, on core 3.671.0):** 20 archetypes (Dragon Tamer to Block 10, B7-1), 7 abilities, FA-22. Passed live | C1–C16 (3.671.0) |
+| 8 | **Done (0.9.1, on core 3.672.0):** the Grimoire's other 13 spells; Burst of Speed, Timeless Motion and Water Bolt finished (B8-9). Passed live | C1–C13 (3.672.0) |
 | 9 | Magic items and the aging appendix | D6 |
 | 10 | Dragon Companions | D10, plus the IT-C5 rulings |
 

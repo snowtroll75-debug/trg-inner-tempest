@@ -1,0 +1,87 @@
+{
+  "_id": "op3V9YnVJ9cxS117",
+  "name": "Age Resistance",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, ethereal, verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 10,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "until next daily preparation",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "moduleMark",
+        "target": "self",
+        "module": "trg-inner-tempest",
+        "key": "ageResistance",
+        "label": "Age Resistance"
+      }
+    ],
+    "warps": [
+      {
+        "ppCost": 4,
+        "text": "increase the duration to 1 month",
+        "mods": {
+          "durationText": "1 month (30 days)"
+        }
+      },
+      {
+        "ppCost": 10,
+        "text": "increase the duration to unlimited",
+        "mods": {
+          "durationText": "unlimited"
+        }
+      }
+    ],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Alteration, Polymorph",
+    "description": "<p><strong>ALTERATION POLYMORPH UTILITY</strong></p>\n<p><strong>Tradition</strong> arcane, ethereal, verdant; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Duration</strong> until next daily preparation</p>\n<p>You transcend the limitations of aging's toll on your physical prowess. While this spell doesn't reverse your appearance or grant you immortality, it shields you from the diminishing effects of aging. As long as this spell persists, you remain unaffected by the adverse modifiers to your physical ability scores that typically manifest as you reach middle age and beyond. However, the age-related enhancements to your mental ability scores continue to be in force while this spell is active.</p>\n<p>Rules for aging can be found in the appendix of this book.</p>\n<p>WARPING OPTIONS</p>\n<p><strong>+4 PP:</strong> increase the duration to 1 month.</p>\n<p><strong>+10 PP:</strong> increase the duration to unlimited.</p>\n<p><em>Partly automated:</em> you are marked as resisting age until your next daily preparation (a month or for good, warped). The aging rules come with the appendix (Block 9) and read this mark (B8-8); until then, set aside the physical aging penalties by hand while it lasts.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!op3V9YnVJ9cxS117"
+}

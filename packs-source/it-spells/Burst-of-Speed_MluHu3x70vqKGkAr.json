@@ -28,11 +28,8 @@
         "slot": "speed",
         "bonusType": "status",
         "value": 20,
-        "note": "until the end of their next turn"
-      },
-      {
-        "kind": "note",
-        "text": "For the 2nd round of the duration the target's Speed is reduced by 10 feet instead."
+        "note": "(first round)",
+        "duration": "1 round"
       }
     ],
     "warps": [],
@@ -54,7 +51,7 @@
       "focus": false
     },
     "traits": "Cantrip, Translocation",
-    "description": "<p>You grant the target a sudden rush of adrenalin which increases their speed by 20 feet until the end of their next turn. This speed is only temporary however and for the 2nd round of this spell’s duration, the targets speed is reduced by 10 feet.</p>\n<p><em>Partly automated:</em> +20 ft status to the target's Speed for the duration; apply the second round's −10 ft by hand.</p>"
+    "description": "<p>You grant the target a sudden rush of adrenalin which increases their speed by 20 feet until the end of their next turn. This speed is only temporary however and for the 2nd round of this spell’s duration, the targets speed is reduced by 10 feet.</p>\n<p><em>Automated:</em> +20 ft status to the target's Speed for the first round; when it runs out, −10 ft for the second round, applied for you. In combat only: outside a combat there are no rounds to count, so the +20 stays until removed.</p>"
   },
   "effects": [],
   "folder": null,

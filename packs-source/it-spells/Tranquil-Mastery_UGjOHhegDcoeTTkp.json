@@ -1,0 +1,75 @@
+{
+  "_id": "UGjOHhegDcoeTTkp",
+  "name": "Tranquil Mastery",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, divinity, ethereal, verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 12,
+    "castAP": "10 minutes",
+    "range": "touch",
+    "area": "",
+    "targets": "1 willing creature",
+    "duration": "1 hour",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "targets",
+        "label": "Tranquil Mastery",
+        "noStack": true,
+        "flags": {
+          "refocusExtra": true
+        },
+        "text": "a successful Refocus may restore a second expended Focus ability, chosen with the first"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": false,
+      "verbal": false,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Insight",
+    "description": "<p><strong>INSIGHT UTILITY</strong></p>\n<p><strong>Tradition</strong> all; <strong>Cast</strong> 10 minutes (meditative); <strong>Range</strong> touch; <strong>Targets</strong> 1 willing creature; <strong>Duration</strong> 1 hour</p>\n<p>You align the target's magical awareness with the discipline used to restore Focus abilities. For the duration, whenever the target successfully uses Refocus, it may choose a second expended Focus ability. On a Critical result, both abilities are restored immediately. On a Success, both are restored at the beginning of the target's next turn. Partial, Failure, Fumble and Blunder are resolved normally and affect only the originally selected ability.</p>\n<p><em>Automated:</em> for 1 hour, when the target uses Refocus it is asked for a second expended Focus ability as it names the first, before the roll (B8-7). A Critical restores both now, a Success both at the beginning of its next turn; a lower result touches only the first.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UGjOHhegDcoeTTkp"
+}

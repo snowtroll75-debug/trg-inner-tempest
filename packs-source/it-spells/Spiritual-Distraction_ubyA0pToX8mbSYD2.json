@@ -1,0 +1,73 @@
+{
+  "_id": "ubyA0pToX8mbSYD2",
+  "name": "Spiritual Distraction",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "ethereal",
+    "category": "save",
+    "level": 0,
+    "ppCost": 6,
+    "castAP": 2,
+    "range": "30 feet",
+    "area": "",
+    "targets": "1 living creature",
+    "duration": "Sustained (1 minute)",
+    "defence": "Will",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "moduleMark",
+        "target": "targets",
+        "module": "trg-inner-tempest",
+        "key": "spiritualDistraction",
+        "label": "Spiritual Distraction",
+        "saveAtCast": false
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": true,
+    "sustainType": "sustain",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Enchantment, Mental",
+    "description": "<p><strong>ENCHANTMENT MENTAL SAVE</strong></p>\n<p><strong>Tradition</strong> ethereal; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Range</strong> 30 feet; <strong>Targets</strong> 1 living creature; <strong>Saving Throw</strong> Will; <strong>Duration</strong> Sustained (1 minute)</p>\n<p>You rouse the spirits of mischief in an attempt to disrupt your targets spells. Each time the target casts a spell they must make a saving throw:</p>\n<p><strong>Critical</strong> The creature is unaffected and the spell ends.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Partial</strong> The creature takes a -2-circumstance penalty to their spell check.</p>\n<p><strong>Failure</strong> The creature takes a -4-circumstance penalty to their spell check.</p>\n<p><strong>Fumble</strong> The creature takes a -10-circumstance penalty to their spell check.</p>\n<p><em>Automated:</em> the target is marked with your spell save DC (B8-4). Each time it casts a spell it saves Will, rolled for it before its spell check: Critical unaffected and Spiritual Distraction ends; Success unaffected; Partial −2, Failure −4, Fumble or Blunder −10 circumstance to that spell check.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ubyA0pToX8mbSYD2"
+}

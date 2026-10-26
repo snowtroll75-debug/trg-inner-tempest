@@ -17,6 +17,7 @@ import { BLOCK4_AUTOMATIONS, BLOCK4_DEFENCE_OFFERS } from "./block4-automations.
 import { BLOCK5_AUTOMATIONS, BLOCK5_PASSIVE_HINTS, BLOCK5_DEFENCE_OFFERS, LIGHT_SOURCES } from "./block5-automations.mjs";
 import { BLOCK6_AUTOMATIONS } from "./block6-automations.mjs";
 import { BLOCK7_AUTOMATIONS, BLOCK7_CLASS_SKILL_GRANTS, BLOCK7_ARCHETYPES } from "./block7-automations.mjs";
+import { spiritualDistractionGate } from "./block8-automations.mjs";
 
 /** Block 3 (0.4.0): the two classes' proficiency and Chapter 6 class wealth. */
 export const CLASS_REGISTRATIONS = {
@@ -206,4 +207,7 @@ export function registerContent(api, moduleId) {
   for (const [name, entry] of Object.entries(BLOCK7_AUTOMATIONS)) api.registerFeatAutomation(name, entry, moduleId);
   for (const grant of BLOCK7_CLASS_SKILL_GRANTS) api.registerClassSkillGrant?.({ ...grant, options: [...grant.options] }, moduleId);
   for (const [cls, archetypes] of Object.entries(EXISTING_ARCHETYPES)) api.registerFeatAccess?.("archetype", cls, [...archetypes], moduleId);
+  // BLOCK 8 (0.9.0, on TRG Prime 3.672.0): Spiritual Distraction answers each
+  // casting before its spell check (C5a).
+  api.registerSpellCheckGate?.("spiritualDistraction", spiritualDistractionGate, moduleId);
 }

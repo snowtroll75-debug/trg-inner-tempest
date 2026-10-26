@@ -27,7 +27,8 @@
   "flags": {
     "trg-prime": {
       "itAutomation": "ghostArt:Shadow Double",
-      "itArtLevel": 8
+      "itArtLevel": 8,
+      "itMagical": true
     }
   },
   "_stats": {

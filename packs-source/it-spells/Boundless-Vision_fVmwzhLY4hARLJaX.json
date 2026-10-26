@@ -1,0 +1,79 @@
+{
+  "_id": "fVmwzhLY4hARLJaX",
+  "name": "Boundless Vision",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 4,
+    "castAP": 3,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "Sustained (1 minute)",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "self",
+        "label": "Boundless Vision",
+        "noStack": true,
+        "flags": {
+          "creatureAbility": {
+            "derives": {
+              "cannotBeFlanked": true
+            }
+          }
+        },
+        "text": "you cannot be flanked while you sustain it"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": true,
+    "sustainType": "sustain",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": false,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Insight",
+    "description": "<p><strong>INSIGHT UTILITY</strong></p>\n<p><strong>Tradition</strong> ethereal; <strong>Cast</strong> 3 AP (verbal); <strong>Area</strong> 100-foot radius; <strong>Duration</strong> Sustained (1 minute)</p>\n<p>You link your vision to the spirits around you. You can visually perceive and examine anything within in the radius of the spell that you have line of sight to. Due to your enhanced perception, you cannot be flanked whilst this spell is in effect.</p>\n<p><em>Partly automated:</em> you cannot be flanked while you sustain it. What you can see within 100 feet in line of sight is the table's (interpretation 1); no area is placed.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!fVmwzhLY4hARLJaX"
+}

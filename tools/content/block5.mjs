@@ -91,8 +91,9 @@ export const BLOCK5_SPELLS = [
     name: "Water Bolt", tradition: "arcane, verdant", ppCost: 2, castAP: 2, range: "30 feet", targets: "1 creature",
     traits: "Attack, Invocation, Water", category: "attack", baseDamage: "1d4", damage: { formula: "4d4", type: "bludgeoning" },
     components: { somatic: true, verbal: true, material: false, focus: false },
-    effects: [{ kind: "note", text: "If the spell inflicts a critical injury with a severity of serious or greater, the target is also pushed back 5 feet — move its token (the push is the GM's to place)." }],
-    description: `${md("**ATTACK INVOCATION WATER**\n\nYou call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. If the spell attack hits it inflicts 4d4 bludgeoning damage.\n\nIf the spell inflicts a critical injury with a severity of serious or greater, the target is also pushed back 5 feet.")}\n${md("*Partly automated:* the spell attack and its 4d4 bludgeoning. The 5-foot push on a serious or deadly critical injury is named on the card and moved by hand. (Inner Tempest, Chapter 8; brought into Block 5 by Graham's ruling B5-1 for Elemental Power.)")}`
+    // THE PUSH (0.9.0, B8-9; TRG Prime 3.672.0's critical severity on a row).
+    effects: [{ kind: "forcedMove", target: "targets", feet: 5, direction: "away", label: "Water Bolt", onAttack: ["critical"], minCriticalSeverity: "serious" }],
+    description: `${md("**ATTACK INVOCATION WATER**\n\nYou call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. If the spell attack hits it inflicts 4d4 bludgeoning damage.\n\nIf the spell inflicts a critical injury with a severity of serious or greater, the target is also pushed back 5 feet.")}\n${md("*Automated:* the spell attack and its 4d4 bludgeoning; on a serious or deadly critical the target is pushed 5 feet straight away from you (a wall stops it, as a Shove does). (Inner Tempest, Chapter 8; brought into Block 5 by Graham's ruling B5-1 for Elemental Power, and its push in Block 8, B8-9.)")}`
   })
 ];
 

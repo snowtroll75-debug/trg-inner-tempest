@@ -1,0 +1,69 @@
+{
+  "_id": "PpkrmeXCuhTPKbbf",
+  "name": "False Future",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "divinity, ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 8,
+    "castAP": 2,
+    "range": "touch",
+    "area": "",
+    "targets": "1 living creature",
+    "duration": "until the next time you make your daily preparations",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "note",
+        "text": "Divinations about the target see the future you describe instead, until your next daily preparations. The target may attempt a Will save to avoid it; a creature using a divination gets a Will save to disbelieve. Sense Magic to detect it is Incredibly Hard (DC +10)."
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Shadow",
+    "description": "<p><strong>SHADOW UTILITY</strong></p>\n<p><strong>Tradition</strong> divinity, ethereal; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Range</strong> touch; <strong>Target</strong> 1 living creature; <strong>Duration</strong> until the next time you make your daily preparations</p>\n<p>You interfere with attempts to predict the target’s future by preventing divinations from revealing what the target will do and what will befall the target while under the spell’s effects. Instead of the target’s true actions or experiences, divinations resolve as if the target will experience some different future you describe as you cast false future. The target creature can attempt a Will save to avoid the initial effect, and creatures using divinations get a Will save to disbelieve the illusion. This spell doesn’t prevent divinations cast after the duration’s end from determining what the subject actually did during the time you obscured using false future.</p>\n<p>Attempts to detect this spell with Sense Magic are Incredibly Hard (DC +10).</p>\n<p><em>Not automated:</em> what a divination reveals is the GM's. The target's Will save and a diviner's are rolled by hand.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PpkrmeXCuhTPKbbf"
+}

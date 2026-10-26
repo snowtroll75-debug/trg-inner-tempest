@@ -1,0 +1,211 @@
+{
+ "source": "Inner Tempest v1.2 (pandoc markdown of TRG_Inner_Tempest_1_2.docx), Chapter 8",
+ "spells": {
+  "Ability Inversion": {
+   "pp": 12,
+   "traits": "ALTERATION SAVE",
+   "fields": {
+    "Tradition": "arcane, ethereal",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "60 feet",
+    "Targets": "1 creature",
+    "Saving Throw": "Will",
+    "Duration": "varies"
+   },
+   "lines": [
+    "You force the creature to cope with their own shortcomings. The targets highest and lowest ability score (casters choice for any ties) are switched for an amount of time based upon the result of their saving throw.",
+    "**Critical** The target is unaffected.",
+    "**Success** The target is affected until the end of their next turn.",
+    "**Failure** The target is affected for 1 minute.",
+    "**Fumble** The target is affected for 1 hour."
+   ]
+  },
+  "Acidic Touch": {
+   "pp": 6,
+   "traits": "ACID INVOCATION SAVE",
+   "fields": {
+    "Tradition": "arcane, verdant",
+    "Cast": "2 AP (somatic, verbal)",
+    "Saving Throw": "Fortitude",
+    "Base Damage": "1d6",
+    "Duration": "1 minute"
+   },
+   "lines": [
+    "Upon completing the casting of this spell, your hands are infused with acidic energy. Your unarmed strikes inflict 1d6 secondary acid damage. Additionally, a successful melee attack causes the target to make a Fortitude save.",
+    "**Success** The target is unaffected.",
+    "**Failure** The target is Sickened 1.",
+    "**Fumble** The target is Sickened 2."
+   ]
+  },
+  "Age Resistance": {
+   "pp": 10,
+   "traits": "ALTERATION POLYMORPH UTILITY",
+   "fields": {
+    "Tradition": "arcane, ethereal, verdant",
+    "Cast": "2 AP (somatic, verbal)",
+    "Duration": "until next daily preparation"
+   },
+   "lines": [
+    "You transcend the limitations of aging's toll on your physical prowess. While this spell doesn't reverse your appearance or grant you immortality, it shields you from the diminishing effects of aging. As long as this spell persists, you remain unaffected by the adverse modifiers to your physical ability scores that typically manifest as you reach middle age and beyond. However, the age-related enhancements to your mental ability scores continue to be in force while this spell is active.",
+    "Rules for aging can be found in the appendix of this book.",
+    "WARPING OPTIONS",
+    "**+4 PP:** increase the duration to 1 month.",
+    "**+10 PP:** increase the duration to unlimited."
+   ]
+  },
+  "Arrows Flight": {
+   "pp": 2,
+   "traits": "AIR ALTERATION UTILITY",
+   "fields": {
+    "Tradition": "arcane, ethereal",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "touch",
+    "Target": "up to 30 projectiles no bigger than a normal arrow.",
+    "Duration": "10 minutes"
+   },
+   "lines": [
+    "For the duration of this spell, the affected projectiles have their range increments doubled.",
+    "WARPING OPTIONS",
+    "**+2 PP:** increase the duration to 1 hour.",
+    "**+4 PP:** affect projectiles of up to a large size."
+   ]
+  },
+  "Boundless Vision": {
+   "pp": 4,
+   "traits": "INSIGHT UTILITY",
+   "fields": {
+    "Tradition": "ethereal",
+    "Cast": "3 AP (verbal)",
+    "Area": "100-foot radius",
+    "Duration": "Sustained (1 minute)"
+   },
+   "lines": [
+    "You link your vision to the spirits around you. You can visually perceive and examine anything within in the radius of the spell that you have line of sight to. Due to your enhanced perception, you cannot be flanked whilst this spell is in effect."
+   ]
+  },
+  "Disrupt Soul": {
+   "pp": 18,
+   "traits": "CURSE ESSENCE SOUL SAVE",
+   "fields": {
+    "Tradition": "divinity, ethereal",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "30 feet",
+    "Targets": "1 living creature",
+    "Saving Throw": "Fortitude",
+    "Duration": "Sustained (1 minute)"
+   },
+   "lines": [
+    "You disrupt the target's connection to magic and disciplined supernatural ability. Each time the target casts a spell or uses a magical ability with the Focus trait, it must make a Fortitude save with the following results:",
+    "**Critical** The target is unaffected and the spell ends.",
+    "**Success** The target takes 2d8 essence damage.",
+    "**Failure** If the target is casting a spell, it takes 2d8 essence damage plus 1d8 per PP spent. If it is using an innate spell or magical Focus ability that costs no PP, it instead takes 2d8 essence damage plus 1d8 per four character levels (minimum +1d8).",
+    "**Fumble** As failure but the target also takes an essence critical with a severity determined as if they were making a basic saving throw."
+   ]
+  },
+  "False Future": {
+   "pp": 8,
+   "traits": "SHADOW UTILITY",
+   "fields": {
+    "Tradition": "divinity, ethereal",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "touch",
+    "Target": "1 living creature",
+    "Duration": "until the next time you make your daily preparations"
+   },
+   "lines": [
+    "You interfere with attempts to predict the target’s future by preventing divinations from revealing what the target will do and what will befall the target while under the spell’s effects. Instead of the target’s true actions or experiences, divinations resolve as if the target will experience some different future you describe as you cast false future. The target creature can attempt a Will save to avoid the initial effect, and creatures using divinations get a Will save to disbelieve the illusion. This spell doesn’t prevent divinations cast after the duration’s end from determining what the subject actually did during the time you obscured using false future.",
+    "Attempts to detect this spell with Sense Magic are Incredibly Hard (DC +10)."
+   ]
+  },
+  "Flowing Step": {
+   "pp": 4,
+   "traits": "ALTERATION UTILITY",
+   "fields": {
+    "Tradition": "ethereal",
+    "Cast": "1 AP (verbal)",
+    "Duration": "end of your turn"
+   },
+   "lines": [
+    "You move with unmatched agility and grace, granting you advantage on Reflex saving throws. Furthermore, you can move through difficult terrain without penalty and formidable terrain is treated as difficult."
+   ]
+  },
+  "Foretell Failure": {
+   "pp": 6,
+   "traits": "INSIGHT UTILITY",
+   "fields": {
+    "Tradition": "arcane, divinity, ethereal",
+    "Cast": "1 AP (verbal)"
+   },
+   "lines": [
+    "You cast this spell immediately before you would take an action that requires a d20 roll, such as a skill check, attack roll, or saving throw. The action must be something you can complete in a single round. The spell magically informs you whether the action will succeed if you roll a 10 or better on the d20 roll involved. If the action would be successful under those circumstances, you must take the action. If the action would not be successful, you can take a different action."
+   ]
+  },
+  "Root": {
+   "pp": 2,
+   "traits": "ALTERATION EARTH UTILITY",
+   "fields": {
+    "Tradition": "arcane, verdant",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "touch",
+    "Targets": "1 creature",
+    "Duration": "1 minute"
+   },
+   "lines": [
+    "You strengthen the subject's connection to the ground below, bolstering their defence against combat manoeuvres. The target gains a +2-circumstance bonus to resist being moved or tripped and, on all checks made to balance or remain standing on earth, sand, stone, or a similar rocky substance.",
+    "WARPING OPTIONS",
+    "**+1 PP:** increase bonus by +1 (max +4).",
+    "**+2 PP:** increase duration to 10 minutes."
+   ]
+  },
+  "Skyborne Pathways": {
+   "pp": 8,
+   "traits": "INSIGHT REVELATION UTILITY",
+   "fields": {
+    "Tradition": "verdant",
+    "Cast": "2 AP (somatic, verbal)",
+    "Area": "50-foot radius",
+    "Duration": "8 hours"
+   },
+   "lines": [
+    "You evoke a shimmering disturbance in the air, revealing traces of creatures that soared through it within the past day. These aerial traces are adorned with luminous wisps, offering ample illumination to pursue the tracks without suffering any penalties from inadequate lighting conditions. This aura of detection remains with you, enabling you to trail the marks through the sky for extended distances, provided you possess the ability to fly or navigate the path on the ground within the spell's range. Other beings can also follow this ethereal trail, but only if they accompany your movements. The DC for Track (Survival) checks to follow airborne creatures using this spell matches that of tracking creatures across soft terrain.",
+    "WARPING OPTIONS",
+    "**+1 PP:** increase the time since the tracks were made by 1 day.",
+    "**+2 PP:** increase the time since the tracks were to one week. Furthermore, the +1 PP warping option then increases the increment to weeks rather than days."
+   ]
+  },
+  "Spiritual Distraction": {
+   "pp": 6,
+   "traits": "ENCHANTMENT MENTAL SAVE",
+   "fields": {
+    "Tradition": "ethereal",
+    "Cast": "2 AP (somatic, verbal)",
+    "Range": "30 feet",
+    "Targets": "1 living creature",
+    "Saving Throw": "Will",
+    "Duration": "Sustained (1 minute)"
+   },
+   "lines": [
+    "You rouse the spirits of mischief in an attempt to disrupt your targets spells. Each time the target casts a spell they must make a saving throw:",
+    "**Critical** The creature is unaffected and the spell ends.",
+    "**Success** The creature is unaffected.",
+    "**Partial** The creature takes a -2-circumstance penalty to their spell check.",
+    "**Failure** The creature takes a -4-circumstance penalty to their spell check.",
+    "**Fumble** The creature takes a -10-circumstance penalty to their spell check."
+   ]
+  },
+  "Tranquil Mastery": {
+   "pp": 12,
+   "traits": "INSIGHT UTILITY",
+   "fields": {
+    "Tradition": "all",
+    "Cast": "10 minutes (meditative)",
+    "Range": "touch",
+    "Targets": "1 willing creature",
+    "Duration": "1 hour"
+   },
+   "lines": [
+    "You align the target's magical awareness with the discipline used to restore Focus abilities. For the duration, whenever the target successfully uses Refocus, it may choose a second expended Focus ability. On a Critical result, both abilities are restored immediately. On a Success, both are restored at the beginning of the target's next turn. Partial, Failure, Fumble and Blunder are resolved normally and affect only the originally selected ability."
+   ]
+  }
+ }
+}

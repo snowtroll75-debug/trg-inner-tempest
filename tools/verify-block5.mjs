@@ -113,7 +113,9 @@ equal("A FR-48: 33 entries, 25 distinct feats, 20 limited to a heritage", (() =>
 {
   const wb = B5.BLOCK5_SPELLS[0];
   equal("A Water Bolt as the Grimoire prints it (B5-1): PP 2, arcane and verdant, 2 AP, 30 feet, 4d4 bludgeoning, base 1d4", [wb.name, wb.system.ppCost, wb.system.tradition, wb.system.castAP, wb.system.range, wb.system.targets, wb.system.damage?.formula, wb.system.damage?.type, wb.system.baseDamage, wb.system.traits, wb.system.category], ["Water Bolt", 2, "arcane, verdant", 2, "30 feet", "1 creature", "4d4", "bludgeoning", "1d4", "Attack, Invocation, Water", "attack"]);
-  ok("A Water Bolt says its push on a serious critical", /serious or greater/.test(wb.system.description) && wb.system.effects.some((e) => e.kind === "note" && /pushed back 5 feet/.test(e.text)));
+  // 0.9.0 (B8-9): the push is a row TRG Prime 3.672.0 applies on a serious or deadly critical.
+  ok("A Water Bolt says its push on a serious critical, and makes it", /serious or greater/.test(wb.system.description)
+    && wb.system.effects.some((e) => e.kind === "forcedMove" && e.feet === 5 && e.direction === "away" && JSON.stringify(e.onAttack) === "[\"critical\"]" && e.minCriticalSeverity === "serious"));
   const twelve = fs.readFileSync(path.join(ROOT, "..", "book", "it12.md"), "utf8").includes("**WATER BOLT PP 2**");
   ok("A Water Bolt's heading is the book's (it12.md), when the book is beside the module", twelve || !fs.existsSync(path.join(ROOT, "..", "book", "it12.md")));
 }
@@ -417,8 +419,8 @@ const [sa, sb] = String(systemJson.version).split(".").map(Number);
 const sc = Number(String(systemJson.version).split(".")[2] ?? 0);
 ok("E the system at TRG_PRIME_ROOT is 3.669.2 or later", sa > 3 || (sa === 3 && (sb > 669 || (sb === 669 && sc >= 2))), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 0.8.1, built for 3.671.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.8.1", "3.671.0"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.671.0";'));
+equal("E the module is 0.9.1, built for 3.672.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.9.1", "3.672.0"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.672.0";'));
 for (const [name, docs] of [["it-feats", B5.BLOCK5_FEATS], ["it-spells", B5.BLOCK5_SPELLS], ["it-companions", B5.BLOCK5_NATURAL_ATTACKS]]) {
   const dir = path.join(ROOT, "packs-source", name);
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) : [];

@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 
 ## Shipped so far
 
-328 features shipped: A 183 · B 103 · C 20 · D 22. 3 more are in progress (support shipped, the feature that uses it to come).
+342 features shipped: A 192 · B 107 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
 
 ### Shipped below target, and what would lift it
 
@@ -60,12 +60,12 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 | WP-11 | Butterfly Sword | A | B | In it-weapons (0.5.1). Twin through core 3.668.1; drawing both as one Interact and the shared rune are the GM's. One item is one sword (asked of Graham). |
 | SP-04 | Air Step | A | C | -10 ft Speed and -4 Acrobatics/Climbing for 10 minutes; tracking, the 5-ft floor and the hover are the GM's. |
 | SP-06 | Aura of Heat | B | C | Cast deals 5d10 fire (basic Fortitude) and gives fire resistance; the repeat, light and dying flare are by hand. |
+| SP-07 | Boundless Vision | A | B | Cannot be flanked while sustained (3.672.0 declared flank immunity); the 100-foot sight is the table's. |
 | SP-09 | Burning Stride | B | C | The save and 4d6 fire; the persistent fire on movement and the Fumble's criticals are by hand. |
-| SP-10 | Burst of Speed | A | C | +20 ft status Speed; the second round's -10 ft by hand. |
 | SP-12 | Dragon Fear | A | C | The cast's targets save and take the conditions; later saves and the immunity are by hand. |
 | SP-16 | Hand of Tide | B | D | Teleport destinations are the caster's on the map. |
 | SP-18 | Rise of the Phoenix | C | D | The egg is a story object. |
-| SP-23 | Timeless Motion | A | C | Quickened for 1 minute; the movement-only use is by hand. |
+| SP-23 | Timeless Motion | A | B | Quickened for 1 minute; the first move of each turn provokes no reactions (applied); keeping the extra action to movement is the table's. |
 
 ## Planned coverage
 

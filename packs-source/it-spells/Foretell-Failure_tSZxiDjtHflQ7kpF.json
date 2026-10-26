@@ -1,0 +1,76 @@
+{
+  "_id": "tSZxiDjtHflQ7kpF",
+  "name": "Foretell Failure",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, divinity, ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 6,
+    "castAP": 1,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "self",
+        "label": "Foretell Failure",
+        "noStack": true,
+        "rounds": 1,
+        "flags": {
+          "foretell": true
+        },
+        "text": "before your next d20 check you learn whether a 10 on the die would succeed"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": false,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Insight",
+    "description": "<p><strong>INSIGHT UTILITY</strong></p>\n<p><strong>Tradition</strong> arcane, divinity, ethereal; <strong>Cast</strong> 1 AP (verbal)</p>\n<p>You cast this spell immediately before you would take an action that requires a d20 roll, such as a skill check, attack roll, or saving throw. The action must be something you can complete in a single round. The spell magically informs you whether the action will succeed if you roll a 10 or better on the d20 roll involved. If the action would be successful under those circumstances, you must take the action. If the action would not be successful, you can take a different action.</p>\n<p><em>Automated:</em> your next d20 check says first whether a 10 on the die would succeed, with every modifier it has. A skill action is asked before it spends anything: if a 10 would succeed it is taken; if not, you may take a different action and nothing is spent, and a DC the GM sets afterwards is put to the GM while the action waits (B8-6). A Strike, a save or a casting's check is told at its roll, where it is already under way.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!tSZxiDjtHflQ7kpF"
+}

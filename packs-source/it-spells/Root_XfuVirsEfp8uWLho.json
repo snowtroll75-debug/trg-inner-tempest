@@ -1,0 +1,123 @@
+{
+  "_id": "XfuVirsEfp8uWLho",
+  "name": "Root",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 2,
+    "castAP": 2,
+    "range": "touch",
+    "area": "",
+    "targets": "1 creature",
+    "duration": "1 minute",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "defenceDC",
+        "target": "targets",
+        "dc": "fortitudeDC",
+        "value": 2,
+        "bonusType": "circumstance",
+        "label": "Root",
+        "scope": "move or trip it",
+        "actions": [
+          "shoveAttack",
+          "tripAttack",
+          "reposition"
+        ]
+      },
+      {
+        "kind": "declare",
+        "target": "targets",
+        "label": "Root (balance)",
+        "noStack": true,
+        "flags": {
+          "conditionals": [
+            {
+              "kind": "modifier",
+              "value": 2,
+              "type": "circumstance",
+              "warpBonus": true,
+              "label": "Root",
+              "scope": "checks to balance or remain standing on earth, sand, stone or similar rocky ground",
+              "auto": false,
+              "when": {
+                "checkTypes": [
+                  "skill"
+                ],
+                "subjects": [
+                  "acrobatics"
+                ]
+              }
+            }
+          ]
+        },
+        "text": "a circumstance bonus to balance or stay standing on earth, sand or stone, ticked when the ground is"
+      }
+    ],
+    "warps": [
+      {
+        "ppCost": 1,
+        "text": "increase bonus by +1 (max +4)",
+        "mods": {
+          "bonusValue": 1,
+          "bonusMax": 4
+        }
+      },
+      {
+        "ppCost": 2,
+        "text": "increase duration to 10 minutes",
+        "mods": {
+          "durationText": "10 minutes"
+        }
+      }
+    ],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Alteration, Earth",
+    "description": "<p><strong>ALTERATION EARTH UTILITY</strong></p>\n<p><strong>Tradition</strong> arcane, verdant; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Range</strong> touch; <strong>Targets</strong> 1 creature; <strong>Duration</strong> 1 minute</p>\n<p>You strengthen the subject's connection to the ground below, bolstering their defence against combat manoeuvres. The target gains a +2-circumstance bonus to resist being moved or tripped and, on all checks made to balance or remain standing on earth, sand, stone, or a similar rocky substance.</p>\n<p>WARPING OPTIONS</p>\n<p><strong>+1 PP:</strong> increase bonus by +1 (max +4).</p>\n<p><strong>+2 PP:</strong> increase duration to 10 minutes.</p>\n<p><em>Automated:</em> a Shove, Trip or Reposition against the target meets its Fortitude DC +2 circumstance, and a Trip the higher of its Acrobatics and Fortitude DCs +2, once (interpretation 3); +1 for each +1 PP bought, to +4. The same bonus is a tick-box on its Acrobatics checks to balance or stay standing on earth, sand or stone (interpretation 3), because the ground is the GM's call.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XfuVirsEfp8uWLho"
+}

@@ -136,8 +136,8 @@ const MUTATIONS = [
   { name: "granted spells are never stamped", file: SCRIPT, from: "Hooks.on(\"preCreateItem\", (document, data) => { try { onPreCreateSpell(document, data); }", to: "Hooks.on(\"createItem\", (document, data) => { try { onPreCreateSpell(document, data); }" },
   { name: "a Path chosen later stamps nothing", file: SCRIPT, from: "Hooks.on(\"createItem\", (item) => { onPathCreated(item)", to: "Hooks.on(\"updateItem\", (item) => { onPathCreated(item)" },
   { name: "the GM relay is never registered", file: SCRIPT, from: "  registerBlock3Socket();\n", to: "" },
-  { name: "the module accepts 3.667.4", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.671.0\";", to: "const REQUIRED_SYSTEM = \"3.667.4\";" },
-  { name: "the manifest accepts 3.667.4", file: MANIFEST, from: "\"minimum\": \"3.671.0\"", to: "\"minimum\": \"3.667.4\"" },
+  { name: "the module accepts 3.667.4", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.667.4\";" },
+  { name: "the manifest accepts 3.667.4", file: MANIFEST, from: "\"minimum\": \"3.672.0\"", to: "\"minimum\": \"3.667.4\"" },
   { name: "the Flurry calls a helper the system does not offer", file: A, from: "await h().runStrikeSeries(actor, strikes,", to: "await h().runStrikes(actor, strikes," }
 ];
 

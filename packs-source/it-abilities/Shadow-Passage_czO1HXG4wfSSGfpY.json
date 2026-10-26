@@ -27,7 +27,8 @@
   "flags": {
     "trg-prime": {
       "itAutomation": "ghostArt:Shadow Passage",
-      "itArtLevel": 12
+      "itArtLevel": 12,
+      "itMagical": true
     }
   },
   "_stats": {

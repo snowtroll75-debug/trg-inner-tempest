@@ -46,8 +46,8 @@ const MUTATIONS = [
   { name: "the pack is left out of the build", file: FND, from: ",\n  // 0.5.1: Chapter 6's sixteen weapons (Graham, 23 October 2026).\n  { name: \"it-weapons\", label: \"Inner Tempest: Weapons\", extends: \"weapons\", docs: CHAPTER6_WEAPONS }", to: "" },
   { name: "the pack extends gear", file: MANIFEST, from: "\"extends\": \"weapons\"", to: "\"extends\": \"gear\"" },
   { name: "the new traits are not registered", file: REG, from: "export const TRAITS = [\"Technique\", \"Monastic\", \"Backswing\", \"Brace\", \"Twin\"];", to: "export const TRAITS = [\"Technique\", \"Monastic\"];" },
-  { name: "the manifest accepts 3.668.0", file: MANIFEST, from: "\"minimum\": \"3.671.0\"", to: "\"minimum\": \"3.668.0\"" },
-  { name: "the script accepts 3.668.0", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.671.0\";", to: "const REQUIRED_SYSTEM = \"3.668.0\";" },
+  { name: "the manifest accepts 3.668.0", file: MANIFEST, from: "\"minimum\": \"3.672.0\"", to: "\"minimum\": \"3.668.0\"" },
+  { name: "the script accepts 3.668.0", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.668.0\";" },
   // C — the fixes
   { name: "THE DEFECT: Combat Form lets the system spend its use", file: A, from: "  ownsFocusUse: true,\n  async use(actor, item) {\n    const owed = combatFormsOwed(", to: "  async use(actor, item) {\n    const owed = combatFormsOwed(" },
   { name: "Combat Form no longer gates entering", file: A, from: "    if (!(await focusReady(item, \"Combat Form\"))) return false;\n    const pick = await h().chooseFromList(\"Combat Form\", \"Enter a form (1 AP)\", options);", to: "    const pick = await h().chooseFromList(\"Combat Form\", \"Enter a form (1 AP)\", options);" },

@@ -25,6 +25,7 @@ import { BLOCK4_CLASSES, BLOCK4_ABILITIES, BLOCK4_FEATS } from "./block4.mjs";
 import { BLOCK5_FEATS, BLOCK5_SPELLS, BLOCK5_NATURAL_ATTACKS } from "./block5.mjs";
 import { BLOCK6_FEATS, BLOCK6_ABILITIES } from "./block6.mjs";
 import { BLOCK7_FEATS, BLOCK7_ABILITIES } from "./block7.mjs";
+import { BLOCK8_SPELLS } from "./block8.mjs";
 import { CHAPTER6_WEAPONS } from "./weapons.mjs";
 import { md } from "./markdown.mjs";
 
@@ -499,7 +500,7 @@ export const PACKS = [
   // the Mystical Disciplines grant.
   { name: "it-classes", label: "Inner Tempest: Classes", extends: "classes", docs: [...BLOCK3_CLASSES, ...BLOCK4_CLASSES] },
   // Block 5: Water Bolt (Graham's B5-1) and Draconic Armament's Bite and Claw.
-  { name: "it-spells", label: "Inner Tempest: Spells", extends: "spells", docs: [...BLOCK3_SPELLS, ...BLOCK5_SPELLS] },
+  { name: "it-spells", label: "Inner Tempest: Spells", extends: "spells", docs: [...BLOCK3_SPELLS, ...BLOCK5_SPELLS, ...BLOCK8_SPELLS] },
   { name: "it-companions", label: "Inner Tempest: Natural Attacks", extends: "companions", docs: [...NATURAL_ATTACKS, ...BLOCK5_NATURAL_ATTACKS] },
   // 0.5.1: Chapter 6's sixteen weapons (Graham, 23 October 2026).
   { name: "it-weapons", label: "Inner Tempest: Weapons", extends: "weapons", docs: CHAPTER6_WEAPONS }

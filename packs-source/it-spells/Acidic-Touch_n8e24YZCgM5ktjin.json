@@ -1,0 +1,94 @@
+{
+  "_id": "n8e24YZCgM5ktjin",
+  "name": "Acidic Touch",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "arcane, verdant",
+    "category": "save",
+    "level": 0,
+    "ppCost": 6,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "1 minute",
+    "defence": "Fortitude",
+    "baseDamage": "1d6",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "strikeRider",
+        "target": "self",
+        "label": "Acidic Touch",
+        "dice": "1d6",
+        "damageType": "acid",
+        "scope": "unarmed",
+        "once": false,
+        "saveAtCast": false
+      },
+      {
+        "kind": "strikeRider",
+        "target": "self",
+        "label": "Acidic Touch (Fortitude)",
+        "condition": "sickened",
+        "conditionValue": 1,
+        "conditionRounds": 0,
+        "scope": "melee",
+        "once": false,
+        "conditionSave": {
+          "save": "fortitude",
+          "ladder": {
+            "failure": 1,
+            "fumble": 2,
+            "blunder": 2
+          }
+        },
+        "saveAtCast": false
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Acid, Invocation",
+    "description": "<p><strong>ACID INVOCATION SAVE</strong></p>\n<p><strong>Tradition</strong> arcane, verdant; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Saving Throw</strong> Fortitude; <strong>Base Damage</strong> 1d6; <strong>Duration</strong> 1 minute</p>\n<p>Upon completing the casting of this spell, your hands are infused with acidic energy. Your unarmed strikes inflict 1d6 secondary acid damage. Additionally, a successful melee attack causes the target to make a Fortitude save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is Sickened 1.</p>\n<p><strong>Fumble</strong> The target is Sickened 2.</p>\n<p><em>Automated:</em> for 1 minute your unarmed Strikes deal 1d6 secondary acid damage, and every melee Strike you hit with makes the target save Fortitude against your spell save DC (B8-2): Success or Partial unaffected, Failure Sickened 1, Fumble or Blunder Sickened 2. Sickened stays until it is removed. Nothing is rolled when you cast it.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!n8e24YZCgM5ktjin"
+}

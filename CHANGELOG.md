@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.9.1 — 26 Oct 2026 (fixes from the 0.9.0 live test)
+
+Needs **TRG Prime 3.672.0**. See `docs/RELEASE_NOTES_0.9.1.md`.
+
+- **Root raises a Trip's DC once** (+2, to +4 warped). It had two rows, one per DC, and both were counted.
+- **Arrows Flight's cast card** no longer prints the book text as HTML tags; it carries its own note.
+- **Root's cast-card line** reads "anyone rolls against to move or trip it".
+- **Harness:** `verify-block8` 123, `mutate-block8` 66; Blocks 3 to 8 and the weapons re-pinned to 0.9.1.
+
+## 0.9.0 — 26 Oct 2026 (Block 8: the Grimoire)
+
+Needs **TRG Prime 3.672.0**. Rulings B8-1 to B8-9 (`docs/INNER_TEMPEST_RULINGS_2026-10-26.md`). See `docs/RELEASE_NOTES_0.9.0.md`.
+
+- **The Grimoire's other thirteen spells**, so Chapter 8 is complete: Ability Inversion, Acidic Touch, Age Resistance, Arrows Flight, Boundless Vision, Disrupt Soul, False Future, Flowing Step, Foretell Failure, Root, Skyborne Pathways, Spiritual Distraction, Tranquil Mastery.
+- **Burst of Speed's second round, Timeless Motion's movement that provokes nothing, Water Bolt's push** (B8-9).
+- **Magical Focus abilities marked** for Disrupt Soul: Abundant Step, Inner Blast and five Ghost Arts.
+- **Fixed in review, before release:** five findings (release notes), among them Disrupt Soul's critical on another player's caster and Arrows Flight on an ally's quiver.
+- **Harness:** new `verify-block8` 120 checks, `mutate-block8` 63 mutations; Blocks 3 to 7 and the weapons re-pinned to 0.9.0 and 3.672.0.
+
 ## 0.8.1 — 25 Oct 2026 (fixes from the 0.8.0 live test)
 
 Needs **TRG Prime 3.671.0**. See `docs/RELEASE_NOTES_0.8.1.md`.

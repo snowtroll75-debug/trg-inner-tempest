@@ -17,13 +17,14 @@ import {
 import { onStrikeResolvedB5, onItemCreatedB5, onItemUpdatedB5, onItemDeletedB5, onEffectDeletedB5, reconcileB5Actor } from "../module/block5-automations.mjs";
 import { onStrikeResolvedB6, onItemCreatedB6, reconcileB6Actor } from "../module/block6-automations.mjs";
 import { onStrikeResolvedB7, onDamageAppliedB7, onDailyPreparationB7, onTurnEndedB7, onAmbushDealtB7 } from "../module/block7-automations.mjs";
+import { onSpellSettledB8, onPreUpdateItemB8, onItemUpdatedB8, onEffectDeletedB8, registerBlock8Socket } from "../module/block8-automations.mjs";
 import {
   onActionAttempt, onActionResolved as onSkillActionResolved, offerResistDying,
   onTurnEnded, onCombatDeleted, onEffectDeleted, onDailyPreparation, trackActionResolved
 } from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.671.0";
+const REQUIRED_SYSTEM = "3.672.0";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
@@ -96,6 +97,15 @@ Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB7(ctx).catch((err
 Hooks.on("trgPrimeDamageApplied", (ctx) => { onDamageAppliedB7(ctx).catch((err) => console.warn("Inner Tempest | Turning the Blade", err)); });
 Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB7(ctx).catch((err) => console.warn("Inner Tempest | daily preparation (Block 7)", err)); });
 Hooks.on("trgPrimeTurnEnded", (ctx) => { onTurnEndedB7(ctx).catch((err) => console.warn("Inner Tempest | turn end (Block 7)", err)); });
+// BLOCK 8 (0.9.0, on TRG Prime 3.672.0): the Grimoire. Disrupt Soul answers
+// a casting once it is paid for and a magical Focus ability's spent use;
+// Arrows Flight's projectiles are chosen once it is cast; Burst of Speed's
+// second round follows its first. (Spiritual Distraction is a spell-check
+// gate, registered with the content.)
+Hooks.on("trgPrimeSpellSettled", (ctx) => { onSpellSettledB8(ctx).catch((err) => console.warn("Inner Tempest | a casting paid for (Block 8)", err)); });
+Hooks.on("preUpdateItem", (item, changes, options) => { try { onPreUpdateItemB8(item, changes, options); } catch (err) { console.warn("Inner Tempest | Focus use (Block 8)", err); } });
+Hooks.on("updateItem", (item, changes, options, userId) => { onItemUpdatedB8(item, changes, options, userId).catch((err) => console.warn("Inner Tempest | Disrupt Soul (Block 8)", err)); });
+Hooks.on("deleteActiveEffect", (effect) => { onEffectDeletedB8(effect).catch((err) => console.warn("Inner Tempest | Burst of Speed (Block 8)", err)); });
 
 // The buttons on this module's cards: Predator's Pounce's paid Strike and
 // Ancestral Guidance's reroll.
@@ -104,6 +114,7 @@ Hooks.on("renderChatMessageHTML", (message, html) => bindCardButtons(message, ht
 Hooks.once("ready", () => {
   registerBlock3Socket();
   registerBlock4Socket();
+  registerBlock8Socket();
   if (game.system?.id !== "trg-prime") {
     ui.notifications?.error("Inner Tempest requires the TRG Prime system.");
     return;

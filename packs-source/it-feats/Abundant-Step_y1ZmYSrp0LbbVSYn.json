@@ -32,7 +32,8 @@
   },
   "flags": {
     "trg-prime": {
-      "itAutomation": "abundantStep"
+      "itAutomation": "abundantStep",
+      "itMagical": true
     }
   },
   "_stats": {

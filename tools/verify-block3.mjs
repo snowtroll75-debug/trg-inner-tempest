@@ -552,8 +552,8 @@ const sc = Number(String(systemJson.version).split(".")[2]);
 // THE PIN MOVES WITH EACH BLOCK (re-anchored at 0.5.0, Block 4 on 3.668.0; at 0.5.1 on 3.668.1; at 0.6.0, Block 5 on 3.669.0).
 ok("F the system at TRG_PRIME_ROOT is 3.669.0 or later", sa > 3 || (sa === 3 && sb >= 669), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("F the module is 0.8.1, built for 3.671.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.8.1", "3.671.0"]);
-ok("F the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.671.0";'));
+equal("F the module is 0.9.1, built for 3.672.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.9.1", "3.672.0"]);
+ok("F the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.672.0";'));
 for (const [name, ext] of [["it-classes", "classes"], ["it-spells", "spells"]]) {
   const entry = manifest.packs.find((p) => p.name === name);
   ok(`F module.json declares ${name} extending ${ext}`, entry?.flags?.["trg-prime"]?.extends === ext && entry?.path === `packs/${name}` && entry?.type === "Item");
@@ -561,7 +561,8 @@ for (const [name, ext] of [["it-classes", "classes"], ["it-spells", "spells"]]) 
 {
   const dir = path.join(ROOT, "packs-source", "it-spells");
   // Re-anchored at 0.6.0: Block 5 adds Water Bolt (B5-1) beside them.
-  ok(`F packs-source/it-spells holds the ${B3.BLOCK3_SPELLS.length} built, and Block 5's Water Bolt`, fs.existsSync(dir) && fs.readdirSync(dir).length === B3.BLOCK3_SPELLS.length + 1);
+  // 0.9.0: and Block 8's thirteen (the Grimoire's rest).
+  ok(`F packs-source/it-spells holds the ${B3.BLOCK3_SPELLS.length} built, Block 5's Water Bolt and Block 8's thirteen`, fs.existsSync(dir) && fs.readdirSync(dir).length === B3.BLOCK3_SPELLS.length + 1 + 13);
 }
 // Block 4 (0.5.0) adds its classes to it-classes beside Block 3's.
 for (const [name, docs] of [["it-classes", B3.BLOCK3_CLASSES], ["it-abilities", B3.BLOCK3_ABILITIES], ["it-feats", B3.BLOCK3_FEATS]]) {

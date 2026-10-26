@@ -1,0 +1,73 @@
+{
+  "_id": "XS8wBvtilXhqzWbn",
+  "name": "Disrupt Soul",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "divinity, ethereal",
+    "category": "save",
+    "level": 0,
+    "ppCost": 18,
+    "castAP": 2,
+    "range": "30 feet",
+    "area": "",
+    "targets": "1 living creature",
+    "duration": "Sustained (1 minute)",
+    "defence": "Fortitude",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "moduleMark",
+        "target": "targets",
+        "module": "trg-inner-tempest",
+        "key": "disruptSoul",
+        "label": "Disrupt Soul",
+        "saveAtCast": false
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": true,
+    "sustainType": "sustain",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Curse, Essence, Soul",
+    "description": "<p><strong>CURSE ESSENCE SOUL SAVE</strong></p>\n<p><strong>Tradition</strong> divinity, ethereal; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Range</strong> 30 feet; <strong>Targets</strong> 1 living creature; <strong>Saving Throw</strong> Fortitude; <strong>Duration</strong> Sustained (1 minute)</p>\n<p>You disrupt the target's connection to magic and disciplined supernatural ability. Each time the target casts a spell or uses a magical ability with the Focus trait, it must make a Fortitude save with the following results:</p>\n<p><strong>Critical</strong> The target is unaffected and the spell ends.</p>\n<p><strong>Success</strong> The target takes 2d8 essence damage.</p>\n<p><strong>Failure</strong> If the target is casting a spell, it takes 2d8 essence damage plus 1d8 per PP spent. If it is using an innate spell or magical Focus ability that costs no PP, it instead takes 2d8 essence damage plus 1d8 per four character levels (minimum +1d8).</p>\n<p><strong>Fumble</strong> As failure but the target also takes an essence critical with a severity determined as if they were making a basic saving throw.</p>\n<p><em>Automated:</em> the target is marked with your spell save DC (B8-4). Each time it casts a spell, once the casting is paid for, or uses a magical Focus ability, it saves Fortitude, rolled for it: Critical unaffected and Disrupt Soul ends; Success 2d8 essence; Failure 2d8 essence plus 1d8 per PP it spent (B8-5; a casting that spent no PP — an innate spell, an item's, a cantrip — or a magical Focus ability, 1d8 per four levels, at least 1d8); Fumble or Blunder as a Failure, and an essence critical injury of a basic save's severity (interpretation 5).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XS8wBvtilXhqzWbn"
+}

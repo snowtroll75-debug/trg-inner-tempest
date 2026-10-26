@@ -1,0 +1,92 @@
+{
+  "_id": "M09qMS86GXEzJZUM",
+  "name": "Flowing Step",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "ethereal",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 4,
+    "castAP": 1,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "end of your turn",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "declare",
+        "target": "self",
+        "label": "Flowing Step",
+        "noStack": true,
+        "duration": "until the end of your turn",
+        "flags": {
+          "ignoresDifficultTerrain": true,
+          "conditionals": [
+            {
+              "kind": "advantage",
+              "label": "Flowing Step",
+              "scope": "Reflex saving throws",
+              "auto": true,
+              "when": {
+                "checkTypes": [
+                  "save"
+                ],
+                "subjects": [
+                  "reflex"
+                ]
+              }
+            }
+          ]
+        },
+        "text": "advantage on Reflex saves; difficult terrain costs you nothing extra and formidable terrain counts as difficult"
+      }
+    ],
+    "warps": [],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": false,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Alteration",
+    "description": "<p><strong>ALTERATION UTILITY</strong></p>\n<p><strong>Tradition</strong> ethereal; <strong>Cast</strong> 1 AP (verbal); <strong>Duration</strong> end of your turn</p>\n<p>You move with unmatched agility and grace, granting you advantage on Reflex saving throws. Furthermore, you can move through difficult terrain without penalty and formidable terrain is treated as difficult.</p>\n<p><em>Automated:</em> until the end of your turn your Reflex saves are rolled with advantage, difficult terrain costs you nothing extra and formidable terrain costs as difficult (interpretation 2: a zone's own Speed penalty still applies).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!M09qMS86GXEzJZUM"
+}

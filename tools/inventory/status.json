@@ -676,8 +676,8 @@
   },
   "SP-10": {
     "status": "Implemented",
-    "achieved": "C",
-    "note": "+20 ft status Speed; the second round's -10 ft by hand."
+    "achieved": "A",
+    "note": "+20 ft status Speed for the first round, -10 ft for the second (in combat), applied."
   },
   "SP-12": {
     "status": "Implemented",
@@ -706,8 +706,8 @@
   },
   "SP-23": {
     "status": "Implemented",
-    "achieved": "C",
-    "note": "Quickened for 1 minute; the movement-only use is by hand."
+    "achieved": "B",
+    "note": "Quickened for 1 minute; the first move of each turn provokes no reactions (applied); keeping the extra action to movement is the table's."
   },
   "CL-02": {
     "status": "Implemented",
@@ -1653,5 +1653,75 @@
     "status": "Implemented",
     "achieved": "A",
     "note": "All 20 built lines parsed by core 3.671.0 C1 (Level, Gained class skill, &, plurals, full stops)."
+  },
+  "SP-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Totals switched through the bonus pool by save rung (Success/Partial to the end of its next turn, Failure 1 minute, Fumble/Blunder 1 hour); ties asked of the caster (TRG Prime 3.672.0 abilitySwap)."
+  },
+  "SP-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "1d6 secondary acid on unarmed Strikes for 1 minute; every melee hit makes the target save Fortitude at your spell save DC: Sickened 1 on a Failure, 2 on a Fumble/Blunder (3.672.0 rider ladder)."
+  },
+  "SP-03": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Marks the caster until daily preparation (warps 1 month, unlimited); Block 9's aging reads the mark; physical aging penalties set aside by hand until then."
+  },
+  "SP-05": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Once cast, up to 30 of a chosen stack of arrows, bolts, bullets, darts or shuriken (any ammunition or thrown weapon with +4 PP) split off with range increments doubled for 10 minutes (1 hour warped)."
+  },
+  "SP-07": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Cannot be flanked while sustained (3.672.0 declared flank immunity); the 100-foot sight is the table's."
+  },
+  "SP-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Marked with the cast's DC; each casting (once paid) or magical Focus use saves Fortitude: 2d8 essence, + 1d8 per PP spent or per four levels, a basic save's essence critical on a Fumble; a Critical ends the spell."
+  },
+  "SP-13": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Divination misdirection and the Will saves are the GM's."
+  },
+  "SP-14": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Until the end of your turn: advantage on Reflex saves; difficult terrain no extra cost, formidable as difficult."
+  },
+  "SP-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "The next d20 check says first whether a 10 would succeed (the GM answers an unset DC); a skill action or Strike may then be called back and its AP returned; a save or casting check is rolled."
+  },
+  "SP-19": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 circumstance (+1 a PP, max +4) to the Fortitude DC against Shove, Trip and Reposition and the Acrobatics DC against Trip; the same bonus as a tick on balance checks on earth or stone."
+  },
+  "SP-21": {
+    "status": "Implemented",
+    "achieved": "D",
+    "note": "Tracking the aerial trail is the GM's (soft terrain's DC)."
+  },
+  "SP-22": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Marked with the cast's DC; before each spell check the target saves Will: -2/-4/-10 circumstance to that check; a Critical ends the spell."
+  },
+  "SP-24": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "For 1 hour Refocus asks for a second expended Focus ability with the first; a Critical restores both now, a Success both next turn."
+  },
+  "SP-25": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Spell attack, 4d4 bludgeoning; pushed 5 feet away on a serious or deadly critical."
   }
 }

@@ -1,0 +1,80 @@
+{
+  "_id": "HlcrRc7ywhPjUhfI",
+  "name": "Skyborne Pathways",
+  "img": "icons/svg/holy-symbol.svg",
+  "type": "spell",
+  "system": {
+    "tradition": "verdant",
+    "category": "utility",
+    "level": 0,
+    "ppCost": 8,
+    "castAP": 2,
+    "range": "",
+    "area": "",
+    "targets": "",
+    "duration": "8 hours",
+    "defence": "",
+    "baseDamage": "",
+    "damage": {
+      "formula": "",
+      "type": "",
+      "persistent": ""
+    },
+    "casterLevelMods": [],
+    "effects": [
+      {
+        "kind": "note",
+        "text": "For 8 hours you can follow the aerial tracks of creatures that flew through the 50-foot radius within the past day, without penalty for poor light; the Track (Survival) DC is soft terrain's. Others may follow only with you."
+      }
+    ],
+    "warps": [
+      {
+        "ppCost": 1,
+        "text": "increase the time since the tracks were made by 1 day",
+        "mods": {}
+      },
+      {
+        "ppCost": 2,
+        "text": "increase the time since the tracks were made to one week; the +1 PP warping option then adds weeks rather than days",
+        "mods": {}
+      }
+    ],
+    "apOptions": [],
+    "prepared": false,
+    "sustained": false,
+    "sustainType": "",
+    "areaTargeting": "all",
+    "specialist": false,
+    "specialistClass": "",
+    "innate": false,
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "components": {
+      "somatic": true,
+      "verbal": true,
+      "material": false,
+      "focus": false
+    },
+    "traits": "Insight, Revelation",
+    "description": "<p><strong>INSIGHT REVELATION UTILITY</strong></p>\n<p><strong>Tradition</strong> verdant; <strong>Cast</strong> 2 AP (somatic, verbal); <strong>Area</strong> 50-foot radius; <strong>Duration</strong> 8 hours</p>\n<p>You evoke a shimmering disturbance in the air, revealing traces of creatures that soared through it within the past day. These aerial traces are adorned with luminous wisps, offering ample illumination to pursue the tracks without suffering any penalties from inadequate lighting conditions. This aura of detection remains with you, enabling you to trail the marks through the sky for extended distances, provided you possess the ability to fly or navigate the path on the ground within the spell's range. Other beings can also follow this ethereal trail, but only if they accompany your movements. The DC for Track (Survival) checks to follow airborne creatures using this spell matches that of tracking creatures across soft terrain.</p>\n<p>WARPING OPTIONS</p>\n<p><strong>+1 PP:</strong> increase the time since the tracks were made by 1 day.</p>\n<p><strong>+2 PP:</strong> increase the time since the tracks were to one week. Furthermore, the +1 PP warping option then increases the increment to weeks rather than days.</p>\n<p><em>Not automated:</em> tracking is the GM's: roll Track (Survival) at soft terrain's DC. No area is placed.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!HlcrRc7ywhPjUhfI"
+}

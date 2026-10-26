@@ -174,11 +174,11 @@ const GHOST_ARTS = [
   ART("Spider Path", 1, (k) => auto(k, "press Use: 1 AP and this art's use. Your next token move is armed up to your Speed; the walls are yours to walk on, and you must end on a surface that holds you.")),
   ART("Falling Shadow", 4, (k) => partly(k, "press Use when you fall 10 feet or more: it spends your reaction and this art's use, and the card says to treat the fall as 30 feet shorter (apply the falling damage for the shorter fall) and that you may Hide.")),
   ART("Caltrop Blossom", 4, (k) => partly(k, "press Use: 1 AP and this art's use. The card names the 10-foot burst (within 20 ft), your Level DC and the damage at your level (2d6, +1d6 at 8th and every 4 levels after) for the Reflex save a creature makes the first time each turn it moves through it.")),
-  ART("Shadow Double", 8, (k) => auto(k, "when an attack targets you, you are asked before it is rolled. A yes spends your reaction and this art's use and makes you Concealed until the start of your next turn; Step 5 feet by hand if it does not damage you. Magical (your Ghostwalker tradition).")),
-  ART("Veiled Body", 8, (k) => auto(k, "press Use: 1 AP and this art's use. You are Invisible until the start of your next turn; the effect ends when you Strike or cast a spell. Magical.")),
-  ART("Body of Mist", 12, (k) => auto(k, "press Use: 1 AP and this art's use. Your next token move is armed up to your Speed as flight that provokes nothing; the card lists what you cannot do. Magical.")),
-  ART("Shadow Passage", 12, (k) => auto(k, "press Use in dim light or darkness: 1 AP and this art's use. Your next token move is armed up to your Speed as a teleport that provokes nothing. Magical.")),
-  ART("Empty Presence", 16, (k) => auto(k, "press Use: 1 AP and this art's use. You are Invisible for 1 minute; after a Strike or a spell you are Concealed instead until the end of that turn, then Invisible again. Magical."))
+  ART("Shadow Double", 8, (k) => auto(k, "when an attack targets you, you are asked before it is rolled. A yes spends your reaction and this art's use and makes you Concealed until the start of your next turn; Step 5 feet by hand if it does not damage you. Magical (your Ghostwalker tradition)."), { itMagical: true }),
+  ART("Veiled Body", 8, (k) => auto(k, "press Use: 1 AP and this art's use. You are Invisible until the start of your next turn; the effect ends when you Strike or cast a spell. Magical."), { itMagical: true }),
+  ART("Body of Mist", 12, (k) => auto(k, "press Use: 1 AP and this art's use. Your next token move is armed up to your Speed as flight that provokes nothing; the card lists what you cannot do. Magical."), { itMagical: true }),
+  ART("Shadow Passage", 12, (k) => auto(k, "press Use in dim light or darkness: 1 AP and this art's use. Your next token move is armed up to your Speed as a teleport that provokes nothing. Magical."), { itMagical: true }),
+  ART("Empty Presence", 16, (k) => auto(k, "press Use: 1 AP and this art's use. You are Invisible for 1 minute; after a Strike or a spell you are Concealed instead until the end of that turn, then Invisible again. Magical."), { itMagical: true })
 ];
 
 /* ------------------------------------------------------------------ */

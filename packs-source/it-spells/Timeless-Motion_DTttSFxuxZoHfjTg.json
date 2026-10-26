@@ -29,8 +29,18 @@
         "value": 1
       },
       {
+        "kind": "declare",
+        "target": "self",
+        "label": "Timeless Motion",
+        "noStack": true,
+        "flags": {
+          "firstMoveNoReactions": true
+        },
+        "text": "the first move of each of your turns provokes no reactions"
+      },
+      {
         "kind": "note",
-        "text": "The Quickened action may only be an action with the Movement trait. That movement cannot be perceived and provokes no reactions."
+        "text": "The Quickened action may only be an action with the Movement trait, and that movement cannot be perceived."
       }
     ],
     "warps": [],
@@ -52,7 +62,7 @@
       "focus": false
     },
     "traits": "Alteration",
-    "description": "<p>Time moves differently for you. You gain the quickened condition which may be used to take any action with the Movement trait each round. When taking this action your movement is imperceivable to those around you and does not provoke reactions.</p>\n<p><em>Partly automated:</em> you are Quickened for 1 minute. Using the extra action only to move, and that move provoking nothing, are by hand.</p>"
+    "description": "<p>Time moves differently for you. You gain the quickened condition which may be used to take any action with the Movement trait each round. When taking this action your movement is imperceivable to those around you and does not provoke reactions.</p>\n<p><em>Partly automated:</em> you are Quickened for 1 minute, and the first move of each of your turns (take it with the quickened action) provokes no reactions, applied for you. Spending the extra action only on movement, and that movement being unseen, are the table's.</p>"
   },
   "effects": [],
   "folder": null,

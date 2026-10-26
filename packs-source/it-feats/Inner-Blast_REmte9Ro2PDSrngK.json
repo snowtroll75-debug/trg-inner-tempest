@@ -32,7 +32,8 @@
   },
   "flags": {
     "trg-prime": {
-      "itAutomation": "innerBlast"
+      "itAutomation": "innerBlast",
+      "itMagical": true
     }
   },
   "_stats": {

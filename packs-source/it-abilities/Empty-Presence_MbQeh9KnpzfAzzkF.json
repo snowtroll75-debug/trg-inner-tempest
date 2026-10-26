@@ -27,7 +27,8 @@
   "flags": {
     "trg-prime": {
       "itAutomation": "ghostArt:Empty Presence",
-      "itArtLevel": 16
+      "itArtLevel": 16,
+      "itMagical": true
     }
   },
   "_stats": {
