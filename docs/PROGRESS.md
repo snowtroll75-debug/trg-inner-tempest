@@ -11,7 +11,7 @@ This is the durable record that lets work resume across sessions. Update it at t
 - **0.10.2 built:** the two GM notes record the rulings. `verify-block9` 84, `mutate-block9` 96/96.
 - **Core 3.673.2 built:** a rune timer ended by either clock no longer adds "… expires" to its own ending. `verify-block9-core` 71, `mutate-block9-core` 98/98.
 - **Live test of 3.673.2 and 0.10.2** (`live-testing-report-3.673.2.md`): the three fixes work live (Guarded's heal across clients, the Sash on a forced save, one card per rune timer). F3 (core, cosmetic): "Includes critical bonus dice" printed when Guarded had kept the dice off; fixed as **core 3.673.3** (`verify-block9-core` 73, `mutate-block9-core` 103/103; full sweep 651/651).
-- **Pushed, 27 Oct (Graham: "Put the fix in first and then push"):** core 3.673.0 to 3.673.3 as four commits on main; module 0.10.2 (Block 9 with 0.10.1 and 0.10.2) as one commit. **GitHub releases not yet created** (refused by the session's permission check): v3.673.0 to v3.673.3 and v0.10.2, each with its zip, are still to be made.
+- **Pushed, 27 Oct (Graham: "Put the fix in first and then push"):** core 3.673.0 to 3.673.3 as four commits on main; module 0.10.2 (Block 9 with 0.10.1 and 0.10.2) as one commit. Each repo's "Publish Foundry …" workflow published the release for the pushed head (v3.673.3, latest; v0.10.2), as for earlier blocks; the intermediate 3.673.0 to 3.673.2 have commits but no release of their own. A cloud session cannot create releases itself (GitHub answers 403), and needs not: pushing main is the release step.
 
 ## Earlier — 26 Oct 2026 (session 7: Block 9 built)
 
