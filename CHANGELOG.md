@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.10.2 — 27 Oct 2026 (Graham's answers on two items)
+
+Needs **TRG Prime 3.673.0**. See `docs/RELEASE_NOTES_0.10.2.md`.
+
+- **Harmonious Do-maru: DB +1** (Potency I applies) and **Spiritblade: fumble DC 11**, both as built; the GM notes record the rulings.
+- **Harness:** `verify-block9` 84, `mutate-block9` 96; Blocks 3 to 9 and the weapons re-pinned to 0.10.2.
+
+## 0.10.1 — 27 Oct 2026 (fix from the 0.10.0 live test)
+
+Needs **TRG Prime 3.673.0**. See `docs/RELEASE_NOTES_0.10.1.md`.
+
+- **The Sash of Serenity on a forced save:** a kind chosen at the Use (Fortitude, Reflex or Will) is now taken on the next save of that kind, forced or not, and spent. "Any one save" stays a tick-box on saves rolled from the sheet.
+- **Harness:** `verify-block9` 83, `mutate-block9` 94; Blocks 3 to 9 and the weapons re-pinned to 0.10.1.
+
+## 0.10.0 — 26 Oct 2026 (Block 9: armour, magic items and aging)
+
+Needs **TRG Prime 3.673.0**. Rulings B9-1 to B9-11 and interpretations 1–8 (`docs/INNER_TEMPEST_RULINGS_2026-10-26-B9.md`). See `docs/RELEASE_NOTES_0.10.0.md`.
+
+- **Chapter 6's armour:** nine pieces in a new Armour pack; the Do-maru covers the torso and legs only (B9-1).
+- **Chapter 9's runes:** eleven, every tier (Centred twice, armour and weapon), registered with the system: Centred, Guarded, Harmony, Graceful Wind, Karmic Resilience, Staunching, Harmony Edge, Mindful (its printed effect, B9-4 corrected), Soulful Strike, Tranquil Quiver.
+- **The Harmonious Do-maru and the Spiritblade**, and **six wondrous items** with their Uses; **Incense** for the burner.
+- **Monastic Items:** Create through Meditation with Inner Discipline (B9-5).
+- **The Appendix's aging:** a world setting, the age category from the sheet's age and race, the GM's Natural Lifespan, Age Resistance read (B9-10, B9-11).
+- **Harness:** new `verify-block9` 82 checks, `mutate-block9` 91 mutations; seven review findings fixed (see the release notes); Blocks 1 to 8 and the weapons re-pinned to 0.10.0 and 3.673.0.
+
 ## 0.9.1 — 26 Oct 2026 (fixes from the 0.9.0 live test)
 
 Needs **TRG Prime 3.672.0**. See `docs/RELEASE_NOTES_0.9.1.md`.

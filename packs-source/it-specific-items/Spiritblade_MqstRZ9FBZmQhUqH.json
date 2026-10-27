@@ -1,0 +1,101 @@
+{
+  "_id": "MqstRZ9FBZmQhUqH",
+  "name": "Spiritblade",
+  "img": "systems/trg-prime/assets/weapons/katana.png",
+  "type": "weapon",
+  "system": {
+    "quantity": 1,
+    "weight": 8,
+    "price": 31000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Brace, Deadly, Exotic, Keen, Versatile P, Balanced, Centred II, Potency III, Soulful II",
+    "description": "<p><strong>ALTERATION INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 14; <strong>Price</strong> 31,000 gp; <strong>Usage</strong> held weapon; <strong>Weight</strong> 8 lbs</p>\n<p><em>This wonderfully crafted Nodachi is engraved with symbols of animals.</em></p>\n<p>The weapon has the following statistics:</p>\n<p><strong>AB</strong> +15; <strong>Damage</strong> 1d10+2 S; <strong>Size</strong> L; <strong>Fumble</strong> 3; <strong>Traits</strong> Balanced, Brace, Centred II, Deadly, Keen, Potency III, Soulful II, Versatile P</p>\n<p><strong>Activate</strong> Command (1 AP); <strong>Frequency</strong> Upon a successful critical hit.</p>\n<p>The weapon casts a Fear (DC 20) spell on the target of the critical hit.</p>\n<p><em>Automated:</em> a specific weapon (B9-8): a Master Nodachi (the printed 1d10+2 is its die and Master's +2) with the superior trait Balanced and Potency III, Centred II and Soulful Strike II; its attack bonus is what the sheet derives, and its fumble DC is the Nodachi's 12, less 1 for Balanced. On a critical hit you are offered Fear (DC 20) on the creature struck (Command, 1 AP), as Da Big Itter's Fear is. Soulful Strike II is switched on and off on the weapon (Command, 1 AP).</p>\n<p><em>Note for the GM:</em> the book prints \"Fumble 3\"; it is read as the Nodachi's own fumble DC (B9-8). Graham ruled on 27 October 2026 that Balanced still takes 1 from it, so the fumble DC is 11.</p>",
+    "attackBonus": 0,
+    "damage": "1d10",
+    "damageType": "slashing",
+    "baseDamage": 0,
+    "hands": 1,
+    "range": "",
+    "armourRending": 0,
+    "proficiency": "",
+    "fumbleDC": 12,
+    "attackMode": "melee",
+    "rangeIncrement": 0,
+    "group": "Sword",
+    "category": "Exotic",
+    "size": "large",
+    "itemLevel": 14,
+    "quality": "master",
+    "material": "",
+    "superiorTraits": "Balanced",
+    "runes": "Potency III, Centred II, Soulful Strike II"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "specificItem": {
+        "runes": [
+          {
+            "key": "potency",
+            "label": "Potency",
+            "tier": 3,
+            "printed": "Potency III"
+          },
+          {
+            "key": "centredWeapon",
+            "label": "Centred",
+            "tier": 2,
+            "printed": "Centred II"
+          },
+          {
+            "key": "soulfulStrike",
+            "label": "Soulful Strike",
+            "tier": 2,
+            "printed": "Soulful II"
+          }
+        ],
+        "runeText": "Potency III, Centred II, Soulful Strike II",
+        "traits": [
+          "Balanced",
+          "Brace",
+          "Centred II",
+          "Deadly",
+          "Keen",
+          "Potency III",
+          "Soulful II",
+          "Versatile P"
+        ],
+        "quality": "master",
+        "material": "",
+        "printedItemBonus": 3,
+        "onCritical": {
+          "spell": "Fear",
+          "dc": 20,
+          "ap": 1
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MqstRZ9FBZmQhUqH"
+}

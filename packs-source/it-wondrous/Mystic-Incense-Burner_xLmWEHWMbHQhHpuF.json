@@ -1,0 +1,207 @@
+{
+  "_id": "xLmWEHWMbHQhHpuF",
+  "name": "Mystic Incense Burner",
+  "img": "icons/svg/item-bag.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 10,
+    "price": 5000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Warding",
+    "description": "<p><strong>INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 8; <strong>Price</strong> 5,000 gp; <strong>Usage</strong> worn; <strong>Weight</strong> 10 lbs</p>\n<p><em>An ornate incense burner with a fragrant blend of rare herbs and resins. When the incense is lit, it releases a calming aroma.</em></p>\n<p>When the Mystic Incense Burner is lit and placed in a room, it creates an aura of tranquillity. All creatures within a 30-foot radius gain a +1-resistance bonus to Will saves against fear and charm effects while they remain in the area. Furthermore, all creatures in the area of effect also gain a +2-status bonus to Meditation skill checks. The incense will burn for 1 hour after which it must be replenished.</p>\n<p>Incense for the burner is a common level 0 item which can be purchased for 5 gp per use</p>\n<p><em>Automated:</em> its Use burns one Incense from your gear and lights it for 1 hour (B9-7): every creature within 30 feet of you, you included, gains +1 resistance to Will saves against fear and charm (automatic where the save's traits say so, offered otherwise) and +2 status to Meditation, offered on the check (interpretation 3). Use it again while it burns to put it out.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 8,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "wondrous": {
+        "base": "",
+        "tier": "",
+        "slotInferred": false,
+        "activate": "",
+        "frequency": "",
+        "abilities": [
+          {
+            "kind": "use",
+            "automation": "incenseBurner",
+            "activation": "",
+            "frequency": "atWill",
+            "label": "Light the Incense"
+          }
+        ]
+      },
+      "auras": [
+        {
+          "id": "mystic-incense-burner",
+          "name": "Mystic Incense Burner",
+          "kind": "ally",
+          "radius": 30,
+          "triggers": [
+            "turnStart",
+            "enter"
+          ],
+          "save": "",
+          "appliesTo": "All creatures",
+          "outcomes": {},
+          "immunitySeconds": 0,
+          "whileState": "lit",
+          "includeSelf": true,
+          "text": "AURA — while the incense burns, every creature within 30 feet gains +1 resistance to Will saves against fear and charm, and +2 status to Meditation.",
+          "allyEffect": {
+            "conditionals": [
+              {
+                "kind": "modifier",
+                "value": 1,
+                "type": "resistance",
+                "label": "Mystic Incense Burner",
+                "scope": "Will saves against fear and charm effects",
+                "auto": true,
+                "when": {
+                  "checkTypes": [
+                    "save"
+                  ],
+                  "subjects": [
+                    "will"
+                  ],
+                  "traits": [
+                    "fear",
+                    "charm"
+                  ]
+                }
+              },
+              {
+                "kind": "modifier",
+                "value": 1,
+                "type": "resistance",
+                "label": "Mystic Incense Burner (the table decides)",
+                "scope": "Will saves against fear and charm effects",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "save"
+                  ],
+                  "subjects": [
+                    "will"
+                  ],
+                  "not": {
+                    "traits": [
+                      "fear",
+                      "charm"
+                    ]
+                  }
+                }
+              },
+              {
+                "kind": "modifier",
+                "value": 2,
+                "type": "status",
+                "label": "Mystic Incense Burner",
+                "scope": "Meditation checks, while in the room with the burning incense",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "skill"
+                  ],
+                  "subjects": [
+                    "meditation"
+                  ]
+                }
+              }
+            ]
+          },
+          "enemyEffect": {
+            "conditionals": [
+              {
+                "kind": "modifier",
+                "value": 1,
+                "type": "resistance",
+                "label": "Mystic Incense Burner",
+                "scope": "Will saves against fear and charm effects",
+                "auto": true,
+                "when": {
+                  "checkTypes": [
+                    "save"
+                  ],
+                  "subjects": [
+                    "will"
+                  ],
+                  "traits": [
+                    "fear",
+                    "charm"
+                  ]
+                }
+              },
+              {
+                "kind": "modifier",
+                "value": 1,
+                "type": "resistance",
+                "label": "Mystic Incense Burner (the table decides)",
+                "scope": "Will saves against fear and charm effects",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "save"
+                  ],
+                  "subjects": [
+                    "will"
+                  ],
+                  "not": {
+                    "traits": [
+                      "fear",
+                      "charm"
+                    ]
+                  }
+                }
+              },
+              {
+                "kind": "modifier",
+                "value": 2,
+                "type": "status",
+                "label": "Mystic Incense Burner",
+                "scope": "Meditation checks, while in the room with the burning incense",
+                "auto": false,
+                "when": {
+                  "checkTypes": [
+                    "skill"
+                  ],
+                  "subjects": [
+                    "meditation"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xLmWEHWMbHQhHpuF"
+}

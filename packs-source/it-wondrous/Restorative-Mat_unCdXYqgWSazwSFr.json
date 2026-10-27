@@ -1,0 +1,82 @@
+{
+  "_id": "unCdXYqgWSazwSFr",
+  "name": "Restorative Mat",
+  "img": "icons/svg/item-bag.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 20,
+    "price": 8000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Soul",
+    "description": "<p><strong>INVESTED SOUL</strong></p>\n<p><strong>Level</strong> 10; <strong>Price</strong> 8,000 gp; <strong>Usage</strong> sat upon (1 medium creature max); <strong>Weight</strong> 20 lbs</p>\n<p><em>This simple, woven mat is embroidered with tranquil patterns.</em></p>\n<p>When making Meditation checks whilst sat upon the mat, you gain a +2-status bonus to the check. Furthermore, you may once per day gain the benefit of either a Cure or Restoration spell (8 PP) by meditating on the mat for 10 minutes.</p>\n<p><em>Automated:</em> +2 status is offered on Meditation checks while it is in use (equipped); tick it when you sit on it (interpretation 3). Its Use (10 minutes, once a day, not in an encounter) releases Cure or Restoration at 8 PP from the mat, as an item's spell: none of your own PP. Target yourself.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 10,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "wondrous": {
+        "base": "",
+        "tier": "",
+        "slotInferred": false,
+        "activate": "",
+        "frequency": "",
+        "abilities": [
+          {
+            "kind": "use",
+            "automation": "restorativeMat",
+            "activation": "Meditate (10 minutes)",
+            "frequency": "daily",
+            "label": "Restorative Meditation"
+          }
+        ]
+      },
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "value": 2,
+          "type": "status",
+          "label": "Restorative Mat",
+          "scope": "Meditation checks made whilst sat upon the mat",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "meditation"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!unCdXYqgWSazwSFr"
+}

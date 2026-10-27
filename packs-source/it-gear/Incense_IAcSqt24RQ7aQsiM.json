@@ -1,0 +1,52 @@
+{
+  "_id": "IAcSqt24RQ7aQsiM",
+  "name": "Incense",
+  "img": "icons/svg/fire.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "",
+    "description": "<p>Incense for the burner is a common level 0 item which can be purchased for 5 gp per use</p>\n<p><em>Automated:</em> one is burned each time the Mystic Incense Burner is lit (its Use).</p>",
+    "slot": "",
+    "uses": {
+      "value": 0,
+      "max": 0
+    },
+    "itemSize": "T",
+    "itemLevel": 0,
+    "heldHands": 0,
+    "formulae": "",
+    "gearCategory": "Goods",
+    "gearCategoryInferred": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IAcSqt24RQ7aQsiM"
+}

@@ -1,0 +1,54 @@
+{
+  "_id": "SmvGiKCbEKT4m02R",
+  "name": "Yoroi",
+  "img": "systems/trg-prime/assets/armour/full-platemail.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 45,
+    "price": 650,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 100,
+      "max": 100
+    },
+    "traits": "Full, Helm, Metal, Rigid",
+    "description": "<p><strong>Heavy</strong>; <strong>Lvl</strong> 3; <strong>Price</strong> 650 gp; <strong>ACP</strong> -7; <strong>MAX DEX</strong> 2; <strong>DR</strong> 6; <strong>HP</strong> 100; <strong>Speed</strong> -5; <strong>Wt.</strong> 45 lbs; <strong>Traits</strong> Full, Helm, Metal, Rigid</p>\n<p>Yoroi is a formidable combat armour, meticulously tailored with an array of supplementary elements that incorporate both plate and lamellar components. Each suit of this armour is uniquely crafted to align with its owner's aesthetic preferences. Following its construction, the armour is adorned with vivid colours and sealed with a final lacquer finish. The focal point of this armour is its cuirass, comprising two distinct sections—a dedicated reinforcement known as a waidate for the right side, and a kikko cuirass. The upper portion of the waidate features an iron plate concealed beneath leather, while the cuirass's shoulder straps, referred to as watagami, are fortified with metal plates. Further enhancements include broad lamellar shoulder guards, a kikko sleeve for the shield arm, iron greaves lacquered over padded silk leggings, and a groin protector. A defining feature of each suit is its tiered kabuto helmet, accompanied by a fearsome ho-ate mask. These masks, crafted from hardened leather or metal, often depict formidable visages such as oni, dragons, or other legendary creatures.</p>\n<p><em>Automated:</em> Full and Helm: it covers the torso, arms, legs and head, and its helm's −1 item penalty to Perception is the system's own (Helm).</p>",
+    "category": "Heavy",
+    "material": "Metal",
+    "isHelmet": true,
+    "dr": 6,
+    "hardness": 0,
+    "penalty": -7,
+    "proficiency": "",
+    "maxDexBonus": 2,
+    "speedPenalty": -5,
+    "itemLevel": 3,
+    "coversTorso": true,
+    "coversArms": true,
+    "coversLegs": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SmvGiKCbEKT4m02R"
+}

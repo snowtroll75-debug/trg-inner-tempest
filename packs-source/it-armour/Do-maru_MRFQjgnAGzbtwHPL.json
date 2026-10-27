@@ -1,0 +1,54 @@
+{
+  "_id": "MRFQjgnAGzbtwHPL",
+  "name": "Do-maru",
+  "img": "systems/trg-prime/assets/armour/lamellar.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 20,
+    "price": 200,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 50,
+      "max": 50
+    },
+    "traits": "Full",
+    "description": "<p><strong>Medium</strong>; <strong>Lvl</strong> 1; <strong>Price</strong> 200 gp; <strong>ACP</strong> -2; <strong>MAX DEX</strong> 5; <strong>DR</strong> 3; <strong>HP</strong> 50; <strong>Speed</strong> 0; <strong>Wt.</strong> 20 lbs; <strong>Traits</strong> Full</p>\n<p>Among the preferred choices for martial characters seeking agility, the do-maru is the lightest of armours. This protective garment envelops the wearer's form akin to a short, armoured coat. It primarily comprises lamellar components, omitting a solid breastplate or sleeves. While this design leaves the shoulders and upper body somewhat exposed, it affords the wearer an enhanced range of motion compared to many bulkier armour options.</p>\n<p>Be aware that this armour is ineffective against critical strikes to the shoulders.</p>\n<p><em>Automated:</em> Full, but not the arms (B9-1): it covers the torso and the legs, so a critical to the arms, where the shoulders are, reads the unarmoured row.</p>",
+    "category": "Medium",
+    "material": "",
+    "isHelmet": false,
+    "dr": 3,
+    "hardness": 0,
+    "penalty": -2,
+    "proficiency": "",
+    "maxDexBonus": 5,
+    "speedPenalty": 0,
+    "itemLevel": 1,
+    "coversTorso": true,
+    "coversArms": false,
+    "coversLegs": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MRFQjgnAGzbtwHPL"
+}

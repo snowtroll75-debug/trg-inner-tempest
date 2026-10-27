@@ -1,0 +1,56 @@
+{
+  "_id": "gghHEGAHch6Oun7g",
+  "name": "Centred II (Armour)",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 4200,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Alteration, Invested",
+    "description": "<p><strong>ALTERATION INVESTED</strong></p>\n<p><strong>Usage</strong> inscribed onto armour; <strong>Requirement</strong> wielder has at least one ability with the Focus trait</p>\n<p><em>This rune steadies the wearer's concentration and makes expended abilities easier to restore.</em></p>\n<p>You gain an item bonus to Refocus (Mental Focus) checks based upon the level of the rune.</p>\n<p><strong>CENTRED II</strong></p>\n<p><strong>Level</strong> 8; <strong>Price</strong> 4,200 gp</p>\n<p>The bonus is +2.</p>\n<p><em>On the sheet:</em> Applied automatically: the item bonus is pre-ticked on every Refocus. Without a Focus ability there is no Refocus to add it to (interpretation 2).</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 8,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "centredArmour",
+        "tier": 2,
+        "on": [
+          "armour"
+        ],
+        "automation": "conditional"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gghHEGAHch6Oun7g"
+}

@@ -1723,5 +1723,165 @@
     "status": "Implemented",
     "achieved": "A",
     "note": "Spell attack, 4d4 bludgeoning; pushed 5 feet away on a serious or deadly critical."
+  },
+  "GE-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Shipped with the backgrounds (Block 1) and the classes (Blocks 3 and 4): each background's and class's wealth modifier, read by TRG Prime's starting wealth."
+  },
+  "AR-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Federated armour pack it-armour (core Armour pack fields)."
+  },
+  "AR-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 circumstance offered on Hide (Stealth) while worn; the shadows are the GM's (interpretation 1)."
+  },
+  "AR-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "AR-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Full but not the arms (B9-1): torso and legs, so an arm critical reads the unarmoured row."
+  },
+  "AR-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "AR-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": ""
+  },
+  "AR-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Full and Helm: torso, arms, legs and head; the helm's -1 Perception is the core's Helm rule."
+  },
+  "AR-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "A helmet; +1 item offered on Intimidate while worn, ticked when visual (interpretation 1)."
+  },
+  "AR-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "A helmet, read by the critical table's head location."
+  },
+  "MI-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Registered rune centredArmour (TRG Prime 3.673.0 C12, a value by tier): +1/+2/+3 item, pre-ticked on Refocus."
+  },
+  "MI-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "criticalGuard (3.673.0 C4): asked of the wearer's player before the damage; the critical's extra dice are not dealt and half is healed."
+  },
+  "MI-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Engage button (Focus): 1 minute of +2 dodge DB and +2 resistance to saves, +3 for a Disciple or Mystic (C3); Refocus restores."
+  },
+  "MI-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Engage button (1/day): 1 minute of +30 ft status land Speed and +2 resistance Reflex."
+  },
+  "MI-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Rune death guard (C1): asked of the wearer's player at 0 HP (reaction, 1/day, not against massive damage); 1 HP, and +2/+4 circumstance to dying checks for 1 minute."
+  },
+  "MI-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "bleedFlatCheckReduction 2/3/4 and the DC 16 flat check on Moderate (II) or any (III) bleeding (C2)."
+  },
+  "MI-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Specific armour: an Expert Do-maru with Potency I and Harmony at the printed figures (B9-9). The printed DB +0 against Potency I's +1 is noted for the GM."
+  },
+  "MI-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Registered rune centredWeapon: its own ladder (C12)."
+  },
+  "MI-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "criticalAdvantage (C5): asked before the injury roll; advantage, cancelling a minor critical's disadvantage (B9-3)."
+  },
+  "MI-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "The v1.2 text is printed (beside an image; the audit's B9-4 misread it): Engage (Focus) offers +Wisdom on the next attack roll, spent when ticked, lifted at your next turn (3.673.0 C7b)."
+  },
+  "MI-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "A registered energy rune (C6): Command on and off; 1d6/2d6/3d6 force, secondary critical -40/-20 at II/III (B9-2)."
+  },
+  "MI-12": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Engage (Focus): +2 status to the next ranged attack and a 1d6 precision rider beyond 30 ft (C7), spent by that Strike."
+  },
+  "MI-13": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Specific weapon: a Master Nodachi (1d10 bare, B9-8) with Balanced, Potency III, Centred II and Soulful Strike II; Fear (DC 20) offered on a critical (Command, 1 AP)."
+  },
+  "MI-14": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Invested +1 status Wisdom; its Use readies advantage on the next Refocus that day (interpretation 4)."
+  },
+  "MI-15": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use (Interact, 2 AP, daily): temp HP = level, fear and charm effects end, advantage on such saves for 1 hour; a second elixir in a day from any bottle rolls a serious poison critical first (B9-6)."
+  },
+  "MI-16": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "baseDR 1 and runeBearing armour (runes only with no body armour); 'cannot be worn with armour' is the table's."
+  },
+  "MI-17": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Use burns one Incense and lights it for 1 hour; a 30-ft aura while lit (C9, B9-7) for every creature: +1 resistance Will vs fear/charm, +2 status Meditation offered."
+  },
+  "MI-18": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "+2 status Meditation offered while in use; Use (10 minutes, daily) releases Cure or Restoration at 8 PP from the mat (3.673.0 C11)."
+  },
+  "MI-19": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Invested +1 dodge DB; +2 resistance vs fear; Use (daily): a minute's advantage on one save, offered and spent when ticked."
+  },
+  "MI-20": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "registerCreateRoute (C8): Meditation through Create for a holder of Inner Discipline, +2 DC, the item types Magical; the technique/innate spell, the no-charged-item rule and the normal requirements are ticks (B9-5)."
+  },
+  "AP-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "World setting 'Aging (Appendix)', on by default (B9-10): an 'Age: <Category>' effect from the sheet's age and race; the GM's Natural Lifespan on the sheet; Age Resistance suppresses the physical penalties; HP and the skill budget untouched (C10, B9-11); the GM is told when a lifespan is reached."
+  },
+  "AP-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "The Racial Age Categories table as data (module/aging.mjs), checked against the book."
   }
 }

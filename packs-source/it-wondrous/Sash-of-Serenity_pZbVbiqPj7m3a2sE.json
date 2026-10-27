@@ -1,0 +1,107 @@
+{
+  "_id": "pZbVbiqPj7m3a2sE",
+  "name": "Sash of Serenity",
+  "img": "icons/svg/item-bag.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 5000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Warding",
+    "description": "<p><strong>INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 8; <strong>Price</strong> 5,000 gp; <strong>Usage</strong> worn; <strong>Weight</strong> -</p>\n<p><em>A simple, silk sash adorned with embroidered mantras of inner peace.</em></p>\n<p>When invested, the Sash of Serenity grants a +1-dodge bonus to DB and a +2-resistance bonus to saving throws against fear effects. Once per day, you can enter a state of serenity for 1 minute, gaining advantage on one saving throw of your choice during that time.</p>\n<p><em>Automated:</em> invested, +1 dodge DB; +2 resistance on saves against fear (automatic where the save's traits say so, offered otherwise). Its Use (once a day): for 1 minute, advantage on one save. Choose a kind (Fortitude, Reflex or Will) and it is taken on your next save of that kind, forced or not; choose any save, and it is offered on the saves you roll from the sheet and spent on the one you tick.</p>",
+    "slot": "waist",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 8,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "wondrous": {
+        "base": "",
+        "tier": "",
+        "slotInferred": true,
+        "activate": "",
+        "frequency": "",
+        "abilities": [
+          {
+            "kind": "dbBonus",
+            "value": 1,
+            "bonusType": "dodge",
+            "target": "system.combat.defence",
+            "label": "Sash of Serenity"
+          },
+          {
+            "kind": "use",
+            "automation": "sashSerenity",
+            "activation": "",
+            "frequency": "daily",
+            "label": "Serenity"
+          }
+        ]
+      },
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "value": 2,
+          "type": "resistance",
+          "label": "Sash of Serenity",
+          "scope": "Saving throws against fear effects",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "traits": [
+              "fear"
+            ]
+          }
+        },
+        {
+          "kind": "modifier",
+          "value": 2,
+          "type": "resistance",
+          "label": "Sash of Serenity (the table decides)",
+          "scope": "Saving throws against fear effects",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "save"
+            ],
+            "not": {
+              "traits": [
+                "fear"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!pZbVbiqPj7m3a2sE"
+}

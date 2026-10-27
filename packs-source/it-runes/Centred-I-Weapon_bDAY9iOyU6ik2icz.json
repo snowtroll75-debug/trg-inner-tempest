@@ -1,0 +1,56 @@
+{
+  "_id": "bDAY9iOyU6ik2icz",
+  "name": "Centred I (Weapon)",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 350,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Alteration, Invested",
+    "description": "<p><strong>ALTERATION INVESTED</strong></p>\n<p><strong>Usage</strong> any weapon; <strong>Requirement</strong> wielder has at least one ability with the Focus trait</p>\n<p><em>This rune steadies the wielder's concentration and supports precise recovery between techniques.</em></p>\n<p>You gain an item bonus to Refocus (Mental Focus) checks based upon the level of the rune.</p>\n<p><strong>CENTRED I</strong></p>\n<p><strong>Level</strong> 3; <strong>Price</strong> 350 gp</p>\n<p>The bonus is +1.</p>\n<p><em>On the sheet:</em> Applied automatically while the weapon is wielded: the item bonus is pre-ticked on every Refocus. It does not stack with armour's Centred (both are item bonuses).</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 3,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "centredWeapon",
+        "tier": 1,
+        "on": [
+          "weapon"
+        ],
+        "automation": "conditional"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!bDAY9iOyU6ik2icz"
+}

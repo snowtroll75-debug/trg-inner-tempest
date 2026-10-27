@@ -1,0 +1,54 @@
+{
+  "_id": "BtP7Msc1PGAy6pMn",
+  "name": "Tatami-Do",
+  "img": "systems/trg-prime/assets/armour/banded.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 40,
+    "price": 350,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 80,
+      "max": 80
+    },
+    "traits": "Full, Metal, Rigid",
+    "description": "<p><strong>Heavy</strong>; <strong>Lvl</strong> 2; <strong>Price</strong> 350 gp; <strong>ACP</strong> -6; <strong>MAX DEX</strong> 3; <strong>DR</strong> 4; <strong>HP</strong> 80; <strong>Speed</strong> -5; <strong>Wt.</strong> 40 lbs; <strong>Traits</strong> Full, Metal, Rigid</p>\n<p>Tatami-do represents a comprehensive field armour, seamlessly merging elements of metal lamellar and kikko to form a unique suit of mail featuring a sturdy cloth backing. Typically, this armour ensemble encompasses additional components, such as a collapsible kabuto helmet or a reinforced hood, in addition to protective arm, shoulder, and thigh guards.</p>",
+    "category": "Heavy",
+    "material": "Metal",
+    "isHelmet": false,
+    "dr": 4,
+    "hardness": 0,
+    "penalty": -6,
+    "proficiency": "",
+    "maxDexBonus": 3,
+    "speedPenalty": -5,
+    "itemLevel": 2,
+    "coversTorso": true,
+    "coversArms": true,
+    "coversLegs": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BtP7Msc1PGAy6pMn"
+}

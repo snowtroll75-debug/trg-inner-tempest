@@ -1,0 +1,56 @@
+{
+  "_id": "7G0VDLPgn7Ttl1Fw",
+  "name": "Guarded",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 3000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Soul",
+    "description": "<p><strong>INVESTED SOUL</strong></p>\n<p><strong>Level</strong> 7; <strong>Price</strong> 3,000 gp; <strong>Usage</strong> inscribed onto armour; <strong>Activate</strong> Reaction; <strong>Trigger</strong> the wielder takes a critical hit; <strong>Frequency</strong> 1/day</p>\n<p><em>This rune allows you to lessen the damage from the most lethal of attacks.</em></p>\n<p>You negate the additional HP damage inflicted by the critical hit and are immediately healed an amount of HP equal to half of this amount (round up).</p>\n<p><em>On the sheet:</em> Asked of the wearer's player when a critical hit lands, before the damage is rolled (a reaction, once a day): the critical's extra dice are not dealt, and half of what they rolled is healed, rounded up.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 7,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "guarded",
+        "tier": 1,
+        "on": [
+          "armour"
+        ],
+        "automation": "event"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!7G0VDLPgn7Ttl1Fw"
+}

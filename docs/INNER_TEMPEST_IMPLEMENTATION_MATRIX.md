@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` by `tools/inventory/build-docs.m
 
 **Source:** TRG_Inner_Tempest_1_2.docx (v1.2), rulings of 20 Oct 2026. **Target system:** TRG Prime 3.664.0 + the remaining core dependencies in INNER_TEMPEST_CORE_DEPENDENCIES.md.
 
-**408 features inventoried.** Target automation (with core dependencies): A 242 · B 135 · C 16 · D 15. Blocked on a Critical ruling: 0. Implemented: 342. In progress: 3. Tested live: 0.
+**409 features inventoried.** Target automation (with core dependencies): A 243 · B 135 · C 16 · D 15. Blocked on a Critical ruling: 0. Implemented: 374. In progress: 3. Tested live: 0.
 
 Legend:
 - **Automation:** A = fully automated · B = automated with a user decision · C = partially automated (justified in the Automation Report) · D = manual or descriptive (justified).
@@ -427,16 +427,16 @@ Legend:
 
 | ID | Chapter | Feature | Category | Mechanics | Dependencies | Automation | Implementation | Validation | Blocker | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| GE-01 | Ch6 p67 | Starting wealth (background & class tables) | Rule | Background & class wealth modifiers | registerClass wealth; background wealth field | A | data fields | Rule-level harness checks + live scenario | — | Not started |
-| AR-01 | Ch6 p67 | Haramaki | Armour | Light L0 5 gp ACP 0 MaxDex 10 DR 1 HP 10 1 lb | federated armour | A | PACK:it-armour | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-02 | Ch6 p67 | Shozoku | Armour | Light L1 100 gp DR 0 HP 8; +2 circ Hide in shadows | COND | B | PACK + COND ticked | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-03 | Ch6 p67 | Kikko | Armour | Medium L1 150 gp ACP -2 MD 5 DR 3 HP 40 25 lb Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-04 | Ch6 p67 | Do-maru | Armour | Medium L1 200 gp ACP (-)2 MD 5 DR 3 HP 50 20 lb Full; shoulder crits ignore it | core hit location coverage | A | PACK coversArms:false | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-05 | Ch6 p67 | Kusari | Armour | Medium L2 350 gp ACP -3 MD 4 DR 4 HP 70 40 lb Full Metal | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-06 | Ch6 p67 | Tatami-Do | Armour | Heavy L2 350 gp ACP -6 MD 3 DR 4 HP 80 -5 ft 40 lb Full Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-07 | Ch6 p67 | Yoroi | Armour | Heavy L3 650 gp ACP -7 MD 2 DR 6 HP 100 -5 ft 45 lb Full Helm Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-08 | Ch6 p67 | Oni-Mask | Armour (helm) | L1 200 gp HP 25 8 lb Metal Rigid; +1 item visual Intimidate | isHelmet; COND | A | PACK + COND | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
-| AR-09 | Ch6 p67 | Jingasa | Armour (helm) | L0 20 gp HP 10 4 lb Metal | isHelmet | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Not started |
+| GE-01 | Ch6 p67 | Starting wealth (background & class tables) | Rule | Background & class wealth modifiers | registerClass wealth; background wealth field | A | data fields | Rule-level harness checks + live scenario | — | Implemented (A) |
+| AR-01 | Ch6 p67 | Haramaki | Armour | Light L0 5 gp ACP 0 MaxDex 10 DR 1 HP 10 1 lb | federated armour | A | PACK:it-armour | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-02 | Ch6 p67 | Shozoku | Armour | Light L1 100 gp DR 0 HP 8; +2 circ Hide in shadows | COND | B | PACK + COND ticked | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-03 | Ch6 p67 | Kikko | Armour | Medium L1 150 gp ACP -2 MD 5 DR 3 HP 40 25 lb Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-04 | Ch6 p67 | Do-maru | Armour | Medium L1 200 gp ACP (-)2 MD 5 DR 3 HP 50 20 lb Full; shoulder crits ignore it | core hit location coverage | A | PACK coversArms:false | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-05 | Ch6 p67 | Kusari | Armour | Medium L2 350 gp ACP -3 MD 4 DR 4 HP 70 40 lb Full Metal | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-06 | Ch6 p67 | Tatami-Do | Armour | Heavy L2 350 gp ACP -6 MD 3 DR 4 HP 80 -5 ft 40 lb Full Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-07 | Ch6 p67 | Yoroi | Armour | Heavy L3 650 gp ACP -7 MD 2 DR 6 HP 100 -5 ft 45 lb Full Helm Metal Rigid | .. | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-08 | Ch6 p67 | Oni-Mask | Armour (helm) | L1 200 gp HP 25 8 lb Metal Rigid; +1 item visual Intimidate | isHelmet; COND | A | PACK + COND | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
+| AR-09 | Ch6 p67 | Jingasa | Armour (helm) | L0 20 gp HP 10 4 lb Metal | isHelmet | A | PACK | Pack stats vs table; DR/ACP/MaxDex applied when worn; traits | — | Implemented (A) |
 | WP-01 | Ch6 p69 | Hanbo | Weapon | Simple 1 gp 1d6 B M FDC 6 Club; Monastic, Trip | federated weapons | A | PACK:it-weapons | Pack stats vs table; attack/damage/traits; proficiency by class | — | Implemented (A) |
 | WP-02 | Ch6 p69 | Katar | Weapon | Simple 6 gp 1d4 P S FDC 8 Knife; Agile, Deadly, Monastic, Uncommon | .. | A | PACK | Pack stats vs table; attack/damage/traits; proficiency by class | — | Implemented (A) |
 | WP-03 | Ch6 p69 | Bo Staff | Weapon | Martial 1 gp 1d8 B L FDC 12 Club; Monastic, Parry, Reach, Trip | .. | A | PACK | Pack stats vs table; attack/damage/traits; proficiency by class | — | Implemented (A) |
@@ -493,30 +493,31 @@ Legend:
 
 | ID | Chapter | Feature | Category | Mechanics | Dependencies | Automation | Implementation | Validation | Blocker | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| MI-01 | Ch9 p79 | Centred I/II/III (armour rune) | Rune | Item bonus +1/+2/+3 to Refocus; L4/8/12; 750/4,200/16,000 gp | registerRunes; COND actions:refocus | A | PACK:it-runes + COND | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-02 | Ch9 p80 | Guarded (armour rune) | Rune | L7 3,000 gp; R on crit 1/day: negate extra crit damage, heal half | crit hook | B | registerRunes + hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-03 | Ch9 p80 | Harmony (armour/shield rune) | Rune | L11; Focus Engage 1 AP: +2 dodge DB & +2 resistance saves 1 min (+3 Disciple/Mystic); Refocus | rune focus frequency (core) | A | registerRunes frequency:"focus" | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Not started |
-| MI-04 | Ch9 p80 | Graceful Wind (armour rune) | Rune | L6 2,500 gp; 1/day Engage: +30 status Speed & +2 resistance Reflex 1 min | registerRunes | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-05 | Ch9 p80 | Karmic Resilience (armour rune) | Rune | L11 11,000 gp; R on gaining dying 1/day: 1 HP, no dying, no crit; +2/+4 circ dying checks 1 min | dying hook | B | hook (core death-guard pattern) | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-06 | Ch9 p80 | Staunching I/II/III (armour rune) | Rune | Bleeding flat checks 14/13/12; moderate/any DC 16 | core bleeding flat check | A | registerRunes flag | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-07 | Ch9 p80 | Harmonious Do-maru | Specific armour | L11 13,000 gp; ACP -1 MD 7 DR 3 HP 55; Expert, Full, Lightweight, Potency I, Harmony | specific-items | A | PACK:it-specific-items | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-08 | Ch9 p81 | Centred I/II/III (weapon rune) | Rune | Item bonus +1/+2/+3 to Refocus; L3/6/10; 350/1,400/6,000 gp | registerRunes | A | PACK | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-09 | Ch9 p81 | Harmony Edge (weapon rune) | Rune | L12 11,000 gp; R on crit 1/day: advantage on the critical roll | crit hook | B | hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-10 | Ch9 p81 | Mindful (weapon rune) | Rune | L10 6,000 gp; Focus Engage: +Wis to next attack before next turn; Refocus | pending modifier | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Not started |
-| MI-11 | Ch9 p81 | Soulful Strike I/II/III (weapon rune) | Rune | L7/12/17; Command 1 AP: secondary force 1d6/2d6/3d6; secondary crit -3/-1 | RIDER | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-12 | Ch9 p81 | Tranquil Quiver (weapon rune) | Rune | L10 6,000 gp; Focus Engage: next ranged +2 status; >30 ft +1d6 precision | pending mod + RIDER | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Not started |
-| MI-13 | Ch9 p81 | Spiritblade | Specific weapon | L14 31,000 gp Nodachi; Centred II, Potency III, Soulful II...; on crit: Fear DC 20 | crit hook; innatePrinted | B | PACK + hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-14 | Ch9 p82 | Enlightened Prayer Beads | Wondrous | L6 2,000 gp; +1 status Wis; 1/day advantage on Refocus | AE + COND daily | A | PACK:it-wondrous | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-15 | Ch9 p82 | Lotus Blossom | Wondrous | L8 5,000 gp; Interact 2 AP: temp HP = level, remove fear/charm, advantage 1 h; daily refill; 2nd per day serious poison crit | grantTempHP; daily uses | A | PACK + use automation | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-16 | Ch9 p82 | Monastic Robe of Resilience | Wondrous | L6 2,500 gp; DR 1; takes armour runes; not with armour | armour-like item | B | PACK as armour-type item | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-17 | Ch9 p82 | Mystic Incense Burner | Wondrous | L8 5,000 gp; 30-ft aura +1 resistance Will vs fear/charm, +2 status Meditation; 1 h; incense 5 gp | aura | B | PACK + aura effect + consumable | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-18 | Ch9 p82 | Restorative Mat | Wondrous | L10 8,000 gp; +2 status Meditation; 1/day Cure or Restoration (8 PP) | innatePrinted cast | A | PACK + daily cast | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
-| MI-19 | Ch9 p82 | Sash of Serenity | Wondrous | L8 5,000 gp; +1 dodge DB, +2 resistance vs fear; 1/day advantage on one save for 1 min | AE + pending | A | PACK | Pack stats; invest/activate; frequency/Focus; effect applied | — | Not started |
+| MI-01 | Ch9 p79 | Centred I/II/III (armour rune) | Rune | Item bonus +1/+2/+3 to Refocus; L4/8/12; 750/4,200/16,000 gp | registerRunes; COND actions:refocus | A | PACK:it-runes + COND | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-02 | Ch9 p80 | Guarded (armour rune) | Rune | L7 3,000 gp; R on crit 1/day: negate extra crit damage, heal half | crit hook | B | registerRunes + hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-03 | Ch9 p80 | Harmony (armour/shield rune) | Rune | L11; Focus Engage 1 AP: +2 dodge DB & +2 resistance saves 1 min (+3 Disciple/Mystic); Refocus | rune focus frequency (core) | A | registerRunes frequency:"focus" | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Implemented (A) |
+| MI-04 | Ch9 p80 | Graceful Wind (armour rune) | Rune | L6 2,500 gp; 1/day Engage: +30 status Speed & +2 resistance Reflex 1 min | registerRunes | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-05 | Ch9 p80 | Karmic Resilience (armour rune) | Rune | L11 11,000 gp; R on gaining dying 1/day: 1 HP, no dying, no crit; +2/+4 circ dying checks 1 min | dying hook | B | hook (core death-guard pattern) | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-06 | Ch9 p80 | Staunching I/II/III (armour rune) | Rune | Bleeding flat checks 14/13/12; moderate/any DC 16 | core bleeding flat check | A | registerRunes flag | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-07 | Ch9 p80 | Harmonious Do-maru | Specific armour | L11 13,000 gp; ACP -1 MD 7 DR 3 HP 55; Expert, Full, Lightweight, Potency I, Harmony | specific-items | A | PACK:it-specific-items | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-08 | Ch9 p81 | Centred I/II/III (weapon rune) | Rune | Item bonus +1/+2/+3 to Refocus; L3/6/10; 350/1,400/6,000 gp | registerRunes | A | PACK | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-09 | Ch9 p81 | Harmony Edge (weapon rune) | Rune | L12 11,000 gp; R on crit 1/day: advantage on the critical roll | crit hook | B | hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-10 | Ch9 p81 | Mindful (weapon rune) | Rune | L10 6,000 gp; Focus Engage: +Wis to next attack before next turn; Refocus | pending modifier | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Implemented (A) |
+| MI-11 | Ch9 p81 | Soulful Strike I/II/III (weapon rune) | Rune | L7/12/17; Command 1 AP: secondary force 1d6/2d6/3d6; secondary crit -3/-1 | RIDER | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-12 | Ch9 p81 | Tranquil Quiver (weapon rune) | Rune | L10 6,000 gp; Focus Engage: next ranged +2 status; >30 ft +1d6 precision | pending mod + RIDER | A | registerRunes | Pack stats; invest/activate; frequency/Focus; effect applied | D6 | Implemented (A) |
+| MI-13 | Ch9 p81 | Spiritblade | Specific weapon | L14 31,000 gp Nodachi; Centred II, Potency III, Soulful II...; on crit: Fear DC 20 | crit hook; innatePrinted | B | PACK + hook | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-14 | Ch9 p82 | Enlightened Prayer Beads | Wondrous | L6 2,000 gp; +1 status Wis; 1/day advantage on Refocus | AE + COND daily | A | PACK:it-wondrous | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-15 | Ch9 p82 | Lotus Blossom | Wondrous | L8 5,000 gp; Interact 2 AP: temp HP = level, remove fear/charm, advantage 1 h; daily refill; 2nd per day serious poison crit | grantTempHP; daily uses | A | PACK + use automation | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-16 | Ch9 p82 | Monastic Robe of Resilience | Wondrous | L6 2,500 gp; DR 1; takes armour runes; not with armour | armour-like item | B | PACK as armour-type item | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (B) |
+| MI-17 | Ch9 p82 | Mystic Incense Burner | Wondrous | L8 5,000 gp; 30-ft aura +1 resistance Will vs fear/charm, +2 status Meditation; 1 h; incense 5 gp | aura | B | PACK + aura effect + consumable | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-18 | Ch9 p82 | Restorative Mat | Wondrous | L10 8,000 gp; +2 status Meditation; 1/day Cure or Restoration (8 PP) | innatePrinted cast | A | PACK + daily cast | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-19 | Ch9 p82 | Sash of Serenity | Wondrous | L8 5,000 gp; +1 dodge DB, +2 resistance vs fear; 1/day advantage on one save for 1 min | AE + pending | A | PACK | Pack stats; invest/activate; frequency/Focus; effect applied | — | Implemented (A) |
+| MI-20 | Ch9 p79 | Monastic Items (crafting) | Rule | Inner Discipline: Create a magic item with Meditation for a technique or innate spell known; DC Hard (+2); Meditation ranks >= item level; no charged items | registerCreateRoute (core 3.673.0 C8) | A | registerCreateRoute + setup ticks | Rule-level harness checks + live scenario | — | Implemented (A) |
 
 ## APPENDIX
 
 | ID | Chapter | Feature | Category | Mechanics | Dependencies | Automation | Implementation | Validation | Blocker | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AP-01 | Appendix | Character aging (categories, modifiers, lifespans) | Subsystem | Age category from age/lifespan; ability modifiers replace per category; Age Resistance interaction | no core | C | module macro + AE (optional) | Rule-level harness checks + live scenario | — | Not started |
-| AP-02 | Appendix | Racial age table (core + new races) | Reference | Tabulated thresholds | n/a | D | journal | Rule-level harness checks + live scenario | — | Not started |
+| AP-01 | Appendix | Character aging (categories, modifiers, lifespans) | Subsystem | Age category from age/lifespan; ability modifiers replace per category; Age Resistance interaction | no core | C | module macro + AE (optional) | Rule-level harness checks + live scenario | — | Implemented (A) |
+| AP-02 | Appendix | Racial age table (core + new races) | Reference | Tabulated thresholds | n/a | D | journal | Rule-level harness checks + live scenario | — | Implemented (A) |
 

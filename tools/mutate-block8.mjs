@@ -92,9 +92,9 @@ const MUTATIONS = [
   { name: "the gate is not registered", file: REG, from: "  api.registerSpellCheckGate?.(\"spiritualDistraction\", spiritualDistractionGate, moduleId);\n", to: "" },
   { name: "Disrupt Soul hears no casting", file: SCRIPT, from: "Hooks.on(\"trgPrimeSpellSettled\", (ctx) => { onSpellSettledB8(ctx)", to: "Hooks.on(\"trgPrimeSpellCast\", (ctx) => { onSpellSettledB8(ctx)" },
   { name: "the use before is never read", file: SCRIPT, from: "Hooks.on(\"preUpdateItem\", (item, changes, options) => { try { onPreUpdateItemB8(item, changes, options);", to: "Hooks.on(\"preUpdateItem\", (item, changes, options) => { try { void 0;" },
-  { name: "the module takes TRG Prime 3.671.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.671.1\";" },
-  { name: "the manifest accepts 3.671.1", file: MANIFEST, from: "\"minimum\": \"3.672.0\"", to: "\"minimum\": \"3.671.1\"" },
-  { name: "the download names the last release", file: MANIFEST, from: "releases/download/v0.9.1/", to: "releases/download/v0.9.0/" },
+  { name: "the module takes TRG Prime 3.671.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.673.0\";", to: "const REQUIRED_SYSTEM = \"3.671.1\";" },
+  { name: "the manifest accepts 3.671.1", file: MANIFEST, from: "\"minimum\": \"3.673.0\"", to: "\"minimum\": \"3.671.1\"" },
+  { name: "the download names the last release", file: MANIFEST, from: "releases/download/v0.10.2/", to: "releases/download/v0.10.1/" },
   { name: "Water Bolt's status line is missing", file: STATUS, from: "  \"SP-25\": {", to: "  \"SP-25x\": {" }
 ];
 

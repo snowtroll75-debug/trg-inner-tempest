@@ -1,0 +1,64 @@
+{
+  "_id": "ObYeLUPZpw07EFyx",
+  "name": "Lotus Blossom",
+  "img": "icons/svg/item-bag.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 1,
+    "price": 5000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Warding",
+    "description": "<p><strong>INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 8; <strong>Price</strong> 5,000 gp; <strong>Usage</strong> held in 1 hand; <strong>Weight</strong> 1 lb; <strong>Activate</strong> Interact (2 AP)</p>\n<p><em>A small, crystal vial containing a radiant, golden elixir with the faint scent of blooming lotus flowers.</em></p>\n<p>When the elixir within this bottle is consumed, it grants you an amount of temporary HP equal to your level and removes any fear or charm effect which is currently affecting you. Furthermore, you gain advantage to all such saving throws for 1 hour after consumption.</p>\n<p>During your daily preparation, the elixir within the bottle is replenished and may be used again.</p>\n<p>Be aware that if you attempt to use more than one of these elixirs in any one day, you take a serious poison critical before its effects take place.</p>\n<p><em>Automated:</em> its Use (Interact, 2 AP; the bottle refills at your daily preparation): temporary HP equal to your level; Frightened, and any effect of a Fear or Charm source, ends; for 1 hour advantage on saves against fear and charm (taken automatically where the save's traits say so, offered otherwise). A second elixir the same day, from any bottle (B9-6), rolls a serious poison critical on you first.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 8,
+    "heldHands": 1,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "wondrous": {
+        "base": "",
+        "tier": "",
+        "slotInferred": false,
+        "activate": "Interact (2 AP)",
+        "frequency": "",
+        "abilities": [
+          {
+            "kind": "use",
+            "automation": "lotusBlossom",
+            "activation": "Interact (2 AP)",
+            "frequency": "daily",
+            "label": "Drink the Elixir"
+          }
+        ]
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ObYeLUPZpw07EFyx"
+}

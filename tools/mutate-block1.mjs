@@ -69,7 +69,7 @@ const MUTATIONS = [
   { name: "the Elemental Lore backgrounds have no Use", file: AUTO, from: "  \"elemental harmonist\": loreAlternative,\n", to: "" },
   { name: "the alternative is any skill, not a Lore", file: FOUND, from: "  placeholder: \"e.g. Ancestor Lore\",\n  suffix: \"Lore\"\n", to: "  placeholder: \"e.g. Ancestor Lore\",\n  suffix: \"\"\n" },
   { name: "the Spirit Lore backgrounds have no Use", file: AUTO, from: "  \"spirit warrior\": loreAlternative,\n", to: "" },
-  { name: "the module accepts the old system", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.666.0\";" },
+  { name: "the module accepts the old system", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.673.0\";", to: "const REQUIRED_SYSTEM = \"3.666.0\";" },
   { name: "the card buttons are never bound", file: SCRIPT, from: "Hooks.on(\"renderChatMessageHTML\", (message, html) => bindCardButtons(message, html));", to: "" }
 ];
 

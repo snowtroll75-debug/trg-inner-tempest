@@ -147,8 +147,8 @@ const MUTATIONS = [
   { name: "a Strike after Drawn Verdict still owes the sheathe", file: A, from: "  if (!dv || dv.further || !combat || !combatant) return false;", to: "  if (!dv || !combat || !combatant) return false;" },
   { name: "a form's own Use replaces the held form unasked (live test)", file: B4, from: "      return enterChosenForm(actor, [name]);", to: "      return enterForm(actor, [name]);" },
   // versions
-  { name: "the module is 0.8.0", file: MANIFEST, from: "\"version\": \"0.9.1\"", to: "\"version\": \"0.8.0\"" },
-  { name: "the module takes TRG Prime 3.670.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.670.1\";" }
+  { name: "the module is 0.8.0", file: MANIFEST, from: "\"version\": \"0.10.2\"", to: "\"version\": \"0.8.0\"" },
+  { name: "the module takes TRG Prime 3.670.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.673.0\";", to: "const REQUIRED_SYSTEM = \"3.670.1\";" }
 ];
 
 const originals = new Map();

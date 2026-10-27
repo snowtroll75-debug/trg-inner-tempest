@@ -1,0 +1,64 @@
+{
+  "_id": "YuzgnHTZ4W8T4RyI",
+  "name": "Monastic Robe of Resilience",
+  "img": "icons/svg/item-bag.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 5,
+    "price": 2500,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Warding",
+    "description": "<p><strong>INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 6; <strong>Price</strong> 2,500 gp; <strong>Usage</strong> worn; <strong>Weight</strong> 5 lbs</p>\n<p><em>These non-descript robes are easily overlooked.</em></p>\n<p>You gain DR 1 whilst wearing these robes.</p>\n<p>These robes can be imbued further with armour runes but cannot be worn with armour.</p>\n<p><em>Automated:</em> invested, DR 1 as armour (the higher of it and worn armour's counts). It takes armour runes like Travellers clothing, and they count only while no body armour is worn. That the robes cannot be worn with armour is the table's to keep.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 6,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false,
+    "gearCategory": "Clothing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "wondrous": {
+        "base": "",
+        "tier": "",
+        "slotInferred": false,
+        "activate": "",
+        "frequency": "",
+        "abilities": [
+          {
+            "kind": "baseDR",
+            "value": 1,
+            "label": "Monastic Robe of Resilience"
+          }
+        ]
+      },
+      "runeBearing": "armour"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!YuzgnHTZ4W8T4RyI"
+}

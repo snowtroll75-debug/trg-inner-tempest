@@ -1,0 +1,56 @@
+{
+  "_id": "GeJT4oa4oSPkEKHc",
+  "name": "Tranquil Quiver",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 6000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Focus, Invested, Invocation",
+    "description": "<p><strong>FOCUS INVESTED INVOCATION</strong></p>\n<p><strong>Level</strong> 10; <strong>Price</strong> 6,000 gp; <strong>Usage</strong> any ranged weapon; <strong>Activate</strong> Engage (1 AP)</p>\n<p><em>This rune calms the mind of an archer.</em></p>\n<p>The next ranged attack made with the weapon gains a +2 status bonus. Furthermore, if the target is more than 30 feet away, the ammunition deals 1d6 precision damage in addition to any normal damage on a successful hit. The rune then becomes expended and can be restored with Refocus.</p>\n<p><em>On the sheet:</em> Press Tranquil Quiver on the weapon (Engage, 1 AP): your next ranged attack carries +2 status, and on a hit against a target farther than 30 feet the ammunition deals 1d6 precision damage of the weapon's own type (none against precision immunity). Spent by that Strike, hit or miss. The rune is then expended; Refocus restores it.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 10,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "tranquilQuiver",
+        "tier": 1,
+        "on": [
+          "weapon"
+        ],
+        "automation": "action"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GeJT4oa4oSPkEKHc"
+}

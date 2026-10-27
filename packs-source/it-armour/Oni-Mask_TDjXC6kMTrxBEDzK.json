@@ -1,0 +1,72 @@
+{
+  "_id": "TDjXC6kMTrxBEDzK",
+  "name": "Oni-Mask",
+  "img": "systems/trg-prime/assets/armour/full-helmet.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 8,
+    "price": 200,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 25,
+      "max": 25
+    },
+    "traits": "Metal, Rigid",
+    "description": "<p><strong>Other</strong>; <strong>Lvl</strong> 1; <strong>Price</strong> 200 gp; <strong>ACP</strong> 0; <strong>MAX DEX</strong> -; <strong>DR</strong> -; <strong>HP</strong> 25; <strong>Speed</strong> -; <strong>Wt.</strong> 8 lbs; <strong>Traits</strong> Metal, Rigid</p>\n<p>These full helmets with fearsome demon masks are often worn by monastic warriors in an attempt to cow their foes. Wearing such a mask grants you a +1-item bonus to visual based Intimidate skill checks.</p>\n<p><em>Automated:</em> a helmet. The +1 item bonus is offered on Intimidate checks while it is worn; tick it when the intimidation is visual (interpretation 1).</p>",
+    "category": "Other",
+    "material": "Metal",
+    "isHelmet": true,
+    "dr": 0,
+    "hardness": 0,
+    "penalty": 0,
+    "proficiency": "",
+    "maxDexBonus": -1,
+    "speedPenalty": 0,
+    "itemLevel": 1,
+    "coversTorso": false,
+    "coversArms": false,
+    "coversLegs": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "value": 1,
+          "type": "item",
+          "label": "Oni-Mask",
+          "scope": "Visual based Intimidate checks",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "intimidate"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TDjXC6kMTrxBEDzK"
+}

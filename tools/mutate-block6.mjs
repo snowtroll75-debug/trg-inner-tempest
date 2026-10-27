@@ -115,9 +115,9 @@ const MUTATIONS = [
   // F — 0.7.1
   { name: "Disciplined Flurry reads \"reactionand\" again", file: B3, from: "${inCombat ? \" (spends your reaction and this technique's use)\" : \" (spends this technique's use)\"}?</p>`,", to: "${inCombat ? \" (spends your reaction\" : \" (\"}and this technique's use)?</p>`," },
   // versions
-  { name: "the module accepts 3.669.2", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.672.0\";", to: "const REQUIRED_SYSTEM = \"3.669.2\";" },
-  { name: "the manifest accepts 3.669.2", file: MANIFEST, from: "\"minimum\": \"3.672.0\"", to: "\"minimum\": \"3.669.2\"" },
-  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"0.9.1\"", to: "\"version\": \"0.6.2\"" }
+  { name: "the module accepts 3.669.2", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.673.0\";", to: "const REQUIRED_SYSTEM = \"3.669.2\";" },
+  { name: "the manifest accepts 3.669.2", file: MANIFEST, from: "\"minimum\": \"3.673.0\"", to: "\"minimum\": \"3.669.2\"" },
+  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"0.10.2\"", to: "\"version\": \"0.6.2\"" }
 ];
 
 const originals = new Map();

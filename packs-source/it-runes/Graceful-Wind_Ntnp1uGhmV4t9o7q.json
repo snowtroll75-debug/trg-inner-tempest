@@ -1,0 +1,56 @@
+{
+  "_id": "Ntnp1uGhmV4t9o7q",
+  "name": "Graceful Wind",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 2500,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Alteration, Invested",
+    "description": "<p><strong>ALTERATION INVESTED</strong></p>\n<p><strong>Level</strong> 6; <strong>Price</strong> 2,500 gp; <strong>Usage</strong> inscribed onto armour; <strong>Activate</strong> Engage (1 AP); <strong>Frequency</strong> 1/day</p>\n<p><em>This rune harnesses the power of the wind to enhance mobility.</em></p>\n<p>You gain a +30-foot status bonus to your land speed for 1 minute. Additionally, you gain a +2-resistance bonus to Reflex saves whilst the speed bonus is active.</p>\n<p><em>On the sheet:</em> Press Graceful Wind on the item (Engage, 1 AP, once a day): for 1 minute +30 feet status to your land Speed and +2 resistance to Reflex saves.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 6,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "gracefulWind",
+        "tier": 1,
+        "on": [
+          "armour"
+        ],
+        "automation": "action"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Ntnp1uGhmV4t9o7q"
+}

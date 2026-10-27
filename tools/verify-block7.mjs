@@ -441,8 +441,8 @@ ok("E Flurry of Blows reaches a declared weapon", /\.filter\(\(i\) => abilityStr
 }
 
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 0.9.1, built for 3.672.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.9.1", "3.672.0"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.672.0";'));
+equal("E the module is 0.10.2, built for 3.673.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.10.2", "3.673.0"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.673.0";'));
 {
   const [sa, sb] = String(systemJson.version).split(".").map(Number);
   ok("E the system at TRG_PRIME_ROOT is 3.671.0 or later", sa > 3 || (sa === 3 && sb >= 671), systemJson.version);

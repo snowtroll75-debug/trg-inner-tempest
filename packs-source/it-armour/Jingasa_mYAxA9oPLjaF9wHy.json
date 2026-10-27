@@ -1,0 +1,54 @@
+{
+  "_id": "mYAxA9oPLjaF9wHy",
+  "name": "Jingasa",
+  "img": "systems/trg-prime/assets/armour/metal-helmet.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 4,
+    "price": 20,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 10,
+      "max": 10
+    },
+    "traits": "Metal",
+    "description": "<p><strong>Other</strong>; <strong>Lvl</strong> 0; <strong>Price</strong> 20 gp; <strong>ACP</strong> 0; <strong>MAX DEX</strong> -; <strong>DR</strong> -; <strong>HP</strong> 10; <strong>Speed</strong> -; <strong>Wt.</strong> 4 lbs; <strong>Traits</strong> Metal</p>\n<p>This conical hat is made of metal or lacquered wood, offering basic protection from head injuries.</p>\n<p><em>Automated:</em> a helmet, read by the critical table's head location.</p>",
+    "category": "Other",
+    "material": "Metal",
+    "isHelmet": true,
+    "dr": 0,
+    "hardness": 0,
+    "penalty": 0,
+    "proficiency": "",
+    "maxDexBonus": -1,
+    "speedPenalty": 0,
+    "itemLevel": 0,
+    "coversTorso": false,
+    "coversArms": false,
+    "coversLegs": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mYAxA9oPLjaF9wHy"
+}

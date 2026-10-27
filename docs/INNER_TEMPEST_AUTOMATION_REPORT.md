@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 
 ## Shipped so far
 
-342 features shipped: A 192 · B 107 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
+374 features shipped: A 223 · B 108 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
 
 ### Shipped below target, and what would lift it
 
@@ -71,11 +71,11 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 
 | Class | With core dependencies D1–D16 | Without them (module-only) |
 |---|---|---|
-| A | 242 | 197 |
+| A | 243 | 198 |
 | B | 135 | 133 |
 | C | 16 | 54 |
 | D | 15 | 24 |
-| **Total** | 408 | 408 |
+| **Total** | 409 | 409 |
 
 No feature is claimed as automated until its harness checks and live test pass. A feature that only posts its description to chat is class D, never A.
 

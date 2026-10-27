@@ -2,7 +2,28 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 26 Oct 2026 (session 6: Block 8 published)
+## Current state — 27 Oct 2026 (session 7: Block 9 live-tested; 0.10.1 and core 3.673.1 built)
+
+- **Live test of 0.10.0 on 3.673.0** (`live-testing-report-3.673.0.md`): Block 9 works live; two faults. **F1** (module): the Sash of Serenity's advantage, a tick-box, was never asked on a forced save. **F2** (core): a weapon card's "Now X HP" left out Guarded's heal. Graham: "Yes please" to building both fixes.
+- **0.10.1 built:** a kind chosen at the Sash's Use is taken on the next save of that kind and spent; "any" stays a tick-box. `verify-block9` 83, `mutate-block9` 94/94; Blocks 3 to 9 and the weapons re-pinned to 0.10.1.
+- **Core 3.673.1 built:** the weapon card counts Guarded's heal, as the spell card did. `verify-block9-core` 68, `mutate-block9-core` 91/91.
+- **Graham's answers, 27 Oct:** the Harmonious Do-maru's DB is +1; the Spiritblade's fumble DC is 11 (both as built); "Fix timed rune message".
+- **0.10.2 built:** the two GM notes record the rulings. `verify-block9` 84, `mutate-block9` 96/96.
+- **Core 3.673.2 built:** a rune timer ended by either clock no longer adds "… expires" to its own ending. `verify-block9-core` 71, `mutate-block9-core` 98/98.
+- **Live test of 3.673.2 and 0.10.2** (`live-testing-report-3.673.2.md`): the three fixes work live (Guarded's heal across clients, the Sash on a forced save, one card per rune timer). F3 (core, cosmetic): "Includes critical bonus dice" printed when Guarded had kept the dice off; fixed as **core 3.673.3** (`verify-block9-core` 73, `mutate-block9-core` 103/103; full sweep 651/651).
+- **Pushed, 27 Oct (Graham: "Put the fix in first and then push"):** core 3.673.0 to 3.673.3 as four commits on main; module 0.10.2 (Block 9 with 0.10.1 and 0.10.2) as one commit. **GitHub releases not yet created** (refused by the session's permission check): v3.673.0 to v3.673.3 and v0.10.2, each with its zip, are still to be made.
+
+## Earlier — 26 Oct 2026 (session 7: Block 9 built)
+
+- **Block 9 audited and ruled** (`docs/INNER_TEMPEST_BLOCK9_AUDIT.md`; B9-1 to B9-11 and interpretations 1–8, all adopted, `docs/INNER_TEMPEST_RULINGS_2026-10-26-B9.md`). Found while building: v1.2 does print Mindful's effect (B9-4 needs no answer); the Harmonious Do-maru's DB +0 against its Potency I is put to Graham.
+- **0.10.0 on core 3.673.0 built:** five packs (it-armour 9, it-runes 19, it-specific-items 2, it-wondrous 6, it-gear 1), eleven registered runes, five wondrous Uses, the Monastic Items Create route, and the Appendix's aging (`module/aging.mjs`, `module/aging-workflow.mjs`; world setting "Aging (Appendix)"). Book text in `tools/content/book-text-block9.json` (`tools/content/extract-book-block9.mjs`).
+- **Core 3.673.0:** C1–C10 of the audit, plus C7b (Mindful's turn-start expiry), C11 (`releaseItemSpell` helper) and C12 (per-tier declared values; one rune name on armour and weapons), and Q (asking a creature's own player). Pair `verify/mutate-block9-core` 66 and 86.
+- **Harnesses:** `verify-block9` 82, `mutate-block9` 91/91; Blocks 1 to 8 and the weapons re-pinned to 0.10.0 and 3.673.0.
+- **Independent review:** seven findings (the relay outwaited by a player's answer, a late yes spending the day, Harmony Edge at a deadly critical, Guarded on spell criticals, Tranquil Quiver's usage, an unmeasured distance, the burner put out by hand), all fixed.
+- **Core sweep on the staged 3.673.0:** 651 harnesses, 642 passed; the 9 failures (anchors on lines Block 9 changed, and `tierValued` recorded as a deliberate keep) re-anchored and re-run on the stage, all green. **Zips built:** `trg-prime-3.673.0.zip`, `trg-inner-tempest-0.10.0.zip`.
+- **Next:** Graham installs, live test. **Nothing pushed.**
+
+## Previous state — 26 Oct 2026 (session 6: Block 8 published)
 
 - **Block 8 audited and ruled** (`docs/INNER_TEMPEST_BLOCK8_AUDIT.md`; B8-1 to B8-9, all proposals adopted, `docs/INNER_TEMPEST_RULINGS_2026-10-26.md`). B8-9: Burst of Speed, Timeless Motion and Water Bolt finished now; Dragon Fear, Aura of Heat and Burning Stride wait for a core block after Block 10.
 - **0.9.0 on core 3.672.0 built:** the Grimoire's other 13 spells; magical Focus abilities marked. Core seams C1–C13 with `verify/mutate-block8-core`. Independent review: ten findings, all fixed (among them Foretell Failure asked before anything is spent, via `TRGCheck.preview`).

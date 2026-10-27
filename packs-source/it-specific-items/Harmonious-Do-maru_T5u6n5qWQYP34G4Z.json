@@ -1,0 +1,84 @@
+{
+  "_id": "T5u6n5qWQYP34G4Z",
+  "name": "Harmonious Do-maru",
+  "img": "systems/trg-prime/assets/armour/lamellar.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 15,
+    "price": 13000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 55,
+      "max": 55
+    },
+    "traits": "Expert, Full, Lightweight, Potency I, Harmony",
+    "description": "<p><strong>ALTERATION INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 11; <strong>Price</strong> 13,000 gp; <strong>Usage</strong> worn armour; <strong>Weight</strong> 15 lbs</p>\n<p><em>This armour is beautifully crafted, adorned with intricate celestial motifs.</em></p>\n<p>The armour has the following statistics:</p>\n<p><strong>ACP</strong> -1; <strong>MAX DEX</strong> 7; <strong>DR</strong> 3; <strong>DB</strong> +0; <strong>HP</strong> 55; <strong>Traits</strong> Expert, Full, Lightweight, Potency I, Harmony</p>\n<p><strong>Activate</strong> Engage (1 AP)</p>\n<p>You gain a +2 dodge bonus to DB and a +2 resistance bonus to saving throws for 1 minute. This bonus increases to +3 if you are a Disciple or Mystic. This activation uses the armour's Harmony Focus ability.</p>\n<p><em>Automated:</em> a specific armour (B9-9): an Expert Do-maru with Potency I and Harmony, carrying the printed ACP −1, Max Dex 7, DR 3, HP 55 and 15 lb as final. Like the Do-maru it covers the torso and the legs, not the arms (B9-1). Press Harmony on it (Engage, 1 AP): 1 minute of +2 dodge DB and +2 resistance to saves, +3 for a Disciple or Mystic; Refocus restores it.</p>\n<p><em>Note for the GM:</em> the book prints DB +0, while its Potency I gives armour its +1 item bonus to DB. Graham ruled on 27 October 2026 that the DB is +1: Potency I applies, as the sheet shows.</p>",
+    "category": "Medium",
+    "material": "",
+    "isHelmet": false,
+    "dr": 3,
+    "hardness": 0,
+    "penalty": -1,
+    "proficiency": "",
+    "maxDexBonus": 7,
+    "speedPenalty": 0,
+    "itemLevel": 11,
+    "coversTorso": true,
+    "coversArms": false,
+    "coversLegs": true,
+    "quality": "expert",
+    "superiorTraits": "",
+    "runes": "Potency I, Harmony"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "specificItem": {
+        "runes": [
+          {
+            "key": "potency",
+            "label": "Potency",
+            "tier": 1,
+            "printed": "Potency I"
+          },
+          {
+            "key": "harmony",
+            "label": "Harmony",
+            "tier": 1,
+            "printed": "Harmony"
+          }
+        ],
+        "runeText": "Potency I, Harmony",
+        "traits": [
+          "Expert",
+          "Full",
+          "Lightweight",
+          "Potency I",
+          "Harmony"
+        ],
+        "quality": "expert",
+        "material": "",
+        "printedItemBonus": 1
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!T5u6n5qWQYP34G4Z"
+}

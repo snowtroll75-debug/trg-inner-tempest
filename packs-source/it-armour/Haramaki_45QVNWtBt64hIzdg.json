@@ -1,0 +1,54 @@
+{
+  "_id": "45QVNWtBt64hIzdg",
+  "name": "Haramaki",
+  "img": "systems/trg-prime/assets/armour/padded.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 1,
+    "price": 5,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 10,
+      "max": 10
+    },
+    "traits": "-",
+    "description": "<p><strong>Light</strong>; <strong>Lvl</strong> 0; <strong>Price</strong> 5 gp; <strong>ACP</strong> 0; <strong>MAX DEX</strong> 10; <strong>DR</strong> 1; <strong>HP</strong> 10; <strong>Speed</strong> 0; <strong>Wt.</strong> 1 lbs; <strong>Traits</strong> -</p>\n<p>A haramaki, often referred to as a \"belly-warmer,\" is a modest yet effective piece of attire. It consists of a silk sash adorned with chainmail or articulated metal plates, securely fastened around the waist to provide protection for the midsection.</p>",
+    "category": "Light",
+    "material": "",
+    "isHelmet": false,
+    "dr": 1,
+    "hardness": 0,
+    "penalty": 0,
+    "proficiency": "",
+    "maxDexBonus": 10,
+    "speedPenalty": 0,
+    "itemLevel": 0,
+    "coversTorso": true,
+    "coversArms": false,
+    "coversLegs": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!45QVNWtBt64hIzdg"
+}

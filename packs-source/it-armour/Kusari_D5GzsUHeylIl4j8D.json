@@ -1,0 +1,54 @@
+{
+  "_id": "D5GzsUHeylIl4j8D",
+  "name": "Kusari",
+  "img": "systems/trg-prime/assets/armour/full-chainmail.png",
+  "type": "armour",
+  "system": {
+    "quantity": 1,
+    "weight": 40,
+    "price": 350,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 70,
+      "max": 70
+    },
+    "traits": "Full, Metal",
+    "description": "<p><strong>Medium</strong>; <strong>Lvl</strong> 2; <strong>Price</strong> 350 gp; <strong>ACP</strong> -3; <strong>MAX DEX</strong> 4; <strong>DR</strong> 4; <strong>HP</strong> 70; <strong>Speed</strong> 0; <strong>Wt.</strong> 40 lbs; <strong>Traits</strong> Full, Metal</p>\n<p>This armour is made of interlocking metal rings, offering good protection without hindering mobility.</p>",
+    "category": "Medium",
+    "material": "Metal",
+    "isHelmet": false,
+    "dr": 4,
+    "hardness": 0,
+    "penalty": -3,
+    "proficiency": "",
+    "maxDexBonus": 4,
+    "speedPenalty": 0,
+    "itemLevel": 2,
+    "coversTorso": true,
+    "coversArms": true,
+    "coversLegs": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!D5GzsUHeylIl4j8D"
+}

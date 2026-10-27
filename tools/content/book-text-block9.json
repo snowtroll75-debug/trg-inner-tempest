@@ -1,0 +1,829 @@
+{
+ "source": "Inner Tempest v1.2 (pandoc markdown of TRG_Inner_Tempest_1_2.docx): Chapter 6 armour, Chapter 9, the appendix",
+ "armour": {
+  "intro": [
+   "The TRG Core Rulebook provides the full rules for armour, including its use, defensive properties, penalties and interaction with movement. The armour presented here follows those same rules and is intended to sit alongside the existing equipment rather than replace it.",
+   "The armour associated with the traditions of Inner Tempest tends to favour mobility, flexibility and specialised protection. Some forms are little more than reinforced clothing intended to preserve freedom of movement, while others combine layered cloth, lacquered plates, mail and carefully fitted components to provide more substantial defence without sacrificing the distinctive fighting styles of their wearers.",
+   "Many of these suits have strong cultural or martial associations and are particularly suited to characters such as Ghostwalkers, Kensai, Oathblades and other warriors whose equipment forms an important part of their identity. Unless stated otherwise, however, they may be worn by any character with the appropriate proficiency.",
+   "Here you will find a small selection of armour which may be added to and used alongside those found in the TRG Core Rulebook."
+  ],
+  "rows": [
+   {
+    "section": "LIGHT ARMOUR",
+    "name": "Haramaki",
+    "level": "0",
+    "price": "5",
+    "acp": "0",
+    "maxDex": "10",
+    "dr": "1",
+    "hp": "10",
+    "speed": "0",
+    "weight": "1",
+    "traits": "-"
+   },
+   {
+    "section": "LIGHT ARMOUR",
+    "name": "Shozoku",
+    "level": "1",
+    "price": "100",
+    "acp": "0",
+    "maxDex": "10",
+    "dr": "0",
+    "hp": "8",
+    "speed": "0",
+    "weight": "1",
+    "traits": "-"
+   },
+   {
+    "section": "MEDIUM ARMOUR",
+    "name": "Kikko",
+    "level": "1",
+    "price": "150",
+    "acp": "-2",
+    "maxDex": "5",
+    "dr": "3",
+    "hp": "40",
+    "speed": "0",
+    "weight": "25",
+    "traits": "Metal, Rigid"
+   },
+   {
+    "section": "MEDIUM ARMOUR",
+    "name": "Do-maru",
+    "level": "1",
+    "price": "200",
+    "acp": "-2",
+    "maxDex": "5",
+    "dr": "3",
+    "hp": "50",
+    "speed": "0",
+    "weight": "20",
+    "traits": "Full"
+   },
+   {
+    "section": "MEDIUM ARMOUR",
+    "name": "Kusari",
+    "level": "2",
+    "price": "350",
+    "acp": "-3",
+    "maxDex": "4",
+    "dr": "4",
+    "hp": "70",
+    "speed": "0",
+    "weight": "40",
+    "traits": "Full, Metal"
+   },
+   {
+    "section": "HEAVY ARMOUR",
+    "name": "Tatami-Do",
+    "level": "2",
+    "price": "350",
+    "acp": "-6",
+    "maxDex": "3",
+    "dr": "4",
+    "hp": "80",
+    "speed": "-5",
+    "weight": "40",
+    "traits": "Full, Metal, Rigid"
+   },
+   {
+    "section": "HEAVY ARMOUR",
+    "name": "Yoroi",
+    "level": "3",
+    "price": "650",
+    "acp": "-7",
+    "maxDex": "2",
+    "dr": "6",
+    "hp": "100",
+    "speed": "-5",
+    "weight": "45",
+    "traits": "Full, Helm, Metal, Rigid"
+   },
+   {
+    "section": "OTHER",
+    "name": "Oni-Mask",
+    "level": "1",
+    "price": "200",
+    "acp": "0",
+    "maxDex": "-",
+    "dr": "-",
+    "hp": "25",
+    "speed": "-",
+    "weight": "8",
+    "traits": "Metal, Rigid"
+   },
+   {
+    "section": "OTHER",
+    "name": "Jingasa",
+    "level": "0",
+    "price": "20",
+    "acp": "0",
+    "maxDex": "-",
+    "dr": "-",
+    "hp": "10",
+    "speed": "-",
+    "weight": "4",
+    "traits": "Metal"
+   }
+  ],
+  "descriptions": {
+   "HARAMAKI": [
+    "A haramaki, often referred to as a \"belly-warmer,\" is a modest yet effective piece of attire. It consists of a silk sash adorned with chainmail or articulated metal plates, securely fastened around the waist to provide protection for the midsection."
+   ],
+   "SHOZOKU": [
+    "This lightweight, dark clothing is designed for stealth and infiltration. It is completely black and covers you from head to toe. The armour provides a +2-circumstance bonus to all checks made to Hide (Stealth) when in shadowy areas."
+   ],
+   "KIKKO": [
+    "This armour showcases a clever design, featuring hexagonal plates crafted from iron and skilfully attached to a fabric base. This arrangement grants the wearer an exceptional degree of flexibility, surpassing that offered by numerous armours with similar defensive capabilities. The wearer has the option to leave the plates visible or conceal them beneath an additional layer of fabric for added versatility."
+   ],
+   "DO-MARU": [
+    "Among the preferred choices for martial characters seeking agility, the do-maru is the lightest of armours. This protective garment envelops the wearer's form akin to a short, armoured coat. It primarily comprises lamellar components, omitting a solid breastplate or sleeves. While this design leaves the shoulders and upper body somewhat exposed, it affords the wearer an enhanced range of motion compared to many bulkier armour options.",
+    "Be aware that this armour is ineffective against critical strikes to the shoulders."
+   ],
+   "KUSARI": [
+    "This armour is made of interlocking metal rings, offering good protection without hindering mobility."
+   ],
+   "TATAMI-DO": [
+    "Tatami-do represents a comprehensive field armour, seamlessly merging elements of metal lamellar and kikko to form a unique suit of mail featuring a sturdy cloth backing. Typically, this armour ensemble encompasses additional components, such as a collapsible kabuto helmet or a reinforced hood, in addition to protective arm, shoulder, and thigh guards."
+   ],
+   "YOROI": [
+    "Yoroi is a formidable combat armour, meticulously tailored with an array of supplementary elements that incorporate both plate and lamellar components. Each suit of this armour is uniquely crafted to align with its owner's aesthetic preferences. Following its construction, the armour is adorned with vivid colours and sealed with a final lacquer finish. The focal point of this armour is its cuirass, comprising two distinct sections—a dedicated reinforcement known as a waidate for the right side, and a kikko cuirass. The upper portion of the waidate features an iron plate concealed beneath leather, while the cuirass's shoulder straps, referred to as watagami, are fortified with metal plates. Further enhancements include broad lamellar shoulder guards, a kikko sleeve for the shield arm, iron greaves lacquered over padded silk leggings, and a groin protector. A defining feature of each suit is its tiered kabuto helmet, accompanied by a fearsome ho-ate mask. These masks, crafted from hardened leather or metal, often depict formidable visages such as oni, dragons, or other legendary creatures."
+   ],
+   "ONI MASK": [
+    "These full helmets with fearsome demon masks are often worn by monastic warriors in an attempt to cow their foes. Wearing such a mask grants you a +1-item bonus to visual based Intimidate skill checks."
+   ],
+   "JINGASA": [
+    "This conical hat is made of metal or lacquered wood, offering basic protection from head injuries."
+   ]
+  }
+ },
+ "magic": {
+  "monastic": [
+   "Characters trained in Inner Discipline can create magical items through meditation and disciplined practice rather than conventional spell preparation. They otherwise follow the normal magic item creation rules, with the following differences:",
+   "- A character with Inner Discipline may use Meditation to make Create checks when crafting a magic item whose effects are based on a technique or innate spell they know.",
+   "- Creating a magic item in this way is more difficult and the DC is considered Hard (+2).",
+   "- The creator must have a number of ranks in Meditation equal to or greater than the level of the item, in addition to the normal skill requirements.",
+   "- A character using this method cannot create charged items."
+  ],
+  "armourRunes": {
+   "intro": [
+    "These additional armour runes follow the same rules and guidelines as those found in the TRG Core Rulebook."
+   ],
+   "entries": {
+    "CENTRED": {
+     "traits": "ALTERATION INVESTED",
+     "fields": {
+      "Usage": "inscribed onto armour",
+      "Requirement": "wielder has at least one ability with the Focus trait"
+     },
+     "flavour": "This rune steadies the wearer's concentration and makes expended abilities easier to restore.",
+     "lines": [
+      "You gain an item bonus to Refocus (Mental Focus) checks based upon the level of the rune."
+     ],
+     "tiers": {
+      "CENTRED I": {
+       "fields": {
+        "Level": "4",
+        "Price": "750 gp"
+       },
+       "lines": [
+        "The bonus is +1."
+       ]
+      },
+      "CENTRED II": {
+       "fields": {
+        "Level": "8",
+        "Price": "4,200 gp"
+       },
+       "lines": [
+        "The bonus is +2."
+       ]
+      },
+      "CENTRED III": {
+       "fields": {
+        "Level": "12",
+        "Price": "16,000 gp"
+       },
+       "lines": [
+        "The bonus is +3."
+       ]
+      }
+     }
+    },
+    "GUARDED": {
+     "traits": "INVESTED SOUL",
+     "fields": {
+      "Level": "7",
+      "Price": "3,000 gp",
+      "Usage": "inscribed onto armour",
+      "Activate": "Reaction",
+      "Trigger": "the wielder takes a critical hit",
+      "Frequency": "1/day"
+     },
+     "flavour": "This rune allows you to lessen the damage from the most lethal of attacks.",
+     "lines": [
+      "You negate the additional HP damage inflicted by the critical hit and are immediately healed an amount of HP equal to half of this amount (round up)."
+     ],
+     "tiers": {}
+    },
+    "HARMONY": {
+     "traits": "FOCUS INVESTED WARDING",
+     "fields": {
+      "Level": "11",
+      "Armour Price": "11,000 gp",
+      "Shield Price": "7,700 gp",
+      "Usage": "inscribed onto armour or shield",
+      "Activate": "Engage (1 AP)",
+      "Requirement": "the rune is ready"
+     },
+     "flavour": "This rune enhances the wearer's inner balance and agility.",
+     "lines": [
+      "Activate the rune to gain a +2 dodge bonus to DB and a +2 resistance bonus to saving throws for 1 minute. This bonus increases to +3 if you are a Disciple or Mystic. The rune then becomes expended and can be restored with Refocus."
+     ],
+     "tiers": {}
+    },
+    "GRACEFUL WIND": {
+     "traits": "ALTERATION INVESTED",
+     "fields": {
+      "Level": "6",
+      "Price": "2,500 gp",
+      "Usage": "inscribed onto armour",
+      "Activate": "Engage (1 AP)",
+      "Frequency": "1/day"
+     },
+     "flavour": "This rune harnesses the power of the wind to enhance mobility.",
+     "lines": [
+      "You gain a +30-foot status bonus to your land speed for 1 minute. Additionally, you gain a +2-resistance bonus to Reflex saves whilst the speed bonus is active."
+     ],
+     "tiers": {}
+    },
+    "KARMIC RESILIENCE": {
+     "traits": "INVESTED WARDING",
+     "fields": {
+      "Level": "11",
+      "Price": "11,000 gp",
+      "Usage": "inscribed onto armour",
+      "Activate": "Reaction",
+      "Trigger": "the wielder gains the dying condition",
+      "Frequency": "1/day"
+     },
+     "flavour": "This rune reflects the wearer's karmic balance.",
+     "lines": [
+      "You are immediately restored to 1 HP, do not gain the dying condition and do not take a critical for being reduced to 0 HP. Furthermore, you gain a +2 circumstance bonus to all dying checks for 1 minute. This bonus increases to +4 if you are a Disciple or Mystic."
+     ],
+     "tiers": {}
+    },
+    "STAUNCHING": {
+     "traits": "INVESTED SOUL",
+     "fields": {
+      "Usage": "inscribed onto armour"
+     },
+     "flavour": "Your wounds close more quickly.",
+     "lines": [
+      "The flat check to stop bleeding is reduced whilst wearing this armour based upon its level. Higher level versions of this rune also allow you to make flat checks to stop more severe wounds."
+     ],
+     "tiers": {
+      "STAUNCHING I": {
+       "fields": {
+        "Level": "6",
+        "Price": "2,000 gp"
+       },
+       "lines": [
+        "The flat check to remove Light Bleeding is reduced by 2 to 14."
+       ]
+      },
+      "STAUNCHING II": {
+       "fields": {
+        "Level": "12",
+        "Price": "16,000 gp"
+       },
+       "lines": [
+        "The flat check to remove Light Bleeding is reduced by 3 to 13. Furthermore, you may also attempt a DC 16 flat check to reduce Moderate Bleeding by 1."
+       ]
+      },
+      "STAUNCHING III": {
+       "fields": {
+        "Level": "18",
+        "Price": "180,000 gp"
+       },
+       "lines": [
+        "The flat check to remove Light Bleeding is reduced by 4 to 12. Furthermore, you may also attempt a DC 16 flat check to reduce any Bleeding by 1."
+       ]
+      }
+     }
+    }
+   }
+  },
+  "specificArmour": {
+   "intro": [
+    "Below is an example suit of armour created using the new rules in this sourcebook."
+   ],
+   "entries": {
+    "HARMONIOUS DO-MARU": {
+     "traits": "ALTERATION INVESTED WARDING",
+     "fields": {
+      "Level": "11",
+      "Price": "13,000 gp",
+      "Usage": "worn armour",
+      "Weight": "15 lbs",
+      "ACP": "-1",
+      "MAX DEX": "7",
+      "DR": "3",
+      "DB": "+0",
+      "HP": "55",
+      "Traits": "Expert, Full, Lightweight, Potency I, Harmony",
+      "Activate": "Engage (1 AP)"
+     },
+     "flavour": "This armour is beautifully crafted, adorned with intricate celestial motifs.",
+     "lines": [
+      "The armour has the following statistics:",
+      "You gain a +2 dodge bonus to DB and a +2 resistance bonus to saving throws for 1 minute. This bonus increases to +3 if you are a Disciple or Mystic. This activation uses the armour's Harmony Focus ability."
+     ],
+     "tiers": {}
+    }
+   }
+  },
+  "weaponRunes": {
+   "intro": [
+    "These additional weapon runes follow the same rules and guidelines as those found in the TRG Core Rulebook."
+   ],
+   "entries": {
+    "CENTRED": {
+     "traits": "ALTERATION INVESTED",
+     "fields": {
+      "Usage": "any weapon",
+      "Requirement": "wielder has at least one ability with the Focus trait"
+     },
+     "flavour": "This rune steadies the wielder's concentration and supports precise recovery between techniques.",
+     "lines": [
+      "You gain an item bonus to Refocus (Mental Focus) checks based upon the level of the rune."
+     ],
+     "tiers": {
+      "CENTRED I": {
+       "fields": {
+        "Level": "3",
+        "Price": "350 gp"
+       },
+       "lines": [
+        "The bonus is +1."
+       ]
+      },
+      "CENTRED II": {
+       "fields": {
+        "Level": "6",
+        "Price": "1,400 gp"
+       },
+       "lines": [
+        "The bonus is +2."
+       ]
+      },
+      "CENTRED III": {
+       "fields": {
+        "Level": "10",
+        "Price": "6,000 gp"
+       },
+       "lines": [
+        "The bonus is +3."
+       ]
+      }
+     }
+    },
+    "HARMONY EDGE": {
+     "traits": "INVESTED INVOCATION",
+     "fields": {
+      "Level": "12",
+      "Price": "11,000 gp",
+      "Usage": "any weapon",
+      "Activate": "Reaction",
+      "Trigger": "you inflict a critical hit",
+      "Frequency": "1/day"
+     },
+     "flavour": "This rune imbues the weapon with a harmonious aura.",
+     "lines": [
+      "When activated with a melodious note, the weapon resonates with the balance of the universe. You gain advantage on the attack critical roll."
+     ],
+     "tiers": {}
+    },
+    "MINDFUL": {
+     "traits": "FOCUS INVESTED INVOCATION",
+     "fields": {
+      "Level": "10",
+      "Price": "6,000 gp",
+      "Usage": "any weapon",
+      "Activate": "Engage (1 AP)"
+     },
+     "flavour": "This rune rewards a moment of perfect concentration before an attack.",
+     "lines": [
+      "Add your Wisdom ability score to your next attack roll with the weapon, which must be made before the beginning of your next turn. The rune then becomes expended and can be restored with Refocus."
+     ],
+     "tiers": {}
+    },
+    "SOULFUL STRIKE": {
+     "traits": "FORCE INVESTED INVOCATION",
+     "fields": {
+      "Usage": "any weapon",
+      "Activate": "Command (1 AP)"
+     },
+     "flavour": "The Soulful Strike Rune is engraved with calming mantras and symbols of inner strength.",
+     "lines": [
+      "When active, the weapon inflicts secondary force damage based upon its level."
+     ],
+     "tiers": {
+      "SOULFUL I": {
+       "fields": {
+        "Level": "7",
+        "Price": "2,100 gp"
+       },
+       "lines": [
+        "The weapon inflicts 1d6 damage."
+       ]
+      },
+      "SOULFUL II": {
+       "fields": {
+        "Level": "12",
+        "Price": "11,000 gp"
+       },
+       "lines": [
+        "The weapon inflicts 2d6 damage and a secondary critical with a severity of -3."
+       ]
+      },
+      "SOULFUL III": {
+       "fields": {
+        "Level": "17",
+        "Price": "90,000 gp"
+       },
+       "lines": [
+        "The weapon inflicts 3d6 damage and a secondary critical with a severity of -1."
+       ]
+      }
+     }
+    },
+    "TRANQUIL QUIVER": {
+     "traits": "FOCUS INVESTED INVOCATION",
+     "fields": {
+      "Level": "10",
+      "Price": "6,000 gp",
+      "Usage": "any ranged weapon",
+      "Activate": "Engage (1 AP)"
+     },
+     "flavour": "This rune calms the mind of an archer.",
+     "lines": [
+      "The next ranged attack made with the weapon gains a +2 status bonus. Furthermore, if the target is more than 30 feet away, the ammunition deals 1d6 precision damage in addition to any normal damage on a successful hit. The rune then becomes expended and can be restored with Refocus."
+     ],
+     "tiers": {}
+    }
+   }
+  },
+  "specificWeapon": {
+   "intro": [
+    "Below is an example weapon created using the new rules in this sourcebook."
+   ],
+   "entries": {
+    "SPIRITBLADE": {
+     "traits": "ALTERATION INVESTED WARDING",
+     "fields": {
+      "Level": "14",
+      "Price": "31,000 gp",
+      "Usage": "held weapon",
+      "Weight": "8 lbs",
+      "AB": "+15",
+      "Damage": "1d10+2 S",
+      "Size": "L",
+      "Fumble": "3",
+      "Traits": "Balanced, Brace, Centred II, Deadly, Keen, Potency III, Soulful II, Versatile P",
+      "Activate": "Command (1 AP)",
+      "Frequency": "Upon a successful critical hit."
+     },
+     "flavour": "This wonderfully crafted Nodachi is engraved with symbols of animals.",
+     "lines": [
+      "The weapon has the following statistics:",
+      "The weapon casts a Fear (DC 20) spell on the target of the critical hit."
+     ],
+     "tiers": {}
+    }
+   }
+  },
+  "wondrous": {
+   "intro": [
+    "Detailed below are some example wondrous items that have a monastic feel to them."
+   ],
+   "entries": {
+    "ENLIGHTENED PRAYER BEADS": {
+     "traits": "ALTERATION INVESTED",
+     "fields": {
+      "Level": "6",
+      "Price": "2,000 gp",
+      "Usage": "worn",
+      "Weight": "-"
+     },
+     "flavour": "A strand of smooth, ivory prayer beads, each bead engraved with intricate symbols of tranquillity and enlightenment.",
+     "lines": [
+      "Any character who invests these beads gains a +1 status bonus to their Wisdom ability score. Additionally, once per day, you gain advantage on a Refocus (Mental Focus) check made while holding or wearing the beads."
+     ],
+     "tiers": {}
+    },
+    "LOTUS BLOSSOM": {
+     "traits": "INVESTED WARDING",
+     "fields": {
+      "Level": "8",
+      "Price": "5,000 gp",
+      "Usage": "held in 1 hand",
+      "Weight": "1 lb",
+      "Activate": "Interact (2 AP)"
+     },
+     "flavour": "A small, crystal vial containing a radiant, golden elixir with the faint scent of blooming lotus flowers.",
+     "lines": [
+      "When the elixir within this bottle is consumed, it grants you an amount of temporary HP equal to your level and removes any fear or charm effect which is currently affecting you. Furthermore, you gain advantage to all such saving throws for 1 hour after consumption.",
+      "During your daily preparation, the elixir within the bottle is replenished and may be used again.",
+      "Be aware that if you attempt to use more than one of these elixirs in any one day, you take a serious poison critical before its effects take place."
+     ],
+     "tiers": {}
+    },
+    "MONASTIC ROBE OF RESILIENCE": {
+     "traits": "INVESTED WARDING",
+     "fields": {
+      "Level": "6",
+      "Price": "2,500 gp",
+      "Usage": "worn",
+      "Weight": "5 lbs"
+     },
+     "flavour": "These non-descript robes are easily overlooked.",
+     "lines": [
+      "You gain DR 1 whilst wearing these robes.",
+      "These robes can be imbued further with armour runes but cannot be worn with armour."
+     ],
+     "tiers": {}
+    },
+    "MYSTIC INCENSE BURNER": {
+     "traits": "INVESTED WARDING",
+     "fields": {
+      "Level": "8",
+      "Price": "5,000 gp",
+      "Usage": "worn",
+      "Weight": "10 lbs"
+     },
+     "flavour": "An ornate incense burner with a fragrant blend of rare herbs and resins. When the incense is lit, it releases a calming aroma.",
+     "lines": [
+      "When the Mystic Incense Burner is lit and placed in a room, it creates an aura of tranquillity. All creatures within a 30-foot radius gain a +1-resistance bonus to Will saves against fear and charm effects while they remain in the area. Furthermore, all creatures in the area of effect also gain a +2-status bonus to Meditation skill checks. The incense will burn for 1 hour after which it must be replenished.",
+      "Incense for the burner is a common level 0 item which can be purchased for 5 gp per use"
+     ],
+     "tiers": {}
+    },
+    "RESTORATIVE MAT": {
+     "traits": "INVESTED SOUL",
+     "fields": {
+      "Level": "10",
+      "Price": "8,000 gp",
+      "Usage": "sat upon (1 medium creature max)",
+      "Weight": "20 lbs"
+     },
+     "flavour": "This simple, woven mat is embroidered with tranquil patterns.",
+     "lines": [
+      "When making Meditation checks whilst sat upon the mat, you gain a +2-status bonus to the check. Furthermore, you may once per day gain the benefit of either a Cure or Restoration spell (8 PP) by meditating on the mat for 10 minutes."
+     ],
+     "tiers": {}
+    },
+    "SASH OF SERENITY": {
+     "traits": "INVESTED WARDING",
+     "fields": {
+      "Level": "8",
+      "Price": "5,000 gp",
+      "Usage": "worn",
+      "Weight": "-"
+     },
+     "flavour": "A simple, silk sash adorned with embroidered mantras of inner peace.",
+     "lines": [
+      "When invested, the Sash of Serenity grants a +1-dodge bonus to DB and a +2-resistance bonus to saving throws against fear effects. Once per day, you can enter a state of serenity for 1 minute, gaining advantage on one saving throw of your choice during that time."
+     ],
+     "tiers": {}
+    }
+   }
+  }
+ },
+ "appendix": {
+  "prose": {
+   "INTRODUCTION": [
+    "The following rules deal with the effects of natural aging upon player characters and other mortal creatures. A character's race determines when they reach adulthood and their approximate natural lifespan. These values are given for existing races at the end of this appendix."
+   ],
+   "CHARACTER AGING": [
+    "Age affects every mortal creature differently. Some races mature quickly and live only a few decades, while others may spend centuries accumulating experience before the effects of age begin to slow them.",
+    "Aging is divided into five categories: Juvenile, Adult, Middle Aged, Old and Venerable."
+   ],
+   "AGE CATEGORIES": [
+    "If a race does not provide specific age categories, determine them from its Natural Lifespan. Natural Lifespan is the age at which a healthy member of that race would normally be expected to reach the end of their life.",
+    "Always round age thresholds to the nearest whole year.",
+    "The GM may adjust these ages for individual creatures. Illness, hardship, exceptional health, magic and supernatural ancestry can all cause an individual to age differently from the norm."
+   ],
+   "NATURAL LIFESPAN": [
+    "A race's listed lifespan represents a typical lifespan rather than an absolute biological limit. Where a racial description provides a range, the player and GM may either choose an appropriate Natural Lifespan within that range or determine it randomly. The GM should normally keep a randomly determined Natural Lifespan secret from the player.",
+    "Once a character reaches their Natural Lifespan, they have reached the natural end of their life. Unless something extends their lifespan, they die from natural causes during the following year at a time determined by the GM.",
+    "Adventurers can obviously die much earlier through injury, disease, poison or the many other hazards associated with their profession.",
+    "When you enter a new age category, apply the modifiers shown on the Effects of Aging table. These are age modifiers and replace the modifiers from the previous age category; they are not added together.",
+    "The penalties to Strength, Dexterity and Constitution represent the gradual decline of the body. The bonuses to Intelligence, Wisdom and Charisma represent accumulated experience, patience, confidence and understanding.",
+    "Age modifiers are applied directly to your ability scores and therefore affect any statistics derived from those abilities normally."
+   ],
+   "ENTERING A NEW AGE CATEGORY": [
+    "Age modifiers take effect on the character's birthday when they reach the appropriate threshold.",
+    "A character does not need to recalculate previous Hit Points, skill points or other choices gained at earlier levels. Only statistics currently derived from the altered ability score are recalculated.",
+    "For example, a reduction to Constitution affects the character's current Constitution modifier and statistics that presently use it but does not remove Hit Points already gained from previous class levels."
+   ],
+   "EXTENDING LIFE": [
+    "Magic can slow aging, preserve the body or extend a creature's Natural Lifespan.",
+    "Unless an ability specifically states that it extends lifespan, halts aging or grants immortality, it does not prevent natural aging. An effect that merely removes or suppresses aging penalties does not increase the character's Natural Lifespan.",
+    "Similarly, immunity to disease, poison, fatigue or similar effects does not make a creature immortal."
+   ],
+   "AGE RESISTANCE": [
+    "The Age Resistance spell suppresses the penalties that aging imposes upon Strength, Dexterity and Constitution for its duration. The bonuses to Intelligence, Wisdom and Charisma remain.",
+    "Age Resistance does not make the character younger, alter their appearance, change their age category or extend their Natural Lifespan. A character protected indefinitely by Age Resistance can therefore retain youthful physical capability but will eventually die of natural old age unless another effect specifically extends their lifespan."
+   ],
+   "MAGICAL AGING": [
+    "Some supernatural effects may physically age or rejuvenate a creature. If an effect changes a creature's actual biological age, recalculate its age category immediately and apply the appropriate age modifiers.",
+    "If the effect changes only the creature's appearance, no aging modifiers are altered. When an aging effect ends and the creature returns to its normal biological age, its normal age modifiers return.",
+    "A creature cannot gain permanent mental ability bonuses simply by repeatedly aging and rejuvenating itself. Only the modifiers appropriate to its current actual age category apply."
+   ],
+   "APPARENT AGE": [
+    "A creature's appearance does not necessarily reveal its actual age. Disguises, polymorph effects and racial abilities can make a creature appear younger or older without affecting its biological age.",
+    "For example, a Miraku can use Fluid Form to alter their apparent age, but the ability does not alter their actual biological age. Their aging modifiers therefore remain unchanged."
+   ],
+   "AGE AND CHARACTER CREATION": [
+    "The age given in a racial description for a starting character represents the normal age at which members of that race begin an adventuring career.",
+    "Players may choose an older character with the GM's permission. If the chosen starting age places the character into the Middle Aged, Old or Venerable category, apply the appropriate aging modifiers during character creation.",
+    "A player cannot voluntarily select a character younger than their race's normal age of adulthood without GM permission.",
+    "The following table brings together the racial aging information from the TRG Core Rulebook and Inner Tempest. Age thresholds use the Character Aging rules in this appendix: Middle Aged begins at 50% of Natural Lifespan, Old at 70% and Venerable at 85%."
+   ]
+  },
+  "categories": [
+   {
+    "category": "Juvenile",
+    "age": "Younger than adult age."
+   },
+   {
+    "category": "Adult",
+    "age": "Adulthood to less than 50% of Natural Lifespan"
+   },
+   {
+    "category": "Middle Aged",
+    "age": "50% to less than 70%"
+   },
+   {
+    "category": "Old",
+    "age": "70% to less than 85%"
+   },
+   {
+    "category": "Venerable",
+    "age": "85% of Natural Lifespan onwards"
+   }
+  ],
+  "effects": [
+   {
+    "category": "Juvenile",
+    "str": "-1",
+    "dex": "+1",
+    "con": "-1",
+    "int": "-",
+    "wis": "-1",
+    "cha": "-"
+   },
+   {
+    "category": "Adult",
+    "str": "-",
+    "dex": "-",
+    "con": "-",
+    "int": "-",
+    "wis": "-",
+    "cha": "-"
+   },
+   {
+    "category": "Middle Aged",
+    "str": "-1",
+    "dex": "-1",
+    "con": "-1",
+    "int": "+1",
+    "wis": "+1",
+    "cha": "+1"
+   },
+   {
+    "category": "Old",
+    "str": "-2",
+    "dex": "-2",
+    "con": "-2",
+    "int": "+2",
+    "wis": "+2",
+    "cha": "+2"
+   },
+   {
+    "category": "Venerable",
+    "str": "-3",
+    "dex": "-3",
+    "con": "-3",
+    "int": "+3",
+    "wis": "+3",
+    "cha": "+3"
+   }
+  ],
+  "races": [
+   {
+    "race": "Ascendan",
+    "adult": "70",
+    "middle": "—",
+    "old": "—",
+    "venerable": "—",
+    "lifespan": "Immortal"
+   },
+   {
+    "race": "Dwarf",
+    "adult": "40",
+    "middle": "175",
+    "old": "245",
+    "venerable": "298",
+    "lifespan": "~350 years"
+   },
+   {
+    "race": "Elf",
+    "adult": "20",
+    "middle": "—",
+    "old": "—",
+    "venerable": "—",
+    "lifespan": "Immortal"
+   },
+   {
+    "race": "Gnome",
+    "adult": "40",
+    "middle": "250–300*",
+    "old": "350–420*",
+    "venerable": "425–510*",
+    "lifespan": "500–600 years"
+   },
+   {
+    "race": "Halfling",
+    "adult": "20",
+    "middle": "75",
+    "old": "105",
+    "venerable": "128",
+    "lifespan": "~150 years"
+   },
+   {
+    "race": "Human",
+    "adult": "15",
+    "middle": "45",
+    "old": "63",
+    "venerable": "77",
+    "lifespan": "~90 years"
+   },
+   {
+    "race": "Kornargon",
+    "adult": "19",
+    "middle": "60",
+    "old": "84",
+    "venerable": "95",
+    "lifespan": "120 years"
+   },
+   {
+    "race": "Orc ‡",
+    "adult": "14",
+    "middle": "—",
+    "old": "—",
+    "venerable": "—",
+    "lifespan": "Unknown"
+   },
+   {
+    "race": "Miraku",
+    "adult": "18",
+    "middle": "110–140*",
+    "old": "154–196*",
+    "venerable": "187–238*",
+    "lifespan": "220–280 years"
+   },
+   {
+    "race": "Ryukari",
+    "adult": "25",
+    "middle": "175+§",
+    "old": "245+§",
+    "venerable": "298+§",
+    "lifespan": "350+ years"
+   },
+   {
+    "race": "Scree",
+    "adult": "10",
+    "middle": "35–50*",
+    "old": "49–70*",
+    "venerable": "60–85*",
+    "lifespan": "70–100 years"
+   },
+   {
+    "race": "Tianzhi",
+    "adult": "20",
+    "middle": "50",
+    "old": "71 - 90",
+    "venerable": "91+",
+    "lifespan": "Not stated"
+   }
+  ],
+  "raceNotes": [
+   "\\* For races with a lifespan range, the exact thresholds depend upon the character's selected or determined Natural Lifespan. The figures shown give the possible range.",
+   "‡ Orcs have a starting-character age of 13+1d4. The Core Rulebook notes only that no scholar has recorded an Orc living beyond approximately 50 years due to their violent lifestyle).",
+   "§ Ryukari figures are minimum thresholds if 350 years is used as the Natural Lifespan. A longer-lived Ryukari reaches each category proportionately later.",
+   "Ascendan and Elves are immortal and therefore do not normally enter the Middle Aged, Old or Venerable categories through natural aging."
+  ]
+ }
+}

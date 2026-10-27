@@ -27,6 +27,7 @@ import { BLOCK6_FEATS, BLOCK6_ABILITIES } from "./block6.mjs";
 import { BLOCK7_FEATS, BLOCK7_ABILITIES } from "./block7.mjs";
 import { BLOCK8_SPELLS } from "./block8.mjs";
 import { CHAPTER6_WEAPONS } from "./weapons.mjs";
+import { BLOCK9_ARMOUR, BLOCK9_RUNES, BLOCK9_SPECIFIC, BLOCK9_WONDROUS, BLOCK9_GEAR } from "./block9.mjs";
 import { md } from "./markdown.mjs";
 
 const text = JSON.parse(fs.readFileSync(new URL("./book-text.json", import.meta.url), "utf8"));
@@ -503,5 +504,12 @@ export const PACKS = [
   { name: "it-spells", label: "Inner Tempest: Spells", extends: "spells", docs: [...BLOCK3_SPELLS, ...BLOCK5_SPELLS, ...BLOCK8_SPELLS] },
   { name: "it-companions", label: "Inner Tempest: Natural Attacks", extends: "companions", docs: [...NATURAL_ATTACKS, ...BLOCK5_NATURAL_ATTACKS] },
   // 0.5.1: Chapter 6's sixteen weapons (Graham, 23 October 2026).
-  { name: "it-weapons", label: "Inner Tempest: Weapons", extends: "weapons", docs: CHAPTER6_WEAPONS }
+  { name: "it-weapons", label: "Inner Tempest: Weapons", extends: "weapons", docs: CHAPTER6_WEAPONS },
+  // Block 9 (0.10.0): Chapter 6's armour and Chapter 9's magic items, each
+  // kind beside its core pack, and the burner's Incense.
+  { name: "it-armour", label: "Inner Tempest: Armour", extends: "armour", docs: BLOCK9_ARMOUR },
+  { name: "it-runes", label: "Inner Tempest: Runes", extends: "runes", docs: BLOCK9_RUNES },
+  { name: "it-specific-items", label: "Inner Tempest: Specific Magic Armour & Weapons", extends: "specific-items", docs: BLOCK9_SPECIFIC },
+  { name: "it-wondrous", label: "Inner Tempest: Wondrous Items", extends: "wondrous", docs: BLOCK9_WONDROUS },
+  { name: "it-gear", label: "Inner Tempest: Gear", extends: "gear", docs: BLOCK9_GEAR }
 ];

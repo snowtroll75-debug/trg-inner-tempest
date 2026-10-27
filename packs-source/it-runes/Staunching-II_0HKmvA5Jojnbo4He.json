@@ -1,0 +1,56 @@
+{
+  "_id": "0HKmvA5Jojnbo4He",
+  "name": "Staunching II",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 16000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Invested, Soul",
+    "description": "<p><strong>INVESTED SOUL</strong></p>\n<p><strong>Usage</strong> inscribed onto armour</p>\n<p><em>Your wounds close more quickly.</em></p>\n<p>The flat check to stop bleeding is reduced whilst wearing this armour based upon its level. Higher level versions of this rune also allow you to make flat checks to stop more severe wounds.</p>\n<p><strong>STAUNCHING II</strong></p>\n<p><strong>Level</strong> 12; <strong>Price</strong> 16,000 gp</p>\n<p>The flat check to remove Light Bleeding is reduced by 3 to 13. Furthermore, you may also attempt a DC 16 flat check to reduce Moderate Bleeding by 1.</p>\n<p><em>On the sheet:</em> Applied automatically at the end of your turn: the Light Bleeding flat check is easier by 2, 3 or 4; at tier II a bleed above Light rolls a DC 16 flat check at Moderate, at tier III at any band, and on a success the largest bleed falls by 1.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 12,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "staunching",
+        "tier": 2,
+        "on": [
+          "armour"
+        ],
+        "automation": "event"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!0HKmvA5Jojnbo4He"
+}

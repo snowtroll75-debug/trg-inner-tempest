@@ -18,13 +18,17 @@ import { onStrikeResolvedB5, onItemCreatedB5, onItemUpdatedB5, onItemDeletedB5, 
 import { onStrikeResolvedB6, onItemCreatedB6, reconcileB6Actor } from "../module/block6-automations.mjs";
 import { onStrikeResolvedB7, onDamageAppliedB7, onDailyPreparationB7, onTurnEndedB7, onAmbushDealtB7 } from "../module/block7-automations.mjs";
 import { onSpellSettledB8, onPreUpdateItemB8, onItemUpdatedB8, onEffectDeletedB8, registerBlock8Socket } from "../module/block8-automations.mjs";
+import { onDailyPreparationB9 } from "../module/block9-automations.mjs";
+import {
+  registerAgingSetting, reconcileAllAging, onActorUpdatedAging, onItemChangedAging, onEffectChangedAging, onRenderActorSheetAging
+} from "../module/aging-workflow.mjs";
 import {
   onActionAttempt, onActionResolved as onSkillActionResolved, offerResistDying,
   onTurnEnded, onCombatDeleted, onEffectDeleted, onDailyPreparation, trackActionResolved
 } from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.672.0";
+const REQUIRED_SYSTEM = "3.673.0";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
@@ -107,6 +111,16 @@ Hooks.on("preUpdateItem", (item, changes, options) => { try { onPreUpdateItemB8(
 Hooks.on("updateItem", (item, changes, options, userId) => { onItemUpdatedB8(item, changes, options, userId).catch((err) => console.warn("Inner Tempest | Disrupt Soul (Block 8)", err)); });
 Hooks.on("deleteActiveEffect", (effect) => { onEffectDeletedB8(effect).catch((err) => console.warn("Inner Tempest | Burst of Speed (Block 8)", err)); });
 
+// BLOCK 9 (0.10.0, on TRG Prime 3.673.0): the Lotus Blossom's day and the
+// Prayer Beads' unspent advantage at daily preparation; the Appendix's aging,
+// kept in step with the sheet's age, race, Natural Lifespan and Age Resistance.
+Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB9(ctx).catch((err) => console.warn("Inner Tempest | daily preparation (Block 9)", err)); });
+Hooks.once("init", () => registerAgingSetting());
+Hooks.on("updateActor", (actor, changes) => { onActorUpdatedAging(actor, changes).catch((err) => console.warn("Inner Tempest | aging", err)); });
+for (const hook of ["createItem", "deleteItem"]) Hooks.on(hook, (item) => { onItemChangedAging(item).catch((err) => console.warn("Inner Tempest | aging", err)); });
+for (const hook of ["createActiveEffect", "deleteActiveEffect"]) Hooks.on(hook, (effect) => { onEffectChangedAging(effect).catch((err) => console.warn("Inner Tempest | aging", err)); });
+Hooks.on("renderTRGActorSheet", (app, element) => { try { onRenderActorSheetAging(app, element); } catch (err) { console.warn("Inner Tempest | aging on the sheet", err); } });
+
 // The buttons on this module's cards: Predator's Pounce's paid Strike and
 // Ancestral Guidance's reroll.
 Hooks.on("renderChatMessageHTML", (message, html) => bindCardButtons(message, html));
@@ -135,5 +149,7 @@ Hooks.once("ready", () => {
     // 0.7.0 (B6-8): a Mystic's Path-stamped innate spells take its Metamagic feats.
     (async () => { for (const actor of game.actors ?? []) await reconcileB6Actor(actor); })()
       .catch((err) => console.warn("Inner Tempest | bringing Mystics into step (0.7.0)", err));
+    // 0.10.0: the Appendix's age categories on every creature with an age.
+    reconcileAllAging().catch((err) => console.warn("Inner Tempest | aging (0.10.0)", err));
   }
 });

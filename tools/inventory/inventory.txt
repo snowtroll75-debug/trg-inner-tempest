@@ -453,6 +453,7 @@ MI-16|Ch9 p82|Monastic Robe of Resilience|Wondrous|L6 2,500 gp; DR 1; takes armo
 MI-17|Ch9 p82|Mystic Incense Burner|Wondrous|L8 5,000 gp; 30-ft aura +1 resistance Will vs fear/charm, +2 status Meditation; 1 h; incense 5 gp|aura|B|PACK + aura effect + consumable|
 MI-18|Ch9 p82|Restorative Mat|Wondrous|L10 8,000 gp; +2 status Meditation; 1/day Cure or Restoration (8 PP)|innatePrinted cast|A|PACK + daily cast|
 MI-19|Ch9 p82|Sash of Serenity|Wondrous|L8 5,000 gp; +1 dodge DB, +2 resistance vs fear; 1/day advantage on one save for 1 min|AE + pending|A|PACK|
+MI-20|Ch9 p79|Monastic Items (crafting)|Rule|Inner Discipline: Create a magic item with Meditation for a technique or innate spell known; DC Hard (+2); Meditation ranks >= item level; no charged items|registerCreateRoute (core 3.673.0 C8)|A|registerCreateRoute + setup ticks|
 #
 ## APPENDIX
 AP-01|Appendix|Character aging (categories, modifiers, lifespans)|Subsystem|Age category from age/lifespan; ability modifiers replace per category; Age Resistance interaction|no core|C|module macro + AE (optional)|

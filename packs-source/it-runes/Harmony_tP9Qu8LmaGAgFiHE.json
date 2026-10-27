@@ -1,0 +1,57 @@
+{
+  "_id": "tP9Qu8LmaGAgFiHE",
+  "name": "Harmony",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 0,
+    "price": 11000,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "Focus, Invested, Warding",
+    "description": "<p><strong>FOCUS INVESTED WARDING</strong></p>\n<p><strong>Level</strong> 11; <strong>Armour Price</strong> 11,000 gp; <strong>Shield Price</strong> 7,700 gp; <strong>Usage</strong> inscribed onto armour or shield; <strong>Activate</strong> Engage (1 AP); <strong>Requirement</strong> the rune is ready</p>\n<p><em>This rune enhances the wearer's inner balance and agility.</em></p>\n<p>Activate the rune to gain a +2 dodge bonus to DB and a +2 resistance bonus to saving throws for 1 minute. This bonus increases to +3 if you are a Disciple or Mystic. The rune then becomes expended and can be restored with Refocus.</p>\n<p><em>On the sheet:</em> Press Harmony on the item (Engage, 1 AP): for 1 minute +2 dodge DB and +2 resistance to all three saves, +3 each when you have the Disciple or Mystic class. The rune is then expended; Refocus restores it.</p>",
+    "slot": "",
+    "uses": 0,
+    "itemSize": "medium",
+    "itemLevel": 11,
+    "heldHands": 0,
+    "formulae": "",
+    "spellbookContainer": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "bookChapter": 9,
+      "rune": {
+        "key": "harmony",
+        "tier": 1,
+        "on": [
+          "armour",
+          "shield"
+        ],
+        "automation": "action"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.673.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!tP9Qu8LmaGAgFiHE"
+}
