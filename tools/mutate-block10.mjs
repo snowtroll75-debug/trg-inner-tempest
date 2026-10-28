@@ -134,7 +134,7 @@ const MUTATIONS = [
   { name: "the world's dragons are not brought into step", file: SCRIPT, from: "    reconcileAllDragons().catch", to: "    Promise.resolve().catch" },
   { name: "the module accepts 3.674.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.674.1\";" },
   { name: "the manifest accepts 3.674.1", file: MANIFEST, from: "\"minimum\": \"3.674.2\"", to: "\"minimum\": \"3.674.1\"" },
-  { name: "the manifest says 1.0.1", file: MANIFEST, from: "\"version\": \"1.0.2\"", to: "\"version\": \"1.0.1\"" },
+  { name: "the manifest says 1.0.2", file: MANIFEST, from: "\"version\": \"1.0.3\"", to: "\"version\": \"1.0.2\"" },
   { name: "the dragons' pack extends the companions", file: MANIFEST, from: "      \"path\": \"packs/it-dragons\",\n      \"type\": \"Item\",\n      \"system\": \"trg-prime\"\n", to: "      \"path\": \"packs/it-dragons\",\n      \"type\": \"Item\",\n      \"system\": \"trg-prime\",\n      \"flags\": { \"trg-prime\": { \"extends\": \"companions\" } }\n" },
   { name: "the feats are not built", file: FOUND, from: ", ...BLOCK7_FEATS, ...BLOCK10_FEATS] },", to: ", ...BLOCK7_FEATS] }," },
   { name: "Dragon Tamer's status line is missing", file: STATUS, from: "  \"FA-02\": {\n    \"status\": \"Implemented\",", to: "  \"FA-02\": {\n    \"status\": \"Planned\"," },

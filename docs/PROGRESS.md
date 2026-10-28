@@ -15,6 +15,7 @@ This is the durable record that lets work resume across sessions. Update it at t
 - **Block 10 done.**
 - **Bookkeeping (Graham: "lets do the bookkeeping"):** the three "In progress" lines (SYS-04, SYS-13, SYS-11) closed as Implemented; twelve built features that had no status line recorded (RA-01 to RA-09, CL-06, FC-14a, SYS-02, and SYS-12, which is Block 9's Monastic Items route); SYS-09 and SYS-10 recorded Not started (they need a journal entry and there is no journal pack: Graham to decide). Implemented 407 of 409.
 - **Tested live is now counted, not fixed at 0:** a status line's `live` lists the reports that record the feature exercised in the world, each with a verbatim quote (checked against the report). 219 of 409; the matrix ends with the evidence table. Ten borderline cases left out (only partly seen, a tick never applied, or a fix never retested).
+- **Published as 1.0.3** (Graham: "I would like it pushed now so create an updated version to do this"): the bookkeeping only; every block re-pinned.
 
 ## Earlier — 27 Oct 2026 (session 7: Block 10 built — 1.0.0 on core 3.674.0)
 

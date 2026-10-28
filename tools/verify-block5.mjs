@@ -419,7 +419,7 @@ const [sa, sb] = String(systemJson.version).split(".").map(Number);
 const sc = Number(String(systemJson.version).split(".")[2] ?? 0);
 ok("E the system at TRG_PRIME_ROOT is 3.669.2 or later", sa > 3 || (sa === 3 && (sb > 669 || (sb === 669 && sc >= 2))), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.0.2, built for 3.674.2", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.0.2", "3.674.2"]);
+equal("E the module is 1.0.3, built for 3.674.2", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.0.3", "3.674.2"]);
 ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.2";'));
 for (const [name, docs] of [["it-feats", B5.BLOCK5_FEATS], ["it-spells", B5.BLOCK5_SPELLS], ["it-companions", B5.BLOCK5_NATURAL_ATTACKS]]) {
   const dir = path.join(ROOT, "packs-source", name);

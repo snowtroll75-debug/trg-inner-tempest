@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3 — 28 Oct 2026 (bookkeeping)
+
+Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.3.md`.
+
+- **Implementation matrix:** statuses brought up to date (Implemented 407 of 409; SYS-09 and SYS-10 Not started, awaiting Graham); "Tested live" counted from the live-testing reports, 219 of 409, with the evidence table. No rules or behaviour change.
+- **Harness:** every block re-pinned to 1.0.3.
+
 ## 1.0.2 — 28 Oct 2026 (republish)
 
 Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.2.md`.

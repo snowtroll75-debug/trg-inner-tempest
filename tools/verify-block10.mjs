@@ -674,8 +674,8 @@ ok("E the hooks: a level change, daily preparation, the kill hook, Dying or the 
   && /Hooks\.on\("trgPrimeCreatureSlain", \(ctx\) => \{ onCreatureSlainB10\(ctx\)/.test(script) && /for \(const hook of \["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"\]\) Hooks\.on\(hook, \(effect\) => \{ onEffectChangedB10\(effect\)/.test(script)
   && /Hooks\.on\("createItem", \(item, options, userId\) => \{ try \{ onItemCreatedB10\(item, options, userId\);/.test(script) && /reconcileAllDragons\(\)\.catch/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.0.2, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.0.2", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.2/trg-inner-tempest.zip"]);
+equal("E the module is 1.0.3, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.0.3", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.3/trg-inner-tempest.zip"]);
 ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.2";'));
 {
   const [sa, sb, sc] = String(systemJson.version).split(".").map(Number);
