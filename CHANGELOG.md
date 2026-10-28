@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 — 28 Oct 2026 (republish)
+
+Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.2.md`.
+
+- **1.0.1 under a new number,** so Foundry offers the hatching-card fix to worlds that installed 1.0.1 before it. No other changes.
+- **Harness:** every block re-pinned to 1.0.2 and 3.674.2.
+
 ## 1.0.1 — 28 Oct 2026 (fixes from the 1.0.0 live test)
 
 Needs **TRG Prime 3.674.1**. See `docs/RELEASE_NOTES_1.0.1.md`.

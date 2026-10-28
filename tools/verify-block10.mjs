@@ -6,7 +6,7 @@
  *
  *   TRG_PRIME_ROOT=../core/trg-prime node tools/verify-block10.mjs
  *
- * Needs TRG Prime 3.674.1 at TRG_PRIME_ROOT (its packs are read for the
+ * Needs TRG Prime 3.674.2 at TRG_PRIME_ROOT (its packs are read for the
  * names the dragons borrow).
  *
  *   A  The book (tools/content/book-text-block10.json, cut from the v1.2 docx
@@ -674,12 +674,12 @@ ok("E the hooks: a level change, daily preparation, the kill hook, Dying or the 
   && /Hooks\.on\("trgPrimeCreatureSlain", \(ctx\) => \{ onCreatureSlainB10\(ctx\)/.test(script) && /for \(const hook of \["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"\]\) Hooks\.on\(hook, \(effect\) => \{ onEffectChangedB10\(effect\)/.test(script)
   && /Hooks\.on\("createItem", \(item, options, userId\) => \{ try \{ onItemCreatedB10\(item, options, userId\);/.test(script) && /reconcileAllDragons\(\)\.catch/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.0.1, built for 3.674.1, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.0.1", "3.674.1", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.1/trg-inner-tempest.zip"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.1";'));
+equal("E the module is 1.0.2, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.0.2", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.2/trg-inner-tempest.zip"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.2";'));
 {
   const [sa, sb, sc] = String(systemJson.version).split(".").map(Number);
-  ok("E the system at TRG_PRIME_ROOT is 3.674.1 or later", sa > 3 || (sa === 3 && (sb > 674 || (sb === 674 && sc >= 1))), systemJson.version);
+  ok("E the system at TRG_PRIME_ROOT is 3.674.2 or later", sa > 3 || (sa === 3 && (sb > 674 || (sb === 674 && sc >= 2))), systemJson.version);
 }
 {
   const m = manifest.packs.find((p) => p.name === "it-dragons");

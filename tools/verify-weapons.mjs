@@ -155,8 +155,8 @@ const allIds = PACKS.flatMap((p) => p.docs.map((d) => d._id));
 ok("D every id across the module is unique", new Set(allIds).size === allIds.length);
 ok("D Backswing, Brace and Twin are registered as traits", ["backswing", "brace", "twin"].every((t) => api.registeredTraits().includes(t)));
 // Re-pinned at 0.6.0 (Block 5, on 3.669.0).
-equal("D the module is 1.0.1, built for 3.674.1", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.0.1", "3.674.1"]);
-ok("D the script refuses an older system", fs.readFileSync(path.join(ROOT, "scripts", "inner-tempest.mjs"), "utf8").includes('const REQUIRED_SYSTEM = "3.674.1";'));
+equal("D the module is 1.0.2, built for 3.674.2", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.0.2", "3.674.2"]);
+ok("D the script refuses an older system", fs.readFileSync(path.join(ROOT, "scripts", "inner-tempest.mjs"), "utf8").includes('const REQUIRED_SYSTEM = "3.674.2";'));
 const systemJson = JSON.parse(fs.readFileSync(path.join(SYSTEM_ROOT, "system.json"), "utf8"));
 const [sa, sb, sc] = String(systemJson.version).split(".").map(Number);
 ok("D the system at TRG_PRIME_ROOT is 3.669.0 or later", sa > 3 || (sa === 3 && sb >= 669), systemJson.version);

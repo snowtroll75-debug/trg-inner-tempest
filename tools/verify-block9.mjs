@@ -485,9 +485,9 @@ ok("E the hooks: daily preparation, the setting at init, the actor, its race, Ag
   && /Hooks\.on\("renderTRGActorSheet", \(app, element\) => \{ try \{ onRenderActorSheetAging\(app, element\);/.test(script)
   && /reconcileAllAging\(\)\.catch/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.0.1, built for 3.674.1, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.0.1", "3.674.1", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.1/trg-inner-tempest.zip"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.1";'));
+equal("E the module is 1.0.2, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.0.2", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.2/trg-inner-tempest.zip"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.2";'));
 {
   const [sa, sb] = String(systemJson.version).split(".").map(Number);
   ok("E the system at TRG_PRIME_ROOT is 3.673.0 or later", sa > 3 || (sa === 3 && sb >= 673), systemJson.version);

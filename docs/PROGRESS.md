@@ -2,14 +2,17 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 28 Oct 2026 (session 7: Block 10 live-tested; 1.0.1 and core 3.674.1 built)
+## Current state — 28 Oct 2026 (session 7: Block 10 done; 1.0.1 and core 3.674.1 published; 1.0.2 and 3.674.2 built)
 
 - **Hurling (core 3.674.0, rebuilt):** copies the 3.666.1 repair never reached (Fiends & Fables creatures, compendium casters) read their printed "1d6 + magical ability score"; confirmed live (Human Ghost +5).
 - **Live test of 1.0.0 on 3.674.0** (`live-testing-report-3.674.0.md`): Block 10 works live (hatching as GM, growth, breath, death and held Soul Drain, rest, weekly recovery, restoration, separation, Draconic Spell, Imitate Sound warning, Deflecting Wings on the player's screen). Faults: F1 a player cannot create the companion; F2 a new companion at template HP; F3 High Magic tied with F&F's; F4 the breath's length undone by codex inheritance; F5 DB 2 above the printed blocks; F6 Hurling's old "added by hand" note.
 - **Graham:** "Printed block for dragon db. Build fixes 1-5 and amend text on point 6".
 - **1.0.1 built:** no DB from the growth (the printed blocks are the system's creature rule); the breath copy opts out of codex inheritance. `verify-block10` 117, `mutate-block10` 110/110.
 - **Core 3.674.1 built:** companion creation through the GM relay; full HP at creation; compendium source kept; Hurling's note amended. `verify-block10-core` 48, `mutate-block10-core` 78/78.
-- **Next:** full sweep on the staged 3.674.1, zips, Graham installs, retest. **Nothing pushed.**
+- **Retested live** (`live-testing-report-3.674.1.md`): F1–F6 all fixed. One cosmetic fault: the hatching card said Will +12 against the sheet's +14. Fixed: the core's `createCompanionFor` takes `beforeCard`, where the module sets the dragon's printed feats, ranks and fields (`verify-block10` 118, `mutate-block10` 111/111; `verify-block10-core` 49, `mutate-block10-core` 79/79).
+- **Published with Graham's approval** ("Do the one line fix and then push"): core v3.674.1 (`7dcd229` 3.674.0, `95356e8` 3.674.1) and Inner Tempest v1.0.1 (`a489cb5`). Releases created by the workflows at 12:20Z.
+- **Republished as core 3.674.2 and Inner Tempest 1.0.2** (Graham: "update the version number of the two zips, otherwise it will not trigger updates"): the card fix had gone out under numbers already installed. Every pin moved; all suites green.
+- **Block 10 done.**
 
 ## Earlier — 27 Oct 2026 (session 7: Block 10 built — 1.0.0 on core 3.674.0)
 
