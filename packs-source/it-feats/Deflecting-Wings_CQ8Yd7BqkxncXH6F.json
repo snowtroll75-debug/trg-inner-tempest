@@ -1,0 +1,49 @@
+{
+  "_id": "CQ8Yd7BqkxncXH6F",
+  "name": "Deflecting Wings",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Large Size",
+    "active": true,
+    "description": "<p><strong>DEFLECTING WINGS</strong></p>\n<p><strong>Prerequisites</strong> Large Size</p>\n<p><strong>Trigger</strong> The dragon companion is targeted with an attack.</p>\n<p><strong>Action</strong> Reaction</p>\n<p>The dragon companion brings its wings up to block an incoming attack gaining a +2-circumstance bonus to DB against it.</p>\n<p><em>Automated:</em> offered as a reaction before an attack against a Large or larger dragon is rolled: +2 circumstance to DB against that attack, which removes it (spends the reaction). Offered to the dragon companions only (C4).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Companion",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "companionKind": "dragon"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CQ8Yd7BqkxncXH6F"
+}

@@ -1,0 +1,321 @@
+{
+  "_id": "pGCacKyDRFZ86UzW",
+  "name": "Fire Dragon",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest, Chapter 5",
+    "category": "Base Creature",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FIRE DRAGON</strong></p>\n<p><strong>Size</strong> Small</p>\n<p><strong>Level</strong> 6 (<strong>EL</strong> 5); <strong>DC</strong> 20</p>\n<p><strong>Initiative</strong> +20</p>\n<p><strong>Speed</strong> 30 feet; Fly 80</p>\n<p><strong>Senses</strong> Darkvision 55’, Nightvision 110’, Scent 30’</p>\n<p><strong>Languages</strong> Low Tongue, Wyrmish</p>\n<p><strong>ABILITY SCORES</strong> <strong>STR</strong> +3, <strong>CON</strong> +2, <strong>DEX</strong> +3, <strong>INT</strong> +0, <strong>WIS</strong> +1, <strong>CHA</strong> +2</p>\n<p><strong>SKILLS</strong> Acrobatics +10(4), Arcana +9(6), Athletics +10(4), Climbing +10(4), Culture +9(6), Deception +9(4), Diplomacy +9(4), Intimidate +9(4), Meditation +8(4), Mental Focus +8(4), Nature +8(4), Perception +8(4), Power Manipulation +9(6), Sense Motive +8(4), Survival +8(4)</p>\n<p><strong>DEFENCE</strong><br>DB +23 (Base +16; Other +3; Stat +3; Status +1); DR 6<br>Fort +15, Ref +14, Will +14<br>HP 104; Immunity fire, paralysis, sleep; Weakness cold</p>\n<p><strong>FEATS/SPECIAL</strong> Alertness, Great Fortitude, Iron Will, Smokevision</p>\n<p><strong>Fire Dragon Breath</strong> 2 AP (arcane, fire, focus, invocation, save)<br>The dragon breathes a 15-foot cone that inflicts 6d8 fire damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage.</p>\n<p><strong>ATTACKS</strong><br>Bite +12 (finesse) 2d6+3 piercing plus 1d6 fire<br>Claw +12 (agile, finesse, versatile - p) 2d5+3 slashing</p>\n<p><strong>MAGIC</strong><br>A fire dragon is a High Magic caster.<br>CL 3; Spellcraft +8; PP 26<br>Spells 4 x Cantrip, 5 additional spells (max PP 4).</p>\n<p><strong>SPECIAL ABILITIES BY LEVEL</strong> 8: Draconic Assault; 10: Wing Buffet; 12: Frightful Aura; 14: Draconic Shifting; 16: Fiery Blood; 18: Fiery Aura; 20: Scorching Breath; 22: Spell Resilience</p>\n<p><em>A fire dragon is a fearsome, flame-breathing creature, typically adorned with fiery scales and possessing the ability to unleash destructive torrents of fire.</em></p>\n<p><em>Automated:</em> hatched by Dragon Tamer at level 6, with the skill ranks printed (B10-7), the feats printed (each counting as a pick made), its languages, immunities and weakness. The breath is 6d8 at 6 and a die a level after (C5), a Focus ability with a basic Reflex save at the creature DC; it grows as a cone with the table. Its specials arrive by its own level from the system's Creature Codex. Its DB is the printed block's (Graham, 28 October 2026): the system's creature rule, half its level as an other bonus and its class bonus − 2 as a status bonus. Its natural attacks follow the system's one size ladder (B10-10).</p>",
+    "traits": "",
+    "abilityModifiers": "Str 3, Con 2, Dex 3, Int 0, Wis 1, Cha 2",
+    "maximumSize": "",
+    "languages": "Low Tongue, Wyrmish",
+    "grantedFeats": "",
+    "racialAbilities": "Darkvision, Nightvision, Scent, Fire Dragon Breath, High Magic",
+    "grantedWeapons": "Bite (Fire Dragon), Claws (Dragon)",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "8NoxFJU6DGGNsCig",
+      "name": "Fire Dragon: ability scores",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.strength.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.strength.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.dexterity.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.intelligence.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.intelligence.racial",
+          "mode": 2,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Str 3, Con 2, Dex 3, Int 0, Wis 1, Cha 2 — the printed scores.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!pGCacKyDRFZ86UzW.8NoxFJU6DGGNsCig"
+    },
+    {
+      "_id": "hP0Zc5LY3Qj6yhMc",
+      "name": "Fire Dragon: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "small",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.fly",
+          "mode": 5,
+          "value": "80",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "small; land 30, fly 80. It grows with the Dragon Companion Table.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!pGCacKyDRFZ86UzW.hP0Zc5LY3Qj6yhMc"
+    },
+    {
+      "_id": "1eZjbo2M0pnED9lL",
+      "name": "Fire Dragon: natural armour",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "3",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "DR 3 (base — scales with BDB): the printed DR 6 at BDB 6.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!pGCacKyDRFZ86UzW.1eZjbo2M0pnED9lL"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itDragon": {
+        "key": "fire",
+        "name": "Fire Dragon",
+        "baseLevel": 6,
+        "el": 5,
+        "size": "small",
+        "land": 30,
+        "fly": 80,
+        "element": "fire",
+        "breath": {
+          "name": "Fire Dragon Breath",
+          "die": "d8",
+          "shape": "cone",
+          "type": "fire"
+        },
+        "specials": [
+          [
+            8,
+            "Draconic Assault"
+          ],
+          [
+            10,
+            "Wing Buffet"
+          ],
+          [
+            12,
+            "Frightful Aura"
+          ],
+          [
+            14,
+            "Draconic Shifting"
+          ],
+          [
+            16,
+            "Fiery Blood"
+          ],
+          [
+            18,
+            "Fiery Aura"
+          ],
+          [
+            20,
+            "Scorching Breath"
+          ],
+          [
+            22,
+            "Spell Resilience"
+          ]
+        ],
+        "baseSpecials": [
+          "Smokevision"
+        ],
+        "feats": [
+          "Alertness",
+          "Great Fortitude",
+          "Iron Will"
+        ],
+        "freeFeats": [],
+        "skills": {
+          "acrobatics": 4,
+          "arcana": 6,
+          "athletics": 4,
+          "climbing": 4,
+          "culture": 6,
+          "deception": 4,
+          "diplomacy": 4,
+          "intimidate": 4,
+          "meditation": 4,
+          "mentalFocus": 4,
+          "nature": 4,
+          "perception": 4,
+          "powerManipulation": 6,
+          "senseMotive": 4,
+          "survival": 4
+        },
+        "spells": 5,
+        "languages": "Low Tongue, Wyrmish",
+        "immunities": "fire, paralysis, sleep",
+        "weaknesses": "cold",
+        "egg": "Dragon Egg (Fire)"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.674.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!pGCacKyDRFZ86UzW"
+}

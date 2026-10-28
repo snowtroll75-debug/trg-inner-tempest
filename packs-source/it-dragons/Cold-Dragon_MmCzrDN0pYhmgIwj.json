@@ -1,0 +1,327 @@
+{
+  "_id": "MmCzrDN0pYhmgIwj",
+  "name": "Cold Dragon",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest, Chapter 5",
+    "category": "Base Creature",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>COLD DRAGON</strong></p>\n<p><strong>Size</strong> Small</p>\n<p><strong>Level</strong> 4 (<strong>EL</strong> 4); <strong>DC</strong> 18</p>\n<p><strong>Initiative</strong> +30</p>\n<p><strong>Speed</strong> 30 feet; Fly 50; Swim 40</p>\n<p><strong>Senses</strong> Darkvision 65’, Nightvision 130’, Scent 40’</p>\n<p><strong>Languages</strong> Gantish, Low Tongue, Wyrmish</p>\n<p><strong>ABILITY SCORES</strong> <strong>STR</strong> +2, <strong>CON</strong> +2, <strong>DEX</strong> +3, <strong>INT</strong> +1, <strong>WIS</strong> +3, <strong>CHA</strong> +2</p>\n<p><strong>SKILLS</strong> Acrobatics +8(3), Arcana +6(3), Athletics +7(3), Climbing +8(3) Culture +6(3), Deception +7(3), Diplomacy +6(2), Intimidate +6(2), Meditation +7(2), Mental Focus +7(2), Nature +7(2), Perception +7(2), Power Manipulation +5(2), Sense Motive +7(2), Survival +7(2)</p>\n<p><strong>DEFENCE</strong><br>DB +19 (Base +14; Other +2 Stat +3); DR 4<br>Fort +11, Ref +12, Will +14<br>HP 76; Immunity cold, paralysis, sleep; Weakness fire</p>\n<p><strong>FEATS/SPECIAL</strong> Alertness, Ice Climb, Iron Will</p>\n<p><strong>Cold Dragon Breath</strong> 2 AP (arcane, cold, focus, invocation, save)<br>The dragon breathes a 15-foot cone that inflicts 4d8 cold damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage.</p>\n<p><strong>ATTACKS</strong><br>Bite +9 (finesse) 1d6+2 piercing plus 1d6 cold<br>Claw +9 (agile, finesse, versatile - p) 1d5+2 slashing</p>\n<p><strong>MAGIC</strong><br>A cold dragon is a High Magic caster.<br>CL 1; Spellcraft +6; PP 18<br>Spells 4 x Cantrip, 2 additional spell (max PP 2).</p>\n<p><strong>SPECIAL ABILITIES BY LEVEL</strong> 6: Snowvision; 8: Draconic Assault; 10: Wing Buffet; 12: Frightful Aura; 14: Freezing Aura; 16: Draconic Shifting; 18: Freezing Blood; 20: Reflective Scales</p>\n<p><em>A cold dragon is a formidable, ice-breathing creature known for its chilling presence and mastery over frigid elements.</em></p>\n<p><em>Automated:</em> hatched by Dragon Tamer at level 4, with the skill ranks printed (B10-7), the feats printed (each counting as a pick made), its languages, immunities and weakness. The breath is 4d8 at 4 and a die a level after (C5), a Focus ability with a basic Reflex save at the creature DC; it grows as a cone with the table. Its specials arrive by its own level from the system's Creature Codex. Its DB is the printed block's (Graham, 28 October 2026): the system's creature rule, half its level as an other bonus and its class bonus − 2 as a status bonus. Its natural attacks follow the system's one size ladder (B10-10).</p>",
+    "traits": "",
+    "abilityModifiers": "Str 2, Con 2, Dex 3, Int 1, Wis 3, Cha 2",
+    "maximumSize": "",
+    "languages": "Gantish, Low Tongue, Wyrmish",
+    "grantedFeats": "",
+    "racialAbilities": "Darkvision, Nightvision, Scent, Cold Dragon Breath, High Magic",
+    "grantedWeapons": "Bite (Cold Dragon), Claws (Dragon)",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "v9rHnDzvD3yMCAkn",
+      "name": "Cold Dragon: ability scores",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.strength.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.strength.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.dexterity.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.intelligence.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.intelligence.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Str 2, Con 2, Dex 3, Int 1, Wis 3, Cha 2 — the printed scores.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!MmCzrDN0pYhmgIwj.v9rHnDzvD3yMCAkn"
+    },
+    {
+      "_id": "VoYcxxn8MfNspxR7",
+      "name": "Cold Dragon: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "small",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.fly",
+          "mode": 5,
+          "value": "50",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.swim",
+          "mode": 5,
+          "value": "40",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "small; land 30, fly 50, swim 40. It grows with the Dragon Companion Table.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!MmCzrDN0pYhmgIwj.VoYcxxn8MfNspxR7"
+    },
+    {
+      "_id": "SccFDfHTB2JYGiQ5",
+      "name": "Cold Dragon: natural armour",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "4",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "DR 4 (base — scales with BDB): the printed DR 4 at BDB 4.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!MmCzrDN0pYhmgIwj.SccFDfHTB2JYGiQ5"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itDragon": {
+        "key": "cold",
+        "name": "Cold Dragon",
+        "baseLevel": 4,
+        "el": 4,
+        "size": "small",
+        "land": 30,
+        "fly": 50,
+        "swim": 40,
+        "element": "cold",
+        "breath": {
+          "name": "Cold Dragon Breath",
+          "die": "d8",
+          "shape": "cone",
+          "type": "cold"
+        },
+        "specials": [
+          [
+            6,
+            "Snowvision"
+          ],
+          [
+            8,
+            "Draconic Assault"
+          ],
+          [
+            10,
+            "Wing Buffet"
+          ],
+          [
+            12,
+            "Frightful Aura"
+          ],
+          [
+            14,
+            "Freezing Aura"
+          ],
+          [
+            16,
+            "Draconic Shifting"
+          ],
+          [
+            18,
+            "Freezing Blood"
+          ],
+          [
+            20,
+            "Reflective Scales"
+          ]
+        ],
+        "baseSpecials": [
+          "Ice Climb"
+        ],
+        "feats": [
+          "Alertness",
+          "Iron Will"
+        ],
+        "freeFeats": [],
+        "skills": {
+          "acrobatics": 3,
+          "arcana": 3,
+          "athletics": 3,
+          "climbing": 3,
+          "culture": 3,
+          "deception": 3,
+          "diplomacy": 2,
+          "intimidate": 2,
+          "meditation": 2,
+          "mentalFocus": 2,
+          "nature": 2,
+          "perception": 2,
+          "powerManipulation": 2,
+          "senseMotive": 2,
+          "survival": 2
+        },
+        "spells": 2,
+        "languages": "Gantish, Low Tongue, Wyrmish",
+        "immunities": "cold, paralysis, sleep",
+        "weaknesses": "fire",
+        "egg": "Dragon Egg (Cold)"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.674.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MmCzrDN0pYhmgIwj"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "EMUlnG7ioteqlQoo",
+  "name": "Draconic Spell",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>DRACONIC SPELL</strong></p>\n<p>The dragon companion may select any one arcane spell and add it as an innate spell with the focus trait.</p>\n<p>This feat may be selected multiple times, each time selecting a new arcane spell.</p>\n<p><em>Automated:</em> Use once per copy of the feat: choose an arcane spell; it is added as an innate spell with the Focus trait (one use; Refocus restores it). Take the feat again for another.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Companion",
+    "repeatable": true,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "companionKind": "dragon"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EMUlnG7ioteqlQoo"
+}

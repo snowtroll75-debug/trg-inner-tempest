@@ -1883,5 +1883,90 @@
     "status": "Implemented",
     "achieved": "A",
     "note": "The Racial Age Categories table as data (module/aging.mjs), checked against the book."
+  },
+  "FA-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Dragon Tamer (it-feats, Archetype): its Use checks Inner Discipline, 8 Arcana ranks, the Dragon Lore specialist skill (B10-11) and a bonded egg, then hatches the dragon as the dragon companion kind (TRG Prime 3.674.0 C1/C2). Progression Arcana +10 ranks is the core's archetype rule. With a dragon bonded, the Use is the GM's separation/reunion toggle."
+  },
+  "DC-01": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Dragon eggs (it-dragons gear, itDragonEgg flag): each daily preparation while carried counts a day of bonding (a table without a world clock too); a second preparation on a day the clock has moved into is refused, and said. Ready at 28 (GM may raise). The hour's meditation is the player's."
+  },
+  "DC-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Dragon Companion class (it-dragons, rows 1-30) with the Dragon Companion Table on it; registerCompanionKind('dragon') — level = base + master's levels since hatching (C2), no size Str/Dex (C6), no ability points (C7); growth reconciled on every level change: grownSize (C3), land/fly/ability increments. DB is the printed block's: the system's creature rule (half level other, class bonus - 2 status; Graham 28 Oct). Earth dragon does not fly (B10-4)."
+  },
+  "DC-03": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Cold Dragon race item: printed scores, size, speeds, natural armour (printed DR / DR multiplier), senses, breath, High Magic, bite + claws; ranks, feats, languages, immunities set at hatching."
+  },
+  "DC-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Earth Dragon race item, as DC-03; wings but no fly (B10-4)."
+  },
+  "DC-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Fire Dragon race item, as DC-03; ranks ship as printed (66 of 48, B10-7); DB derived 22 against the printed 23 (B10-10)."
+  },
+  "DC-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Light Dragon race item, as DC-03; Lightning Reflexes granted free as the GM's extra (B10-9)."
+  },
+  "DC-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Specials granted by the dragon's own level from the core Creature Codex by name (elemental ones by their called name, read by the codex; Wild Stride from core feats, free); taken back if the level is lowered."
+  },
+  "DC-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Tail Slap gains the Sweep trait at Base +20 (B10-3)."
+  },
+  "DC-09": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core Wings at +6, Tail Slap at +10, Crush at +16, granted by the growth and resized by the system; Wing Buffet uses the core Wings at the dragon's size before then (C11, B10-5)."
+  },
+  "DC-10": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Breath: a 2 AP Focus area (it-abilities), basic Reflex at the level DC, a die a level (C5); the copy's intro grows with the table and opts out of codex inheritance (1.0.1)."
+  },
+  "DC-11": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "High Magic: the core flag on the dragon (DC +2, free Heighten, Fumble +50) and the High Magic ability's learnTraditions 'any'."
+  },
+  "DC-12": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Deflecting Wings: a registered defence offer for a Large+ dragon with the feat — +2 circumstance DB for one attack, spends the reaction."
+  },
+  "DC-13": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Draconic Spell: Use picks an arcane spell, added innate with the Focus trait (one use); repeatable."
+  },
+  "DC-14": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Imitate Sound: +4 circumstance offered on Deception (tick when mimicking); non-light dragons warned on taking it."
+  },
+  "DC-15": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Tail Lash: Use spends the reaction and Strikes with the tail at -2 circumstance; Large and a tail required."
+  },
+  "DC-16": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Death automated (acting GM, whenever Dying or the dead skull changes, and the kill hook): Soul Drain = level held by the bond (C8), Refocus -2, a point back each 7 days (clock or daily preparations, whichever is more). Restoration recorded when the skull lifts; within a week it re-bonds at the next daily preparation, after a week the insanity is announced once. Fully recovered, the bond is closed for good (never laid twice). Separation/reunion a GM toggle (half level, held). Feats re-spent are the GM's."
   }
 }

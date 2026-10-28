@@ -1,0 +1,46 @@
+{
+  "_id": "IUBk1uFZl3hEbShU",
+  "name": "Dragon Tamer",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Archetype",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Inner Discipline, Arcana 8 ranks, Dragon Lore",
+    "active": true,
+    "description": "<p><em>You have formed a bond with a dragon companion, and together, you share a deep connection. You can command your dragon to unleash devastating breath attacks, protect you in battle, and even merge your spirits to become a formidable draconic warrior.</em></p>\n<p><strong>Prerequisites</strong> Inner Discipline, Arcana 8 ranks, Dragon Lore</p>\n<p><strong>Special Prerequisite</strong> You must have an unhatched dragon egg before you take this feat.</p>\n<p>You gain a Dragon Companion, which accompanies you on your adventures and faithfully obeys simple commands. More information on Dragon Companions can be found at the end of this chapter.</p>\n<p><strong>Progression Requirements</strong> Arcana skill +10 ranks</p>\n<p><em>Automated:</em> Use: checks Inner Discipline, 8 ranks of Arcana, the Dragon Lore specialist skill (B10-11, however gained) and an egg that has finished bonding, then hatches it: your Dragon Companion, a linked companion actor at its base level, which gains a level whenever you do (B10-1). One dragon (B10-12); a ranger keeps the wolf. With a dragon bonded, the Use is the GM's: separated (Soul Drain half its level, held, and Refocus Hard) or reunited. Its death is automated (B10-13).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": "",
+    "progressionRequirements": "Arcana skill +10 ranks"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!IUBk1uFZl3hEbShU"
+}

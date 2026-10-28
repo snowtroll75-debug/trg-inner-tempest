@@ -310,9 +310,11 @@ const calls = [];
 const fake = new Proxy({}, { get: (_, name) => (...args) => { calls.push([name, ...args]); return true; } });
 reg.registerContent(fake, "trg-inner-tempest");
 const called = (n) => calls.filter((c) => c[0] === n);
+// Dragon Tamer, the twenty-first, is Block 10's (B7-1; 1.0.0), registered and checked there.
+const block7Archetypes = called("registerArchetype").filter((c) => c[1] !== "Dragon Tamer");
 equal("D the twenty archetypes registered; Zen Archer counts as Archer (C3)",
-  [called("registerArchetype").length, called("registerArchetype").filter((c) => c[2]?.countsAs?.length).map((c) => [c[1], c[2].countsAs])], [20, [["Zen Archer", ["Archer"]]]]);
-equal("D …by the names the items carry", called("registerArchetype").map((c) => c[1]).sort(), B7.BLOCK7_FEATS.map((d) => d.name).sort());
+  [block7Archetypes.length, block7Archetypes.filter((c) => c[2]?.countsAs?.length).map((c) => [c[1], c[2].countsAs])], [20, [["Zen Archer", ["Archer"]]]]);
+equal("D …by the names the items carry", block7Archetypes.map((c) => c[1]).sort(), B7.BLOCK7_FEATS.map((d) => d.name).sort());
 for (const doc of [...B7.BLOCK7_FEATS, ...B7.BLOCK7_ABILITIES].filter((d) => F(d).itAutomation && F(d).itAutomation !== "combatFormItem" || d.name === "Twin Dragon")) {
   const k = doc.name.toLowerCase();
   const entry = auto7.BLOCK7_AUTOMATIONS[k];
@@ -441,8 +443,8 @@ ok("E Flurry of Blows reaches a declared weapon", /\.filter\(\(i\) => abilityStr
 }
 
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 0.10.2, built for 3.673.0", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["0.10.2", "3.673.0"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.673.0";'));
+equal("E the module is 1.0.1, built for 3.674.1", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.0.1", "3.674.1"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.1";'));
 {
   const [sa, sb] = String(systemJson.version).split(".").map(Number);
   ok("E the system at TRG_PRIME_ROOT is 3.671.0 or later", sa > 3 || (sa === 3 && sb >= 671), systemJson.version);

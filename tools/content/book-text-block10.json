@@ -1,0 +1,936 @@
+{
+ "source": "it12.md",
+ "tamer": {
+  "flavour": "You have formed a bond with a dragon companion, and together, you share a deep connection. You can command your dragon to unleash devastating breath attacks, protect you in battle, and even merge your spirits to become a formidable draconic warrior.",
+  "prerequisites": "Inner Discipline, Arcana 8 ranks, Dragon Lore",
+  "special": "You must have an unhatched dragon egg before you take this feat.",
+  "lines": [
+   "You gain a Dragon Companion, which accompanies you on your adventures and faithfully obeys simple commands. More information on Dragon Companions can be found at the end of this chapter."
+  ],
+  "progression": "Arcana skill +10 ranks"
+ },
+ "rules": {
+  "intro": [
+   "Dragons, the majestic and enigmatic creatures of myth and legend, have long held a fascination for adventurers and scholars alike. These powerful beings, known for their wisdom, magic, and might, occasionally form unique bonds with individuals who prove themselves worthy. A dragon companion is not merely a pet or ally; it is a mystical connection between a mortal and a creature that transcends the ordinary.",
+   "The bond between a dragon and its companion is forged through shared experiences, mutual respect, and, most importantly, an understanding of each other's strengths and weaknesses. These companions come in various forms, from the imposing ancient wyrms to the playful and mischievous dragonlings. While the nature of the bond can vary, it always brings incredible benefits to those fortunate enough to experience it.",
+   "A dragon companion offers not only protection but also access to the wisdom and magic that flows through their draconic veins. Adventurers who share their journey with these creatures find themselves capable of feats previously thought impossible. Whether in the heat of battle, the pursuit of knowledge, or the exploration of ancient mysteries, a dragon companion is an invaluable ally, offering guidance, power, and a connection to the mystical forces of the world.",
+   "However, it's important to remember that this bond is not easily formed or maintained. Dragons are beings of great complexity, and their companions must prove their worth through deeds and loyalty. The connection requires constant nurturing, mutual respect, and a willingness to embark on adventures together.."
+  ],
+  "ACQUIRING A DRAGON": [
+   "To acquire a dragon companion, you must first source and locate an unhatched dragon egg. Once you have the egg, you must bond with it for one hour each day during daily preparation by mediating or performing some other appropriate action (GM discretion).",
+   "This bonding process will take a minimum of 1 lunar cycle (about 28 days) but may take longer based upon the campaign setting.",
+   "Once you have completed the above process, you may take the Dragon Tamer Archetype feat which causes your dragon companion to hatch from the egg and form a bond with you as detailed below."
+  ],
+  "TRAITS": [
+   "A dragon companion possesses the wyrm trait. It also gains the Minion Trait."
+  ],
+  "LEVEL": [
+   "A dragon companions type determines its base level. Each time you gain a level, your dragon companion will also gain a level."
+  ],
+  "CLASS SKILLS": [
+   "A dragon companion has the following class skills:",
+   "Acrobatics, Arcana, Athletics, Climbing, Culture, Deception, Diplomacy, Intimidate, Meditation, Mental Focus, Nature, Perception, Power Manipulation, Sense Motive, Survival.",
+   "Just like a PC, a dragon companion gains a class bonus to each of these skills.."
+  ],
+  "SKILL POINTS": [
+   "A dragon companion gains 8 skill points per level which it may spend in the same way as that of a PC."
+  ],
+  "FEATS": [
+   "A dragon companion may select general feats in the same way that a player character does (one at 1st and then another every 2 levels thereafter). Some dragon companions may gain access to additional feats (GM discretion).",
+   "Be aware that the base stat block for a dragon companion already contains any feats that it will have gained up to and including its current level."
+  ],
+  "HIT POINTS": [
+   "A dragon companion gains 12 + Con per level hit points. Its hit points are modified further by its Size as shown below."
+  ],
+  "BASE ATTACK/DEFENCE BONUS": [
+   "A dragon companion gains a primary BAB and BDB which equates to +1 per level."
+  ],
+  "SAVING THROWS": [
+   "All of the dragon companions saving throws are primary. This grants them a base saving throw equal to 5 +1 per level."
+  ],
+  "OTHER ABILITIES": [
+   "As a dragon companion increases in level, it gains a number of additional abilities as detailed in the Dragon Companion Table."
+  ],
+  "ABILITY SCORES": [
+   "A dragon companions ability scores increase as detailed in the table below and they do not receive the increase gained by a PC every 4 levels."
+  ],
+  "ATTACKS": [
+   "Every dragon companion gains the indicated attacks. The size of these attacks match the size of the dragon companion.",
+   "Crush and Sweep attacks are explained in the dragon companion ability descriptions at the end of this chapter."
+  ],
+  "BREATH WEAPON": [
+   "Every dragon companion has a breath weapon. Range and area are detailed here. The damage inflicted is an amount of dice based upon level (1 per level)."
+  ]
+ },
+ "hpTable": [
+  [
+   "Tiny",
+   10
+  ],
+  [
+   "Small",
+   20
+  ],
+  [
+   "Medium",
+   30
+  ],
+  [
+   "Large",
+   50
+  ],
+  [
+   "Huge",
+   80
+  ],
+  [
+   "Gargantuan",
+   120
+  ],
+  [
+   "Colossal",
+   250
+  ]
+ ],
+ "table": [
+  [
+   "Base",
+   "Base",
+   "Base",
+   "Base",
+   "Base",
+   "Base",
+   "Base",
+   "Base",
+   "Bite, Claws",
+   "30 ft.",
+   "15 ft."
+  ],
+  [
+   "Base +1",
+   "Base",
+   "Base",
+   "Base +5",
+   "Base +1",
+   "Base",
+   "Base",
+   "Base",
+   "Bite, Claws",
+   "30 ft.",
+   "15 ft."
+  ],
+  [
+   "Base +2",
+   "Base +1",
+   "Base +5",
+   "Base +10",
+   "Base +1",
+   "Base +1",
+   "Base",
+   "Base +1",
+   "Bite, Claws",
+   "40 ft.",
+   "20 ft."
+  ],
+  [
+   "Base +3",
+   "Base +1",
+   "Base +5",
+   "Base +15",
+   "Base +1",
+   "Base +1",
+   "Base",
+   "Base +1",
+   "Bite, Claws",
+   "40 ft.",
+   "20 ft."
+  ],
+  [
+   "Base +4",
+   "Base +2",
+   "Base +10",
+   "Base +20",
+   "Base +2",
+   "Base +2",
+   "Base -1",
+   "Base +1",
+   "Bite, Claws",
+   "40 ft.",
+   "20 ft."
+  ],
+  [
+   "Base +5",
+   "Base +2",
+   "Base +10",
+   "Base +25",
+   "Base +2",
+   "Base +2",
+   "Base -1",
+   "Base +1",
+   "Bite, Claws",
+   "40 ft.",
+   "20 ft."
+  ],
+  [
+   "Base +6",
+   "Base +2",
+   "Base +10",
+   "Base +30",
+   "Base +2",
+   "Base +2",
+   "Base -1",
+   "Base +2",
+   "Bite, Claws, Wings",
+   "60 ft.",
+   "30 ft."
+  ],
+  [
+   "Base +7",
+   "Base +2",
+   "Base +10",
+   "Base +35",
+   "Base +2",
+   "Base +2",
+   "Base -1",
+   "Base +2",
+   "Bite, Claws, Wings",
+   "60 ft.",
+   "30 ft."
+  ],
+  [
+   "Base +8",
+   "Base +3",
+   "Base +15",
+   "Base +40",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +2",
+   "Bite, Claws, Wings",
+   "60 ft.",
+   "30 ft."
+  ],
+  [
+   "Base +9",
+   "Base +3",
+   "Base +15",
+   "Base +45",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +2",
+   "Bite, Claws, Wings",
+   "60 ft.",
+   "30 ft."
+  ],
+  [
+   "Base +10",
+   "Base +3",
+   "Base +15",
+   "Base +50",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +3",
+   "Bite, Claws, Wings, Tail",
+   "80 ft.",
+   "40 ft."
+  ],
+  [
+   "Base +11",
+   "Base +3",
+   "Base +15",
+   "Base +55",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +3",
+   "Bite, Claws, Wings, Tail",
+   "80 ft.",
+   "40 ft."
+  ],
+  [
+   "Base +12",
+   "Base +3",
+   "Base +15",
+   "Base +60",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +3",
+   "Bite, Claws, Wings, Tail",
+   "80 ft.",
+   "40 ft."
+  ],
+  [
+   "Base +13",
+   "Base +3",
+   "Base +15",
+   "Base +65",
+   "Base +3",
+   "Base +3",
+   "Base -2",
+   "Base +3",
+   "Bite, Claws, Wings, Tail",
+   "80 ft.",
+   "40 ft."
+  ],
+  [
+   "Base +14",
+   "Base +3",
+   "Base +20",
+   "Base +70",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +4",
+   "Bite, Claws, Wings, Tail",
+   "100 ft.",
+   "50 ft."
+  ],
+  [
+   "Base +15",
+   "Base +3",
+   "Base +20",
+   "Base +75",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +4",
+   "Bite, Claws, Wings, Tail",
+   "100 ft.",
+   "50 ft."
+  ],
+  [
+   "Base +16",
+   "Base +4",
+   "Base +20",
+   "Base +80",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +4",
+   "Bite, Claws, Wings, Tail, Crush",
+   "100 ft.",
+   "50 ft."
+  ],
+  [
+   "Base +17",
+   "Base +4",
+   "Base +20",
+   "Base +85",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +4",
+   "Bite, Claws, Wings, Tail, Crush",
+   "100 ft.",
+   "50 ft."
+  ],
+  [
+   "Base +18",
+   "Base +4",
+   "Base +20",
+   "Base +90",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +5",
+   "Bite, Claws, Wings, Tail, Crush",
+   "120 ft.",
+   "60 ft."
+  ],
+  [
+   "Base +19",
+   "Base +4",
+   "Base +20",
+   "Base +95",
+   "Base +4",
+   "Base +4",
+   "Base -3",
+   "Base +5",
+   "Bite, Claws, Wings, Tail, Crush",
+   "120 ft.",
+   "60 ft."
+  ],
+  [
+   "Base +20",
+   "Base +4",
+   "Base +20",
+   "Base +100",
+   "Base +5",
+   "Base +5",
+   "Base -4",
+   "Base +5",
+   "Bite, Claws, Wings, Tail, Crush, Sweep",
+   "120 ft.",
+   "60 ft."
+  ]
+ ],
+ "format": [
+  "The species of dragon which hatches from your egg is referred to as your companion's base creature. Each base creature has its own set of statistics which have the following format.",
+  "Size The initial size of your dragon companion. This increases as the companion gains levels as shown above.",
+  "Base Level This is the dragon companions starting level.",
+  "Initiative The companion’s initiative modifier which is worked out in the same way as a PC.",
+  "Speed This entry provides information about your companion's various movement speeds.",
+  "Senses This entry lists any special senses your companion has.",
+  "Languages Your companion will be able to speak a number of languages as indicated here. It will not be able to communicate with these languages until it has heard them spoken for at least an hour.",
+  "Ability Scores Each of your companion’s ability scores is listed.",
+  "Skills These are listed showing the skill name, its bonus and then amount of ranks in parentheses.",
+  "Defensive Attributes This entry shows DB (and its breakdown), Base DR (which increases with BDB just like a PC) and saving throws. A dragon companion also adds their class bonus as a status bonus to DB.",
+  "Hit Points The companions HP have already been modified by size. Any immunities, resistances or weaknesses are listed after this.",
+  "Special Any special abilities or feats that the companion begins with are listed here. Additional abilities gained by the companion’s type are listed in a table below its description.",
+  "Abilities highlighted in bold are described at the end of this chapter.",
+  "Attacks The companions’ starting attacks are listed here with their attack bonuses, damage and traits. A dragon’s attacks will increase in bonus and damage as they increase in level in line with BAB and size.",
+  "Magic Dragon companions have a caster equal to their level -3. They gain 4 PP per level and a BSB of +1 per level.",
+  "Description A brief description of the companion will be found at the end of the stat block. For a more detailed dragon description, please refer to TRG Fiends & Fables."
+ ],
+ "dragons": {
+  "COLD DRAGON": {
+   "fields": {
+    "Size": "Small",
+    "Level": 4,
+    "EL": 4,
+    "DC": 18,
+    "Initiative": "+30",
+    "Speed": "30 feet; Fly 50; Swim 40",
+    "Senses": "Darkvision 65’, Nightvision 130’, Scent 40’",
+    "Languages": "Gantish, Low Tongue, Wyrmish"
+   },
+   "abilities": {
+    "STR": 2,
+    "CON": 2,
+    "DEX": 3,
+    "INT": 1,
+    "WIS": 3,
+    "CHA": 2
+   },
+   "skills": "Acrobatics +8(3), Arcana +6(3), Athletics +7(3), Climbing +8(3) Culture +6(3), Deception +7(3), Diplomacy +6(2), Intimidate +6(2), Meditation +7(2), Mental Focus +7(2), Nature +7(2), Perception +7(2), Power Manipulation +5(2), Sense Motive +7(2), Survival +7(2)",
+   "defence": [
+    "DB +19 (Base +14; Other +2 Stat +3); DR 4",
+    "Fort +11, Ref +12, Will +14",
+    "HP 76; Immunity cold, paralysis, sleep; Weakness fire"
+   ],
+   "special": [
+    "Alertness, Ice Climb, Iron Will"
+   ],
+   "breath": {
+    "title": "Cold Dragon Breath",
+    "ap": 2,
+    "traits": "arcane, cold, focus, invocation, save",
+    "text": "The dragon breathes a 15-foot cone that inflicts 4d8 cold damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage."
+   },
+   "attacks": [
+    "Bite +9 (finesse) 1d6+2 piercing plus 1d6 cold",
+    "Claw +9 (agile, finesse, versatile - p) 1d5+2 slashing"
+   ],
+   "magic": [
+    "A cold dragon is a High Magic caster.",
+    "CL 1; Spellcraft +6; PP 18",
+    "Spells 4 x Cantrip, 2 additional spell (max PP 2)."
+   ],
+   "levels": [
+    [
+     6,
+     "Snowvision"
+    ],
+    [
+     8,
+     "Draconic Assault"
+    ],
+    [
+     10,
+     "Wing Buffet"
+    ],
+    [
+     12,
+     "Frightful Aura"
+    ],
+    [
+     14,
+     "Freezing Aura"
+    ],
+    [
+     16,
+     "Draconic Shifting"
+    ],
+    [
+     18,
+     "Freezing Blood"
+    ],
+    [
+     20,
+     "Reflective Scales"
+    ]
+   ],
+   "description": "A cold dragon is a formidable, ice-breathing creature known for its chilling presence and mastery over frigid elements."
+  },
+  "EARTH DRAGON": {
+   "fields": {
+    "Size": "Medium",
+    "Level": 4,
+    "EL": 3,
+    "DC": 18,
+    "Initiative": "+20",
+    "Speed": "30 feet; Burrow 20; Climb 30",
+    "Senses": "Darkvision 55’, Nightvision 110’, Scent 30’",
+    "Languages": "Glimbol, Low Tongue, Wyrmish"
+   },
+   "abilities": {
+    "STR": 3,
+    "CON": 1,
+    "DEX": 3,
+    "INT": 1,
+    "WIS": 1,
+    "CHA": 2
+   },
+   "skills": "Acrobatics +6(1), Arcana +6(3), Athletics +9(4), Culture +5(2) Deception +6(2), Diplomacy +6(2), Intimidate +5(1), Meditation +4(1), Mental Focus +7(4), Nature +4(1), Perception +7(4), Power Manipulation +7(4), Sense Motive +6(3), Stealth +5(2), Survival +5(2)",
+   "defence": [
+    "DB +19 (Base +14; Other +2; Stat +3); DR 6",
+    "Fort +12, Ref +12, Will +10",
+    "HP 82; Immunity acid, paralysis, sleep"
+   ],
+   "special": [
+    "Alertness, Great Fortitude"
+   ],
+   "breath": {
+    "title": "Earth Dragon Breath",
+    "ap": 2,
+    "traits": "acid, arcane, focus, invocation, save",
+    "text": "The dragon breathes a 30-foot line of acid that inflicts 4d8 acid damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage."
+   },
+   "attacks": [
+    "Bite +9 (finesse) 1d8+3 piercing plus 1d6 acid",
+    "Claw +9 (agile, finesse, versatile - p) 1d6+3 slashing"
+   ],
+   "magic": [
+    "A cave dragon is a High Magic caster.",
+    "CL 1; Spellcraft +6; PP 18",
+    "Spells 4 x Cantrip, 4 additional spells (max PP 2)."
+   ],
+   "levels": [
+    [
+     6,
+     "Wild Stride"
+    ],
+    [
+     8,
+     "Draconic Assault"
+    ],
+    [
+     10,
+     "Frightful Aura"
+    ],
+    [
+     12,
+     "Wing Buffet"
+    ],
+    [
+     14,
+     "Slowing Breath"
+    ],
+    [
+     16,
+     "Caustic Blood"
+    ],
+    [
+     18,
+     "Caustic Strikes"
+    ],
+    [
+     20,
+     "Draconic Shifting"
+    ]
+   ],
+   "description": "An earth dragon is a massive serpentine creature associated with the power of the earth and often depicted with rocky, earth-toned scales."
+  },
+  "FIRE DRAGON": {
+   "fields": {
+    "Size": "Small",
+    "Level": 6,
+    "EL": 5,
+    "DC": 20,
+    "Initiative": "+20",
+    "Speed": "30 feet; Fly 80",
+    "Senses": "Darkvision 55’, Nightvision 110’, Scent 30’",
+    "Languages": "Low Tongue, Wyrmish"
+   },
+   "abilities": {
+    "STR": 3,
+    "CON": 2,
+    "DEX": 3,
+    "INT": 0,
+    "WIS": 1,
+    "CHA": 2
+   },
+   "skills": "Acrobatics +10(4), Arcana +9(6), Athletics +10(4), Climbing +10(4), Culture +9(6), Deception +9(4), Diplomacy +9(4), Intimidate +9(4), Meditation +8(4), Mental Focus +8(4), Nature +8(4), Perception +8(4), Power Manipulation +9(6), Sense Motive +8(4), Survival +8(4)",
+   "defence": [
+    "DB +23 (Base +16; Other +3; Stat +3; Status +1); DR 6",
+    "Fort +15, Ref +14, Will +14",
+    "HP 104; Immunity fire, paralysis, sleep; Weakness cold"
+   ],
+   "special": [
+    "Alertness, Great Fortitude, Iron Will, Smokevision"
+   ],
+   "breath": {
+    "title": "Fire Dragon Breath",
+    "ap": 2,
+    "traits": "arcane, fire, focus, invocation, save",
+    "text": "The dragon breathes a 15-foot cone that inflicts 6d8 fire damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage."
+   },
+   "attacks": [
+    "Bite +12 (finesse) 2d6+3 piercing plus 1d6 fire",
+    "Claw +12 (agile, finesse, versatile - p) 2d5+3 slashing"
+   ],
+   "magic": [
+    "A fire dragon is a High Magic caster.",
+    "CL 3; Spellcraft +8; PP 26",
+    "Spells 4 x Cantrip, 5 additional spells (max PP 4)."
+   ],
+   "levels": [
+    [
+     8,
+     "Draconic Assault"
+    ],
+    [
+     10,
+     "Wing Buffet"
+    ],
+    [
+     12,
+     "Frightful Aura"
+    ],
+    [
+     14,
+     "Draconic Shifting"
+    ],
+    [
+     16,
+     "Fiery Blood"
+    ],
+    [
+     18,
+     "Fiery Aura"
+    ],
+    [
+     20,
+     "Scorching Breath"
+    ],
+    [
+     22,
+     "Spell Resilience"
+    ]
+   ],
+   "description": "A fire dragon is a fearsome, flame-breathing creature, typically adorned with fiery scales and possessing the ability to unleash destructive torrents of fire."
+  },
+  "LIGHT DRAGON": {
+   "fields": {
+    "Size": "Small",
+    "Level": 5,
+    "EL": 4,
+    "DC": 19,
+    "Initiative": "+60",
+    "Speed": "30 feet; Fly 100",
+    "Senses": "Darkvision 60’, Nightvision 120’, Scent 35’",
+    "Languages": "Gantish, Low Tongue, Wyrmish"
+   },
+   "abilities": {
+    "STR": 1,
+    "CON": 1,
+    "DEX": 6,
+    "INT": 1,
+    "WIS": 2,
+    "CHA": 3
+   },
+   "skills": "Acrobatics +13(4), Arcana +8(4), Athletics +8(4), Culture +8(4) Diplomacy +10(4), Intimidate +10(4), Meditation +8(3) Mental Focus +8(3), Nature +8(3), Perception +8(3) Power Manipulation +7(3), Sense Motive +8(3), Survival +8(3)",
+   "defence": [
+    "DB +24 (Base +15; Other +2; Stat +6; Status +1); DR 2",
+    "Fort +11, Ref +18, Will +14",
+    "HP 85; Immunity electricity paralysis, sleep"
+   ],
+   "special": [
+    "Alertness, Improved Initiative, Iron Will, Lightning Reflexes,"
+   ],
+   "breath": {
+    "title": "Light Dragon Breath",
+    "ap": 2,
+    "traits": "arcane, electricity, focus, invocation, save",
+    "text": "The dragon breathes a 30-foot line of electricity that inflicts 5d10 damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage."
+   },
+   "attacks": [
+    "Bite +13 (finesse) 1d6+1 piercing plus 1d6 electricity",
+    "Claw +13 (agile, finesse, versatile - p) 1d5+1 slashing"
+   ],
+   "magic": [
+    "A light dragon is a High Magic caster.",
+    "CL 2; Spellcraft +8; PP 23",
+    "Spells 4 x Cantrip, 3 additional spells (max PP 2)."
+   ],
+   "levels": [
+    [
+     7,
+     "Flyby Attack"
+    ],
+    [
+     9,
+     "Draconic Assault"
+    ],
+    [
+     11,
+     "Wing Buffet"
+    ],
+    [
+     13,
+     "Frightful Aura"
+    ],
+    [
+     15,
+     "Draconic Shifting"
+    ],
+    [
+     17,
+     "Shocking Aura"
+    ],
+    [
+     19,
+     "Reflective Scales"
+    ],
+    [
+     21,
+     "Spell Resilience"
+    ]
+   ],
+   "description": "A light dragon is a majestic and radiant creature, adorned with shimmering, luminous scales that emit a gentle and enchanting glow, symbolizing purity and benevolence."
+  }
+ },
+ "specials": {
+  "_intro": [
+   "Each dragon companion has a number of unique abilities and attacks which are explained here."
+  ],
+  "CRUSH": {
+   "traits": "MOVEMENT SAVE",
+   "fields": {
+    "Action": "1 AP"
+   },
+   "lines": [
+    "The creature is so big that it may land upon creatures that are at least two sizes smaller. Any creature that begins its turn in the creatures’ space must make a Reflex save with the following results.",
+    "Critical the target takes 1d10 bludgeoning damage",
+    "Success the target takes 2d10 bludgeoning damage",
+    "Partial the target takes 4d10 bludgeoning damage and a Minor critical",
+    "Failure the target takes 6d10 bludgeoning damage and a Serious critical",
+    "Fumble the target takes 8d10 bludgeoning damage and a Deadly critical",
+    "The damage inflicted by a crush bypasses all DR (but not physical resistance).",
+    "Any target that gets a minimum partial result on the saving throw is moved to an adjacent square to the creature after taking damage. The target is immobilised and prone with any other result."
+   ]
+  },
+  "DRACONIC ASSAULT": {
+   "traits": "ATTACK",
+   "fields": {
+    "Action": "2 AP"
+   },
+   "lines": [
+    "The dragon makes two claw attacks followed by another non-claw, natural attack."
+   ]
+  },
+  "DRACONIC SHIFTING": {
+   "traits": "ALTERATION ARCANE CONCENTRATE POLYMORPH",
+   "fields": {
+    "Action": "1 AP"
+   },
+   "lines": [
+    "The dragon assumes the form of a Small or Medium humanoid, without altering its Speed or the modifiers for its Strikes. However, this transformation may modify the damage type delivered by its Strikes, as they would now be classed as unarmed subdual attacks."
+   ]
+  },
+  "ELEMENTAL AURA": {
+   "traits": "ARCANE AURA ELEMENTAL SAVE",
+   "fields": {},
+   "lines": [
+    "The creature constantly emanates a 10-foot radius aura of a specific elemental energy which inflicts 2d6 damage with a basic Reflex save. The creature may as a Free Action turn the aura on or off.",
+    "Based upon the elemental type, this ability is called either Caustic (Acid), Fiery (Fire), Freezing (Cold), Shocking (Electricity) or Toxic (Poison) Aura."
+   ]
+  },
+  "ELEMENTAL BLOOD": {
+   "traits": "ELEMENTAL",
+   "fields": {},
+   "lines": [
+    "If the creature takes any recurring bleed damage, all targets take an equal amount of elemental splash damage each turn.",
+    "Based upon the elemental type, this ability is called either Caustic (Acid), Fiery (Fire), Freezing (Cold), Shocking (Electricity) or Toxic (Poison) Blood."
+   ]
+  },
+  "ELEMENTAL STRIKES": {
+   "traits": "ELEMENTAL",
+   "fields": {},
+   "lines": [
+    "The creature releases a powerful elemental infusion which causes all its physical attacks to inflict 1d6 secondary elemental damage. Any attacks that the creature already possesses which inflict secondary elemental damage, have that damage doubled.",
+    "Based upon the elemental type, this feat is called either Caustic (Acid), Fiery (Fire), Freezing (Cold), Shocking (Electricity) or Toxic (Poison) Strikes."
+   ]
+  },
+  "FRIGHTFUL AURA": {
+   "traits": "AURA FEAR SAVE",
+   "fields": {
+    "Action": "Free"
+   },
+   "lines": [
+    "Some types of unnatural creature emanate an aura of fear which has a radius equal to 5 feet x the creature’s level. A being that first enters the area must attempt a level based Will save. Regardless of the result of the saving throw, the being is temporarily immune to Frightful Aura for 1 minute.",
+    "Critical The creature is unaffected.",
+    "Success The creature is frightened 1.",
+    "Partial The creature is frightened 2.",
+    "Failure The creature is frightened 3 and fleeing for 1 round.",
+    "Fumble The creature is frightened 4 and fleeing until the frightened condition is removed.",
+    "Blunder The creature collapses from fear and is reduced to 0 hit points, gaining the unconscious condition."
+   ]
+  },
+  "REFLECTIVE SCALES": {
+   "traits": "ARCANE WARDING",
+   "fields": {
+    "Action": "Reaction",
+    "Trigger": "The creature is targeted with a spell."
+   },
+   "lines": [
+    "The creature makes a Dispel (Power Manipulation) check against the incoming spell. If the result of the check is a critical, then the spell is reflected upon its caster as if using the Spell Turning spell."
+   ]
+  },
+  "SCORCHING BREATH": {
+   "traits": "ARCANE FIRE SAVE",
+   "fields": {
+    "Action": "Free",
+    "Trigger": "a target took damage from the creature’s breath weapon on its last turn."
+   },
+   "lines": [
+    "At the beginning of the creatures turn, it must make a basic fortitude save to avoid taking half the breath weapons dice again (round up) as fire damage."
+   ]
+  },
+  "SLOWING BREATH": {
+   "traits": "ALTERATION ARCANE SAVE",
+   "fields": {
+    "Action": "Free",
+    "Trigger": "a target takes damage from the creatures’ breath weapon."
+   },
+   "lines": [
+    "Affected targets must make a fortitude saving throw with the following results:",
+    "Partial slowed 1 for 1 round.",
+    "Failure slowed 1 for 1 minute.",
+    "Fumble slowed 2 for 1 minute."
+   ]
+  },
+  "SNOWVISION": {
+   "traits": "",
+   "fields": {},
+   "lines": [
+    "The creature can see perfectly well when it is snowing, and creatures do not gain concealment or any other visual bonus during snowfall."
+   ]
+  },
+  "SPELL RESILIENCE": {
+   "traits": "",
+   "fields": {},
+   "lines": [
+    "The creature has an innate resistance to magic and gains a racial bonus equal to its class bonus to all saving throws and DB against magical attacks."
+   ]
+  },
+  "WILD STRIDE": {
+   "traits": "",
+   "fields": {},
+   "lines": [
+    "*You move quickly through natural obstacles, whether they’re tumbled stone, tangled undergrowth, or sucking mud.*",
+    "You can ignore the effects of non-magical difficult terrain. As normal for ignoring difficult terrain, this also lets you treat the hindrances of formidable terrain as those of difficult terrain."
+   ]
+  },
+  "WING BUFFET": {
+   "traits": "AIR MOVEMENT SAVE",
+   "fields": {
+    "Action": "2 AP",
+    "Area": "30-foot cone"
+   },
+   "lines": [
+    "The dragon beats its wings with tremendous force, creating a violent cone of buffeting air, dust, debris, and pressure. All creatures in the area must make a level-based Reflex save.",
+    "Critical The target is unaffected.",
+    "Success The target is pushed 5 feet directly away from the dragon.",
+    "Partial The target takes bludgeoning damage equal to the dragon’s wing attack damage and is pushed 5 feet directly away from the dragon.",
+    "Failure The target takes bludgeoning damage equal to the dragon’s wing attack damage, is pushed 10 feet directly away from the dragon, and falls prone.",
+    "Fumble The target takes bludgeoning damage equal to twice the dragon’s wing attack damage, is pushed 20 feet directly away from the dragon, and falls prone.",
+    "Blunder As fumble, but the target is also stunned 1.",
+    "This movement does not provoke reactions. A creature that is at least two sizes larger than the dragon treats its save result as one degree better. A flying creature that fails its save loses 10 feet of altitude; on a fumble or blunder, it loses 20 feet of altitude instead."
+   ]
+  }
+ },
+ "feats": {
+  "_intro": [
+   "Each dragon companion may select one of the following feats when they receive a general feat pick."
+  ],
+  "DEFLECTING WINGS": {
+   "traits": "",
+   "fields": {
+    "Prerequisites": "Large Size",
+    "Trigger": "The dragon companion is targeted with an attack.",
+    "Action": "Reaction"
+   },
+   "lines": [
+    "The dragon companion brings its wings up to block an incoming attack gaining a +2-circumstance bonus to DB against it."
+   ]
+  },
+  "DRACONIC SPELL": {
+   "traits": "",
+   "fields": {},
+   "lines": [
+    "The dragon companion may select any one arcane spell and add it as an innate spell with the focus trait.",
+    "This feat may be selected multiple times, each time selecting a new arcane spell."
+   ]
+  },
+  "IMITATE SOUND": {
+   "traits": "",
+   "fields": {
+    "Prerequisites": "Light Dragon"
+   },
+   "lines": [
+    "The dragon companion may mimic any sound it has heard. It must succeed at a Deception check with a +4-circumstance bonus to do so."
+   ]
+  },
+  "TAIL LASH": {
+   "traits": "",
+   "fields": {
+    "Prerequisites": "Large Size, Tail Attack",
+    "Trigger": "A creature within reach of the dragon companions tail attack takes a Strike action.",
+    "Action": "Reaction"
+   },
+   "lines": [
+    "The dragon companion lashes out at the creature with its tail making Strike with a -2-circumstance penalty."
+   ]
+  }
+ },
+ "vs": [
+  "Dragon companions develop at an extraordinary rate compared to their dragon kin and often viewed with suspicion by true dragons.",
+  "Dragons of a darker disposition will often great time and pleasure in hunting dragon companions down, which they view as an abomination to the dragon race as a whole."
+ ],
+ "highMagic": {
+  "intro": "Dragon companions use High Magic. High Magic is explored in depth in the upcoming Eldritch Arts sourcebook. If you do not have access to that sourcebook then use the following guidelines to apply High Magic to a creature:",
+  "bullets": [
+   "Can select spells from any tradition",
+   "All casting DCs are increased by 2",
+   "All spells gain the benefit of the Heighten feat for no extra PP cost",
+   "All Spell Fumble checks gain a +50 modifier"
+  ]
+ },
+ "losing": {
+  "intro": [
+   "If you are separated by a distance of more than 1 mile per level from your dragon companion for more than one week or your dragon companion is killed, this will have serious consequences.",
+   "The consequences you face are based upon whether the loss of your dragon companion is temporary, or whether it has been killed."
+  ],
+  "TEMPORARY LOSS": [
+   "While the bond is disrupted, all of your Refocus checks are considered Hard (DC +2) and you take Soul Drain equal to half your dragon companion's level (round up). This Soul Drain cannot be healed until you are reunited. Once reunited, you must meditate for one hour during daily preparation to restore the bond; the Refocus penalty ends immediately and the Soul Drain can then be healed normally.",
+   "The disrupted bond does not remove your Focus abilities, but it makes restoring them substantially more difficult until the connection is renewed."
+  ],
+  "DRAGON COMPANION DEATH": [
+   "If your dragon companion is killed, you take Soul Drain equal to its level and all of your Refocus checks are considered Hard (DC +2).",
+   "You recover 1 point of Soul Drain caused by the companion's death each week. The Refocus penalty ends once all Soul Drain caused by the broken bond has been recovered.",
+   "Soul Drain caused by the death of a dragon companion cannot be removed by other means while the bond remains broken.",
+   "If your dragon companion is restored to life within 1 week of its death, you may regain your bond as detailed under temporary loss above. If your dragon is restored to life after one week, it goes insane and only has one goal in life, to seek you out and destroy you."
+  ],
+  "BOND FOR LIFE": [
+   "A bond with a dragon companion is an extraordinary connection forged not in the forge of swords but in the crucible of shared experiences and unspoken understandings. It is a union that transcends the ordinary, linking a humanoid to a dragon in a way that goes beyond mere companionship.",
+   "Yet, this profound connection, this mystical rapport, is an elusive treasure that can only be found once in a lifetime. It is as unique as a fingerprint, as rare as a shooting star, and as enduring as the mountains.",
+   "One can venture into the world, encountering countless dragons, each with their own personalities, strengths, and quirks. They may form friendships, alliances, or even rivalries with these magnificent creatures, but a true bond can never be duplicated or divided. It is an exclusive covenant that the heart recognizes instinctively, the soul embraces wholeheartedly, and the spirit guards jealously.",
+   "To attempt to forge more than one of these bonds would be akin to trying to tether oneself to multiple stars in the night sky — a futile endeavour, for the essence of the bond is indivisible. It is a testament to the depth of emotion, trust, and shared destiny between dragon and companion. Once bonded, the world becomes a different place, and the companions, whether soaring through the skies or traversing the land, share a unique journey that can never be replicated.",
+   "If your bond is broken permanently, you may re-spend any lost feats when you gain a new level of experience."
+  ]
+ }
+}

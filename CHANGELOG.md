@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.1 — 28 Oct 2026 (fixes from the 1.0.0 live test)
+
+Needs **TRG Prime 3.674.1**. See `docs/RELEASE_NOTES_1.0.1.md`.
+
+- **A dragon's DB is the printed block's** (Graham, 28 Oct): the system's creature rule; the growth effect adds nothing to DB. All four blocks match (19, 19, 23, 24).
+- **The breath's length grows** with the table: its copy opts out of the system's codex inheritance.
+- **The hatching card agrees with the sheet:** the printed feats are set before the card (core 3.674.1's `beforeCard`).
+- With core 3.674.1: a player can hatch; a hatchling arrives at full HP; High Magic is granted.
+- **Harness:** `verify-block10` 118, `mutate-block10` 111; Blocks 1 to 9 and the weapons re-pinned to 1.0.1 and 3.674.1.
+
+## 1.0.0 — 27 Oct 2026 (Block 10: Dragon Companions)
+
+Needs **TRG Prime 3.674.0**. Rulings B10-1 to B10-14 (`docs/INNER_TEMPEST_RULINGS_2026-10-27-B10.md`). See `docs/RELEASE_NOTES_1.0.0.md`.
+
+- **A Dragon Companions pack:** the Dragon Companion class (the table on it, rows to 30), the four base dragons and their eggs; each dragon's bite, the claws, the four breaths and High Magic; Dragon Tamer and the four Dragon Companion feats.
+- **Dragon Tamer hatches a bonded egg** as the dragon companion kind; **growth** kept in step with the table on every level change (size, speeds, abilities, DB, Wings, Tail Slap, Crush, Sweep, specials, breath length, spells known).
+- **Losing a dragon:** death held as Soul Drain, Refocus −2, weekly recovery, restoration within a week, one bond per lifetime; separation as a GM toggle.
+- **Harness:** new `verify-block10` 116 checks, `mutate-block10` 109 mutations; independent review findings fixed; Blocks 1 to 9 and the weapons re-pinned to 1.0.0 and 3.674.0.
+
 ## 0.10.2 — 27 Oct 2026 (Graham's answers on two items)
 
 Needs **TRG Prime 3.673.0**. See `docs/RELEASE_NOTES_0.10.2.md`.

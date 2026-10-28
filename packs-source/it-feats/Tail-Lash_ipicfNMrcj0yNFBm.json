@@ -1,0 +1,49 @@
+{
+  "_id": "ipicfNMrcj0yNFBm",
+  "name": "Tail Lash",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Large Size, Tail Attack",
+    "active": true,
+    "description": "<p><strong>TAIL LASH</strong></p>\n<p><strong>Prerequisites</strong> Large Size, Tail Attack</p>\n<p><strong>Trigger</strong> A creature within reach of the dragon companions tail attack takes a Strike action.</p>\n<p><strong>Action</strong> Reaction</p>\n<p>The dragon companion lashes out at the creature with its tail making Strike with a -2-circumstance penalty.</p>\n<p><em>Partly automated:</em> Use, when a creature in reach of the tail Strikes (target it first): spends the reaction and makes a tail Strike at −2 circumstance. Needs a Large dragon with its Tail Slap (Base +10); the trigger is the table's to call.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Companion",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "companionKind": "dragon"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ipicfNMrcj0yNFBm"
+}

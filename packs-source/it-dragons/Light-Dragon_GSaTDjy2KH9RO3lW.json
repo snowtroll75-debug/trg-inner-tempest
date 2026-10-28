@@ -1,0 +1,320 @@
+{
+  "_id": "GSaTDjy2KH9RO3lW",
+  "name": "Light Dragon",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest, Chapter 5",
+    "category": "Base Creature",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>LIGHT DRAGON</strong></p>\n<p><strong>Size</strong> Small</p>\n<p><strong>Level</strong> 5 (<strong>EL</strong> 4); <strong>DC</strong> 19</p>\n<p><strong>Initiative</strong> +60</p>\n<p><strong>Speed</strong> 30 feet; Fly 100</p>\n<p><strong>Senses</strong> Darkvision 60’, Nightvision 120’, Scent 35’</p>\n<p><strong>Languages</strong> Gantish, Low Tongue, Wyrmish</p>\n<p><strong>ABILITY SCORES</strong> <strong>STR</strong> +1, <strong>CON</strong> +1, <strong>DEX</strong> +6, <strong>INT</strong> +1, <strong>WIS</strong> +2, <strong>CHA</strong> +3</p>\n<p><strong>SKILLS</strong> Acrobatics +13(4), Arcana +8(4), Athletics +8(4), Culture +8(4) Diplomacy +10(4), Intimidate +10(4), Meditation +8(3) Mental Focus +8(3), Nature +8(3), Perception +8(3) Power Manipulation +7(3), Sense Motive +8(3), Survival +8(3)</p>\n<p><strong>DEFENCE</strong><br>DB +24 (Base +15; Other +2; Stat +6; Status +1); DR 2<br>Fort +11, Ref +18, Will +14<br>HP 85; Immunity electricity paralysis, sleep</p>\n<p><strong>FEATS/SPECIAL</strong> Alertness, Improved Initiative, Iron Will, Lightning Reflexes,</p>\n<p><strong>Light Dragon Breath</strong> 2 AP (arcane, electricity, focus, invocation, save)<br>The dragon breathes a 30-foot line of electricity that inflicts 5d10 damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage.</p>\n<p><strong>ATTACKS</strong><br>Bite +13 (finesse) 1d6+1 piercing plus 1d6 electricity<br>Claw +13 (agile, finesse, versatile - p) 1d5+1 slashing</p>\n<p><strong>MAGIC</strong><br>A light dragon is a High Magic caster.<br>CL 2; Spellcraft +8; PP 23<br>Spells 4 x Cantrip, 3 additional spells (max PP 2).</p>\n<p><strong>SPECIAL ABILITIES BY LEVEL</strong> 7: Flyby Attack; 9: Draconic Assault; 11: Wing Buffet; 13: Frightful Aura; 15: Draconic Shifting; 17: Shocking Aura; 19: Reflective Scales; 21: Spell Resilience</p>\n<p><em>A light dragon is a majestic and radiant creature, adorned with shimmering, luminous scales that emit a gentle and enchanting glow, symbolizing purity and benevolence.</em></p>\n<p><em>Automated:</em> hatched by Dragon Tamer at level 5, with the skill ranks printed (B10-7), the feats printed (Lightning Reflexes granted free, B10-9), its languages, immunities and weakness. The breath is 5d10 at 5 and a die a level after (C5), a Focus ability with a basic Reflex save at the creature DC; it grows as a line with the table. Its specials arrive by its own level from the system's Creature Codex. Its DB is the printed block's (Graham, 28 October 2026): the system's creature rule, half its level as an other bonus and its class bonus − 2 as a status bonus. Its natural attacks follow the system's one size ladder (B10-10).</p>",
+    "traits": "",
+    "abilityModifiers": "Str 1, Con 1, Dex 6, Int 1, Wis 2, Cha 3",
+    "maximumSize": "",
+    "languages": "Gantish, Low Tongue, Wyrmish",
+    "grantedFeats": "",
+    "racialAbilities": "Darkvision, Nightvision, Scent, Light Dragon Breath, High Magic",
+    "grantedWeapons": "Bite (Light Dragon), Claws (Dragon)",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "GGPiaeZx5sgsRl0h",
+      "name": "Light Dragon: ability scores",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.strength.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.strength.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.dexterity.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "6",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.intelligence.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.intelligence.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Str 1, Con 1, Dex 6, Int 1, Wis 2, Cha 3 — the printed scores.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!GSaTDjy2KH9RO3lW.GGPiaeZx5sgsRl0h"
+    },
+    {
+      "_id": "nsmGTg6iJW5IAWC3",
+      "name": "Light Dragon: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "small",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.fly",
+          "mode": 5,
+          "value": "100",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "small; land 30, fly 100. It grows with the Dragon Companion Table.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!GSaTDjy2KH9RO3lW.nsmGTg6iJW5IAWC3"
+    },
+    {
+      "_id": "6zqRpGLaT6LyKQmO",
+      "name": "Light Dragon: natural armour",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "2",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "DR 2 (base — scales with BDB): the printed DR 2 at BDB 5.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!GSaTDjy2KH9RO3lW.6zqRpGLaT6LyKQmO"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itDragon": {
+        "key": "light",
+        "name": "Light Dragon",
+        "baseLevel": 5,
+        "el": 4,
+        "size": "small",
+        "land": 30,
+        "fly": 100,
+        "element": "electricity",
+        "breath": {
+          "name": "Light Dragon Breath",
+          "die": "d10",
+          "shape": "line",
+          "type": "electricity"
+        },
+        "specials": [
+          [
+            7,
+            "Flyby Attack"
+          ],
+          [
+            9,
+            "Draconic Assault"
+          ],
+          [
+            11,
+            "Wing Buffet"
+          ],
+          [
+            13,
+            "Frightful Aura"
+          ],
+          [
+            15,
+            "Draconic Shifting"
+          ],
+          [
+            17,
+            "Shocking Aura"
+          ],
+          [
+            19,
+            "Reflective Scales"
+          ],
+          [
+            21,
+            "Spell Resilience"
+          ]
+        ],
+        "baseSpecials": [],
+        "feats": [
+          "Alertness",
+          "Improved Initiative",
+          "Iron Will",
+          "Lightning Reflexes"
+        ],
+        "freeFeats": [
+          "Lightning Reflexes"
+        ],
+        "skills": {
+          "acrobatics": 4,
+          "arcana": 4,
+          "athletics": 4,
+          "culture": 4,
+          "diplomacy": 4,
+          "intimidate": 4,
+          "meditation": 3,
+          "mentalFocus": 3,
+          "nature": 3,
+          "perception": 3,
+          "powerManipulation": 3,
+          "senseMotive": 3,
+          "survival": 3
+        },
+        "spells": 3,
+        "languages": "Gantish, Low Tongue, Wyrmish",
+        "immunities": "electricity, paralysis, sleep",
+        "weaknesses": "",
+        "egg": "Dragon Egg (Light)"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.674.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GSaTDjy2KH9RO3lW"
+}

@@ -1,0 +1,64 @@
+{
+  "_id": "mYW4KVw0zH7i4hGv",
+  "name": "Fire Dragon Breath",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>FIRE DRAGON BREATH</strong></p>\n<p><strong>ARCANE, FIRE, FOCUS, INVOCATION, SAVE</strong></p>\n<p><strong>Action</strong> 2 AP</p>\n<p>The dragon breathes a 15-foot cone that inflicts 6d8 fire damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage.</p>\n<p><em>Automated:</em> Use: 2 AP, then target the creatures in the cone. 6d8 fire at level 6, one d8 a level (C5), basic Reflex at the dragon's level DC (interpretation 2: High Magic's +2 is for spells). One use; Refocus restores it. Its length follows the Dragon Companion Table (the card's intro names it).</p>",
+    "usesPerDay": "1",
+    "bonusUses": 0,
+    "usesValue": 1,
+    "sourceRace": "Fire Dragon",
+    "sourceClass": "",
+    "traits": "Arcane, Fire, Focus, Invocation, Save"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "printedTraits": "ARCANE, FIRE, FOCUS, INVOCATION, SAVE",
+        "printedAction": "Action 2 AP",
+        "printedArea": "15-foot cone",
+        "activation": {
+          "kind": "action",
+          "ap": 2,
+          "save": "reflex"
+        },
+        "area": {
+          "save": "reflex",
+          "basic": true,
+          "damage": {
+            "perLevel": "d8",
+            "type": "fire"
+          },
+          "scope": "targets",
+          "intro": "A 15-foot cone — target the creatures in it.",
+          "breath": true
+        },
+        "source": "Inner Tempest, Chapter 5"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mYW4KVw0zH7i4hGv"
+}

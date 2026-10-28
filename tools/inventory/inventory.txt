@@ -358,10 +358,10 @@ FG-22|Ch5 p59|Zen Awareness|General feat|Perception 5; advantage locating hidden
 ## DRAGON COMPANIONS (Ch5)
 DC-01|Ch5 p60|Acquiring a dragon (egg + 28-day bonding)|Subsystem|Daily 1-h bonding for a lunar cycle, then Dragon Tamer hatches it|daily prep counter; D14|B|egg item w/ counter|D14
 DC-02|Ch5 p60|Dragon Companion class/progression|Subsystem|Base level + master levels; BAB/BDB = level; saves 5+L; HP size base (Tiny 10..Colossal 250) + (12+Con)/level; earth dragon no fly; 8 skill pts; general feats; Wyrm & Minion; table columns|D10|A|registerCompanionKind + class|D10
-DC-03|Ch5 p62|Cold Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-companions race item|D10
-DC-04|Ch5 p62|Earth Dragon (base)|Companion|Stat block p62|D10|A|PACK|D10
-DC-05|Ch5 p63|Fire Dragon (base)|Companion|Stat block p63|D10|A|PACK|D10
-DC-06|Ch5 p63|Light Dragon (base)|Companion|Stat block p63|D10|A|PACK|D10
+DC-03|Ch5 p62|Cold Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-dragons race item|D10
+DC-04|Ch5 p62|Earth Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-dragons race item|D10
+DC-05|Ch5 p63|Fire Dragon (base)|Companion|Stat block p63|D10|A|PACK:it-dragons race item|D10
+DC-06|Ch5 p63|Light Dragon (base)|Companion|Stat block p63|D10|A|PACK:it-dragons race item|D10
 DC-07|Ch5 p64-65|Companion specials (Crush, Draconic Assault, Draconic Shifting, elemental Aura/Blood/Strikes, Frightful Aura, Reflective Scales, Scorching/Slowing Breath, Snowvision, Spell Resilience, Wild Stride, Wing Buffet, Ice Climb, Smokevision, Flyby Attack)|Creature abilities|Reuse core codex entries by name; levelled grants per dragon table|core creature-abilities|A|levelled grants to core codex|D10
 DC-08|Ch5 p60|Sweep (dragon tail attack)|Creature ability|Sweep trait on the tail attack (ruling; footnote not yet in book)|core Sweep weapon trait|A|tail weapon w/ Sweep|
 DC-09|Ch5 p60|Wings / Tail natural attacks|Natural weapon|Core Wings (1d6 B) & Tail Slap (1d8 B), size-scaled|core creature-attacks + size ladder|A|grant core attacks at table levels|D10

@@ -28,6 +28,7 @@ import { BLOCK7_FEATS, BLOCK7_ABILITIES } from "./block7.mjs";
 import { BLOCK8_SPELLS } from "./block8.mjs";
 import { CHAPTER6_WEAPONS } from "./weapons.mjs";
 import { BLOCK9_ARMOUR, BLOCK9_RUNES, BLOCK9_SPECIFIC, BLOCK9_WONDROUS, BLOCK9_GEAR } from "./block9.mjs";
+import { BLOCK10_DRAGONS, BLOCK10_NATURAL_ATTACKS, BLOCK10_ABILITIES, BLOCK10_FEATS } from "./block10.mjs";
 import { md } from "./markdown.mjs";
 
 const text = JSON.parse(fs.readFileSync(new URL("./book-text.json", import.meta.url), "utf8"));
@@ -494,15 +495,15 @@ export const PACKS = [
   { name: "it-races", label: "Inner Tempest: Races", extends: "races", docs: RACES },
   { name: "it-heritages", label: "Inner Tempest: Heritages", extends: "heritages", docs: HERITAGES },
   { name: "it-backgrounds", label: "Inner Tempest: Backgrounds", extends: "backgrounds", docs: BACKGROUNDS },
-  { name: "it-abilities", label: "Inner Tempest: Abilities", extends: "abilities", docs: [...ABILITIES, ...BLOCK3_ABILITIES, ...BLOCK4_ABILITIES, ...BLOCK6_ABILITIES, ...BLOCK7_ABILITIES] },
+  { name: "it-abilities", label: "Inner Tempest: Abilities", extends: "abilities", docs: [...ABILITIES, ...BLOCK3_ABILITIES, ...BLOCK4_ABILITIES, ...BLOCK6_ABILITIES, ...BLOCK7_ABILITIES, ...BLOCK10_ABILITIES] },
   // Block 5 (0.6.0): the 47 racial feats of Chapter 5.
-  { name: "it-feats", label: "Inner Tempest: Feats", extends: "feats", docs: [...GENERAL_FEATS, ...BLOCK3_FEATS, ...BLOCK4_FEATS, ...BLOCK5_FEATS, ...BLOCK6_FEATS, ...BLOCK7_FEATS] },
+  { name: "it-feats", label: "Inner Tempest: Feats", extends: "feats", docs: [...GENERAL_FEATS, ...BLOCK3_FEATS, ...BLOCK4_FEATS, ...BLOCK5_FEATS, ...BLOCK6_FEATS, ...BLOCK7_FEATS, ...BLOCK10_FEATS] },
   // Block 3 (0.4.0): the Disciple and the Mystic, and the Grimoire spells
   // the Mystical Disciplines grant.
   { name: "it-classes", label: "Inner Tempest: Classes", extends: "classes", docs: [...BLOCK3_CLASSES, ...BLOCK4_CLASSES] },
   // Block 5: Water Bolt (Graham's B5-1) and Draconic Armament's Bite and Claw.
   { name: "it-spells", label: "Inner Tempest: Spells", extends: "spells", docs: [...BLOCK3_SPELLS, ...BLOCK5_SPELLS, ...BLOCK8_SPELLS] },
-  { name: "it-companions", label: "Inner Tempest: Natural Attacks", extends: "companions", docs: [...NATURAL_ATTACKS, ...BLOCK5_NATURAL_ATTACKS] },
+  { name: "it-companions", label: "Inner Tempest: Natural Attacks", extends: "companions", docs: [...NATURAL_ATTACKS, ...BLOCK5_NATURAL_ATTACKS, ...BLOCK10_NATURAL_ATTACKS] },
   // 0.5.1: Chapter 6's sixteen weapons (Graham, 23 October 2026).
   { name: "it-weapons", label: "Inner Tempest: Weapons", extends: "weapons", docs: CHAPTER6_WEAPONS },
   // Block 9 (0.10.0): Chapter 6's armour and Chapter 9's magic items, each
@@ -511,5 +512,9 @@ export const PACKS = [
   { name: "it-runes", label: "Inner Tempest: Runes", extends: "runes", docs: BLOCK9_RUNES },
   { name: "it-specific-items", label: "Inner Tempest: Specific Magic Armour & Weapons", extends: "specific-items", docs: BLOCK9_SPECIFIC },
   { name: "it-wondrous", label: "Inner Tempest: Wondrous Items", extends: "wondrous", docs: BLOCK9_WONDROUS },
-  { name: "it-gear", label: "Inner Tempest: Gear", extends: "gear", docs: BLOCK9_GEAR }
+  { name: "it-gear", label: "Inner Tempest: Gear", extends: "gear", docs: BLOCK9_GEAR },
+  // Block 10 (1.0.0): the Dragon Companion class, the four base dragons and
+  // their eggs. Its own pack, extending none of the system's, so no dragon is
+  // offered as an animal companion; the dragon kind names it (C1).
+  { name: "it-dragons", label: "Inner Tempest: Dragon Companions", docs: BLOCK10_DRAGONS }
 ];

@@ -1,0 +1,794 @@
+{
+  "_id": "GIAWaIQHJBC3nDRh",
+  "name": "Dragon Companion",
+  "img": "icons/svg/book.svg",
+  "type": "class",
+  "system": {
+    "source": "Inner Tempest, Chapter 5",
+    "category": "",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p>Dragons, the majestic and enigmatic creatures of myth and legend, have long held a fascination for adventurers and scholars alike. These powerful beings, known for their wisdom, magic, and might, occasionally form unique bonds with individuals who prove themselves worthy. A dragon companion is not merely a pet or ally; it is a mystical connection between a mortal and a creature that transcends the ordinary.</p>\n<p>The bond between a dragon and its companion is forged through shared experiences, mutual respect, and, most importantly, an understanding of each other's strengths and weaknesses. These companions come in various forms, from the imposing ancient wyrms to the playful and mischievous dragonlings. While the nature of the bond can vary, it always brings incredible benefits to those fortunate enough to experience it.</p>\n<p>A dragon companion offers not only protection but also access to the wisdom and magic that flows through their draconic veins. Adventurers who share their journey with these creatures find themselves capable of feats previously thought impossible. Whether in the heat of battle, the pursuit of knowledge, or the exploration of ancient mysteries, a dragon companion is an invaluable ally, offering guidance, power, and a connection to the mystical forces of the world.</p>\n<p>However, it's important to remember that this bond is not easily formed or maintained. Dragons are beings of great complexity, and their companions must prove their worth through deeds and loyalty. The connection requires constant nurturing, mutual respect, and a willingness to embark on adventures together..</p>\n<p><strong>TRAITS</strong></p>\n<p>A dragon companion possesses the wyrm trait. It also gains the Minion Trait.</p>\n<p><strong>LEVEL</strong></p>\n<p>A dragon companions type determines its base level. Each time you gain a level, your dragon companion will also gain a level.</p>\n<p><strong>CLASS SKILLS</strong></p>\n<p>A dragon companion has the following class skills:</p>\n<p>Acrobatics, Arcana, Athletics, Climbing, Culture, Deception, Diplomacy, Intimidate, Meditation, Mental Focus, Nature, Perception, Power Manipulation, Sense Motive, Survival.</p>\n<p>Just like a PC, a dragon companion gains a class bonus to each of these skills..</p>\n<p><strong>SKILL POINTS</strong></p>\n<p>A dragon companion gains 8 skill points per level which it may spend in the same way as that of a PC.</p>\n<p><strong>FEATS</strong></p>\n<p>A dragon companion may select general feats in the same way that a player character does (one at 1st and then another every 2 levels thereafter). Some dragon companions may gain access to additional feats (GM discretion).</p>\n<p>Be aware that the base stat block for a dragon companion already contains any feats that it will have gained up to and including its current level.</p>\n<p><strong>HIT POINTS</strong></p>\n<p>A dragon companion gains 12 + Con per level hit points. Its hit points are modified further by its Size as shown below.</p>\n<p><strong>BASE ATTACK/DEFENCE BONUS</strong></p>\n<p>A dragon companion gains a primary BAB and BDB which equates to +1 per level.</p>\n<p><strong>SAVING THROWS</strong></p>\n<p>All of the dragon companions saving throws are primary. This grants them a base saving throw equal to 5 +1 per level.</p>\n<p><strong>OTHER ABILITIES</strong></p>\n<p>As a dragon companion increases in level, it gains a number of additional abilities as detailed in the Dragon Companion Table.</p>\n<p><strong>ABILITY SCORES</strong></p>\n<p>A dragon companions ability scores increase as detailed in the table below and they do not receive the increase gained by a PC every 4 levels.</p>\n<p><strong>ATTACKS</strong></p>\n<p>Every dragon companion gains the indicated attacks. The size of these attacks match the size of the dragon companion.</p>\n<p>Crush and Sweep attacks are explained in the dragon companion ability descriptions at the end of this chapter.</p>\n<p><strong>BREATH WEAPON</strong></p>\n<p>Every dragon companion has a breath weapon. Range and area are detailed here. The damage inflicted is an amount of dice based upon level (1 per level).</p>\n<p><strong>MAGIC</strong> Dragon companions have a caster equal to their level -3. They gain 4 PP per level and a BSB of +1 per level.</p>\n<p><em>Automated:</em> the companion's class: BAB and BDB +1 a level, every save 5 + level, 12 + Con hit points a level beside the system's size base (the Dragon Companion HP Table is the system's own), 8 + Intelligence skill points a level (B10-8), general feats on the PC's schedule, caster level − 3, 4 PP a level and BSB +1 a level, an arcane instinctive caster on Charisma whose spells may come from any tradition (High Magic). The rows run to 30, so a dragon the GM raises still reads its own row. The Dragon Companion Table rides on this class, and Inner Tempest keeps the dragon in step with it whenever its level moves.</p>",
+    "classType": "",
+    "keyAbilityScores": "",
+    "classSkills": "Acrobatics, Arcana, Athletics, Climbing, Culture, Deception, Diplomacy, Intimidate, Meditation, Mental Focus, Nature, Perception, Power Manipulation, Sense Motive, Survival",
+    "grantedFeats": "",
+    "classAbilities": "",
+    "proficiencies": "",
+    "hitPoints": 12,
+    "skillPoints": 8,
+    "magicalTradition": "arcane",
+    "magicalAbility": "charisma",
+    "casterStyle": "instinctive",
+    "repertoireCategory": "",
+    "memorisationStyle": "",
+    "cantripsPerDay": 0,
+    "spellBookFirstPicks": 0,
+    "grantedGear": "",
+    "grantedSpells": "",
+    "progression": [
+      {
+        "level": 1,
+        "bab": 1,
+        "bdb": 1,
+        "fortitude": 6,
+        "reflex": 6,
+        "will": 6,
+        "bonusFeats": 1,
+        "casterLevel": null,
+        "pp": 4,
+        "bsb": 1
+      },
+      {
+        "level": 2,
+        "bab": 2,
+        "bdb": 2,
+        "fortitude": 7,
+        "reflex": 7,
+        "will": 7,
+        "bonusFeats": 1,
+        "casterLevel": null,
+        "pp": 8,
+        "bsb": 2
+      },
+      {
+        "level": 3,
+        "bab": 3,
+        "bdb": 3,
+        "fortitude": 8,
+        "reflex": 8,
+        "will": 8,
+        "bonusFeats": 2,
+        "casterLevel": null,
+        "pp": 12,
+        "bsb": 3
+      },
+      {
+        "level": 4,
+        "bab": 4,
+        "bdb": 4,
+        "fortitude": 9,
+        "reflex": 9,
+        "will": 9,
+        "bonusFeats": 2,
+        "casterLevel": 1,
+        "pp": 16,
+        "bsb": 4
+      },
+      {
+        "level": 5,
+        "bab": 5,
+        "bdb": 5,
+        "fortitude": 10,
+        "reflex": 10,
+        "will": 10,
+        "bonusFeats": 3,
+        "casterLevel": 2,
+        "pp": 20,
+        "bsb": 5
+      },
+      {
+        "level": 6,
+        "bab": 6,
+        "bdb": 6,
+        "fortitude": 11,
+        "reflex": 11,
+        "will": 11,
+        "bonusFeats": 3,
+        "casterLevel": 3,
+        "pp": 24,
+        "bsb": 6
+      },
+      {
+        "level": 7,
+        "bab": 7,
+        "bdb": 7,
+        "fortitude": 12,
+        "reflex": 12,
+        "will": 12,
+        "bonusFeats": 4,
+        "casterLevel": 4,
+        "pp": 28,
+        "bsb": 7
+      },
+      {
+        "level": 8,
+        "bab": 8,
+        "bdb": 8,
+        "fortitude": 13,
+        "reflex": 13,
+        "will": 13,
+        "bonusFeats": 4,
+        "casterLevel": 5,
+        "pp": 32,
+        "bsb": 8
+      },
+      {
+        "level": 9,
+        "bab": 9,
+        "bdb": 9,
+        "fortitude": 14,
+        "reflex": 14,
+        "will": 14,
+        "bonusFeats": 5,
+        "casterLevel": 6,
+        "pp": 36,
+        "bsb": 9
+      },
+      {
+        "level": 10,
+        "bab": 10,
+        "bdb": 10,
+        "fortitude": 15,
+        "reflex": 15,
+        "will": 15,
+        "bonusFeats": 5,
+        "casterLevel": 7,
+        "pp": 40,
+        "bsb": 10
+      },
+      {
+        "level": 11,
+        "bab": 11,
+        "bdb": 11,
+        "fortitude": 16,
+        "reflex": 16,
+        "will": 16,
+        "bonusFeats": 6,
+        "casterLevel": 8,
+        "pp": 44,
+        "bsb": 11
+      },
+      {
+        "level": 12,
+        "bab": 12,
+        "bdb": 12,
+        "fortitude": 17,
+        "reflex": 17,
+        "will": 17,
+        "bonusFeats": 6,
+        "casterLevel": 9,
+        "pp": 48,
+        "bsb": 12
+      },
+      {
+        "level": 13,
+        "bab": 13,
+        "bdb": 13,
+        "fortitude": 18,
+        "reflex": 18,
+        "will": 18,
+        "bonusFeats": 7,
+        "casterLevel": 10,
+        "pp": 52,
+        "bsb": 13
+      },
+      {
+        "level": 14,
+        "bab": 14,
+        "bdb": 14,
+        "fortitude": 19,
+        "reflex": 19,
+        "will": 19,
+        "bonusFeats": 7,
+        "casterLevel": 11,
+        "pp": 56,
+        "bsb": 14
+      },
+      {
+        "level": 15,
+        "bab": 15,
+        "bdb": 15,
+        "fortitude": 20,
+        "reflex": 20,
+        "will": 20,
+        "bonusFeats": 8,
+        "casterLevel": 12,
+        "pp": 60,
+        "bsb": 15
+      },
+      {
+        "level": 16,
+        "bab": 16,
+        "bdb": 16,
+        "fortitude": 21,
+        "reflex": 21,
+        "will": 21,
+        "bonusFeats": 8,
+        "casterLevel": 13,
+        "pp": 64,
+        "bsb": 16
+      },
+      {
+        "level": 17,
+        "bab": 17,
+        "bdb": 17,
+        "fortitude": 22,
+        "reflex": 22,
+        "will": 22,
+        "bonusFeats": 9,
+        "casterLevel": 14,
+        "pp": 68,
+        "bsb": 17
+      },
+      {
+        "level": 18,
+        "bab": 18,
+        "bdb": 18,
+        "fortitude": 23,
+        "reflex": 23,
+        "will": 23,
+        "bonusFeats": 9,
+        "casterLevel": 15,
+        "pp": 72,
+        "bsb": 18
+      },
+      {
+        "level": 19,
+        "bab": 19,
+        "bdb": 19,
+        "fortitude": 24,
+        "reflex": 24,
+        "will": 24,
+        "bonusFeats": 10,
+        "casterLevel": 16,
+        "pp": 76,
+        "bsb": 19
+      },
+      {
+        "level": 20,
+        "bab": 20,
+        "bdb": 20,
+        "fortitude": 25,
+        "reflex": 25,
+        "will": 25,
+        "bonusFeats": 10,
+        "casterLevel": 17,
+        "pp": 80,
+        "bsb": 20
+      },
+      {
+        "level": 21,
+        "bab": 21,
+        "bdb": 21,
+        "fortitude": 26,
+        "reflex": 26,
+        "will": 26,
+        "bonusFeats": 11,
+        "casterLevel": 18,
+        "pp": 84,
+        "bsb": 21
+      },
+      {
+        "level": 22,
+        "bab": 22,
+        "bdb": 22,
+        "fortitude": 27,
+        "reflex": 27,
+        "will": 27,
+        "bonusFeats": 11,
+        "casterLevel": 19,
+        "pp": 88,
+        "bsb": 22
+      },
+      {
+        "level": 23,
+        "bab": 23,
+        "bdb": 23,
+        "fortitude": 28,
+        "reflex": 28,
+        "will": 28,
+        "bonusFeats": 12,
+        "casterLevel": 20,
+        "pp": 92,
+        "bsb": 23
+      },
+      {
+        "level": 24,
+        "bab": 24,
+        "bdb": 24,
+        "fortitude": 29,
+        "reflex": 29,
+        "will": 29,
+        "bonusFeats": 12,
+        "casterLevel": 21,
+        "pp": 96,
+        "bsb": 24
+      },
+      {
+        "level": 25,
+        "bab": 25,
+        "bdb": 25,
+        "fortitude": 30,
+        "reflex": 30,
+        "will": 30,
+        "bonusFeats": 13,
+        "casterLevel": 22,
+        "pp": 100,
+        "bsb": 25
+      },
+      {
+        "level": 26,
+        "bab": 26,
+        "bdb": 26,
+        "fortitude": 31,
+        "reflex": 31,
+        "will": 31,
+        "bonusFeats": 13,
+        "casterLevel": 23,
+        "pp": 104,
+        "bsb": 26
+      },
+      {
+        "level": 27,
+        "bab": 27,
+        "bdb": 27,
+        "fortitude": 32,
+        "reflex": 32,
+        "will": 32,
+        "bonusFeats": 14,
+        "casterLevel": 24,
+        "pp": 108,
+        "bsb": 27
+      },
+      {
+        "level": 28,
+        "bab": 28,
+        "bdb": 28,
+        "fortitude": 33,
+        "reflex": 33,
+        "will": 33,
+        "bonusFeats": 14,
+        "casterLevel": 25,
+        "pp": 112,
+        "bsb": 28
+      },
+      {
+        "level": 29,
+        "bab": 29,
+        "bdb": 29,
+        "fortitude": 34,
+        "reflex": 34,
+        "will": 34,
+        "bonusFeats": 15,
+        "casterLevel": 26,
+        "pp": 116,
+        "bsb": 29
+      },
+      {
+        "level": 30,
+        "bab": 30,
+        "bdb": 30,
+        "fortitude": 35,
+        "reflex": 35,
+        "will": 35,
+        "bonusFeats": 15,
+        "casterLevel": 27,
+        "pp": 120,
+        "bsb": 30
+      }
+    ],
+    "cantripsKnown": 4,
+    "wealth": "0",
+    "skillPointAbility": "intelligence",
+    "traits": "Minion"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "abilityLevels": {},
+      "repertoire": {
+        "pickFrom": 2,
+        "pickStep": 1
+      },
+      "itDragonTable": [
+        {
+          "gained": 0,
+          "size": 0,
+          "land": 0,
+          "fly": 0,
+          "str": 0,
+          "con": 0,
+          "dex": 0,
+          "mental": 0,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 30,
+          "cone": 15
+        },
+        {
+          "gained": 1,
+          "size": 0,
+          "land": 0,
+          "fly": 5,
+          "str": 1,
+          "con": 0,
+          "dex": 0,
+          "mental": 0,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 30,
+          "cone": 15
+        },
+        {
+          "gained": 2,
+          "size": 1,
+          "land": 5,
+          "fly": 10,
+          "str": 1,
+          "con": 1,
+          "dex": 0,
+          "mental": 1,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 40,
+          "cone": 20
+        },
+        {
+          "gained": 3,
+          "size": 1,
+          "land": 5,
+          "fly": 15,
+          "str": 1,
+          "con": 1,
+          "dex": 0,
+          "mental": 1,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 40,
+          "cone": 20
+        },
+        {
+          "gained": 4,
+          "size": 2,
+          "land": 10,
+          "fly": 20,
+          "str": 2,
+          "con": 2,
+          "dex": -1,
+          "mental": 1,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 40,
+          "cone": 20
+        },
+        {
+          "gained": 5,
+          "size": 2,
+          "land": 10,
+          "fly": 25,
+          "str": 2,
+          "con": 2,
+          "dex": -1,
+          "mental": 1,
+          "attacks": [
+            "Bite",
+            "Claws"
+          ],
+          "line": 40,
+          "cone": 20
+        },
+        {
+          "gained": 6,
+          "size": 2,
+          "land": 10,
+          "fly": 30,
+          "str": 2,
+          "con": 2,
+          "dex": -1,
+          "mental": 2,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings"
+          ],
+          "line": 60,
+          "cone": 30
+        },
+        {
+          "gained": 7,
+          "size": 2,
+          "land": 10,
+          "fly": 35,
+          "str": 2,
+          "con": 2,
+          "dex": -1,
+          "mental": 2,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings"
+          ],
+          "line": 60,
+          "cone": 30
+        },
+        {
+          "gained": 8,
+          "size": 3,
+          "land": 15,
+          "fly": 40,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 2,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings"
+          ],
+          "line": 60,
+          "cone": 30
+        },
+        {
+          "gained": 9,
+          "size": 3,
+          "land": 15,
+          "fly": 45,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 2,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings"
+          ],
+          "line": 60,
+          "cone": 30
+        },
+        {
+          "gained": 10,
+          "size": 3,
+          "land": 15,
+          "fly": 50,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 3,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 80,
+          "cone": 40
+        },
+        {
+          "gained": 11,
+          "size": 3,
+          "land": 15,
+          "fly": 55,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 3,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 80,
+          "cone": 40
+        },
+        {
+          "gained": 12,
+          "size": 3,
+          "land": 15,
+          "fly": 60,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 3,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 80,
+          "cone": 40
+        },
+        {
+          "gained": 13,
+          "size": 3,
+          "land": 15,
+          "fly": 65,
+          "str": 3,
+          "con": 3,
+          "dex": -2,
+          "mental": 3,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 80,
+          "cone": 40
+        },
+        {
+          "gained": 14,
+          "size": 3,
+          "land": 20,
+          "fly": 70,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 4,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 100,
+          "cone": 50
+        },
+        {
+          "gained": 15,
+          "size": 3,
+          "land": 20,
+          "fly": 75,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 4,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail"
+          ],
+          "line": 100,
+          "cone": 50
+        },
+        {
+          "gained": 16,
+          "size": 4,
+          "land": 20,
+          "fly": 80,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 4,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail",
+            "Crush"
+          ],
+          "line": 100,
+          "cone": 50
+        },
+        {
+          "gained": 17,
+          "size": 4,
+          "land": 20,
+          "fly": 85,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 4,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail",
+            "Crush"
+          ],
+          "line": 100,
+          "cone": 50
+        },
+        {
+          "gained": 18,
+          "size": 4,
+          "land": 20,
+          "fly": 90,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 5,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail",
+            "Crush"
+          ],
+          "line": 120,
+          "cone": 60
+        },
+        {
+          "gained": 19,
+          "size": 4,
+          "land": 20,
+          "fly": 95,
+          "str": 4,
+          "con": 4,
+          "dex": -3,
+          "mental": 5,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail",
+            "Crush"
+          ],
+          "line": 120,
+          "cone": 60
+        },
+        {
+          "gained": 20,
+          "size": 4,
+          "land": 20,
+          "fly": 100,
+          "str": 5,
+          "con": 5,
+          "dex": -4,
+          "mental": 5,
+          "attacks": [
+            "Bite",
+            "Claws",
+            "Wings",
+            "Tail",
+            "Crush",
+            "Sweep"
+          ],
+          "line": 120,
+          "cone": 60
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!GIAWaIQHJBC3nDRh"
+}

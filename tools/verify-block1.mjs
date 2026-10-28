@@ -420,7 +420,8 @@ ok("G their Use runs the core's background chooser", Object.keys(LORE_ALTERNATIV
 // it-spells, so 374 + 4.
 // Two per pack: 0.5.1 added it-weapons (Chapter 6's weapons).
 // 390 at 0.10.0: two per-pack checks for each of Block 9's five packs.
-const EXPECTED = 390;
+// 392 at 1.0.0: two per-pack checks for Block 10's it-dragons.
+const EXPECTED = 392;
 equal("Z the suite ran every check it is meant to", checks + 1, EXPECTED);
 if (failures.length) { console.log(`verify-block1: ${checks} checks — ${failures.length} FAILED\n`); for (const f of failures) console.log(`  ✗ ${f}`); process.exitCode = 1; }
 else console.log(`verify-block1: ${checks} checks — all green.`);

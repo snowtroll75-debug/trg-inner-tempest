@@ -1,0 +1,57 @@
+{
+  "_id": "sqrGalNrNeE87An6",
+  "name": "Dragon Egg (Fire)",
+  "img": "icons/svg/book.svg",
+  "type": "gear",
+  "system": {
+    "quantity": 1,
+    "weight": 5,
+    "price": 0,
+    "equipped": false,
+    "invested": false,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "traits": "",
+    "description": "<p>To acquire a dragon companion, you must first source and locate an unhatched dragon egg. Once you have the egg, you must bond with it for one hour each day during daily preparation by mediating or performing some other appropriate action (GM discretion).</p>\n<p>This bonding process will take a minimum of 1 lunar cycle (about 28 days) but may take longer based upon the campaign setting.</p>\n<p>Once you have completed the above process, you may take the Dragon Tamer Archetype feat which causes your dragon companion to hatch from the egg and form a bond with you as detailed below.</p>\n<p><em>Automated:</em> while you carry it, each daily preparation counts a day of bonding (the hour's meditation is yours to make). It is ready at 28 days, which the GM may raise on the egg's flag (\"may take longer\"). Dragon Tamer's Use then hatches a fire dragon and consumes the egg.</p>",
+    "slot": "",
+    "uses": {
+      "value": 0,
+      "max": 0
+    },
+    "itemSize": "T",
+    "itemLevel": 1,
+    "heldHands": 0,
+    "formulae": "",
+    "gearCategory": "Goods",
+    "gearCategoryInferred": true,
+    "source": "Inner Tempest, Chapter 5"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itDragonEgg": {
+        "dragon": "Fire Dragon",
+        "days": 0,
+        "required": 28
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!sqrGalNrNeE87An6"
+}

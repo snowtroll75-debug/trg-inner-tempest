@@ -19,6 +19,7 @@ import { onStrikeResolvedB6, onItemCreatedB6, reconcileB6Actor } from "../module
 import { onStrikeResolvedB7, onDamageAppliedB7, onDailyPreparationB7, onTurnEndedB7, onAmbushDealtB7 } from "../module/block7-automations.mjs";
 import { onSpellSettledB8, onPreUpdateItemB8, onItemUpdatedB8, onEffectDeletedB8, registerBlock8Socket } from "../module/block8-automations.mjs";
 import { onDailyPreparationB9 } from "../module/block9-automations.mjs";
+import { onActorUpdatedB10, onDailyPreparationB10, onCreatureSlainB10, onEffectChangedB10, onItemCreatedB10, reconcileAllDragons } from "../module/block10-automations.mjs";
 import {
   registerAgingSetting, reconcileAllAging, onActorUpdatedAging, onItemChangedAging, onEffectChangedAging, onRenderActorSheetAging
 } from "../module/aging-workflow.mjs";
@@ -28,7 +29,7 @@ import {
 } from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.673.0";
+const REQUIRED_SYSTEM = "3.674.1";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
@@ -121,6 +122,18 @@ for (const hook of ["createItem", "deleteItem"]) Hooks.on(hook, (item) => { onIt
 for (const hook of ["createActiveEffect", "deleteActiveEffect"]) Hooks.on(hook, (effect) => { onEffectChangedAging(effect).catch((err) => console.warn("Inner Tempest | aging", err)); });
 Hooks.on("renderTRGActorSheet", (app, element) => { try { onRenderActorSheetAging(app, element); } catch (err) { console.warn("Inner Tempest | aging on the sheet", err); } });
 
+// BLOCK 10 (1.0.0, on TRG Prime 3.674.0): a dragon kept in step with the
+// Dragon Companion Table whenever its level moves; the egg's bonding and the
+// broken bond's weekly recovery at daily preparation; a dragon's death, asked
+// whenever its Dying or dead skull changes (and its restoration when they
+// lift) and on the system's kill hook; and a dragon feat
+// taken before its prerequisite.
+Hooks.on("updateActor", (actor, changes) => { onActorUpdatedB10(actor, changes).catch((err) => console.warn("Inner Tempest | dragon growth", err)); });
+Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB10(ctx).catch((err) => console.warn("Inner Tempest | daily preparation (Block 10)", err)); });
+Hooks.on("trgPrimeCreatureSlain", (ctx) => { onCreatureSlainB10(ctx).catch((err) => console.warn("Inner Tempest | a dragon slain", err)); });
+for (const hook of ["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"]) Hooks.on(hook, (effect) => { onEffectChangedB10(effect).catch((err) => console.warn("Inner Tempest | a dragon dying", err)); });
+Hooks.on("createItem", (item, options, userId) => { try { onItemCreatedB10(item, options, userId); } catch (err) { console.warn("Inner Tempest | dragon feat prerequisite", err); } });
+
 // The buttons on this module's cards: Predator's Pounce's paid Strike and
 // Ancestral Guidance's reroll.
 Hooks.on("renderChatMessageHTML", (message, html) => bindCardButtons(message, html));
@@ -151,5 +164,7 @@ Hooks.once("ready", () => {
       .catch((err) => console.warn("Inner Tempest | bringing Mystics into step (0.7.0)", err));
     // 0.10.0: the Appendix's age categories on every creature with an age.
     reconcileAllAging().catch((err) => console.warn("Inner Tempest | aging (0.10.0)", err));
+    // 1.0.0: every dragon companion in step with the Dragon Companion Table.
+    reconcileAllDragons().catch((err) => console.warn("Inner Tempest | dragon growth (1.0.0)", err));
   }
 });

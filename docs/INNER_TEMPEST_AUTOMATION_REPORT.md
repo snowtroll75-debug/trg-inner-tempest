@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json
 
 ## Shipped so far
 
-374 features shipped: A 223 · B 108 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
+391 features shipped: A 233 · B 115 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
 
 ### Shipped below target, and what would lift it
 

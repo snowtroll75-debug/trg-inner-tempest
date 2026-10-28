@@ -2,7 +2,25 @@
 
 This is the durable record that lets work resume across sessions. Update it at the end of every working session. Status here must match `docs/INNER_TEMPEST_IMPLEMENTATION_MATRIX.md`, which is generated from `tools/inventory/inventory.txt`.
 
-## Current state — 27 Oct 2026 (session 7: Block 9 live-tested; 0.10.1 and core 3.673.1 built)
+## Current state — 28 Oct 2026 (session 7: Block 10 live-tested; 1.0.1 and core 3.674.1 built)
+
+- **Hurling (core 3.674.0, rebuilt):** copies the 3.666.1 repair never reached (Fiends & Fables creatures, compendium casters) read their printed "1d6 + magical ability score"; confirmed live (Human Ghost +5).
+- **Live test of 1.0.0 on 3.674.0** (`live-testing-report-3.674.0.md`): Block 10 works live (hatching as GM, growth, breath, death and held Soul Drain, rest, weekly recovery, restoration, separation, Draconic Spell, Imitate Sound warning, Deflecting Wings on the player's screen). Faults: F1 a player cannot create the companion; F2 a new companion at template HP; F3 High Magic tied with F&F's; F4 the breath's length undone by codex inheritance; F5 DB 2 above the printed blocks; F6 Hurling's old "added by hand" note.
+- **Graham:** "Printed block for dragon db. Build fixes 1-5 and amend text on point 6".
+- **1.0.1 built:** no DB from the growth (the printed blocks are the system's creature rule); the breath copy opts out of codex inheritance. `verify-block10` 117, `mutate-block10` 110/110.
+- **Core 3.674.1 built:** companion creation through the GM relay; full HP at creation; compendium source kept; Hurling's note amended. `verify-block10-core` 48, `mutate-block10-core` 78/78.
+- **Next:** full sweep on the staged 3.674.1, zips, Graham installs, retest. **Nothing pushed.**
+
+## Earlier — 27 Oct 2026 (session 7: Block 10 built — 1.0.0 on core 3.674.0)
+
+- **Block 10 audited and ruled** (`docs/INNER_TEMPEST_BLOCK10_AUDIT.md`; B10-1 to B10-14 and interpretations 1–7, all adopted: "Go with your recommendations", `docs/INNER_TEMPEST_RULINGS_2026-10-27-B10.md`). Found while building: the light dragon's derived DB is 24 (as printed) and its ranks 45 (its budget); only the fire dragon differs (DB 22 against 23; ranks 66 of 48).
+- **1.0.0 built:** a new it-dragons pack (the class with the table, rows 1–30; the four base dragons; four eggs), bites and claws in it-companions, four breaths and High Magic in it-abilities, Dragon Tamer and the four companion feats in it-feats; `module/block10-automations.mjs` (kind registration, growth reconciler, hatching, egg bonding, losing a dragon, the feats). Book text in `tools/content/book-text-block10.json` (`tools/content/extract-book-block10.mjs`).
+- **Core 3.674.0:** C1–C12 and F. Pair `verify/mutate-block10-core` 39 and 66.
+- **Harnesses:** `verify-block10` 116, `mutate-block10` 109/109; Blocks 1 to 9 and the weapons re-pinned to 1.0.0 and 3.674.0; every module suite green.
+- **Independent review:** two bugs (a bond broken twice; deaths by the skull alone) and six risks (clockless tables, overlapping growth runs, restoration timing, re-separation, Sweep, the Soul Drain cards), all fixed.
+- **Next:** core sweep on the staged 3.674.0, zips, Graham installs, live test. **Nothing pushed.**
+
+## Earlier — 27 Oct 2026 (session 7: Block 9 live-tested; 0.10.1 and core 3.673.1 built)
 
 - **Live test of 0.10.0 on 3.673.0** (`live-testing-report-3.673.0.md`): Block 9 works live; two faults. **F1** (module): the Sash of Serenity's advantage, a tick-box, was never asked on a forced save. **F2** (core): a weapon card's "Now X HP" left out Guarded's heal. Graham: "Yes please" to building both fixes.
 - **0.10.1 built:** a kind chosen at the Sash's Use is taken on the next save of that kind and spent; "any" stays a tick-box. `verify-block9` 83, `mutate-block9` 94/94; Blocks 3 to 9 and the weapons re-pinned to 0.10.1.

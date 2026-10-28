@@ -1,0 +1,67 @@
+{
+  "_id": "UjT66mhTQSbnsFZP",
+  "name": "Imitate Sound",
+  "img": "icons/svg/upgrade.svg",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Light Dragon",
+    "active": true,
+    "description": "<p><strong>IMITATE SOUND</strong></p>\n<p><strong>Prerequisites</strong> Light Dragon</p>\n<p>The dragon companion may mimic any sound it has heard. It must succeed at a Deception check with a +4-circumstance bonus to do so.</p>\n<p><em>Partly automated:</em> +4 circumstance is offered on Deception checks — tick it when the check mimics a sound the dragon has heard. Only the light dragon may take it: another dragon is warned when it is added.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Companion",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "companionKind": "dragon",
+      "conditionals": [
+        {
+          "kind": "modifier",
+          "label": "Imitate Sound",
+          "scope": "Deception to mimic a sound it has heard — tick if so",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "deception"
+            ]
+          },
+          "value": 4,
+          "type": "circumstance"
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UjT66mhTQSbnsFZP"
+}

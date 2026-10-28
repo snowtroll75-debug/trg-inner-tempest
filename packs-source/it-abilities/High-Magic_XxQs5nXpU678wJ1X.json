@@ -1,0 +1,48 @@
+{
+  "_id": "XxQs5nXpU678wJ1X",
+  "name": "High Magic",
+  "img": "icons/svg/aura.svg",
+  "type": "ability",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Racial",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>HIGH MAGIC</strong></p>\n<p>Dragon companions use High Magic. High Magic is explored in depth in the upcoming Eldritch Arts sourcebook. If you do not have access to that sourcebook then use the following guidelines to apply High Magic to a creature:</p>\n<p>• Can select spells from any tradition<br>• All casting DCs are increased by 2<br>• All spells gain the benefit of the Heighten feat for no extra PP cost<br>• All Spell Fumble checks gain a +50 modifier</p>\n<p><em>Automated:</em> the dragon carries the system's High Magic (casting DCs +2, Heighten's benefit at no PP, Spell Fumble checks +50), and this ability opens every tradition's spells to its repertoire.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "traits": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "creatureAbility": {
+        "derives": {
+          "learnTraditions": "any"
+        },
+        "source": "Inner Tempest, Chapter 5"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XxQs5nXpU678wJ1X"
+}

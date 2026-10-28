@@ -1,0 +1,326 @@
+{
+  "_id": "UeZrVMIeRM4tR0po",
+  "name": "Earth Dragon",
+  "img": "icons/svg/mystery-man.svg",
+  "type": "race",
+  "system": {
+    "source": "Inner Tempest, Chapter 5",
+    "category": "Base Creature",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "",
+    "active": true,
+    "description": "<p><strong>EARTH DRAGON</strong></p>\n<p><strong>Size</strong> Medium</p>\n<p><strong>Level</strong> 4 (<strong>EL</strong> 3); <strong>DC</strong> 18</p>\n<p><strong>Initiative</strong> +20</p>\n<p><strong>Speed</strong> 30 feet; Burrow 20; Climb 30</p>\n<p><strong>Senses</strong> Darkvision 55’, Nightvision 110’, Scent 30’</p>\n<p><strong>Languages</strong> Glimbol, Low Tongue, Wyrmish</p>\n<p><strong>ABILITY SCORES</strong> <strong>STR</strong> +3, <strong>CON</strong> +1, <strong>DEX</strong> +3, <strong>INT</strong> +1, <strong>WIS</strong> +1, <strong>CHA</strong> +2</p>\n<p><strong>SKILLS</strong> Acrobatics +6(1), Arcana +6(3), Athletics +9(4), Culture +5(2) Deception +6(2), Diplomacy +6(2), Intimidate +5(1), Meditation +4(1), Mental Focus +7(4), Nature +4(1), Perception +7(4), Power Manipulation +7(4), Sense Motive +6(3), Stealth +5(2), Survival +5(2)</p>\n<p><strong>DEFENCE</strong><br>DB +19 (Base +14; Other +2; Stat +3); DR 6<br>Fort +12, Ref +12, Will +10<br>HP 82; Immunity acid, paralysis, sleep</p>\n<p><strong>FEATS/SPECIAL</strong> Alertness, Great Fortitude</p>\n<p><strong>Earth Dragon Breath</strong> 2 AP (acid, arcane, focus, invocation, save)<br>The dragon breathes a 30-foot line of acid that inflicts 4d8 acid damage. The breath weapon has the focus trait, and any targets may make a basic Reflex save to avoid damage.</p>\n<p><strong>ATTACKS</strong><br>Bite +9 (finesse) 1d8+3 piercing plus 1d6 acid<br>Claw +9 (agile, finesse, versatile - p) 1d6+3 slashing</p>\n<p><strong>MAGIC</strong><br>A cave dragon is a High Magic caster.<br>CL 1; Spellcraft +6; PP 18<br>Spells 4 x Cantrip, 4 additional spells (max PP 2).</p>\n<p><strong>SPECIAL ABILITIES BY LEVEL</strong> 6: Wild Stride; 8: Draconic Assault; 10: Frightful Aura; 12: Wing Buffet; 14: Slowing Breath; 16: Caustic Blood; 18: Caustic Strikes; 20: Draconic Shifting</p>\n<p><em>An earth dragon is a massive serpentine creature associated with the power of the earth and often depicted with rocky, earth-toned scales.</em></p>\n<p><em>Automated:</em> hatched by Dragon Tamer at level 4, with the skill ranks printed (B10-7), the feats printed (each counting as a pick made), its languages, immunities and weakness. The breath is 4d8 at 4 and a die a level after (C5), a Focus ability with a basic Reflex save at the creature DC; it grows as a line with the table. Its specials arrive by its own level from the system's Creature Codex. Its DB is the printed block's (Graham, 28 October 2026): the system's creature rule, half its level as an other bonus and its class bonus − 2 as a status bonus. Its natural attacks follow the system's one size ladder (B10-10). It has wings but does not fly (B10-4).</p>",
+    "traits": "",
+    "abilityModifiers": "Str 3, Con 1, Dex 3, Int 1, Wis 1, Cha 2",
+    "maximumSize": "",
+    "languages": "Glimbol, Low Tongue, Wyrmish",
+    "grantedFeats": "",
+    "racialAbilities": "Darkvision, Nightvision, Scent, Earth Dragon Breath, High Magic",
+    "grantedWeapons": "Bite (Earth Dragon), Claws (Dragon)",
+    "specialistSkills": "",
+    "coreLanguages": "",
+    "additionalLanguages": "",
+    "languageChoices": ""
+  },
+  "effects": [
+    {
+      "_id": "dcwONvKDBQdGCSm9",
+      "name": "Earth Dragon: ability scores",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.strength.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.strength.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.constitution.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.constitution.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.dexterity.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.dexterity.racial",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.intelligence.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.intelligence.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.wisdom.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.wisdom.racial",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.charisma.base",
+          "mode": 5,
+          "value": "0",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.charisma.racial",
+          "mode": 2,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "Str 3, Con 1, Dex 3, Int 1, Wis 1, Cha 2 — the printed scores.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!UeZrVMIeRM4tR0po.dcwONvKDBQdGCSm9"
+    },
+    {
+      "_id": "El4PMOrmlkFAXQxb",
+      "name": "Earth Dragon: size and speed",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.identity.size",
+          "mode": 5,
+          "value": "medium",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.land",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.burrow",
+          "mode": 5,
+          "value": "20",
+          "priority": 10
+        },
+        {
+          "key": "system.combat.movement.climb",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "medium; land 30, burrow 20, climb 30. It grows with the Dragon Companion Table.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!UeZrVMIeRM4tR0po.El4PMOrmlkFAXQxb"
+    },
+    {
+      "_id": "F7kvjteiW1VeBK8j",
+      "name": "Earth Dragon: natural armour",
+      "img": "icons/svg/upgrade.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.combat.naturalArmourBase.natural",
+          "mode": 5,
+          "value": "6",
+          "priority": 10
+        }
+      ],
+      "flags": {
+        "trg-prime": {
+          "featPassive": true
+        }
+      },
+      "type": "base",
+      "system": {},
+      "origin": null,
+      "duration": {},
+      "statuses": [],
+      "description": "DR 6 (base — scales with BDB): the printed DR 6 at BDB 4.",
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "trg-prime",
+        "systemVersion": "3.664.0",
+        "createdTime": 1789000000000,
+        "modifiedTime": 1789000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!items.effects!UeZrVMIeRM4tR0po.F7kvjteiW1VeBK8j"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itDragon": {
+        "key": "earth",
+        "name": "Earth Dragon",
+        "baseLevel": 4,
+        "el": 3,
+        "size": "medium",
+        "land": 30,
+        "burrow": 20,
+        "climb": 30,
+        "fly": 0,
+        "element": "acid",
+        "breath": {
+          "name": "Earth Dragon Breath",
+          "die": "d8",
+          "shape": "line",
+          "type": "acid"
+        },
+        "specials": [
+          [
+            6,
+            "Wild Stride"
+          ],
+          [
+            8,
+            "Draconic Assault"
+          ],
+          [
+            10,
+            "Frightful Aura"
+          ],
+          [
+            12,
+            "Wing Buffet"
+          ],
+          [
+            14,
+            "Slowing Breath"
+          ],
+          [
+            16,
+            "Caustic Blood"
+          ],
+          [
+            18,
+            "Caustic Strikes"
+          ],
+          [
+            20,
+            "Draconic Shifting"
+          ]
+        ],
+        "baseSpecials": [],
+        "feats": [
+          "Alertness",
+          "Great Fortitude"
+        ],
+        "freeFeats": [],
+        "skills": {
+          "acrobatics": 1,
+          "arcana": 3,
+          "athletics": 4,
+          "culture": 2,
+          "deception": 2,
+          "diplomacy": 2,
+          "intimidate": 1,
+          "meditation": 1,
+          "mentalFocus": 4,
+          "nature": 1,
+          "perception": 4,
+          "powerManipulation": 4,
+          "senseMotive": 3,
+          "stealth": 2,
+          "survival": 2
+        },
+        "spells": 4,
+        "languages": "Glimbol, Low Tongue, Wyrmish",
+        "immunities": "acid, paralysis, sleep",
+        "weaknesses": "",
+        "egg": "Dragon Egg (Earth)"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.674.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UeZrVMIeRM4tR0po"
+}

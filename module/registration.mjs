@@ -19,6 +19,7 @@ import { BLOCK6_AUTOMATIONS } from "./block6-automations.mjs";
 import { BLOCK7_AUTOMATIONS, BLOCK7_CLASS_SKILL_GRANTS, BLOCK7_ARCHETYPES } from "./block7-automations.mjs";
 import { spiritualDistractionGate } from "./block8-automations.mjs";
 import { registerBlock9 } from "./block9-automations.mjs";
+import { registerBlock10 } from "./block10-automations.mjs";
 
 /** Block 3 (0.4.0): the two classes' proficiency and Chapter 6 class wealth. */
 export const CLASS_REGISTRATIONS = {
@@ -214,4 +215,7 @@ export function registerContent(api, moduleId) {
   // BLOCK 9 (0.10.0, on TRG Prime 3.673.0): Chapter 9's runes, the wondrous
   // items' Uses and Monastic Items' road to Create.
   registerBlock9(api, moduleId);
+  // BLOCK 10 (1.0.0, on TRG Prime 3.674.0): the dragon companion kind (C1),
+  // Dragon Tamer, and the companion feats' Uses and reaction.
+  registerBlock10(api, moduleId);
 }
