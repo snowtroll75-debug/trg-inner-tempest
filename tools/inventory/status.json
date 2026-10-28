@@ -22,12 +22,24 @@
   "R-04": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Low Tongue from the race; the second language from the heritage, as Graham ruled on 21 Oct 2026."
+    "note": "Low Tongue from the race; the second language from the heritage, as Graham ruled on 21 Oct 2026.",
+    "live": [
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "| Tianzhi languages | Tsuchi: Low Tongue (Tianzhi) + Gaian (Tsuchi); Hikari: Low Tongue + Thanatos | ✓ |"
+      }
+    ]
   },
   "H-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Kitsune | +1 Charisma. Ghost Sound is cast with Charisma | ✓ |"
+      }
+    ]
   },
   "H-02": {
     "status": "Implemented",
@@ -37,7 +49,13 @@
   "H-04": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Ren | Speed, Initiative, and falls 20 ft shorter (the card says so) | ✓ |"
+      }
+    ]
   },
   "H-05": {
     "status": "Implemented",
@@ -52,12 +70,28 @@
   "H-09": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Zennyo | Breathes water: holding breath never starts | ✓ |"
+      },
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "| Zennyo | Swim 20 (it was 0 on 0.1.0) | ✓ |"
+      }
+    ]
   },
   "H-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Fuku | Conviction maximum +1 | ✓ |"
+      }
+    ]
   },
   "H-12": {
     "status": "Implemented",
@@ -67,7 +101,13 @@
   "H-14": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Kabuto | Base DR 3, Speed 25, +50 lb carrying | ✓ |"
+      }
+    ]
   },
   "H-15": {
     "status": "Implemented",
@@ -77,17 +117,43 @@
   "H-16": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Kamiri | Raptorial Blade granted, Initiative | ✓ |"
+      },
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "the player's Strike on a Bugbear printed \"Armour Rending: target's DR (including Natural Armour) reduced by 1\""
+      }
+    ]
   },
   "H-17": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Suzume, Hotaru | Sting granted. Living Lantern lights and suppresses | ✓ |"
+      }
+    ]
   },
   "H-19": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Suzume, Hotaru | Sting granted. Living Lantern lights and suppresses | ✓ |"
+      },
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**Living Lantern:** dim 10 feet drawn. The light level was 4 within 10 feet and 3 at 20 feet."
+      }
+    ]
   },
   "H-20": {
     "status": "Implemented",
@@ -97,7 +163,13 @@
   "H-21": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Tianzhi Hikari | The heritage's grants, and its innate cantrip used from the sheet | ✓ |"
+      }
+    ]
   },
   "H-22": {
     "status": "Implemented",
@@ -112,17 +184,39 @@
   "H-03": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Declared when a physical attack targets you (Graham, 21 Oct 2026, \"fix all three\"): +1 Base DR that the weapon attack spends (core 3.666.0 one-attack)."
+    "note": "Declared when a physical attack targets you (Graham, 21 Oct 2026, \"fix all three\"): +1 Base DR that the weapon attack spends (core 3.666.0 one-attack).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Impact Absorption | Reaction and Focus use spent. Base DR 0 → 1 | ✓ |"
+      },
+      {
+        "report": "live-testing-report-it-0.3.3.md",
+        "quote": "Taking it spent the reaction and its Focus use, and put on \"Impact Absorption: Base DR +1\" ✓"
+      }
+    ]
   },
   "H-06": {
     "status": "Implemented",
     "achieved": "B",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Predator's Pounce | 2 AP and the Focus use spent; Flourish recorded; a free move armed; the card's Strike rolled at no AP | ✓ |"
+      }
+    ]
   },
   "H-13": {
     "status": "Implemented",
     "achieved": "B",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Zenki | Natural heat: no Exhaustion check | ✓ |"
+      }
+    ]
   },
   "H-18": {
     "status": "Implemented",
@@ -142,7 +236,13 @@
   "H-24": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "A Shove or Trip against a Tsuchi is rolled at disadvantage (Graham, 21 Oct 2026; core 3.665.0 defence row). Advantage on the Tsuchi's own prone/forced-movement checks and saves stays a tick."
+    "note": "A Shove or Trip against a Tsuchi is rolled at disadvantage (Graham, 21 Oct 2026; core 3.665.0 defence row). Advantage on the Tsuchi's own prone/forced-movement checks and saves stays a tick.",
+    "live": [
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "| Tsuchi | Shove Attack against it: two d20s (5, 6), the 5 kept, marked Disadvantage"
+      }
+    ]
   },
   "BG-01": {
     "status": "Implemented",
@@ -192,7 +292,17 @@
   "BG-10": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative)."
+    "note": "When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative).",
+    "live": [
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "Miraku + Spirit Warrior: Apply Grants says \"Spirit Lore is already yours from another source, so Spirit Warrior grants another Lore instead — press Use\""
+      },
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "| | Use asks for the Lore; \"Ancestor\" became Ancestor Lore, recorded as the background's | ✓ |"
+      }
+    ]
   },
   "BG-11": {
     "status": "Implemented",
@@ -202,7 +312,13 @@
   "FG-01": {
     "status": "Implemented",
     "achieved": "B",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-3.665.0.md",
+        "quote": "| | GM DC 15: Success, \"one point of conviction is spent\", conviction 1 → 0 | ✓ |"
+      }
+    ]
   },
   "FG-05": {
     "status": "Implemented",
@@ -212,7 +328,13 @@
   "FG-09": {
     "status": "Implemented",
     "achieved": "B",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| | The Fortitude save from the sheet shows \"Elemental Balance (Survival) +2\" ticked; the total is 11 = 10 − 1 + 2. The one-shot is consumed | ✓ |"
+      }
+    ]
   },
   "FG-16": {
     "status": "Implemented",
@@ -247,7 +369,13 @@
   "FG-07": {
     "status": "Implemented",
     "achieved": "A",
-    "note": ""
+    "note": "",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Centred Recovery | The day's first Refocus resolves one degree better | ✓ |"
+      }
+    ]
   },
   "FG-15": {
     "status": "Implemented",
@@ -272,7 +400,17 @@
   "FG-23": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Spirits and incorporeal creatures automatic; a possessing creature is a tick on attacks and a by-hand +1 to DB."
+    "note": "Spirits and incorporeal creatures automatic; a possessing creature is a tick on attacks and a by-hand +1 to DB.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Spirit Stance + Martial Affinity | Attacks: +1 racial (Martial Affinity) and +1 circumstance (Spirit Stance) against the Wraith | ✓ |"
+      },
+      {
+        "report": "live-testing-report-3.667.3.md",
+        "quote": "**Ticked** (a real mouse click), then Roll pressed: the attack card listed \"**Spirit Stance Circumstance +1**\"."
+      }
+    ]
   },
   "FG-02": {
     "status": "Implemented",
@@ -320,89 +458,191 @@
     "note": "Deep Focus declares focusExtraUses with restoresAll (core 3.664.0)."
   },
   "SYS-04": {
-    "status": "In progress",
-    "achieved": null,
-    "note": "Core 3.664.0 ships the support; the techniques that use it arrive in later blocks."
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.664.0 (D5): an innate spell casts at 0 PP and maximum warp, CL and attack and DC from the level, with its own magical ability from castingAbilityOverride. Used by the Monastic Paths' grants (Block 3, pathStamp), the races' innate spells, the Mystic's innate metamagic (Block 6) and Draconic Spell (Block 10). verify/mutate-focus-declarations (core); verify-block3 B.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "It cast as divinity at level 1, and its Focus use was spent (0 of 1)."
+      },
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "The cast went through with a PP pool of 0, so nothing was charged to it."
+      }
+    ]
   },
   "SYS-13": {
-    "status": "In progress",
-    "achieved": null,
-    "note": "Core 3.664.0 ships the support; the techniques that use it arrive in later blocks."
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core 3.664.0 (D16): innateLevelRefusal refuses an innate spell whose base PP exceeds the caster's level (characters and companions); the Path's +1 allowance (B3-2) rides innatePPAllowance. verify/mutate-focus-declarations and verify/mutate-block3-core E (core); verify-block3 B."
   },
   "SYS-11": {
-    "status": "In progress",
-    "achieved": null,
-    "note": ""
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core: featBudget counts racial, class, general and archetype picks; a granted feat is applied by the grant pass without its prerequisites (only the picker checks them). Disciple and Mystic receive Inner Discipline at 1st this way (verify-block3 A)."
   },
   "SYS-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "TRG Prime 3.665.0 (D1, approved 21 Oct 2026): a Focus feat or ability with no printed count is one use. The module's own Focus items still print 1."
+    "note": "TRG Prime 3.665.0 (D1, approved 21 Oct 2026): a Focus feat or ability with no printed count is one use. The module's own Focus items still print 1.",
+    "live": [
+      {
+        "report": "live-testing-report-3.665.1.md",
+        "quote": "Inner Tempest's Impact Absorption (prints its own count of 1) | spent once by its own handler, then refused with its own message"
+      },
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| | A second use, with the Focus spent, is refused | ✓ |"
+      }
+    ]
   },
   "SA-01": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Reaction, declared when targeted (Graham, 21 Oct 2026): Acrobatics vs your Level DC; the Bonus Check is a dodge bonus on DB that the next attack against you spends (core 3.666.0 one-attack). Inner Discipline enforced."
+    "note": "Reaction, declared when targeted (Graham, 21 Oct 2026): Acrobatics vs your Level DC; the Bonus Check is a dodge bonus on DB that the next attack against you spends (core 3.666.0 one-attack). Inner Discipline enforced.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| | Success | +2 dodge (DB 10 → 12); reaction spent ✓ |"
+      },
+      {
+        "report": "live-testing-report-it-0.3.3.md",
+        "quote": "**The attack rolled \"total 16 against DB 19\" and missed**"
+      }
+    ]
   },
   "SA-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Bonus Check halved (rounded up) as circumstance AB and DB against the target; one instance; ends when the target's recorded stance ends or the combat ends. With no stance on the target's sheet it ends with the battle."
+    "note": "Bonus Check halved (rounded up) as circumstance AB and DB against the target; one instance; ends when the target's recorded stance ends or the combat ends. With no stance on the target's sheet it ends with the battle.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Interpret Style | Against the Rival in Spirit Stance | 3 AP spent; +1 AB (the Claw's card read \"Interpret Style Circumstance +1\") ✓ |"
+      }
+    ]
   },
   "SA-03": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Reaction: a Shove or Trip meets a DC raised by the Bonus Check (ruled as Storgar), spent by it; a check or save to avoid prone or forced movement is offered the bonus as a tick. One trigger."
+    "note": "Reaction: a Shove or Trip meets a DC raised by the Bonus Check (ruled as Storgar), spent by it; a check or save to avoid prone or forced movement is offered the bonus as a tick. One trigger.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "Fortitude DC 10 → 12, with \"Root the Body +2 … braced against this Shove or Trip\" on the card"
+      }
+    ]
   },
   "SA-04": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "The GM sets the Climb DC; the move (Speed, half, 10 ft) is armed for the drag; Fumble: prone. Flourish and Movement through the core trait gate. Inner Discipline enforced."
+    "note": "The GM sets the Climb DC; the move (Speed, half, 10 ft) is armed for the drag; Fumble: prone. Flourish and Movement through the core trait gate. Inner Discipline enforced.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Wall Run | Heroic (read as Critical), DC set by the GM | a 30-ft move armed, 1 AP spent ✓ |"
+      }
+    ]
   },
   "SA-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Information by degree; a Fumble refuses it against that creature for 10 minutes."
+    "note": "Information by degree; a Fumble refuses it against that creature for 10 minutes.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.3.1.md",
+        "quote": "| 1. Lockouts against one creature | Recognise Discipline fumbled against the Rival, then tried again | refused: \"you cannot try this against ZZ Rival again yet\" ✓ |"
+      }
+    ]
   },
   "SA-06": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Time ladder (10 min, 1 min −2, 1 round −5, 1 AP −10; core 3.666.0); the GM sets the DC; the Bonus Check is applied to the next of the six skills. Inner Balance enforced."
+    "note": "Time ladder (10 min, 1 min −2, 1 round −5, 1 AP −10; core 3.666.0); the GM sets the DC; the Bonus Check is applied to the next of the six skills. Inner Balance enforced.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| | The 1 AP rung | −10 on the check, 1 AP spent; +2 on the next Acrobatics check (Evade), then spent ✓ |"
+      }
+    ]
   },
   "SA-07": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Ally within 10 ft with an expended Focus ability, never yourself; the Bonus Check on its next Refocus, laid through the GM relay, gone at the end of its next turn."
+    "note": "Ally within 10 ft with an expended Focus ability, never yourself; the Bonus Check on its next Refocus, laid through the GM relay, gone at the end of its next turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Guide the Breath | On the Ally, whose Focus ability was spent | +2 on its next Refocus, ending with its next turn ✓ |"
+      }
+    ]
   },
   "SA-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Frightened reduced 2/1 (never below an area's floor); Critical and Partial save bonuses against Emotion and Fear with their clocks; Fumble locks it to your next turn."
+    "note": "Frightened reduced 2/1 (never below an area's floor); Critical and Partial save bonuses against Emotion and Fear with their clocks; Fumble locks it to your next turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Steady Heart | Heroic (read as Critical) | Frightened 3 → 1; +2 to saves against Emotion and Fear ✓ |"
+      }
+    ]
   },
   "SA-09": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Ruled a Reaction to gaining the dying condition (Graham, 21 Oct 2026): offered on a card when dying arrives; the Bonus Check goes on your next Dying Check (core 3.666.0 scope). Inner Discipline enforced."
+    "note": "Ruled a Reaction to gaining the dying condition (Graham, 21 Oct 2026): offered on a card when dying arrives; the Bonus Check goes on your next Dying Check (core 3.666.0 scope). Inner Discipline enforced.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.3.1.md",
+        "quote": "the roll dialog opened, the check rolled at 0 AP (Success), +2 to the next Dying Check was applied, the reaction was spent (1 → 0)"
+      }
+    ]
   },
   "SA-10": {
     "status": "Implemented",
     "achieved": "C",
-    "note": "Ruled \"offered as a tick\": the points are offered on Concentrate and Mental checks until your next turn (core cannot tell a distraction penalty); the Fumble's −1 is applied."
+    "note": "Ruled \"offered as a tick\": the points are offered on Concentrate and Mental checks until your next turn (core cannot tell a distraction penalty); the Fumble's −1 is applied.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "Maintain Clarity's tick was offered on it ✓"
+      }
+    ]
   },
   "SA-11": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Reaction declared from the sheet before the Will save; the bonus is applied to that save (auto when the save carries Emotion or Mental, a tick otherwise). The automatic offer (core 3.666.0 saveBonusReaction) arrives with the Inner Discipline feat in Block 3."
+    "note": "Reaction declared from the sheet before the Will save; the bonus is applied to that save (auto when the save carries Emotion or Mental, a tick otherwise). The automatic offer (core 3.666.0 saveBonusReaction) arrives with the Inner Discipline feat in Block 3.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Maintain Clarity, Steel the Mind | Success | the tick and the bonus effects ✓ |"
+      }
+    ]
   },
   "SA-12": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "DC 20 with the time ladder (1 min −2, 1 h +2); on a Success or better the element is chosen and a real 10-ft ward zone (core 3.666.0) is drawn: 10 min / 1 h / 8 h; Blunder: weakness. Failure locks 10 minutes, Fumble until the next daily preparation. Elemental Warding enforced."
+    "note": "DC 20 with the time ladder (1 min −2, 1 h +2); on a Success or better the element is chosen and a real 10-ft ward zone (core 3.666.0) is drawn: 10 min / 1 h / 8 h; Blunder: weakness. Failure locks 10 minutes, Fumble until the next daily preparation. Elemental Warding enforced.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Elemental Ward | Heroic, cold | a real 10-ft Region for 8 hours; all four creatures inside gained \"resistance to cold\" ✓ |"
+      }
+    ]
   },
   "SA-13": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Information by degree; Critical grants Elemental Tracking (Nature for Track) for one hour on the world clock. The location lockout is described."
+    "note": "Information by degree; Critical grants Elemental Tracking (Nature for Track) for one hour on the world clock. The location lockout is described.",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Read the Elements | Critical, DC set by the GM on the card | Elemental Tracking (Nature for Track), on a one-hour world clock ✓ |"
+      }
+    ]
   },
   "SA-14": {
     "status": "Implemented",
@@ -412,7 +652,17 @@
   "SA-15": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Critical: +2 to your next DB (spent by that creature's attack) or save (a tick) against it before the end of your next turn; Fumble locks that creature to your next turn. The requirement is printed, not checked (core keeps no record of Focus use)."
+    "note": "Critical: +2 to your next DB (spent by that creature's attack) or save (a tick) against it before the end of your next turn; Fumble locks that creature to your next turn. The requirement is printed, not checked (core keeps no record of Focus use).",
+    "live": [
+      {
+        "report": "live-testing-report-3.666.0.md",
+        "quote": "| Observe Technique | Heroic against the Golem | the effect against that creature; the Golem's next Slam rolled against DB +2 and spent it ✓ |"
+      },
+      {
+        "report": "live-testing-report-it-0.3.1.md",
+        "quote": "| | Observe Technique fumbled against the Rival, then tried again | refused ✓ |"
+      }
+    ]
   },
   "SA-16": {
     "status": "Implemented",
@@ -422,7 +672,17 @@
   "SA-17": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "30 ft, once each round per creature; Critical DB and saves +2, Success the one chosen, Partial DB +1, Fumble DB −1, to your next turn. The flanking clause is described on the card (ruled)."
+    "note": "30 ft, once each round per creature; Critical DB and saves +2, Success the one chosen, Partial DB +1, Fumble DB −1, to your next turn. The flanking clause is described on the card (ruled).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.3.1.md",
+        "quote": "| 2. Turn-start expiry | Read Intent's Critical on the Monk in round 1 | kept through the Golem's turn and the Rival's turn in round 2; removed as the Monk's round-2 turn began ✓ |"
+      },
+      {
+        "report": "live-testing-report-it-0.3.1.md",
+        "quote": "the second was refused: \"already used against ZZ Rival this round\" ✓"
+      }
+    ]
   },
   "SA-18": {
     "status": "Implemented",
@@ -432,107 +692,237 @@
   "CL-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class table, skills, proficiency (simple and Monastic weapons) and wealth -2 registered; Inner Discipline at 1st."
+    "note": "Class table, skills, proficiency (simple and Monastic weapons) and wealth -2 registered; Inner Discipline at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Registration:** the Disciple and the Mystic are registered, with the Disciple's proficiency (simple and Monastic weapons) and wealth −2."
+      }
+    ]
   },
   "CL-04": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class table, skills, proficiency (simple and Monastic weapons, light armour) and wealth -1 registered; no PP casting."
+    "note": "Class table, skills, proficiency (simple and Monastic weapons, light armour) and wealth -1 registered; no PP casting.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Mystical Power, Mystical Resolve, Mystical Discipline, Alter the Thread and Monastic Path."
+      }
+    ]
   },
   "SYS-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "techniqueSaveDC: 10 + the Path's ability + level; Inner Blast uses it."
+    "note": "techniqueSaveDC: 10 + the Path's ability + level; Inner Blast uses it.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "\"Fortitude Save — Stunning Fist — DC 20\" (10 + the Path ability + level)"
+      }
+    ]
   },
   "SYS-06": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Technique and Monastic registered as traits; Technique feats gated behind Inner Discipline."
+    "note": "Technique and Monastic registered as traits; Technique feats gated behind Inner Discipline.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "The Technique and Monastic traits are registered. The Technique gate opens with Inner Discipline."
+      },
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "the class-feat picker hides Inner Strike, Inner Sight and Abundant Step from a character without Inner Discipline"
+      }
+    ]
   },
   "SYS-07": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "The four Paths as abilities, chosen with Monastic Path's Use; each adds its class skill and stamps the Mystic's spells with its tradition and ability."
+    "note": "The four Paths as abilities, chosen with Monastic Path's Use; each adds its class skill and stamps the Mystic's spells with its tradition and ability.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Monastic Path:** the Use picker offers the four Paths. Primal was chosen; it arrives with its Nature class-skill effect."
+      }
+    ]
   },
   "SYS-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "techniqueAbility: the Path's ability, else the selected magical ability, else Wisdom (IT-M6)."
+    "note": "techniqueAbility: the Path's ability, else the selected magical ability, else Wisdom (IT-M6).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Choosing the Magical Tradition (arcane) stamped them with arcane and Intelligence (IT-M6)."
+      }
+    ]
   },
   "CF-D1": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.667.0 unarmed profile: 1d6, Versatile B, +1 total damage per 3 BAB, magical/cold iron and silver/adamantine; Monastic weapons take the flat and counts-as."
+    "note": "Core 3.667.0 unarmed profile: 1d6, Versatile B, +1 total damage per 3 BAB, magical/cold iron and silver/adamantine; Monastic weapons take the flat and counts-as.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Damage is 4d6 + 5: a 1d6 die, +2 base dice for BAB, a critical die, and the card line \"Powerful Fists +5: total unarmed damage\"."
+      }
+    ]
   },
   "CF-D2": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.667.0 stat row: Wisdom as dodge while unarmoured and unencumbered."
+    "note": "Core 3.667.0 stat row: Wisdom as dodge while unarmoured and unencumbered.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Unarmoured, Wisdom 3: DB 14, with the +3 dodge applied."
+      }
+    ]
   },
   "CF-D3": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "convictionPool 1."
+    "note": "convictionPool 1.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.2.md",
+        "quote": "Conviction was **2 of 2** from Disciple's Resolve."
+      }
+    ]
   },
   "CF-D4": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use: core 3.667.0 strike series: two Strikes, DR once on a creature hit twice, one critical injury, MAP as normal."
+    "note": "Use: core 3.667.0 strike series: two Strikes, DR once on a creature hit twice, one critical injury, MAP as normal.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "DR was met on the first only: \"ZZ Target's DR was applied once, to the first hit — none again here\"."
+      }
+    ]
   },
   "CF-D5": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Inner Discipline granted at 1st; the extra Technique pick is the player's (bonus feats note)."
+    "note": "Inner Discipline granted at 1st; the extra Technique pick is the player's (bonus feats note).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Inner Discipline, with its three techniques: Burst Step, Guarded Centre and Disciplined Flurry."
+      }
+    ]
   },
   "CF-D6": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "focusExtraUses on Focus Technique abilities; Refocus restores all."
+    "note": "focusExtraUses on Focus Technique abilities; Refocus restores all.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.2.md",
+        "quote": "Burst Step went 1 of 1 → **2 of 2** as Deep Focus arrived."
+      }
+    ]
   },
   "CF-D7": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "abilityChoices: the four Paths."
+    "note": "abilityChoices: the four Paths.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Monastic Path:** the Use picker offers the four Paths. Primal was chosen; it arrives with its Nature class-skill effect."
+      }
+    ]
   },
   "CF-D8": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.667.0 stat row: +10/15/20 ft status Speed at 4/10/16 while unarmoured."
+    "note": "Core 3.667.0 stat row: +10/15/20 ft status Speed at 4/10/16 while unarmoured.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "It arrives at 4th level, with BAB 4. Speed is 40, or 30 in armour."
+      }
+    ]
   },
   "CF-M1": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Core 3.667.0 attack reroll: offered to the defender's player after any attack roll (Strike or spell), before it resolves; the new roll stands (B3-5)."
+    "note": "Core 3.667.0 attack reroll: offered to the defender's player after any attack roll (Strike or spell), before it resolves; the new roll stands (B3-5).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**The reroll:** taken. Conviction went 1 → 0, the card read \"30 → 21. The new roll stands\", and the attack resolved on 21."
+      }
+    ]
   },
   "CF-M2": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Inner Discipline granted at 1st."
+    "note": "Inner Discipline granted at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Inner Discipline and its techniques."
+      }
+    ]
   },
   "CF-M3": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "abilityChoices: the five disciplines."
+    "note": "abilityChoices: the five disciplines.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Inner Flame arrives with Flame Within."
+      }
+    ]
   },
   "CF-M4": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use: a picker of the Path's spells by slot (two cantrips, two PP 2, then one eligible per level); each arrives innate with Focus, stamped with the Path; the PP 2 picks castable at 1st (B3-2)."
+    "note": "Use: a picker of the Path's spells by slot (two cantrips, two PP 2, then one eligible per level); each arrives innate with Focus, stamped with the Path; the PP 2 picks castable at 1st (B3-2).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Daze arrives innate, with Focus, cast as divinity with Wisdom."
+      }
+    ]
   },
   "CF-M5": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "convictionPool 1."
+    "note": "convictionPool 1.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.2.md",
+        "quote": "**A new Mystic:** conviction was **2 of 2** from Mystical Resolve."
+      }
+    ]
   },
   "CF-M6": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "abilityChoices: the four Paths."
+    "note": "abilityChoices: the four Paths.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Monastic Path → Devoted:** both spells are restamped as divinity, cast with Wisdom, and are no longer waiting."
+      }
+    ]
   },
   "MD-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Flame Within and the nine spells granted by level, innate with Focus, stamped with the Path, +1 PP allowance (B3-2)."
+    "note": "Flame Within and the nine spells granted by level, innate with Focus, stamped with the Path, +1 PP allowance (B3-2).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Orb Of Fire and Circle Of Warmth arrive as innate spells with Focus."
+      }
+    ]
   },
   "MD-02": {
     "status": "Implemented",
@@ -557,12 +947,24 @@
   "MD-01a": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Listens for damage applied (core 3.667.0): +1 to +3 circumstance on attacks; resets after a turn with no damage taken or dealt (B3-3)."
+    "note": "Listens for damage applied (core 3.667.0): +1 to +3 circumstance on attacks; resets after a turn with no damage taken or dealt (B3-3).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Stacking:** the Strike's damage gave +1, then further damage gave +2, +3, and stayed at +3."
+      }
+    ]
   },
   "MD-02a": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered after your melee Strike damages a creature: Wisdom (min 1, +1 per 6 levels) more, no DR again."
+    "note": "Offered after your melee Strike damages a creature: Wisdom (min 1, +1 per 6 levels) more, no DR again.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "It dealt 5 (Wisdom 3, +2 at 16th) with no DR again, and was expended."
+      }
+    ]
   },
   "MD-03a": {
     "status": "Implemented",
@@ -582,22 +984,54 @@
   "FC-28": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Grants the three techniques; opens the Technique feats; carries Steel the Mind's save reaction."
+    "note": "Grants the three techniques; opens the Technique feats; carries Steel the Mind's save reaction.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Inner Discipline, with its three techniques: Burst Step, Guarded Centre and Disciplined Flurry."
+      }
+    ]
   },
   "FC-28a": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Asked by Flurry of Blows: a third Strike at no penalty that still counts (B3-4)."
+    "note": "Asked by Flurry of Blows: a third Strike at no penalty that still counts (B3-4).",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Disciplined Flurry was asked first and answered yes."
+      },
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Disciplined Flurry's use was spent."
+      }
+    ]
   },
   "FC-28b": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use as you move: +10 ft land Speed until your next turn."
+    "note": "Use as you move: +10 ft land Speed until your next turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Burst Step:** Speed 50 → 60, until the next turn."
+      },
+      {
+        "report": "live-testing-report-it-0.4.1.md",
+        "quote": "The Speed breakdown agrees: base 30, Incredible Movement +20 and Burst Step +10 make 60."
+      }
+    ]
   },
   "FC-28c": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered when an attack targets you: +4 dodge until your next turn."
+    "note": "Offered when an attack targets you: +4 dodge until your next turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Guarded Centre was taken: +4 dodge (DB 14), with the reaction and use spent."
+      }
+    ]
   },
   "FC-01": {
     "status": "Implemented",
@@ -607,7 +1041,13 @@
   "FC-02": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use before initiative: advantage applied to the initiative check."
+    "note": "Use before initiative: advantage applied to the initiative check.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Action Before Thought:** the advantage reaches an initiative check, applied automatically, and no other check."
+      }
+    ]
   },
   "FC-06": {
     "status": "Implemented",
@@ -617,7 +1057,13 @@
   "FC-27": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1-3 AP cone; one damage roll, each target's basic Fortitude against the Technique Save DC."
+    "note": "Use: 1-3 AP cone; one damage roll, each target's basic Fortitude against the Technique Save DC.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "The target's basic Fortitude Blunder took 16 force and a serious critical."
+      }
+    ]
   },
   "FC-29": {
     "status": "Implemented",
@@ -637,7 +1083,13 @@
   "FC-33": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: Nightvision for 1 minute; 10 minutes from 8th; Darkvision from 12th."
+    "note": "Use: Nightvision for 1 minute; 10 minutes from 8th; Darkvision from 12th.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Inner Sight at 16th:** Darkvision for 10 minutes."
+      }
+    ]
   },
   "FC-34": {
     "status": "Implemented",
@@ -647,12 +1099,36 @@
   "FC-35": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: +1 status to unarmed attacks (ticked) and a 1d6 secondary rider (2d6/3d6/4d6 at 8/12/16) on every Strike this turn."
+    "note": "Use: +1 status to unarmed attacks (ticked) and a 1d6 secondary rider (2d6/3d6/4d6 at 8/12/16) on every Strike this turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Inner Strike at 16th:** 1 AP and the use spent. The effect carries a 4d6 force rider that lasts the turn."
+      },
+      {
+        "report": "live-testing-report-it-0.4.1.md",
+        "quote": "**A Strike against ZZ Target:** the damage card read \"Inner Strike — 13 positive damage (4d6)\"."
+      },
+      {
+        "report": "live-testing-report-3.667.3.md",
+        "quote": "the attack card read \"BAB and ability +16, **Inner Strike Status +1**\", for a total of +17."
+      }
+    ]
   },
   "FC-43": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: the core stance; essence offered on any Strike, +2 circumstance to Escape, 1 minute; Devoted or Illuminator only."
+    "note": "Use: the core stance; essence offered on any Strike, +2 circumstance to Escape, 1 minute; Devoted or Illuminator only.",
+    "live": [
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "Essence is offered on any Strike, with +2 on Escape."
+      },
+      {
+        "report": "live-testing-report-3.667.0.md",
+        "quote": "**Shadowy Stance on the Primal Disciple:** refused, \"needs the Devoted or Illuminator Monastic Path\"."
+      }
+    ]
   },
   "SP-04": {
     "status": "Implemented",
@@ -677,7 +1153,13 @@
   "SP-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+20 ft status Speed for the first round, -10 ft for the second (in combat), applied."
+    "note": "+20 ft status Speed for the first round, -10 ft for the second (in combat), applied.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Burst of Speed:** +20 status Speed for the first round."
+      }
+    ]
   },
   "SP-12": {
     "status": "Implemented",
@@ -707,27 +1189,57 @@
   "SP-23": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Quickened for 1 minute; the first move of each turn provokes no reactions (applied); keeping the extra action to movement is the table's."
+    "note": "Quickened for 1 minute; the first move of each turn provokes no reactions (applied); keeping the extra action to movement is the table's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "The first move out of a goblin's reach provoked nothing. The second move of the turn provoked"
+      }
+    ]
   },
   "CL-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class table, skills, proficiency (light armour, bucklers, simple weapons, shortbows, the wakizashi, Monastic weapons) and wealth 0 registered; Weapon Finesse at 1st; no PP casting."
+    "note": "Class table, skills, proficiency (light armour, bucklers, simple weapons, shortbows, the wakizashi, Monastic weapons) and wealth 0 registered; Weapon Finesse at 1st; no PP casting.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Ghostwalker:** Weapon Finesse, Ghostwalk, Unseen Assault, Vanishing Retreat, Ghost Arts and Magical Tradition."
+      }
+    ]
   },
   "CL-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class table, skills, proficiency (simple and martial, light and medium armour, bucklers) and wealth 1 registered; Weapon Finesse at 1st."
+    "note": "Class table, skills, proficiency (simple and martial, light and medium armour, bucklers) and wealth 1 registered; Weapon Finesse at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Kensai:** Weapon Finesse, Combat Form, Flow Strike, Considered Mind, Weapon Discipline and Magical Tradition."
+      }
+    ]
   },
   "CL-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class table, skills, proficiency (simple and martial, katana and wakizashi, all armour, no shields) and wealth 2 registered; Quick Draw at 1st."
+    "note": "Class table, skills, proficiency (simple and martial, katana and wakizashi, all armour, no shields) and wealth 2 registered; Quick Draw at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Oathblade:** Quick Draw, Challenge, Sworn Oath, Unwavering Purpose, Oathblade's Resolve and Magical Tradition."
+      }
+    ]
   },
   "CL-07": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Magical Tradition's Use records the tradition; magical arts name it on their cards. No class technique rolls with it yet."
+    "note": "Magical Tradition's Use records the tradition; magical arts name it on their cards. No class technique rolls with it yet.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Choosing the Magical Tradition (arcane) stamped them with arcane and Intelligence (IT-M6)."
+      }
+    ]
   },
   "CF-G1": {
     "status": "Implemented",
@@ -737,22 +1249,46 @@
   "CF-G2": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Core 3.668.0 ambush dice: by level, once per round, eligible weapons; applied when hidden/undetected or from your own Feint, asked otherwise, never from flanking (B4-3)."
+    "note": "Core 3.668.0 ambush dice: by level, once per round, eligible weapons; applied when hidden/undetected or from your own Feint, asked otherwise, never from flanking (B4-3).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "a Dagger Strike dealt \"Unseen Assault — +2d6 precision damage (flat-footed to you)\", applied with nothing asked (2d6 at 8th);"
+      }
+    ]
   },
   "CF-G3": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered after Unseen Assault deals damage: reaction, an armed 5-ft (10 with Fleeting Shadow) Step that provokes nothing."
+    "note": "Offered after Unseen Assault deals damage: reaction, an armed 5-ft (10 with Fleeting Shadow) Step that provokes nothing.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Vanishing Retreat** was offered next. Yes armed a 5-ft Step that provokes nothing."
+      }
+    ]
   },
   "CF-G4": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Ghost Arts' Use picks arts by level and count (Extra Ghost Art included); each arrives as its own ability."
+    "note": "Ghost Arts' Use picks arts by level and count (Extra Ghost Art included); each arrives as its own ability.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "learned Veiled Body, Shadow Double, Misdirecting Whisper and Silent Needles, each a Focus ability at 1 of 1"
+      }
+    ]
   },
   "CF-G5": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Weapon Finesse granted at 1st; bonus feat note on the class."
+    "note": "Weapon Finesse granted at 1st; bonus feat note on the class.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Ghostwalker:** Weapon Finesse, Ghostwalk, Unseen Assault, Vanishing Retreat, Ghost Arts and Magical Tradition."
+      }
+    ]
   },
   "GA-01": {
     "status": "Implemented",
@@ -772,7 +1308,13 @@
   "GA-04": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "1 AP and its use; Feint or Create a Diversion rolled with advantage at no further AP; a Step armed."
+    "note": "1 AP and its use; Feint or Create a Diversion rolled with advantage at no further AP; a Step armed.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "Feint with advantage (10 and 16): a Success, with the core's flat-footed outcome;"
+      }
+    ]
   },
   "GA-05": {
     "status": "Implemented",
@@ -807,12 +1349,24 @@
   "GA-11": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered when attacked: reaction and use; Concealed until the next turn or a Strike."
+    "note": "Offered when attacked: reaction and use; Concealed until the next turn or a Strike.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "Taken: Concealed until the next turn, with its reaction and use spent. The attack then rolled the concealment flat check."
+      }
+    ]
   },
   "GA-12": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "1 AP and use; Invisible until the next turn; ends on a Strike (a spell by hand)."
+    "note": "1 AP and use; Invisible until the next turn; ends on a Strike (a spell by hand).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Veiled Body:** made the Ghostwalker Invisible, and its use was spent. The Ghostwalker's next Strike ended it."
+      }
+    ]
   },
   "GA-13": {
     "status": "Implemented",
@@ -832,12 +1386,28 @@
   "CF-K1": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Combat Form's Use learns forms by level and count, then enters one as a stance (1 AP) and expends itself."
+    "note": "Combat Form's Use learns forms by level and count, then enters one as a stance (1 AP) and expends itself.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "Iron Tortoise was entered. It cost 1 AP (3 → 2), and the use went from 1 to 0."
+      }
+    ]
   },
   "CF-K2": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered on a melee or thrown hit while a Flourish is open: a Strike at the third-attack penalty that doesn't count towards the penalty."
+    "note": "Offered on a melee or thrown hit while a Flourish is open: a Strike at the third-attack penalty that doesn't count towards the penalty.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "offered after a hit: \"another Strike against it at −10\";"
+      },
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "**The card read \"Multiple Attack Penalty (Flow Strike) Untyped −10\".** The count stayed at 1."
+      }
+    ]
   },
   "CF-K3": {
     "status": "Implemented",
@@ -847,17 +1417,35 @@
   "CF-K4": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use picks the group; class bonus − 1 untyped (B4-2) to attack and damage and Finesse one-handed, applied. The free hand is not checked by the system."
+    "note": "Use picks the group; class bonus − 1 untyped (B4-2) to attack and damage and Finesse one-handed, applied. The free hand is not checked by the system.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "\"Weapon Discipline +2\" (untyped) on the attack and the damage;"
+      }
+    ]
   },
   "CF-K5": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Weapon Finesse granted at 1st."
+    "note": "Weapon Finesse granted at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Kensai:** Weapon Finesse, Combat Form, Flow Strike, Considered Mind, Weapon Discipline and Magical Tradition."
+      }
+    ]
   },
   "KF-01": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Feint bonus applied; once a round, a Strike holding the blow lands from a card at the target's turn start (Graham's ruling)."
+    "note": "Feint bonus applied; once a round, a Strike holding the blow lands from a card at the target's turn start (Graham's ruling).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Pressed:** the serious critical injury was rolled, then 24 damage with \"Black Lotus: the held blow lands\"."
+      }
+    ]
   },
   "KF-02": {
     "status": "Implemented",
@@ -872,7 +1460,13 @@
   "KF-04": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Class bonus − 1 to DB; +1 to the next weapon attack this round after a miss against you."
+    "note": "Class bonus − 1 to DB; +1 to the next weapon attack this round after a miss against you.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "a miss against the Kensai gave \"+1 next attack\", which ended with the round."
+      }
+    ]
   },
   "KF-05": {
     "status": "Implemented",
@@ -897,7 +1491,13 @@
   "KF-09": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+1 DB per 2 Int (min 1); Shove and Reposition against you at disadvantage; a save to avoid being moved is a tick."
+    "note": "+1 DB per 2 Int (min 1); Shove and Reposition against you at disadvantage; a save to avoid being moved is a tick.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "**The outcome card said** \"ZZ Kensai: Iron Tortoise — this check is rolled at disadvantage.\""
+      }
+    ]
   },
   "KF-10": {
     "status": "Implemented",
@@ -907,7 +1507,13 @@
   "KF-11": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "+5 × Int initiative (raised on entry, lowered on leaving); half damage on a miss once a round, asked."
+    "note": "+5 × Int initiative (raised on entry, lowered on leaving); half damage on a miss once a round, asked.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "initiative 50 → 65, with the card \"Your initiative rises by 15\";"
+      }
+    ]
   },
   "KF-12": {
     "status": "Implemented",
@@ -917,12 +1523,28 @@
   "CF-O1": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use on the target: class bonus to melee attack and damage, AR = class bonus, −2 DB against others; ends on 0 HP, death, unconsciousness, combat end or a new Challenge; surrender by hand."
+    "note": "Use on the target: class bonus to melee attack and damage, AR = class bonus, −2 DB against others; ends on 0 HP, death, unconsciousness, combat end or a new Challenge; surrender by hand.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Challenge on the target:** 1 AP and its use spent. The card gives +4 attack and damage, AR 4 and −2 DB against others, and names the oath."
+      },
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**The target dropped to 0 HP:** the Challenge ended."
+      }
+    ]
   },
   "CF-O2": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Chosen with Sworn Oath's Use (core abilityChoices)."
+    "note": "Chosen with Sworn Oath's Use (core abilityChoices).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Sworn Oath:** offered the four oaths. Oath of Vengeance arrived."
+      }
+    ]
   },
   "CF-O3": {
     "status": "Implemented",
@@ -932,12 +1554,24 @@
   "CF-O4": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+1 conviction pool and points."
+    "note": "+1 conviction pool and points.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Oathblade's Resolve:** conviction 2 at 1st level."
+      }
+    ]
   },
   "CF-O5": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Quick Draw granted at 1st."
+    "note": "Quick Draw granted at 1st.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**Oathblade:** Quick Draw, Challenge, Sworn Oath, Unwavering Purpose, Oathblade's Resolve and Magical Tradition."
+      }
+    ]
   },
   "OA-01": {
     "status": "Implemented",
@@ -952,7 +1586,17 @@
   "OA-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Retribution after the target damages you or an ally: advantage, +Cha damage, AR +2; ends with the Strike (Unpaid Debt: on damage)."
+    "note": "Retribution after the target damages you or an ally: advantage, +Cha damage, AR +2; ends with the Strike (Unpaid Debt: on damage).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "**The target damaged the Oathblade:** Retribution arrived."
+      },
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "added \"Retribution: +3 to damage\" and the Challenge's +4;"
+      }
+    ]
   },
   "OA-04": {
     "status": "Implemented",
@@ -1027,7 +1671,13 @@
   "FC-21": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered on a melee miss: reaction; change form at once, no Combat Form needed (core waived wait)."
+    "note": "Offered on a melee miss: reaction; change form at once, no Combat Form needed (core waived wait).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.0.md",
+        "quote": "a melee miss offered \"Change form at once (your reaction)\", the same round the Kensai had entered Black Lotus;"
+      }
+    ]
   },
   "FC-22": {
     "status": "Implemented",
@@ -1137,7 +1787,13 @@
   "WP-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "In it-weapons (0.5.1), read from the book's table."
+    "note": "In it-weapons (0.5.1), read from the book's table.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "A card read \"Nunchaku — Backswing: No damage inflicted: this Strike does not count towards ZZ Kensai's multiple attack penalty\"."
+      }
+    ]
   },
   "WP-09": {
     "status": "Implemented",
@@ -1147,7 +1803,13 @@
   "WP-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "In it-weapons (0.5.1), read from the book's table."
+    "note": "In it-weapons (0.5.1), read from the book's table.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "the Double Slice card read \"Twin (Tonfa, Tonfa): +1 base damage each — 2 bludgeoning more to ZZ Brute\";"
+      }
+    ]
   },
   "WP-11": {
     "status": "Implemented",
@@ -1167,7 +1829,13 @@
   "WP-14": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "In it-weapons (0.5.1), read from the book's table."
+    "note": "In it-weapons (0.5.1), read from the book's table.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "**The damage was 4d10 + 3:** the Nodachi's 1d10, plus 1 die from BAB, 1 from a minor critical and 1 from Brace."
+      }
+    ]
   },
   "WP-15": {
     "status": "Implemented",
@@ -1187,12 +1855,24 @@
   "WT-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.668.1: a Strike that inflicts no damage is taken back off the count; in Double Slice, such a swing is not counted."
+    "note": "Core 3.668.1: a Strike that inflicts no damage is taken back off the count; in Double Slice, such a swing is not counted.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "A card read \"Nunchaku — Backswing: No damage inflicted: this Strike does not count towards ZZ Kensai's multiple attack penalty\". The attack count stayed at 0."
+      }
+    ]
   },
   "WT-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.668.1: a Strike through Ready against a mounted target, +2 circumstance and one more base die."
+    "note": "Core 3.668.1: a Strike through Ready against a mounted target, +2 circumstance and one more base die.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "\"Brace (readied, against a mounted target) Circumstance +2\";"
+      }
+    ]
   },
   "WT-04": {
     "status": "Implemented",
@@ -1202,12 +1882,28 @@
   "WT-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.668.1: both Twin swings of a Double Slice hit and inflict damage, +1 each after the pair."
+    "note": "Core 3.668.1: both Twin swings of a Double Slice hit and inflict damage, +1 each after the pair.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.5.1.md",
+        "quote": "the Double Slice card read \"Twin (Tonfa, Tonfa): +1 base damage each — 2 bludgeoning more to ZZ Brute\";"
+      },
+      {
+        "report": "live-testing-report-3.668.2.md",
+        "quote": "- **The Double Slice card:** 8 and 5 damage, DR met once, and Twin +2."
+      }
+    ]
   },
   "FR-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.669.0 convictionRefund: conviction's Advantage on a Mental Focus check is refunded on a Success or better (B5-3), late DC included."
+    "note": "Core 3.669.0 convictionRefund: conviction's Advantage on a Mental Focus check is refunded on a Success or better (B5-3), late DC included.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "The card read \"Adaptive Mind — the conviction point spent on advantage is not expended…\". Conviction stayed at 2."
+      }
+    ]
   },
   "FR-02": {
     "status": "Implemented",
@@ -1217,7 +1913,13 @@
   "FR-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus, a 1-minute effect by heritage (Kitsune advantage Bluff/Feint; Mujina Base DR +1; Ren Speed +10 and falls 20 ft shorter; Byakko +2 melee damage; Orochi Swim +10, advantage on Escape and poison saves)."
+    "note": "Use: 1 AP + Focus, a 1-minute effect by heritage (Kitsune advantage Bluff/Feint; Mujina Base DR +1; Ren Speed +10 and falls 20 ft shorter; Byakko +2 melee damage; Orochi Swim +10, advantage on Escape and poison saves).",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "| Ren | Speed 35 | Speed 45 | \"Awaken the Animism (Ren) +10 (untyped)\" |"
+      }
+    ]
   },
   "FR-04": {
     "status": "Implemented",
@@ -1227,12 +1929,24 @@
   "FR-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 2 AP + Focus; core 3.669.0 area rail with enemiesOnly; dazzled/blinded ladder applied."
+    "note": "Use: 2 AP + Focus; core 3.669.0 area rail with enemiesOnly; dazzled/blinded ladder applied.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**A Success** dazzled its foe; a Heroic left the other unaffected."
+      }
+    ]
   },
   "FR-06": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 2 AP + Focus; targeted cone, basic Reflex, 1d6 per 2 levels (min 2d6) of the heritage's type."
+    "note": "Use: 2 AP + Focus; targeted cone, basic Reflex, 1d6 per 2 levels (min 2d6) of the heritage's type.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Celestial Breath (a Zenki):** a 15-foot cone of fire, 5d6 at level 10, basic Reflex against the Level DC of 24."
+      }
+    ]
   },
   "FR-07": {
     "status": "Implemented",
@@ -1242,7 +1956,13 @@
   "FR-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: choose Draconic Bite or Claw (it-companions); the second copy gives the other."
+    "note": "Use: choose Draconic Bite or Claw (it-companions); the second copy gives the other.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Draconic Armament:** the choice added the Draconic Bite (1d6 piercing; Finesse, Unarmed), equipped."
+      }
+    ]
   },
   "FR-09": {
     "status": "Implemented",
@@ -1252,17 +1972,35 @@
   "FR-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Applied when the feat or heritage arrives: +1 racial spell attack (element traits) and spell DC; +2 Recall Knowledge tick."
+    "note": "Applied when the feat or heritage arrives: +1 racial spell attack (element traits) and spell DC; +2 Recall Knowledge tick.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the card read \"Basic Reflex against DC 22 … (Elemental Attunement +1)\"."
+      }
+    ]
   },
   "FR-11": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus; strike rider 1d4 of the element on melee Strikes, 1 minute."
+    "note": "Use: 1 AP + Focus; strike rider 1d4 of the element on melee Strikes, 1 minute.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Elemental Infusion:** \"+1d4 cold\" on the hit; the effect stays for the minute."
+      }
+    ]
   },
   "FR-12": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: PP 2 list by element (B5-2: Magic Stone for Tsuchi; Water Bolt in it-spells, B5-1)."
+    "note": "Use: PP 2 list by element (B5-2: Magic Stone for Tsuchi; Water Bolt in it-spells, B5-1).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**It arrived** as an innate spell with the Focus trait, cast with Wisdom."
+      }
+    ]
   },
   "FR-13": {
     "status": "Implemented",
@@ -1277,32 +2015,76 @@
   "FR-15": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Fire resistance; the Zenki Crafting tick at +2."
+    "note": "Fire resistance; the Zenki Crafting tick at +2.",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "A new Zenki's Crafting tick is +2, with the +1 kept for the feat's removal."
+      },
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "| Forgeheart | resistance to fire |"
+      }
+    ]
   },
   "FR-16": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Base Natural DR +1."
+    "note": "Base Natural DR +1.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "| Fortified Carapace | natural armour 4 (2 for a plain Scree) |"
+      }
+    ]
   },
   "FR-17": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.669.0 fumbleReroll: offered on a fumbled skill check or save before it is read, and on an attack's confirmed fumble before the table; reaction and Focus use."
+    "note": "Core 3.669.0 fumbleReroll: offered on a fumbled skill check or save before it is read, and on an attack's confirmed fumble before the table; reaction and Focus use.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "Yes posted one card: \"the fumble is rerolled — Failure (22) stands\";"
+      },
+      {
+        "report": "live-testing-report-3.669.2.md",
+        "quote": "\"Fortune's Reversal: the blunder is rerolled — Blunder (18) stands, even if worse.\""
+      }
+    ]
   },
   "FR-18": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use: 1 AP + Focus; up to three placed light circles (core 3.669.0 placeLightCircles, +1 light step, 10 ft) for 1 minute; Use again moves them (once a turn, 30 ft, within 60 ft). Light circles rather than tokens (B5-4 implemented differently: a token is read as a creature)."
+    "note": "Use: 1 AP + Focus; up to three placed light circles (core 3.669.0 placeLightCircles, +1 light step, 10 ft) for 1 minute; Use again moves them (once a turn, 30 ft, within 60 ft). Light circles rather than tokens (B5-4 implemented differently: a token is read as a creature).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "a creature in both circles got +1, not +2."
+      }
+    ]
   },
   "FR-19": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Core 3.669.0 forAlly defence offer: asked of the adjacent ally before the attack; retargets; +1 circ DB and Base DR for that attack."
+    "note": "Core 3.669.0 forAlly defence offer: asked of the adjacent ally before the attack; retargets; +1 circ DB and Base DR for that attack.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the attack card read \"ZZ Mujina steps in: the attack meant for ZZ Byakko targets ZZ Mujina instead\", against DB 22 (21 + 1);"
+      }
+    ]
   },
   "FR-20": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "+2 racial tick on Aid."
+    "note": "+2 racial tick on Aid.",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.2.md",
+        "quote": "Athletics against the lead's DC 20 listed \"Hive Coordination, Race +2\" among the modifiers"
+      }
+    ]
   },
   "FR-21": {
     "status": "Implemented",
@@ -1312,12 +2094,28 @@
   "FR-22": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "defenceDC Fortitude +2 vs Shove/Trip/Reposition; core 3.669.0 forcedMovementReduction 5 ft; +2 tick on own checks and saves."
+    "note": "defenceDC Fortitude +2 vs Shove/Trip/Reposition; core 3.669.0 forcedMovementReduction 5 ft; +2 tick on own checks and saves.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "The card showed \"Immovable Plating +2 to Target's Fortitude DC\"."
+      },
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "\"ZZ Kabuto is pushed 5 ft (5 ft shorter: Immovable Plating …)\". The token moved one square."
+      }
+    ]
   },
   "FR-23": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Undead Lore granted; +2 racial auto against undead/haunts, tick otherwise."
+    "note": "Undead Lore granted; +2 racial auto against undead/haunts, tick otherwise.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "| Keeper of Endings | Undead Lore added |"
+      }
+    ]
   },
   "FR-24": {
     "status": "Implemented",
@@ -1327,12 +2125,28 @@
   "FR-25": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus; next melee hit this turn +1d6 fire (spent on a hit), magical."
+    "note": "Use: 1 AP + Focus; next melee hit this turn +1d6 fire (spent on a hit), magical.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "The hit added \"Magma Channel — 6 fire damage (1d6)\", and it was spent."
+      }
+    ]
   },
   "FR-26": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+10 racial initiative; visual Perception tick at +2."
+    "note": "+10 racial initiative; visual Perception tick at +2.",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.2.md",
+        "quote": "| A new Kabuto with the feat | **+2** | +2 | on | +1, set by the module |"
+      },
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "| Many-Faceted Vigilance | +10 racial to initiative |"
+      }
+    ]
   },
   "FR-27": {
     "status": "Implemented",
@@ -1342,12 +2156,24 @@
   "FR-28": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use: 2 AP + Focus; switched ally aura (core 3.669.0 emitterState) concealing everyone within 10 ft, moving with you, to your next turn. Concealed-to-those-inside is the table's."
+    "note": "Use: 2 AP + Focus; switched ally aura (core 3.669.0 emitterState) concealing everyone within 10 ft, moving with you, to your next turn. Concealed-to-those-inside is the table's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "it held through all 16 turns and ended at the start of the Zennyo's next turn, in round 2."
+      }
+    ]
   },
   "FR-29": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Offered when the Sting damages: Free + Focus; Fortitude ladder; speed penalties laid by the module."
+    "note": "Offered when the Sting damages: Free + Focus; Fortitude ladder; speed penalties laid by the module.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "Yes rolled the foe's Fortitude and gave −5 ft on a Success;"
+      }
+    ]
   },
   "FR-30": {
     "status": "Implemented",
@@ -1357,7 +2183,13 @@
   "FR-31": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Asked on the Pounce's paid Strike: +1 circumstance and 1d6 precision."
+    "note": "Asked on the Pounce's paid Strike: +1 circumstance and 1d6 precision.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "Yes added +1 circumstance and 1d6 precision. The Pounce cost 2 AP and the Strike none."
+      }
+    ]
   },
   "FR-32": {
     "status": "Implemented",
@@ -1367,12 +2199,28 @@
   "FR-33": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "The Raptorial Blade item set to AR 2 + Versatile P when feat or blade arrives; restored when the feat goes."
+    "note": "The Raptorial Blade item set to AR 2 + Versatile P when feat or blade arrives; restored when the feat goes.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the Versatile prompt offered Piercing, from Raptorial Refinement;"
+      },
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "with Raptorial Refinement, \"Agile, Finesse, Versatile P, AR 2\";"
+      }
+    ]
   },
   "FR-34": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus; next melee hit before the end of your next turn: Fortitude ladder, poison on a Fumble."
+    "note": "Use: 1 AP + Focus; next melee hit before the end of your next turn: Fortitude ladder, poison on a Fumble.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Serpent's Venom:** a miss kept it, and the hit delivered it. Foe C's Fortitude was a Success (unaffected), and the technique ended."
+      }
+    ]
   },
   "FR-35": {
     "status": "Implemented",
@@ -1382,12 +2230,24 @@
   "FR-36": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus; registered light sources (bright 3 steps/20 ft, dim 1 step/40 ft; glow 40/20) and a switched ally aura with two ticks, 1 minute."
+    "note": "Use: 1 AP + Focus; registered light sources (bright 3 steps/20 ft, dim 1 step/40 ft; glow 40/20) and a switched ally aura with two ticks, 1 minute.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the aura effect went on the two allies within 20 feet and not the one at 35."
+      }
+    ]
   },
   "FR-37": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 1 AP + Focus; one Demoralise (core 3.669.0 presetDice/dcOverride/ignoreActionImmunity) against each enemy within 15 ft at its Level DC; immunity for the encounter."
+    "note": "Use: 1 AP + Focus; one Demoralise (core 3.669.0 presetDice/dcOverride/ignoreActionImmunity) against each enemy within 15 ft at its Level DC; immunity for the encounter.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**A later roar** affected all three foes (Frightened 1), and the immunity record named them."
+      }
+    ]
   },
   "FR-38": {
     "status": "Implemented",
@@ -1397,92 +2257,212 @@
   "FR-39": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+2 racial Refocus; core 3.669.0 exact daily first: the first Refocus is a Critical without a roll."
+    "note": "+2 racial Refocus; core 3.669.0 exact daily first: the first Refocus is a Critical without a roll.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the dice came out a Fumble, and the outcome read \"the first Refocus today is a critical without the need for a roll"
+      }
+    ]
   },
   "FR-40": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+1 racial Meditation; core 3.669.0 daily-first advantage on the first trance (one slot)."
+    "note": "+1 racial Meditation; core 3.669.0 daily-first advantage on the first trance (one slot).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Tianzhi Meditation:** the first Clear Mind of the day rolled with advantage, and the next trance (Healing Trance, the same slot) did not."
+      }
+    ]
   },
   "FR-41": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+1 racial Meditation and Nature; +2 racial on Elemental Lore and Tianzhi Lore."
+    "note": "+1 racial Meditation and Nature; +2 racial on Elemental Lore and Tianzhi Lore.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "With Tianzhi Scholar, Meditation shows +2 racial"
+      }
+    ]
   },
   "FR-42": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 2 AP + Focus; Fortitude in a 10-ft emanation; speed and Reflex penalties laid by the module; Slowed 1 on a Fumble."
+    "note": "Use: 2 AP + Focus; Fortitude in a 10-ft emanation; speed and Reflex penalties laid by the module; Slowed 1 on a Fumble.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "The −10 ft Speed reached the GM's foe (35 → 25 on the ally) and expired at round 2."
+      }
+    ]
   },
   "FR-43": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Offered when a melee Strike misses the Kamiri (on its player's screen): reaction + Focus, a Raptorial Blade Strike."
+    "note": "Offered when a melee Strike misses the Kamiri (on its player's screen): reaction + Focus, a Raptorial Blade Strike.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "a Raptorial Blade Strike was made against the attacker. It hit for 7 piercing;"
+      }
+    ]
   },
   "FR-44": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: 2 AP + Focus; Reflex; speed penalties or Immobilised with escapeDC (flat-footed on a Fumble); one at a time."
+    "note": "Use: 2 AP + Focus; Reflex; speed penalties or Immobilised with escapeDC (flat-footed on a Fumble); one at a time.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**First snare:** a Failure left the foe Immobilised, with \"Escape DC 24\" on the effect."
+      }
+    ]
   },
   "FR-45": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Advantage on Balance; difficult terrain and flat-footedness are the table's."
+    "note": "Advantage on Balance; difficult terrain and flat-footedness are the table's.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Weightless Footwork:** Balance rolled with advantage."
+      }
+    ]
   },
   "FR-46": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use: 1 AP + Focus; a Stride armed to your Speed; the surfaces are the table's."
+    "note": "Use: 1 AP + Focus; a Stride armed to your Speed; the surfaces are the table's.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Wind-Borne Motion:** the Use armed a Stride \"up to 25 feet\" (the Speed under Valley Chill), and the move cost 0 AP."
+      }
+    ]
   },
   "FR-47": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Fly Speed equal to land (derives.movement orLand); Wing Burst's card says it may end in the air."
+    "note": "Fly Speed equal to land (derives.movement orLand); Wing Burst's card says it may end in the air.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "**Wings Unfurled:** Fly 30 = land 30."
+      }
+    ]
   },
   "FR-48": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "registerFeatAccess with heritage limits (core 3.669.0): 33 entries, 25 feats, 20 limited to a heritage."
+    "note": "registerFeatAccess with heritage limits (core 3.669.0): 33 entries, 25 feats, 20 limited to a heritage.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "**The Mujina's racial feat picker** listed Bestial Resilience and not Ethereal Trick."
+      }
+    ]
   },
   "FC-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance (1 AP, core 3.664.0 rules): +2 circ DB, +5 on High Jump and Long Jump (auto tick); Devoted or Primal Path checked at Use."
+    "note": "Stance (1 AP, core 3.664.0 rules): +2 circ DB, +5 on High Jump and Long Jump (auto tick); Devoted or Primal Path checked at Use.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Crane | DB 22 → 24. High Jump: \"+5 circumstance — Crane Stance\" in the dialog, ticked, on the card;"
+      }
+    ]
   },
   "FC-13": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: +2 circ AB; Sweep on unarmed attacks (core 3.670.0 weaponTraitGrants scope unarmed, B6-2); first difficult square per Stride (ignoresFirstDifficultSquare). Primal or Transcendent Path."
+    "note": "Stance: +2 circ AB; Sweep on unarmed attacks (core 3.670.0 weaponTraitGrants scope unarmed, B6-2); first difficult square per Stride (ignoresFirstDifficultSquare). Primal or Transcendent Path.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Dragon | AB 10 → 12. A fist on a second creature the same turn: \"Sweep (different target this turn) +1\" |"
+      }
+    ]
   },
   "FC-14": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: +2 circ DB; grants Drunken Strike (Attack Flourish, 1 AP): Strike at -2, on damage its total stands as the Feint (core 3.670.0 presetModifiers, B6-3)."
+    "note": "Stance: +2 circ DB; grants Drunken Strike (Attack Flourish, 1 AP): Strike at -2, on damage its total stands as the Feint (core 3.670.0 presetModifiers, B6-3).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Drunken | DB +2; Drunken Strike added with the feat |"
+      }
+    ]
   },
   "FC-16": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Read by Inner Strike: electricity/bludgeoning/fire/cold with the Air/Earth/Fire/Water trait on every attack while it lasts (weaponTraitGrants scope any)."
+    "note": "Read by Inner Strike: electricity/bludgeoning/fire/cold with the Air/Earth/Fire/Water trait on every attack while it lasts (weaponTraitGrants scope any).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "Fire: the effect read \"Inner Strike (2d6 fire, Fire)\" with the Fire trait granted."
+      },
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "A fist then dealt \"Inner Strike — 5 electricity damage (2d6)\"."
+      }
+    ]
   },
   "FC-30": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: one Path-tradition cantrip, innate, Path-stamped. classFeatAccess Mystic (core 3.670.0, B6-7). Non-Mystic via the picker."
+    "note": "Use: one Path-tradition cantrip, innate, Path-stamped. classFeatAccess Mystic (core 3.670.0, B6-7). Non-Mystic via the picker.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "Orb Of Cold arrived innate, verdant, cast with Constitution, with no Metamagic mark."
+      }
+    ]
   },
   "FC-36": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: Deadly on unarmed attacks; +2 circ Reflex; first Move each turn provokes nothing (core 3.670.0 firstMoveNoReactions, B6-4)."
+    "note": "Stance: Deadly on unarmed attacks; +2 circ Reflex; first Move each turn provokes nothing (core 3.670.0 firstMoveNoReactions, B6-4).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Mantis | Reflex 16 → 18."
+      },
+      {
+        "report": "live-testing-report-3.670.1.md",
+        "quote": "**On entering the stance:** the first move straight away drew no Attack of Opportunity, so the earlier moves had not spent it."
+      }
+    ]
   },
   "FC-37": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: +2 circ Acrobatics and Climbing; +2 on jumps (auto tick); 1-AP jump waiver (core 3.670.0 tradeoffWaivers, B6-5)."
+    "note": "Stance: +2 circ Acrobatics and Climbing; +2 on jumps (auto tick); 1-AP jump waiver (core 3.670.0 tradeoffWaivers, B6-5).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Monkey | Acrobatics and Climbing 5 → 7."
+      },
+      {
+        "report": "live-testing-report-3.670.1.md",
+        "quote": "the outcome card read \"Traded difficulty (+0 DC …): Jump for 1 AP instead of 2 (waived)\". The jump cost 1 AP at DC 12."
+      }
+    ]
   },
   "FC-38": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: one Path-tradition spell base PP <= level, innate, Path-stamped, marked innateMetamagic for a Mystic (B6-8)."
+    "note": "Use: one Path-tradition spell base PP <= level, innate, Path-stamped, marked innateMetamagic for a Mystic (B6-8).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "Mystic Essence offered divinity spells up to PP 10. Bless arrived innate, cast with Wisdom, marked for Metamagic."
+      }
+    ]
   },
   "FC-39": {
     "status": "Implemented",
@@ -1492,62 +2472,142 @@
   "FC-40": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use (2 AP, Attack Flourish): melee Strike, one-shot advantage, mapSteps 2 (core 3.670.0)."
+    "note": "Use (2 AP, Attack Flourish): melee Strike, one-shot advantage, mapSteps 2 (core 3.670.0).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "The card: \"18 / 3 Advantage\", 2 AP spent (3 → 1), and the advantage effect gone afterwards."
+      }
+    ]
   },
   "FC-48": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Stance; on a melee miss against you, asked for a reaction Strike (fists or Monastic weapon, no MAP), an Attack reaction (B6-9). Path checked at Use."
+    "note": "Stance; on a melee miss against you, asked for a reaction Strike (fists or Monastic weapon, no MAP), an Attack reaction (B6-9). Path checked at Use.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "Yes: a fist Strike against Foe B, no penalty on the card, the reaction spent (1 → 0)."
+      }
+    ]
   },
   "FC-50": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Read by Flurry of Blows: both Strikes made, either hits and damages: Fortitude vs Technique DC; stunned 1 (Partial, Failure) or 3 (Fumble, Blunder) (B6-6)."
+    "note": "Read by Flurry of Blows: both Strikes made, either hits and damages: Fortitude vs Technique DC; stunned 1 (Partial, Failure) or 3 (Fumble, Blunder) (B6-6).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "A Partial: \"stunned 1. Applied: Stunned 1.\""
+      }
+    ]
   },
   "FC-51": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: unarmed attacks deal slashing, set not offered (core 3.670.0 replace, B6-1); bleed +1 (bleedBonus); Step 10 ft at Speed 20+ (stepFeet)."
+    "note": "Stance: unarmed attacks deal slashing, set not offered (core 3.670.0 replace, B6-1); bleed +1 (bleedBonus); Step 10 ft at Speed 20+ (stepFeet).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Tiger | A fist: slashing, no damage-type question; the critical rolled on the Slashing table |"
+      }
+    ]
   },
   "FC-54": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Stance: unarmed attacks deal piercing (B6-1); Pack Attack from the effect (core 3.670.0)."
+    "note": "Stance: unarmed attacks deal piercing (B6-1); Pack Attack from the effect (core 3.670.0).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "| Wolf | A fist: piercing; a Broadsword stayed slashing; Pack Attack +1d6 on both (two allies beside the foe) |"
+      }
+    ]
   },
   "FC-55": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "registerFeatAccess(\"class\") per class: 33 entries, 21 feats. Metamagic feats already open to the Mystic (Adept); innate use via innateMetamagic (B6-8)."
+    "note": "registerFeatAccess(\"class\") per class: 33 entries, 21 feats. Metamagic feats already open to the Mystic (Adept); innate use via innateMetamagic (B6-8).",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "The Disciple's FC-55 feats were offered (Combat Awareness, Combat Grapple, Guarded Move, Reactive Stance)."
+      }
+    ]
   },
   "FA-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Powerful Fists via unarmedDamage (1d6, Versatile B, +1/3 BAB, materials); Disciple-trait class feats via classFeatAccess (B7-3); progression \"Level +10\" = character level 10 (B7-2, core 3.671.0 C1)."
+    "note": "Powerful Fists via unarmedDamage (1d6, Versatile B, +1/3 BAB, materials); Disciple-trait class feats via classFeatAccess (B7-3); progression \"Level +10\" = character level 10 (B7-2, core 3.671.0 C1).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "\"Powerful Fists (Brawler) +4\" at BAB 12."
+      }
+    ]
   },
   "FA-03": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Combat Form's Use asks add or replace while one form is held; two forms as one stance (a blend fills both, B7-7); one activation a turn; overlapping bonuses tagged stackGroup so the greater applies (core 3.671.0 C15)."
+    "note": "Combat Form's Use asks add or replace while one form is held; two forms as one stance (a blend fills both, B7-7); one activation a turn; overlapping bonuses tagged stackGroup so the greater applies (core 3.671.0 C15).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "The next turn: \"Formbinder: Echoing Crane + Iron Tortoise\". DB +3 from Echoing Crane; Iron Tortoise's +1 shown not applied"
+      },
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Added the next turn: \"Formbinder: Echoing Crane + Twin Dragon\"."
+      }
+    ]
   },
   "FA-03a": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "A Combat Form item granted by Formbinder, outside the class table; first hit each round +1 class DB to your next turn, first avoided attack +1 damage to the end of your next turn (hooks)."
+    "note": "A Combat Form item granted by Formbinder, outside the class table; first hit each round +1 class DB to your next turn, first avoided attack +1 damage to the end of your next turn (hooks).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "**Twin Dragon:** a hit gave \"+1 class bonus to DB until the start of your next turn\"; an attack that missed gave \"+1 damage until the end of your next turn\"."
+      }
+    ]
   },
   "FA-04": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "+4 class tick on Refocus, Healing Trance and Power Recovery (wilderness is the GM's call); Use once a day: a Verdant Utility spell, base PP 2/4/6… by level (B7-4), cast once through castInnateOnce (C12)."
+    "note": "+4 class tick on Refocus, Healing Trance and Power Recovery (wilderness is the GM's call); Use once a day: a Verdant Utility spell, base PP 2/4/6… by level (B7-4), cast once through castInnateOnce (C12).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "The trance listed Verdant Utility spells up to PP 6 at 10th level. Jump was cast once as an innate spell; the card followed the cast."
+      }
+    ]
   },
   "FA-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+25 class Initiative with a Sword-group weapon carried and not wielded (B7-5; sheathedGroups axis, core 3.671.0 C8)."
+    "note": "+25 class Initiative with a Sword-group weapon carried and not wielded (B7-5; sheathedGroups axis, core 3.671.0 C8).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Initiative with the katana sheathed: \"+25 Iaijutsu Master Class\". With it drawn: no +25."
+      }
+    ]
   },
   "FA-05a": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use: Challenge, reach and a sheathed sword checked; draws and Strikes with noReactions (C9); on damage the target cannot react until its next turn; offered to sheathe at turn end."
+    "note": "Use: Challenge, reach and a sheathed sword checked; draws and Strikes with noReactions (C9); on damage the target cannot react until its next turn; offered to sheathe at turn end.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "made, it drew the katana, struck with no reaction offered (no critical replacement on a critical), dealt 20 and left \"Drawn Verdict: no reactions\" on the Bugbear;"
+      },
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Answered Yes: the katana was carried again, unwielded, and the record cleared."
+      }
+    ]
   },
   "FA-06": {
     "status": "Implemented",
@@ -1562,27 +2622,57 @@
   "FA-07a": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use (2 AP, touch, living only): heal 4/level, stop Bleeding 1 per two levels, or a new stage save vs an affliction (C11); 1-hour immunity (C10)."
+    "note": "Use (2 AP, touch, living only): heal 4/level, stop Bleeding 1 per two levels, or a new stage save vs an affliction (C11); 1-hour immunity (C10).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Bleeding 1 → 0, the card posted by the GM's client, the hour's immunity recorded on the target, 2 AP and a use spent."
+      }
+    ]
   },
   "FA-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Mystic Essence also offers Enchantment specialist spells; that spell carries +1 class attack and DC (spellBonus, C14)."
+    "note": "Mystic Essence also offers Enchantment specialist spells; that spell carries +1 class attack and DC (spellBonus, C14).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Cloud Mind was granted with \"+1 class, Lotus Enchanter\". Cast, its DC was 24 \"(Lotus Enchanter +1)\"."
+      }
+    ]
   },
   "FA-09": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Medicine a class skill; poison resistance effect."
+    "note": "Medicine a class skill; poison resistance effect.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Night Lotus gave poison resistance and Medicine as a class skill."
+      }
+    ]
   },
   "FA-09a": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use (1 AP) coats a piercing or slashing weapon or ammunition; first damage: Fortitude vs Level DC through the peril rail; +1 DC after Unseen Assault; Partial = Success (IT-m24)."
+    "note": "Use (1 AP) coats a piercing or slashing weapon or ammunition; first damage: Fortitude vs Level DC through the peril rail; +1 DC after Unseen Assault; Partial = Success (IT-m24).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Delivered on the dagger's critical: Fortitude against DC 24, a Fumble, Paralyzed then Slowed 1. The coating was spent."
+      }
+    ]
   },
   "FA-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Mental Focus a class skill; katana and wakizashi martial (weaponCategoryAs, C5); Bound Challenge = Challenge paid with a conviction point (IT-M13)."
+    "note": "Mental Focus a class skill; katana and wakizashi martial (weaponCategoryAs, C5); Bound Challenge = Challenge paid with a conviction point (IT-M13).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Bound Challenge cost 1 AP and a conviction point (4 → 3)."
+      }
+    ]
   },
   "FA-11": {
     "status": "Implemented",
@@ -1592,12 +2682,24 @@
   "FA-12": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Deception a class skill; Wandering Creed asks the Sworn Oath at each daily preparation and swaps it."
+    "note": "Deception a class skill; Wandering Creed asks the Sworn Oath at each daily preparation and swaps it.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "At daily preparation Wandering Creed asked for the oath. Oath of Fealty replaced Oath of Honour, stamped as Sworn Oath's choice"
+      }
+    ]
   },
   "FA-12a": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Offered as a reaction when another creature damages you with a Strike: the Challenge moves to it, free."
+    "note": "Offered as a reaction when another creature damages you with a Strike: the Challenge moves to it, free.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "The reaction was offered; taken, the Challenge moved to Foe A with Oath of Fealty, and the reaction was spent."
+      }
+    ]
   },
   "FA-13": {
     "status": "Implemented",
@@ -1607,32 +2709,76 @@
   "FA-14": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Learned Caster prerequisite read (C16, IT-C9); Use chooses the element; two element-trait spells (any tradition, not specialist) chosen at each daily preparation as Focus innate spells."
+    "note": "Learned Caster prerequisite read (C16, IT-C9); Use chooses the element; two element-trait spells (any tradition, not specialist) chosen at each daily preparation as Focus innate spells.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Burning Hands and Flare were granted as Focus innate spells."
+      },
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "A daily preparation replaced them with Fairy Fire and Fire Bolt."
+      }
+    ]
   },
   "FA-15": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Bond a melee weapon at daily preparation or Use: weaponScaling (C7) and unarmedAbilityWeapons by item id (C6, B7-6)."
+    "note": "Bond a melee weapon at daily preparation or Use: weaponScaling (C7) and unarmedAbilityWeapons by item id (C6, B7-6).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Flurry of Blows used it: two Strikes with the katana's own die, \"Soul-Bound Weapon +3: total damage\" at BAB 10, DR once, one injury."
+      }
+    ]
   },
   "FA-16": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use chooses the class skill and one Kensai Combat Form, entered as a stance with no Combat Form spent; Kensai-trait class feats (B7-3)."
+    "note": "Use chooses the class skill and one Kensai Combat Form, entered as a stance with no Combat Form spent; Kensai-trait class feats (B7-3).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "**Steel Disciple:** the class-skill choice (Athletics made a class skill) and the Kensai form (Iron Tortoise). Its Use entered it as a stance with no Combat Form."
+      }
+    ]
   },
   "FA-17": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+2 class Deception; Shape Of The Humanoid and Mirage Entity as Focus innate spells, Path or class tradition (IT-M6)."
+    "note": "+2 class Deception; Shape Of The Humanoid and Mirage Entity as Focus innate spells, Path or class tradition (IT-M6).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Choosing the Magical Tradition (arcane) stamped them with arcane and Intelligence (IT-M6)."
+      }
+    ]
   },
   "FA-18": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use chooses a second Mystical Discipline: its ability and its 1st-level spells as Focus innate spells."
+    "note": "Use chooses a second Mystical Discipline: its ability and its 1st-level spells as Focus innate spells.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "**Twin Path:** Inner Flame as the second discipline, giving Flame Within and its 1st-level spells, Orb Of Fire and Circle Of Warmth."
+      }
+    ]
   },
   "FA-19": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Use learns one more Focus Ghost Art outside the table; +2 class Refocus restoring a Ghost Art (restores axis, C13); +1 DB offered after the concealing, invisible and teleporting arts."
+    "note": "Use learns one more Focus Ghost Art outside the table; +2 class Refocus restoring a Ghost Art (restores axis, C13); +1 DB offered after the concealing, invisible and teleporting arts.",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Using it gave \"Veilborn (+1 DB)\"."
+      },
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "The Refocus dialog offered \"+2 class — Veilborn\" pre-ticked, and the roll carried it"
+      }
+    ]
   },
   "FA-20": {
     "status": "Implemented",
@@ -1642,87 +2788,201 @@
   "FA-21": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Bow proficiency by name (C5); unarmed abilities with the four bows, not crossbows (C6, B7-6); Perfect Shot granted; counts as Archer (C3)."
+    "note": "Bow proficiency by name (C5); unarmed abilities with the four bows, not crossbows (C6, B7-6); Perfect Shot granted; counts as Archer (C3).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "A Zen Archer Fighter is newly offered Far Shot and Quick Reload (it counts as Archer, C3)."
+      }
+    ]
   },
   "FA-22": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "registerFeatAccess(\"archetype\") per class (core 3.671.0 C2); the system's tier rule kept (B7-8)."
+    "note": "registerFeatAccess(\"archetype\") per class (core 3.671.0 C2); the system's tier rule kept (B7-8).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "A Kensai is offered Formbinder, Brawler and Steel Disciple, and the core Vanguard and Mastermind (FA-22)"
+      }
+    ]
   },
   "FA-23": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "All 20 built lines parsed by core 3.671.0 C1 (Level, Gained class skill, &, plurals, full stops)."
+    "note": "All 20 built lines parsed by core 3.671.0 C1 (Level, Gained class skill, &, plurals, full stops).",
+    "live": [
+      {
+        "report": "live-testing-report-3.671.0.md",
+        "quote": "Steel Disciple's progression \"BAB +12.\" holds back a second archetype at BAB 10 (\"aren't met yet\") and lets one through at BAB 12"
+      }
+    ]
   },
   "SP-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Totals switched through the bonus pool by save rung (Success/Partial to the end of its next turn, Failure 1 minute, Fumble/Blunder 1 hour); ties asked of the caster (TRG Prime 3.672.0 abilitySwap)."
+    "note": "Totals switched through the bonus pool by save rung (Success/Partial to the end of its next turn, Failure 1 minute, Fumble/Blunder 1 hour); ties asked of the caster (TRG Prime 3.672.0 abilitySwap).",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "On a Fumble, Constitution 1 and Intelligence −1 switched for 1 hour. The Fortitude save followed (7 → 5)."
+      }
+    ]
   },
   "SP-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "1d6 secondary acid on unarmed Strikes for 1 minute; every melee hit makes the target save Fortitude at your spell save DC: Sickened 1 on a Failure, 2 on a Fumble/Blunder (3.672.0 rider ladder)."
+    "note": "1d6 secondary acid on unarmed Strikes for 1 minute; every melee hit makes the target save Fortitude at your spell save DC: Sickened 1 on a Failure, 2 on a Fumble/Blunder (3.672.0 rider ladder).",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "An unarmed critical forced a Fortitude save at the spell's DC 21. On a Failure the target took Sickened 1 with no expiry and 1d6 acid."
+      }
+    ]
   },
   "SP-03": {
     "status": "Implemented",
     "achieved": "C",
-    "note": "Marks the caster until daily preparation (warps 1 month, unlimited); Block 9's aging reads the mark; physical aging penalties set aside by hand until then."
+    "note": "Marks the caster until daily preparation (warps 1 month, unlimited); Block 9's aging reads the mark; physical aging penalties set aside by hand until then.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Age Resistance:** the mark carried the DC and the caster, until daily preparation, with its PP locked."
+      },
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "**Age Resistance:** with the mark, the physical penalties were lifted (Strength and Constitution restored)."
+      }
+    ]
   },
   "SP-05": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Once cast, up to 30 of a chosen stack of arrows, bolts, bullets, darts or shuriken (any ammunition or thrown weapon with +4 PP) split off with range increments doubled for 10 minutes (1 hour warped)."
+    "note": "Once cast, up to 30 of a chosen stack of arrows, bolts, bullets, darts or shuriken (any ammunition or thrown weapon with +4 PP) split off with range increments doubled for 10 minutes (1 hour warped).",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "At 120 ft the plain arrows took \"Range increment 2 (120 ft) −4\"; the enchanted ones took none."
+      },
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "10 of 20 arrows were split off and doubled."
+      }
+    ]
   },
   "SP-07": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Cannot be flanked while sustained (3.672.0 declared flank immunity); the 100-foot sight is the table's."
+    "note": "Cannot be flanked while sustained (3.672.0 declared flank immunity); the 100-foot sight is the table's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Boundless Vision:** a goblin with a second goblin behind the caster got no flanking. Once the effect was deleted it got \"Flanking (with ZZ Foe B) +2\"."
+      }
+    ]
   },
   "SP-11": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Marked with the cast's DC; each casting (once paid) or magical Focus use saves Fortitude: 2d8 essence, + 1d8 per PP spent or per four levels, a basic save's essence critical on a Fumble; a Critical ends the spell."
+    "note": "Marked with the cast's DC; each casting (once paid) or magical Focus use saves Fortitude: 2d8 essence, + 1d8 per PP spent or per four levels, a basic save's essence critical on a Fumble; a Critical ends the spell.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "On a Failure against a cantrip: 7d8 (2d8 plus 1d8 per four levels at level 20)."
+      }
+    ]
   },
   "SP-13": {
     "status": "Implemented",
     "achieved": "D",
-    "note": "Divination misdirection and the Will saves are the GM's."
+    "note": "Divination misdirection and the Will saves are the GM's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Skyborne Pathways and False Future:** the notes and the disbelief line printed."
+      }
+    ]
   },
   "SP-14": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Until the end of your turn: advantage on Reflex saves; difficult terrain no extra cost, formidable as difficult."
+    "note": "Until the end of your turn: advantage on Reflex saves; difficult terrain no extra cost, formidable as difficult.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Flowing Step:** declared advantage on Reflex saves and terrain ease; it expired at the start of the caster's next turn."
+      }
+    ]
   },
   "SP-15": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "The next d20 check says first whether a 10 would succeed (the GM answers an unset DC); a skill action or Strike may then be called back and its AP returned; a save or casting check is rolled."
+    "note": "The next d20 check says first whether a 10 would succeed (the GM answers an unset DC); a skill action or Strike may then be called back and its AP returned; a save or casting check is rolled.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "Demoralise against Will DC 9 was told \"it would succeed, so the action must be taken\"."
+      }
+    ]
   },
   "SP-19": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+2 circumstance (+1 a PP, max +4) to the Fortitude DC against Shove, Trip and Reposition and the Acrobatics DC against Trip; the same bonus as a tick on balance checks on earth or stone."
+    "note": "+2 circumstance (+1 a PP, max +4) to the Fortitude DC against Shove, Trip and Reposition and the Acrobatics DC against Trip; the same bonus as a tick on balance checks on earth or stone.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "A Trip met DC 21 (the higher DC, 17, +4 once). A Shove also met DC 21."
+      }
+    ]
   },
   "SP-21": {
     "status": "Implemented",
     "achieved": "D",
-    "note": "Tracking the aerial trail is the GM's (soft terrain's DC)."
+    "note": "Tracking the aerial trail is the GM's (soft terrain's DC).",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Skyborne Pathways and False Future:** the notes and the disbelief line printed."
+      }
+    ]
   },
   "SP-22": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Marked with the cast's DC; before each spell check the target saves Will: -2/-4/-10 circumstance to that check; a Critical ends the spell."
+    "note": "Marked with the cast's DC; before each spell check the target saves Will: -2/-4/-10 circumstance to that check; a Critical ends the spell.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "On a Critical it was unaffected and the spell ended. On a Failure, −4 circumstance was applied to that check."
+      }
+    ]
   },
   "SP-24": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "For 1 hour Refocus asks for a second expended Focus ability with the first; a Critical restores both now, a Success both next turn."
+    "note": "For 1 hour Refocus asks for a second expended Focus ability with the first; a Critical restores both now, a Success both next turn.",
+    "live": [
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "A Critical restored both Veiled Body and Inner Blast."
+      }
+    ]
   },
   "SP-25": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Spell attack, 4d4 bludgeoning; pushed 5 feet away on a serious or deadly critical."
+    "note": "Spell attack, 4d4 bludgeoning; pushed 5 feet away on a serious or deadly critical.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0-part2.md",
+        "quote": "it hit for 4d4 bludgeoning;"
+      },
+      {
+        "report": "live-testing-report-3.672.0.md",
+        "quote": "**Water Bolt:** a serious critical and two deadly ones each pushed the target 5 ft straight away from the caster"
+      }
+    ]
   },
   "GE-01": {
     "status": "Implemented",
@@ -1782,12 +3042,28 @@
   "MI-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "criticalGuard (3.673.0 C4): asked of the wearer's player before the damage; the critical's extra dice are not dealt and half is healed."
+    "note": "criticalGuard (3.673.0 C4): asked of the wearer's player before the damage; the critical's extra dice are not dealt and half is healed.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.2.md",
+        "quote": "The critical's 1d6 = 5 was negated and 3 was healed."
+      },
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "On a yes, 2d6 = 9 were negated and 5 healed, and the day was marked."
+      }
+    ]
   },
   "MI-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Engage button (Focus): 1 minute of +2 dodge DB and +2 resistance to saves, +3 for a Disciple or Mystic (C3); Refocus restores."
+    "note": "Engage button (Focus): 1 minute of +2 dodge DB and +2 resistance to saves, +3 for a Disciple or Mystic (C3); Refocus restores.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "**Harmony:** a Disciple got +3 dodge DB and +3 resistance to all three saves for 60 seconds; Focus was expended."
+      }
+    ]
   },
   "MI-04": {
     "status": "Implemented",
@@ -1797,57 +3073,123 @@
   "MI-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Rune death guard (C1): asked of the wearer's player at 0 HP (reaction, 1/day, not against massive damage); 1 HP, and +2/+4 circumstance to dying checks for 1 minute."
+    "note": "Rune death guard (C1): asked of the wearer's player at 0 HP (reaction, 1/day, not against massive damage); 1 HP, and +2/+4 circumstance to dying checks for 1 minute.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "1 HP, no Dying, a +2 circumstance `dyingCheck` conditional for 60 seconds, and the day marked."
+      }
+    ]
   },
   "MI-06": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "bleedFlatCheckReduction 2/3/4 and the DC 16 flat check on Moderate (II) or any (III) bleeding (C2)."
+    "note": "bleedFlatCheckReduction 2/3/4 and the DC 16 flat check on Moderate (II) or any (III) bleeding (C2).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "**Staunching II:** at the end of the Archer's turn, a DC 16 flat check on Moderate Bleeding (it failed)."
+      }
+    ]
   },
   "MI-07": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Specific armour: an Expert Do-maru with Potency I and Harmony at the printed figures (B9-9). The printed DB +0 against Potency I's +1 is noted for the GM."
+    "note": "Specific armour: an Expert Do-maru with Potency I and Harmony at the printed figures (B9-9). The printed DB +0 against Potency I's +1 is noted for the GM.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.2.md",
+        "quote": "one card, \"Harmonious Do-maru — Harmony: The rune's minute is up.\""
+      }
+    ]
   },
   "MI-08": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Registered rune centredWeapon: its own ladder (C12)."
+    "note": "Registered rune centredWeapon: its own ladder (C12).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "The Refocus took the advantage and Spiritblade's Centred II +2 item."
+      }
+    ]
   },
   "MI-09": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "criticalAdvantage (C5): asked before the injury roll; advantage, cancelling a minor critical's disadvantage (B9-3)."
+    "note": "criticalAdvantage (C5): asked before the injury roll; advantage, cancelling a minor critical's disadvantage (B9-3).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "**Harmony Edge:** asked on a minor critical. The card said the advantage cancels the critical's disadvantage, and the reaction was spent."
+      }
+    ]
   },
   "MI-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "The v1.2 text is printed (beside an image; the audit's B9-4 misread it): Engage (Focus) offers +Wisdom on the next attack roll, spent when ticked, lifted at your next turn (3.673.0 C7b)."
+    "note": "The v1.2 text is printed (beside an image; the audit's B9-4 misread it): Engage (Focus) offers +Wisdom on the next attack roll, spent when ticked, lifted at your next turn (3.673.0 C7b).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "An offered +4 (Wisdom) tick on the next attack, with `conditionExpiresRound` 2."
+      }
+    ]
   },
   "MI-11": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "A registered energy rune (C6): Command on and off; 1d6/2d6/3d6 force, secondary critical -40/-20 at II/III (B9-2)."
+    "note": "A registered energy rune (C6): Command on and off; 1d6/2d6/3d6 force, secondary critical -40/-20 at II/III (B9-2).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "Soulful's 2d6 force, with its −40 secondary critical on the Force table."
+      }
+    ]
   },
   "MI-12": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Engage (Focus): +2 status to the next ranged attack and a 1d6 precision rider beyond 30 ft (C7), spent by that Strike."
+    "note": "Engage (Focus): +2 status to the next ranged attack and a 1d6 precision rider beyond 30 ft (C7), spent by that Strike.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "On a hit at 35 ft it dealt 1d6 precision as piercing."
+      }
+    ]
   },
   "MI-13": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Specific weapon: a Master Nodachi (1d10 bare, B9-8) with Balanced, Potency III, Centred II and Soulful Strike II; Fear (DC 20) offered on a critical (Command, 1 AP)."
+    "note": "Specific weapon: a Master Nodachi (1d10 bare, B9-8) with Balanced, Potency III, Centred II and Soulful Strike II; Fear (DC 20) offered on a critical (Command, 1 AP).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "A critical offered Fear (DC 20), cast at the item's PP."
+      }
+    ]
   },
   "MI-14": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Invested +1 status Wisdom; its Use readies advantage on the next Refocus that day (interpretation 4)."
+    "note": "Invested +1 status Wisdom; its Use readies advantage on the next Refocus that day (interpretation 4).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "The Use queued advantage on the next Refocus; a second Use the same day was refused."
+      }
+    ]
   },
   "MI-15": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use (Interact, 2 AP, daily): temp HP = level, fear and charm effects end, advantage on such saves for 1 hour; a second elixir in a day from any bottle rolls a serious poison critical first (B9-6)."
+    "note": "Use (Interact, 2 AP, daily): temp HP = level, fear and charm effects end, advantage on such saves for 1 hour; a second elixir in a day from any bottle rolls a serious poison critical first (B9-6).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "Frightened 2 and a Charm-sourced effect ended; a Blessing was kept."
+      }
+    ]
   },
   "MI-16": {
     "status": "Implemented",
@@ -1857,27 +3199,57 @@
   "MI-17": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Use burns one Incense and lights it for 1 hour; a 30-ft aura while lit (C9, B9-7) for every creature: +1 resistance Will vs fear/charm, +2 status Meditation offered."
+    "note": "Use burns one Incense and lights it for 1 hour; a 30-ft aura while lit (C9, B9-7) for every creature: +1 resistance Will vs fear/charm, +2 status Meditation offered.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "The aura reached the Monk himself, Foe A (as an enemy effect) and the Archer. It did not reach Foe B at 45 ft."
+      }
+    ]
   },
   "MI-18": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "+2 status Meditation offered while in use; Use (10 minutes, daily) releases Cure or Restoration at 8 PP from the mat (3.673.0 C11)."
+    "note": "+2 status Meditation offered while in use; Use (10 minutes, daily) releases Cure or Restoration at 8 PP from the mat (3.673.0 C11).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "**Restorative Mat:** released Cure at the item's 8 PP and healed 10; the daily use was marked."
+      }
+    ]
   },
   "MI-19": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Invested +1 dodge DB; +2 resistance vs fear; Use (daily): a minute's advantage on one save, offered and spent when ticked."
+    "note": "Invested +1 dodge DB; +2 resistance vs fear; Use (daily): a minute's advantage on one save, offered and spent when ticked.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.2.md",
+        "quote": "**A forced Reflex save** rolled at advantage (6 and 7, the 7 taken), and the Sash's effect was deleted."
+      }
+    ]
   },
   "MI-20": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "registerCreateRoute (C8): Meditation through Create for a holder of Inner Discipline, +2 DC, the item types Magical; the technique/innate spell, the no-charged-item rule and the normal requirements are ticks (B9-5)."
+    "note": "registerCreateRoute (C8): Meditation through Create for a holder of Inner Discipline, +2 DC, the item types Magical; the technique/innate spell, the no-charged-item rule and the normal requirements are ticks (B9-5).",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "With Inner Discipline, Create offers Meditation, with Magical Item the only type."
+      }
+    ]
   },
   "AP-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "World setting 'Aging (Appendix)', on by default (B9-10): an 'Age: <Category>' effect from the sheet's age and race; the GM's Natural Lifespan on the sheet; Age Resistance suppresses the physical penalties; HP and the skill budget untouched (C10, B9-11); the GM is told when a lifespan is reached."
+    "note": "World setting 'Aging (Appendix)', on by default (B9-10): an 'Age: <Category>' effect from the sheet's age and race; the GM's Natural Lifespan on the sheet; Age Resistance suppresses the physical penalties; HP and the skill budget untouched (C10, B9-11); the GM is told when a lifespan is reached.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "At 50: \"Age: Middle Aged\" (−1 Strength, Dexterity and Constitution; +1 Intelligence, Wisdom and Charisma)."
+      }
+    ]
   },
   "AP-02": {
     "status": "Implemented",
@@ -1887,22 +3259,58 @@
   "FA-02": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Dragon Tamer (it-feats, Archetype): its Use checks Inner Discipline, 8 Arcana ranks, the Dragon Lore specialist skill (B10-11) and a bonded egg, then hatches the dragon as the dragon companion kind (TRG Prime 3.674.0 C1/C2). Progression Arcana +10 ranks is the core's archetype rule. With a dragon bonded, the Use is the GM's separation/reunion toggle."
+    "note": "Dragon Tamer (it-feats, Archetype): its Use checks Inner Discipline, 8 Arcana ranks, the Dragon Lore specialist skill (B10-11) and a bonded egg, then hatches the dragon as the dragon companion kind (TRG Prime 3.674.0 C1/C2). Progression Arcana +10 ranks is the core's archetype rule. With a dragon bonded, the Use is the GM's separation/reunion toggle.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.1.md",
+        "quote": "Test PC 1 (who may not create actors) used Dragon Tamer. The GM's client created the dragon, and the player owns it and filled it in."
+      },
+      {
+        "report": "live-testing-report-3.674.2.md",
+        "quote": "**Test PC 1 pressed Use on Dragon Tamer** (`useFeat`, the sheet's path)."
+      }
+    ]
   },
   "DC-01": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Dragon eggs (it-dragons gear, itDragonEgg flag): each daily preparation while carried counts a day of bonding (a table without a world clock too); a second preparation on a day the clock has moved into is refused, and said. Ready at 28 (GM may raise). The hour's meditation is the player's."
+    "note": "Dragon eggs (it-dragons gear, itDragonEgg flag): each daily preparation while carried counts a day of bonding (a table without a world clock too); a second preparation on a day the clock has moved into is refused, and said. Ready at 28 (GM may raise). The hour's meditation is the player's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "Alertness and Iron Will are on it, the egg is consumed, and High Magic and the repertoire are set."
+      },
+      {
+        "report": "live-testing-report-3.674.1.md",
+        "quote": "Test PC 1 (who may not create actors) used Dragon Tamer. The GM's client created the dragon, and the player owns it and filled it in."
+      }
+    ]
   },
   "DC-02": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Dragon Companion class (it-dragons, rows 1-30) with the Dragon Companion Table on it; registerCompanionKind('dragon') — level = base + master's levels since hatching (C2), no size Str/Dex (C6), no ability points (C7); growth reconciled on every level change: grownSize (C3), land/fly/ability increments. DB is the printed block's: the system's creature rule (half level other, class bonus - 2 status; Graham 28 Oct). Earth dragon does not fly (B10-4)."
+    "note": "Dragon Companion class (it-dragons, rows 1-30) with the Dragon Companion Table on it; registerCompanionKind('dragon') — level = base + master's levels since hatching (C2), no size Str/Dex (C6), no ability points (C7); growth reconciled on every level change: grownSize (C3), land/fly/ability increments. DB is the printed block's: the system's creature rule (half level other, class bonus - 2 status; Graham 28 Oct). Earth dragon does not fly (B10-4).",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "The master went from level 9 to 15, so the dragon went from 4 to 10 (Base +6). The dragon is Large with a 2×2 token."
+      }
+    ]
   },
   "DC-03": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Cold Dragon race item: printed scores, size, speeds, natural armour (printed DR / DR multiplier), senses, breath, High Magic, bite + claws; ranks, feats, languages, immunities set at hatching."
+    "note": "Cold Dragon race item: printed scores, size, speeds, natural armour (printed DR / DR multiplier), senses, breath, High Magic, bite + claws; ranks, feats, languages, immunities set at hatching.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "A cold dragon at level 4 matches its block: max HP 76, Fort 11 / Ref 12 / Will 14, Initiative +30, PP 18, DR 4"
+      },
+      {
+        "report": "live-testing-report-3.674.1.md",
+        "quote": "| **F5** DB | 19 at level 4 (the printed block)."
+      }
+    ]
   },
   "DC-04": {
     "status": "Implemented",
@@ -1937,7 +3345,17 @@
   "DC-10": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Breath: a 2 AP Focus area (it-abilities), basic Reflex at the level DC, a die a level (C5); the copy's intro grows with the table and opts out of codex inheritance (1.0.1)."
+    "note": "Breath: a 2 AP Focus area (it-abilities), basic Reflex at the level DC, a die a level (C5); the copy's intro grows with the table and opts out of codex inheritance (1.0.1).",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "| **Breath** | 10d8 cold, basic Reflex at DC 24 (the level DC), 2 AP. The Focus use was spent (\"Refocus restores it\"). |"
+      },
+      {
+        "report": "live-testing-report-3.674.1.md",
+        "quote": "| **F4** Breath length | At Base +6 the breath reads \"A 30-foot cone\"; its copy opts out of codex inheritance. |"
+      }
+    ]
   },
   "DC-11": {
     "status": "Implemented",
@@ -1947,12 +3365,24 @@
   "DC-12": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Deflecting Wings: a registered defence offer for a Large+ dragon with the feat — +2 circumstance DB for one attack, spends the reaction."
+    "note": "Deflecting Wings: a registered defence offer for a Large+ dragon with the feat — +2 circumstance DB for one attack, spends the reaction.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "DB went from 31 to 33 against that attack, and the effect was gone after it."
+      }
+    ]
   },
   "DC-13": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Draconic Spell: Use picks an arcane spell, added innate with the Focus trait (one use); repeatable."
+    "note": "Draconic Spell: Use picks an arcane spell, added innate with the Focus trait (one use); repeatable.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "| **Draconic Spell** | Offered 345 arcane spells and no divine ones. Acid Bolt became innate with Focus, one use, ready. |"
+      }
+    ]
   },
   "DC-14": {
     "status": "Implemented",
@@ -1967,6 +3397,149 @@
   "DC-16": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Death automated (acting GM, whenever Dying or the dead skull changes, and the kill hook): Soul Drain = level held by the bond (C8), Refocus -2, a point back each 7 days (clock or daily preparations, whichever is more). Restoration recorded when the skull lifts; within a week it re-bonds at the next daily preparation, after a week the insanity is announced once. Fully recovered, the bond is closed for good (never laid twice). Separation/reunion a GM toggle (half level, held). Feats re-spent are the GM's."
+    "note": "Death automated (acting GM, whenever Dying or the dead skull changes, and the kill hook): Soul Drain = level held by the bond (C8), Refocus -2, a point back each 7 days (clock or daily preparations, whichever is more). Restoration recorded when the skull lifts; within a week it re-bonds at the next daily preparation, after a week the insanity is announced once. Fully recovered, the bond is closed for good (never laid twice). Separation/reunion a GM toggle (half level, held). Feats re-spent are the GM's.",
+    "live": [
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "| **Death** | The dragon dying past its Death State laid Soul Drain 10 on the master, held, and Refocus Hard. The card said so. |"
+      },
+      {
+        "report": "live-testing-report-3.674.0.md",
+        "quote": "| **Separation (GM)** | Soul Drain 5 (half of 10), held; Refocus Hard. |"
+      }
+    ]
+  },
+  "SYS-02": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Core Refocus (Ch7 ladder) used as is; no module copy. Every block's Focus abilities restore through it (verify-block1 to 10).",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.6.0.md",
+        "quote": "the dice came out a Fumble, and the outcome read \"the first Refocus today is a critical without the need for a roll"
+      },
+      {
+        "report": "live-testing-report-3.669.1.md",
+        "quote": "restored Orb Of Fire (1 / 1)."
+      }
+    ]
+  },
+  "SYS-12": {
+    "status": "Implemented",
+    "achieved": "C",
+    "note": "Built in Block 9 (0.10.0, core 3.673.0) as the Monastic Items route to Create, not a skill substitution: Meditation, Hard (+2), Meditation ranks for the item level, no charged items; the item design stays the GM's. verify-block9 A.",
+    "live": [
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "With Inner Discipline, Create offers Meditation, with Magical Item the only type."
+      },
+      {
+        "report": "live-testing-report-3.673.0.md",
+        "quote": "DC 17 (15 + 2). The project stores `routeKey` monasticItems and `routeDC` 2."
+      }
+    ]
+  },
+  "RA-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "The races grant core Nightvision (Miraku, Ryukari, Tianzhi). verify-block1 A (each race's abilities)."
+  },
+  "RA-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Fluid Form: 1 AP toggle; the disguise effect carries advantage on Bluff, ticked when the Bluff supports it (module/automations.mjs). verify-block1.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Fluid Form | The effect is applied, and the Bluff advantage is offered as a tick | ✓ |"
+      }
+    ]
+  },
+  "RA-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Spirit Awareness: a skill conditional, automatic on Perception or Occultism aimed at a spirit or haunt. verify-block1 B."
+  },
+  "RA-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Scaled Hide: AE natural Base DR 1. verify-block1 A."
+  },
+  "RA-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Dragon-Bound Resolve: an automatic conditional on saves against fear. verify-block1 (race abilities)."
+  },
+  "RA-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Chitinous Carapace: AE natural Base DR 2 (v1.2); Kabuto's +1 applies after it. verify-block1 A."
+  },
+  "RA-07": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Compound Eyes: a Perception conditional ticked when the check relies on sight (the module cannot tell a visual check itself), so B, not the target A; the heritage tick to +2 (0.6.1). verify-block1, verify-block5 C and G1.",
+    "live": [
+      {
+        "report": "live-testing-report-3.669.2.md",
+        "quote": "**The Joro,** which has Compound Eyes but not the feat: still +1 and still inheriting from the pack."
+      },
+      {
+        "report": "live-testing-report-3.669.2.md",
+        "quote": "at Perception, Compound Eyes showed;"
+      }
+    ]
+  },
+  "RA-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Martial Affinity: +1 racial to attacks and DB, in a stance only. verify-block1 B.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Spirit Stance + Martial Affinity | Attacks: +1 racial (Martial Affinity) and +1 circumstance (Spirit Stance) against the Wraith | ✓ |"
+      }
+    ]
+  },
+  "RA-09": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Natural Chi: the chosen cantrip, innate, cast with Wisdom (spellChoice). verify-block1 B, verify-block5.",
+    "live": [
+      {
+        "report": "live-testing-report-it-0.1.0.md",
+        "quote": "| Natural Chi | The chooser offers Focus cantrips, and the pick is cast with Wisdom | ✓ |"
+      }
+    ]
+  },
+  "CL-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Every class's progression carries its bonus-feat column, and the bonus-feats paragraph is printed on the class. verify-block3 A, verify-block4 A."
+  },
+  "FC-14a": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Drunken Strike built in Block 6 (0.7.0). verify-block6.",
+    "live": [
+      {
+        "report": "live-testing-report-3.670.0.md",
+        "quote": "A hit at −2 circumstance. The Feint card: total 22 against \"Hard (DC +2)\" DC 20, with the attack's own die and modifiers. Success: the foe flat-footed."
+      },
+      {
+        "report": "live-testing-report-3.670.1.md",
+        "quote": "**Now:** the Feint resolved at that total, against \"Hard (DC +2)\" DC 20. Success: the foe flat-footed. No training warning."
+      }
+    ]
+  },
+  "SYS-09": {
+    "status": "Not started",
+    "achieved": null,
+    "note": "The rule text needs a journal entry, and the module has no journal pack. The mechanical half holds: only magical techniques and items carry a tradition trait."
+  },
+  "SYS-10": {
+    "status": "Not started",
+    "achieved": null,
+    "note": "Setting terminology with no mechanics; it needs a journal entry, and the module has no journal pack."
   }
 }

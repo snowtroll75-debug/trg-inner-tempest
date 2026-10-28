@@ -1,15 +1,16 @@
 # Inner Tempest — Automation Report
 
-_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. "Target" is the class each feature is planned at; "Shipped" is what the current build reaches. Harness-checked; live testing is Graham's, and nothing is marked Tested until it has been._
+_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. "Target" is the class each feature is planned at; "Shipped" is what the current build reaches. Harness-checked; a feature is marked tested live only where a live-testing report records it exercised in the running world._
 
 ## Shipped so far
 
-391 features shipped: A 233 · B 115 · C 19 · D 24. 3 more are in progress (support shipped, the feature that uses it to come).
+407 features shipped: A 244 · B 119 · C 20 · D 24. 0 more are in progress (support shipped, the feature that uses it to come).
 
 ### Shipped below target, and what would lift it
 
 | ID | Feature | Target | Shipped | Why |
 |---|---|---|---|---|
+| RA-07 | Compound Eyes (Scree) | A | B | Compound Eyes: a Perception conditional ticked when the check relies on sight (the module cannot tell a visual check itself), so B, not the target A; the heritage tick to +2 (0.6.1). verify-block1, verify-block5 C and G1. |
 | H-24 | Tsuchi | A | B | A Shove or Trip against a Tsuchi is rolled at disadvantage (Graham, 21 Oct 2026; core 3.665.0 defence row). Advantage on the Tsuchi's own prone/forced-movement checks and saves stays a tick. |
 | BG-10 | Spirit Warrior | A | B | When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative). |
 | BG-11 | Spiritwalker | A | B | When the race already gives Spirit Lore (Miraku), the background's Use asks for another Lore (Graham, 21 Oct 2026; core 3.665.0 specialistAlternative). |

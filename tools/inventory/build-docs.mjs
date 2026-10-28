@@ -73,13 +73,16 @@ export function withoutCore(row) {
 }
 /**
  * Delivery status, per row: tools/inventory/status.json maps an id to
- * {status, achieved, note}. `achieved` is the automation class the shipped
- * build reaches, which the report compares with the target.
+ * {status, achieved, note, live?}. `achieved` is the automation class the
+ * shipped build reaches, which the report compares with the target. `live`
+ * lists the live-testing reports that record the feature exercised in the
+ * running world, each {report, quote}; it is set only from a report.
  */
 export const STATUS = JSON.parse(fs.readFileSync(path.join(HERE, "status.json"), "utf8"));
+export const testedLive = (id) => Array.isArray(STATUS[id]?.live) && STATUS[id].live.length > 0;
 const statusFor = (row) => {
   const s = STATUS[row.id];
-  if (s) return s.achieved ? `${s.status} (${s.achieved})` : s.status;
+  if (s) return (s.achieved ? `${s.status} (${s.achieved})` : s.status) + (testedLive(row.id) ? " · tested live" : "");
   return row.blocker.match(/IT-C\d+/) ? `Blocked (${row.blocker.match(/IT-C\d+/g).join(", ")})` : "Not started";
 };
 const esc = (s) => String(s).replace(/\|/g, "/");
@@ -95,13 +98,13 @@ function matrix({ rows, sections }) {
   out.push("");
   out.push(`**Source:** TRG_Inner_Tempest_1_2.docx (v1.2), rulings of 20 Oct 2026. **Target system:** TRG Prime 3.664.0 + the remaining core dependencies in INNER_TEMPEST_CORE_DEPENDENCIES.md.`);
   out.push("");
-  out.push(`**${rows.length} features inventoried.** Target automation (with core dependencies): A ${counts.A} · B ${counts.B} · C ${counts.C} · D ${counts.D}. Blocked on a Critical ruling: ${blocked}. Implemented: ${rows.filter((r) => STATUS[r.id]?.status === "Implemented").length}. In progress: ${rows.filter((r) => STATUS[r.id]?.status === "In progress").length}. Tested live: 0.`);
+  out.push(`**${rows.length} features inventoried.** Target automation (with core dependencies): A ${counts.A} · B ${counts.B} · C ${counts.C} · D ${counts.D}. Blocked on a Critical ruling: ${blocked}. Implemented: ${rows.filter((r) => STATUS[r.id]?.status === "Implemented").length}. In progress: ${rows.filter((r) => STATUS[r.id]?.status === "In progress").length}. Tested live: ${rows.filter((r) => testedLive(r.id)).length} (see Live-test evidence at the end).`);
   out.push("");
   out.push("Legend:");
   out.push("- **Automation:** A = fully automated · B = automated with a user decision · C = partially automated (justified in the Automation Report) · D = manual or descriptive (justified).");
   out.push("- **Implementation:** PACK:<pack> = compendium entry · AE = transferred Active Effect · COND = conditional bonus · AUTO = registered feat automation · SA = registered skill action · RX = reaction (core D8) · STANCE = core stance helper (D7) · RIDER = strike damage rider · INNATE = granted innate spell · CHOICE = sub-pick (abilityChoices) · GRANT = levelled grant.");
   out.push("- **Blocker:** an audit entry (IT-…) that needs your ruling, or a core dependency (D…).");
-  out.push("- **Status:** Not started · In progress · Implemented · Tested · Blocked.");
+  out.push("- **Status:** Not started · In progress · Implemented · Blocked. **· tested live** is added where a live-testing report records the feature exercised in the running world.");
   out.push("");
   for (const section of sections) {
     const sr = rows.filter((r) => r.section === section);
@@ -115,6 +118,15 @@ function matrix({ rows, sections }) {
     }
     out.push("");
   }
+  const live = rows.filter((r) => testedLive(r.id));
+  out.push("## Live-test evidence");
+  out.push("");
+  out.push(`${live.length} of ${rows.length} features are recorded exercised in a live test. Every other feature is checked by its block's harness only. Each quote is copied from the report named.`);
+  out.push("");
+  out.push("| ID | Feature | Report | What the report records |");
+  out.push("|---|---|---|---|");
+  for (const r of live) for (const e of STATUS[r.id].live) out.push(`| ${r.id} | ${esc(r.feature)} | ${esc(e.report)} | ${esc(String(e.quote ?? "").replace(/\s+/g, " "))} |`);
+  out.push("");
   return out.join("\n");
 }
 
@@ -160,7 +172,7 @@ function report({ rows }) {
   const degraded = counts((r) => withoutCore(r));
   out.push("# Inner Tempest — Automation Report");
   out.push("");
-  out.push("_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. \"Target\" is the class each feature is planned at; \"Shipped\" is what the current build reaches. Harness-checked; live testing is Graham's, and nothing is marked Tested until it has been._");
+  out.push("_Generated from `tools/inventory/inventory.txt` and `tools/inventory/status.json`. \"Target\" is the class each feature is planned at; \"Shipped\" is what the current build reaches. Harness-checked; a feature is marked tested live only where a live-testing report records it exercised in the running world._");
   out.push("");
   const shipped = rows.filter((r) => STATUS[r.id]?.achieved);
   const reached = counts((r) => STATUS[r.id]?.achieved ?? "—");

@@ -13,6 +13,8 @@ This is the durable record that lets work resume across sessions. Update it at t
 - **Published with Graham's approval** ("Do the one line fix and then push"): core v3.674.1 (`7dcd229` 3.674.0, `95356e8` 3.674.1) and Inner Tempest v1.0.1 (`a489cb5`). Releases created by the workflows at 12:20Z.
 - **Republished as core 3.674.2 and Inner Tempest 1.0.2** (Graham: "update the version number of the two zips, otherwise it will not trigger updates"): the card fix had gone out under numbers already installed. Every pin moved; all suites green.
 - **Block 10 done.**
+- **Bookkeeping (Graham: "lets do the bookkeeping"):** the three "In progress" lines (SYS-04, SYS-13, SYS-11) closed as Implemented; twelve built features that had no status line recorded (RA-01 to RA-09, CL-06, FC-14a, SYS-02, and SYS-12, which is Block 9's Monastic Items route); SYS-09 and SYS-10 recorded Not started (they need a journal entry and there is no journal pack: Graham to decide). Implemented 407 of 409.
+- **Tested live is now counted, not fixed at 0:** a status line's `live` lists the reports that record the feature exercised in the world, each with a verbatim quote (checked against the report). 219 of 409; the matrix ends with the evidence table. Ten borderline cases left out (only partly seen, a tick never applied, or a fix never retested).
 
 ## Earlier — 27 Oct 2026 (session 7: Block 10 built — 1.0.0 on core 3.674.0)
 
