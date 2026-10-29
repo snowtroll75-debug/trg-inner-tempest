@@ -117,7 +117,7 @@ const MUTATIONS = [
   // versions
   { name: "the module accepts 3.669.2", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.669.2\";" },
   { name: "the manifest accepts 3.669.2", file: MANIFEST, from: "\"minimum\": \"3.674.2\"", to: "\"minimum\": \"3.669.2\"" },
-  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"1.0.3\"", to: "\"version\": \"0.6.2\"" }
+  { name: "the manifest says 0.6.2", file: MANIFEST, from: "\"version\": \"1.0.4\"", to: "\"version\": \"0.6.2\"" }
 ];
 
 const originals = new Map();

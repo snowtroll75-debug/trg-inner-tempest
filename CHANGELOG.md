@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.4 — 29 Oct 2026 (one compendium folder)
+
+Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.4.md`.
+
+- **The fifteen compendiums sit in one "Inner Tempest" folder** (`packFolders`, as Pillars of Faith), in book order. No rules or content change.
+- **Harness:** `verify-block10` 119, `mutate-block10` 113; every block re-pinned to 1.0.4.
+
 ## 1.0.3 — 28 Oct 2026 (bookkeeping)
 
 Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.3.md`.

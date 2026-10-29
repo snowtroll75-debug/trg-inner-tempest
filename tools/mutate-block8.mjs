@@ -94,7 +94,7 @@ const MUTATIONS = [
   { name: "the use before is never read", file: SCRIPT, from: "Hooks.on(\"preUpdateItem\", (item, changes, options) => { try { onPreUpdateItemB8(item, changes, options);", to: "Hooks.on(\"preUpdateItem\", (item, changes, options) => { try { void 0;" },
   { name: "the module takes TRG Prime 3.671.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.671.1\";" },
   { name: "the manifest accepts 3.671.1", file: MANIFEST, from: "\"minimum\": \"3.674.2\"", to: "\"minimum\": \"3.671.1\"" },
-  { name: "the download names the last release", file: MANIFEST, from: "releases/download/v1.0.3/", to: "releases/download/v1.0.2/" },
+  { name: "the download names the last release", file: MANIFEST, from: "releases/download/v1.0.4/", to: "releases/download/v1.0.3/" },
   { name: "Water Bolt's status line is missing", file: STATUS, from: "  \"SP-25\": {", to: "  \"SP-25x\": {" }
 ];
 

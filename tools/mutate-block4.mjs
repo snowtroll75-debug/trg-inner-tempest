@@ -90,7 +90,7 @@ const MUTATIONS = [
   { name: "the turn-start work never runs", file: SCRIPT, from: "Hooks.on(\"trgPrimeTurnEnded\", (ctx) => { onTurnEndedB4(ctx)", to: "Hooks.on(\"trgPrimeTurnStarted\", (ctx) => { onTurnEndedB4(ctx)" },
   { name: "Block 4's socket is never registered", file: SCRIPT, from: "  registerBlock4Socket();\n", to: "" },
   { name: "the module accepts 3.667.4", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.667.4\";" },
-  { name: "the manifest says 0.5.0", file: MANIFEST, from: "\"version\": \"1.0.3\"", to: "\"version\": \"0.5.1\"" },
+  { name: "the manifest says 0.5.0", file: MANIFEST, from: "\"version\": \"1.0.4\"", to: "\"version\": \"0.5.1\"" },
   { name: "Flow Strike is offered after a Flourish was spent", file: A, from: "  const quiet = await h().traitCheck(attacker, action);\n  if (quiet?.blocked) return;\n  const gale", to: "  const gale" },
   { name: "Flow Strike counts towards the penalty", file: A, from: "mapOverride: penalty, mapFrozen: true,", to: "mapOverride: penalty, mapFrozen: false," },
   { name: "Steel Viper deals the miss in full", file: A, from: "preset: { glancing: true, targetToken: tokenOf(target)", to: "preset: { glancing: false, targetToken: tokenOf(target)" },

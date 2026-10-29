@@ -2,7 +2,7 @@
   "id": "trg-inner-tempest",
   "title": "TRG Prime: Inner Tempest",
   "description": "The Inner Tempest sourcebook for TRG Prime: four races (Miraku, Ryukari, Scree, Tianzhi) and their heritages, eleven monastic backgrounds, five classes (Disciple, Ghostwalker, Kensai, Mystic, Oathblade) built on the Focus trait, skill actions, feats, archetypes, Dragon Companions, monastic gear, the Grimoire and magic items. Block 1: the races, heritages, racial abilities, backgrounds and General feats. Block 2 (0.3.0): the seventeen Chapter 4 skill actions. Block 3 (0.4.0): the Disciple and the Mystic, the Monastic Paths, the Mystical Disciplines, Inner Discipline and the Technique feats, and the Grimoire spells the disciplines grant. Block 4 (0.5.0): the Ghostwalker, the Kensai and the Oathblade, and Chapter 6's weapons. Block 5 (0.6.0): the racial feats. Block 6 (0.7.0): the remaining class feats (the eight Disciple and Mystic stances, Elemental Fist, Inner Magic, Mystic Essence, Perfect Shot, Perfect Strike, Stunning Fist) and the core class feats opened to the five classes. Block 7 (0.8.0): the archetypes (twenty; Dragon Tamer comes with the Dragon Companions) and the core archetypes opened to the five classes. Block 8 (0.9.0): the Grimoire's other thirteen spells (Ability Inversion, Acidic Touch, Age Resistance, Arrows Flight, Boundless Vision, Disrupt Soul, False Future, Flowing Step, Foretell Failure, Root, Skyborne Pathways, Spiritual Distraction, Tranquil Mastery), and Burst of Speed, Timeless Motion and Water Bolt finished. Block 9 (0.10.0): Chapter 6's armour (Haramaki, Shozoku, Kikko, Do-maru, Kusari, Tatami-Do, Yoroi, Oni-Mask, Jingasa); Chapter 9's magic items — eleven runes, the Harmonious Do-maru and the Spiritblade, six wondrous items and Incense — and Monastic Items crafting; and the Appendix's aging rules.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": {
     "minimum": "14",
     "verified": "14.367"
@@ -204,6 +204,29 @@
       "system": "trg-prime"
     }
   ],
+  "packFolders": [
+    {
+      "name": "Inner Tempest",
+      "sorting": "m",
+      "packs": [
+        "it-races",
+        "it-heritages",
+        "it-backgrounds",
+        "it-classes",
+        "it-abilities",
+        "it-feats",
+        "it-spells",
+        "it-gear",
+        "it-companions",
+        "it-dragons",
+        "it-armour",
+        "it-weapons",
+        "it-runes",
+        "it-specific-items",
+        "it-wondrous"
+      ]
+    }
+  ],
   "flags": {
     "trg-prime": {
       "sourcebook": "Inner Tempest"
@@ -212,5 +235,5 @@
   "socket": true,
   "url": "https://github.com/snowtroll75-debug/trg-inner-tempest",
   "manifest": "https://raw.githubusercontent.com/snowtroll75-debug/trg-inner-tempest/main/module.json",
-  "download": "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.3/trg-inner-tempest.zip"
+  "download": "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.4/trg-inner-tempest.zip"
 }

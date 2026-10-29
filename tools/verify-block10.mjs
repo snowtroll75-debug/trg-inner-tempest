@@ -674,9 +674,19 @@ ok("E the hooks: a level change, daily preparation, the kill hook, Dying or the 
   && /Hooks\.on\("trgPrimeCreatureSlain", \(ctx\) => \{ onCreatureSlainB10\(ctx\)/.test(script) && /for \(const hook of \["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"\]\) Hooks\.on\(hook, \(effect\) => \{ onEffectChangedB10\(effect\)/.test(script)
   && /Hooks\.on\("createItem", \(item, options, userId\) => \{ try \{ onItemCreatedB10\(item, options, userId\);/.test(script) && /reconcileAllDragons\(\)\.catch/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.0.3, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.0.3", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.3/trg-inner-tempest.zip"]);
+equal("E the module is 1.0.4, built for 3.674.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.0.4", "3.674.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.0.4/trg-inner-tempest.zip"]);
 ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.674.2";'));
+// ONE ROOT FOLDER (1.0.4; Graham, 29 Oct 2026: "dropping all of the options in
+// the compendium without a root folder (like the other books such as pillars
+// of faith are doing)"). Every pack sits under "Inner Tempest", once.
+{
+  const folders = manifest.packFolders ?? [];
+  const listed = folders.flatMap((f) => f.packs ?? []);
+  equal("E the manifest files every pack under one Inner Tempest folder, each once",
+    [folders.map((f) => f.name), listed.length, [...listed].sort()],
+    [["Inner Tempest"], manifest.packs.length, manifest.packs.map((p) => p.name).sort()]);
+}
 {
   const [sa, sb, sc] = String(systemJson.version).split(".").map(Number);
   ok("E the system at TRG_PRIME_ROOT is 3.674.2 or later", sa > 3 || (sa === 3 && (sb > 674 || (sb === 674 && sc >= 2))), systemJson.version);
@@ -698,7 +708,7 @@ ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTE
   ok("E the inventory files the base dragons under it-dragons", /^DC-03\|[^\n]*\|PACK:it-dragons race item\|/m.test(fs.readFileSync(path.join(ROOT, "tools", "inventory", "inventory.txt"), "utf8")));
 }
 
-const EXPECTED = 118;
+const EXPECTED = 119;
 equal("Z the suite ran every check it is meant to", checks + 1, EXPECTED);
 if (failures.length) { console.log(`verify-block10: ${checks} checks — ${failures.length} FAILED\n`); for (const x of failures) console.log(`  ✗ ${x}`); process.exitCode = 1; }
 else console.log(`verify-block10: ${checks} checks — all green.`);

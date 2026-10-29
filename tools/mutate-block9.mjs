@@ -116,7 +116,7 @@ const MUTATIONS = [
   { name: "the sheet's age change is not heard", file: SCRIPT, from: "Hooks.on(\"updateActor\", (actor, changes) => { onActorUpdatedAging(actor, changes)", to: "Hooks.on(\"updateActorX\", (actor, changes) => { onActorUpdatedAging(actor, changes)" },
   { name: "the module accepts 3.672.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.672.1\";" },
   { name: "the manifest accepts 3.672.1", file: MANIFEST, from: "\"minimum\": \"3.674.2\"", to: "\"minimum\": \"3.672.1\"" },
-  { name: "the manifest says 0.9.1", file: MANIFEST, from: "\"version\": \"1.0.3\"", to: "\"version\": \"0.9.1\"" },
+  { name: "the manifest says 0.9.1", file: MANIFEST, from: "\"version\": \"1.0.4\"", to: "\"version\": \"0.9.1\"" },
   { name: "the wondrous pack extends the gear pack", file: FOUND, from: "extends: \"wondrous\", docs: BLOCK9_WONDROUS", to: "extends: \"gear\", docs: BLOCK9_WONDROUS" },
   { name: "Monastic Items' status line is missing", file: STATUS, from: "\"MI-20\": {", to: "\"MI-20X\": {" },
   { name: "Monastic Items' inventory line is missing", file: INV, from: "MI-20|Ch9 p79|Monastic Items (crafting)|", to: "MI-2O|Ch9 p79|Monastic Items (crafting)|" },
