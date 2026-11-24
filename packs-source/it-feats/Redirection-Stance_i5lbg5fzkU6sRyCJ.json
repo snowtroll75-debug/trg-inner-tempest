@@ -1,0 +1,49 @@
+{
+  "_id": "i5lbg5fzkU6sRyCJ",
+  "name": "Redirection Stance",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 10 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS GYMNAST STANCE</strong></p>\n<p><em>Your entire form becomes a reactive defence, slipping and guiding enemies away from your centre.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 10 ranks</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>While in this stance:</p>\n<p>- When a creature misses you with a melee attack, you may spend your Reaction to cause them to become Flat-Footed until the end of their next turn.</p>\n<p>- If they fumble the attack against you, you may also attempt a free Trip check against them.</p>\n<p><em>Automated:</em> press <strong>Use</strong> to enter the stance: 1 AP, under the system's stance rules (one stance at a time, two with Stance Mastery). While in it, when a creature misses you with a melee attack you are asked whether to spend your reaction: it is then flat-footed until the end of its next turn. If the attack was a fumble you may also make a Trip against it, free (no AP, no further reaction), through the system's own Trip.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Gymnast, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "redirectionStance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!i5lbg5fzkU6sRyCJ"
+}

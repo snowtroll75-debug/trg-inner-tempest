@@ -1,0 +1,87 @@
+{
+  "_id": "NJO3sY9Hu80ngECz",
+  "name": "Effortless Motion",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 10 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS EXPERT</strong></p>\n<p><em>Your movement never breaks—each pivot, each stride, a fluid continuation of the last.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 10 ranks</p>\n<p>You may take one Step action per round as Free Actions. Furthermore, you gain Advantage on Acrobatics checks made during or as part of movement.</p>\n<p><em>Automated:</em> press <strong>Use</strong> for your free Step: once a round in combat, no AP, provoking no reactions, at your Step's length on your land Speed (drag the token). Advantage is applied for you on every Acrobatics action with the Movement trait (Tumble, Balance, a jump made with Acrobatics …), and offered as a tick on any other Acrobatics check made during movement.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Expert",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "effortlessMotion",
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Effortless Motion",
+          "scope": "Acrobatics checks made as part of movement",
+          "auto": true,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "acrobatics"
+            ],
+            "traits": [
+              "movement"
+            ]
+          }
+        },
+        {
+          "kind": "advantage",
+          "label": "Effortless Motion",
+          "scope": "An Acrobatics check made during movement — tick if this one is",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill"
+            ],
+            "subjects": [
+              "acrobatics"
+            ],
+            "not": {
+              "traits": [
+                "movement"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NJO3sY9Hu80ngECz"
+}

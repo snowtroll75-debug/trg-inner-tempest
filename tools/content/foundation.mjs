@@ -29,6 +29,7 @@ import { BLOCK8_SPELLS } from "./block8.mjs";
 import { CHAPTER6_WEAPONS } from "./weapons.mjs";
 import { BLOCK9_ARMOUR, BLOCK9_RUNES, BLOCK9_SPECIFIC, BLOCK9_WONDROUS, BLOCK9_GEAR } from "./block9.mjs";
 import { BLOCK10_DRAGONS, BLOCK10_NATURAL_ATTACKS, BLOCK10_ABILITIES, BLOCK10_FEATS } from "./block10.mjs";
+import { BLOCK11_FEATS } from "./block11.mjs";
 import { md } from "./markdown.mjs";
 
 const text = JSON.parse(fs.readFileSync(new URL("./book-text.json", import.meta.url), "utf8"));
@@ -497,7 +498,7 @@ export const PACKS = [
   { name: "it-backgrounds", label: "Inner Tempest: Backgrounds", extends: "backgrounds", docs: BACKGROUNDS },
   { name: "it-abilities", label: "Inner Tempest: Abilities", extends: "abilities", docs: [...ABILITIES, ...BLOCK3_ABILITIES, ...BLOCK4_ABILITIES, ...BLOCK6_ABILITIES, ...BLOCK7_ABILITIES, ...BLOCK10_ABILITIES] },
   // Block 5 (0.6.0): the 47 racial feats of Chapter 5.
-  { name: "it-feats", label: "Inner Tempest: Feats", extends: "feats", docs: [...GENERAL_FEATS, ...BLOCK3_FEATS, ...BLOCK4_FEATS, ...BLOCK5_FEATS, ...BLOCK6_FEATS, ...BLOCK7_FEATS, ...BLOCK10_FEATS] },
+  { name: "it-feats", label: "Inner Tempest: Feats", extends: "feats", docs: [...GENERAL_FEATS, ...BLOCK3_FEATS, ...BLOCK4_FEATS, ...BLOCK5_FEATS, ...BLOCK6_FEATS, ...BLOCK7_FEATS, ...BLOCK10_FEATS, ...BLOCK11_FEATS] },
   // Block 3 (0.4.0): the Disciple and the Mystic, and the Grimoire spells
   // the Mystical Disciplines grant.
   { name: "it-classes", label: "Inner Tempest: Classes", extends: "classes", docs: [...BLOCK3_CLASSES, ...BLOCK4_CLASSES] },

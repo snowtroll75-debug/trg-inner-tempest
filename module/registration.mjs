@@ -20,6 +20,7 @@ import { BLOCK7_AUTOMATIONS, BLOCK7_CLASS_SKILL_GRANTS, BLOCK7_ARCHETYPES } from
 import { spiritualDistractionGate } from "./block8-automations.mjs";
 import { registerBlock9 } from "./block9-automations.mjs";
 import { registerBlock10 } from "./block10-automations.mjs";
+import { registerBlock11 } from "./block11-automations.mjs";
 
 /** Block 3 (0.4.0): the two classes' proficiency and Chapter 6 class wealth. */
 export const CLASS_REGISTRATIONS = {
@@ -218,4 +219,8 @@ export function registerContent(api, moduleId) {
   // BLOCK 10 (1.0.0, on TRG Prime 3.674.0): the dragon companion kind (C1),
   // Dragon Tamer, and the companion feats' Uses and reaction.
   registerBlock10(api, moduleId);
+  // BLOCK 11 (1.1.0, on TRG Prime 3.712.1): the nine Gymnast expansion feats
+  // of v1.4 — their Uses, Vaulting Momentum's Acrobatics jumps and its
+  // Gymnast trait (the core's General picker gates no archetype trait).
+  registerBlock11(api, moduleId);
 }

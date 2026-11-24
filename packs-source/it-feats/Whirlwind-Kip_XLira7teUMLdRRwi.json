@@ -1,0 +1,49 @@
+{
+  "_id": "XLira7teUMLdRRwi",
+  "name": "Whirlwind Kip",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 10 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS GYMNAST STANCE</strong></p>\n<p><em>You flow from spin to strike like a cyclone of limbs and grace.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 10 ranks</p>\n<p><strong>Action</strong> 1 AP</p>\n<p>While in this stance:</p>\n<p>- If you critically succeed on a Tumble or Escape check, you may make a Strike action as a reaction.</p>\n<p>- You gain a +2-circumstance bonus to DB against opportunity attacks.</p>\n<p><em>Partly automated:</em> press <strong>Use</strong> to enter the stance: 1 AP, under the system's stance rules. While in it, a critical success on a Tumble or Escape check asks whether to spend your reaction on a Strike (the multiple attack penalty as for any Strike on your turn). The +2 circumstance to your DB against attacks of opportunity is for the GM to add by hand: the system's defence rows cannot yet tell an attack of opportunity from another Strike (Block 11 audit, B11-6).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Gymnast, Stance",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "whirlwindKip"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!XLira7teUMLdRRwi"
+}

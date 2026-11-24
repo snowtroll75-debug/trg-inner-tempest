@@ -3541,5 +3541,50 @@
     "status": "Not started",
     "achieved": null,
     "note": "Setting terminology with no mechanics; it needs a journal entry, and the module has no journal pack."
+  },
+  "GX-01": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0)"
+  },
+  "GX-02": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Block 11 (1.1.0); ruling wanted (B11-1)"
+  },
+  "GX-03": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Block 11 (1.1.0); ruling wanted (B11-2)"
+  },
+  "GX-04": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0); ruling wanted (B11-3)"
+  },
+  "GX-05": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0); ruling wanted (B11-4)"
+  },
+  "GX-06": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0)"
+  },
+  "GX-07": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0)"
+  },
+  "GX-08": {
+    "status": "Implemented",
+    "achieved": "A",
+    "note": "Block 11 (1.1.0)"
+  },
+  "GX-09": {
+    "status": "Implemented",
+    "achieved": "B",
+    "note": "Block 11 (1.1.0); ruling wanted (B11-6)"
   }
 }

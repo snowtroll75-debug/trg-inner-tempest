@@ -1,0 +1,49 @@
+{
+  "_id": "AaPi5ddcRUCedmfB",
+  "name": "Pinnacle of Motion",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 16 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS GYMNAST</strong></p>\n<p><em>Your body becomes a blur of untouchable perfection—a blur that strikes before it is seen.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 16 ranks</p>\n<p>You may use Tumble (Acrobatics) as a Free Action once per round. When you succeed at a Tumble check, the target becomes Flat-Footed against all your attacks until the end of your turn. If you critically hit a Flat-Footed (from this ability) creature, you may make an additional unarmed Strike as a Reaction (1/round) using your current multiple attack penalty.</p>\n<p><em>Automated:</em> press <strong>Use</strong> for your free Tumble: once a round in combat, no AP (target the creature first). After any successful Tumble, the creature is flat-footed to <strong>your</strong> attacks alone until the end of your turn: its Dexterity and dodge are paid as a bonus on your Strikes against it, as the core pays every \"flat-footed to you\". When you critically hit it while that lasts, you are asked whether to spend your reaction on one unarmed Strike against it (once a round), at your current multiple attack penalty, which it does not raise.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Gymnast",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "pinnacleOfMotion"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AaPi5ddcRUCedmfB"
+}

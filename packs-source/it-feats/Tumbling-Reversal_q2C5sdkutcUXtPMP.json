@@ -1,0 +1,45 @@
+{
+  "_id": "q2C5sdkutcUXtPMP",
+  "name": "Tumbling Reversal",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 4 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS GYMNAST</strong></p>\n<p><em>You let enemy momentum work against them, slipping past and striking when they overcommit.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 4 ranks</p>\n<p>When you succeed at a Tumble (Acrobatics) check, you gain a +1-circumstance bonus to attack rolls against that creature until the end of your turn.</p>\n<p>If your Tumble Through result is a critical, your next attack against that creature gains Advantage.</p>\n<p><em>Automated:</em> after a successful Tumble against a creature: +1 circumstance to your attacks against it until the end of your turn; after a critical one, advantage on your next attack against it as well, spent by that attack. Both applied for you, and gone at the end of your turn.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Gymnast",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!q2C5sdkutcUXtPMP"
+}

@@ -132,13 +132,13 @@ const MUTATIONS = [
   { name: "no growth on a level change", file: SCRIPT, from: "Hooks.on(\"updateActor\", (actor, changes) => { onActorUpdatedB10(actor, changes)", to: "Hooks.on(\"updateToken\", (actor, changes) => { onActorUpdatedB10(actor, changes)" },
   { name: "no death on the skull or Dying lifting", file: SCRIPT, from: "for (const hook of [\"createActiveEffect\", \"updateActiveEffect\", \"deleteActiveEffect\"]) Hooks.on", to: "for (const hook of [\"createActiveEffect\", \"updateActiveEffect\"]) Hooks.on" },
   { name: "the world's dragons are not brought into step", file: SCRIPT, from: "    reconcileAllDragons().catch", to: "    Promise.resolve().catch" },
-  { name: "the module accepts 3.674.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.674.2\";", to: "const REQUIRED_SYSTEM = \"3.674.1\";" },
-  { name: "the manifest accepts 3.674.1", file: MANIFEST, from: "\"minimum\": \"3.674.2\"", to: "\"minimum\": \"3.674.1\"" },
-  { name: "the manifest says 1.0.3", file: MANIFEST, from: "\"version\": \"1.0.4\"", to: "\"version\": \"1.0.3\"" },
+  { name: "the module accepts 3.674.1", file: SCRIPT, from: "const REQUIRED_SYSTEM = \"3.712.1\";", to: "const REQUIRED_SYSTEM = \"3.674.1\";" },
+  { name: "the manifest accepts 3.674.1", file: MANIFEST, from: "\"minimum\": \"3.712.1\"", to: "\"minimum\": \"3.674.1\"" },
+  { name: "the manifest says 1.0.3", file: MANIFEST, from: "\"version\": \"1.1.0\"", to: "\"version\": \"1.0.3\"" },
   { name: "THE DEFECT: the packs have no root folder", file: MANIFEST, from: "  \"packFolders\": [", to: "  \"packFoldersX\": [" },
   { name: "a pack is left out of the folder", file: MANIFEST, from: "        \"it-dragons\",\n", to: "" },
   { name: "the dragons' pack extends the companions", file: MANIFEST, from: "      \"path\": \"packs/it-dragons\",\n      \"type\": \"Item\",\n      \"system\": \"trg-prime\"\n", to: "      \"path\": \"packs/it-dragons\",\n      \"type\": \"Item\",\n      \"system\": \"trg-prime\",\n      \"flags\": { \"trg-prime\": { \"extends\": \"companions\" } }\n" },
-  { name: "the feats are not built", file: FOUND, from: ", ...BLOCK7_FEATS, ...BLOCK10_FEATS] },", to: ", ...BLOCK7_FEATS] }," },
+  { name: "the feats are not built", file: FOUND, from: ", ...BLOCK7_FEATS, ...BLOCK10_FEATS, ...BLOCK11_FEATS] },", to: ", ...BLOCK7_FEATS, ...BLOCK11_FEATS] }," },
   { name: "Dragon Tamer's status line is missing", file: STATUS, from: "  \"FA-02\": {\n    \"status\": \"Implemented\",", to: "  \"FA-02\": {\n    \"status\": \"Planned\"," },
   { name: "the inventory files the dragons with the companions", file: INV, from: "DC-03|Ch5 p62|Cold Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-dragons race item|D10", to: "DC-03|Ch5 p62|Cold Dragon (base)|Companion|Stat block p62|D10|A|PACK:it-companions race item|D10" }
 ];

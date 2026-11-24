@@ -4,7 +4,7 @@ _Generated from `tools/inventory/inventory.txt` by `tools/inventory/build-docs.m
 
 **Source:** TRG_Inner_Tempest_1_2.docx (v1.2), rulings of 20 Oct 2026. **Target system:** TRG Prime 3.664.0 + the remaining core dependencies in INNER_TEMPEST_CORE_DEPENDENCIES.md.
 
-**409 features inventoried.** Target automation (with core dependencies): A 243 · B 135 · C 16 · D 15. Blocked on a Critical ruling: 0. Implemented: 407. In progress: 0. Tested live: 219 (see Live-test evidence at the end).
+**418 features inventoried.** Target automation (with core dependencies): A 249 · B 138 · C 16 · D 15. Blocked on a Critical ruling: 0. Implemented: 416. In progress: 0. Tested live: 219 (see Live-test evidence at the end).
 
 Legend:
 - **Automation:** A = fully automated · B = automated with a user decision · C = partially automated (justified in the Automation Report) · D = manual or descriptive (justified).
@@ -402,6 +402,20 @@ Legend:
 | FG-23 | Ch5 (v1.2) | Spirit Stance | General feat | Stance (1 AP core default): +1 circ AB & DB vs spirits, incorporeal, possessors; physical Strikes magical vs them | D7; COND targetTypes | A | STANCE + COND | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | D7 | Implemented (B) · tested live |
 | FG-22 | Ch5 p59 | Zen Awareness | General feat | Perception 5; advantage locating hidden/invisible; their flat DC +1 | COND; flat check | B | COND + flag | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | — | Implemented (B) |
 
+## GYMNAST EXPANSION (Ch5, v1.4) — 9
+
+| ID | Chapter | Feature | Category | Mechanics | Dependencies | Automation | Implementation | Validation | Blocker | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| GX-01 | Ch5 (v1.4) | Effortless Motion | Class feat (Expert) | Acrobatics 10; one Step a round as a Free Action; advantage on Acrobatics checks during/part of movement | core Step leg (armCompoundLeg, countsAs step); COND traits:movement | A | AUTO Use (once/round) + COND auto & tick | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | — | Implemented (A) |
+| GX-02 | Ch5 (v1.4) | Offensive Momentum | Class feat (Gymnast) | Vaulting Momentum, Acrobatics 8; 2 AP: Jump or Tumble check, then melee Strike; +1d4 precision after 10 ft, 2d4 on a critical check | resolveAction at 0 AP; armMove; strikeDamageRider (d4); precision immunity via core defences | B | AUTO Use + card Strike + rider | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | B11-1 | Implemented (B) |
+| GX-03 | Ch5 (v1.4) | Perfect Balance | Class feat (Expert) | Acrobatics 8; advantage vs prone/moved; ignore narrow/unstable/shifting terrain on Acrobatics checks | defenceDC disadvantage (Tsuchi shape); COND tick | B | defenceDC + COND; terrain half GM | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | B11-2 | Implemented (B) |
+| GX-04 | Ch5 (v1.4) | Pinnacle of Motion | Class feat (Gymnast) | Acrobatics 16; free Tumble 1/round; Tumble success: flat-footed to your attacks to end of turn; crit hit: unarmed reaction Strike 1/round at current MAP | resolveAction at 0 AP; COND targetUuids (flat-footed to you); trgPrimeStrikeResolved; frozen MAP | A | AUTO Use + hooks + offer | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | B11-3 | Implemented (A) |
+| GX-05 | Ch5 (v1.4) | Rebound Assault | Class feat (Gymnast) | Vaulting Momentum; 2 AP after a Movement action (not Step): two melee attacks vs two creatures in reach; MAP applied after both | movementPools / movementTraitAp; rollWeaponAttack mapFrozen + mapSteps 2 | A | AUTO Use | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | B11-4 | Implemented (A) |
+| GX-06 | Ch5 (v1.4) | Redirection Stance | Class feat (Gymnast, Stance) | Acrobatics 10; 1 AP stance: melee miss -> reaction, attacker flat-footed to end of its next turn; fumble -> free Trip | enterStance; trgPrimeStrikeResolved missed/fumble; endsAtTurnEndOf; core Trip at 0 AP | A | STANCE + RX offer | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | — | Implemented (A) |
+| GX-07 | Ch5 (v1.4) | Tumbling Reversal | Class feat (Gymnast) | Acrobatics 4; Tumble success: +1 circ attacks vs that creature to end of turn; critical: advantage on next attack vs it | trgPrimeActionResolved; COND targetUuids; oneShot | A | hook + effects | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | — | Implemented (A) |
+| GX-08 | Ch5 (v1.4) | Vaulting Momentum | General feat (Gymnast) | Acrobatics 6, Athletics 3; Acrobatics for High Jump and Long Jump | registerSkillSubstitution; registerFeatEligibility (Gymnast trait) | A | registerSkillSubstitution + eligibility | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | — | Implemented (A) |
+| GX-09 | Ch5 (v1.4) | Whirlwind Kip | Class feat (Gymnast, Stance) | Acrobatics 10; 1 AP stance: critical Tumble/Escape -> Strike as a reaction; +2 circ DB vs opportunity attacks | enterStance; trgPrimeActionResolved; DB vs AoO needs a core seam | B | STANCE + RX offer; DB half GM | Picker eligibility (prereqs, traits); passive totals or active workflow; usage limits; removal | B11-6 | Implemented (B) |
+
 ## DRAGON COMPANIONS (Ch5)
 
 | ID | Chapter | Feature | Category | Mechanics | Dependencies | Automation | Implementation | Validation | Blocker | Status |
@@ -523,7 +537,7 @@ Legend:
 
 ## Live-test evidence
 
-219 of 409 features are recorded exercised in a live test. Every other feature is checked by its block's harness only. Each quote is copied from the report named.
+219 of 418 features are recorded exercised in a live test. Every other feature is checked by its block's harness only. Each quote is copied from the report named.
 
 | ID | Feature | Report | What the report records |
 |---|---|---|---|

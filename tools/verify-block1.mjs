@@ -274,7 +274,9 @@ const called = (m) => calls.filter((c) => c[0] === m);
 equal("D the sourcebook is named", called("registerSourcebook").map((c) => c[2]), ["Inner Tempest"]);
 equal("D Scree Cant registered", called("registerLanguage").map((c) => [c[1], c[2].rarity]), [["Scree Cant", "uncommon"]]);
 equal("D four races' Power Points", called("registerRacialPP").map((c) => [c[1], c[2]]), [["Miraku", 0], ["Ryukari", 0], ["Scree", 0], ["Tianzhi", 0]]);
-equal("D skill substitutions", called("registerSkillSubstitution").map((c) => [c[1], c[2].map((e) => `${e.action}:${e.skill}`).join("|")]), [["Artistic Negotiation", "encourage:artistry|makeAnImpression:artistry"], ["Radiant Insight", "clearMind:religion"], ["Spirit Whisperer", "gatherInformation:meditation"], ["Elemental Tracking", "track:nature"]]);
+equal("D skill substitutions", called("registerSkillSubstitution").map((c) => [c[1], c[2].map((e) => `${e.action}:${e.skill}`).join("|")]), [["Artistic Negotiation", "encourage:artistry|makeAnImpression:artistry"], ["Radiant Insight", "clearMind:religion"], ["Spirit Whisperer", "gatherInformation:meditation"], ["Elemental Tracking", "track:nature"],
+  // 1.1.0 (Block 11): Vaulting Momentum's jumps with Acrobatics, registered by registerBlock11.
+  ["Vaulting Momentum", "highJump:acrobatics|longJump:acrobatics"]]);
 const automationNames = called("registerFeatAutomation").map((c) => c[1]);
 const itemNames = new Set(ALL.map((d) => d.name.toLowerCase()));
 // EVERY PACK'S ITEMS (re-anchored at 0.4.0): Block 3's automations name

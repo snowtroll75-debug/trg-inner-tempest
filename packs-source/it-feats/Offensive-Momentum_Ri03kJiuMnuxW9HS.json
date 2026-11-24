@@ -1,0 +1,49 @@
+{
+  "_id": "Ri03kJiuMnuxW9HS",
+  "name": "Offensive Momentum",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Vaulting Momentum, Acrobatics 8 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS FLOURISH GYMNAST</strong></p>\n<p><em>You change your momentum into forceful strikes.</em></p>\n<p><strong>Prerequisites</strong> Vaulting Momentum, Acrobatics 8 ranks</p>\n<p><strong>Action</strong> 2 AP</p>\n<p>Make a Jump or Tumble check as part of this action. If successful, you may immediately make a melee Strike at the end of the movement:</p>\n<p>- If you moved at least 10 feet, add +1d4 precision damage.</p>\n<p>- If your check result is a critical, this damage increases to 2d4.</p>\n<p><em>Automated:</em> press <strong>Use</strong> (2 AP, the whole action): choose High Jump, Long Jump or Tumble and make the check, no further AP. On a Success or better the movement is armed free of AP — drag your token — and the card offers the melee Strike (no AP) for when you have moved: +1d4 precision damage if you moved at least 10 feet during the action, 2d4 if the check was a critical. A creature immune to precision takes none of it; one resisting it, half the dice.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Flourish, Gymnast",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "offensiveMomentum"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Ri03kJiuMnuxW9HS"
+}

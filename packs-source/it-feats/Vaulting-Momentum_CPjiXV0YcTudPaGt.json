@@ -1,0 +1,45 @@
+{
+  "_id": "CPjiXV0YcTudPaGt",
+  "name": "Vaulting Momentum",
+  "img": "modules/trg-inner-tempest/assets/feats/general.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "General",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 6 ranks, Athletics 3 ranks",
+    "active": true,
+    "description": "<p><strong>GENERAL GYMNAST</strong></p>\n<p><em>You launch into motion and convert it into raw kinetic power.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 6 ranks, Athletics 3 ranks</p>\n<p>You may use your Acrobatics skill to make High Jump and Long Jump checks instead of the Athletics skill.</p>\n<p><em>Automated:</em> High Jump and Long Jump are offered from your Acrobatics as well as Athletics, with the same DCs, distances and trade-offs. A General feat: taken with a General feat pick, by a character who has the Gymnast archetype.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Gymnast",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CPjiXV0YcTudPaGt"
+}

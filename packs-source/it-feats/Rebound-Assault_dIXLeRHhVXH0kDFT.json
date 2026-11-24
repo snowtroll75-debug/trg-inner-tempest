@@ -1,0 +1,49 @@
+{
+  "_id": "dIXLeRHhVXH0kDFT",
+  "name": "Rebound Assault",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Vaulting Momentum",
+    "active": true,
+    "description": "<p><strong>ATTACK CLASS FLOURISH GYMNAST MOVEMENT</strong></p>\n<p><em>You push off walls, creatures, or momentum to string attacks together.</em></p>\n<p><strong>Prerequisites</strong> Vaulting Momentum</p>\n<p><strong>Action</strong> 2 AP</p>\n<p>After taking an action with the Movement trait (not a step), you may make two separate melee attacks against two targets with reach. These attacks effect your multiple attack penalty normally, but not until after they have been resolved.</p>\n<p><em>Automated:</em> press <strong>Use</strong> after a Movement action this turn other than a Step (a Stride, a Tumble, a jump …): 2 AP for two melee Strikes against two different creatures, both within your reach. Both are made at the multiple attack penalty that stands when you use it; the penalty then rises by two.</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Attack, Flourish, Gymnast, Movement",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "itAutomation": "reboundAssault"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!dIXLeRHhVXH0kDFT"
+}

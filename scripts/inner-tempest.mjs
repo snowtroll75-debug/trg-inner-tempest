@@ -20,6 +20,7 @@ import { onStrikeResolvedB7, onDamageAppliedB7, onDailyPreparationB7, onTurnEnde
 import { onSpellSettledB8, onPreUpdateItemB8, onItemUpdatedB8, onEffectDeletedB8, registerBlock8Socket } from "../module/block8-automations.mjs";
 import { onDailyPreparationB9 } from "../module/block9-automations.mjs";
 import { onActorUpdatedB10, onDailyPreparationB10, onCreatureSlainB10, onEffectChangedB10, onItemCreatedB10, reconcileAllDragons } from "../module/block10-automations.mjs";
+import { onActionResolvedB11, onStrikeResolvedB11, bindBlock11Buttons } from "../module/block11-automations.mjs";
 import {
   registerAgingSetting, reconcileAllAging, onActorUpdatedAging, onItemChangedAging, onEffectChangedAging, onRenderActorSheetAging
 } from "../module/aging-workflow.mjs";
@@ -29,7 +30,7 @@ import {
 } from "../module/skill-action-automations.mjs";
 
 const MODULE_ID = "trg-inner-tempest";
-const REQUIRED_SYSTEM = "3.674.2";
+const REQUIRED_SYSTEM = "3.712.1";
 
 Hooks.on("trgPrime.registerContent", (api) => {
   registerContent(api, MODULE_ID);
@@ -133,6 +134,15 @@ Hooks.on("trgPrimeDailyPreparation", (ctx) => { onDailyPreparationB10(ctx).catch
 Hooks.on("trgPrimeCreatureSlain", (ctx) => { onCreatureSlainB10(ctx).catch((err) => console.warn("Inner Tempest | a dragon slain", err)); });
 for (const hook of ["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"]) Hooks.on(hook, (effect) => { onEffectChangedB10(effect).catch((err) => console.warn("Inner Tempest | a dragon dying", err)); });
 Hooks.on("createItem", (item, options, userId) => { try { onItemCreatedB10(item, options, userId); } catch (err) { console.warn("Inner Tempest | dragon feat prerequisite", err); } });
+
+// BLOCK 11 (1.1.0, on TRG Prime 3.712.1): the Gymnast expansion. After a
+// Tumble (Tumbling Reversal, Pinnacle of Motion), a critical Tumble or Escape
+// (Whirlwind Kip), and a Movement action taken (Rebound Assault's record);
+// after a Strike (Redirection Stance's reaction, Pinnacle of Motion's Strike);
+// Offensive Momentum's Strike buttons.
+Hooks.on("trgPrimeActionResolved", (ctx) => { onActionResolvedB11(ctx).catch((err) => console.warn("Inner Tempest | after an action (Block 11)", err)); });
+Hooks.on("trgPrimeStrikeResolved", (ctx) => { onStrikeResolvedB11(ctx).catch((err) => console.warn("Inner Tempest | after a Strike (Block 11)", err)); });
+Hooks.on("renderChatMessageHTML", (message, html) => { try { bindBlock11Buttons(message, html); } catch (err) { console.warn("Inner Tempest | Offensive Momentum's card", err); } });
 
 // The buttons on this module's cards: Predator's Pounce's paid Strike and
 // Ancestral Guidance's reroll.

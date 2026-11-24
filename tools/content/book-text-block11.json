@@ -1,0 +1,88 @@
+{
+ "source": "Inner Tempest v1.4 (pandoc markdown of TRG_Inner_Tempest_1_4.docx; it14.md)",
+ "feats": {
+  "EFFORTLESS MOTION": {
+   "traits": "CLASS EXPERT",
+   "flavour": "Your movement never breaks—each pivot, each stride, a fluid continuation of the last.",
+   "lines": [
+    "**Prerequisites** Acrobatics 10 ranks",
+    "You may take one Step action per round as Free Actions. Furthermore, you gain Advantage on Acrobatics checks made during or as part of movement."
+   ]
+  },
+  "OFFENSIVE MOMENTUM": {
+   "traits": "CLASS FLOURISH GYMNAST",
+   "flavour": "You change your momentum into forceful strikes.",
+   "lines": [
+    "**Prerequisites** Vaulting Momentum, Acrobatics 8 ranks",
+    "**Action** 2 AP",
+    "Make a Jump or Tumble check as part of this action. If successful, you may immediately make a melee Strike at the end of the movement:",
+    "- If you moved at least 10 feet, add +1d4 precision damage.",
+    "- If your check result is a critical, this damage increases to 2d4."
+   ]
+  },
+  "PERFECT BALANCE": {
+   "traits": "CLASS EXPERT",
+   "flavour": "Your sense of balance is nearly superhuman—even magic trembles at your footing.",
+   "lines": [
+    "**Prerequisites** Acrobatics 8 ranks",
+    "You gain Advantage on checks and saves against being knocked prone or moved. You also ignore the effects of narrow surfaces, unstable footing, or magically shifting terrain when making Acrobatics checks."
+   ]
+  },
+  "PINNACLE OF MOTION": {
+   "traits": "CLASS GYMNAST",
+   "flavour": "Your body becomes a blur of untouchable perfection—a blur that strikes before it is seen.",
+   "lines": [
+    "**Prerequisites** Acrobatics 16 ranks",
+    "You may use Tumble (Acrobatics) as a Free Action once per round. When you succeed at a Tumble check, the target becomes Flat-Footed against all your attacks until the end of your turn. If you critically hit a Flat-Footed (from this ability) creature, you may make an additional unarmed Strike as a Reaction (1/round) using your current multiple attack penalty."
+   ]
+  },
+  "REBOUND ASSAULT": {
+   "traits": "ATTACK CLASS FLOURISH GYMNAST MOVEMENT",
+   "flavour": "You push off walls, creatures, or momentum to string attacks together.",
+   "lines": [
+    "**Prerequisites** Vaulting Momentum",
+    "**Action** 2 AP",
+    "After taking an action with the Movement trait (not a step), you may make two separate melee attacks against two targets with reach. These attacks effect your multiple attack penalty normally, but not until after they have been resolved."
+   ]
+  },
+  "REDIRECTION STANCE": {
+   "traits": "CLASS GYMNAST STANCE",
+   "flavour": "Your entire form becomes a reactive defence, slipping and guiding enemies away from your centre.",
+   "lines": [
+    "**Prerequisites** Acrobatics 10 ranks",
+    "**Action** 1 AP",
+    "While in this stance:",
+    "- When a creature misses you with a melee attack, you may spend your Reaction to cause them to become Flat-Footed until the end of their next turn.",
+    "- If they fumble the attack against you, you may also attempt a free Trip check against them."
+   ]
+  },
+  "TUMBLING REVERSAL": {
+   "traits": "CLASS GYMNAST",
+   "flavour": "You let enemy momentum work against them, slipping past and striking when they overcommit.",
+   "lines": [
+    "**Prerequisites** Acrobatics 4 ranks",
+    "When you succeed at a Tumble (Acrobatics) check, you gain a +1-circumstance bonus to attack rolls against that creature until the end of your turn.",
+    "If your Tumble Through result is a critical, your next attack against that creature gains Advantage."
+   ]
+  },
+  "VAULTING MOMENTUM": {
+   "traits": "GENERAL GYMNAST",
+   "flavour": "You launch into motion and convert it into raw kinetic power.",
+   "lines": [
+    "**Prerequisites** Acrobatics 6 ranks, Athletics 3 ranks",
+    "You may use your Acrobatics skill to make High Jump and Long Jump checks instead of the Athletics skill."
+   ]
+  },
+  "WHIRLWIND KIP": {
+   "traits": "CLASS GYMNAST STANCE",
+   "flavour": "You flow from spin to strike like a cyclone of limbs and grace.",
+   "lines": [
+    "**Prerequisites** Acrobatics 10 ranks",
+    "**Action** 1 AP",
+    "While in this stance:",
+    "- If you critically succeed on a Tumble or Escape check, you may make a Strike action as a reaction.",
+    "- You gain a +2-circumstance bonus to DB against opportunity attacks."
+   ]
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "ysHnVe7FqiK1jvw1",
+  "name": "Perfect Balance",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
+  "type": "feat",
+  "system": {
+    "source": "Inner Tempest",
+    "category": "Class",
+    "tier": "",
+    "level": 0,
+    "prerequisites": "Acrobatics 8 ranks",
+    "active": true,
+    "description": "<p><strong>CLASS EXPERT</strong></p>\n<p><em>Your sense of balance is nearly superhuman—even magic trembles at your footing.</em></p>\n<p><strong>Prerequisites</strong> Acrobatics 8 ranks</p>\n<p>You gain Advantage on checks and saves against being knocked prone or moved. You also ignore the effects of narrow surfaces, unstable footing, or magically shifting terrain when making Acrobatics checks.</p>\n<p><em>Partly automated:</em> a Shove, Trip or Reposition against you is rolled at <strong>disadvantage</strong> (you roll nothing against it), and advantage is offered as a tick on your own checks and saves against being knocked prone or moved. Ignoring narrow surfaces, unstable footing and magically shifting terrain on Acrobatics checks is the GM's to apply: the system does not yet say what those surfaces change on such a check (see the Block 11 audit, B11-2).</p>",
+    "usesPerDay": "",
+    "bonusUses": 0,
+    "usesValue": 0,
+    "sourceRace": "",
+    "sourceClass": "",
+    "sourceArchetype": "",
+    "traits": "Expert",
+    "repeatable": false,
+    "repeatLimit": 0,
+    "grantedSpells": "",
+    "grantedAbilities": "",
+    "grantedFeats": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "trg-prime": {
+      "conditionals": [
+        {
+          "kind": "advantage",
+          "label": "Perfect Balance",
+          "scope": "Checks and saving throws against being knocked prone or moved — tick if this roll is one",
+          "auto": false,
+          "when": {
+            "checkTypes": [
+              "skill",
+              "save",
+              "attribute"
+            ]
+          }
+        }
+      ],
+      "defenceDC": [
+        {
+          "kind": "disadvantage",
+          "label": "Perfect Balance",
+          "scope": "resists being knocked prone or moved",
+          "when": {
+            "actions": [
+              "shoveAttack",
+              "tripAttack",
+              "reposition"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "trg-prime",
+    "systemVersion": "3.664.0",
+    "createdTime": 1789000000000,
+    "modifiedTime": 1789000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ysHnVe7FqiK1jvw1"
+}
