@@ -1,7 +1,7 @@
 {
   "_id": "xwFGO2AH1kt1z5x2",
   "name": "Air Step",
-  "img": "icons/svg/holy-symbol.svg",
+  "img": "modules/trg-inner-tempest/assets/spells/alteration.svg",
   "type": "spell",
   "system": {
     "tradition": "divinity, verdant",

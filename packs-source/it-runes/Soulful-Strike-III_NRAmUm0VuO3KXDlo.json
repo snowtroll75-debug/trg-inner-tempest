@@ -1,7 +1,7 @@
 {
   "_id": "NRAmUm0VuO3KXDlo",
   "name": "Soulful Strike III",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/svg/book.svg",
   "type": "gear",
   "system": {
     "quantity": 1,

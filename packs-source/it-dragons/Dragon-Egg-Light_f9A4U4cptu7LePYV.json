@@ -1,7 +1,7 @@
 {
   "_id": "f9A4U4cptu7LePYV",
   "name": "Dragon Egg (Light)",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/commodities/treasure/egg-ornate-green-gold.png",
   "type": "gear",
   "system": {
     "quantity": 1,

@@ -1,7 +1,7 @@
 {
   "_id": "kF78px5Xiy1unbWQ",
   "name": "Inner Sight",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

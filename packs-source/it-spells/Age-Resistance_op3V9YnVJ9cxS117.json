@@ -1,7 +1,7 @@
 {
   "_id": "op3V9YnVJ9cxS117",
   "name": "Age Resistance",
-  "img": "icons/svg/holy-symbol.svg",
+  "img": "modules/trg-inner-tempest/assets/spells/alteration.svg",
   "type": "spell",
   "system": {
     "tradition": "arcane, ethereal, verdant",

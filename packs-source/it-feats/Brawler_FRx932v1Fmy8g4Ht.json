@@ -1,7 +1,7 @@
 {
   "_id": "FRx932v1Fmy8g4Ht",
   "name": "Brawler",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/archetype.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

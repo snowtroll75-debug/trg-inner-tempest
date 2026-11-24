@@ -1,7 +1,7 @@
 {
   "_id": "gIQG1ucz5RSovYA0",
   "name": "Elemental Warding",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/general.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

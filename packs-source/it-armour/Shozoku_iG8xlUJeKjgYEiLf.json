@@ -1,7 +1,7 @@
 {
   "_id": "iG8xlUJeKjgYEiLf",
   "name": "Shozoku",
-  "img": "systems/trg-prime/assets/armour/leather.png",
+  "img": "modules/trg-inner-tempest/assets/armour/leather.png",
   "type": "armour",
   "system": {
     "quantity": 1,

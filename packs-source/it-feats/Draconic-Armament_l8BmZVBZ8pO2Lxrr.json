@@ -1,7 +1,7 @@
 {
   "_id": "l8BmZVBZ8pO2Lxrr",
   "name": "Draconic Armament",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

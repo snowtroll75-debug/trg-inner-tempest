@@ -1,7 +1,7 @@
 {
   "_id": "BtP7Msc1PGAy6pMn",
   "name": "Tatami-Do",
-  "img": "systems/trg-prime/assets/armour/banded.png",
+  "img": "modules/trg-inner-tempest/assets/armour/banded.png",
   "type": "armour",
   "system": {
     "quantity": 1,

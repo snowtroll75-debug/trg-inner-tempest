@@ -1,7 +1,7 @@
 {
   "_id": "HcR0p84Wf476HUVe",
   "name": "Astral Insight",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/general.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

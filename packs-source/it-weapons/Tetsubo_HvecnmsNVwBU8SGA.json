@@ -1,7 +1,7 @@
 {
   "_id": "HvecnmsNVwBU8SGA",
   "name": "Tetsubo",
-  "img": "systems/trg-prime/assets/weapons/greatclub.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/greatclub.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

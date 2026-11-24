@@ -1,7 +1,7 @@
 {
   "_id": "NS2TGrJr53XqiE6E",
   "name": "Immovable Plating",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

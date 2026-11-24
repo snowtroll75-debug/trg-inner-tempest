@@ -1,7 +1,7 @@
 {
   "_id": "a1Zu7HW7JqqdbUoe",
   "name": "Shadow Counter",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

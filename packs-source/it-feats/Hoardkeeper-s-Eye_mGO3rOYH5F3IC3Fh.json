@@ -1,7 +1,7 @@
 {
   "_id": "mGO3rOYH5F3IC3Fh",
   "name": "Hoardkeeper's Eye",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

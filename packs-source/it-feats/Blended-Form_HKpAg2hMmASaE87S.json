@@ -1,7 +1,7 @@
 {
   "_id": "HKpAg2hMmASaE87S",
   "name": "Blended Form",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

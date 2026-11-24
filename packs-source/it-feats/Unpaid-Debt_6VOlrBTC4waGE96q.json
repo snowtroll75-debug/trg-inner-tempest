@@ -1,7 +1,7 @@
 {
   "_id": "6VOlrBTC4waGE96q",
   "name": "Unpaid Debt",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

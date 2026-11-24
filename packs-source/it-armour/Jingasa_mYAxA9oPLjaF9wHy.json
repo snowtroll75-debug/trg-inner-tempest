@@ -1,7 +1,7 @@
 {
   "_id": "mYAxA9oPLjaF9wHy",
   "name": "Jingasa",
-  "img": "systems/trg-prime/assets/armour/metal-helmet.png",
+  "img": "modules/trg-inner-tempest/assets/armour/metal-helmet.png",
   "type": "armour",
   "system": {
     "quantity": 1,

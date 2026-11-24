@@ -1,7 +1,7 @@
 {
   "_id": "CH6CmRhb8TsYao1R",
   "name": "Aura of Heat",
-  "img": "icons/svg/holy-symbol.svg",
+  "img": "modules/trg-inner-tempest/assets/spells/invocation.svg",
   "type": "spell",
   "system": {
     "tradition": "arcane, verdant",

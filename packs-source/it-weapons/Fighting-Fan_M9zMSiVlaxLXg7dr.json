@@ -1,7 +1,7 @@
 {
   "_id": "M9zMSiVlaxLXg7dr",
   "name": "Fighting Fan",
-  "img": "systems/trg-prime/assets/weapons/main-gauche.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/main-gauche.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

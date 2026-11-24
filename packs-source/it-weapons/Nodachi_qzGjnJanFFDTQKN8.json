@@ -1,7 +1,7 @@
 {
   "_id": "qzGjnJanFFDTQKN8",
   "name": "Nodachi",
-  "img": "systems/trg-prime/assets/weapons/katana.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/katana.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

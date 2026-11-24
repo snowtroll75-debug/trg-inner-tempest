@@ -1,7 +1,7 @@
 {
   "_id": "G6vxNgnWgwGsBkqi",
   "name": "Dragon Egg (Earth)",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/commodities/treasure/egg-ornate-green-gold.png",
   "type": "gear",
   "system": {
     "quantity": 1,

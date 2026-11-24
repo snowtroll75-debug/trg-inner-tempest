@@ -1,7 +1,7 @@
 {
   "_id": "fYyGDA61pX9tVHA6",
   "name": "Hive Coordination",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

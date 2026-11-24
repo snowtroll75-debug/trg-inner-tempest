@@ -1,7 +1,7 @@
 {
   "_id": "bvESt0VteK8412Ej",
   "name": "Hanbo",
-  "img": "systems/trg-prime/assets/weapons/staff.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/staff.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

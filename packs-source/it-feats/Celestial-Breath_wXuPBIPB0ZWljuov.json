@@ -1,7 +1,7 @@
 {
   "_id": "wXuPBIPB0ZWljuov",
   "name": "Celestial Breath",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

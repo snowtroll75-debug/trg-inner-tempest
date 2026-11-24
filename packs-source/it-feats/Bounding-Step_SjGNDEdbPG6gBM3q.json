@@ -1,7 +1,7 @@
 {
   "_id": "SjGNDEdbPG6gBM3q",
   "name": "Bounding Step",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

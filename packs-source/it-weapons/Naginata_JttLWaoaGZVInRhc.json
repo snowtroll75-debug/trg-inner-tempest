@@ -1,7 +1,7 @@
 {
   "_id": "JttLWaoaGZVInRhc",
   "name": "Naginata",
-  "img": "systems/trg-prime/assets/weapons/glaive.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/glaive.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

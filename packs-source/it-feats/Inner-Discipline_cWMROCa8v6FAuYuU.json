@@ -1,7 +1,7 @@
 {
   "_id": "cWMROCa8v6FAuYuU",
   "name": "Inner Discipline",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

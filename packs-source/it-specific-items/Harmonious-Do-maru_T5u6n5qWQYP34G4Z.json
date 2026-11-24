@@ -1,7 +1,7 @@
 {
   "_id": "T5u6n5qWQYP34G4Z",
   "name": "Harmonious Do-maru",
-  "img": "systems/trg-prime/assets/armour/lamellar.png",
+  "img": "modules/trg-inner-tempest/assets/armour/lamellar.png",
   "type": "armour",
   "system": {
     "quantity": 1,

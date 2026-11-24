@@ -1,7 +1,7 @@
 {
   "_id": "IpaKfyc9Vmrr9uqd",
   "name": "Magma Channel",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

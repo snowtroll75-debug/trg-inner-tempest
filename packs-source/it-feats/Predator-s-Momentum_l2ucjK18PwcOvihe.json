@@ -1,7 +1,7 @@
 {
   "_id": "l2ucjK18PwcOvihe",
   "name": "Predator's Momentum",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

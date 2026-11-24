@@ -1,7 +1,7 @@
 {
   "_id": "sUTm1HCH5f46XP1v",
   "name": "Shadowy Stance",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

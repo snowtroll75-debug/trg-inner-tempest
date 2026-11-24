@@ -1,7 +1,7 @@
 {
   "_id": "ek4iLeyKhM3anfmC",
   "name": "Celestial Footing",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

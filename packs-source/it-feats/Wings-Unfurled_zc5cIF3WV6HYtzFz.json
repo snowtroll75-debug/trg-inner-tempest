@@ -1,7 +1,7 @@
 {
   "_id": "zc5cIF3WV6HYtzFz",
   "name": "Wings Unfurled",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

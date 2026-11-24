@@ -1,7 +1,7 @@
 {
   "_id": "bDAY9iOyU6ik2icz",
   "name": "Centred I (Weapon)",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/svg/book.svg",
   "type": "gear",
   "system": {
     "quantity": 1,

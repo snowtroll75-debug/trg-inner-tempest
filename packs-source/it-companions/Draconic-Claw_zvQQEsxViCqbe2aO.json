@@ -1,7 +1,7 @@
 {
   "_id": "zvQQEsxViCqbe2aO",
   "name": "Draconic Claw",
-  "img": "systems/trg-prime/assets/weapons/claw.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/claw.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

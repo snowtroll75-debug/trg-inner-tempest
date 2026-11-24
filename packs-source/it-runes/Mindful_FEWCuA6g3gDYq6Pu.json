@@ -1,7 +1,7 @@
 {
   "_id": "FEWCuA6g3gDYq6Pu",
   "name": "Mindful",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/svg/book.svg",
   "type": "gear",
   "system": {
     "quantity": 1,

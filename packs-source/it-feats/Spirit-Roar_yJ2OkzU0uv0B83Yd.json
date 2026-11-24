@@ -1,7 +1,7 @@
 {
   "_id": "yJ2OkzU0uv0B83Yd",
   "name": "Spirit Roar",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

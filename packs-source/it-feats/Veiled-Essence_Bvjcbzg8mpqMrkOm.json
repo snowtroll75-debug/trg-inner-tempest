@@ -1,7 +1,7 @@
 {
   "_id": "Bvjcbzg8mpqMrkOm",
   "name": "Veiled Essence",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/general.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

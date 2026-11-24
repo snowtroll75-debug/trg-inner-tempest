@@ -1,7 +1,7 @@
 {
   "_id": "jGDXG3Rq1lm8D7Zs",
   "name": "Distant Honour",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/class.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

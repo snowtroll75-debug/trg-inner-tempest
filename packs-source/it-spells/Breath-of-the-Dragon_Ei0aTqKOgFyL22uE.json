@@ -1,7 +1,7 @@
 {
   "_id": "Ei0aTqKOgFyL22uE",
   "name": "Breath of the Dragon",
-  "img": "icons/svg/holy-symbol.svg",
+  "img": "modules/trg-inner-tempest/assets/spells/invocation.svg",
   "type": "spell",
   "system": {
     "tradition": "arcane, verdant",

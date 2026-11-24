@@ -1,7 +1,7 @@
 {
   "_id": "g7eCp8hf3YYuHsnm",
   "name": "Staunching III",
-  "img": "icons/svg/book.svg",
+  "img": "modules/trg-inner-tempest/assets/icons/svg/book.svg",
   "type": "gear",
   "system": {
     "quantity": 1,

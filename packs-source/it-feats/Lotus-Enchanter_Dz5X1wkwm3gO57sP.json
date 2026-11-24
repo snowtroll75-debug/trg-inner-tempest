@@ -1,7 +1,7 @@
 {
   "_id": "Dz5X1wkwm3gO57sP",
   "name": "Lotus Enchanter",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/archetype.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

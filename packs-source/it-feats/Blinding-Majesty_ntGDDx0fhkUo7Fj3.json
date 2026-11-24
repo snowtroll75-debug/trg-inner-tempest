@@ -1,7 +1,7 @@
 {
   "_id": "ntGDDx0fhkUo7Fj3",
   "name": "Blinding Majesty",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

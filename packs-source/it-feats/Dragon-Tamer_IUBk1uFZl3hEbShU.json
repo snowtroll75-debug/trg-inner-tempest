@@ -1,7 +1,7 @@
 {
   "_id": "IUBk1uFZl3hEbShU",
   "name": "Dragon Tamer",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/archetype.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

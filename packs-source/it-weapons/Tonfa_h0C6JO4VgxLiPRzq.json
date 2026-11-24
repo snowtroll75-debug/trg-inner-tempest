@@ -1,7 +1,7 @@
 {
   "_id": "h0C6JO4VgxLiPRzq",
   "name": "Tonfa",
-  "img": "systems/trg-prime/assets/weapons/club.png",
+  "img": "modules/trg-inner-tempest/assets/weapons/club.png",
   "type": "weapon",
   "system": {
     "quantity": 1,

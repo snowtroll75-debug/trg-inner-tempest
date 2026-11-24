@@ -1,7 +1,7 @@
 {
   "_id": "w38M9ZaMtM17DIFe",
   "name": "Purifying Touch",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/racial.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

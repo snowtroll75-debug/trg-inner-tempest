@@ -1,7 +1,7 @@
 {
   "_id": "Vrpz9FLUyYXWfI5J",
   "name": "Spirit Whisperer",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/trg-inner-tempest/assets/feats/general.png",
   "type": "feat",
   "system": {
     "source": "Inner Tempest",

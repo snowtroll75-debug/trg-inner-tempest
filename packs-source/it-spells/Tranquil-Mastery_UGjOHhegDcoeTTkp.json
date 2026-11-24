@@ -1,7 +1,7 @@
 {
   "_id": "UGjOHhegDcoeTTkp",
   "name": "Tranquil Mastery",
-  "img": "icons/svg/holy-symbol.svg",
+  "img": "modules/trg-inner-tempest/assets/spells/insight.svg",
   "type": "spell",
   "system": {
     "tradition": "arcane, divinity, ethereal, verdant",
