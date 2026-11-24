@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.5
+
+- Added jade compendium artwork for spells, feats, and equipment.
+- Rebuilt all fifteen LevelDB packs with their required manifests.
+
+
 ## 1.0.4 — 29 Oct 2026 (one compendium folder)
 
 Needs **TRG Prime 3.674.2**. See `docs/RELEASE_NOTES_1.0.4.md`.
