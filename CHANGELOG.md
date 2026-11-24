@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0 — 24 Nov 2026 (Block 11: the Gymnast expansion, v1.4)
+
+Needs **TRG Prime 3.712.1**. See `docs/RELEASE_NOTES_1.1.0.md`, `docs/INNER_TEMPEST_BLOCK11_AUDIT.md` and `docs/LIVE_TESTING_REPORT_1.1.0.md`.
+
+- **Nine Gymnast feats:**
+  - Class: Effortless Motion, Offensive Momentum, Perfect Balance, Pinnacle of Motion, Rebound Assault, Redirection Stance, Tumbling Reversal and Whirlwind Kip.
+  - General: Vaulting Momentum.
+  - Classifications as printed; jade art.
+- **Automation:** Rebound Assault's and Pinnacle of Motion's MAP handling, verified in a live combat. Each of the other feats has its automation or a reaction offer; the audit lists the readings and the six rulings wanted (B11-1 to B11-7).
+- **Unchanged:** the core Gymnast archetype, the Grimoire spell Flowing Step and the Oathblade's Challenge.
+- **Core conflict reported:** Flat-Footed applied on its owner's own turn is removed at the end of that turn by the core.
+- **Harness:** `verify-block11` 186 checks, `mutate-block11` 75 mutations; every block re-pinned to 1.1.0 / 3.712.1.
+
 ## 1.0.5
 
 - Added jade compendium artwork for spells, feats, and equipment.

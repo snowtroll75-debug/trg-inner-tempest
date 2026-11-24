@@ -16,6 +16,8 @@ A companion module for the **TRG Prime** system on Foundry VTT. It implements th
 
 **0.8.1 — Blocks 1 to 7.** The four races, twenty heritages, their racial abilities and natural attacks, Scree Cant, the eleven backgrounds and the twenty-three General feats (Block 1); Chapter 4's seventeen skill actions (Block 2); the Disciple and the Mystic, the Monastic Paths, the Mystical Disciplines, Inner Discipline, the Technique feats and the Grimoire spells the disciplines grant (Block 3); the Ghostwalker, the Kensai and the Oathblade, and Chapter 6's weapons (Block 4); the racial feats (Block 5); the remaining class feats and the core class feats opened to the five classes (Block 6); twenty of the twenty-one archetypes and the core archetypes opened to the five classes (Block 7). Needs TRG Prime 3.671.0. Dragon Tamer and the Dragon Companions, armour, the rest of the Grimoire and the magic items follow block by block. The audits, rulings, core-dependency list, implementation matrix and automation report are in `docs/`, and `docs/PROGRESS.md` records where the build stands.
 
+Version **1.1.0** adds Block 11, the nine Gymnast expansion feats of *Inner Tempest* v1.4, and needs TRG Prime 3.712.1 (`docs/INNER_TEMPEST_BLOCK11_AUDIT.md`).
+
 ## Requirements
 
 - Foundry VTT 14 (verified 14.367)
