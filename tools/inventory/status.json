@@ -3545,32 +3545,32 @@
   "GX-01": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Block 11 (1.1.0)"
+    "note": "Block 11 (1.1.0); Expert trait as printed, confirmed 24 Nov 2026"
   },
   "GX-02": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Block 11 (1.1.0); ruling wanted (B11-1)"
+    "note": "Block 11 (1.1.0); B11-1 readings confirmed 24 Nov 2026"
   },
   "GX-03": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Block 11 (1.1.0); ruling wanted (B11-2)"
+    "note": "Block 11 (1.1.0); Expert trait confirmed 24 Nov 2026; terrain clause GM (B11-2)"
   },
   "GX-04": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Block 11 (1.1.0); ruling wanted (B11-3)"
+    "note": "Block 11 (1.1.0); 1.1.1 lays the real Flat-Footed (ruling 24 Nov 2026)"
   },
   "GX-05": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Block 11 (1.1.0); ruling wanted (B11-4)"
+    "note": "Block 11 (1.1.0); B11-4 reading kept (ruling 24 Nov 2026)"
   },
   "GX-06": {
     "status": "Implemented",
     "achieved": "A",
-    "note": "Block 11 (1.1.0)"
+    "note": "Block 11 (1.1.0); full duration needs core 3.712.2 (ruling 24 Nov 2026)"
   },
   "GX-07": {
     "status": "Implemented",
@@ -3585,6 +3585,6 @@
   "GX-09": {
     "status": "Implemented",
     "achieved": "B",
-    "note": "Block 11 (1.1.0); ruling wanted (B11-6)"
+    "note": "Block 11 (1.1.0); normal MAP confirmed 24 Nov 2026; DB vs AoO GM (B11-6)"
   }
 }

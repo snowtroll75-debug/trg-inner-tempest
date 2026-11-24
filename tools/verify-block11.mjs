@@ -7,7 +7,7 @@
  *
  *   TRG_PRIME_ROOT=../core/trg-prime node tools/verify-block11.mjs
  *
- * Needs TRG Prime 3.712.1 at TRG_PRIME_ROOT.
+ * Needs TRG Prime 3.712.2 at TRG_PRIME_ROOT.
  *
  *   A  The book (tools/content/book-text-block11.json, cut from the v1.4
  *      docx): every paragraph, the category and traits, the prerequisites,
@@ -257,15 +257,15 @@ const matching = (entries, ctx) => entries.filter((e) => cond.matchesCheck(e, ct
   equal("C …your own checks and saves offer the advantage as a tick, never applied by itself", [matching(pbc, { checkType: "save", subject: "reflex" }).map((e) => [e.kind, e.auto]), matching(pbc, { checkType: "attack" }).length], [[["advantage", false]], 0]);
 }
 {
-  const flags = auto.pinnacleFlags("Actor.orc", "Orc", 3);
-  const eff = { id: "e1", name: "Pinnacle", flags: { "trg-prime": flags }, disabled: false };
-  const rows = cond.collectConditionals([], [eff], [], {});
-  const at = (ctx) => matching(rows, { checkType: "attack", ...ctx }).map((e) => [e.value, e.type, e.auto]);
-  equal("C Pinnacle of Motion: +Dex+dodge (circumstance, automatic) on your attacks against that creature only; none against another; none on its own attacks",
-    [at({ targetUuid: "Actor.orc" }), at({ targetUuid: "Actor.goblin" }), matching(rows, { checkType: "save", sourceUuid: "Actor.orc" }).length], [[[3, "circumstance", true]], [], 0]);
-  equal("C …and none when it is already flat-footed to you (the core's targetStates)", at({ targetUuid: "Actor.orc", targetStates: ["flatfooted"] }), []);
-  equal("C …a creature with no Dexterity or dodge to lose carries no row", auto.pinnacleFlags("Actor.x", "X", 0).conditionals.length, 0);
-  equal("C the loss is the core's own figure (strike-options flatFootedLoss)", [[{ ability: 3, breakdown: { byType: { dodge: 1 } } }, {}, { ability: -1 }].map(auto.flatFootedLoss), [{ ability: 3, breakdown: { byType: { dodge: 1 } } }, {}, { ability: -1 }].map(so.flatFootedLoss)], [[4, 0, 0], [4, 0, 0]]);
+  // PINNACLE OF MOTION lays the real condition (Graham, 24 November 2026).
+  const GYM = "Scene.s.Token.gym.Actor.g";
+  const timed = auto.pinnacleTiming(GYM, true);
+  equal("C Pinnacle of Motion: in an encounter, the core's turn-end clock in the Gymnast's name, naming no turn", timed, { endsAtTurnEndOf: { of: GYM, castTurn: "" } });
+  equal("C …so it is due as the Gymnast's turn now in progress ends, whichever turn that is; never at the target's",
+    [ed.dueAtTurnEnd(timed.endsAtTurnEndOf, { turnOfUuid: GYM, endingTurn: "2:cGym" }), ed.dueAtTurnEnd(timed.endsAtTurnEndOf, { turnOfUuid: GYM, endingTurn: "5:cGym" }), ed.dueAtTurnEnd(timed.endsAtTurnEndOf, { turnOfUuid: "Actor.orc", endingTurn: "2:cOrc" })],
+    [true, true, false]);
+  equal("C …a local rule the core's end-of-turn Flat-Footed removal leaves to its own sweep (3.712.2)", ed.keepsOwnTurnClock?.(timed), true);
+  equal("C …out of an encounter, a round's six seconds", auto.pinnacleTiming(GYM, false), { duration: { seconds: 6 } });
 }
 {
   const rev = cond.collectConditionals([], [{ id: "r", name: "TR", flags: { "trg-prime": auto.reversalFlags("Actor.orc", "Orc") } }], [], {});
@@ -274,8 +274,6 @@ const matching = (entries, ctx) => entries.filter((e) => cond.matchesCheck(e, ct
   equal("C …the critical's advantage is one-shot (spent by the attack that takes it), against that creature", matching(adv, { checkType: "attack", targetUuid: "Actor.orc" }).map((e) => [e.kind, e.oneShot, e.auto]), [["advantage", true, true]]);
   equal("C …and the core spends its effect when the attack takes it", cond.automaticSelections(adv, { checkType: "attack", targetUuid: "Actor.orc" }).spent.map((x) => x.sourceId), ["a"]);
   equal("C …but not on an attack against another creature", cond.automaticSelections(adv, { checkType: "attack", targetUuid: "Actor.gob" }).spent, []);
-  const both = cond.conditionalRows([...rev, ...matching(cond.collectConditionals([], [{ id: "p", name: "P", flags: { "trg-prime": auto.pinnacleFlags("Actor.orc", "Orc", 3) } }], [], {}), { checkType: "attack", targetUuid: "Actor.orc" })], { checkType: "attack", targetUuid: "Actor.orc" });
-  ok("C with Pinnacle's row beside it, both are circumstance — the core's stacking keeps the greater (Appendix 1)", both.filter((r) => r.type === "circumstance").length === 2);
 }
 {
   const rider = { id: "om", name: "OM", disabled: false, flags: { "trg-prime": { strikeDamageRider: { dice: "2d4", label: "Offensive Momentum (precision)", targetUuids: ["Actor.orc"] } } } };
@@ -519,13 +517,20 @@ for (const before of [0, 1]) {
   await auto.onActionResolvedB11({ actor: me, action: { key: "tumble", name: "Tumble", traits: "Movement" }, resolvedDegree: "critical", targetActor: gob });
   const afterCrit = names();
   await auto.onActionResolvedB11({ actor: me, action: { key: "tumble", name: "Tumble", traits: "Movement" }, resolvedDegree: "failure", targetActor: orc });
+  const afterFail = names().length;
+  await auto.onActionResolvedB11({ actor: me, action: { key: "tumble", name: "Tumble", traits: "Movement" }, resolvedDegree: "success", targetActor: orc });
   equal("E4 after a successful Tumble: +1 against that creature and Pinnacle's mark on it; a critical adds the advantage; a failure adds nothing",
-    [afterSuccess, marks, afterCrit.length, names().length],
-    [["Pinnacle of Motion: Orc flat-footed to you", "Tumbling Reversal: +1 against Orc"], ["Actor.orc"], 5, 5]);
+    [afterSuccess, marks, afterCrit.length, afterFail],
+    [["Pinnacle of Motion: Orc flat-footed", "Tumbling Reversal: +1 against Orc"], ["Actor.orc"], 5, 5]);
+  const laid = helperCalls.filter((c) => c[0] === "condition");
+  equal("E4 …Pinnacle lays the real Flat-Footed on each creature tumbled past (the Orc, then the Goblin), on the Gymnast's turn-end clock; not again on the Orc already flat-footed",
+    laid.map((c) => [c[1], c[2], c[3]]),
+    [["Orc", ["flatFooted"], { endsAtTurnEndOf: { of: me.uuid, castTurn: "" } }], ["Goblin", ["flatFooted"], { endsAtTurnEndOf: { of: me.uuid, castTurn: "" } }]]);
+  equal("E4 …so the condition is on them, for every rule that reads it (sneak attack among them)", [orc.hasCondition("flatFooted"), gob.hasCondition("flatFooted")], [true, true]);
   const ends = me.effects.map((e) => e.flags?.["trg-inner-tempest"]?.endsAfterTurn);
   equal("E4 …every one of them ends with your turn (the module's turn-end clock, this round)", ends.every((x) => x && x.combatId === "c" && x.round === 2), true);
-  const pinRow = me.effects.find((e) => /Pinnacle of Motion: Orc/.test(e.name)).flags["trg-prime"].conditionals[0];
-  equal("E4 …Pinnacle's row is the Orc's Dexterity and dodge (3 + 1), circumstance, against the Orc only", [pinRow.value, pinRow.type, pinRow.when.targetUuids], [4, "circumstance", ["Actor.orc"]]);
+  const pinMark = me.effects.find((e) => /Pinnacle of Motion: Orc/.test(e.name));
+  equal("E4 …the mark on the Gymnast is only the trigger's record: no bonus row of its own (the condition does the work)", pinMark.flags?.["trg-prime"]?.conditionals ?? [], []);
   // Without the feats, nothing.
   const plain = mkActor("Plain");
   await auto.onActionResolvedB11({ actor: plain, action: { key: "tumble", name: "Tumble", traits: "Movement" }, resolvedDegree: "critical", targetActor: orc });
@@ -578,6 +583,7 @@ for (const before of [0, 1]) {
   orc.token.setTarget(true, { releaseOthers: true });
   const resolved = [];
   const realResolve = game.trgPrime.modules.helpers.resolveAction;
+  const baselineHooks = hookLog.filter(([n]) => n === "trgPrimeActionResolved").length;
   game.trgPrime.modules.helpers.resolveAction = async (a, action, opts) => { resolved.push([action.key, action.apCost, opts.invokedSkillKey]); Hooks.callAll("trgPrimeActionResolved", { actor: a, action, total: 18 }); return { lines: [], degree: globalThis.__degree ?? "critical" }; };
   globalThis.__choose = (title, options) => options.find((o) => o[0] === "longJump|acrobatics")?.[0] ?? options[0][0];
   const done = await use("offensive momentum")(me);
@@ -616,6 +622,25 @@ for (const before of [0, 1]) {
   await use("offensive momentum")(me);
   equal("E6 a failed check: no movement, no Strike card, the 2 AP spent", [helperCalls.filter((c) => c[0] === "armMove").length, cards.some((c) => c.flags?.["trg-inner-tempest"]?.omStrike), me.system.resources.ap.value], [0, false, 1]);
   globalThis.__degree = null;
+  // A HELD ROLL (found live in 1.1.0): the conviction prompt holds the check,
+  // so resolveAction returns with no degree, and the core announces it later.
+  // A degree-less announcement (the GM's DC to come) is not an answer.
+  reset(); me.system.resources.ap.value = 3;
+  game.trgPrime.modules.helpers.resolveAction = async (a, action) => {
+    setTimeout(() => {
+      Hooks.callAll("trgPrimeActionResolved", { actor: { uuid: "Actor.someoneElse" }, action, total: 3, resolvedDegree: "failure" });
+      Hooks.callAll("trgPrimeActionResolved", { actor: { uuid: a.uuid }, action, total: 18 });
+      setTimeout(() => Hooks.callAll("trgPrimeActionResolved", { actor: { uuid: a.uuid }, action, total: 18, resolvedDegree: "success" }), 5);
+    }, 5);
+    return { lines: [], degree: "" };
+  };
+  globalThis.__choose = (title, options) => options.find((o) => o[0] === "longJump|acrobatics")?.[0] ?? options[0][0];
+  const heldDone = await use("offensive momentum")(me);
+  globalThis.__choose = null;
+  const heldCard = cards.find((c) => c.flags?.["trg-inner-tempest"]?.omStrike);
+  equal("E6 a held check: the Use waits for the core's degreed announcement for this creature (another's is not it), then arms the move (Speed 30 + 18) and posts the Strike card at that degree; its hook is released",
+    [heldDone, me.system.resources.ap.value, helperCalls.filter((c) => c[0] === "armMove").map((c) => c.slice(2)), heldCard?.flags["trg-inner-tempest"].omStrike.degree, hookLog.filter(([n]) => n === "trgPrimeActionResolved").length],
+    [true, 1, [[48, true]], "success", baselineHooks]);
   // Too few AP: refused before anything.
   reset(); me.system.resources.ap.value = 1;
   equal("E6 with 1 AP it is refused before the check (no third check rolled)", [await use("offensive momentum")(me), resolved.length], [false, 2]);
@@ -658,9 +683,9 @@ const src = (f) => fs.readFileSync(path.join(ROOT, f), "utf8");
 ok("F registration calls registerBlock11", /registerBlock11\(api, moduleId\)/.test(src("module/registration.mjs")));
 ok("F the hooks are wired: actions, Strikes and the card's buttons", ["Hooks.on(\"trgPrimeActionResolved\", (ctx) => { onActionResolvedB11", "Hooks.on(\"trgPrimeStrikeResolved\", (ctx) => { onStrikeResolvedB11", "bindBlock11Buttons(message, html)"].every((s) => src("scripts/inner-tempest.mjs").includes(s)));
 ok("F the module imports nothing from the system statically (the core's files are read at call time, with fallbacks)", !/^import .*systems\//m.test(src("module/block11-automations.mjs")));
-equal("F the module is 1.1.0, built for TRG Prime 3.712.1, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download], ["1.1.0", "3.712.1", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.0/trg-inner-tempest.zip"]);
-ok("F the system at TRG_PRIME_ROOT is at least 3.712.1", (() => { const [a, b, c] = systemJson.version.split(".").map(Number); return a > 3 || (a === 3 && (b > 712 || (b === 712 && c >= 1))); })(), systemJson.version);
-equal("F the entry script asks for the same system", /REQUIRED_SYSTEM = "3\.712\.1"/.test(src("scripts/inner-tempest.mjs")), true);
+equal("F the module is 1.1.1, built for TRG Prime 3.712.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download], ["1.1.1", "3.712.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.1/trg-inner-tempest.zip"]);
+ok("F the system at TRG_PRIME_ROOT is at least 3.712.2", (() => { const [a, b, c] = systemJson.version.split(".").map(Number); return a > 3 || (a === 3 && (b > 712 || (b === 712 && c >= 2))); })(), systemJson.version);
+equal("F the entry script asks for the same system", /REQUIRED_SYSTEM = "3\.712\.2"/.test(src("scripts/inner-tempest.mjs")), true);
 equal("F the pack ids are kept (fifteen packs, the folder)", [manifest.packs.length, manifest.packs.map((p) => p.name).includes("it-feats"), manifest.packFolders[0].packs.length], [15, true, 15]);
 ok("F the nine are in the compiled feats pack's source", B11.BLOCK11_FEATS.every((d) => fs.existsSync(path.join(ROOT, "packs-source", "it-feats", `${d.name.replace(/[^A-Za-z0-9]+/g, "-")}_${d._id}.json`))));
 ok("F the compiled packs hold LevelDB files", fs.readdirSync(path.join(ROOT, "packs", "it-feats")).some((f) => /^CURRENT$/.test(f)));

@@ -674,9 +674,9 @@ ok("E the hooks: a level change, daily preparation, the kill hook, Dying or the 
   && /Hooks\.on\("trgPrimeCreatureSlain", \(ctx\) => \{ onCreatureSlainB10\(ctx\)/.test(script) && /for \(const hook of \["createActiveEffect", "updateActiveEffect", "deleteActiveEffect"\]\) Hooks\.on\(hook, \(effect\) => \{ onEffectChangedB10\(effect\)/.test(script)
   && /Hooks\.on\("createItem", \(item, options, userId\) => \{ try \{ onItemCreatedB10\(item, options, userId\);/.test(script) && /reconcileAllDragons\(\)\.catch/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.1.0, built for 3.712.1, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.1.0", "3.712.1", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.0/trg-inner-tempest.zip"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.1";'));
+equal("E the module is 1.1.1, built for 3.712.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.1.1", "3.712.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.1/trg-inner-tempest.zip"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.2";'));
 // ONE ROOT FOLDER (1.0.4; Graham, 29 Oct 2026: "dropping all of the options in
 // the compendium without a root folder (like the other books such as pillars
 // of faith are doing)"). Every pack sits under "Inner Tempest", once.

@@ -42,3 +42,25 @@ These were covered by the harness only:
 - Vaulting Momentum's substitution and eligibility gate.
 
 Audit §8 lists the checks to make once the packaged 1.1.0 is installed.
+
+## Second pass: the installed 1.1.0 (24 November 2026, after Graham installed it)
+
+- **Setup:**
+  - Test world, as Gamemaster, on TRG Prime 3.712.1 with Inner Tempest 1.1.0 installed. Nothing was injected.
+  - A fresh "ZZ B11 Gymnast": level 17 Fighter with the Gymnast archetype, the nine feats, a Rapier and Unarmed Strike.
+  - Fiends & Fables opponents: Kobold Sneak, Goblin Warrior, Skeleton Warrior and Rat Swarm.
+  - Where a test needed a critical or a fumble, the dice were forced through `CONFIG.Dice.randomUniform` and restored straight after.
+
+| # | Check | Seen | Verdict |
+|---|---|---|---|
+| 17 | Compendium | 158 feats in the Inner Tempest folder; the nine with their ids, jade class/general art, categories and traits as printed; the only "Flowing Step" is the spell | Pass |
+| 18 | Vaulting Momentum's eligibility | Refused when created in the same batch as the Gymnast archetype, with a warning; accepted once the archetype was on the sheet | Pass (see note) |
+| 19 | Effortless Motion, installed | The core's compound Step leg (`countsAs: "step"`, 5 ft); the token moved 5 ft at 0 AP; a second use refused | Pass (§8 item 2 closed) |
+| 20 | Offensive Momentum: Long Jump (Acrobatics through Vaulting Momentum) against the Rat Swarm | The choice list offered both jumps under Acrobatics; the check succeeded (26 against DC 10) and 2 AP were spent; **but** the card said the check was "waiting on the GM's DC", and no move or Strike buttons followed. The conviction prompt held the roll past the moment the Use read it | **Fail.** Fixed in 1.1.1 |
+| 21 | Whirlwind Kip | Stance 1 AP; a critical free Tumble offered the reaction Strike; accepted: Unarmed Strike at MAP 0 (count 0→1), reaction 2→1, Tumbling Reversal's advantage taken | Pass (§8 item 4 closed, through Tumble) |
+| 22 | Pinnacle offer after that critical | Offered on the marked Kobold | Pass |
+| 23 | Perfect Balance | The Goblin Warrior's Trip Attack from its sheet against the Gymnast was rolled at **disadvantage**, the card naming Perfect Balance | Pass (§8 item 5 closed) |
+| 24 | Redirection Stance on a fumble | The Skeleton's Broadsword fumbled; the offer named the fumble; accepted: the reaction was spent, the Skeleton was flat-footed with the turn-end stamp, then the free Trip was offered and rolled at 0 AP (success; the Skeleton prone) | Pass (§8 item 6 closed) |
+
+- **Note on 18:** creating the archetype and Vaulting Momentum in one call checks eligibility before the archetype is on the sheet. Through the picker, one at a time, it can't arise.
+- **Not covered:** a player-owned Gymnast (§8 item 7). Only one client was available.

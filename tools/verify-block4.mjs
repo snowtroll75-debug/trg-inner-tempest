@@ -389,8 +389,8 @@ const [sa, sb] = String(systemJson.version).split(".").map(Number);
 ok("E the system at TRG_PRIME_ROOT is 3.668.0 or later", sa > 3 || (sa === 3 && sb >= 668), systemJson.version);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
 // Re-pinned at 0.6.0 (Block 5, on 3.669.0).
-equal("E the module is 1.1.0, built for 3.712.1", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.1.0", "3.712.1"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.1";'));
+equal("E the module is 1.1.1, built for 3.712.2", [manifest.version, manifest.relationships.systems[0].compatibility.minimum], ["1.1.1", "3.712.2"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.2";'));
 for (const [name, docs] of [["it-classes", B4.BLOCK4_CLASSES], ["it-abilities", B4.BLOCK4_ABILITIES], ["it-feats", B4.BLOCK4_FEATS]]) {
   const dir = path.join(ROOT, "packs-source", name);
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) : [];

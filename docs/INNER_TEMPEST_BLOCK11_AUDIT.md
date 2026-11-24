@@ -137,3 +137,22 @@ The live test ran with the Block 11 code injected into the page. The packaged mo
 5. Perfect Balance: have an NPC Trip the Gymnast and check that the defender-side disadvantage applies.
 6. Redirection Stance on a fumble, to see the Trip added.
 7. Run a player-owned Gymnast with a GM present, to check that the offers reach the owning player.
+
+## 9. Rulings received (24 November 2026) and 1.1.1
+
+Graham answered the questions put in the 1.1.0 report:
+
+| # | Question | Ruling | Effect |
+|---|---|---|---|
+| 1 | The core's end-of-turn Flat-Footed removal vs Redirection Stance (§5) | "The core should apply unless a local rule overrides it" | Core 3.712.2 keeps a Flat-Footed with its own turn clock; Redirection's lasts to the end of the attacker's next turn |
+| 2 | Pinnacle of Motion: bonus or the real condition (B11-3) | The real condition, so sneak attack and the like trigger | 1.1.1 lays Flat-Footed until the end of the Gymnast's turn; Tumbling Reversal's +1 now counts beside it |
+| 3 | Rebound Assault's "after a Movement action" (B11-4) | Keep the reading | Unchanged |
+| 4 | Offensive Momentum's d4 rider and Long Jump leg (B11-1) | Yes to both | Unchanged |
+| 5 | Whirlwind Kip's reaction Strike at normal MAP (B11-5) | Yes | Unchanged |
+| 6 | Expert trait on Effortless Motion and Perfect Balance (B11-7) | Yes, intended | Unchanged |
+
+Still with the GM, and not ruled on:
+- Perfect Balance's terrain clause (B11-2).
+- Whirlwind Kip's +2 DB against opportunity attacks (B11-6).
+
+The 1.1.0 live re-test also found that **Offensive Momentum** lost its Strike whenever the check was held by the conviction prompt. 1.1.1 waits for the held result (see `RELEASE_NOTES_1.1.1.md`).

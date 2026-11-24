@@ -321,9 +321,9 @@ ok("E Arrows Flight on a creature this client does not own is split on the actin
   /if \(target\.isOwner\) await enchantProjectiles\(target, payload\);\n\s*else game\.socket\?\.emit\(SOCKET, \{ b8own: "arrowsFlight", actorUuid: target\.uuid, payload \}\);/.test(auto8src)
   && /if \(data\?\.b8own !== "arrowsFlight" \|\| !isActingGM\(\)\) return;/.test(auto8src) && /  registerBlock8Socket\(\);\n/.test(script));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "module.json"), "utf8"));
-equal("E the module is 1.1.0, built for 3.712.1, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
-  ["1.1.0", "3.712.1", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.0/trg-inner-tempest.zip"]);
-ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.1";'));
+equal("E the module is 1.1.1, built for 3.712.2, downloaded from its own release", [manifest.version, manifest.relationships.systems[0].compatibility.minimum, manifest.download],
+  ["1.1.1", "3.712.2", "https://github.com/snowtroll75-debug/trg-inner-tempest/releases/download/v1.1.1/trg-inner-tempest.zip"]);
+ok("E the script refuses an older system", script.includes('const REQUIRED_SYSTEM = "3.712.2";'));
 {
   const [sa, sb] = String(systemJson.version).split(".").map(Number);
   ok("E the system at TRG_PRIME_ROOT is 3.672.0 or later", sa > 3 || (sa === 3 && sb >= 672), systemJson.version);

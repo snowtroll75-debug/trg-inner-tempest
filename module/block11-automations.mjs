@@ -13,8 +13,8 @@
  *                       card's melee Strike with a d4 precision rider
  *   Perfect Balance     data (conditionals and defenceDC) — no code here
  *   Pinnacle of Motion  the core's Tumble at 0 AP once a round; after any
- *                       successful Tumble, "flat-footed to you" against that
- *                       creature for your attacks only; a critical hit on it
+ *                       successful Tumble, the Flat-Footed condition on that
+ *                       creature until your turn ends; a critical hit on it
  *                       offers an unarmed reaction Strike at the frozen MAP
  *   Rebound Assault     two melee Strikes at two creatures in reach, the
  *                       first with its MAP frozen and the second counting
@@ -156,33 +156,18 @@ export function reboundTargetsRefusal(a, b) {
 }
 
 /**
- * THE DEX AND DODGE A CREATURE LOSES BY BEING FLAT-FOOTED — the core's own
- * figure (combat/strike-options.mjs `flatFootedLoss`), which it pays as a
- * bonus on the attack for "flat-footed to you" (Hidden, Formless Cut).
- */
-export function flatFootedLoss(defence = {}) {
-  const dex = Math.max(0, Number(defence?.ability) || 0);
-  const dodge = Math.max(0, Number(defence?.breakdown?.byType?.dodge) || 0);
-  return dex + dodge;
-}
-
-/**
  * PINNACLE OF MOTION: "the target becomes Flat-Footed against all your
- * attacks until the end of your turn". Against you alone, so not the
- * condition (which every attacker would read): the core's "flat-footed to
- * you" as a bonus on your attacks against that creature — its Dex and dodge,
- * circumstance as the core types it — and none when it is already
- * flat-footed to you for another reason (the core's `targetStates`).
+ * attacks until the end of your turn". The real condition (Graham, 24
+ * November 2026: "otherwise other things that trigger on flat-footed (such
+ * as sneak attack) will not kick in"), laid on the target with the core's
+ * turn-end clock (3.707.2) in the Gymnast's name: `castTurn` names no turn,
+ * so it is due as the Gymnast's turn now in progress ends. A turn clock is a
+ * local rule, so the core's end-of-turn removal leaves it to that sweep
+ * (3.712.2). Out of an encounter, a round's six seconds.
  */
-export function pinnacleFlags(targetUuid, targetName, loss) {
-  const value = Math.max(0, int(loss));
-  return {
-    conditionals: value > 0 ? [{
-      kind: "modifier", value, type: "circumstance", label: "Pinnacle of Motion",
-      scope: `${targetName} is flat-footed to you (Pinnacle of Motion)`, auto: true,
-      when: { checkTypes: ["attack"], targetUuids: [targetUuid], not: { targetStates: ["flatfooted"] } }
-    }] : []
-  };
+export function pinnacleTiming(actorUuid, inCombat) {
+  if (!inCombat) return { duration: { seconds: 6 } };
+  return { endsAtTurnEndOf: { of: String(actorUuid ?? ""), castTurn: "" } };
 }
 
 /**
@@ -362,6 +347,9 @@ const effortlessMotion = {
 const OM_KEY = "b11:offensive";
 const OM_RIDER = "b11:omRider";
 
+/** How long Offensive Momentum waits for a held check to be read (ten minutes). */
+export const OM_WAIT_MS = 10 * 60 * 1000;
+
 const offensiveMomentum = {
   hint: "Flourish (2 AP): a High Jump, Long Jump or Tumble check; on a success, your movement and then a melee Strike (+1d4 precision after 10 ft, 2d4 on a critical check).",
   async use(actor) {
@@ -381,20 +369,37 @@ const offensiveMomentum = {
     const base = skillAction(key);
     if (!base) { ui.notifications.warn(`Offensive Momentum: the system has no ${key} action.`); return false; }
     const feetBefore = Number((await h().movementThisTurn(actor))?.feet ?? 0) || 0;
-    // THE TOTAL, for the Long Jump's reach: the core announces it.
+    // THE TOTAL AND THE DEGREE: the core announces them. A held roll (the
+    // conviction prompt, a DC the GM sets afterwards) announces them AFTER
+    // resolveAction has returned — found live in 1.1.0, where the card then
+    // said the check was waiting and no Strike followed — so the hook is
+    // kept until a degreed announcement arrives. A degree-less first pass
+    // (the GM's DC still to come) is not an answer.
     let total = 0;
-    const hookId = Hooks.on("trgPrimeActionResolved", (ctx) => { if (ctx?.actor === actor && ctx?.action?.key === key) total = int(ctx.total); });
-    let result = null;
+    let announced = "";
+    let settle = () => {};
+    const settled = new Promise((resolve) => { settle = resolve; });
+    const sameActor = (a) => a === actor || (a?.uuid && a.uuid === actor.uuid);
+    const hookId = Hooks.on("trgPrimeActionResolved", (ctx) => {
+      if (!sameActor(ctx?.actor) || ctx?.action?.key !== key) return;
+      if (ctx.total !== undefined && ctx.total !== null) total = int(ctx.total);
+      const d = String(ctx.resolvedDegree ?? ctx.degree ?? "");
+      if (!d) return;
+      announced = d;
+      settle(d);
+    });
+    let degree = "";
     try {
       // THE ACTION'S 2 AP PAY FOR THE CHECK AND ITS MOVEMENT: the check at 0 AP.
-      result = await h().resolveAction(actor, { ...base, apCost: "0", variantNote: "Offensive Momentum: made as part of this action (its 2 AP)." }, { invokedSkillKey: skill });
+      const result = await h().resolveAction(actor, { ...base, apCost: "0", variantNote: "Offensive Momentum: made as part of this action (its 2 AP)." }, { invokedSkillKey: skill });
+      if (!result) return false; // cancelled before anything was spent
+      if (!(await spendAP(actor, B11.offensive, 2))) return false;
+      await h().recordTraitUsage(actor, action);
+      degree = String(result.degree ?? "") || announced;
+      if (!degree) degree = String(await Promise.race([settled, new Promise((resolve) => setTimeout(() => resolve(""), OM_WAIT_MS))]) ?? "");
     } finally { Hooks.off("trgPrimeActionResolved", hookId); }
-    if (!result) return false; // cancelled before anything was spent
-    if (!(await spendAP(actor, B11.offensive, 2))) return false;
-    await h().recordTraitUsage(actor, action);
-    const degree = String(result.degree ?? "");
     if (!isSuccess(degree)) {
-      await card(actor, B11.offensive, [degree ? "The check failed: no Strike." : "The check waits on the GM's DC: if it succeeds, Strike from your sheet (its AP is this action's)."]);
+      await card(actor, B11.offensive, [degree ? "The check failed: no Strike." : "The check was not resolved in time: if it succeeds, Strike from your sheet (its AP is this action's)."]);
       return true;
     }
     const speed = landSpeed(actor);
@@ -461,7 +466,7 @@ const PIN_STRIKE_FLAG = "pinnacleStrike";
 const PIN_KEY = (uuid) => `b11:pinnacle:${uuid}`;
 
 const pinnacleOfMotion = {
-  hint: "Free Tumble (0 AP, once a round). After any successful Tumble, the creature is flat-footed to your attacks until the end of your turn; a critical hit on it offers an unarmed reaction Strike.",
+  hint: "Free Tumble (0 AP, once a round). After any successful Tumble, the creature is Flat-Footed (the condition) until the end of your turn; a critical hit on it offers an unarmed reaction Strike.",
   async use(actor) {
     const tumble = skillAction("tumble");
     if (!tumble) { ui.notifications.warn("Pinnacle of Motion: the system has no Tumble action."); return false; }
@@ -479,14 +484,17 @@ function pinnacleMarks(actor) {
 }
 
 async function markPinnacle(actor, target) {
-  const loss = flatFootedLoss(target.system?.combat?.defence);
+  const already = Boolean(target.hasCondition?.("flatFooted"));
+  const applied = already ? true : Boolean(await h().applyConditionTagsTo(target, [{ key: "flatFooted", label: "Flat-Footed" }], pinnacleTiming(actor.uuid, Boolean(combatNow()))));
+  // The mark on the Gymnast is the trigger's record ("a Flat-Footed (from
+  // this ability) creature"); it carries no bonus of its own.
   await putEffect(actor, PIN_KEY(target.uuid), made(PIN_KEY(target.uuid), {
-    name: `Pinnacle of Motion: ${target.name} flat-footed to you`,
+    name: `Pinnacle of Motion: ${target.name} flat-footed`,
     description: `Pinnacle of Motion: ${target.name} is flat-footed against your attacks until the end of your turn.`,
-    system: pinnacleFlags(target.uuid, target.name, loss),
+    system: {},
     module: { pinnacleTarget: target.uuid }
   }, untilEndOfTurn(actor)));
-  return loss;
+  return { applied, already };
 }
 
 async function pinnacleStrikeOffer(actor, { targetUuid, targetName }) {
@@ -495,7 +503,7 @@ async function pinnacleStrikeOffer(actor, { targetUuid, targetName }) {
   if (usedNow(actor.getFlag(MODULE_ID, PIN_STRIKE_FLAG))) return;
   const weapons = (await flurryWeaponsOf(actor)).filter((w) => !["missile", "thrown", "ranged"].includes(norm(w.system?.attackMode || "melee")));
   if (!weapons.length) return;
-  const yes = await confirm(`Pinnacle of Motion — ${actor.name}`, `<p>You critically hit <strong>${esc(targetName)}</strong> while it is flat-footed to you. Spend your <strong>reaction</strong> on an additional <strong>unarmed Strike</strong> against it, at your current multiple attack penalty?</p>`);
+  const yes = await confirm(`Pinnacle of Motion — ${actor.name}`, `<p>You critically hit <strong>${esc(targetName)}</strong> while it is flat-footed from Pinnacle of Motion. Spend your <strong>reaction</strong> on an additional <strong>unarmed Strike</strong> against it, at your current multiple attack penalty?</p>`);
   if (!yes) return;
   const weapon = await pickWeapon(actor, B11.pinnacle, weapons);
   if (!weapon) return;
@@ -669,8 +677,9 @@ export async function onActionResolvedB11({ actor, action, resolvedDegree, degre
       }
     }
     if (owns(actor, B11.pinnacle)) {
-      const loss = await markPinnacle(actor, targetActor);
-      lines.push(`<strong>Pinnacle of Motion:</strong> ${esc(targetActor.name)} is flat-footed to <strong>your</strong> attacks until the end of your turn${loss > 0 ? ` (+${loss} on them, its Dexterity and dodge)` : " (it has no Dexterity or dodge to lose)"}.`);
+      const mark = await markPinnacle(actor, targetActor);
+      lines.push(`<strong>Pinnacle of Motion:</strong> ${esc(targetActor.name)} is <strong>flat-footed</strong> until the end of your turn${mark.already ? " (it already was)" : ""}.`);
+      if (!mark.applied) lines.push("<em>The condition could not be applied (its own immunity, or the GM relay): apply Flat-Footed by hand, until the end of your turn.</em>");
     }
     if (lines.length) await card(actor, "After the Tumble", lines);
   }

@@ -133,7 +133,7 @@ export const BLOCK11_FEATS = [
   }),
   F("Pinnacle of Motion", {
     kind: "auto",
-    how: "press **Use** for your free Tumble: once a round in combat, no AP (target the creature first). After any successful Tumble, the creature is flat-footed to **your** attacks alone until the end of your turn: its Dexterity and dodge are paid as a bonus on your Strikes against it, as the core pays every \"flat-footed to you\". When you critically hit it while that lasts, you are asked whether to spend your reaction on one unarmed Strike against it (once a round), at your current multiple attack penalty, which it does not raise.",
+    how: "press **Use** for your free Tumble: once a round in combat, no AP (target the creature first). After any successful Tumble, the creature gains the **Flat-Footed** condition until the end of your turn (unless it already has it), so everything that reads Flat-Footed, such as sneak attack, sees it. When you critically hit it while that lasts, you are asked whether to spend your reaction on one unarmed Strike against it (once a round), at your current multiple attack penalty, which it does not raise.",
     flags: { itAutomation: "pinnacleOfMotion" }
   }),
   F("Rebound Assault", {

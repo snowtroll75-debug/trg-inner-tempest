@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.1 — 24 Nov 2026 (Gymnast rulings; Offensive Momentum fixed)
+
+Needs **TRG Prime 3.712.2**. See `docs/RELEASE_NOTES_1.1.1.md`.
+
+- **Pinnacle of Motion** lays the real Flat-Footed condition until the end of your turn (ruling 2), so sneak attack and everything else that reads Flat-Footed sees it.
+- **Redirection Stance's** Flat-Footed lasts its full "until the end of its next turn" on core 3.712.2 (ruling 1).
+- **Offensive Momentum** now waits for a held check (conviction prompt, GM's DC) before moving on. In 1.1.0 it lost the Strike; found live.
+- **Confirmed:** rulings 3–6 confirm the readings as built.
+- **Harness:** `verify-block11` 188, `mutate-block11` 81; every block re-pinned to 1.1.1 / 3.712.2.
+
 ## 1.1.0 — 24 Nov 2026 (Block 11: the Gymnast expansion, v1.4)
 
 Needs **TRG Prime 3.712.1**. See `docs/RELEASE_NOTES_1.1.0.md`, `docs/INNER_TEMPEST_BLOCK11_AUDIT.md` and `docs/LIVE_TESTING_REPORT_1.1.0.md`.
@@ -17,7 +27,6 @@ Needs **TRG Prime 3.712.1**. See `docs/RELEASE_NOTES_1.1.0.md`, `docs/INNER_TEMP
 
 - Added jade compendium artwork for spells, feats, and equipment.
 - Rebuilt all fifteen LevelDB packs with their required manifests.
-
 
 ## 1.0.4 — 29 Oct 2026 (one compendium folder)
 
